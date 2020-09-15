@@ -1,0 +1,10 @@
+D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\SeparatistCrisis\bin\Win64_Shipping_Client\netstandard2.0\SeparatistCrisis.deps.json
+D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\SeparatistCrisis\bin\Win64_Shipping_Client\netstandard2.0\SeparatistCrisis.dll
+D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\SeparatistCrisis\bin\Win64_Shipping_Client\netstandard2.0\SeparatistCrisis.pdb
+D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\SeparatistCrisis\bin\Win64_Shipping_Client\SeparatistCrisis\obj\Debug\netstandard2.0\SeparatistCrisis.csprojAssemblyReference.cache
+D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\SeparatistCrisis\bin\Win64_Shipping_Client\SeparatistCrisis\obj\Debug\netstandard2.0\SeparatistCrisis.AssemblyInfoInputs.cache
+D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\SeparatistCrisis\bin\Win64_Shipping_Client\SeparatistCrisis\obj\Debug\netstandard2.0\SeparatistCrisis.AssemblyInfo.cs
+D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\SeparatistCrisis\bin\Win64_Shipping_Client\SeparatistCrisis\obj\Debug\netstandard2.0\SeparatistCrisis.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\SeparatistCrisis\bin\Win64_Shipping_Client\SeparatistCrisis\obj\Debug\netstandard2.0\SeparatistCrisis.csproj.CopyComplete
+D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\SeparatistCrisis\bin\Win64_Shipping_Client\SeparatistCrisis\obj\Debug\netstandard2.0\SeparatistCrisis.dll
+D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\SeparatistCrisis\bin\Win64_Shipping_Client\SeparatistCrisis\obj\Debug\netstandard2.0\SeparatistCrisis.pdb

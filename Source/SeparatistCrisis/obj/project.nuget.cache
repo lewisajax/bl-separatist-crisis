@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "2Qzd1gcfB8zOGLRADKv9mdVCUsYcGF4B8ZMtjGNhVwZzfoyoUb5bGxEnVlGr7xCgHvjqihvl2X38AowcECF/QA==",
+  "success": true,
+  "projectFilePath": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\SeparatistCrisis\\bin\\Win64_Shipping_Client\\SeparatistCrisis\\SeparatistCrisis.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Noel\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Noel\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
