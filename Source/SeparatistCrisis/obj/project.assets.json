@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\SeparatistCrisis\\bin\\Win64_Shipping_Client\\SeparatistCrisis\\SeparatistCrisis.csproj",
+      "projectUniqueName": "C:\\Users\\Noel\\Documents\\GitHub\\SeparatistCrisis\\Source\\SeparatistCrisis\\SeparatistCrisis.csproj",
       "projectName": "SeparatistCrisis",
-      "projectPath": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\SeparatistCrisis\\bin\\Win64_Shipping_Client\\SeparatistCrisis\\SeparatistCrisis.csproj",
+      "projectPath": "C:\\Users\\Noel\\Documents\\GitHub\\SeparatistCrisis\\Source\\SeparatistCrisis\\SeparatistCrisis.csproj",
       "packagesPath": "C:\\Users\\Noel\\.nuget\\packages\\",
-      "outputPath": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\SeparatistCrisis\\bin\\Win64_Shipping_Client\\SeparatistCrisis\\obj\\",
+      "outputPath": "C:\\Users\\Noel\\Documents\\GitHub\\SeparatistCrisis\\Source\\SeparatistCrisis\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Noel\\AppData\\Roaming\\NuGet\\NuGet.Config",
