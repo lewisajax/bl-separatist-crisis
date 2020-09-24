@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeparatistCrisis", "SeparatistCrisis.csproj", "{8D2AE7C1-FF62-49A8-84A1-55E46438CE8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeparatistCrisis", "SeparatistCrisis\SeparatistCrisis.csproj", "{81FA5DA9-C07B-4454-86B3-B2E477E9A830}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8D2AE7C1-FF62-49A8-84A1-55E46438CE8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D2AE7C1-FF62-49A8-84A1-55E46438CE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D2AE7C1-FF62-49A8-84A1-55E46438CE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D2AE7C1-FF62-49A8-84A1-55E46438CE8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81FA5DA9-C07B-4454-86B3-B2E477E9A830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81FA5DA9-C07B-4454-86B3-B2E477E9A830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81FA5DA9-C07B-4454-86B3-B2E477E9A830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81FA5DA9-C07B-4454-86B3-B2E477E9A830}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
