@@ -37,7 +37,8 @@ While ($key -eq 0)
 	$key = $Host.UI.RawUI.ReadKey('IncludeKeyDown') | Select-Object -ExpandProperty VirtualKeyCode
 	Write-Output ""
 	Write-Output ""
-	if (@(89,13,32).Where({$_ -eq $key}, 'First'))
+	
+	if (@(89,13,32).Where({$_ -eq $key}, 'First')) #???
 	{
 		#create junction link for game in project directory
 		New-Item -ItemType Junction -Path .\mb2 -Target $path
