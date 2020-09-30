@@ -1,29 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Module>
-	<Name value="Separatist Crisis"/>
-	<Id value="SeparatistCrisis"/>
-	<Version value="v0.001"/>
-	<SingleplayerModule value="true"/>
-	<MultiplayerModule value="false"/>
-	<DependedModules>
-		<DependedModule Id="Native"/>
-		<DependedModule Id="SandBoxCore"/>
-		<DependedModule Id="Sandbox"/>
-		<DependedModule Id="CustomBattle"/>
-		<DependedModule Id="StoryMode" />
-	</DependedModules>
-	<SubModules>
-		<SubModule>
-			<Name value="SeparatistCrisis"/>
-			<DLLName value="SeparatistCrisis.dll"/>
-			<SubModuleClassType value="SeparatistCrisis.Main"/>
-			<Tags>
-				<Tag key="DedicatedServerType" value="none" />
-				<Tag key="IsNoRenderModeElement" value="false" />
-			</Tags>
-		</SubModule>
-	</SubModules>
-	<Xmls>              
-		<XmlNode>                
+  <Name value="Separatist Crisis"/>
+  <Id value="SeparatistCrisis"/>
+  <Version value="v0.0.0.1"/>
+  <SingleplayerModule value="true"/>
+  <MultiplayerModule value="false"/>
+  <DependedModules>
+    <DependedModule Id="Native" />
+    <DependedModule Id="SandBoxCore" />
+    <DependedModule Id="Sandbox" />
+	<DependedModule Id="CustomBattle"/>
+    <DependedModule Id="StoryMode" />
+  </DependedModules>
+  <SubModules>
+	<SubModule>
+		<Name value="SeparatistCrisis"/>
+		<DLLName value="SeparatistCrisis.dll"/>
+		<SubModuleClassType value="SeparatistCrisis.Main"/>
+		<Tags>
+			<Tag key="DedicatedServerType" value="none" />
+			<Tag key="IsNoRenderModeElement" value="false" />
+		</Tags>
+	</SubModule>
+  </SubModules>
+  <Xmls>
+	<XmlNode>                
 			<XmlName id="Kingdoms" path="spkingdoms"/>
 			<IncludedGameTypes>
 				<GameType value = "Campaign"/>
@@ -37,5 +38,47 @@
 				<GameType value = "CampaignStoryMode"/>
 			</IncludedGameTypes>
 		</XmlNode> 
-	</Xmls>
+	<XmlNode>	
+		<XmlName id="NPCCharacters" path="mando_lords"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+	</XmlNode>		
+	<XmlNode>
+		<XmlName id="Heroes" path="mando_heroes"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+	</XmlNode>
+	<XmlNode>
+		<XmlName id="Factions" path="mando_clans"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+    </XmlNode>
+	<XmlNode>
+		<XmlName id="Kingdoms" path="mando_kingdom"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+    </XmlNode>
+	    <XmlNode>                
+      <XmlName id="NPCCharacters" path="mando_specialcharacters"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>  
+    <XmlNode>
+      <XmlName id="SPCultures" path="mando_culture"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>	
+  </Xmls>
 </Module>

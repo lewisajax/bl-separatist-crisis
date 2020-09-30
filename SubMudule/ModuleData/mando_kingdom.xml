@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Kingdoms>
+	<Kingdom id="mando_kingdom" owner="Hero.mando_awaud_nam" banner_key="2.116.143.1862.1110.592.752.1.0.-1.423.121.116.758.764.758.747.1.1.0.319.127.116.582.587.764.758.1.1.0.106.145.141.198.200.646.576.1.1.0.134.143.8.113.114.692.784.1.1.0.134.143.8.113.120.639.878.1.1.0.445.71.132.150.159.880.582.1.1.-180.456.71.132.150.159.880.571.1.1.0.340.71.132.150.159.880.528.1.1.0.503.71.132.150.159.864.834.1.1.0.515.127.4.150.159.862.834.1.1.0.206.142.116.83.89.852.854.1.1.0.206.142.116.83.89.873.856.1.0.359.160.116.142.601.645.207.748.1.0.-1.160.116.142.601.645.1316.760.1.1.0" primary_banner_color="0xfffffdd0" secondary_banner_color="0xfff6c800" label_color="FF000000" color="FFFFFFFF" color2="FF000000" alternative_color="FFffffff" alternative_color2="FF660653" culture="Culture.mando_culture" settlement_banner_mesh="encounter_flag_a" flag_mesh="info_screen_flags_b" name="{=NF098KiX}Mandalore" short_name="{=nslK78Al}Mandalore" title="{=NF627oiX}Mand'alor" ruler_title="{=hwnV8XbW}King" text="{=Lkd9IonO}desc">
+		<relationships>
+			<relationship kingdom="Kingdom.empire_s" value="-1" isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy id="policy_castle_charters" />
+		</policies>
+	</Kingdom>
+</Kingdoms>

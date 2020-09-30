@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+  <NPCCharacter id="spc_notable_example_0" name="{=Pk29f1iX}Cautious example merchant" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <!--<Hero id="spc_notable_example_0" faction="Kingdom.example_kingdom" />-->
+    <skills></skills>
+    <Traits>
+      <Trait id="GentryEquipment" value="1" />
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_0b" name="{=bgH96Pqw}{FIRSTNAME} the Vintner" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <!--<Hero id="spc_notable_example_0b" faction="Kingdom.example_kingdom" />-->
+    <skills></skills>
+    <Traits>
+      <Trait id="GentryEquipment" value="1" />
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Commander" value="2" />
+      <Trait id="Valor" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_1" name="{=iAjo65QR}example merchant 3, ruthless" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="GentryEquipment" value="1" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_1b" name="{=JmtSy9Nz}Cold example merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="GentryEquipment" value="1" />
+      <Trait id="Commander" value="2" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_2" name="{=waA4ph2S}{FIRSTNAME} the Saltpanner" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="GentryEquipment" value="1" />
+      <Trait id="Valor" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_2b" name="{=Y8h6CeMY}example merchant 6, cautious" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="GentryEquipment" value="1" />
+      <Trait id="Commander" value="2" />
+      <Trait id="Valor" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+  </NPCCharacter>
+  <!-- Can be acater -->
+  <NPCCharacter id="spc_notable_example_3" name="{=reXz8NlZ}example merchant 7, selfmade" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <Traits>
+      <Trait id="GentryEquipment" value="1" />
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_3b" name="{=NdhGw6eA}example merchant 8, jocular" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="GentryEquipment" value="1" />
+      <Trait id="Commander" value="2" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_4" name="{=zkoc5QaI}example merchant 9, heiress" voice="curt" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+    <face>
+      <face_key_template value="NPCCharacter.townswoman_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="GentryEquipment" value="1" />
+      <Trait id="Valor" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_4b" name="{=f6nE1Qx2}example merchant 10, devious" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+    <face>
+      <face_key_template value="NPCCharacter.townswoman_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="GentryEquipment" value="1" />
+      <Trait id="Commander" value="2" />
+      <Trait id="Manager" value="5" />
+      <Trait id="Honor" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_5" name="{=gYNfal30}Messianic example preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Preacher">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <!--<Hero id="spc_notable_example_5" faction="Kingdom.example_kingdom" />-->
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Honor" value="1" />
+      <Trait id="Generosity" value="1" />
+    </Traits>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.empire_sword_1_t2" />
+      <equipment slot="Body" id="Item.monk_robe" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_6" name="{=T5O2nOfg}Puritan example preacher" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Preacher">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <!--<Hero id="spc_notable_example_6" faction="Kingdom.example_kingdom" />-->
+    <skills></skills>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Honor" value="1" />
+      <Trait id="Generosity" value="-1" />
+    </Traits>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.empire_sword_1_t2" />
+      <equipment slot="Body" id="Item.monk_robe" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_7" name="{=KAdVmQc5}Female example mystic" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Preacher">
+    <face>
+      <face_key_template value="NPCCharacter.townswoman_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Mercy" value="1" />
+      <Trait id="Generosity" value="0" />
+    </Traits>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.empire_sword_1_t2" />
+      <equipment slot="Body" id="Item.monk_robe" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_8" name="{=Xa2WYyjx}example gruff labor leader" voice="curt" is_template="true" default_group="Infantry" is_female="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Artisan">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Generosity" value="1" />
+    </Traits>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.empire_sword_4_t4" />
+      <equipment slot="Body" id="Item.tied_cloth_tunic" />
+      <equipment slot="Leg" id="Item.leather_shoes" />
+    </equipmentSet>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.empire_sword_4_t4" />
+      <equipment slot="Body" id="Item.tunic_with_rolled_cloth" />
+      <equipment slot="Leg" id="Item.leather_boots" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_9" name="{=EFrbyeN5}example outgoing labor leader" voice="earnest" is_template="true" default_group="Infantry" is_female="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Artisan">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <!--<Hero id="spc_notable_example_9" faction="Kingdom.example_kingdom" />-->
+    <skills></skills>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Generosity" value="1" />
+    </Traits>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.empire_sword_4_t4" />
+      <equipment slot="Body" id="Item.tied_cloth_tunic" />
+      <equipment slot="Leg" id="Item.leather_shoes" />
+    </equipmentSet>
+    <equipmentSet>
+      <equipment slot="Item0" id="Item.empire_sword_4_t4" />
+      <equipment slot="Head" id="Item.leather_cap" />
+      <equipment slot="Body" id="Item.tunic_with_shoulder_pads" />
+      <equipment slot="Leg" id="Item.strapped_shoes" />
+    </equipmentSet>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_gl1" name="{=5XAnvlxe}Protective example male gang leader" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="GangLeader">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <!--<Hero id="spc_notable_example_10" faction="Kingdom.example_kingdom" />-->
+    <skills></skills>
+    <Traits>
+      <Trait id="WandererEquipment" value="1" />
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Generosity" value="1" />
+      <Trait id="Honor" value="-1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_10" name="{=N6aatixp}Ironic example gang leader" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="GangLeader">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <!--<Hero id="spc_notable_example_10" faction="Kingdom.example_kingdom" />-->
+    <skills></skills>
+    <Traits>
+      <Trait id="WandererEquipment" value="1" />
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Calculating" value="1" />
+      <Trait id="Mercy" value="-1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_11" name="{=GaakYUTl}Intimidating male example gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="GangLeader">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <!--<Hero id="spc_notable_example_11" faction="Kingdom.example_kingdom" />-->
+    <skills></skills>
+    <Traits>
+      <Trait id="WandererEquipment" value="1" />
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Mercy" value="-1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_gl4" name="{=VaN2tRyU}Bestial male example gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="GangLeader">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <!--<Hero id="spc_notable_example_11" faction="Kingdom.example_kingdom" />-->
+    <skills></skills>
+    <Traits>
+      <Trait id="WandererEquipment" value="1" />
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Honor" value="-1" />
+      <Trait id="Mercy" value="-1" />
+      <Trait id="Calculating" value="-1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_12" name="{=Alc7wRB0}Female example gang leader" voice="ironic" is_template="true" is_female="true" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="GangLeader" default_group="Infantry">
+    <face>
+      <face_key_template value="NPCCharacter.townswoman_empire" />
+    </face>
+    <!--<Hero id="spc_notable_example_12" faction="Kingdom.example_kingdom" />-->
+    <Traits>
+      <Trait id="WandererEquipment" value="1" />
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Honor" value="-1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_13" name="{=TmYMCahH}Menacing female example gang leader" voice="softspoken" is_template="true" is_female="true" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="GangLeader" default_group="Infantry">
+    <face>
+      <face_key_template value="NPCCharacter.townswoman_empire" />
+    </face>
+    <!--<Hero id="spc_notable_example_13" faction="Kingdom.example_kingdom" />-->
+    <Traits>
+      <Trait id="WandererEquipment" value="1" />
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Calculating" value="1" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Mercy" value="-1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_21" name="{=AUT4gHMP}example gruff rural notable" voice="curt" is_template="true" default_group="Infantry" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="RuralNotable">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+      <!--<hair_tags>
+        <hair_tag name ="Tousled"/>
+      </hair_tags>
+      <beard_tags>
+        <beard_tag name ="Cleanshaven"/>
+        <beard_tag name ="LightShortBeard"/>
+        <beard_tag name ="HeavyShortBeard"/>
+      </beard_tags>-->
+    </face>
+    <!--<Hero id="spc_notable_example_21" faction="Kingdom.example_kingdom" />-->
+    <Traits>
+      <Trait id="WandererEquipment" value="1" />
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_example_22" name="{=wXOz68g0}example rural notable agreeable" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="RuralNotable">
+    <face>
+      <face_key_template value="NPCCharacter.townsman_empire" />
+      <!--<hair_tags>
+        <hair_tag name ="Tousled"/>
+      </hair_tags>
+      <beard_tags>
+        <beard_tag name ="Cleanshaven"/>
+        <beard_tag name ="HeavyShortBeard"/>
+      </beard_tags>-->
+    </face>
+    <!--<Hero id="spc_notable_example_22" faction="Kingdom.example_kingdom" />-->
+    <Traits>
+      <Trait id="GentryEquipment" value="1" />
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Honor" value="1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_example_outlaw_1" name="{=5vCmUC9b}example bold outlaw" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Outlaw">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <!--<Hero id="spc_example_outlaw_1" faction="Kingdom.example_kingdom" />-->
+    <Traits>
+      <Trait id="WandererEquipment" value="1" />
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Honor" value="-1" />
+      <Trait id="Generosity" value="1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_example_outlaw_2" name="{=5SEtj5Nl}example menacing outlaw" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Outlaw">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <!--<Hero id="spc_example_outlaw_2" faction="Kingdom.example_kingdom" />-->
+    <Traits>
+      <Trait id="WandererEquipment" value="1" />
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Mercy" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_example_headman_1" name="{=d8r7iu0Z}example rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Headman">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <!--<Hero id="spc_notable_example_4" faction="Kingdom.example_kingdom" />-->
+    <skills></skills>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Calculating" value="-1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_example_headman_2" name="{=PbPzMmbV}example conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Headman">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <!--<Hero id="spc_notable_example_4" faction="Kingdom.example_kingdom" />-->
+    <skills></skills>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="-1" />
+      <Trait id="Generosity" value="1" />
+    </Traits>
+  </NPCCharacter>
+  <NPCCharacter id="spc_example_headman_3" name="{=tuRVmKIE}example devious headman" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Headman">
+    <face>
+      <face_key_template value="NPCCharacter.villager_empire" />
+    </face>
+    <!--<Hero id="spc_notable_example_4" faction="Kingdom.example_kingdom" />-->
+    <skills></skills>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Calculating" value="1" />
+      <Trait id="Honor" value="-1" />
+    </Traits>
+  </NPCCharacter>
+</NPCCharacters>
