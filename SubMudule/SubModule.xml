@@ -25,19 +25,47 @@
   </SubModules>
   <Xmls>
 	<XmlNode>                
-			<XmlName id="Kingdoms" path="spkingdoms"/>
-			<IncludedGameTypes>
-				<GameType value = "Campaign"/>
-				<GameType value = "CampaignStoryMode"/>
-			</IncludedGameTypes>
-		</XmlNode>               
-		<XmlNode>                
-			<XmlName id="Cultures" path="spcultures"/>
-			<IncludedGameTypes>
-				<GameType value = "Campaign"/>
-				<GameType value = "CampaignStoryMode"/>
-			</IncludedGameTypes>
-		</XmlNode> 
+		<XmlName id="Kingdoms" path="republic_kingdom"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+	</XmlNode>        
+	<XmlNode>                
+      <XmlName id="NPCCharacters" path="republic_specialcharacters"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>         
+	<XmlNode>                
+		<XmlName id="Cultures" path="republic_culture"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+	</XmlNode> 
+	<XmlNode>	
+		<XmlName id="NPCCharacters" path="republic_lords"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+	</XmlNode>	
+	<XmlNode>
+		<XmlName id="Factions" path="republic_clans"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+    </XmlNode>
+	<XmlNode>
+		<XmlName id="Heroes" path="republic_heroes"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+	</XmlNode>
 	<XmlNode>	
 		<XmlName id="NPCCharacters" path="mando_lords"/>
 		<IncludedGameTypes>
@@ -66,7 +94,7 @@
 			<GameType value = "CampaignStoryMode"/>
 		</IncludedGameTypes>
     </XmlNode>
-	    <XmlNode>                
+	<XmlNode>                
       <XmlName id="NPCCharacters" path="mando_specialcharacters"/>
       <IncludedGameTypes>
         <GameType value = "Campaign"/>
