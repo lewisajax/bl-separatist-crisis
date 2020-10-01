@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NPCCharacters>
-	<NPCCharacter id="mando_awaud_nam" name="{=namname}Nam" age="39" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_culture" occupation="Lord">
+  <NPCCharacter id="mando_kryze_satine" name="{=satname}Satine" age="34" is_female="true" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_new_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -19,7 +19,7 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-  	<NPCCharacter id="mando_awaud_vera" name="{=vername}Vera" age="18" is_female="true" voice="softspoken" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_culture" occupation="Lord">
+  <NPCCharacter id="mando_kryze_bokatan" name="{=bokname}Bo-Katan" age="30" is_female="true" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -38,7 +38,26 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-  	<NPCCharacter id="mando_awaud_kad" name="{=kadname}Kad" age="10" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_culture" occupation="Lord">
+  <NPCCharacter id="mando_kryze_korkie" name="{=korname}Korkie" age="19" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_new_culture" occupation="Lord">
+    <face>
+      <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
+      <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
+    </face>
+    <Traits>
+      <Trait id="KnightFightingSkills" value="6" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="8" />
+      <Trait id="Manager" value="6" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="3" />
+      <Trait id="Mercy" value="0" />
+      <Trait id="Honor" value="6" />
+      <Trait id="Oligarchic" value="1" />
+    </Traits>
+    <equipmentSet></equipmentSet>
+  </NPCCharacter>
+	
+	<NPCCharacter id="mando_awaud_nam" name="{=namname}Nam" age="39" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -57,7 +76,7 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-  	<NPCCharacter id="mando_awaud_avin" name="{=aviname}Avin" age="43" voice="curt" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_culture" occupation="Lord">
+  	<NPCCharacter id="mando_awaud_vera" name="{=vername}Vera" age="18" is_female="true" voice="softspoken" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -76,7 +95,45 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-  	<NPCCharacter id="mando_awaud_teroch" name="{=tername}Teroch" age="61" voice="ironic" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_culture" occupation="Lord">
+  	<NPCCharacter id="mando_awaud_kad" name="{=kadname}Kad" age="10" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+    <face>
+      <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
+      <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
+    </face>
+    <Traits>
+      <Trait id="KnightFightingSkills" value="6" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="8" />
+      <Trait id="Manager" value="6" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="3" />
+      <Trait id="Mercy" value="0" />
+      <Trait id="Honor" value="6" />
+      <Trait id="Oligarchic" value="1" />
+    </Traits>
+    <equipmentSet></equipmentSet>
+  </NPCCharacter>
+  
+  	<NPCCharacter id="mando_awaud_avin" name="{=aviname}Avin" age="43" voice="curt" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+    <face>
+      <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
+      <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
+    </face>
+    <Traits>
+      <Trait id="KnightFightingSkills" value="6" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="8" />
+      <Trait id="Manager" value="6" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="3" />
+      <Trait id="Mercy" value="0" />
+      <Trait id="Honor" value="6" />
+      <Trait id="Oligarchic" value="1" />
+    </Traits>
+    <equipmentSet></equipmentSet>
+  </NPCCharacter>
+  
+  	<NPCCharacter id="mando_awaud_teroch" name="{=tername}Teroch" age="61" voice="ironic" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />

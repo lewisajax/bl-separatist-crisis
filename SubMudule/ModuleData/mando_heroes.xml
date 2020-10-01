@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Heroes>
+  <Hero id="mando_kryze_satine" is_noble="true" faction="Faction.mando_government_loyalists" text="{=mandosat} Leader of the pacifist New Mandalorians" />
+  <Hero id="mando_kryze_bokatan" is_noble="true" faction="Faction.mando_kryze" text="{=mandobok} Leader of the Clan Kryze. Her Sister is the Leader of the New Mandalorians" />
+  <Hero id="mando_kryze_korkie" is_noble="true" faction="Faction.mando_government_loyalists" text="{=mandokor} He was a cadet of the Royal Academy of Government on Mandalore and is trying to follow in the footsteps of his aunt Satine Kryze." />
 <!--
   <Hero id="mando_awaud_aga" is_noble="true" faction="Faction.clan_empire_west_1" text="{=mandoaga} says he once hold the title of Mand'alor" />
   /-->
