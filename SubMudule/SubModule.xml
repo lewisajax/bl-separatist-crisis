@@ -39,7 +39,7 @@
       </IncludedGameTypes>
     </XmlNode>         
 	<XmlNode>                
-		<XmlName id="Cultures" path="republic_culture"/>
+		<XmlName id="SPCultures" path="republic_culture"/>
 		<IncludedGameTypes>
 			<GameType value = "Campaign"/>
 			<GameType value = "CampaignStoryMode"/>
