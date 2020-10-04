@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Heroes>
-<!--
-  <Hero id="mando_awaud_aga" is_noble="true" faction="Faction.clan_empire_west_1" text="{=mandoaga} says he once hold the title of Mand'alor" />
-  /-->
-  <Hero id="mando_awaud_nam" is_noble="true" faction="Faction.mando_awaud" text="{=mandonam} is the leader of Clan Awaud" />
-  <Hero id="mando_awaud_vera" is_noble="true" faction="Faction.mando_awaud" father="Hero.mando_awaud_nam" text="{=mandover} is Nam Beroyas daughter" />
-  <Hero id="mando_awaud_kad" is_noble="true" faction="Faction.mando_awaud" father="Hero.mando_awaud_avin" text="{=mandokad} was adopted by Avin Solus" />
-  <Hero id="mando_awaud_avin" is_noble="true" faction="Faction.mando_awaud" text="{=mandoavi} is a mercenary by trade" />
-  <Hero id="mando_awaud_teroch" is_noble="true" faction="Faction.mando_awaud" text="{=mandoter} is seasond mercenary with no interest in politics" />
+  <Hero id="republic_hero_1" is_noble="true" faction="Faction.mando_awaud" text="{=mandonam} is the leader of Clan Awaud" />
+  <Hero id="alliance_hero_1" is_noble="true" faction="Faction.mando_awaud" text="{=mandonam} is the leader of Clan Awaud" />
 </Heroes>
