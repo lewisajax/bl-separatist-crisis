@@ -1,0 +1,1 @@
+This is the asset packages folder for module
