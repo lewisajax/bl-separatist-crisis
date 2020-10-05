@@ -20,7 +20,7 @@ namespace SeparatistCrisis
         {
             
         }
-
+        
         /*
         #####This code changes the ruling clan of the southern empire on campaign start######
         public override void OnGameInitializationFinished(Game game)

@@ -13,8 +13,24 @@
     <DependedModule Id="StoryMode" />
   </DependedModules>
   <SubModules>
+	<SubModule>
+		<Name value="SeparatistCrisis"/>
+		<DLLName value="SeparatistCrisis.dll"/>
+		<SubModuleClassType value="SeparatistCrisis.Main"/>
+		<Tags>
+			<Tag key="DedicatedServerType" value="none" />
+			<Tag key="IsNoRenderModeElement" value="false" />
+		</Tags>
+	</SubModule>
   </SubModules>
   <Xmls>
+	<XmlNode>                
+		<XmlName id="Settlements" path="settlements"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+	</XmlNode>
 	<XmlNode>                
 		<XmlName id="Kingdoms" path="republic_kingdom"/>
 		<IncludedGameTypes>

@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Heroes>
-  <Hero id="mando_kryze_satine" is_noble="true" faction="Faction.mando_government_loyalists" text="{=mandosat} Leader of the pacifist New Mandalorians" />
-  <Hero id="mando_kryze_bokatan" is_noble="true" faction="Faction.mando_kryze" text="{=mandobok} Leader of the Clan Kryze. Her Sister is the Leader of the New Mandalorians" />
-  <Hero id="mando_kryze_korkie" is_noble="true" faction="Faction.mando_government_loyalists" text="{=mandokor} He was a cadet of the Royal Academy of Government on Mandalore and is trying to follow in the footsteps of his aunt Satine Kryze." />
+  <Hero id="mando_kryze_satine" is_noble="true" faction="Faction.mando_government_loyalists" father="Hero.mando_kryze_tyvek" mother="Hero.mando_kryze_firaxa" text="{=mandosat} Duchess of the pacifist New Mandalorians" />
+  <Hero id="mando_kryze_bokatan" is_noble="true" faction="Faction.mando_kryze" father="Hero.mando_kryze_tyvek" mother="Hero.mando_kryze_firaxa" text="{=mandobok} Leader of the Clan Kryze. Her Sister is the Duchess Satine, Leader of the New Mandalorians" />
+  <Hero id="mando_kryze_korkie" is_noble="true" faction="Faction.mando_government_loyalists" father="Hero.mando_kryze_deake" mother="Hero.mando_kryze_tiaga" text="{=mandokor} He was a cadet of the Royal Academy of Government on Mandalore and is trying to follow in the footsteps of his aunt Satine Kryze." />
+  <Hero id="mando_kryze_tyvek" alive="false" is_noble="true" faction="Faction.mando_kryze" text="{=mandotyv} Chieftain of Clan Kryze." />
+  <Hero id="mando_kryze_firaxa" alive="false" is_noble="true" faction="Faction.mando_kryze" text="{=mandofir} Spouse of Tyvek Kryze, Chieftain of Clan Kryze." />
+  <Hero id="mando_kryze_tiaga" alive="false" is_noble="true" faction="Faction.mando_government_loyalists" father="Hero.mando_kryze_tyvek" mother="Hero.mando_kryze_firaxa" text="{=mandotia} Unknown sister to Satine and Bo-Katan." />
+  <Hero id="mando_kryze_deake" is_noble="true" faction="Faction.mando_kryze" text="{=mandodea} Father to Korkie Kryze." />
+  <Hero id="mando_kryze_vits" is_noble="true" faction="Faction.mando_kryze" text="{=mandovit}Lower ranking officer of Clan Kryze" />
+  <Hero id="mando_kryze_mana" is_noble="true" faction="Faction.mando_kryze" text="{=mandoman}placeholder" />
+  <Hero id="mando_kryze_jhu" is_noble="true" faction="Faction.mando_kryze" text="{=mandojhu}placeholder" />
 <!--
   <Hero id="mando_awaud_aga" is_noble="true" faction="Faction.clan_empire_west_1" text="{=mandoaga} says he once hold the title of Mand'alor" />
   /-->
   <Hero id="mando_awaud_nam" is_noble="true" faction="Faction.mando_awaud" text="{=mandonam} is the leader of Clan Awaud" />
   <Hero id="mando_awaud_vera" is_noble="true" faction="Faction.mando_awaud" father="Hero.mando_awaud_nam" text="{=mandover} is Nam Beroyas daughter" />
   <Hero id="mando_awaud_kad" is_noble="true" faction="Faction.mando_awaud" father="Hero.mando_awaud_avin" text="{=mandokad} was adopted by Avin Solus" />
-  <Hero id="mando_awaud_avin" is_noble="true" faction="Faction.mando_awaud" text="{=mandoavi} is a mercenary by trade" />
-  <Hero id="mando_awaud_teroch" is_noble="true" faction="Faction.mando_awaud" text="{=mandoter} is seasond mercenary with no interest in politics" />
+  <Hero id="mando_awaud_avin" is_noble="true" faction="Faction.mando_awaud" text="{=mandoavi} mercenary" />
+  <Hero id="mando_awaud_teroch" is_noble="true" faction="Faction.mando_awaud" text="{=mandoter} seasond mercenary with no interest in politics" />
 </Heroes>
