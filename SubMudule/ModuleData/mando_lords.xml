@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NPCCharacters>
-  <NPCCharacter id="mando_kryze_satine" name="{=satname}Satine" age="37" is_female="true" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_new_culture" occupation="Lord">
+  <NPCCharacter id="mando_kryze_satine" name="{=satname}Satine Kryze" age="37" is_female="true" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_new_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -19,7 +19,7 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-  <NPCCharacter id="mando_kryze_bokatan" name="{=bokname}Bo-Katan" age="33" is_female="true" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+  <NPCCharacter id="mando_kryze_bokatan" name="{=bokname}Bo-Katan Kryze" age="33" is_female="true" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -38,7 +38,7 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-    <NPCCharacter id="mando_kryze_tyvek" name="{=tyvname}Tyvek" age="71" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+    <NPCCharacter id="mando_kryze_tyvek" name="{=tyvname}Tyvek Kryze" age="71" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -57,7 +57,7 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-    <NPCCharacter id="mando_kryze_deake" name="{=deaname}Deake" age="42" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+    <NPCCharacter id="mando_kryze_deake" name="{=deaname}Deake Kryze" age="42" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -76,7 +76,7 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-    <NPCCharacter id="mando_kryze_tiaga" name="{=tianame}Tiaga" age="25" is_female="true" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_new_culture" occupation="Lord">
+    <NPCCharacter id="mando_kryze_tiaga" name="{=tianame}Tiaga Kryze" age="25" is_female="true" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_new_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -95,7 +95,7 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-    <NPCCharacter id="mando_kryze_firaxa" name="{=firname}Firaxa" age="64" is_female="true" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_new_culture" occupation="Lord">
+    <NPCCharacter id="mando_kryze_firaxa" name="{=firname}Firaxa Kryze" age="64" is_female="true" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_new_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -114,7 +114,7 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-  <NPCCharacter id="mando_kryze_korkie" name="{=korname}Korkie" age="17" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_new_culture" occupation="Lord">
+  <NPCCharacter id="mando_kryze_korkie" name="{=korname}Korkie Kryze" age="17" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_new_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -133,7 +133,7 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-  <NPCCharacter id="mando_kryze_vits" name="{=vitname}Vits" age="26" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+  <NPCCharacter id="mando_kryze_vits" name="{=vitname}Vits Kryze" age="26" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -152,7 +152,7 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-   <NPCCharacter id="mando_kryze_mana" name="{=manname}Mana" age="23" is_female="true" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+   <NPCCharacter id="mando_kryze_mana" name="{=manname}Mana Kryze" age="23" is_female="true" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -171,7 +171,7 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-  <NPCCharacter id="mando_kryze_jhu" name="{=jhuname}Jhu" age="24" is_female="true" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+  <NPCCharacter id="mando_kryze_jhu" name="{=jhuname}Jhu Kryze" age="24" is_female="true" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -190,7 +190,7 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
 	
-	<NPCCharacter id="mando_awaud_nam" name="{=namname}Nam" age="39" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+  <NPCCharacter id="mando_awaud_nam" name="{=namname}Nam Awaud" age="39" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -209,7 +209,7 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-  	<NPCCharacter id="mando_awaud_vera" name="{=vername}Vera" age="18" is_female="true" voice="softspoken" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+  <NPCCharacter id="mando_awaud_vera" name="{=vername}Vera Awaud" age="18" is_female="true" voice="softspoken" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -228,7 +228,7 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-  	<NPCCharacter id="mando_awaud_kad" name="{=kadname}Kad" age="10" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+  <NPCCharacter id="mando_awaud_kad" name="{=kadname}Kad Awaud" age="10" voice="earnest" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -247,7 +247,7 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-  	<NPCCharacter id="mando_awaud_avin" name="{=aviname}Avin" age="43" voice="curt" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+  <NPCCharacter id="mando_awaud_avin" name="{=aviname}Avin Awaud" age="43" voice="curt" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -266,7 +266,7 @@
     <equipmentSet></equipmentSet>
   </NPCCharacter>
   
-  	<NPCCharacter id="mando_awaud_teroch" name="{=tername}Teroch" age="61" voice="ironic" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+  <NPCCharacter id="mando_awaud_teroch" name="{=tername}Teroch Awaud" age="61" voice="ironic" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -283,7 +283,197 @@
       <Trait id="Oligarchic" value="1" />
     </Traits>
     <equipmentSet></equipmentSet>
-  </NPCCharacter>	
+  </NPCCharacter>
+
+  <NPCCharacter id="mando_viszla_pre" name="{=prename}Pre Viszla" age="42" voice="ironic" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+    <face>
+      <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
+      <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
+    </face>
+    <Traits>
+      <Trait id="KnightFightingSkills" value="6" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="8" />
+      <Trait id="Manager" value="6" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="3" />
+      <Trait id="Mercy" value="0" />
+      <Trait id="Honor" value="6" />
+      <Trait id="Oligarchic" value="1" />
+    </Traits>
+    <equipmentSet></equipmentSet>
+  </NPCCharacter>
+
+  <NPCCharacter id="mando_viszla_joek" name="{=joename}Joek Viszla" age="59" voice="ironic" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+    <face>
+      <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
+      <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
+    </face>
+    <Traits>
+      <Trait id="KnightFightingSkills" value="6" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="8" />
+      <Trait id="Manager" value="6" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="3" />
+      <Trait id="Mercy" value="0" />
+      <Trait id="Honor" value="6" />
+      <Trait id="Oligarchic" value="1" />
+    </Traits>
+    <equipmentSet></equipmentSet>
+  </NPCCharacter>  
+
+  <NPCCharacter id="mando_viszla_threnk" name="{=thrname}Threnk Viszla" age="24" voice="ironic" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+    <face>
+      <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
+      <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
+    </face>
+    <Traits>
+      <Trait id="KnightFightingSkills" value="6" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="8" />
+      <Trait id="Manager" value="6" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="3" />
+      <Trait id="Mercy" value="0" />
+      <Trait id="Honor" value="6" />
+      <Trait id="Oligarchic" value="1" />
+    </Traits>
+    <equipmentSet></equipmentSet>
+  </NPCCharacter>  
+
+  <NPCCharacter id="mando_viszla_bal" name="{=balname}Bal Viszla" age="22" is_female="true" voice="ironic" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+    <face>
+      <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
+      <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
+    </face>
+    <Traits>
+      <Trait id="KnightFightingSkills" value="6" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="8" />
+      <Trait id="Manager" value="6" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="3" />
+      <Trait id="Mercy" value="0" />
+      <Trait id="Honor" value="6" />
+      <Trait id="Oligarchic" value="1" />
+    </Traits>
+    <equipmentSet></equipmentSet>
+  </NPCCharacter>  
+
+  <NPCCharacter id="mando_viszla_shesa" name="{=shename}Shesa Viszla" age="33" is_female="true" voice="ironic" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+    <face>
+      <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
+      <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
+    </face>
+    <Traits>
+      <Trait id="KnightFightingSkills" value="6" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="8" />
+      <Trait id="Manager" value="6" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="3" />
+      <Trait id="Mercy" value="0" />
+      <Trait id="Honor" value="6" />
+      <Trait id="Oligarchic" value="1" />
+    </Traits>
+    <equipmentSet></equipmentSet>
+  </NPCCharacter>    
+  
+    <NPCCharacter id="mando_loyalists_tal" name="{=talname}Tal Merrik" age="46" voice="ironic" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+    <face>
+      <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
+      <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
+    </face>
+    <Traits>
+      <Trait id="KnightFightingSkills" value="6" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="8" />
+      <Trait id="Manager" value="6" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="3" />
+      <Trait id="Mercy" value="0" />
+      <Trait id="Honor" value="6" />
+      <Trait id="Oligarchic" value="1" />
+    </Traits>
+    <equipmentSet></equipmentSet>
+  </NPCCharacter>   
+  
+    <NPCCharacter id="mando_loyalists_jerec" name="{=jername}Jerec" age="53" voice="ironic" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+    <face>
+      <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
+      <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
+    </face>
+    <Traits>
+      <Trait id="KnightFightingSkills" value="6" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="8" />
+      <Trait id="Manager" value="6" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="3" />
+      <Trait id="Mercy" value="0" />
+      <Trait id="Honor" value="6" />
+      <Trait id="Oligarchic" value="1" />
+    </Traits>
+    <equipmentSet></equipmentSet>
+  </NPCCharacter>   
+  
+    <NPCCharacter id="mando_loyalists_davu" name="{=davname}Davu Golec" age="48" voice="ironic" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+    <face>
+      <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
+      <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
+    </face>
+    <Traits>
+      <Trait id="KnightFightingSkills" value="6" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="8" />
+      <Trait id="Manager" value="6" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="3" />
+      <Trait id="Mercy" value="0" />
+      <Trait id="Honor" value="6" />
+      <Trait id="Oligarchic" value="1" />
+    </Traits>
+    <equipmentSet></equipmentSet>
+  </NPCCharacter>   
+  
+    <NPCCharacter id="mando_loyalists_lash" name="{=lasname}Lash Krar" age="27" is_female="true" voice="ironic" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+    <face>
+      <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
+      <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
+    </face>
+    <Traits>
+      <Trait id="KnightFightingSkills" value="6" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="8" />
+      <Trait id="Manager" value="6" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="3" />
+      <Trait id="Mercy" value="0" />
+      <Trait id="Honor" value="6" />
+      <Trait id="Oligarchic" value="1" />
+    </Traits>
+    <equipmentSet></equipmentSet>
+  </NPCCharacter>   
+  
+    <NPCCharacter id="mando_loyalists_ragor" name="{=ragname}Ragor Oomo" age="29" voice="ironic" battleTemplate="NPCCharacter.emp_bat_template_heavy" civilianTemplate="NPCCharacter.emp_civ_template_stoic" default_group="Cavalry" is_hero="true" culture="Culture.mando_old_culture" occupation="Lord">
+    <face>
+      <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
+      <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
+    </face>
+    <Traits>
+      <Trait id="KnightFightingSkills" value="6" />
+      <Trait id="Commander" value="7" />
+      <Trait id="Politician" value="8" />
+      <Trait id="Manager" value="6" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="3" />
+      <Trait id="Mercy" value="0" />
+      <Trait id="Honor" value="6" />
+      <Trait id="Oligarchic" value="1" />
+    </Traits>
+    <equipmentSet></equipmentSet>
+  </NPCCharacter>   
 
 </NPCCharacters>
 
