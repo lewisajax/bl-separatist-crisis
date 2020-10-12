@@ -9,9 +9,10 @@ using TaleWorlds.MountAndBlade;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
+using TaleWorlds.Library;
 using TaleWorlds.ObjectSystem;
 using TaleWorlds.MountAndBlade.CustomBattle;
-
+using Debug = System.Diagnostics.Debug;
 
 namespace SeparatistCrisis
 {
@@ -32,13 +33,16 @@ namespace SeparatistCrisis
                 return;
             }
             CustomGame customGame = (CustomGame)game.GameType;
+            string filePath = Path.Combine("..", "..", "Modules", "SeparatistCrisis", "ModuleData", "custom_battle_scenes.xml");
             
-            if(File.Exists("../../Modules/SeparatistCrisis/ModuleData/custom_battle_scenes.xml"))
-                customGame.LoadCustomBattleScenes("../../Modules/SeparatistCrisis/ModuleData/custom_battle_scenes.xml");
+            if (File.Exists(filePath))
+            {
+                customGame.LoadCustomBattleScenes(filePath);
+            }
         }
 
         /*
-        #####This code changes the ruling clan of the southern empire on campaign start######
+        ##### This code changes the ruling clan of the southern empire on campaign start ######
         public override void OnGameInitializationFinished(Game game)
         {
             if (!(game.GameType is Campaign))
