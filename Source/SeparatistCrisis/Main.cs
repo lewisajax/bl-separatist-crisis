@@ -21,7 +21,7 @@ namespace SeparatistCrisis
 
         protected override void OnSubModuleLoad()
         {
-
+            //Stuff
         }
 
         //This allows us to add custom maps to the custom battle mode
