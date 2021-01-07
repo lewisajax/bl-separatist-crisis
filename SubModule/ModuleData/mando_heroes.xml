@@ -29,20 +29,20 @@
   <Hero id="mando_vizsla_bal" is_noble="true" faction="Faction.mando_vizsla" text="{=mandobal}Desc" />
   <Hero id="mando_vizsla_shesa" is_noble="true" faction="Faction.mando_vizsla" text="{=mandoshe}Desc" />
   
-  <Hero id="mando_skirata_kal" is_noble="true" father="mando_skirata_munin" faction="Faction.mando_skirata" text="{=mandokal}Desc" />
+  <Hero id="mando_skirata_kal" is_noble="true" father="Hero.mando_skirata_munin" faction="Faction.mando_skirata" text="{=mandokal}Desc" />
   <Hero id="mando_skirata_munin" alive="false" is_noble="true" faction="Faction.mando_skirata" text="{=mandomun}Desc" />
-  
+
   <Hero id="mando_fett_thruc" alive="false" is_noble="true" faction="Faction.mando_fett" text="{=mandothr}Desc" />
-  <Hero id="mando_fett_jango" father="mando_fett_thruc" faction="Faction.mando_fett" text="{=mandojan}Desc" />  
-  <Hero id="mando_fett_arla" father="mando_fett_thruc" is_noble="true" faction="Faction.mando_fett" text="{=mandoarl}Desc" />
-  <Hero id="mando_fett_boba" father="mando_fett_jango" is_noble="true" faction="Faction.mando_fett" text="{=mandobob}Desc" />
-  
+  <Hero id="mando_fett_jango" father="Hero.mando_fett_thruc" faction="Faction.mando_fett" text="{=mandojan}Desc" />  
+  <Hero id="mando_fett_arla" father="Hero.mando_fett_thruc" is_noble="true" faction="Faction.mando_fett" text="{=mandoarl}Desc" />
+  <Hero id="mando_fett_boba" father="Hero.mando_fett_jango" is_noble="true" faction="Faction.mando_fett" text="{=mandobob}Desc" />
+ 
   <Hero id="mando_saxon_kas" alive="false" is_noble="true" faction="Faction.mando_saxon" text="{=mandokas}Desc" />
-  <Hero id="mando_saxon_gar" father="mando_saxon_kas" is_noble="true" faction="Faction.mando_saxon" text="{=mandogar}Desc" />
-  <Hero id="mando_saxon_tiber" father="mando_saxon_kas" is_noble="true" faction="Faction.mando_saxon" text="{=mandotib}Desc" />
-  <Hero id="mando_saxon_hark" is_noble="true" faction="Faction.mando_saxon" text="{=mandohar}Desc" />
+  <Hero id="mando_saxon_gar" father="Hero.mando_saxon_kas" is_noble="true" faction="Faction.mando_saxon" text="{=mandogar}Desc" />
+  <Hero id="mando_saxon_tiber" father="Hero.mando_saxon_kas" is_noble="true" faction="Faction.mando_saxon" text="{=mandotib}Desc" />
+  <Hero id="mando_saxon_harker" is_noble="true" faction="Faction.mando_saxon" text="{=mandohar}Desc" />
   
-  <Hero id="mando_wren_ursa" is_noble="true" spouse="mando_wren_alrich" faction="Faction.mando_wren" text="{=mandours}Desc" />
-  <Hero id="mando_wren_alrich" is_noble="true" spouse="mando_wren_ursa" faction="Faction.mando_wren" text="{=mandoalr}Desc" />
-  <Hero id="mando_wren_sabine" is_noble="true" father="mando_wren_alrich" mother="mando_wren_ursa" faction="Faction.mando_wren" text="{=mandosab}Desc" />
+  <Hero id="mando_wren_ursa" is_noble="true" spouse="Hero.mando_wren_alrich" faction="Faction.mando_wren" text="{=mandours}Desc" />
+  <Hero id="mando_wren_alrich" is_noble="true" spouse="Hero.mando_wren_ursa" faction="Faction.mando_wren" text="{=mandoalr}Desc" />
+  <Hero id="mando_wren_sabine" is_noble="true" father="Hero.mando_wren_alrich" mother="Hero.mando_wren_ursa" faction="Faction.mando_wren" text="{=mandosab}Desc" />
 </Heroes>
