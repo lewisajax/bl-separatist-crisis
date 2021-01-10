@@ -2,15 +2,10 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
-using TaleWorlds.Library;
-using TaleWorlds.ObjectSystem;
 using TaleWorlds.MountAndBlade.CustomBattle;
 using Debug = System.Diagnostics.Debug;
 
@@ -21,11 +16,12 @@ namespace SeparatistCrisis
 
         protected override void OnSubModuleLoad()
         {
-            //Stuff
+            // Stuff
         }
 
-        //This allows us to add custom maps to the custom battle mode
-        //Loading custom_battle_scenes.xml in our module
+        // This allows us to add custom maps to the custom battle mode
+        // Loading custom_battle_scenes.xml in our module
+        /*
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
         {
             if (!(game.GameType is CustomGame))
@@ -41,7 +37,7 @@ namespace SeparatistCrisis
             }
         }
 
-        /*
+        
         ##### This code changes the ruling clan of the southern empire on campaign start ######
         public override void OnGameInitializationFinished(Game game)
         {
