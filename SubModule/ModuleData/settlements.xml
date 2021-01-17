@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Settlements>
   <!-- Empire = 19 towns, 52 villages, 9 castles, 2.73 villages per town, 18% castle ratio -->  
-  <Settlement id="town_mandalore" name="Mandalore" owner="Faction.mando_government_loyalists" posX="290.407" posY="149.624" culture="Culture.aserai" prosperity="2100" gate_posX="290.3766" gate_posY="150.9289">
+  <Settlement id="town_mandalore" name="Mandalore" owner="Faction.mando_government_loyalists" posX="290.407" posY="149.624" culture="Culture.mando_new_culture" prosperity="2100" gate_posX="290.3766" gate_posY="150.9289">
     <Components>
       <Town id="town_comp_mandalore" is_castle="false" level="3" background_crop_position="0.401" background_mesh="menu_aserai_4" wait_mesh="wait_aserai_town" gate_rotation="0.408" />
     </Components>
