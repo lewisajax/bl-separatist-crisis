@@ -35,4 +35,46 @@
       <Area type="Bog" name="{=iXA5SttU}Bog" />
     </CommonAreas>
   </Settlement>
+  
+  <Settlement id="town_coruscant" name="Coruscant" owner="Faction.republic_clan" posX="347.596" posY="57.143" culture="Culture.aserai" prosperity="2100" gate_posX="346.12" gate_posY="58.44">
+    <Components>
+      <Town id="town_comp_coruscant" is_castle="false" level="3" background_crop_position="0.401" background_mesh="menu_aserai_4" wait_mesh="wait_aserai_town" gate_rotation="0.408" />
+    </Components>
+    <Locations complex_template="LocationComplexTemplate.town_complex">
+      <Location id="center" scene_name="aserai_town_a" scene_name_1="aserai_town_a" scene_name_2="aserai_town_a" scene_name_3="aserai_town_a" />
+      <Location id="arena" scene_name="arena_aserai_a" />
+      <Location id="tavern" scene_name="aserai_tavern_interior" />
+      <Location id="lordshall" scene_name_1="aserai_castle_keep_a_l1_interior" scene_name_2="aserai_castle_keep_a_l2_interior" scene_name_3="aserai_castle_keep_a_l3_interior" />
+      <Location id="prison" scene_name="aserai_dungeon_a" />
+      <Location id="house_1" scene_name="arabian_house_new_a_interior_a_house" />
+      <Location id="house_2" scene_name="arabian_house_new_a_interior_a_house" />
+      <Location id="house_3" scene_name="arabian_house_new_a_interior_a_house" />
+    </Locations>
+    <CommonAreas>
+      <Area type="Backstreet" name="{=a0MVffcN}Backstreet" />
+      <Area type="Clearing" name="{=LWHIVshb}Clearing" />
+      <Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
+    </CommonAreas>
+  </Settlement>
+  
+  <Settlement id="town_geonosis" name="Geonosis" owner="Faction.alliance_clan" posX="288.416" posY="81.433" culture="Culture.aserai" prosperity="2100" gate_posX="289.74" gate_posY="82.88">
+    <Components>
+      <Town id="town_comp_geonosis" is_castle="false" level="3" background_crop_position="0.401" background_mesh="menu_aserai_4" wait_mesh="wait_aserai_town" gate_rotation="0.408" />
+    </Components>
+    <Locations complex_template="LocationComplexTemplate.town_complex">
+      <Location id="center" scene_name="aserai_town_a" scene_name_1="aserai_town_a" scene_name_2="aserai_town_a" scene_name_3="aserai_town_a" />
+      <Location id="arena" scene_name="arena_aserai_a" />
+      <Location id="tavern" scene_name="aserai_tavern_interior" />
+      <Location id="lordshall" scene_name_1="aserai_castle_keep_a_l1_interior" scene_name_2="aserai_castle_keep_a_l2_interior" scene_name_3="aserai_castle_keep_a_l3_interior" />
+      <Location id="prison" scene_name="aserai_dungeon_a" />
+      <Location id="house_1" scene_name="arabian_house_new_a_interior_a_house" />
+      <Location id="house_2" scene_name="arabian_house_new_a_interior_a_house" />
+      <Location id="house_3" scene_name="arabian_house_new_a_interior_a_house" />
+    </Locations>
+    <CommonAreas>
+      <Area type="Backstreet" name="{=a0MVffcN}Backstreet" />
+      <Area type="Clearing" name="{=LWHIVshb}Clearing" />
+      <Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
+    </CommonAreas>
+  </Settlement>
 </Settlements>
