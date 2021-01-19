@@ -13,14 +13,14 @@
     <DependedModule Id="StoryMode" />
   </DependedModules>
   <SubModules>
-    <SubModule>	
-		<Name value="SeparatistCrisis"/>	
-		<DLLName value="SeparatistCrisis.dll"/>	
-		<SubModuleClassType value="SeparatistCrisis.Main"/>	
-		<Tags>	
-			<Tag key="DedicatedServerType" value="none" />	
-			<Tag key="IsNoRenderModeElement" value="false" />	
-		</Tags>	
+	<SubModule>
+		<Name value="SeparatistCrisis"/>
+		<DLLName value="SeparatistCrisis.dll"/>
+		<SubModuleClassType value="SeparatistCrisis.Main"/>
+		<Tags>
+			<Tag key="DedicatedServerType" value="none" />
+			<Tag key="IsNoRenderModeElement" value="false" />
+		</Tags>
 	</SubModule>
   </SubModules>
   <Xmls>
