@@ -5,12 +5,12 @@
            is_main_culture="true"
            color="FFffffff"
            color2="FF000000"
-           elite_basic_troop="NPCCharacter.imperial_vigla_recruit"
-           basic_troop="NPCCharacter.imperial_recruit"
-           melee_militia_troop="NPCCharacter.imperial_militia_spearman"
-           ranged_militia_troop="NPCCharacter.imperial_militia_archer"
-           melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
-           ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
+           elite_basic_troop="NPCCharacter.new_mandalorian_vigla_recruit"
+           basic_troop="NPCCharacter.new_mandalorian_recruit"
+           melee_militia_troop="NPCCharacter.new_mandalorian_militia_spearman"
+           ranged_militia_troop="NPCCharacter.new_mandalorian_militia_archer"
+           melee_elite_militia_troop="NPCCharacter.new_mandalorian_militia_veteran_spearman"
+           ranged_elite_militia_troop="NPCCharacter.new_mandalorian_militia_veteran_archer"
            can_have_settlement="true"
            town_edge_number="16"
            villager_party_template="PartyTemplate.villager_empire_template"
@@ -22,55 +22,55 @@
            prosperity_bonus="1"
            encounter_background_mesh="encounter_empire"
            default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
-           text="{=X0kKBzsW}Mandalore was a planet located in the Outer Rim Territories. It was the homeworld of the Mandalorians, a fearsome and warmongering people who fought the Jedi and raided their temple during the fall of the Old Republic. Wearing distinctive armor, they were feared throughout the galaxy, and had political influence over two thousand other star systems. "
-           tournament_master="NPCCharacter.tournament_master_empire"
-           villager="NPCCharacter.villager_empire"
-           caravan_master="NPCCharacter.caravan_master_empire"
-           armed_trader="NPCCharacter.armed_trader_empire"
-           caravan_guard="NPCCharacter.caravan_guard_empire"
-           veteran_caravan_guard="NPCCharacter.veteran_caravan_guard_empire"
-           duel_preset="NPCCharacter.empire_duel_preset"
-           prison_guard="NPCCharacter.prison_guard_empire"
-           guard="NPCCharacter.guard_empire"
-           steward="NPCCharacter.steward_empire"
-           blacksmith="NPCCharacter.blacksmith_empire"
-           weaponsmith="NPCCharacter.weaponsmith_empire"
-           townswoman="NPCCharacter.townswoman_empire"
-           townswoman_infant="NPCCharacter.townswoman_infant_empire"
-           townswoman_child="NPCCharacter.townswoman_child_empire"
-           townswoman_teenager="NPCCharacter.townswoman_teenager_empire"
-           townsman="NPCCharacter.townsman_empire"
-           townsman_infant="NPCCharacter.townsman_infant_empire"
-           townsman_child="NPCCharacter.townsman_child_empire"
-           village_woman="NPCCharacter.village_woman_empire"
-           villager_male_child="NPCCharacter.villager_child_empire"
-           villager_male_teenager="NPCCharacter.villager_teenager_empire"
-           villager_female_child="NPCCharacter.village_woman_child_empire"
-           villager_female_teenager="NPCCharacter.village_woman_teenager_empire"
-           townsman_teenager="NPCCharacter.townsman_teenager_empire"
-           ransom_broker="NPCCharacter.ransom_broker_empire"
-           gangleader_bodyguard="NPCCharacter.gangleader_bodyguard_empire"
-           merchant_notary="NPCCharacter.merchant_notary_empire"
-           artisan_notary="NPCCharacter.artisan_notary_empire"
-           preacher_notary="NPCCharacter.preacher_notary_empire"
-           rural_notable_notary="NPCCharacter.rural_notable_notary_empire"
-           shop_worker="NPCCharacter.shop_worker_empire"
-           tavernkeeper="NPCCharacter.tavernkeeper_empire"
-           taverngamehost="NPCCharacter.taverngamehost_empire"
-           musician="NPCCharacter.musician_empire"
-           tavern_wench="NPCCharacter.tavern_wench_empire"
-           armorer="NPCCharacter.armorer_empire"
-           horseMerchant="NPCCharacter.horseMerchant_empire"
-           barber="NPCCharacter.barber_empire"
-           merchant="NPCCharacter.merchant_empire"
-           beggar="NPCCharacter.beggar_empire"
-           female_beggar="NPCCharacter.female_beggar_empire"
-           female_dancer="NPCCharacter.female_dancer_empire"
-           gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
-           weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
-           weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
-           weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
-           gear_dummy="NPCCharacter.gear_dummy_empire"
+           text="{=X0kKBzsW}WIP"
+           tournament_master="NPCCharacter.tournament_master_new_mandalorian"
+           villager="NPCCharacter.villager_new_mandalorian"
+           caravan_master="NPCCharacter.caravan_master_new_mandalorian"
+           armed_trader="NPCCharacter.armed_trader_new_mandalorian"
+           caravan_guard="NPCCharacter.caravan_guard_new_mandalorian"
+           veteran_caravan_guard="NPCCharacter.veteran_caravan_guard_new_mandalorian"
+           duel_preset="NPCCharacter.new_mandalorian_duel_preset"
+           prison_guard="NPCCharacter.prison_guard_new_mandalorian"
+           guard="NPCCharacter.guard_new_mandalorian"
+           steward="NPCCharacter.steward_new_mandalorian"
+           blacksmith="NPCCharacter.blacksmith_new_mandalorian"
+           weaponsmith="NPCCharacter.weaponsmith_new_mandalorian"
+           townswoman="NPCCharacter.townswoman_new_mandalorian"
+           townswoman_infant="NPCCharacter.townswoman_infant_new_mandalorian"
+           townswoman_child="NPCCharacter.townswoman_child_new_mandalorian"
+           townswoman_teenager="NPCCharacter.townswoman_teenager_new_mandalorian"
+           townsman="NPCCharacter.townsman_new_mandalorian"
+           townsman_infant="NPCCharacter.townsman_infant_new_mandalorian"
+           townsman_child="NPCCharacter.townsman_child_new_mandalorian"
+           village_woman="NPCCharacter.village_woman_new_mandalorian"
+           villager_male_child="NPCCharacter.villager_child_new_mandalorian"
+           villager_male_teenager="NPCCharacter.villager_teenager_new_mandalorian"
+           villager_female_child="NPCCharacter.village_woman_child_new_mandalorian"
+           villager_female_teenager="NPCCharacter.village_woman_teenager_new_mandalorian"
+           townsman_teenager="NPCCharacter.townsman_teenager_new_mandalorian"
+           ransom_broker="NPCCharacter.ransom_broker_new_mandalorian"
+           gangleader_bodyguard="NPCCharacter.gangleader_bodyguard_new_mandalorian"
+           merchant_notary="NPCCharacter.merchant_notary_new_mandalorian"
+           artisan_notary="NPCCharacter.artisan_notary_new_mandalorian"
+           preacher_notary="NPCCharacter.preacher_notary_new_mandalorian"
+           rural_notable_notary="NPCCharacter.rural_notable_notary_new_mandalorian"
+           shop_worker="NPCCharacter.shop_worker_new_mandalorian"
+           tavernkeeper="NPCCharacter.tavernkeeper_new_mandalorian"
+           taverngamehost="NPCCharacter.taverngamehost_new_mandalorian"
+           musician="NPCCharacter.musician_new_mandalorian"
+           tavern_wench="NPCCharacter.tavern_wench_new_mandalorian"
+           armorer="NPCCharacter.armorer_new_mandalorian"
+           horseMerchant="NPCCharacter.horseMerchant_new_mandalorian"
+           barber="NPCCharacter.barber_new_mandalorian"
+           merchant="NPCCharacter.merchant_new_mandalorian"
+           beggar="NPCCharacter.beggar_new_mandalorian"
+           female_beggar="NPCCharacter.female_beggar_new_mandalorian"
+           female_dancer="NPCCharacter.female_dancer_new_mandalorian"
+           gear_practice_dummy="NPCCharacter.gear_practice_dummy_new_mandalorian"
+           weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_new_mandalorian"
+           weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_new_mandalorian"
+           weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_new_mandalorian"
+           gear_dummy="NPCCharacter.gear_dummy_new_mandalorian"
            board_game_type="Tablut">
     <male_names>
       <name name="{=aeLgc0cU}Acthon" />
@@ -234,6 +234,48 @@
       <name name="{=oGf1fUpP}Vizsla" />
       <name name="{=AeNqteUX}Wren" />
     </clan_names>
+	<possible_clan_banner_icon_ids>
+      <icon id="100" />
+      <icon id="101" />
+      <icon id="102" />
+      <icon id="103" />
+      <icon id="104" />
+      <icon id="105" />
+      <icon id="106" />
+      <icon id="107" />
+      <icon id="108" />
+      <icon id="109" />
+      <icon id="110" />
+      <icon id="119" />
+      <icon id="147" />
+      <icon id="148" />
+      <icon id="152" />
+      <icon id="200" />
+      <icon id="201" />
+      <icon id="202" />
+      <icon id="203" />
+      <icon id="204" />
+      <icon id="205" />
+      <icon id="206" />
+      <icon id="207" />
+      <icon id="208" />
+      <icon id="209" />
+      <icon id="210" />
+      <icon id="211" />
+      <icon id="212" />
+      <icon id="213" />
+      <icon id="214" />
+      <icon id="215" />
+      <icon id="216" />
+      <icon id="217" />
+      <icon id="218" />
+      <icon id="219" />
+      <icon id="220" />
+      <icon id="221" />
+      <icon id="222" />
+      <icon id="223" />
+      <icon id="400" />
+    </possible_clan_banner_icon_ids>
     <tournament_team_templates_one_participant>
       <template name="NPCCharacter.tournament_template_empire_one_participant_set_v1" />
     </tournament_team_templates_one_participant>
@@ -271,7 +313,7 @@
            prosperity_bonus="1"
            encounter_background_mesh="encounter_empire"
            default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
-           text="{=X0kKBzsW}Mandalore was a planet located in the Outer Rim Territories. It was the homeworld of the Mandalorians, a fearsome and warmongering people who fought the Jedi and raided their temple during the fall of the Old Republic. Wearing distinctive armor, they were feared throughout the galaxy, and had political influence over two thousand other star systems. "
+           text="{=X0kKBzsW}The Calradians are the people of the Empire, though by now they have given their name to the entire continent which they dominate. A thousand years ago, they were an undistinguished tribe living in the hill country between the southern sea and the Battanian woods. One tradition set them apart from their neighbors - the Calradoi had no kings. Their citizenry has always taken an intense interest in the art of self-government, the balance between protecting the liberty of individuals and the needs of the state. Perhaps this is why they had a slight edge in the endless wars between one town and another, keeping armies in the field just a little longer, bouncing back just a little more quickly from a defeat. Some of their neighbors federated with them; others were overrun. Eventually the Calradians formed an empire, which evolved into a monarchy in all but name. Their leaders are no longer distinguished civic elders but great landholders scattered across the continent; the striking force of their armies is no longer citizen-infantry but heavily armored cataphracts in the retinues of the wealthy. But they still take their civic traditions very seriously, believing that the Calradian ideal can unite a continent in peace, if only the ”barbarians” beyond their borders would agree to submit to it."
            tournament_master="NPCCharacter.tournament_master_empire"
            villager="NPCCharacter.villager_empire"
            caravan_master="NPCCharacter.caravan_master_empire"
@@ -483,6 +525,48 @@
       <name name="{=oGf1fUpP}Vizsla" />
       <name name="{=AeNqteUX}Wren" />
     </clan_names>
+	<possible_clan_banner_icon_ids>
+      <icon id="100" />
+      <icon id="101" />
+      <icon id="102" />
+      <icon id="103" />
+      <icon id="104" />
+      <icon id="105" />
+      <icon id="106" />
+      <icon id="107" />
+      <icon id="108" />
+      <icon id="109" />
+      <icon id="110" />
+      <icon id="119" />
+      <icon id="147" />
+      <icon id="148" />
+      <icon id="152" />
+      <icon id="200" />
+      <icon id="201" />
+      <icon id="202" />
+      <icon id="203" />
+      <icon id="204" />
+      <icon id="205" />
+      <icon id="206" />
+      <icon id="207" />
+      <icon id="208" />
+      <icon id="209" />
+      <icon id="210" />
+      <icon id="211" />
+      <icon id="212" />
+      <icon id="213" />
+      <icon id="214" />
+      <icon id="215" />
+      <icon id="216" />
+      <icon id="217" />
+      <icon id="218" />
+      <icon id="219" />
+      <icon id="220" />
+      <icon id="221" />
+      <icon id="222" />
+      <icon id="223" />
+      <icon id="400" />
+    </possible_clan_banner_icon_ids>
     <tournament_team_templates_one_participant>
       <template name="NPCCharacter.tournament_template_empire_one_participant_set_v1" />
     </tournament_team_templates_one_participant>
