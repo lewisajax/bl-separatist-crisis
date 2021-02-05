@@ -111,7 +111,21 @@
         <GameType value = "Campaign"/>
         <GameType value = "CampaignStoryMode"/>
       </IncludedGameTypes>
-    </XmlNode>  
+    </XmlNode>
+		<XmlNode>                
+      <XmlName id="NPCCharacters" path="mando_npccharacters"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>
+	<XmlNode>                
+      <XmlName id="NPCCharacters" path="mando_troops"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>
     <XmlNode>
       <XmlName id="SPCultures" path="mando_culture"/>
       <IncludedGameTypes>

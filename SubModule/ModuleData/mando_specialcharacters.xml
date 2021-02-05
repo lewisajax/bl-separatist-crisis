@@ -1,10 +1,270 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NPCCharacters>
-  <NPCCharacter id="spc_notable_example_0" name="{=Pk29f1iX}Cautious example merchant" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+<!--Townsman -->
+  <NPCCharacter id="child_template_new_mandalorian_townsman_male" name="{=!}Mandalorian Child Townsman Male" age="6" is_child_template="true" is_female="false" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.mando_new_culture">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.villager_empire" />
     </face>
-    <!--<Hero id="spc_notable_example_0" faction="Kingdom.example_kingdom" />-->
+    <Equipments>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.fine_town_tunic" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.footmans_tunic" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentSet id="emp_bat_template_medium" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="child_template_new_mandalorian_townsman_female" name="{=!}Mandalorian Child Townsman Female" age="6" is_child_template="true" is_female="true" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.mando_new_culture">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Equipments>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.fine_town_tunic" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.footmans_tunic" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentSet id="emp_bat_template_medium" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="teenager_template_new_mandalorian_townsman_female" name="{=!}Mandalorian Teenager Townsman Female" age="14" is_child_template="true" is_female="true" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.mando_new_culture">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Equipments>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Head" id="Item.head_piece" />
+        <equipment slot="Body" id="Item.empire_dress_b" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.leather_apron" />
+        <equipment slot="Leg" id="Item.fine_town_boots" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Head" id="Item.head_scarf" />
+        <equipment slot="Body" id="Item.vlandian_dress" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.aserai_female_civil_a" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentSet id="emp_bat_template_medium" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="teenager_template_new_mandalorian_townsman_male" name="{=!}Mandalorian Teenager Townsman Male" age="14" is_child_template="true" is_female="false" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.mando_new_culture">
+    <face>
+      <face_key_template value="BodyProperty.villager_empire" />
+    </face>
+    <Equipments>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.leather_apron" />
+        <equipment slot="Leg" id="Item.fine_town_boots" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.fine_town_tunic" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.footmans_tunic" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.tunic_with_rolled_cloth" />
+        <equipment slot="Leg" id="Item.fine_town_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="emp_bat_template_medium" />
+    </Equipments>
+  </NPCCharacter>
+  <!--Villager -->
+  <NPCCharacter id="child_template_new_mandalorian_villager_male" name="{=!}Mandalorian Child Villager Male" age="6" is_child_template="true" is_female="false" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.mando_new_culture">
+    <face>
+      <face_key_template value="BodyProperty.villager_empire" />
+    </face>
+    <Equipments>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.bandit_leather_water_flask" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.footmans_tunic" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.peasant_costume" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentSet id="emp_bat_template_medium" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="child_template_new_mandalorian_villager_female" name="{=!}Mandalorian Child Villager Female" age="6" is_child_template="true" is_female="true" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.mando_new_culture">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Equipments>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.bandit_leather_water_flask" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.footmans_tunic" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.peasant_costume" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentSet id="emp_bat_template_medium" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="teenager_template_new_mandalorian_villager_male" name="{=!}Mandalorian Teenager Villager Male" age="14" is_child_template="true" is_female="false" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.mando_new_culture">
+    <face>
+      <face_key_template value="BodyProperty.villager_empire" />
+    </face>
+    <Equipments>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.layered_leather_tunic" />
+        <equipment slot="Leg" id="Item.strapped_shoes" />
+        <equipment slot="Gloves" id="Item.buttoned_leather_bracers" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.legionary_mail" />
+        <equipment slot="Cape" id="Item.pauldron_cape_a" />
+        <equipment slot="Leg" id="Item.plated_strip_boots" />
+        <equipment slot="Gloves" id="Item.reinforced_padded_mitten" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.buckled_wildsman_armor" />
+        <equipment slot="Leg" id="Item.turndown_leather_boots" />
+        <equipment slot="Gloves" id="Item.roughtied_leather_bracers" />
+      </EquipmentRoster>
+      <EquipmentSet id="emp_bat_template_medium" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="teenager_template_new_mandalorian_villager_female" name="{=!}Mandalorian Teenager Villager Female" age="14" is_child_template="true" is_female="true" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.mando_new_culture">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Equipments>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Head" id="Item.imperial_cloth_coif" />
+        <equipment slot="Body" id="Item.long_woolen_tunic" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Head" id="Item.head_scarf" />
+        <equipment slot="Body" id="Item.vlandian_dress" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.aserai_female_civil_a" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentSet id="emp_bat_template_medium" />
+    </Equipments>
+  </NPCCharacter>
+  <!--Noble -->
+  <NPCCharacter id="child_template_new_mandalorian_noble_male" name="{=!}Mandalorian Child Noble Male" age="6" is_child_template="true" is_female="false" default_group="Infantry" is_hero="false" occupation="Lord" culture="Culture.mando_new_culture">
+    <face>
+      <face_key_template value="BodyProperty.villager_empire" />
+    </face>
+    <Equipments>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.tunic_with_rolled_cloth" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.tunic_with_rolled_cloth" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.fine_town_tunic" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentSet id="emp_bat_template_medium" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="child_template_new_mandalorian_noble_female" name="{=!}Mandalorian Child Noble Female" is_child_template="true" age="6" is_female="true" default_group="Infantry" is_hero="false" occupation="Lord" culture="Culture.mando_new_culture">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Equipments>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.empire_dress" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.tunic_with_rolled_cloth" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.fine_town_tunic" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentSet id="emp_bat_template_medium" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="teenager_template_new_mandalorian_noble_male" name="{=!}Mandalorian Teenager Noble Male" is_child_template="true" age="14" is_female="true" default_group="Infantry" is_hero="false" occupation="Lord" culture="Culture.mando_new_culture">
+    <face>
+      <face_key_template value="BodyProperty.villager_empire" />
+    </face>
+    <Equipments>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.tunic_with_rolled_cloth" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.fine_town_tunic" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.imperial_robes" />
+        <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.legionary_mail" />
+        <equipment slot="Cape" id="Item.pauldron_cape_a" />
+        <equipment slot="Leg" id="Item.plated_strip_boots" />
+        <equipment slot="Gloves" id="Item.reinforced_padded_mitten" />
+      </EquipmentRoster>
+      <EquipmentSet id="emp_bat_template_medium" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="teenager_template_new_mandalorian_noble_female" name="{=!}Mandalorian Teenager Noble Female" is_child_template="true" age="14" is_female="false" default_group="Infantry" is_hero="false" occupation="Lord" culture="Culture.mando_new_culture">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Equipments>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.empire_dress" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Body" id="Item.aserai_female_civil_a" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Head" id="Item.head_scarf" />
+        <equipment slot="Body" id="Item.vlandian_dress" />
+        <equipment slot="Leg" id="Item.ladys_shoe" />
+      </EquipmentRoster>
+      <EquipmentSet id="emp_bat_template_medium" />
+    </Equipments>
+  </NPCCharacter>
+  
+  <!-- Worldly imperial merchant -->
+  <NPCCharacter id="spc_notable_new_mandalorian_0" name="{=!}Cautious mandalorian merchant" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_empire" />
+    </face>
+    <!--<Hero id="spc_notable_empire_0" faction="Kingdom.empire" />-->
     <skills></skills>
     <Traits>
       <Trait id="GentryEquipment" value="1" />
@@ -12,12 +272,16 @@
       <Trait id="Valor" value="-1" />
       <Trait id="Calculating" value="1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_0b" name="{=bgH96Pqw}{FIRSTNAME} the Vintner" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+  <NPCCharacter id="spc_notable_new_mandalorian_0b" name="{=!}{FIRSTNAME} the Vintner" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Merchant">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.villager_empire" />
     </face>
-    <!--<Hero id="spc_notable_example_0b" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_notable_empire_0b" faction="Kingdom.empire" />-->
     <skills></skills>
     <Traits>
       <Trait id="GentryEquipment" value="1" />
@@ -26,10 +290,14 @@
       <Trait id="Valor" value="-1" />
       <Trait id="Calculating" value="1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_1" name="{=iAjo65QR}example merchant 3, ruthless" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+  <NPCCharacter id="spc_notable_new_mandalorian_1" name="{=!}Mandalorian merchant 3, ruthless" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Merchant">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.villager_empire" />
     </face>
     <Traits>
       <Trait id="RomanHair" value="1" />
@@ -37,10 +305,14 @@
       <Trait id="Generosity" value="-1" />
       <Trait id="Calculating" value="1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_1b" name="{=JmtSy9Nz}Cold example merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+  <NPCCharacter id="spc_notable_new_mandalorian_1b" name="{=!}Cold mandalorian merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Merchant">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.villager_empire" />
     </face>
     <Traits>
       <Trait id="RomanHair" value="1" />
@@ -49,10 +321,14 @@
       <Trait id="Generosity" value="-1" />
       <Trait id="Calculating" value="1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_2" name="{=waA4ph2S}{FIRSTNAME} the Saltpanner" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+  <NPCCharacter id="spc_notable_new_mandalorian_2" name="{=!}{FIRSTNAME} the Saltpanner" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Merchant">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.villager_empire" />
     </face>
     <Traits>
       <Trait id="RomanHair" value="1" />
@@ -60,10 +336,14 @@
       <Trait id="Valor" value="-1" />
       <Trait id="Calculating" value="1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_2b" name="{=Y8h6CeMY}example merchant 6, cautious" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+  <NPCCharacter id="spc_notable_new_mandalorian_2b" name="{=!}Mandalorian merchant 6, cautious" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Merchant">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.villager_empire" />
     </face>
     <Traits>
       <Trait id="RomanHair" value="1" />
@@ -72,21 +352,29 @@
       <Trait id="Valor" value="-1" />
       <Trait id="Calculating" value="1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
   <!-- Can be acater -->
-  <NPCCharacter id="spc_notable_example_3" name="{=reXz8NlZ}example merchant 7, selfmade" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+  <NPCCharacter id="spc_notable_new_mandalorian_3" name="{=!}Mandalorian merchant 7, selfmade" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Merchant">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.villager_empire" />
     </face>
     <Traits>
       <Trait id="GentryEquipment" value="1" />
       <Trait id="RomanHair" value="1" />
       <Trait id="Calculating" value="1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_3b" name="{=NdhGw6eA}example merchant 8, jocular" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+  <NPCCharacter id="spc_notable_new_mandalorian_3b" name="{=!}Mandalorian merchant 8, jocular" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Merchant">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.villager_empire" />
     </face>
     <Traits>
       <Trait id="RomanHair" value="1" />
@@ -94,10 +382,14 @@
       <Trait id="Commander" value="2" />
       <Trait id="Calculating" value="1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_4" name="{=zkoc5QaI}example merchant 9, heiress" voice="curt" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+  <NPCCharacter id="spc_notable_new_mandalorian_4" name="{=!}Mandalorian merchant 9, heiress" voice="curt" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Merchant">
     <face>
-      <face_key_template value="NPCCharacter.townswoman_empire" />
+      <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
     <Traits>
       <Trait id="RomanHair" value="1" />
@@ -105,10 +397,14 @@
       <Trait id="Valor" value="-1" />
       <Trait id="Calculating" value="1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_4b" name="{=f6nE1Qx2}example merchant 10, devious" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Merchant">
+  <NPCCharacter id="spc_notable_new_mandalorian_4b" name="{=!}Mandalorian merchant 10, devious" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Merchant">
     <face>
-      <face_key_template value="NPCCharacter.townswoman_empire" />
+      <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
     <Traits>
       <Trait id="RomanHair" value="1" />
@@ -118,101 +414,94 @@
       <Trait id="Honor" value="-1" />
       <Trait id="Calculating" value="1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_5" name="{=gYNfal30}Messianic example preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Preacher">
+  <NPCCharacter id="spc_notable_new_mandalorian_5" name="{=!}Messianic mandalorian preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Preacher">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.villager_empire" />
     </face>
-    <!--<Hero id="spc_notable_example_5" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_notable_empire_5" faction="Kingdom.empire" />-->
     <Traits>
       <Trait id="RomanHair" value="1" />
       <Trait id="Honor" value="1" />
       <Trait id="Generosity" value="1" />
     </Traits>
-    <equipmentSet>
-      <equipment slot="Item0" id="Item.empire_sword_1_t2" />
-      <equipment slot="Body" id="Item.monk_robe" />
-      <equipment slot="Leg" id="Item.strapped_shoes" />
-    </equipmentSet>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+      <EquipmentSet id="spc_notable_empire_5" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_6" name="{=T5O2nOfg}Puritan example preacher" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Preacher">
+  <NPCCharacter id="spc_notable_new_mandalorian_6" name="{=!}Puritan mandalorian preacher" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Preacher">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.villager_empire" />
     </face>
-    <!--<Hero id="spc_notable_example_6" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_notable_empire_6" faction="Kingdom.empire" />-->
     <skills></skills>
     <Traits>
       <Trait id="RomanHair" value="1" />
       <Trait id="Honor" value="1" />
       <Trait id="Generosity" value="-1" />
     </Traits>
-    <equipmentSet>
-      <equipment slot="Item0" id="Item.empire_sword_1_t2" />
-      <equipment slot="Body" id="Item.monk_robe" />
-      <equipment slot="Leg" id="Item.strapped_shoes" />
-    </equipmentSet>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+      <EquipmentSet id="spc_notable_empire_6" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_7" name="{=KAdVmQc5}Female example mystic" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Preacher">
+  <NPCCharacter id="spc_notable_new_mandalorian_7" name="{=!}Female mandalorian mystic" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.mando_new_culture" occupation="Preacher">
     <face>
-      <face_key_template value="NPCCharacter.townswoman_empire" />
+      <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
     <Traits>
       <Trait id="RomanHair" value="1" />
       <Trait id="Mercy" value="1" />
       <Trait id="Generosity" value="0" />
     </Traits>
-    <equipmentSet>
-      <equipment slot="Item0" id="Item.empire_sword_1_t2" />
-      <equipment slot="Body" id="Item.monk_robe" />
-      <equipment slot="Leg" id="Item.strapped_shoes" />
-    </equipmentSet>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+      <EquipmentSet id="spc_notable_empire_7" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_8" name="{=Xa2WYyjx}example gruff labor leader" voice="curt" is_template="true" default_group="Infantry" is_female="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Artisan">
+  <NPCCharacter id="spc_notable_new_mandalorian_8" name="{=!}Mandalorian gruff labor leader" voice="curt" is_template="true" default_group="Infantry" is_female="false" culture="Culture.mando_new_culture" occupation="Artisan">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.villager_empire" />
     </face>
     <Traits>
       <Trait id="RomanHair" value="1" />
       <Trait id="Generosity" value="1" />
     </Traits>
-    <equipmentSet>
-      <equipment slot="Item0" id="Item.empire_sword_4_t4" />
-      <equipment slot="Body" id="Item.tied_cloth_tunic" />
-      <equipment slot="Leg" id="Item.leather_shoes" />
-    </equipmentSet>
-    <equipmentSet>
-      <equipment slot="Item0" id="Item.empire_sword_4_t4" />
-      <equipment slot="Body" id="Item.tunic_with_rolled_cloth" />
-      <equipment slot="Leg" id="Item.leather_boots" />
-    </equipmentSet>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+      <EquipmentSet id="spc_notable_empire_8" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_9" name="{=EFrbyeN5}example outgoing labor leader" voice="earnest" is_template="true" default_group="Infantry" is_female="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Artisan">
+  <NPCCharacter id="spc_notable_new_mandalorian_9" name="{=!}Mandalorian outgoing labor leader" voice="earnest" is_template="true" default_group="Infantry" is_female="false" culture="Culture.mando_new_culture" occupation="Artisan">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.fighter_empire" />
     </face>
-    <!--<Hero id="spc_notable_example_9" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_notable_empire_9" faction="Kingdom.empire" />-->
     <skills></skills>
     <Traits>
       <Trait id="RomanHair" value="1" />
       <Trait id="Generosity" value="1" />
     </Traits>
-    <equipmentSet>
-      <equipment slot="Item0" id="Item.empire_sword_4_t4" />
-      <equipment slot="Body" id="Item.tied_cloth_tunic" />
-      <equipment slot="Leg" id="Item.leather_shoes" />
-    </equipmentSet>
-    <equipmentSet>
-      <equipment slot="Item0" id="Item.empire_sword_4_t4" />
-      <equipment slot="Head" id="Item.leather_cap" />
-      <equipment slot="Body" id="Item.tunic_with_shoulder_pads" />
-      <equipment slot="Leg" id="Item.strapped_shoes" />
-    </equipmentSet>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+      <EquipmentSet id="spc_notable_empire_9" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_gl1" name="{=5XAnvlxe}Protective example male gang leader" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="GangLeader">
+  <NPCCharacter id="spc_notable_new_mandalorian_gl1" name="{=!}Protective mandalorian male gang leader" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="GangLeader">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.fighter_empire" />
     </face>
-    <!--<Hero id="spc_notable_example_10" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_notable_empire_10" faction="Kingdom.empire" />-->
     <skills></skills>
     <Traits>
       <Trait id="WandererEquipment" value="1" />
@@ -221,12 +510,16 @@
       <Trait id="Generosity" value="1" />
       <Trait id="Honor" value="-1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_10" name="{=N6aatixp}Ironic example gang leader" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="GangLeader">
+  <NPCCharacter id="spc_notable_new_mandalorian_10" name="{=!}Ironic mandalorian gang leader" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="GangLeader">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.fighter_empire" />
     </face>
-    <!--<Hero id="spc_notable_example_10" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_notable_empire_10" faction="Kingdom.empire" />-->
     <skills></skills>
     <Traits>
       <Trait id="WandererEquipment" value="1" />
@@ -235,12 +528,16 @@
       <Trait id="Calculating" value="1" />
       <Trait id="Mercy" value="-1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_11" name="{=GaakYUTl}Intimidating male example gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="GangLeader">
+  <NPCCharacter id="spc_notable_new_mandalorian_11" name="{=!}Intimidating male mandalorian gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="GangLeader">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.fighter_empire" />
     </face>
-    <!--<Hero id="spc_notable_example_11" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_notable_empire_11" faction="Kingdom.empire" />-->
     <skills></skills>
     <Traits>
       <Trait id="WandererEquipment" value="1" />
@@ -249,12 +546,16 @@
       <Trait id="Generosity" value="-1" />
       <Trait id="Mercy" value="-1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_gl4" name="{=VaN2tRyU}Bestial male example gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="GangLeader">
+  <NPCCharacter id="spc_notable_new_mandalorian_gl4" name="{=!}Bestial male mandalorian gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="GangLeader">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.fighter_empire" />
     </face>
-    <!--<Hero id="spc_notable_example_11" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_notable_empire_11" faction="Kingdom.empire" />-->
     <skills></skills>
     <Traits>
       <Trait id="WandererEquipment" value="1" />
@@ -263,24 +564,32 @@
       <Trait id="Mercy" value="-1" />
       <Trait id="Calculating" value="-1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_12" name="{=Alc7wRB0}Female example gang leader" voice="ironic" is_template="true" is_female="true" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="GangLeader" default_group="Infantry">
+  <NPCCharacter id="spc_notable_new_mandalorian_12" name="{=!}Female mandalorian gang leader" voice="ironic" is_template="true" is_female="true" culture="Culture.mando_new_culture" occupation="GangLeader" default_group="Infantry">
     <face>
-      <face_key_template value="NPCCharacter.townswoman_empire" />
+      <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
-    <!--<Hero id="spc_notable_example_12" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_notable_empire_12" faction="Kingdom.empire" />-->
     <Traits>
       <Trait id="WandererEquipment" value="1" />
       <Trait id="RomanHair" value="1" />
       <Trait id="Valor" value="1" />
       <Trait id="Honor" value="-1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_13" name="{=TmYMCahH}Menacing female example gang leader" voice="softspoken" is_template="true" is_female="true" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="GangLeader" default_group="Infantry">
+  <NPCCharacter id="spc_notable_new_mandalorian_13" name="{=!}Menacing female mandalorian gang leader" voice="softspoken" is_template="true" is_female="true" culture="Culture.mando_new_culture" occupation="GangLeader" default_group="Infantry">
     <face>
-      <face_key_template value="NPCCharacter.townswoman_empire" />
+      <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
-    <!--<Hero id="spc_notable_example_13" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_notable_empire_13" faction="Kingdom.empire" />-->
     <Traits>
       <Trait id="WandererEquipment" value="1" />
       <Trait id="RomanHair" value="1" />
@@ -288,10 +597,14 @@
       <Trait id="Generosity" value="-1" />
       <Trait id="Mercy" value="-1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_21" name="{=AUT4gHMP}example gruff rural notable" voice="curt" is_template="true" default_group="Infantry" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="RuralNotable">
+  <NPCCharacter id="spc_notable_new_mandalorian_21" name="{=!}Mandalorian gruff rural notable" voice="curt" is_template="true" default_group="Infantry" culture="Culture.mando_new_culture" occupation="RuralNotable">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.villager_empire" />
       <!--<hair_tags>
         <hair_tag name ="Tousled"/>
       </hair_tags>
@@ -301,16 +614,20 @@
         <beard_tag name ="HeavyShortBeard"/>
       </beard_tags>-->
     </face>
-    <!--<Hero id="spc_notable_example_21" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_notable_empire_21" faction="Kingdom.empire" />-->
     <Traits>
       <Trait id="WandererEquipment" value="1" />
       <Trait id="RomanHair" value="1" />
       <Trait id="Calculating" value="1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_example_22" name="{=wXOz68g0}example rural notable agreeable" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="RuralNotable">
+  <NPCCharacter id="spc_notable_new_mandalorian_22" name="{=!}Mandalorian rural notable agreeable" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.mando_new_culture" occupation="RuralNotable">
     <face>
-      <face_key_template value="NPCCharacter.townsman_empire" />
+      <face_key_template value="BodyProperty.townsman_empire" />
       <!--<hair_tags>
         <hair_tag name ="Tousled"/>
       </hair_tags>
@@ -319,18 +636,22 @@
         <beard_tag name ="HeavyShortBeard"/>
       </beard_tags>-->
     </face>
-    <!--<Hero id="spc_notable_example_22" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_notable_empire_22" faction="Kingdom.empire" />-->
     <Traits>
       <Trait id="GentryEquipment" value="1" />
       <Trait id="RomanHair" value="1" />
       <Trait id="Honor" value="1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_example_outlaw_1" name="{=5vCmUC9b}example bold outlaw" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Outlaw">
+  <NPCCharacter id="spc_new_mandalorian_outlaw_1" name="{=!}Mandalorian bold outlaw" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Outlaw">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.fighter_empire" />
     </face>
-    <!--<Hero id="spc_example_outlaw_1" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_empire_outlaw_1" faction="Kingdom.empire" />-->
     <Traits>
       <Trait id="WandererEquipment" value="1" />
       <Trait id="RomanHair" value="1" />
@@ -338,53 +659,73 @@
       <Trait id="Honor" value="-1" />
       <Trait id="Generosity" value="1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_example_outlaw_2" name="{=5SEtj5Nl}example menacing outlaw" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Outlaw">
+  <NPCCharacter id="spc_new_mandalorian_outlaw_2" name="{=!}Mandalorian menacing outlaw" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Outlaw">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.fighter_empire" />
     </face>
-    <!--<Hero id="spc_example_outlaw_2" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_empire_outlaw_2" faction="Kingdom.empire" />-->
     <Traits>
       <Trait id="WandererEquipment" value="1" />
       <Trait id="RomanHair" value="1" />
       <Trait id="Mercy" value="-1" />
       <Trait id="Calculating" value="1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_example_headman_1" name="{=d8r7iu0Z}example rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Headman">
+  <NPCCharacter id="spc_new_mandalorian_headman_1" name="{=!}Mandalorian rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Headman">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.fighter_empire" />
     </face>
-    <!--<Hero id="spc_notable_example_4" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_notable_empire_4" faction="Kingdom.empire" />-->
     <skills></skills>
     <Traits>
       <Trait id="RomanHair" value="1" />
       <Trait id="Valor" value="1" />
       <Trait id="Calculating" value="-1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_example_headman_2" name="{=PbPzMmbV}example conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Headman">
+  <NPCCharacter id="spc_new_mandalorian_headman_2" name="{=!}Mandalorian conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Headman">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.villager_empire" />
     </face>
-    <!--<Hero id="spc_notable_example_4" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_notable_empire_4" faction="Kingdom.empire" />-->
     <skills></skills>
     <Traits>
       <Trait id="RomanHair" value="1" />
       <Trait id="Valor" value="-1" />
       <Trait id="Generosity" value="1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_example_headman_3" name="{=tuRVmKIE}example devious headman" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_culture" battleTemplate="NPCCharacter.npc_armed_wanderer_equipment_template_empire" civilianTemplate="NPCCharacter.npc_wanderer_equipment_template_empire" occupation="Headman">
+  <NPCCharacter id="spc_new_mandalorian_headman_3" name="{=!}Mandalorian devious headman" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mando_new_culture" occupation="Headman">
     <face>
-      <face_key_template value="NPCCharacter.villager_empire" />
+      <face_key_template value="BodyProperty.villager_empire" />
     </face>
-    <!--<Hero id="spc_notable_example_4" faction="Kingdom.example_kingdom" />-->
+    <!--<Hero id="spc_notable_empire_4" faction="Kingdom.empire" />-->
     <skills></skills>
     <Traits>
       <Trait id="RomanHair" value="1" />
       <Trait id="Calculating" value="1" />
       <Trait id="Honor" value="-1" />
     </Traits>
+    <Equipments>
+      <EquipmentSet id="npc_armed_wanderer_equipment_template_empire" />
+      <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
+    </Equipments>
   </NPCCharacter>
 </NPCCharacters>
