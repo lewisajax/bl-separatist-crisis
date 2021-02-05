@@ -31,6 +31,8 @@
 			<GameType value = "CampaignStoryMode"/>
 		</IncludedGameTypes>
 	</XmlNode>
+	  
+<!--	  
 	<XmlNode>                
 		<XmlName id="Kingdoms" path="republic_kingdom"/>
 		<IncludedGameTypes>
@@ -73,6 +75,8 @@
 			<GameType value = "CampaignStoryMode"/>
 		</IncludedGameTypes>
 	</XmlNode>
+-->
+	  
 	<XmlNode>	
 		<XmlName id="NPCCharacters" path="mando_lords"/>
 		<IncludedGameTypes>
