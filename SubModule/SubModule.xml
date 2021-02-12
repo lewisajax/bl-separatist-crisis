@@ -73,6 +73,7 @@
 			<GameType value = "CampaignStoryMode"/>
 		</IncludedGameTypes>
 	</XmlNode>
+<!--	Mandalorians	-->	
 	<XmlNode>	
 		<XmlName id="NPCCharacters" path="mando_lords"/>
 		<IncludedGameTypes>
@@ -124,6 +125,63 @@
     </XmlNode>
     <XmlNode>
       <XmlName id="SPCultures" path="mando_culture"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>	
+<!--	Separatists		-->
+	<XmlNode>	
+		<XmlName id="NPCCharacters" path="separatist_lords"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+	</XmlNode>		
+	<XmlNode>
+		<XmlName id="Heroes" path="separatist_heroes"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+	</XmlNode>
+	<XmlNode>
+		<XmlName id="Factions" path="separatist_clans"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+    </XmlNode>
+	<XmlNode>
+		<XmlName id="Kingdoms" path="separatist_kingdom"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+    </XmlNode>
+	<XmlNode>                
+      <XmlName id="NPCCharacters" path="separatist_specialcharacters"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>
+		<XmlNode>                
+      <XmlName id="NPCCharacters" path="separatist_npccharacters"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>
+	<XmlNode>                
+      <XmlName id="NPCCharacters" path="separatist_troops"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="SPCultures" path="separatist_culture"/>
       <IncludedGameTypes>
         <GameType value = "Campaign"/>
         <GameType value = "CampaignStoryMode"/>

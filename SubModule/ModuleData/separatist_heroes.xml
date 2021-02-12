@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Heroes>
+  <Hero id="count_dooku" is_noble="true" faction="Faction.alliance_clan" text="{=alliance_hero_2_text}Count Dooku is the leader of the Separatist Alliance" />
+</Heroes>
