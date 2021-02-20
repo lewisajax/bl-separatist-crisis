@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NPCCharacters>
-  <NPCCharacter id="republic_hero_1" name="{=satname}Palpatine" age="61" voice="earnest" default_group="Cavalry" is_hero="true" culture="Culture.republic" occupation="Lord">
+  <NPCCharacter id="republic_hero_1" name="{=satname}Palpatine" age="61" voice="earnest" default_group="Cavalry" is_hero="true" culture="Culture.republic_culture" occupation="Lord">
     <face>
       <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
@@ -22,10 +22,10 @@
       <EquipmentSet id="emp_civ_template_stoic" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  
+  <!--
   <NPCCharacter id="alliance_hero_1" name="{=bokname}Dooku" age="56" voice="earnest" default_group="Cavalry" is_hero="true" culture="Culture.alliance" occupation="Lord">
     <face>
-      <!--face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /-->
+      face_key value="000c63f1807c334db83cd2ed113114608a3c9abb76a6ba5456630141aaa69958000714bfae1d2189000000000000000000000000000000000000000000002183" /
       <BodyProperties version="4" key="000B6001407C334DB83CD2ED113614608A3C9ABB76A6BA5456630141AAA69958000764BA0E1D2189000000000000000000000000000000000000000001182184" />
     </face>
     <Traits>
@@ -45,6 +45,6 @@
       <EquipmentSet id="emp_civ_template_stoic" civilian="true" />
     </Equipments>
   </NPCCharacter>
-
+-->
 </NPCCharacters>
 

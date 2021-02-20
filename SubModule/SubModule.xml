@@ -31,7 +31,29 @@
 			<GameType value = "CampaignStoryMode"/>
 		</IncludedGameTypes>
 	</XmlNode>
-	<XmlNode>                
+
+	  <XmlNode>
+		  <XmlName id="NPCCharacters" path="republic_lords"/>
+		  <IncludedGameTypes>
+			  <GameType value = "Campaign"/>
+			  <GameType value = "CampaignStoryMode"/>
+		  </IncludedGameTypes>
+	  </XmlNode>
+	  <XmlNode>
+		  <XmlName id="Heroes" path="republic_heroes"/>
+		  <IncludedGameTypes>
+			  <GameType value = "Campaign"/>
+			  <GameType value = "CampaignStoryMode"/>
+		  </IncludedGameTypes>
+	  </XmlNode>
+	  <XmlNode>
+		  <XmlName id="Factions" path="republic_clans"/>
+		  <IncludedGameTypes>
+			  <GameType value = "Campaign"/>
+			  <GameType value = "CampaignStoryMode"/>
+		  </IncludedGameTypes>
+	  </XmlNode>
+	  <XmlNode>                
 		<XmlName id="Kingdoms" path="republic_kingdom"/>
 		<IncludedGameTypes>
 			<GameType value = "Campaign"/>
@@ -46,33 +68,29 @@
       </IncludedGameTypes>
     </XmlNode>         
 	<XmlNode>                
+      <XmlName id="NPCCharacters" path="republic_npccharacters"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>
+	<XmlNode>                
+      <XmlName id="NPCCharacters" path="republic_troops"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>
+	<XmlNode>                
 		<XmlName id="SPCultures" path="republic_culture"/>
 		<IncludedGameTypes>
 			<GameType value = "Campaign"/>
 			<GameType value = "CampaignStoryMode"/>
 		</IncludedGameTypes>
 	</XmlNode> 
-	<XmlNode>	
-		<XmlName id="NPCCharacters" path="republic_lords"/>
-		<IncludedGameTypes>
-			<GameType value = "Campaign"/>
-			<GameType value = "CampaignStoryMode"/>
-		</IncludedGameTypes>
-	</XmlNode>	
-	<XmlNode>
-		<XmlName id="Factions" path="republic_clans"/>
-		<IncludedGameTypes>
-			<GameType value = "Campaign"/>
-			<GameType value = "CampaignStoryMode"/>
-		</IncludedGameTypes>
-    </XmlNode>
-	<XmlNode>
-		<XmlName id="Heroes" path="republic_heroes"/>
-		<IncludedGameTypes>
-			<GameType value = "Campaign"/>
-			<GameType value = "CampaignStoryMode"/>
-		</IncludedGameTypes>
-	</XmlNode>
+	  
+	  
+	  
 	<XmlNode>	
 		<XmlName id="NPCCharacters" path="mando_lords"/>
 		<IncludedGameTypes>

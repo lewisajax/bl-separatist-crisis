@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NPCCharacters>
-  <NPCCharacter id="veteran_caravan_guard_new_mandalorian"
+  <NPCCharacter id="veteran_caravan_guard_republic"
                 default_group="Cavalry"
                 level="26"
-                name="{=bLq2HXMo}Mandalorian Veteran Caravan Guard"
+                name="{=bLq2HXMo}Republic Veteran Caravan Guard"
                 upgrade_requires="ItemCategory.war_horse"
                 occupation="CaravanGuard"
-                culture="Culture.mando_new_culture"
+                culture="Culture.republic_culture"
                 skill_template="SkillSet.cavalry_lightcavalry_heavycavalry_level26_template_skills">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
@@ -118,13 +118,13 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="caravan_guard_new_mandalorian"
+  <NPCCharacter id="caravan_guard_republic"
                 default_group="Cavalry"
                 level="21"
-                name="{=TbBnWiao}Mandalorian Caravan Guard"
+                name="{=TbBnWiao}Republic Caravan Guard"
                 upgrade_requires="ItemCategory.horse"
                 occupation="CaravanGuard"
-                culture="Culture.mando_new_culture"
+                culture="Culture.republic_culture"
                 skill_template="SkillSet.infantry_heavyinfantry_level16_template_skills">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
@@ -236,12 +236,12 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="armed_trader_new_mandalorian"
+  <NPCCharacter id="armed_trader_republic"
                 default_group="Ranged"
                 level="16"
-                name="{=LEJukldW}Mandalorian Armed Trader"
+                name="{=LEJukldW}Republic Armed Trader"
                 occupation="CaravanGuard"
-                culture="Culture.mando_new_culture"
+                culture="Culture.republic_culture"
                 is_basic_troop="true"
                 skill_template="SkillSet.ranged_skirmisher_level6_template_skills">
     <face>
@@ -332,12 +332,12 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="caravan_master_new_mandalorian"
+  <NPCCharacter id="caravan_master_republic"
                 default_group="Infantry"
                 level="26"
-                name="{=TpECDErA}Mandalorian Caravan Master"
+                name="{=TpECDErA}Republic Caravan Master"
                 occupation="CaravanGuard"
-                culture="Culture.mando_new_culture"
+                culture="Culture.republic_culture"
                 skill_template="SkillSet.infantry_heavyinfantry_level26_template_skills">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
@@ -417,13 +417,13 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="new_mandalorian_vigla_recruit"
+  <NPCCharacter id="republic_vigla_recruit"
                 default_group="Infantry"
                 level="11"
-                name="{=n41jlEa3}Mandalorian Vigla Recruit"
+                name="{=n41jlEa3}Republic Vigla Recruit"
                 occupation="Soldier"
                 is_basic_troop="true"
-                culture="Culture.mando_new_culture">
+                culture="Culture.republic_culture">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -506,13 +506,13 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="new_mandalorian_recruit"
+  <NPCCharacter id="republic_recruit"
                 default_group="Infantry"
                 level="6"
-                name="{=s3IJIFUw}Mandalorian Recruit"
+                name="{=s3IJIFUw}Republic Recruit"
                 occupation="Soldier"
                 is_basic_troop="true"
-                culture="Culture.mando_new_culture">
+                culture="Culture.republic_culture">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -580,12 +580,12 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="new_mandalorian_militia_spearman"
+  <NPCCharacter id="republic_militia_spearman"
                 default_group="Infantry"
                 level="11"
-                name="{=ZhKoCVby}Mandalorian Militia Spearman"
+                name="{=ZhKoCVby}Republic Militia Spearman"
                 occupation="Soldier"
-                culture="Culture.mando_new_culture"
+                culture="Culture.republic_culture"
                 skill_template="SkillSet.infantry_heavyinfantry_level11_template_skills">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
@@ -650,12 +650,12 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="new_mandalorian_militia_archer"
+  <NPCCharacter id="republic_militia_archer"
                 default_group="Ranged"
                 level="11"
-                name="{=P8EATvn8}Mandalorian Militia Archer"
+                name="{=P8EATvn8}Republic Militia Archer"
                 occupation="Soldier"
-                culture="Culture.mando_new_culture"
+                culture="Culture.republic_culture"
                 skill_template="SkillSet.ranged_skirmisher_level11_template_skills">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
@@ -728,12 +728,12 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="new_mandalorian_militia_veteran_spearman"
+  <NPCCharacter id="republic_militia_veteran_spearman"
                 default_group="Infantry"
                 level="21"
-                name="{=c5rVdg75}Mandalorian Militia Veteran Spearman"
+                name="{=c5rVdg75}Republic Militia Veteran Spearman"
                 occupation="Soldier"
-                culture="Culture.mando_new_culture"
+                culture="Culture.republic_culture"
                 skill_template="SkillSet.infantry_heavyinfantry_level21_template_skills">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
@@ -810,12 +810,12 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="new_mandalorian_militia_veteran_archer"
+  <NPCCharacter id="republic_militia_veteran_archer"
                 default_group="Ranged"
                 level="21"
-                name="{=HsboF2mR}Mandalorian Militia Veteran Archer"
+                name="{=HsboF2mR}Republic Militia Veteran Archer"
                 occupation="Soldier"
-                culture="Culture.mando_new_culture"
+                culture="Culture.republic_culture"
                 skill_template="SkillSet.ranged_skirmisher_level21_template_skills">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />

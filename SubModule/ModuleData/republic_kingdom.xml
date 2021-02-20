@@ -1,14 +1,13 @@
 <?xml version="1.0"?>
 <Kingdoms>
-  <Kingdom id="republic" owner="Hero.republic_hero_1" banner_key="3.48.48.1836.1836.768.788.1.0.-30.503.149.149.458.458.771.777.1.1.0.503.40.40.426.426.771.775.1.1.0.503.116.116.161.161.771.782.1.1.0.510.149.149.174.174.767.716.1.1.-90.510.149.149.174.174.771.837.1.1.-90.510.149.149.174.174.722.732.1.1.-42.510.149.149.174.174.849.781.1.1.-1.510.149.149.174.174.712.779.1.1.-1.510.149.149.174.174.720.829.1.1.-140.510.149.149.174.174.817.732.1.1.-140.510.149.149.174.174.819.831.1.1.-43.500.116.149.394.394.771.781.1.1.-1.510.40.40.50.175.594.779.1.1.-1.510.40.40.50.175.945.781.1.1.-1.510.40.40.50.175.640.662.1.1.-44.510.40.40.50.175.897.662.1.1.-138.510.40.40.50.175.642.893.1.1.-138.510.40.40.50.187.771.951.1.1.-91.510.40.40.48.187.765.606.1.1.-91.510.40.40.50.175.897.903.1.1.-44" primary_banner_color="0xff793191" secondary_banner_color="0xffFCDE90" label_color="FF850C6D" color="FF4E3A55" color2="FFDE9953" alternative_color="FFffffff" alternative_color2="FF660653" culture="Culture.republic" settlement_banner_mesh="encounter_flag_a" flag_mesh="info_screen_flags_b" name="{=NF627oiX}Galactic Republic" short_name="{=nsDj8Qxl}Galactic Republic" title="{=NF627oiX}Galactic Republic" ruler_title="{=8pjMAqOg}Senate" text="{=fE5U9ApA}Galactic Republic Introduction">
+  <Kingdom id="republic_kingdom" owner="Hero.republic_hero_1" banner_key="3.48.48.1836.1836.768.788.1.0.-30.503.149.149.458.458.771.777.1.1.0.503.40.40.426.426.771.775.1.1.0.503.116.116.161.161.771.782.1.1.0.510.149.149.174.174.767.716.1.1.-90.510.149.149.174.174.771.837.1.1.-90.510.149.149.174.174.722.732.1.1.-42.510.149.149.174.174.849.781.1.1.-1.510.149.149.174.174.712.779.1.1.-1.510.149.149.174.174.720.829.1.1.-140.510.149.149.174.174.817.732.1.1.-140.510.149.149.174.174.819.831.1.1.-43.500.116.149.394.394.771.781.1.1.-1.510.40.40.50.175.594.779.1.1.-1.510.40.40.50.175.945.781.1.1.-1.510.40.40.50.175.640.662.1.1.-44.510.40.40.50.175.897.662.1.1.-138.510.40.40.50.175.642.893.1.1.-138.510.40.40.50.187.771.951.1.1.-91.510.40.40.48.187.765.606.1.1.-91.510.40.40.50.175.897.903.1.1.-44" primary_banner_color="0xff793191" secondary_banner_color="0xffFCDE90" label_color="FF850C6D" color="FF4E3A55" color2="FFDE9953" alternative_color="FFffffff" alternative_color2="FF660653" culture="Culture.republic_culture" settlement_banner_mesh="encounter_flag_a" flag_mesh="info_screen_flags_b" name="{=NF627oiX}Galactic Republic" short_name="{=nsDj8Qxl}Galactic Republic" title="{=NF627oiX}Galactic Republic" ruler_title="{=8pjMAqOg}Senate" text="{=fE5U9ApA}Galactic Republic Introduction">
     <relationships>
-      <relationship kingdom="Kingdom.alliance" value="-1" isAtWar="true" />
     </relationships>
     <policies>
-      <policy id="policy_senate" />
-      <policy id="policy_feudal_inheritance" />
+
     </policies>
   </Kingdom>
+  <!--
   <Kingdom id="alliance" owner="Hero.alliance_hero_1" banner_key="19.6.6.1836.1836.768.788.1.0.-30.503.35.35.583.551.768.788.1.1.0.508.6.6.461.436.758.785.1.1.0.508.35.35.414.391.758.785.1.1.0.508.6.6.192.181.758.789.1.1.0.510.6.6.175.100.690.668.1.1.-63.510.6.6.175.100.614.787.1.1.-181.510.6.6.175.100.680.929.1.1.58.510.6.6.175.100.823.664.1.1.-119.510.6.6.175.100.833.931.1.1.-63.510.6.6.175.100.885.785.1.1.-181" primary_banner_color="0xff591645" secondary_banner_color="0xffFFAD54" label_color="FFDB8330" color="FF9E5072" color2="FFDE9953" alternative_color="FF1F1D1F" alternative_color2="FFc28446" culture="Culture.alliance" settlement_banner_mesh="encounter_flag_a" flag_mesh="info_screen_flags_a" name="{=yG3YUySN}Separatist Alliance" short_name="{=ZEmH0MwL}Separatist Alliance" title="{=yG3YUySN}General" ruler_title="{=8pjMAqOg}Senate" text="{=fE5U9ApA}Separatist Alliance Introduction">
     <relationships>
       <relationship kingdom="Kingdom.republic" value="-1" isAtWar="true" />
@@ -18,4 +17,5 @@
       <policy id="policy_land_grants_for_veterans" />
     </policies>
   </Kingdom>
+  -->
 </Kingdoms>
