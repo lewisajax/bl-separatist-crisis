@@ -6,11 +6,11 @@
   <SingleplayerModule value="true"/>
   <MultiplayerModule value="false"/>
   <DependedModules>
-    <DependedModule Id="Native" />
-    <DependedModule Id="SandBoxCore" />
-    <DependedModule Id="Sandbox" />
-	<DependedModule Id="CustomBattle"/>
-    <DependedModule Id="StoryMode" />
+    <DependedModule Id="Native" DependentVersion="e1.5.7"/>
+    <DependedModule Id="SandBoxCore" DependentVersion="e1.5.7"/>
+    <DependedModule Id="Sandbox" DependentVersion="e1.5.7"/>
+	<DependedModule Id="CustomBattle" DependentVersion="e1.5.7"/>
+    <DependedModule Id="StoryMode" DependentVersion="e1.5.7"/>
   </DependedModules>
   <SubModules>
 	<SubModule>
@@ -31,7 +31,29 @@
 			<GameType value = "CampaignStoryMode"/>
 		</IncludedGameTypes>
 	</XmlNode>
-	<XmlNode>                
+
+	  <XmlNode>
+		  <XmlName id="NPCCharacters" path="republic_lords"/>
+		  <IncludedGameTypes>
+			  <GameType value = "Campaign"/>
+			  <GameType value = "CampaignStoryMode"/>
+		  </IncludedGameTypes>
+	  </XmlNode>
+	  <XmlNode>
+		  <XmlName id="Heroes" path="republic_heroes"/>
+		  <IncludedGameTypes>
+			  <GameType value = "Campaign"/>
+			  <GameType value = "CampaignStoryMode"/>
+		  </IncludedGameTypes>
+	  </XmlNode>
+	  <XmlNode>
+		  <XmlName id="Factions" path="republic_clans"/>
+		  <IncludedGameTypes>
+			  <GameType value = "Campaign"/>
+			  <GameType value = "CampaignStoryMode"/>
+		  </IncludedGameTypes>
+	  </XmlNode>
+	  <XmlNode>                
 		<XmlName id="Kingdoms" path="republic_kingdom"/>
 		<IncludedGameTypes>
 			<GameType value = "Campaign"/>
@@ -46,28 +68,21 @@
       </IncludedGameTypes>
     </XmlNode>         
 	<XmlNode>                
-		<XmlName id="SPCultures" path="republic_culture"/>
-		<IncludedGameTypes>
-			<GameType value = "Campaign"/>
-			<GameType value = "CampaignStoryMode"/>
-		</IncludedGameTypes>
-	</XmlNode> 
-	<XmlNode>	
-		<XmlName id="NPCCharacters" path="republic_lords"/>
-		<IncludedGameTypes>
-			<GameType value = "Campaign"/>
-			<GameType value = "CampaignStoryMode"/>
-		</IncludedGameTypes>
-	</XmlNode>	
-	<XmlNode>
-		<XmlName id="Factions" path="republic_clans"/>
-		<IncludedGameTypes>
-			<GameType value = "Campaign"/>
-			<GameType value = "CampaignStoryMode"/>
-		</IncludedGameTypes>
+      <XmlName id="NPCCharacters" path="republic_npccharacters"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
     </XmlNode>
-	<XmlNode>
-		<XmlName id="Heroes" path="republic_heroes"/>
+	<XmlNode>                
+      <XmlName id="NPCCharacters" path="republic_troops"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>
+	<XmlNode>                
+		<XmlName id="SPCultures" path="republic_culture"/>
 		<IncludedGameTypes>
 			<GameType value = "Campaign"/>
 			<GameType value = "CampaignStoryMode"/>
@@ -124,6 +139,63 @@
     </XmlNode>
     <XmlNode>
       <XmlName id="SPCultures" path="mando_culture"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>	
+<!--	Separatists		-->
+	<XmlNode>	
+		<XmlName id="NPCCharacters" path="separatist_lords"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+	</XmlNode>		
+	<XmlNode>
+		<XmlName id="Heroes" path="separatist_heroes"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+	</XmlNode>
+	<XmlNode>
+		<XmlName id="Factions" path="separatist_clans"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+    </XmlNode>
+	<XmlNode>
+		<XmlName id="Kingdoms" path="separatist_kingdom"/>
+		<IncludedGameTypes>
+			<GameType value = "Campaign"/>
+			<GameType value = "CampaignStoryMode"/>
+		</IncludedGameTypes>
+    </XmlNode>
+	<XmlNode>                
+      <XmlName id="NPCCharacters" path="separatist_specialcharacters"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>
+		<XmlNode>                
+      <XmlName id="NPCCharacters" path="separatist_npccharacters"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>
+	<XmlNode>                
+      <XmlName id="NPCCharacters" path="separatist_troops"/>
+      <IncludedGameTypes>
+        <GameType value = "Campaign"/>
+        <GameType value = "CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="SPCultures" path="separatist_culture"/>
       <IncludedGameTypes>
         <GameType value = "Campaign"/>
         <GameType value = "CampaignStoryMode"/>

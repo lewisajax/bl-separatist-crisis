@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Heroes>
   <Hero id="republic_hero_1" is_noble="true" faction="Faction.republic_clan" text="{=republic_hero_1_text} is the leader of Galactic Republic" />
-  <Hero id="alliance_hero_1" is_noble="true" faction="Faction.alliance_clan" text="{=alliance_hero_2_text} is the leader of Separatist Alliance" />
 </Heroes>

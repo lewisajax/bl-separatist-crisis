@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NPCCharacters>
 <!--Townsman -->
-  <NPCCharacter id="child_template_republic_townsman_male" name="{=!}Republic Child Townsman Male" age="6" is_child_template="true" is_female="false" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.republic_culture">
+  <NPCCharacter id="child_template_separatist_townsman_male" name="{=!}Separatist Child Townsman Male" age="6" is_child_template="true" is_female="false" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.separatist_culture">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -17,7 +17,7 @@
       <EquipmentSet id="emp_bat_template_medium" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="child_template_republic_townsman_female" name="{=!}Republic Child Townsman Female" age="6" is_child_template="true" is_female="true" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.republic_culture">
+  <NPCCharacter id="child_template_separatist_townsman_female" name="{=!}Separatist Child Townsman Female" age="6" is_child_template="true" is_female="true" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.separatist_culture">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -33,7 +33,7 @@
       <EquipmentSet id="emp_bat_template_medium" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="teenager_template_republic_townsman_female" name="{=!}Republic Teenager Townsman Female" age="14" is_child_template="true" is_female="true" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.republic_culture">
+  <NPCCharacter id="teenager_template_separatist_townsman_female" name="{=!}Separatist Teenager Townsman Female" age="14" is_child_template="true" is_female="true" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.separatist_culture">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -59,7 +59,7 @@
       <EquipmentSet id="emp_bat_template_medium" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="teenager_template_republic_townsman_male" name="{=!}Republic Teenager Townsman Male" age="14" is_child_template="true" is_female="false" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.republic_culture">
+  <NPCCharacter id="teenager_template_separatist_townsman_male" name="{=!}Separatist Teenager Townsman Male" age="14" is_child_template="true" is_female="false" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.separatist_culture">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -84,7 +84,7 @@
     </Equipments>
   </NPCCharacter>
   <!--Villager -->
-  <NPCCharacter id="child_template_republic_villager_male" name="{=!}Republic Child Villager Male" age="6" is_child_template="true" is_female="false" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.republic_culture">
+  <NPCCharacter id="child_template_separatist_villager_male" name="{=!}Separatist Child Villager Male" age="6" is_child_template="true" is_female="false" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.separatist_culture">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -104,7 +104,7 @@
       <EquipmentSet id="emp_bat_template_medium" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="child_template_republic_villager_female" name="{=!}Republic Child Villager Female" age="6" is_child_template="true" is_female="true" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.republic_culture">
+  <NPCCharacter id="child_template_separatist_villager_female" name="{=!}Separatist Child Villager Female" age="6" is_child_template="true" is_female="true" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.separatist_culture">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -124,7 +124,7 @@
       <EquipmentSet id="emp_bat_template_medium" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="teenager_template_republic_villager_male" name="{=!}Republic Teenager Villager Male" age="14" is_child_template="true" is_female="false" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.republic_culture">
+  <NPCCharacter id="teenager_template_separatist_villager_male" name="{=!}Separatist Teenager Villager Male" age="14" is_child_template="true" is_female="false" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.separatist_culture">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -148,7 +148,7 @@
       <EquipmentSet id="emp_bat_template_medium" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="teenager_template_republic_villager_female" name="{=!}Republic Teenager Villager Female" age="14" is_child_template="true" is_female="true" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.republic_culture">
+  <NPCCharacter id="teenager_template_separatist_villager_female" name="{=!}Separatist Teenager Villager Female" age="14" is_child_template="true" is_female="true" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.separatist_culture">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -171,7 +171,7 @@
     </Equipments>
   </NPCCharacter>
   <!--Noble -->
-  <NPCCharacter id="child_template_republic_noble_male" name="{=!}Republic Child Noble Male" age="6" is_child_template="true" is_female="false" default_group="Infantry" is_hero="false" occupation="Lord" culture="Culture.republic_culture">
+  <NPCCharacter id="child_template_separatist_noble_male" name="{=!}Separatist Child Noble Male" age="6" is_child_template="true" is_female="false" default_group="Infantry" is_hero="false" occupation="Lord" culture="Culture.separatist_culture">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -191,7 +191,7 @@
       <EquipmentSet id="emp_bat_template_medium" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="child_template_republic_noble_female" name="{=!}Republic Child Noble Female" is_child_template="true" age="6" is_female="true" default_group="Infantry" is_hero="false" occupation="Lord" culture="Culture.republic_culture">
+  <NPCCharacter id="child_template_separatist_noble_female" name="{=!}Separatist Child Noble Female" is_child_template="true" age="6" is_female="true" default_group="Infantry" is_hero="false" occupation="Lord" culture="Culture.separatist_culture">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -211,7 +211,7 @@
       <EquipmentSet id="emp_bat_template_medium" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="teenager_template_republic_noble_male" name="{=!}Republic Teenager Noble Male" is_child_template="true" age="14" is_female="true" default_group="Infantry" is_hero="false" occupation="Lord" culture="Culture.republic_culture">
+  <NPCCharacter id="teenager_template_separatist_noble_male" name="{=!}Separatist Teenager Noble Male" is_child_template="true" age="14" is_female="true" default_group="Infantry" is_hero="false" occupation="Lord" culture="Culture.separatist_culture">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -237,7 +237,7 @@
       <EquipmentSet id="emp_bat_template_medium" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="teenager_template_republic_noble_female" name="{=!}Republic Teenager Noble Female" is_child_template="true" age="14" is_female="false" default_group="Infantry" is_hero="false" occupation="Lord" culture="Culture.republic_culture">
+  <NPCCharacter id="teenager_template_separatist_noble_female" name="{=!}Separatist Teenager Noble Female" is_child_template="true" age="14" is_female="false" default_group="Infantry" is_hero="false" occupation="Lord" culture="Culture.separatist_culture">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -260,7 +260,7 @@
   </NPCCharacter>
   
   <!-- Worldly imperial merchant -->
-  <NPCCharacter id="spc_notable_republic_0" name="{=!}Cautious republic merchant" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_separatist_0" name="{=!}Cautious mandalorian merchant" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -277,7 +277,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_0b" name="{=!}{FIRSTNAME} the Vintner" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_separatist_0b" name="{=!}{FIRSTNAME} the Vintner" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -295,7 +295,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_1" name="{=!}Republic merchant 3, ruthless" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_separatist_1" name="{=!}Separatist merchant 3, ruthless" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -310,7 +310,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_1b" name="{=!}Cold republic merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_separatist_1b" name="{=!}Cold mandalorian merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -326,7 +326,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_2" name="{=!}{FIRSTNAME} the Saltpanner" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_separatist_2" name="{=!}{FIRSTNAME} the Saltpanner" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -341,7 +341,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_2b" name="{=!}Republic merchant 6, cautious" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_separatist_2b" name="{=!}Separatist merchant 6, cautious" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -358,7 +358,7 @@
     </Equipments>
   </NPCCharacter>
   <!-- Can be acater -->
-  <NPCCharacter id="spc_notable_republic_3" name="{=!}Republic merchant 7, selfmade" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_separatist_3" name="{=!}Separatist merchant 7, selfmade" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -372,7 +372,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_3b" name="{=!}Republic merchant 8, jocular" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_separatist_3b" name="{=!}Separatist merchant 8, jocular" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -387,7 +387,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_4" name="{=!}Republic merchant 9, heiress" voice="curt" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_separatist_4" name="{=!}Separatist merchant 9, heiress" voice="curt" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -402,7 +402,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_4b" name="{=!}Republic merchant 10, devious" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_separatist_4b" name="{=!}Separatist merchant 10, devious" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -419,7 +419,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_5" name="{=!}Messianic republic preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Preacher">
+  <NPCCharacter id="spc_notable_separatist_5" name="{=!}Messianic mandalorian preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -435,7 +435,7 @@
       <EquipmentSet id="spc_notable_empire_5" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_6" name="{=!}Puritan republic preacher" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Preacher">
+  <NPCCharacter id="spc_notable_separatist_6" name="{=!}Puritan mandalorian preacher" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -452,7 +452,7 @@
       <EquipmentSet id="spc_notable_empire_6" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_7" name="{=!}Female republic mystic" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.republic_culture" occupation="Preacher">
+  <NPCCharacter id="spc_notable_separatist_7" name="{=!}Female mandalorian mystic" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.separatist_culture" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -467,7 +467,7 @@
       <EquipmentSet id="spc_notable_empire_7" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_8" name="{=!}Republic gruff labor leader" voice="curt" is_template="true" default_group="Infantry" is_female="false" culture="Culture.republic_culture" occupation="Artisan">
+  <NPCCharacter id="spc_notable_separatist_8" name="{=!}Separatist gruff labor leader" voice="curt" is_template="true" default_group="Infantry" is_female="false" culture="Culture.separatist_culture" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -481,7 +481,7 @@
       <EquipmentSet id="spc_notable_empire_8" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_9" name="{=!}Republic outgoing labor leader" voice="earnest" is_template="true" default_group="Infantry" is_female="false" culture="Culture.republic_culture" occupation="Artisan">
+  <NPCCharacter id="spc_notable_separatist_9" name="{=!}Separatist outgoing labor leader" voice="earnest" is_template="true" default_group="Infantry" is_female="false" culture="Culture.separatist_culture" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -497,7 +497,7 @@
       <EquipmentSet id="spc_notable_empire_9" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_gl1" name="{=!}Protective republic male gang leader" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="GangLeader">
+  <NPCCharacter id="spc_notable_separatist_gl1" name="{=!}Protective mandalorian male gang leader" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -515,7 +515,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_10" name="{=!}Ironic republic gang leader" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="GangLeader">
+  <NPCCharacter id="spc_notable_separatist_10" name="{=!}Ironic mandalorian gang leader" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -533,7 +533,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_11" name="{=!}Intimidating male republic gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="GangLeader">
+  <NPCCharacter id="spc_notable_separatist_11" name="{=!}Intimidating male mandalorian gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -551,7 +551,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_gl4" name="{=!}Bestial male republic gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="GangLeader">
+  <NPCCharacter id="spc_notable_separatist_gl4" name="{=!}Bestial male mandalorian gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -569,7 +569,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_12" name="{=!}Female republic gang leader" voice="ironic" is_template="true" is_female="true" culture="Culture.republic_culture" occupation="GangLeader" default_group="Infantry">
+  <NPCCharacter id="spc_notable_separatist_12" name="{=!}Female mandalorian gang leader" voice="ironic" is_template="true" is_female="true" culture="Culture.separatist_culture" occupation="GangLeader" default_group="Infantry">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -585,7 +585,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_13" name="{=!}Menacing female republic gang leader" voice="softspoken" is_template="true" is_female="true" culture="Culture.republic_culture" occupation="GangLeader" default_group="Infantry">
+  <NPCCharacter id="spc_notable_separatist_13" name="{=!}Menacing female mandalorian gang leader" voice="softspoken" is_template="true" is_female="true" culture="Culture.separatist_culture" occupation="GangLeader" default_group="Infantry">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -602,7 +602,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_21" name="{=!}Republic gruff rural notable" voice="curt" is_template="true" default_group="Infantry" culture="Culture.republic_culture" occupation="RuralNotable">
+  <NPCCharacter id="spc_notable_separatist_21" name="{=!}Separatist gruff rural notable" voice="curt" is_template="true" default_group="Infantry" culture="Culture.separatist_culture" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
       <!--<hair_tags>
@@ -625,7 +625,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_republic_22" name="{=!}Republic rural notable agreeable" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.republic_culture" occupation="RuralNotable">
+  <NPCCharacter id="spc_notable_separatist_22" name="{=!}Separatist rural notable agreeable" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.separatist_culture" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.townsman_empire" />
       <!--<hair_tags>
@@ -647,7 +647,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_republic_outlaw_1" name="{=!}Republic bold outlaw" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Outlaw">
+  <NPCCharacter id="spc_separatist_outlaw_1" name="{=!}Separatist bold outlaw" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Outlaw">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -664,7 +664,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_republic_outlaw_2" name="{=!}Republic menacing outlaw" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Outlaw">
+  <NPCCharacter id="spc_separatist_outlaw_2" name="{=!}Separatist menacing outlaw" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Outlaw">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -680,7 +680,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_republic_headman_1" name="{=!}Republic rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Headman">
+  <NPCCharacter id="spc_separatist_headman_1" name="{=!}Separatist rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -696,7 +696,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_republic_headman_2" name="{=!}Republic conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Headman">
+  <NPCCharacter id="spc_separatist_headman_2" name="{=!}Separatist conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -712,7 +712,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_republic_headman_3" name="{=!}Republic devious headman" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.republic_culture" occupation="Headman">
+  <NPCCharacter id="spc_separatist_headman_3" name="{=!}Separatist devious headman" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.separatist_culture" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>

@@ -22,7 +22,7 @@
     </CommonAreas>
   </Settlement>
   
-<!--  
+<!--
   <Settlement id="castle_village_mandalore" name="Mandalore Village" posX="272.394" posY="152.421" culture="Culture.aserai" text="Desc">
     <Components>
       <Village id="castle_village_comp_mandalore" village_type="VillageType.desert_horse_ranch" hearth="305" trade_bound="Settlement.town_mandalore" bound="Settlement.town_mandalore" background_crop_position="0.214" background_mesh="menu_aserai_village_1" wait_mesh="wait_aserai_village" castle_background_mesh="gui_bg_castle_aserai" />
@@ -36,9 +36,9 @@
       <Area type="Bog" name="{=iXA5SttU}Bog" />
     </CommonAreas>
   </Settlement>
--->  
+-->
 
-  <Settlement id="town_coruscant" name="Coruscant" owner="Faction.republic_clan" posX="577.05" posY="314.13" culture="Culture.aserai" prosperity="2100" gate_posX="577.81" gate_posY="312.31">
+  <Settlement id="town_coruscant" name="Coruscant" owner="Faction.republic_clan" posX="577.05" posY="314.13" culture="Culture.republic_culture" prosperity="2100" gate_posX="577.81" gate_posY="312.31">
     <Components>
       <Town id="town_comp_coruscant" is_castle="false" level="3" background_crop_position="0.401" background_mesh="menu_aserai_4" wait_mesh="wait_aserai_town" gate_rotation="0.408" />
     </Components>
@@ -58,8 +58,7 @@
       <Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
     </CommonAreas>
   </Settlement>
-  
-  <Settlement id="town_geonosis" name="Geonosis" owner="Faction.alliance_clan" posX="802.47" posY="391.67" culture="Culture.aserai" prosperity="2100" gate_posX="801.83" gate_posY="393.53">
+  <Settlement id="town_geonosis" name="Geonosis" owner="Faction.alliance_clan" posX="802.47" posY="391.67" culture="Culture.separatist_culture" prosperity="2100" gate_posX="801.83" gate_posY="393.53">
     <Components>
       <Town id="town_comp_geonosis" is_castle="false" level="3" background_crop_position="0.401" background_mesh="menu_aserai_4" wait_mesh="wait_aserai_town" gate_rotation="0.408" />
     </Components>
@@ -79,4 +78,5 @@
       <Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
     </CommonAreas>
   </Settlement>
+  -->
 </Settlements>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NPCCharacters>
-  <NPCCharacter id="veteran_caravan_guard_new_mandalorian"
+  <NPCCharacter id="veteran_caravan_guard_separatist"
                 default_group="Cavalry"
                 level="26"
-                name="{=bLq2HXMo}Mandalorian Veteran Caravan Guard"
+                name="{=bLq2HXMo}Separatist Veteran Caravan Guard"
                 upgrade_requires="ItemCategory.war_horse"
                 occupation="CaravanGuard"
-                culture="Culture.mando_new_culture"
+                culture="Culture.separatist_culture"
                 skill_template="SkillSet.cavalry_lightcavalry_heavycavalry_level26_template_skills">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
@@ -118,13 +118,13 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="caravan_guard_new_mandalorian"
+  <NPCCharacter id="caravan_guard_separatist"
                 default_group="Cavalry"
                 level="21"
-                name="{=TbBnWiao}Mandalorian Caravan Guard"
+                name="{=TbBnWiao}Separatist Caravan Guard"
                 upgrade_requires="ItemCategory.horse"
                 occupation="CaravanGuard"
-                culture="Culture.mando_new_culture"
+                culture="Culture.separatist_culture"
                 skill_template="SkillSet.infantry_heavyinfantry_level16_template_skills">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
@@ -148,7 +148,7 @@
         value="15" />
     </skills>
     <upgrade_targets>
-	  <upgrade_target id="NPCCharacter.veteran_caravan_guard_new_mandalorian" />
+	  <upgrade_target id="NPCCharacter.veteran_caravan_guard_separatist" />
 	</upgrade_targets>
     <Equipments>
       <EquipmentRoster>
@@ -238,12 +238,12 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="armed_trader_new_mandalorian"
+  <NPCCharacter id="armed_trader_separatist"
                 default_group="Ranged"
                 level="16"
-                name="{=LEJukldW}Mandalorian Armed Trader"
+                name="{=LEJukldW}Separatist Armed Trader"
                 occupation="CaravanGuard"
-                culture="Culture.mando_new_culture"
+                culture="Culture.separatist_culture"
                 is_basic_troop="true"
                 skill_template="SkillSet.ranged_skirmisher_level6_template_skills">
     <face>
@@ -268,7 +268,7 @@
         value="30" />
     </skills>
     <upgrade_targets>
-	  <upgrade_target id="NPCCharacter.caravan_master_new_mandalorian" />
+	  <upgrade_target id="NPCCharacter.caravan_master_separatist" />
 	</upgrade_targets>
     <Equipments>
       <EquipmentRoster>
@@ -336,12 +336,12 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="caravan_master_new_mandalorian"
+  <NPCCharacter id="caravan_master_separatist"
                 default_group="Infantry"
                 level="26"
-                name="{=TpECDErA}Mandalorian Caravan Master"
+                name="{=TpECDErA}Separatist Caravan Master"
                 occupation="CaravanGuard"
-                culture="Culture.mando_new_culture"
+                culture="Culture.separatist_culture"
                 skill_template="SkillSet.infantry_heavyinfantry_level26_template_skills">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
@@ -423,13 +423,13 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="new_mandalorian_vigla_recruit"
+  <NPCCharacter id="separatist_vigla_recruit"
                 default_group="Infantry"
                 level="11"
-                name="{=n41jlEa3}Mandalorian Vigla Recruit"
+                name="{=n41jlEa3}Separatist Vigla Recruit"
                 occupation="Soldier"
                 is_basic_troop="true"
-                culture="Culture.mando_new_culture">
+                culture="Culture.separatist_culture">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -452,6 +452,7 @@
         value="5" />
     </skills>
     <upgrade_targets>
+      <upgrade_target id="NPCCharacter.separatist_equite" />
     </upgrade_targets>
     <Equipments>
       <EquipmentRoster>
@@ -511,13 +512,13 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="new_mandalorian_recruit"
+  <NPCCharacter id="separatist_recruit"
                 default_group="Infantry"
                 level="6"
-                name="{=s3IJIFUw}Mandalorian Recruit"
+                name="{=s3IJIFUw}Separatist Recruit"
                 occupation="Soldier"
                 is_basic_troop="true"
-                culture="Culture.mando_new_culture">
+                culture="Culture.separatist_culture">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -540,7 +541,8 @@
         value="10" />
     </skills>
     <upgrade_targets>
-      <upgrade_target id="NPCCharacter.new_mandalorian_infantryman" />
+      <upgrade_target id="NPCCharacter.separatist_infantryman" />
+      <upgrade_target id="NPCCharacter.separatist_archer" />
     </upgrade_targets>
     <Equipments>
       <EquipmentRoster>
@@ -584,12 +586,12 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="new_mandalorian_infantryman"
+  <NPCCharacter id="separatist_infantryman"
                 default_group="Infantry"
                 level="11"
-                name="{=IfjWyWjc}Mandalorian Infantryman"
+                name="{=IfjWyWjc}Separatist Infantryman"
                 occupation="Soldier"
-                culture="Culture.mando_new_culture">
+                culture="Culture.separatist_culture">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -612,7 +614,7 @@
         value="20" />
     </skills>
     <upgrade_targets>
-      <upgrade_target id="NPCCharacter.new_mandalorian_trained_infantryman" />
+      <upgrade_target id="NPCCharacter.separatist_trained_infantryman" />
     </upgrade_targets>
     <Equipments>
       <EquipmentRoster>
@@ -662,12 +664,12 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="new_mandalorian_trained_infantryman"
+  <NPCCharacter id="separatist_trained_infantryman"
                 default_group="Infantry"
                 level="16"
-                name="{=IZ8OmByJ}Mandalorian Trained Infantryman"
+                name="{=IZ8OmByJ}Separatist Trained Infantryman"
                 occupation="Soldier"
-                culture="Culture.mando_new_culture">
+                culture="Culture.separatist_culture">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -751,19 +753,19 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="new_mandalorian_militia_spearman"
+  <NPCCharacter id="separatist_militia_spearman"
                 default_group="Infantry"
                 level="11"
-                name="{=ZhKoCVby}Mandalorian Militia Spearman"
+                name="{=ZhKoCVby}Separatist Militia Spearman"
                 occupation="Soldier"
-                culture="Culture.mando_new_culture"
+                culture="Culture.separatist_culture"
                 skill_template="SkillSet.infantry_heavyinfantry_level11_template_skills">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
     <skills></skills>
     <upgrade_targets>
-	   <upgrade_target id="NPCCharacter.new_mandalorian_militia_veteran_spearman" />
+	   <upgrade_target id="NPCCharacter.separatist_militia_veteran_spearman" />
 	</upgrade_targets>
     <Equipments>
       <EquipmentRoster>
@@ -823,19 +825,19 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="new_mandalorian_militia_archer"
+  <NPCCharacter id="separatist_militia_archer"
                 default_group="Ranged"
                 level="11"
-                name="{=P8EATvn8}Mandalorian Militia Archer"
+                name="{=P8EATvn8}Separatist Militia Archer"
                 occupation="Soldier"
-                culture="Culture.mando_new_culture"
+                culture="Culture.separatist_culture"
                 skill_template="SkillSet.ranged_skirmisher_level11_template_skills">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
     <skills></skills>
     <upgrade_targets>
-	  <upgrade_target id="NPCCharacter.new_mandalorian_militia_veteran_archer" />
+	  <upgrade_target id="NPCCharacter.separatist_militia_veteran_archer" />
 	</upgrade_targets>
     <Equipments>
       <EquipmentRoster>
@@ -903,12 +905,12 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="new_mandalorian_militia_veteran_spearman"
+  <NPCCharacter id="separatist_militia_veteran_spearman"
                 default_group="Infantry"
                 level="21"
-                name="{=c5rVdg75}Mandalorian Militia Veteran Spearman"
+                name="{=c5rVdg75}Separatist Militia Veteran Spearman"
                 occupation="Soldier"
-                culture="Culture.mando_new_culture"
+                culture="Culture.separatist_culture"
                 skill_template="SkillSet.infantry_heavyinfantry_level21_template_skills">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
@@ -985,12 +987,12 @@
     </Equipments>
   </NPCCharacter>
   
-  <NPCCharacter id="new_mandalorian_militia_veteran_archer"
+  <NPCCharacter id="separatist_militia_veteran_archer"
                 default_group="Ranged"
                 level="21"
-                name="{=HsboF2mR}Mandalorian Militia Veteran Archer"
+                name="{=HsboF2mR}Separatist Militia Veteran Archer"
                 occupation="Soldier"
-                culture="Culture.mando_new_culture"
+                culture="Culture.separatist_culture"
                 skill_template="SkillSet.ranged_skirmisher_level21_template_skills">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
