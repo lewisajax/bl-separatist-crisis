@@ -452,7 +452,6 @@
         value="5" />
     </skills>
     <upgrade_targets>
-      <upgrade_target id="NPCCharacter.imperial_equite" />
     </upgrade_targets>
     <Equipments>
       <EquipmentRoster>
@@ -541,8 +540,7 @@
         value="10" />
     </skills>
     <upgrade_targets>
-      <upgrade_target id="NPCCharacter.imperial_infantryman" />
-      <upgrade_target id="NPCCharacter.imperial_archer" />
+      <upgrade_target id="NPCCharacter.new_mandalorian_infantryman" />
     </upgrade_targets>
     <Equipments>
       <EquipmentRoster>
