@@ -7,15 +7,4 @@
 
     </policies>
   </Kingdom>
-  <!--
-  <Kingdom id="alliance" owner="Hero.alliance_hero_1" banner_key="19.6.6.1836.1836.768.788.1.0.-30.503.35.35.583.551.768.788.1.1.0.508.6.6.461.436.758.785.1.1.0.508.35.35.414.391.758.785.1.1.0.508.6.6.192.181.758.789.1.1.0.510.6.6.175.100.690.668.1.1.-63.510.6.6.175.100.614.787.1.1.-181.510.6.6.175.100.680.929.1.1.58.510.6.6.175.100.823.664.1.1.-119.510.6.6.175.100.833.931.1.1.-63.510.6.6.175.100.885.785.1.1.-181" primary_banner_color="0xff591645" secondary_banner_color="0xffFFAD54" label_color="FFDB8330" color="FF9E5072" color2="FFDE9953" alternative_color="FF1F1D1F" alternative_color2="FFc28446" culture="Culture.alliance" settlement_banner_mesh="encounter_flag_a" flag_mesh="info_screen_flags_a" name="{=yG3YUySN}Separatist Alliance" short_name="{=ZEmH0MwL}Separatist Alliance" title="{=yG3YUySN}General" ruler_title="{=8pjMAqOg}Senate" text="{=fE5U9ApA}Separatist Alliance Introduction">
-    <relationships>
-      <relationship kingdom="Kingdom.republic" value="-1" isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy id="policy_senate" />
-      <policy id="policy_land_grants_for_veterans" />
-    </policies>
-  </Kingdom>
-  -->
 </Kingdoms>

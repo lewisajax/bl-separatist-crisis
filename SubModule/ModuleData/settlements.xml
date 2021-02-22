@@ -58,8 +58,7 @@
       <Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
     </CommonAreas>
   </Settlement>
-  <!--
-  <Settlement id="town_geonosis" name="Geonosis" owner="Faction.alliance_clan" posX="802.47" posY="391.67" culture="Culture.aserai" prosperity="2100" gate_posX="801.83" gate_posY="393.53">
+  <Settlement id="town_geonosis" name="Geonosis" owner="Faction.alliance_clan" posX="802.47" posY="391.67" culture="Culture.separatist_culture" prosperity="2100" gate_posX="801.83" gate_posY="393.53">
     <Components>
       <Town id="town_comp_geonosis" is_castle="false" level="3" background_crop_position="0.401" background_mesh="menu_aserai_4" wait_mesh="wait_aserai_town" gate_rotation="0.408" />
     </Components>
