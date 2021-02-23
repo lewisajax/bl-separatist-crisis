@@ -74,114 +74,114 @@
            gear_dummy="NPCCharacter.gear_dummy_separatist"
            board_game_type="Tablut">
     <male_names>
-      <name name="{=n2FdWOtE}Adram" />
-      <name name="{=HEGo3ArK}Atis" />
-      <name name="{=kErcuRlk}Ayyam" />
-      <name name="{=YRzakgRB}Bidal" />
-      <name name="{=6p3qkhil}Biliya" />
-      <name name="{=jgr2xo9r}Darim" />
-      <name name="{=Emsd1xmS}Dhashwal" />
-      <name name="{=xC3kCGte}Dhiyul" />
-      <name name="{=hF3F3u8u}Duwain" />
-      <name name="{=evXLa2XX}Farim" />
-      <name name="{=bVtVsEUr}Ghulassen" />
-      <name name="{=NOchnEwX}Ghuzid" />
-      <name name="{=gDMdWisO}Haqr" />
-      <name name="{=cdQO1eLv}Hasseidh" />
-      <name name="{=GK18UxoX}Hur" />
-      <name name="{=sWRKG0e1}Iltas" />
-      <name name="{=2mhCIkuB}Jaim" />
-      <name name="{=nyCtbjg6}Jamair" />
-      <name name="{=3oeb8Bav}Jassid" />
-      <name name="{=egOzKsKS}Kannar" />
-      <name name="{=YIpKt79X}Kusr" />
-      <name name="{=r0dXXtoU}Kharid" />
-      <name name="{=MRTWZuF4}Khilam" />
-      <name name="{=ZSraCpCs}Lakhem" />
-      <name name="{=b7PVGEFM}Lath" />
-      <name name="{=0ZTMVxzw}Lazif" />
-      <name name="{=PknomRIt}Madwan" />
-      <name name="{=la6HgVXN}Mitunis" />
-      <name name="{=KSsRA8xm}Munim" />
-      <name name="{=8UGqSVH5}Nathun" />
-      <name name="{=UlPJ9OYH}Nidr" />
-      <name name="{=rmpKsJwg}Nuldan" />
-      <name name="{=3pgwKPsf}Qarais" />
-      <name name="{=Qx7ZfdbV}Quth" />
-      <name name="{=M9gqEb6D}Radan" />
-      <name name="{=f7u2p3x3}Rutwar" />
-      <name name="{=xyIDKleR}Saidh" />
-      <name name="{=3rXHA6fI}Samar" />
-      <name name="{=5QHosdnk}Sudais" />
-      <name name="{=eAro6IVf}Shalar" />
-      <name name="{=yToKqfa3}Shumsan" />
-      <name name="{=5O81vNIS}Tahya" />
-      <name name="{=fWKnmnXb}Taq" />
-      <name name="{=Q2qLCrn2}Thais" />
-      <name name="{=SOkQ7b7r}Thaqir" />
-      <name name="{=zCaeJ7GC}Thul" />
-      <name name="{=0atYAnDF}Tulul" />
-      <name name="{=xUSeJEd6}Wahan" />
-      <name name="{=EKUSZBBj}Wusur" />
-      <name name="{=5LY1iQWh}Yaqus" />
+      <name name="{=separatist_male_name_1}Adram" />
+      <name name="{=separatist_male_name_2}Atis" />
+      <name name="{=separatist_male_name_3}Ayyam" />
+      <name name="{=separatist_male_name_4}Bidal" />
+      <name name="{=separatist_male_name_5}Biliya" />
+      <name name="{=separatist_male_name_6}Darim" />
+      <name name="{=separatist_male_name_7}Dhashwal" />
+      <name name="{=separatist_male_name_8}Dhiyul" />
+      <name name="{=separatist_male_name_9}Duwain" />
+      <name name="{=separatist_male_name_10}Farim" />
+      <name name="{=separatist_male_name_11}Ghulassen" />
+      <name name="{=separatist_male_name_12}Ghuzid" />
+      <name name="{=separatist_male_name_13}Haqr" />
+      <name name="{=separatist_male_name_14}Hasseidh" />
+      <name name="{=separatist_male_name_15}Hur" />
+      <name name="{=separatist_male_name_16}Iltas" />
+      <name name="{=separatist_male_name_17}Jaim" />
+      <name name="{=separatist_male_name_18}Jamair" />
+      <name name="{=separatist_male_name_19}Jassid" />
+      <name name="{=separatist_male_name_20}Kannar" />
+      <name name="{=separatist_male_name_21}Kusr" />
+      <name name="{=separatist_male_name_22}Kharid" />
+      <name name="{=separatist_male_name_23}Khilam" />
+      <name name="{=separatist_male_name_24}Lakhem" />
+      <name name="{=separatist_male_name_25}Lath" />
+      <name name="{=separatist_male_name_26}Lazif" />
+      <name name="{=separatist_male_name_27}Madwan" />
+      <name name="{=separatist_male_name_28}Mitunis" />
+      <name name="{=separatist_male_name_29}Munim" />
+      <name name="{=separatist_male_name_30}Nathun" />
+      <name name="{=separatist_male_name_31}Nidr" />
+      <name name="{=separatist_male_name_32}Nuldan" />
+      <name name="{=separatist_male_name_33}Qarais" />
+      <name name="{=separatist_male_name_34}Quth" />
+      <name name="{=separatist_male_name_35}Radan" />
+      <name name="{=separatist_male_name_36}Rutwar" />
+      <name name="{=separatist_male_name_37}Saidh" />
+      <name name="{=separatist_male_name_38}Samar" />
+      <name name="{=separatist_male_name_39}Sudais" />
+      <name name="{=separatist_male_name_40}Shalar" />
+      <name name="{=separatist_male_name_41}Shumsan" />
+      <name name="{=separatist_male_name_42}Tahya" />
+      <name name="{=separatist_male_name_43}Taq" />
+      <name name="{=separatist_male_name_44}Thais" />
+      <name name="{=separatist_male_name_45}Thaqir" />
+      <name name="{=separatist_male_name_46}Thul" />
+      <name name="{=separatist_male_name_47}Tulul" />
+      <name name="{=separatist_male_name_48}Wahan" />
+      <name name="{=separatist_male_name_49}Wusur" />
+      <name name="{=separatist_male_name_50}Yaqus" />
     </male_names>
     <female_names>
-      <name name="{=vAKB54zO}Arwa" />
-      <name name="{=3LHG5Efi}Ayasa" />
-      <name name="{=krMVSoId}Bawthan" />
-      <name name="{=YwwaCRSr}Barisha" />
-      <name name="{=Y9030sOS}Darya" />
-      <name name="{=qwab4ICX}Dima" />
-      <name name="{=PukaQLbR}Dula" />
-      <name name="{=nhwnbFJ0}Ghalaza" />
-      <name name="{=b0rI89ob}Hara" />
-      <name name="{=qDLWQjuC}Hasawa" />
-      <name name="{=Q26RhEj6}Ifar" />
-      <name name="{=H1OFdfEe}Isna" />
-      <name name="{=aqd6QHES}Janab" />
-      <name name="{=JhLPgr5x}Jinda" />
-      <name name="{=BfbZAB2K}Kanizat" />
-      <name name="{=JR1LKjIc}Khalisa" />
-      <name name="{=q8awVLdN}Laitha" />
-      <name name="{=ljYVVV1s}Luqa" />
-      <name name="{=YwQbvO9O}Lulya" />
-      <name name="{=UAHJ2jTp}Mahayl" />
-      <name name="{=QtyF13kv}Mata" />
-      <name name="{=SNjqoBfZ}Nawa" />
-      <name name="{=t4OvAlBq}Nus" />
-      <name name="{=Cj8vDOqR}Rahan" />
-      <name name="{=bdhXiiWK}Rayma" />
-      <name name="{=yJz9AxjY}Rinana" />
-      <name name="{=TN5MjMJU}Risa" />
-      <name name="{=yd39Cman}Ruwa" />
-      <name name="{=QCiqeUHm}Sabila" />
-      <name name="{=N0cNsII3}Safiya" />
-      <name name="{=nTYJWGAa}Shatha" />
-      <name name="{=vYQ2SMEv}Siban" />
-      <name name="{=v7tfA4y6}Siyafan" />
-      <name name="{=6d09RcZT}Sulatha" />
-      <name name="{=LfP4vsfD}Sur" />
-      <name name="{=imBaF78b}Thuneikha" />
-      <name name="{=9aPxu1EB}Tinab" />
-      <name name="{=mWCY0aSL}Wara" />
-      <name name="{=CYXRzc1D}Wisan" />
-      <name name="{=528J5D3b}Yasmila" />
-      <name name="{=ieube15m}Zahara" />
-      <name name="{=wYPWlhme}Zandina" />
-      <name name="{=8RolYmff}Zuwaira" />
+      <name name="{=separatist_female_name_1}Arwa" />
+      <name name="{=separatist_female_name_2}Ayasa" />
+      <name name="{=separatist_female_name_3}Bawthan" />
+      <name name="{=separatist_female_name_4}Barisha" />
+      <name name="{=separatist_female_name_5}Darya" />
+      <name name="{=separatist_female_name_6}Dima" />
+      <name name="{=separatist_female_name_7}Dula" />
+      <name name="{=separatist_female_name_8}Ghalaza" />
+      <name name="{=separatist_female_name_9}Hara" />
+      <name name="{=separatist_female_name_10}Hasawa" />
+      <name name="{=separatist_female_name_11}Ifar" />
+      <name name="{=separatist_female_name_12}Isna" />
+      <name name="{=separatist_female_name_13}Janab" />
+      <name name="{=separatist_female_name_14}Jinda" />
+      <name name="{=separatist_female_name_15}Kanizat" />
+      <name name="{=separatist_female_name_16}Khalisa" />
+      <name name="{=separatist_female_name_17}Laitha" />
+      <name name="{=separatist_female_name_18}Luqa" />
+      <name name="{=separatist_female_name_19}Lulya" />
+      <name name="{=separatist_female_name_20}Mahayl" />
+      <name name="{=separatist_female_name_21}Mata" />
+      <name name="{=separatist_female_name_22}Nawa" />
+      <name name="{=separatist_female_name_23}Nus" />
+      <name name="{=separatist_female_name_24}Rahan" />
+      <name name="{=separatist_female_name_25}Rayma" />
+      <name name="{=separatist_female_name_26}Rinana" />
+      <name name="{=separatist_female_name_27}Risa" />
+      <name name="{=separatist_female_name_28}Ruwa" />
+      <name name="{=separatist_female_name_29}Sabila" />
+      <name name="{=separatist_female_name_30}Safiya" />
+      <name name="{=separatist_female_name_31}Shatha" />
+      <name name="{=separatist_female_name_32}Siban" />
+      <name name="{=separatist_female_name_33}Siyafan" />
+      <name name="{=separatist_female_name_34}Sulatha" />
+      <name name="{=separatist_female_name_35}Sur" />
+      <name name="{=separatist_female_name_36}Thuneikha" />
+      <name name="{=separatist_female_name_37}Tinab" />
+      <name name="{=separatist_female_name_38}Wara" />
+      <name name="{=separatist_female_name_39}Wisan" />
+      <name name="{=separatist_female_name_40}Yasmila" />
+      <name name="{=separatist_female_name_41}Zahara" />
+      <name name="{=separatist_female_name_42}Zandina" />
+      <name name="{=separatist_female_name_43}Zuwaira" />
     </female_names>
     <clan_names>
-      <name name="{=By82n3gR}Bani Aska" />
-      <name name="{=uwalgjVy}Bani Dhamin" />
-      <name name="{=86LT9H6v}Bani Fasus" />
-      <name name="{=c39lybQJ}Bani Julul" />
-      <name name="{=Iwe7Xpke}Bani Kinyan" />
-      <name name="{=irccq0qs}Bani Laikh" />
-      <name name="{=DygS1Bef}Bani Mushala" />
-      <name name="{=bgNQtbS7}Bani Nir" />
-      <name name="{=sAa3o3vw}Bani Tharuq" />
-      <name name="{=L4XUK5n4}Bani Yatash" />
-      <name name="{=WFfbxYu5}Bani Zus" />
+      <name name="{=separatist_clan_name_1}Bani Aska" />
+      <name name="{=separatist_clan_name_2}Bani Dhamin" />
+      <name name="{=separatist_clan_name_3}Bani Fasus" />
+      <name name="{=separatist_clan_name_4}Bani Julul" />
+      <name name="{=separatist_clan_name_5}Bani Kinyan" />
+      <name name="{=separatist_clan_name_6}Bani Laikh" />
+      <name name="{=separatist_clan_name_7}Bani Mushala" />
+      <name name="{=separatist_clan_name_8}Bani Nir" />
+      <name name="{=separatist_clan_name_9}Bani Tharuq" />
+      <name name="{=separatist_clan_name_10}Bani Yatash" />
+      <name name="{=separatist_clan_name_11}Bani Zus" />
     </clan_names>
 	<possible_clan_banner_icon_ids>
       <icon id="100" />
