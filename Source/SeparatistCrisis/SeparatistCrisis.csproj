@@ -20,6 +20,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="ScriptComponents\PartyTeleportation.cs" />
+    <Compile Include="Util\DebugRender.cs" />
   </ItemGroup>
 
   <ItemGroup>
