@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using TaleWorlds.MountAndBlade;
-
-using TaleWorlds.CampaignSystem;
-using TaleWorlds.Core;
-using TaleWorlds.MountAndBlade.CustomBattle;
-using Debug = System.Diagnostics.Debug;
+﻿using TaleWorlds.MountAndBlade;
 
 namespace SeparatistCrisis
 {
