@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using SeparatistCrisis.Util;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Engine;
 using TaleWorlds.Library;
@@ -13,6 +14,7 @@ namespace TaleWorlds.MountAndBlade
     {
         public float radius = 1f;
         public bool showDebugInfo = true;
+        public int numVerts = 12;
         private Vec3 TargetPosition { get; set; } = Vec3.Zero;
     
         private Vec3 Position { get; set; }
@@ -47,8 +49,7 @@ namespace TaleWorlds.MountAndBlade
                 if (IsPartyInArea(party))
                 {
                     party.Position2D = TargetPosition.AsVec2;
-                    // doesn't work
-                    party.ResetTargetParty(); // TODO: Reset player move order
+                    party.SetMoveModeHold();
                 }
             }
         }
@@ -56,13 +57,13 @@ namespace TaleWorlds.MountAndBlade
         protected override void OnEditorTick(float dt)
         {
             Setup();
+            MBDebug.ClearRenderObjects();
             if (showDebugInfo)
             {
                 Vec3 direction = TargetPosition - Position;
                 MBDebug.RenderDebugLine(Position, direction, UInt32.MaxValue, false, dt);
-                MBDebug.RenderDebugSphere(Position, radius, UInt32.MaxValue, false, dt);
+                DebugRender.RenderCircle(Position, radius, numVerts, dt);
             }
-            // TODO: make method to draw simple circle
         }
 
         private void Setup()
