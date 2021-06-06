@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <Compile Include="Main.cs" />
+    <Compile Include="ScriptComponents\PartyTeleportation.cs" />
   </ItemGroup>
 
   <ItemGroup>
