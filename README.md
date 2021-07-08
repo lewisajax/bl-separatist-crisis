@@ -6,8 +6,8 @@ Any coder who has no current task can take any free Issue to work on. Check the 
 We are following the principle of **Feature-Branching** meaning every Issue is getting their own branch. Branches are created from our master branch and are being merge back into the master branch as soon as the relating Isse has been resolved. **Make sure you are not commiting directly onto the master branch**.
 
 Please follow this guidline for naming your new branch:  
-{Issuenumber}/{issue-name}   
-Example: SC-123/branch-name
+{branch-type}/{Issuenumber}-{issue-name}   
+Example: feature/SC-123-branch-name
 
 Remember to link your pull-requests to the corresponding Issues to make tracking the development easier.
 Also it is good practice to get another team member to do a code review before you merge your branch into master.

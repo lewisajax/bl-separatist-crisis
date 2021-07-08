@@ -1,5 +1,6 @@
-*.exe
-*.dll
-Source/SeparatistCrisis/obj/*
-*/.vs/*
-**/*.csproj
+/Source/*
+!/Source/SeparatistCrisis
+
+/Source/SeparatistCrisis/.vs
+/Source/SeparatistCrisis/obj
+/Source/SeparatistCrisis/bin
