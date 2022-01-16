@@ -10,7 +10,7 @@ using TaleWorlds.ObjectSystem;
 
 namespace TaleWorlds.MountAndBlade
 {
-    public class PartyTeleportation : ScriptComponentBehaviour
+    public class PartyTeleportation : ScriptComponentBehavior
     {
         public float radius = 1f;
         public bool showDebugInfo = true;
@@ -33,16 +33,13 @@ namespace TaleWorlds.MountAndBlade
             Setup();
         }
         
-        protected override ScriptComponentBehaviour.TickRequirement GetTickRequirement()
-        {
-            return ScriptComponentBehaviour.TickRequirement.Tick;
-        }
+        public override ScriptComponentBehavior.TickRequirement GetTickRequirement() => ScriptComponentBehavior.TickRequirement.Tick;
         
         protected override void OnTick(float dt)
         {
             // check performance - we might need to optimize this part
             List<MobileParty> parties = new List<MobileParty>();
-            MBObjectManager.Instance.GetAllInstancesOfObjectType(ref parties);
+            //MBObjectManager.Instance.GetAllInstancesOfObjectType(ref parties);
 
             foreach (MobileParty party in parties)
             {

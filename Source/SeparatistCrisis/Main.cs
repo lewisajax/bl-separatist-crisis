@@ -1,4 +1,7 @@
-﻿using TaleWorlds.MountAndBlade;
+﻿using TaleWorlds.CampaignSystem;
+using TaleWorlds.Core;
+using TaleWorlds.ModuleManager;
+using TaleWorlds.MountAndBlade;
 
 namespace SeparatistCrisis
 {
@@ -8,6 +11,18 @@ namespace SeparatistCrisis
         protected override void OnSubModuleLoad()
         {
             // Stuff
+        }
+
+        protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
+        {
+            base.OnGameStart(game, gameStarterObject);
+            
+            if (!(game.GameType is Campaign))
+            {
+                return;
+            }
+            
+            ((CampaignGameStarter)gameStarterObject).LoadGameTexts(ModuleHelper.GetModuleFullPath("SeparatistCrisis") + "ModuleData/module_strings.xml");
         }
 
         // This allows us to add custom maps to the custom battle mode
