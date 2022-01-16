@@ -1,5 +1,7 @@
-﻿using TaleWorlds.CampaignSystem;
+﻿using HarmonyLib;
+using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
+using TaleWorlds.Library;
 using TaleWorlds.ModuleManager;
 using TaleWorlds.MountAndBlade;
 
@@ -10,7 +12,8 @@ namespace SeparatistCrisis
 
         protected override void OnSubModuleLoad()
         {
-            // Stuff
+            // Apply harmony patches
+            new Harmony("com.separatistcrisis.patches").PatchAll();
         }
 
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
@@ -23,6 +26,12 @@ namespace SeparatistCrisis
             }
             
             ((CampaignGameStarter)gameStarterObject).LoadGameTexts(ModuleHelper.GetModuleFullPath("SeparatistCrisis") + "ModuleData/module_strings.xml");
+        }
+        
+        protected override void OnBeforeInitialModuleScreenSetAsRoot()
+        {
+            base.OnBeforeInitialModuleScreenSetAsRoot();
+            InformationManager.DisplayMessage(new InformationMessage("SeparatistCrisis: Crosshair fixed", new Color(42f, 0f, 209f)));
         }
 
         // This allows us to add custom maps to the custom battle mode
