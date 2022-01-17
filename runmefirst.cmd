@@ -1,1 +1,0 @@
-powershell -ExecutionPolicy Unrestricted .\prepare-links.ps1

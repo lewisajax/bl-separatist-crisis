@@ -31,7 +31,7 @@ namespace SeparatistCrisis
         protected override void OnBeforeInitialModuleScreenSetAsRoot()
         {
             base.OnBeforeInitialModuleScreenSetAsRoot();
-            InformationManager.DisplayMessage(new InformationMessage("SeparatistCrisis: Crosshair fixed", new Color(42f, 0f, 209f)));
+            InformationManager.DisplayMessage(new InformationMessage("SeparatistCrisis: Crosshair patched", new Color(42f, 0f, 209f)));
         }
 
         // This allows us to add custom maps to the custom battle mode
