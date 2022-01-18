@@ -1,1 +1,0 @@
-This is the embbed asset packages folder for module
