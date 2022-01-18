@@ -1,1 +1,0 @@
-This is the assest folder for module

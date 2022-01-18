@@ -1,1 +1,0 @@
-This is the assest sources folder for module
