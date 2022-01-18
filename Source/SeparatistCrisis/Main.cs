@@ -27,12 +27,6 @@ namespace SeparatistCrisis
             
             ((CampaignGameStarter)gameStarterObject).LoadGameTexts(ModuleHelper.GetModuleFullPath("SeparatistCrisis") + "ModuleData/module_strings.xml");
         }
-        
-        protected override void OnBeforeInitialModuleScreenSetAsRoot()
-        {
-            base.OnBeforeInitialModuleScreenSetAsRoot();
-            InformationManager.DisplayMessage(new InformationMessage("SeparatistCrisis: Crosshair patched", new Color(42f, 0f, 209f)));
-        }
 
         // This allows us to add custom maps to the custom battle mode
         // Loading custom_battle_scenes.xml in our module
