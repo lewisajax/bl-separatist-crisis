@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
+using SeparatistCrisis.Patches;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
-using TaleWorlds.Library;
 using TaleWorlds.ModuleManager;
 using TaleWorlds.MountAndBlade;
 
@@ -9,23 +9,23 @@ namespace SeparatistCrisis
 {
     public class Main : MBSubModuleBase
     {
-
         protected override void OnSubModuleLoad()
         {
             // Apply harmony patches
             new Harmony("com.separatistcrisis.patches").PatchAll();
+            new DeactivateStoryMode();
         }
 
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
         {
             base.OnGameStart(game, gameStarterObject);
-            
             if (!(game.GameType is Campaign))
             {
                 return;
             }
             
             ((CampaignGameStarter)gameStarterObject).LoadGameTexts(ModuleHelper.GetModuleFullPath("SeparatistCrisis") + "ModuleData/module_strings.xml");
+            //game.GameStateManager.CleanAndPushState((GameState) Game.Current.GameStateManager.CreateState<CharacterCreationState>((object) new ScCharacterCreationContent()));
         }
 
         // This allows us to add custom maps to the custom battle mode
