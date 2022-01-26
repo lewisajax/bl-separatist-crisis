@@ -23,6 +23,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="Patches\DeactivateStoryMode.cs" />
+    <Compile Include="Patches\DeactivateVanillaCultureSelection.cs" />
     <Compile Include="Patches\FixCrosshair.cs" />
     <Compile Include="Patches\SetSandboxPlayerStartPos.cs" />
     <Compile Include="ScCharacterCreationContent.cs" />
