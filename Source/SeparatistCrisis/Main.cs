@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
 using SeparatistCrisis.Patches;
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.CharacterCreationContent;
 using TaleWorlds.Core;
 using TaleWorlds.ModuleManager;
 using TaleWorlds.MountAndBlade;
@@ -25,7 +26,6 @@ namespace SeparatistCrisis
             }
             
             ((CampaignGameStarter)gameStarterObject).LoadGameTexts(ModuleHelper.GetModuleFullPath("SeparatistCrisis") + "ModuleData/module_strings.xml");
-            //game.GameStateManager.CleanAndPushState((GameState) Game.Current.GameStateManager.CreateState<CharacterCreationState>((object) new ScCharacterCreationContent()));
         }
 
         // This allows us to add custom maps to the custom battle mode

@@ -84,128 +84,17 @@ namespace SeparatistCrisis
             CharacterCreationMenu menu = new CharacterCreationMenu(new TextObject("{=b4lDDcli}Family"),
                 new TextObject("{=XgFU1pCx}You were born into a family of..."),
                 new CharacterCreationOnInit(this.ParentsOnInit));
-            CharacterCreationCategory creationCategory1 =
-                menu.AddMenuCategory(new CharacterCreationOnCondition(this.EmpireParentsOnCondition));
-            creationCategory1.AddCategoryOption(new TextObject("{=InN5ZZt3}A landlord's retainers"),
-                new List<SkillObject>()
-                {
-                    DefaultSkills.Riding,
-                    DefaultSkills.Polearm
-                }, DefaultCharacterAttributes.Vigor, this.FocusToAdd, this.SkillLevelToAdd, this.AttributeLevelToAdd,
-                (CharacterCreationOnCondition) null,
-                new CharacterCreationOnSelect(this.EmpireLandlordsRetainerOnConsequence),
-                new CharacterCreationApplyFinalEffects(this.EmpireLandlordsRetainerOnApply),
-                new TextObject(
-                    "{=ivKl4mV2}Your father was a trusted lieutenant of the local landowning aristocrat. He rode with the lord's cavalry, fighting as an armored lancer."));
-            creationCategory1.AddCategoryOption(new TextObject("{=651FhzdR}Urban merchants"), new List<SkillObject>()
-                {
-                    DefaultSkills.Trade,
-                    DefaultSkills.Charm
-                }, DefaultCharacterAttributes.Social, this.FocusToAdd, this.SkillLevelToAdd, this.AttributeLevelToAdd,
-                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.EmpireMerchantOnConsequence),
-                new CharacterCreationApplyFinalEffects(this.EmpireMerchantOnApply),
-                new TextObject(
-                    "{=FQntPChs}Your family were merchants in one of the main cities of the Empire. They sometimes organized caravans to nearby towns, and discussed issues in the town council."));
-            creationCategory1.AddCategoryOption(new TextObject("{=sb4gg8Ak}Freeholders"), new List<SkillObject>()
-                {
-                    DefaultSkills.Athletics,
-                    DefaultSkills.Polearm
-                }, DefaultCharacterAttributes.Endurance, this.FocusToAdd, this.SkillLevelToAdd,
-                this.AttributeLevelToAdd,
-                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.EmpireFreeholderOnConsequence),
-                new CharacterCreationApplyFinalEffects(this.EmpireFreeholderOnApply),
-                new TextObject(
-                    "{=09z8Q08f}Your family were small farmers with just enough land to feed themselves and make a small profit. People like them were the pillars of the imperial rural economy, as well as the backbone of the levy."));
-            creationCategory1.AddCategoryOption(new TextObject("{=v48N6h1t}Urban artisans"), new List<SkillObject>()
-                {
-                    DefaultSkills.Crafting,
-                    DefaultSkills.Crossbow
-                }, DefaultCharacterAttributes.Intelligence, this.FocusToAdd, this.SkillLevelToAdd,
-                this.AttributeLevelToAdd,
-                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.EmpireArtisanOnConsequence),
-                new CharacterCreationApplyFinalEffects(this.EmpireArtisanOnApply),
-                new TextObject(
-                    "{=ZKynvffv}Your family owned their own workshop in a city, making goods from raw materials brought in from the countryside. Your father played an active if minor role in the town council, and also served in the militia."));
-            creationCategory1.AddCategoryOption(new TextObject("{=7eWmU2mF}Foresters"), new List<SkillObject>()
-                {
-                    DefaultSkills.Scouting,
-                    DefaultSkills.Bow
-                }, DefaultCharacterAttributes.Control, this.FocusToAdd, this.SkillLevelToAdd, this.AttributeLevelToAdd,
-                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.EmpireWoodsmanOnConsequence),
-                new CharacterCreationApplyFinalEffects(this.EmpireWoodsmanOnApply),
-                new TextObject(
-                    "{=yRFSzSDZ}Your family lived in a village, but did not own their own land. Instead, your father supplemented paid jobs with long trips in the woods, hunting and trapping, always keeping a wary eye for the lord's game wardens."));
-            creationCategory1.AddCategoryOption(new TextObject("{=aEke8dSb}Urban vagabonds"), new List<SkillObject>()
-                {
-                    DefaultSkills.Roguery,
-                    DefaultSkills.Throwing
-                }, DefaultCharacterAttributes.Cunning, this.FocusToAdd, this.SkillLevelToAdd, this.AttributeLevelToAdd,
-                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.EmpireVagabondOnConsequence),
-                new CharacterCreationApplyFinalEffects(this.EmpireVagabondOnApply),
-                new TextObject(
-                    "{=Jvf6K7TZ}Your family numbered among the many poor migrants living in the slums that grow up outside the walls of imperial cities, making whatever money they could from a variety of odd jobs. Sometimes they did service for one of the Empire's many criminal gangs, and you had an early look at the dark side of life."));
-            CharacterCreationCategory creationCategory2 =
-                menu.AddMenuCategory(new CharacterCreationOnCondition(this.VlandianParentsOnCondition));
-            creationCategory2.AddCategoryOption(new TextObject("{=2TptWc4m}A baron's retainers"),
-                new List<SkillObject>()
-                {
-                    DefaultSkills.Riding,
-                    DefaultSkills.Polearm
-                }, DefaultCharacterAttributes.Social, this.FocusToAdd, this.SkillLevelToAdd, this.AttributeLevelToAdd,
-                (CharacterCreationOnCondition) null,
-                new CharacterCreationOnSelect(this.VlandiaBaronsRetainerOnConsequence),
-                new CharacterCreationApplyFinalEffects(this.VlandiaBaronsRetainerOnApply),
-                new TextObject(
-                    "{=0Suu1Q9q}Your father was a bailiff for a local feudal magnate. He looked after his liege's estates, resolved disputes in the village, and helped train the village levy. He rode with the lord's cavalry, fighting as an armored knight."));
-            creationCategory2.AddCategoryOption(new TextObject("{=651FhzdR}Urban merchants"), new List<SkillObject>()
-                {
-                    DefaultSkills.Trade,
-                    DefaultSkills.Charm
-                }, DefaultCharacterAttributes.Intelligence, this.FocusToAdd, this.SkillLevelToAdd,
-                this.AttributeLevelToAdd,
-                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.VlandiaMerchantOnConsequence),
-                new CharacterCreationApplyFinalEffects(this.VlandiaMerchantOnApply),
-                new TextObject(
-                    "{=qNZFkxJb}Your family were merchants in one of the main cities of the kingdom. They organized caravans to nearby towns, were active in the local merchant's guild."));
-            creationCategory2.AddCategoryOption(new TextObject("{=RDfXuVxT}Yeomen"), new List<SkillObject>()
-                {
-                    DefaultSkills.Polearm,
-                    DefaultSkills.Crossbow
-                }, DefaultCharacterAttributes.Endurance, this.FocusToAdd, this.SkillLevelToAdd,
-                this.AttributeLevelToAdd,
-                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.VlandiaYeomanOnConsequence),
-                new CharacterCreationApplyFinalEffects(this.VlandiaYeomanOnApply),
-                new TextObject(
-                    "{=BLZ4mdhb}Your family were small farmers with just enough land to feed themselves and make a small profit. People like them were the pillars of the kingdom's economy, as well as the backbone of the levy."));
-            creationCategory2.AddCategoryOption(new TextObject("{=p2KIhGbE}Urban blacksmith"), new List<SkillObject>()
-                {
-                    DefaultSkills.Crafting,
-                    DefaultSkills.TwoHanded
-                }, DefaultCharacterAttributes.Vigor, this.FocusToAdd, this.SkillLevelToAdd, this.AttributeLevelToAdd,
-                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.VlandiaBlacksmithOnConsequence),
-                new CharacterCreationApplyFinalEffects(this.VlandiaBlacksmithOnApply),
-                new TextObject(
-                    "{=btsMpRcA}Your family owned a smithy in a city. Your father played an active if minor role in the town council, and also served in the militia."));
-            creationCategory2.AddCategoryOption(new TextObject("{=YcnK0Thk}Hunters"), new List<SkillObject>()
-                {
-                    DefaultSkills.Scouting,
-                    DefaultSkills.Crossbow
-                }, DefaultCharacterAttributes.Control, this.FocusToAdd, this.SkillLevelToAdd, this.AttributeLevelToAdd,
-                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.VlandiaHunterOnConsequence),
-                new CharacterCreationApplyFinalEffects(this.VlandiaHunterOnApply),
-                new TextObject(
-                    "{=yRFSzSDZ}Your family lived in a village, but did not own their own land. Instead, your father supplemented paid jobs with long trips in the woods, hunting and trapping, always keeping a wary eye for the lord's game wardens."));
-            creationCategory2.AddCategoryOption(new TextObject("{=ipQP6aVi}Mercenaries"), new List<SkillObject>()
-                {
-                    DefaultSkills.Roguery,
-                    DefaultSkills.Crossbow
-                }, DefaultCharacterAttributes.Cunning, this.FocusToAdd, this.SkillLevelToAdd, this.AttributeLevelToAdd,
-                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.VlandiaMercenaryOnConsequence),
-                new CharacterCreationApplyFinalEffects(this.VlandiaMercenaryOnApply),
-                new TextObject(
-                    "{=yYhX6JQC}Your father joined one of Vlandia's many mercenary companies, composed of men who got such a taste for war in their lord's service that they never took well to peace. Their crossbowmen were much valued across Calradia. Your mother was a camp follower, taking you along in the wake of bloody campaigns."));
+            AddRepublicParentOptions(menu);
+            AddSeparatistParentOptions(menu);
+            AddMandalorianParentOptions(menu);
+
+            characterCreation.AddNewMenu(menu);
+        }
+
+        private void AddMandalorianParentOptions(CharacterCreationMenu menu)
+        {
             CharacterCreationCategory creationCategory3 =
-                menu.AddMenuCategory(new CharacterCreationOnCondition(this.SturgianParentsOnCondition));
+                menu.AddMenuCategory(new CharacterCreationOnCondition(this.MandalorianParentsOnCondition));
             TextObject text1 = new TextObject("{=mc78FEbA}A boyar's companions");
             List<SkillObject> effectedSkills1 = new List<SkillObject>();
             effectedSkills1.Add(DefaultSkills.Riding);
@@ -215,9 +104,9 @@ namespace SeparatistCrisis
             int skillLevelToAdd1 = this.SkillLevelToAdd;
             int attributeLevelToAdd1 = this.AttributeLevelToAdd;
             CharacterCreationOnSelect onSelect1 =
-                new CharacterCreationOnSelect(this.SturgiaBoyarsCompanionOnConsequence);
+                new CharacterCreationOnSelect(this.MandalorianBoyarsCompanionOnConsequence);
             CharacterCreationApplyFinalEffects onApply1 =
-                new CharacterCreationApplyFinalEffects(this.SturgiaBoyarsCompanionOnApply);
+                new CharacterCreationApplyFinalEffects(this.MandalorianBoyarsCompanionOnApply);
             TextObject descriptionText1 = new TextObject(
                 "{=hob3WVkU}Your father was a member of a boyar's druzhina, the 'companions' that make up his retinue. He sat at his lord's table in the great hall, oversaw the boyar's estates, and stood by his side in the center of the shield wall in battle.");
             creationCategory3.AddCategoryOption(text1, effectedSkills1, social1, focusToAdd1, skillLevelToAdd1,
@@ -230,9 +119,9 @@ namespace SeparatistCrisis
             int focusToAdd2 = this.FocusToAdd;
             int skillLevelToAdd2 = this.SkillLevelToAdd;
             int attributeLevelToAdd2 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect2 = new CharacterCreationOnSelect(this.SturgiaTraderOnConsequence);
+            CharacterCreationOnSelect onSelect2 = new CharacterCreationOnSelect(this.MandalorianTraderOnConsequence);
             CharacterCreationApplyFinalEffects onApply2 =
-                new CharacterCreationApplyFinalEffects(this.SturgiaTraderOnApply);
+                new CharacterCreationApplyFinalEffects(this.MandalorianTraderOnApply);
             TextObject descriptionText2 =
                 new TextObject(
                     "{=bjVMtW3W}Your family were merchants who lived in one of Sturgia's great river ports, organizing the shipment of the north's bounty of furs, honey and other goods to faraway lands.");
@@ -246,9 +135,9 @@ namespace SeparatistCrisis
             int focusToAdd3 = this.FocusToAdd;
             int skillLevelToAdd3 = this.SkillLevelToAdd;
             int attributeLevelToAdd3 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect3 = new CharacterCreationOnSelect(this.SturgiaFreemanOnConsequence);
+            CharacterCreationOnSelect onSelect3 = new CharacterCreationOnSelect(this.MandalorianFreemanOnConsequence);
             CharacterCreationApplyFinalEffects onApply3 =
-                new CharacterCreationApplyFinalEffects(this.SturgiaFreemanOnApply);
+                new CharacterCreationApplyFinalEffects(this.MandalorianFreemanOnApply);
             TextObject descriptionText3 =
                 new TextObject(
                     "{=Mcd3ZyKq}Your family had just enough land to feed themselves and make a small profit. People like them were the pillars of the kingdom's economy, as well as the backbone of the levy.");
@@ -262,9 +151,9 @@ namespace SeparatistCrisis
             int focusToAdd4 = this.FocusToAdd;
             int skillLevelToAdd4 = this.SkillLevelToAdd;
             int attributeLevelToAdd4 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect4 = new CharacterCreationOnSelect(this.SturgiaArtisanOnConsequence);
+            CharacterCreationOnSelect onSelect4 = new CharacterCreationOnSelect(this.MandalorianArtisanOnConsequence);
             CharacterCreationApplyFinalEffects onApply4 =
-                new CharacterCreationApplyFinalEffects(this.SturgiaArtisanOnApply);
+                new CharacterCreationApplyFinalEffects(this.MandalorianArtisanOnApply);
             TextObject descriptionText4 = new TextObject(
                 "{=ueCm5y1C}Your family owned their own workshop in a city, making goods from raw materials brought in from the countryside. Your father played an active if minor role in the town council, and also served in the militia.");
             creationCategory3.AddCategoryOption(text4, effectedSkills4, intelligence1, focusToAdd4, skillLevelToAdd4,
@@ -277,9 +166,9 @@ namespace SeparatistCrisis
             int focusToAdd5 = this.FocusToAdd;
             int skillLevelToAdd5 = this.SkillLevelToAdd;
             int attributeLevelToAdd5 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect5 = new CharacterCreationOnSelect(this.SturgiaHunterOnConsequence);
+            CharacterCreationOnSelect onSelect5 = new CharacterCreationOnSelect(this.MandalorianHunterOnConsequence);
             CharacterCreationApplyFinalEffects onApply5 =
-                new CharacterCreationApplyFinalEffects(this.SturgiaHunterOnApply);
+                new CharacterCreationApplyFinalEffects(this.MandalorianHunterOnApply);
             TextObject descriptionText5 = new TextObject(
                 "{=WyZ2UtFF}Your family had no taste for the authority of the boyars. They made their living deep in the woods, slashing and burning fields which they tended for a year or two before moving on. They hunted and trapped fox, hare, ermine, and other fur-bearing animals.");
             creationCategory3.AddCategoryOption(text5, effectedSkills5, vigor1, focusToAdd5, skillLevelToAdd5,
@@ -292,296 +181,141 @@ namespace SeparatistCrisis
             int focusToAdd6 = this.FocusToAdd;
             int skillLevelToAdd6 = this.SkillLevelToAdd;
             int attributeLevelToAdd6 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect6 = new CharacterCreationOnSelect(this.SturgiaVagabondOnConsequence);
+            CharacterCreationOnSelect onSelect6 = new CharacterCreationOnSelect(this.MandalorianVagabondOnConsequence);
             CharacterCreationApplyFinalEffects onApply6 =
-                new CharacterCreationApplyFinalEffects(this.SturgiaVagabondOnApply);
+                new CharacterCreationApplyFinalEffects(this.MandalorianVagabondOnApply);
             TextObject descriptionText6 = new TextObject(
                 "{=2SDWhGmQ}Your family numbered among the poor migrants living in the slums that grow up outside the walls of the river cities, making whatever money they could from a variety of odd jobs. Sometimes they did services for one of the region's many criminal gangs.");
             creationCategory3.AddCategoryOption(text6, effectedSkills6, control1, focusToAdd6, skillLevelToAdd6,
                 attributeLevelToAdd6, (CharacterCreationOnCondition) null, onSelect6, onApply6, descriptionText6);
-            CharacterCreationCategory creationCategory4 =
-                menu.AddMenuCategory(new CharacterCreationOnCondition(this.AseraiParentsOnCondition));
-            TextObject text7 = new TextObject("{=Sw8OxnNr}Kinsfolk of an emir");
-            List<SkillObject> effectedSkills7 = new List<SkillObject>();
-            effectedSkills7.Add(DefaultSkills.Riding);
-            effectedSkills7.Add(DefaultSkills.Throwing);
-            CharacterAttribute endurance2 = DefaultCharacterAttributes.Endurance;
-            int focusToAdd7 = this.FocusToAdd;
-            int skillLevelToAdd7 = this.SkillLevelToAdd;
-            int attributeLevelToAdd7 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect7 = new CharacterCreationOnSelect(this.AseraiTribesmanOnConsequence);
-            CharacterCreationApplyFinalEffects onApply7 =
-                new CharacterCreationApplyFinalEffects(this.AseraiTribesmanOnApply);
-            TextObject descriptionText7 = new TextObject(
-                "{=MFrIHJZM}Your family was from a smaller offshoot of an emir's tribe. Your father's land gave him enough income to afford a horse but he was not quite wealthy enough to buy the armor needed to join the heavier cavalry. He fought as one of the light horsemen for which the desert is famous.");
-            creationCategory4.AddCategoryOption(text7, effectedSkills7, endurance2, focusToAdd7, skillLevelToAdd7,
-                attributeLevelToAdd7, (CharacterCreationOnCondition) null, onSelect7, onApply7, descriptionText7);
-            TextObject text8 = new TextObject("{=ngFVgwDD}Warrior-slaves");
-            List<SkillObject> effectedSkills8 = new List<SkillObject>();
-            effectedSkills8.Add(DefaultSkills.Riding);
-            effectedSkills8.Add(DefaultSkills.Polearm);
-            CharacterAttribute vigor2 = DefaultCharacterAttributes.Vigor;
-            int focusToAdd8 = this.FocusToAdd;
-            int skillLevelToAdd8 = this.SkillLevelToAdd;
-            int attributeLevelToAdd8 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect8 = new CharacterCreationOnSelect(this.AseraiWariorSlaveOnConsequence);
-            CharacterCreationApplyFinalEffects onApply8 =
-                new CharacterCreationApplyFinalEffects(this.AseraiWariorSlaveOnApply);
-            TextObject descriptionText8 = new TextObject(
-                "{=GsPC2MgU}Your father was part of one of the slave-bodyguards maintained by the Aserai emirs. He fought by his master's side with tribe's armored cavalry, and was freed - perhaps for an act of valor, or perhaps he paid for his freedom with his share of the spoils of battle. He then married your mother.");
-            creationCategory4.AddCategoryOption(text8, effectedSkills8, vigor2, focusToAdd8, skillLevelToAdd8,
-                attributeLevelToAdd8, (CharacterCreationOnCondition) null, onSelect8, onApply8, descriptionText8);
-            TextObject text9 = new TextObject("{=651FhzdR}Urban merchants");
-            List<SkillObject> effectedSkills9 = new List<SkillObject>();
-            effectedSkills9.Add(DefaultSkills.Trade);
-            effectedSkills9.Add(DefaultSkills.Charm);
-            CharacterAttribute social2 = DefaultCharacterAttributes.Social;
-            int focusToAdd9 = this.FocusToAdd;
-            int skillLevelToAdd9 = this.SkillLevelToAdd;
-            int attributeLevelToAdd9 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect9 = new CharacterCreationOnSelect(this.AseraiMerchantOnConsequence);
-            CharacterCreationApplyFinalEffects onApply9 =
-                new CharacterCreationApplyFinalEffects(this.AseraiMerchantOnApply);
-            TextObject descriptionText9 = new TextObject(
-                "{=1zXrlaav}Your family were respected traders in an oasis town. They ran caravans across the desert, and were experts in the finer points of negotiating passage through the desert tribes' territories.");
-            creationCategory4.AddCategoryOption(text9, effectedSkills9, social2, focusToAdd9, skillLevelToAdd9,
-                attributeLevelToAdd9, (CharacterCreationOnCondition) null, onSelect9, onApply9, descriptionText9);
-            TextObject text10 = new TextObject("{=g31pXuqi}Oasis farmers");
-            List<SkillObject> effectedSkills10 = new List<SkillObject>();
-            effectedSkills10.Add(DefaultSkills.Athletics);
-            effectedSkills10.Add(DefaultSkills.OneHanded);
-            CharacterAttribute endurance3 = DefaultCharacterAttributes.Endurance;
-            int focusToAdd10 = this.FocusToAdd;
-            int skillLevelToAdd10 = this.SkillLevelToAdd;
-            int attributeLevelToAdd10 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect10 = new CharacterCreationOnSelect(this.AseraiOasisFarmerOnConsequence);
-            CharacterCreationApplyFinalEffects onApply10 =
-                new CharacterCreationApplyFinalEffects(this.AseraiOasisFarmerOnApply);
-            TextObject descriptionText10 = new TextObject(
-                "{=5P0KqBAw}Your family tilled the soil in one of the oases of the Nahasa and tended the palm orchards that produced the desert's famous dates. Your father was a member of the main foot levy of his tribe, fighting with his kinsmen under the emir's banner.");
-            creationCategory4.AddCategoryOption(text10, effectedSkills10, endurance3, focusToAdd10, skillLevelToAdd10,
-                attributeLevelToAdd10, (CharacterCreationOnCondition) null, onSelect10, onApply10, descriptionText10);
-            TextObject text11 = new TextObject("{=EEedqolz}Bedouin");
-            List<SkillObject> effectedSkills11 = new List<SkillObject>();
-            effectedSkills11.Add(DefaultSkills.Scouting);
-            effectedSkills11.Add(DefaultSkills.Bow);
-            CharacterAttribute cunning2 = DefaultCharacterAttributes.Cunning;
-            int focusToAdd11 = this.FocusToAdd;
-            int skillLevelToAdd11 = this.SkillLevelToAdd;
-            int attributeLevelToAdd11 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect11 = new CharacterCreationOnSelect(this.AseraiBedouinOnConsequence);
-            CharacterCreationApplyFinalEffects onApply11 =
-                new CharacterCreationApplyFinalEffects(this.AseraiBedouinOnApply);
-            TextObject descriptionText11 =
+        }
+
+        private void AddSeparatistParentOptions(CharacterCreationMenu menu)
+        {
+            CharacterCreationCategory creationCategory2 =
+                menu.AddMenuCategory(new CharacterCreationOnCondition(this.SeparatistParentsOnCondition));
+            creationCategory2.AddCategoryOption(new TextObject("{=2TptWc4m}A baron's retainers"),
+                new List<SkillObject>()
+                {
+                    DefaultSkills.Riding,
+                    DefaultSkills.Polearm
+                }, DefaultCharacterAttributes.Social, this.FocusToAdd, this.SkillLevelToAdd, this.AttributeLevelToAdd,
+                (CharacterCreationOnCondition) null,
+                new CharacterCreationOnSelect(this.SeparatistBaronsRetainerOnConsequence),
+                new CharacterCreationApplyFinalEffects(this.SeparatistBaronsRetainerOnApply),
                 new TextObject(
-                    "{=PKhcPbBX}Your family were part of a nomadic clan, crisscrossing the wastes between wadi beds and wells to feed their herds of goats and camels on the scraggly scrubs of the Nahasa.");
-            creationCategory4.AddCategoryOption(text11, effectedSkills11, cunning2, focusToAdd11, skillLevelToAdd11,
-                attributeLevelToAdd11, (CharacterCreationOnCondition) null, onSelect11, onApply11, descriptionText11);
-            TextObject text12 = new TextObject("{=tRIrbTvv}Urban back-alley thugs");
-            List<SkillObject> effectedSkills12 = new List<SkillObject>();
-            effectedSkills12.Add(DefaultSkills.Roguery);
-            effectedSkills12.Add(DefaultSkills.Polearm);
-            CharacterAttribute control2 = DefaultCharacterAttributes.Control;
-            int focusToAdd12 = this.FocusToAdd;
-            int skillLevelToAdd12 = this.SkillLevelToAdd;
-            int attributeLevelToAdd12 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect12 = new CharacterCreationOnSelect(this.AseraiBackAlleyThugOnConsequence);
-            CharacterCreationApplyFinalEffects onApply12 =
-                new CharacterCreationApplyFinalEffects(this.AseraiBackAlleyThugOnApply);
-            TextObject descriptionText12 = new TextObject(
-                "{=6bUSbsKC}Your father worked for a fitiwi, one of the strongmen who keep order in the poorer quarters of the oasis towns. He resolved disputes over land, dice and insults, imposing his authority with the fitiwi's traditional staff.");
-            creationCategory4.AddCategoryOption(text12, effectedSkills12, control2, focusToAdd12, skillLevelToAdd12,
-                attributeLevelToAdd12, (CharacterCreationOnCondition) null, onSelect12, onApply12, descriptionText12);
-            CharacterCreationCategory creationCategory5 =
-                menu.AddMenuCategory(new CharacterCreationOnCondition(this.BattanianParentsOnCondition));
-            TextObject text13 = new TextObject("{=GeNKQlHR}Members of the chieftain's hearthguard");
-            List<SkillObject> effectedSkills13 = new List<SkillObject>();
-            effectedSkills13.Add(DefaultSkills.TwoHanded);
-            effectedSkills13.Add(DefaultSkills.Bow);
-            CharacterAttribute vigor3 = DefaultCharacterAttributes.Vigor;
-            int focusToAdd13 = this.FocusToAdd;
-            int skillLevelToAdd13 = this.SkillLevelToAdd;
-            int attributeLevelToAdd13 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect13 =
-                new CharacterCreationOnSelect(this.BattaniaChieftainsHearthguardOnConsequence);
-            CharacterCreationApplyFinalEffects onApply13 =
-                new CharacterCreationApplyFinalEffects(this.BattaniaChieftainsHearthguardOnApply);
-            TextObject descriptionText13 = new TextObject(
-                "{=LpH8SYFL}Your family were the trusted kinfolk of a Battanian chieftain, and sat at his table in his great hall. Your father assisted his chief in running the affairs of the clan and trained with the traditional weapons of the Battanian elite, the two-handed sword or falx and the bow.");
-            creationCategory5.AddCategoryOption(text13, effectedSkills13, vigor3, focusToAdd13, skillLevelToAdd13,
-                attributeLevelToAdd13, (CharacterCreationOnCondition) null, onSelect13, onApply13, descriptionText13);
-            TextObject text14 = new TextObject("{=AeBzTj6w}Healers");
-            List<SkillObject> effectedSkills14 = new List<SkillObject>();
-            effectedSkills14.Add(DefaultSkills.Medicine);
-            effectedSkills14.Add(DefaultSkills.Charm);
-            CharacterAttribute intelligence2 = DefaultCharacterAttributes.Intelligence;
-            int focusToAdd14 = this.FocusToAdd;
-            int skillLevelToAdd14 = this.SkillLevelToAdd;
-            int attributeLevelToAdd14 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect14 = new CharacterCreationOnSelect(this.BattaniaHealerOnConsequence);
-            CharacterCreationApplyFinalEffects onApply14 =
-                new CharacterCreationApplyFinalEffects(this.BattaniaHealerOnApply);
-            TextObject descriptionText14 =
+                    "{=0Suu1Q9q}Your father was a bailiff for a local feudal magnate. He looked after his liege's estates, resolved disputes in the village, and helped train the village levy. He rode with the lord's cavalry, fighting as an armored knight."));
+            creationCategory2.AddCategoryOption(new TextObject("{=651FhzdR}Urban merchants"), new List<SkillObject>()
+                {
+                    DefaultSkills.Trade,
+                    DefaultSkills.Charm
+                }, DefaultCharacterAttributes.Intelligence, this.FocusToAdd, this.SkillLevelToAdd,
+                this.AttributeLevelToAdd,
+                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.SeparatistMerchantOnConsequence),
+                new CharacterCreationApplyFinalEffects(this.SeparatistMerchantOnApply),
                 new TextObject(
-                    "{=j6py5Rv5}Your parents were healers who gathered herbs and treated the sick. As a living reservoir of Battanian tradition, they were also asked to adjudicate many disputes between the clans.");
-            creationCategory5.AddCategoryOption(text14, effectedSkills14, intelligence2, focusToAdd14,
-                skillLevelToAdd14, attributeLevelToAdd14, (CharacterCreationOnCondition) null, onSelect14, onApply14,
-                descriptionText14);
-            TextObject text15 = new TextObject("{=tGEStbxb}Tribespeople");
-            List<SkillObject> effectedSkills15 = new List<SkillObject>();
-            effectedSkills15.Add(DefaultSkills.Athletics);
-            effectedSkills15.Add(DefaultSkills.Throwing);
-            CharacterAttribute control3 = DefaultCharacterAttributes.Control;
-            int focusToAdd15 = this.FocusToAdd;
-            int skillLevelToAdd15 = this.SkillLevelToAdd;
-            int attributeLevelToAdd15 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect15 = new CharacterCreationOnSelect(this.BattaniaTribesmanOnConsequence);
-            CharacterCreationApplyFinalEffects onApply15 =
-                new CharacterCreationApplyFinalEffects(this.BattaniaTribesmanOnApply);
-            TextObject descriptionText15 = new TextObject(
-                "{=WchH8bS2}Your family were middle-ranking members of a Battanian clan, who tilled their own land. Your father fought with the kern, the main body of his people's warriors, joining in the screaming charges for which the Battanians were famous.");
-            creationCategory5.AddCategoryOption(text15, effectedSkills15, control3, focusToAdd15, skillLevelToAdd15,
-                attributeLevelToAdd15, (CharacterCreationOnCondition) null, onSelect15, onApply15, descriptionText15);
-            TextObject text16 = new TextObject("{=BCU6RezA}Smiths");
-            List<SkillObject> effectedSkills16 = new List<SkillObject>();
-            effectedSkills16.Add(DefaultSkills.Crafting);
-            effectedSkills16.Add(DefaultSkills.TwoHanded);
-            CharacterAttribute endurance4 = DefaultCharacterAttributes.Endurance;
-            int focusToAdd16 = this.FocusToAdd;
-            int skillLevelToAdd16 = this.SkillLevelToAdd;
-            int attributeLevelToAdd16 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect16 = new CharacterCreationOnSelect(this.BattaniaSmithOnConsequence);
-            CharacterCreationApplyFinalEffects onApply16 =
-                new CharacterCreationApplyFinalEffects(this.BattaniaSmithOnApply);
-            TextObject descriptionText16 = new TextObject(
-                "{=kg9YtrOg}Your family were smiths, a revered profession among the Battanians. They crafted everything from fine filigree jewelry in geometric designs to the well-balanced longswords favored by the Battanian aristocracy.");
-            creationCategory5.AddCategoryOption(text16, effectedSkills16, endurance4, focusToAdd16, skillLevelToAdd16,
-                attributeLevelToAdd16, (CharacterCreationOnCondition) null, onSelect16, onApply16, descriptionText16);
-            TextObject text17 = new TextObject("{=7eWmU2mF}Foresters");
-            List<SkillObject> effectedSkills17 = new List<SkillObject>();
-            effectedSkills17.Add(DefaultSkills.Scouting);
-            effectedSkills17.Add(DefaultSkills.Tactics);
-            CharacterAttribute cunning3 = DefaultCharacterAttributes.Cunning;
-            int focusToAdd17 = this.FocusToAdd;
-            int skillLevelToAdd17 = this.SkillLevelToAdd;
-            int attributeLevelToAdd17 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect17 = new CharacterCreationOnSelect(this.BattaniaWoodsmanOnConsequence);
-            CharacterCreationApplyFinalEffects onApply17 =
-                new CharacterCreationApplyFinalEffects(this.BattaniaWoodsmanOnApply);
-            TextObject descriptionText17 = new TextObject(
-                "{=7jBroUUQ}Your family had little land of their own, so they earned their living from the woods, hunting and trapping. They taught you from an early age that skills like finding game trails and killing an animal with one shot could make the difference between eating and starvation.");
-            creationCategory5.AddCategoryOption(text17, effectedSkills17, cunning3, focusToAdd17, skillLevelToAdd17,
-                attributeLevelToAdd17, (CharacterCreationOnCondition) null, onSelect17, onApply17, descriptionText17);
-            TextObject text18 = new TextObject("{=SpJqhEEh}Bards");
-            List<SkillObject> effectedSkills18 = new List<SkillObject>();
-            effectedSkills18.Add(DefaultSkills.Roguery);
-            effectedSkills18.Add(DefaultSkills.Charm);
-            CharacterAttribute social3 = DefaultCharacterAttributes.Social;
-            int focusToAdd18 = this.FocusToAdd;
-            int skillLevelToAdd18 = this.SkillLevelToAdd;
-            int attributeLevelToAdd18 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect18 = new CharacterCreationOnSelect(this.BattaniaBardOnConsequence);
-            CharacterCreationApplyFinalEffects onApply18 =
-                new CharacterCreationApplyFinalEffects(this.BattaniaBardOnApply);
-            TextObject descriptionText18 = new TextObject(
-                "{=aVzcyhhy}Your father was a bard, drifting from chieftain's hall to chieftain's hall making his living singing the praises of one Battanian aristocrat and mocking his enemies, then going to his enemy's hall and doing the reverse. You learned from him that a clever tongue could spare you  from a life toiling in the fields, if you kept your wits about you.");
-            creationCategory5.AddCategoryOption(text18, effectedSkills18, social3, focusToAdd18, skillLevelToAdd18,
-                attributeLevelToAdd18, (CharacterCreationOnCondition) null, onSelect18, onApply18, descriptionText18);
-            CharacterCreationCategory creationCategory6 =
-                menu.AddMenuCategory(new CharacterCreationOnCondition(this.KhuzaitParentsOnCondition));
-            TextObject text19 = new TextObject("{=FVaRDe2a}A noyan's kinsfolk");
-            List<SkillObject> effectedSkills19 = new List<SkillObject>();
-            effectedSkills19.Add(DefaultSkills.Riding);
-            effectedSkills19.Add(DefaultSkills.Polearm);
-            CharacterAttribute endurance5 = DefaultCharacterAttributes.Endurance;
-            int focusToAdd19 = this.FocusToAdd;
-            int skillLevelToAdd19 = this.SkillLevelToAdd;
-            int attributeLevelToAdd19 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect19 =
-                new CharacterCreationOnSelect(this.KhuzaitNoyansKinsmanOnConsequence);
-            CharacterCreationApplyFinalEffects onApply19 =
-                new CharacterCreationApplyFinalEffects(this.KhuzaitNoyansKinsmanOnApply);
-            TextObject descriptionText19 = new TextObject(
-                "{=jAs3kDXh}Your family were the trusted kinsfolk of a Khuzait noyan, and shared his meals in the chieftain's yurt. Your father assisted his chief in running the affairs of the clan and fought in the core of armored lancers in the center of the Khuzait battle line.");
-            creationCategory6.AddCategoryOption(text19, effectedSkills19, endurance5, focusToAdd19, skillLevelToAdd19,
-                attributeLevelToAdd19, (CharacterCreationOnCondition) null, onSelect19, onApply19, descriptionText19);
-            TextObject text20 = new TextObject("{=TkgLEDRM}Merchants");
-            List<SkillObject> effectedSkills20 = new List<SkillObject>();
-            effectedSkills20.Add(DefaultSkills.Trade);
-            effectedSkills20.Add(DefaultSkills.Charm);
-            CharacterAttribute social4 = DefaultCharacterAttributes.Social;
-            int focusToAdd20 = this.FocusToAdd;
-            int skillLevelToAdd20 = this.SkillLevelToAdd;
-            int attributeLevelToAdd20 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect20 = new CharacterCreationOnSelect(this.KhuzaitMerchantOnConsequence);
-            CharacterCreationApplyFinalEffects onApply20 =
-                new CharacterCreationApplyFinalEffects(this.KhuzaitMerchantOnApply);
-            TextObject descriptionText20 = new TextObject(
-                "{=qPg3IDiq}Your family came from one of the merchant clans that dominated the cities in eastern Calradia before the Khuzait conquest. They adjusted quickly to their new masters, keeping the caravan routes running and ensuring that the tariff revenues that once went into imperial coffers now flowed to the khanate.");
-            creationCategory6.AddCategoryOption(text20, effectedSkills20, social4, focusToAdd20, skillLevelToAdd20,
-                attributeLevelToAdd20, (CharacterCreationOnCondition) null, onSelect20, onApply20, descriptionText20);
-            TextObject text21 = new TextObject("{=tGEStbxb}Tribespeople");
-            List<SkillObject> effectedSkills21 = new List<SkillObject>();
-            effectedSkills21.Add(DefaultSkills.Bow);
-            effectedSkills21.Add(DefaultSkills.Riding);
-            CharacterAttribute control4 = DefaultCharacterAttributes.Control;
-            int focusToAdd21 = this.FocusToAdd;
-            int skillLevelToAdd21 = this.SkillLevelToAdd;
-            int attributeLevelToAdd21 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect21 = new CharacterCreationOnSelect(this.KhuzaitTribesmanOnConsequence);
-            CharacterCreationApplyFinalEffects onApply21 =
-                new CharacterCreationApplyFinalEffects(this.KhuzaitTribesmanOnApply);
-            TextObject descriptionText21 = new TextObject(
-                "{=URgZ4ai4}Your family were middle-ranking members of one of the Khuzait clans. He had some  herds of his own, but was not rich. When the Khuzait horde was summoned to battle, he fought with the horse archers, shooting and wheeling and wearing down the enemy before the lancers delivered the final punch.");
-            creationCategory6.AddCategoryOption(text21, effectedSkills21, control4, focusToAdd21, skillLevelToAdd21,
-                attributeLevelToAdd21, (CharacterCreationOnCondition) null, onSelect21, onApply21, descriptionText21);
-            TextObject text22 = new TextObject("{=gQ2tAvCz}Farmers");
-            List<SkillObject> effectedSkills22 = new List<SkillObject>();
-            effectedSkills22.Add(DefaultSkills.Polearm);
-            effectedSkills22.Add(DefaultSkills.Throwing);
-            CharacterAttribute vigor4 = DefaultCharacterAttributes.Vigor;
-            int focusToAdd22 = this.FocusToAdd;
-            int skillLevelToAdd22 = this.SkillLevelToAdd;
-            int attributeLevelToAdd22 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect22 = new CharacterCreationOnSelect(this.KhuzaitFarmerOnConsequence);
-            CharacterCreationApplyFinalEffects onApply22 =
-                new CharacterCreationApplyFinalEffects(this.KhuzaitFarmerOnApply);
-            TextObject descriptionText22 = new TextObject(
-                "{=5QSGoRFj}Your family tilled one of the small patches of arable land in the steppes for generations. When the Khuzaits came, they ceased paying taxes to the emperor and providing conscripts for his army, and served the khan instead.");
-            creationCategory6.AddCategoryOption(text22, effectedSkills22, vigor4, focusToAdd22, skillLevelToAdd22,
-                attributeLevelToAdd22, (CharacterCreationOnCondition) null, onSelect22, onApply22, descriptionText22);
-            TextObject text23 = new TextObject("{=vfhVveLW}Shamans");
-            List<SkillObject> effectedSkills23 = new List<SkillObject>();
-            effectedSkills23.Add(DefaultSkills.Medicine);
-            effectedSkills23.Add(DefaultSkills.Charm);
-            CharacterAttribute intelligence3 = DefaultCharacterAttributes.Intelligence;
-            int focusToAdd23 = this.FocusToAdd;
-            int skillLevelToAdd23 = this.SkillLevelToAdd;
-            int attributeLevelToAdd23 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect23 = new CharacterCreationOnSelect(this.KhuzaitShamanOnConsequence);
-            CharacterCreationApplyFinalEffects onApply23 =
-                new CharacterCreationApplyFinalEffects(this.KhuzaitShamanOnApply);
-            TextObject descriptionText23 = new TextObject(
-                "{=WOKNhaG2}Your family were guardians of the sacred traditions of the Khuzaits, channelling the spirits of the wilderness and of the ancestors. They tended the sick and dispensed wisdom, resolving disputes and providing practical advice.");
-            creationCategory6.AddCategoryOption(text23, effectedSkills23, intelligence3, focusToAdd23,
-                skillLevelToAdd23, attributeLevelToAdd23, (CharacterCreationOnCondition) null, onSelect23, onApply23,
-                descriptionText23);
-            TextObject text24 = new TextObject("{=Xqba1Obq}Nomads");
-            List<SkillObject> effectedSkills24 = new List<SkillObject>();
-            effectedSkills24.Add(DefaultSkills.Scouting);
-            effectedSkills24.Add(DefaultSkills.Riding);
-            CharacterAttribute cunning4 = DefaultCharacterAttributes.Cunning;
-            int focusToAdd24 = this.FocusToAdd;
-            int skillLevelToAdd24 = this.SkillLevelToAdd;
-            int attributeLevelToAdd24 = this.AttributeLevelToAdd;
-            CharacterCreationOnSelect onSelect24 = new CharacterCreationOnSelect(this.KhuzaitNomadOnConsequence);
-            CharacterCreationApplyFinalEffects onApply24 =
-                new CharacterCreationApplyFinalEffects(this.KhuzaitNomadOnApply);
-            TextObject descriptionText24 = new TextObject(
-                "{=9aoQYpZs}Your family's clan never pledged its loyalty to the khan and never settled down, preferring to live out in the deep steppe away from his authority. They remain some of the finest trackers and scouts in the grasslands, as the ability to spot an enemy coming and move quickly is often all that protects their herds from their neighbors' predations.");
-            creationCategory6.AddCategoryOption(text24, effectedSkills24, cunning4, focusToAdd24, skillLevelToAdd24,
-                attributeLevelToAdd24, (CharacterCreationOnCondition) null, onSelect24, onApply24, descriptionText24);
-            characterCreation.AddNewMenu(menu);
+                    "{=qNZFkxJb}Your family were merchants in one of the main cities of the kingdom. They organized caravans to nearby towns, were active in the local merchant's guild."));
+            creationCategory2.AddCategoryOption(new TextObject("{=RDfXuVxT}Yeomen"), new List<SkillObject>()
+                {
+                    DefaultSkills.Polearm,
+                    DefaultSkills.Crossbow
+                }, DefaultCharacterAttributes.Endurance, this.FocusToAdd, this.SkillLevelToAdd,
+                this.AttributeLevelToAdd,
+                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.SeparatistYeomanOnConsequence),
+                new CharacterCreationApplyFinalEffects(this.SeparatistYeomanOnApply),
+                new TextObject(
+                    "{=BLZ4mdhb}Your family were small farmers with just enough land to feed themselves and make a small profit. People like them were the pillars of the kingdom's economy, as well as the backbone of the levy."));
+            creationCategory2.AddCategoryOption(new TextObject("{=p2KIhGbE}Urban blacksmith"), new List<SkillObject>()
+                {
+                    DefaultSkills.Crafting,
+                    DefaultSkills.TwoHanded
+                }, DefaultCharacterAttributes.Vigor, this.FocusToAdd, this.SkillLevelToAdd, this.AttributeLevelToAdd,
+                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.SeparatistBlacksmithOnConsequence),
+                new CharacterCreationApplyFinalEffects(this.SeparatistBlacksmithOnApply),
+                new TextObject(
+                    "{=btsMpRcA}Your family owned a smithy in a city. Your father played an active if minor role in the town council, and also served in the militia."));
+            creationCategory2.AddCategoryOption(new TextObject("{=YcnK0Thk}Hunters"), new List<SkillObject>()
+                {
+                    DefaultSkills.Scouting,
+                    DefaultSkills.Crossbow
+                }, DefaultCharacterAttributes.Control, this.FocusToAdd, this.SkillLevelToAdd, this.AttributeLevelToAdd,
+                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.SeparatistHunterOnConsequence),
+                new CharacterCreationApplyFinalEffects(this.SeparatistHunterOnApply),
+                new TextObject(
+                    "{=yRFSzSDZ}Your family lived in a village, but did not own their own land. Instead, your father supplemented paid jobs with long trips in the woods, hunting and trapping, always keeping a wary eye for the lord's game wardens."));
+            creationCategory2.AddCategoryOption(new TextObject("{=ipQP6aVi}Mercenaries"), new List<SkillObject>()
+                {
+                    DefaultSkills.Roguery,
+                    DefaultSkills.Crossbow
+                }, DefaultCharacterAttributes.Cunning, this.FocusToAdd, this.SkillLevelToAdd, this.AttributeLevelToAdd,
+                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.SeparatistMercenaryOnConsequence),
+                new CharacterCreationApplyFinalEffects(this.SeparatistMercenaryOnApply),
+                new TextObject(
+                    "{=yYhX6JQC}Your father joined one of Vlandia's many mercenary companies, composed of men who got such a taste for war in their lord's service that they never took well to peace. Their crossbowmen were much valued across Calradia. Your mother was a camp follower, taking you along in the wake of bloody campaigns."));
+        }
+
+        private void AddRepublicParentOptions(CharacterCreationMenu menu)
+        {
+            CharacterCreationCategory creationCategory1 =
+                menu.AddMenuCategory(new CharacterCreationOnCondition(this.RepublicParentsOnCondition));
+            creationCategory1.AddCategoryOption(new TextObject("{=InN5ZZt3}A landlord's retainers"),
+                new List<SkillObject>()
+                {
+                    DefaultSkills.Riding,
+                    DefaultSkills.Polearm
+                }, DefaultCharacterAttributes.Vigor, this.FocusToAdd, this.SkillLevelToAdd, this.AttributeLevelToAdd,
+                (CharacterCreationOnCondition) null,
+                new CharacterCreationOnSelect(this.RepublicLandlordsRetainerOnConsequence),
+                new CharacterCreationApplyFinalEffects(this.RepublicLandlordsRetainerOnApply),
+                new TextObject(
+                    "{=ivKl4mV2}Your father was a trusted lieutenant of the local landowning aristocrat. He rode with the lord's cavalry, fighting as an armored lancer."));
+            creationCategory1.AddCategoryOption(new TextObject("{=651FhzdR}Urban merchants"), new List<SkillObject>()
+                {
+                    DefaultSkills.Trade,
+                    DefaultSkills.Charm
+                }, DefaultCharacterAttributes.Social, this.FocusToAdd, this.SkillLevelToAdd, this.AttributeLevelToAdd,
+                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.RepublicMerchantOnConsequence),
+                new CharacterCreationApplyFinalEffects(this.RepublicMerchantOnApply),
+                new TextObject(
+                    "{=FQntPChs}Your family were merchants in one of the main cities of the Empire. They sometimes organized caravans to nearby towns, and discussed issues in the town council."));
+            creationCategory1.AddCategoryOption(new TextObject("{=sb4gg8Ak}Freeholders"), new List<SkillObject>()
+                {
+                    DefaultSkills.Athletics,
+                    DefaultSkills.Polearm
+                }, DefaultCharacterAttributes.Endurance, this.FocusToAdd, this.SkillLevelToAdd,
+                this.AttributeLevelToAdd,
+                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.RepublicFreeholderOnConsequence),
+                new CharacterCreationApplyFinalEffects(this.RepublicFreeholderOnApply),
+                new TextObject(
+                    "{=09z8Q08f}Your family were small farmers with just enough land to feed themselves and make a small profit. People like them were the pillars of the imperial rural economy, as well as the backbone of the levy."));
+            creationCategory1.AddCategoryOption(new TextObject("{=v48N6h1t}Urban artisans"), new List<SkillObject>()
+                {
+                    DefaultSkills.Crafting,
+                    DefaultSkills.Crossbow
+                }, DefaultCharacterAttributes.Intelligence, this.FocusToAdd, this.SkillLevelToAdd,
+                this.AttributeLevelToAdd,
+                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.RepublicArtisanOnConsequence),
+                new CharacterCreationApplyFinalEffects(this.RepublicArtisanOnApply),
+                new TextObject(
+                    "{=ZKynvffv}Your family owned their own workshop in a city, making goods from raw materials brought in from the countryside. Your father played an active if minor role in the town council, and also served in the militia."));
+            creationCategory1.AddCategoryOption(new TextObject("{=7eWmU2mF}Foresters"), new List<SkillObject>()
+                {
+                    DefaultSkills.Scouting,
+                    DefaultSkills.Bow
+                }, DefaultCharacterAttributes.Control, this.FocusToAdd, this.SkillLevelToAdd, this.AttributeLevelToAdd,
+                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.RepublicWoodsmanOnConsequence),
+                new CharacterCreationApplyFinalEffects(this.RepublicWoodsmanOnApply),
+                new TextObject(
+                    "{=yRFSzSDZ}Your family lived in a village, but did not own their own land. Instead, your father supplemented paid jobs with long trips in the woods, hunting and trapping, always keeping a wary eye for the lord's game wardens."));
+            creationCategory1.AddCategoryOption(new TextObject("{=aEke8dSb}Urban vagabonds"), new List<SkillObject>()
+                {
+                    DefaultSkills.Roguery,
+                    DefaultSkills.Throwing
+                }, DefaultCharacterAttributes.Cunning, this.FocusToAdd, this.SkillLevelToAdd, this.AttributeLevelToAdd,
+                (CharacterCreationOnCondition) null, new CharacterCreationOnSelect(this.RepublicVagabondOnConsequence),
+                new CharacterCreationApplyFinalEffects(this.RepublicVagabondOnApply),
+                new TextObject(
+                    "{=Jvf6K7TZ}Your family numbered among the many poor migrants living in the slums that grow up outside the walls of imperial cities, making whatever money they could from a variety of odd jobs. Sometimes they did service for one of the Empire's many criminal gangs, and you had an early look at the dark side of life."));
         }
 
         protected void AddChildhoodMenu(CharacterCreation characterCreation)
@@ -986,9 +720,7 @@ namespace SeparatistCrisis
                 this._youthIntroductoryText, new CharacterCreationOnInit(this.YouthOnInit));
             CharacterCreationCategory creationCategory = menu.AddMenuCategory();
             TextObject text1 = new TextObject("{=CITG915d}joined a commander's staff.");
-            List<SkillObject> effectedSkills1 = new List<SkillObject>();
-            effectedSkills1.Add(DefaultSkills.Steward);
-            effectedSkills1.Add(DefaultSkills.Tactics);
+            List<SkillObject> effectedSkills1 = new List<SkillObject> {DefaultSkills.Steward, DefaultSkills.Tactics};
             CharacterAttribute cunning1 = DefaultCharacterAttributes.Cunning;
             int focusToAdd1 = this.FocusToAdd;
             int skillLevelToAdd1 = this.SkillLevelToAdd;
@@ -1221,9 +953,10 @@ namespace SeparatistCrisis
                 new CharacterCreationOnInit(this.AccomplishmentOnInit));
             CharacterCreationCategory creationCategory = menu.AddMenuCategory();
             TextObject text1 = new TextObject("{=8bwpVpgy}you defeated an enemy in battle.");
-            List<SkillObject> effectedSkills1 = new List<SkillObject>();
-            effectedSkills1.Add(DefaultSkills.OneHanded);
-            effectedSkills1.Add(DefaultSkills.TwoHanded);
+            List<SkillObject> effectedSkills1 = new List<SkillObject>
+            {
+                DefaultSkills.OneHanded, DefaultSkills.TwoHanded
+            };
             CharacterAttribute vigor = DefaultCharacterAttributes.Vigor;
             int focusToAdd1 = this.FocusToAdd;
             int skillLevelToAdd1 = this.SkillLevelToAdd;
@@ -1241,9 +974,7 @@ namespace SeparatistCrisis
                     DefaultTraits.Valor
                 }, 1, 20);
             TextObject text2 = new TextObject("{=mP3uFbcq}you led a successful manhunt.");
-            List<SkillObject> effectedSkills2 = new List<SkillObject>();
-            effectedSkills2.Add(DefaultSkills.Tactics);
-            effectedSkills2.Add(DefaultSkills.Leadership);
+            List<SkillObject> effectedSkills2 = new List<SkillObject> {DefaultSkills.Tactics, DefaultSkills.Leadership};
             CharacterAttribute cunning1 = DefaultCharacterAttributes.Cunning;
             int focusToAdd2 = this.FocusToAdd;
             int skillLevelToAdd2 = this.SkillLevelToAdd;
@@ -1619,233 +1350,119 @@ namespace SeparatistCrisis
                 isLeftHandItemForMother);
         }
 
-        protected void EmpireLandlordsRetainerOnConsequence(CharacterCreation characterCreation) =>
+        protected void RepublicLandlordsRetainerOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 1,
                 ScCharacterCreationContent.OccupationTypes.Retainer);
 
-        protected void EmpireMerchantOnConsequence(CharacterCreation characterCreation) =>
+        protected void RepublicMerchantOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 2,
                 ScCharacterCreationContent.OccupationTypes.Merchant);
 
-        protected void EmpireFreeholderOnConsequence(CharacterCreation characterCreation) =>
+        protected void RepublicFreeholderOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 3,
                 ScCharacterCreationContent.OccupationTypes.Farmer);
 
-        protected void EmpireArtisanOnConsequence(CharacterCreation characterCreation) =>
+        protected void RepublicArtisanOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 4,
                 ScCharacterCreationContent.OccupationTypes.Artisan);
 
-        protected void EmpireWoodsmanOnConsequence(CharacterCreation characterCreation) =>
+        protected void RepublicWoodsmanOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 5,
                 ScCharacterCreationContent.OccupationTypes.Hunter);
 
-        protected void EmpireVagabondOnConsequence(CharacterCreation characterCreation) =>
+        protected void RepublicVagabondOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 6,
                 ScCharacterCreationContent.OccupationTypes.Vagabond);
 
-        protected void EmpireLandlordsRetainerOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void RepublicLandlordsRetainerOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void EmpireMerchantOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void RepublicMerchantOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void EmpireFreeholderOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void RepublicFreeholderOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void EmpireArtisanOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void RepublicArtisanOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void EmpireWoodsmanOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void RepublicWoodsmanOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void EmpireVagabondOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void RepublicVagabondOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void VlandiaBaronsRetainerOnConsequence(CharacterCreation characterCreation) =>
+        protected void SeparatistBaronsRetainerOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 1,
                 ScCharacterCreationContent.OccupationTypes.Retainer);
 
-        protected void VlandiaMerchantOnConsequence(CharacterCreation characterCreation) =>
+        protected void SeparatistMerchantOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 2,
                 ScCharacterCreationContent.OccupationTypes.Merchant);
 
-        protected void VlandiaYeomanOnConsequence(CharacterCreation characterCreation) =>
+        protected void SeparatistYeomanOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 3,
                 ScCharacterCreationContent.OccupationTypes.Farmer);
 
-        protected void VlandiaBlacksmithOnConsequence(CharacterCreation characterCreation) =>
+        protected void SeparatistBlacksmithOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 4,
                 ScCharacterCreationContent.OccupationTypes.Artisan);
 
-        protected void VlandiaHunterOnConsequence(CharacterCreation characterCreation) =>
+        protected void SeparatistHunterOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 5,
                 ScCharacterCreationContent.OccupationTypes.Hunter);
 
-        protected void VlandiaMercenaryOnConsequence(CharacterCreation characterCreation) =>
+        protected void SeparatistMercenaryOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 6,
                 ScCharacterCreationContent.OccupationTypes.Mercenary);
 
-        protected void VlandiaBaronsRetainerOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void SeparatistBaronsRetainerOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void VlandiaMerchantOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void SeparatistMerchantOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void VlandiaYeomanOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void SeparatistYeomanOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void VlandiaBlacksmithOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void SeparatistBlacksmithOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void VlandiaHunterOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void SeparatistHunterOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void VlandiaMercenaryOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void SeparatistMercenaryOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void SturgiaBoyarsCompanionOnConsequence(CharacterCreation characterCreation) =>
+        protected void MandalorianBoyarsCompanionOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 1,
                 ScCharacterCreationContent.OccupationTypes.Retainer);
 
-        protected void SturgiaTraderOnConsequence(CharacterCreation characterCreation) =>
+        protected void MandalorianTraderOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 2,
                 ScCharacterCreationContent.OccupationTypes.Merchant);
 
-        protected void SturgiaFreemanOnConsequence(CharacterCreation characterCreation) =>
+        protected void MandalorianFreemanOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 3,
                 ScCharacterCreationContent.OccupationTypes.Farmer);
 
-        protected void SturgiaArtisanOnConsequence(CharacterCreation characterCreation) =>
+        protected void MandalorianArtisanOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 4,
                 ScCharacterCreationContent.OccupationTypes.Artisan);
 
-        protected void SturgiaHunterOnConsequence(CharacterCreation characterCreation) =>
+        protected void MandalorianHunterOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 5,
                 ScCharacterCreationContent.OccupationTypes.Hunter);
 
-        protected void SturgiaVagabondOnConsequence(CharacterCreation characterCreation) =>
+        protected void MandalorianVagabondOnConsequence(CharacterCreation characterCreation) =>
             this.SetParentAndOccupationType(characterCreation, 6,
                 ScCharacterCreationContent.OccupationTypes.Vagabond);
 
-        protected void SturgiaBoyarsCompanionOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void MandalorianBoyarsCompanionOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void SturgiaTraderOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void MandalorianTraderOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void SturgiaFreemanOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void MandalorianFreemanOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void SturgiaArtisanOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void MandalorianArtisanOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void SturgiaHunterOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void MandalorianHunterOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void SturgiaVagabondOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
+        protected void MandalorianVagabondOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
 
-        protected void AseraiTribesmanOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 1,
-                ScCharacterCreationContent.OccupationTypes.Retainer);
-
-        protected void AseraiWariorSlaveOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 2,
-                ScCharacterCreationContent.OccupationTypes.Mercenary);
-
-        protected void AseraiMerchantOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 3,
-                ScCharacterCreationContent.OccupationTypes.Merchant);
-
-        protected void AseraiOasisFarmerOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 4,
-                ScCharacterCreationContent.OccupationTypes.Farmer);
-
-        protected void AseraiBedouinOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 5,
-                ScCharacterCreationContent.OccupationTypes.Herder);
-
-        protected void AseraiBackAlleyThugOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 6,
-                ScCharacterCreationContent.OccupationTypes.Artisan);
-
-        protected void AseraiTribesmanOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected void AseraiWariorSlaveOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected void AseraiMerchantOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected void AseraiOasisFarmerOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected void AseraiBedouinOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected void AseraiBackAlleyThugOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected void BattaniaChieftainsHearthguardOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 1,
-                ScCharacterCreationContent.OccupationTypes.Retainer);
-
-        protected void BattaniaHealerOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 2,
-                ScCharacterCreationContent.OccupationTypes.Healer);
-
-        protected void BattaniaTribesmanOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 3,
-                ScCharacterCreationContent.OccupationTypes.Farmer);
-
-        protected void BattaniaSmithOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 4,
-                ScCharacterCreationContent.OccupationTypes.Artisan);
-
-        protected void BattaniaWoodsmanOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 5,
-                ScCharacterCreationContent.OccupationTypes.Hunter);
-
-        protected void BattaniaBardOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 6, ScCharacterCreationContent.OccupationTypes.Bard);
-
-        protected void BattaniaChieftainsHearthguardOnApply(CharacterCreation characterCreation) =>
-            this.FinalizeParents();
-
-        protected void BattaniaHealerOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected void BattaniaTribesmanOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected void BattaniaSmithOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected void BattaniaWoodsmanOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected void BattaniaBardOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected void KhuzaitNoyansKinsmanOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 1,
-                ScCharacterCreationContent.OccupationTypes.Retainer);
-
-        protected void KhuzaitMerchantOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 2,
-                ScCharacterCreationContent.OccupationTypes.Merchant);
-
-        protected void KhuzaitTribesmanOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 3,
-                ScCharacterCreationContent.OccupationTypes.Herder);
-
-        protected void KhuzaitFarmerOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 4,
-                ScCharacterCreationContent.OccupationTypes.Farmer);
-
-        protected void KhuzaitShamanOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 5,
-                ScCharacterCreationContent.OccupationTypes.Healer);
-
-        protected void KhuzaitNomadOnConsequence(CharacterCreation characterCreation) =>
-            this.SetParentAndOccupationType(characterCreation, 6,
-                ScCharacterCreationContent.OccupationTypes.Herder);
-
-        protected void KhuzaitNoyansKinsmanOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected void KhuzaitMerchantOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected void KhuzaitTribesmanOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected void KhuzaitFarmerOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected void KhuzaitShamanOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected void KhuzaitNomadOnApply(CharacterCreation characterCreation) => this.FinalizeParents();
-
-        protected bool EmpireParentsOnCondition() => this.GetSelectedCulture().StringId == "empire";
-
-        protected bool VlandianParentsOnCondition() => this.GetSelectedCulture().StringId == "vlandia";
-
-        protected bool SturgianParentsOnCondition() => this.GetSelectedCulture().StringId == "sturgia";
-
-        protected bool AseraiParentsOnCondition() => this.GetSelectedCulture().StringId == "aserai";
-
-        protected bool BattanianParentsOnCondition() => this.GetSelectedCulture().StringId == "battania";
-
-        protected bool KhuzaitParentsOnCondition() => this.GetSelectedCulture().StringId == "khuzait";
+        protected bool RepublicParentsOnCondition() => this.GetSelectedCulture().StringId == "galactic_republic";
+        
+        protected bool SeparatistParentsOnCondition() => this.GetSelectedCulture().StringId == "separatistalliance";
+        
+        protected bool MandalorianParentsOnCondition() => this.GetSelectedCulture().StringId == "mandalorians";
 
         protected void FinalizeParents()
         {

@@ -25,7 +25,7 @@
     <Compile Include="Patches\DeactivateStoryMode.cs" />
     <Compile Include="Patches\DeactivateVanillaCultureSelection.cs" />
     <Compile Include="Patches\FixCrosshair.cs" />
-    <Compile Include="Patches\SetSandboxPlayerStartPos.cs" />
+    <Compile Include="Patches\ReplaceCharacterCreation.cs" />
     <Compile Include="ScCharacterCreationContent.cs" />
     <Compile Include="ScriptComponents\PartyTeleportation.cs" />
     <Compile Include="Util\DebugRender.cs" />
@@ -37,6 +37,9 @@
     </Reference>
     <Reference Include="Bannerlord.Harmony, Version=2.2.0.75, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\Bannerlord.Harmony\bin\Win64_Shipping_Client\Bannerlord.Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="SandBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\SandBox\bin\Win64_Shipping_Client\SandBox.dll</HintPath>
     </Reference>
     <Reference Include="StoryMode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\StoryMode\bin\Win64_Shipping_Client\StoryMode.dll</HintPath>
