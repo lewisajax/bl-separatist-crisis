@@ -1,7 +1,6 @@
 ﻿using HarmonyLib;
 using SeparatistCrisis.Patches;
 using TaleWorlds.CampaignSystem;
-using TaleWorlds.CampaignSystem.CharacterCreationContent;
 using TaleWorlds.Core;
 using TaleWorlds.ModuleManager;
 using TaleWorlds.MountAndBlade;
@@ -14,7 +13,7 @@ namespace SeparatistCrisis
         {
             // Apply harmony patches
             new Harmony("com.separatistcrisis.patches").PatchAll();
-            new DeactivateStoryMode();
+            new MainMenuPatches();
         }
 
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)

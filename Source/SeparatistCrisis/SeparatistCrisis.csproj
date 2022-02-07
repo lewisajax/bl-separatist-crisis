@@ -22,13 +22,14 @@
 
   <ItemGroup>
     <Compile Include="Main.cs" />
-    <Compile Include="Patches\DeactivateStoryMode.cs" />
+    <Compile Include="Patches\MainMenuPatches.cs" />
     <Compile Include="Patches\DeactivateVanillaCultureSelection.cs" />
     <Compile Include="Patches\FixCrosshair.cs" />
     <Compile Include="Patches\ReplaceCharacterCreation.cs" />
     <Compile Include="ScCharacterCreationContent.cs" />
     <Compile Include="ScriptComponents\PartyTeleportation.cs" />
     <Compile Include="Util\DebugRender.cs" />
+    <Compile Include="Util\ShaderGameManager.cs" />
   </ItemGroup>
 
   <ItemGroup>
