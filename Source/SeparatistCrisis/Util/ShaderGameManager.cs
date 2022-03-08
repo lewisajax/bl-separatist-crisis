@@ -46,7 +46,7 @@ namespace SeparatistCrisis.Util
             BasicCultureObject culture0 = MBObjectManager.Instance.GetObject<BasicCultureObject>("galactic_republic");
             BasicCultureObject culture1 = MBObjectManager.Instance.GetObject<BasicCultureObject>("separatistalliance");
             BasicCultureObject culture2 = MBObjectManager.Instance.GetObject<BasicCultureObject>("mandalorians");
-            IEnumerable<BasicCharacterObject> charactersList = characters.Where(x => !x.IsHero && (x.Culture == culture0 || x.Culture == culture1 || x.Culture == culture2));
+            IEnumerable<BasicCharacterObject> charactersList = characters.Where(x => x.IsSoldier && (x.Culture == culture0 || x.Culture == culture1 || x.Culture == culture2));
 
             CustomBattleCombatant party = new (new TextObject("Player Party"), culture0, Banner.CreateRandomBanner());
             party.AddCharacter(playerCharacter, 1);
@@ -55,10 +55,6 @@ namespace SeparatistCrisis.Util
             foreach(BasicCharacterObject unit in charactersList)
             {
                 int num = 1;
-                if (unit.IsSoldier)
-                {
-                    num = 3;
-                }
 
                 party.AddCharacter(unit, num);
             }

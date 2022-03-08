@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <Compile Include="Main.cs" />
+    <Compile Include="MissionSC\MissionLogicForceAtmosphere.cs" />
     <Compile Include="Patches\MainMenuPatches.cs" />
     <Compile Include="Patches\DeactivateVanillaCultureSelection.cs" />
     <Compile Include="Patches\FixCrosshair.cs" />
