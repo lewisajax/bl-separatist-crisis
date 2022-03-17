@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using SeparatistCrisis.MissionSC;
 using SeparatistCrisis.Patches;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
@@ -25,6 +26,12 @@ namespace SeparatistCrisis
             }
             
             ((CampaignGameStarter)gameStarterObject).LoadGameTexts(ModuleHelper.GetModuleFullPath("SeparatistCrisis") + "ModuleData/module_strings.xml");
+        }
+
+        public override void OnMissionBehaviorInitialize(Mission mission)
+        {
+            base.OnMissionBehaviorInitialize(mission);
+            mission.AddMissionBehavior(new MissionLogicForceAtmosphere());
         }
 
         // This allows us to add custom maps to the custom battle mode
