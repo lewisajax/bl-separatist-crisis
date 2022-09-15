@@ -3,10 +3,9 @@
 using System;
 using System.Collections.Generic;
 using SeparatistCrisis.Util;
-using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Engine;
 using TaleWorlds.Library;
-using TaleWorlds.ObjectSystem;
 
 namespace TaleWorlds.MountAndBlade
 {

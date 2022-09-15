@@ -1,8 +1,8 @@
 using HarmonyLib;
 using TaleWorlds.Core;
-using TaleWorlds.Engine.Screens;
 using TaleWorlds.MountAndBlade;
-using TaleWorlds.MountAndBlade.GauntletUI;
+using TaleWorlds.MountAndBlade.GauntletUI.Mission;
+using TaleWorlds.ScreenSystem;
 
 namespace SeparatistCrisis.Patches
 {

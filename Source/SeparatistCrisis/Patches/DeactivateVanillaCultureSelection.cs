@@ -10,11 +10,11 @@ using TaleWorlds.ObjectSystem;
 
 namespace SeparatistCrisis.Patches
 {
-    [HarmonyPatch]
+    //[HarmonyPatch]
     public class DeactivateVanillaCultureSelection
     {
-        [HarmonyPrefix]
-        [HarmonyPatch(typeof(CharacterCreationContentBase), "GetCultures")]
+        //[HarmonyPrefix]
+        //[HarmonyPatch(typeof(CharacterCreationContentBase), "GetCultures")]
         private static bool GetCultures(ref IEnumerable<CultureObject> __result)
         {
             __result = new List<CultureObject>();
