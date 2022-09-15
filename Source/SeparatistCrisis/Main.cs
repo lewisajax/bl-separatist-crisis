@@ -3,7 +3,6 @@ using SeparatistCrisis.MissionSC;
 using SeparatistCrisis.Patches;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
-using TaleWorlds.ModuleManager;
 using TaleWorlds.MountAndBlade;
 
 namespace SeparatistCrisis
@@ -25,7 +24,7 @@ namespace SeparatistCrisis
                 return;
             }
             
-            ((CampaignGameStarter)gameStarterObject).LoadGameTexts(ModuleHelper.GetModuleFullPath("SeparatistCrisis") + "ModuleData/module_strings.xml");
+            //((CampaignGameStarter)gameStarterObject).LoadGameTexts(ModuleHelper.GetModuleFullPath("SeparatistCrisis") + "ModuleData/module_strings.xml");
         }
 
         public override void OnMissionBehaviorInitialize(Mission mission)

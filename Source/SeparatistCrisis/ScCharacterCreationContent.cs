@@ -4,6 +4,11 @@ using System.Linq;
 using Helpers;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.CharacterCreationContent;
+using TaleWorlds.CampaignSystem.CharacterDevelopment;
+using TaleWorlds.CampaignSystem.Extensions;
+using TaleWorlds.CampaignSystem.GameState;
+using TaleWorlds.CampaignSystem.Party;
+using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
@@ -49,7 +54,8 @@ namespace SeparatistCrisis
         {
             this.SelectedTitleType = 1;
             this.SelectedParentType = 0;
-            Clan.PlayerClan.ChangeClanName(FactionHelper.GenerateClanNameforPlayer());
+            TextObject clanNameforPlayer = FactionHelper.GenerateClanNameforPlayer();
+            Clan.PlayerClan.ChangeClanName(clanNameforPlayer, clanNameforPlayer);
         }
 
         public override int GetSelectedParentType() => this.SelectedParentType;
@@ -1254,16 +1260,16 @@ namespace SeparatistCrisis
                     CharacterObject.PlayerCharacter.GetBodyProperties(CharacterObject.PlayerCharacter.Equipment, -1);
                 BodyProperties motherBodyProperties = this.PlayerBodyProperties;
                 BodyProperties fatherBodyProperties = this.PlayerBodyProperties;
-                FaceGen.GenerateParentKey(this.PlayerBodyProperties, ref motherBodyProperties,
+                FaceGen.GenerateParentKey(this.PlayerBodyProperties, 0,ref motherBodyProperties,
                     ref fatherBodyProperties);
                 motherBodyProperties = new BodyProperties(new DynamicBodyProperties(33f, 0.3f, 0.2f),
                     motherBodyProperties.StaticProperties);
                 fatherBodyProperties = new BodyProperties(new DynamicBodyProperties(33f, 0.5f, 0.5f),
                     fatherBodyProperties.StaticProperties);
                 this.MotherFacegenCharacter =
-                    new FaceGenChar(motherBodyProperties, new Equipment(), true, "anim_mother_1");
+                    new FaceGenChar(motherBodyProperties, 0, new Equipment(), true, "anim_mother_1");
                 this.FatherFacegenCharacter =
-                    new FaceGenChar(fatherBodyProperties, new Equipment(), false, "anim_father_1");
+                    new FaceGenChar(fatherBodyProperties, 0, new Equipment(), false, "anim_father_1");
             }
 
             characterCreation.ChangeFaceGenChars(new List<FaceGenChar>()
@@ -1304,8 +1310,8 @@ namespace SeparatistCrisis
                 else
                     characterCreation.ChangeCharacterPrefab(motherItemId,
                         isLeftHandItemForMother
-                            ? Game.Current.HumanMonster.MainHandItemBoneIndex
-                            : Game.Current.HumanMonster.OffHandItemBoneIndex);
+                            ? Game.Current.DefaultMonster.MainHandItemBoneIndex
+                            : Game.Current.DefaultMonster.OffHandItemBoneIndex);
             }
 
             if (fatherItemId != "")
@@ -1511,7 +1517,7 @@ namespace SeparatistCrisis
             BodyProperties originalBodyProperties =
                 CharacterObject.PlayerCharacter.GetBodyProperties(CharacterObject.PlayerCharacter.Equipment, -1);
             originalBodyProperties = FaceGen.GetBodyPropertiesWithAge(ref originalBodyProperties, age);
-            faceGenCharList.Add(new FaceGenChar(originalBodyProperties, new Equipment(),
+            faceGenCharList.Add(new FaceGenChar(originalBodyProperties, 0,new Equipment(),
                 CharacterObject.PlayerCharacter.IsFemale, actionName));
             return faceGenCharList;
         }
@@ -1539,15 +1545,16 @@ namespace SeparatistCrisis
 
         protected static void ChangePlayerMount(CharacterCreation characterCreation, Hero hero)
         {
-            List<FaceGenMount> newMounts = new List<FaceGenMount>();
             if (!hero.CharacterObject.HasMount())
                 return;
+            
             ItemObject mountItem = hero.CharacterObject.Equipment[EquipmentIndex.ArmorItemEndSlot].Item;
-            newMounts.Add(new FaceGenMount(
+            FaceGenMount newMount = new (
                 MountCreationKey.GetRandomMountKey(mountItem, hero.CharacterObject.GetMountKeySeed()),
                 hero.CharacterObject.Equipment[EquipmentIndex.ArmorItemEndSlot].Item,
-                hero.CharacterObject.Equipment[EquipmentIndex.HorseHarness].Item, "act_horse_stand_1"));
-            characterCreation.ChangeFaceGenMounts(newMounts);
+                hero.CharacterObject.Equipment[EquipmentIndex.HorseHarness].Item, "act_horse_stand_1");
+            
+            characterCreation.SetFaceGenMount(newMount);
         }
 
         protected static void ClearMountEntity(CharacterCreation characterCreation) =>
@@ -1718,8 +1725,8 @@ namespace SeparatistCrisis
             else
                 characterCreation.ChangeCharacterPrefab(itemId,
                     isLeftHand
-                        ? Game.Current.HumanMonster.MainHandItemBoneIndex
-                        : Game.Current.HumanMonster.OffHandItemBoneIndex);
+                        ? Game.Current.DefaultMonster.MainHandItemBoneIndex
+                        : Game.Current.DefaultMonster.OffHandItemBoneIndex);
 
             characterCreation.ChangeCharactersEquipment(new List<Equipment>()
             {
