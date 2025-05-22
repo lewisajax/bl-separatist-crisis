@@ -1,0 +1,1404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+
+	<!--Head Armor Slot-->
+
+	<Item id="clone_cadet_helmet" name="Clone Cadet Helmet" mesh="clone_cadet_helmet" culture="Culture.galactic_republic" weight="0.4" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="8" covers_head = "false" hair_cover_type ="all" beard_cover_type ="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_trooper" name="Phase I Clone Trooper Helmet" mesh="p1_clone_helmet_trooper" culture="Culture.galactic_republic" weight="0.6" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="10" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_corporal" name="Phase I Clone Corporal Helmet" mesh="p1_clone_helmet_corporal" culture="Culture.galactic_republic" weight="0.8" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="12" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_sergeant" name="Phase I Clone Sergeant Helmet" mesh="p1_clone_helmet_sergeant" culture="Culture.galactic_republic" weight="1" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="14" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_sergeant_major" name="Phase I Clone Sergeant Major Helmet" mesh="p1_clone_helmet_sergeant_major" culture="Culture.galactic_republic" weight="1.2" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="16" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_shock_trooper" name="Phase I Clone Shock Trooper Helmet" mesh="p1_clone_helmet_shock_trooper" culture="Culture.galactic_republic" weight="0.7" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="11" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_shock_corporal" name="Phase I Clone Shock Corporal Helmet" mesh="p1_clone_helmet_shock_corporal" culture="Culture.galactic_republic" weight="0.9" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="13" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_shock_sergeant" name="Phase I Clone Shock Sergeant Helmet" mesh="p1_clone_helmet_shock_sergeant" culture="Culture.galactic_republic" weight="1.1" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="15" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_shock_sergeant_major" name="Phase I Clone Shock Sergeant Major Helmet" mesh="p1_clone_helmet_shock_sergeant_major" culture="Culture.galactic_republic" weight="1.3" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="17" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_vanguard_sergeant" name="Phase I Clone Vanguard Sergeant Helmet" mesh="p1_clone_helmet_vanguard_sergeant" culture="Culture.galactic_republic" weight="1.1" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="15" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_vanguard_sergeant_major" name="Phase I Clone Vanguard Sergeant Major Helmet" mesh="p1_clone_helmet_vanguard_sergeant_major" culture="Culture.galactic_republic" weight="1.3" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="17" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_sniper" name="Phase I Clone Sniper Helmet" mesh="p1_clone_helmet_sniper" culture="Culture.galactic_republic" weight="0.6" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="11" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_marksman" name="Phase I Clone Marksman Helmet" mesh="p1_clone_helmet_marksman" culture="Culture.galactic_republic" weight="0.8" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="13" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_veteran_marksman" name="Phase I Clone Veteran Marksman Helmet" mesh="p1_clone_helmet_veteran_marksman" culture="Culture.galactic_republic" weight="1" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="15" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_first_lt" name="Phase I Clone 1st Lieutenant Helmet" mesh="p1_clone_helmet_first_lt" culture="Culture.galactic_republic" weight="0.8" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="12" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_captain" name="Phase I Clone Captain Helmet" mesh="p1_clone_helmet_captain" culture="Culture.galactic_republic" weight="1" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="14" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_major" name="Phase I Clone Major Helmet" mesh="p1_clone_helmet_major" culture="Culture.galactic_republic" weight="1.2" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="16" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_arf_trooper" name="Phase I Clone ARF Trooper Helmet" mesh="p1_clone_helmet_arf_trooper" culture="Culture.galactic_republic" weight="1.2" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="16" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_arf_hound" name="Phase I Clone ARF Hound Helmet" mesh="p1_clone_helmet_arf_hound" culture="Culture.galactic_republic" weight="1.2" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="16" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_shadow_trooper" name="Phase I Clone Shadow Trooper Helmet" mesh="p1_clone_helmet_shadow_trooper" culture="Culture.galactic_republic" weight="1.2" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="16" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>	
+	<Item id="p1_clone_helmet_arc_trooper" name="Phase I Clone ARC Trooper Helmet" mesh="p1_clone_helmet_arc_trooper" culture="Culture.galactic_republic" weight="1.2" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="16" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_arc_lieutenant" name="Phase I Clone ARC Lieutenant Helmet" mesh="p1_clone_helmet_arc_lieutenant" culture="Culture.galactic_republic" weight="1.2" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="16" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_arc_captain" name="Phase I Clone ARC Captain Helmet" mesh="p1_clone_helmet_arc_captain" culture="Culture.galactic_republic" weight="1.2" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="16" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_arc_major" name="Phase I Clone ARC Major Helmet" mesh="p1_clone_helmet_arc_major" culture="Culture.galactic_republic" weight="1.2" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="16" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="barc_trooper_advanced_helmet" name="BARC Trooper Advanced Helmet" mesh="barc_trooper_advanced_helmet" culture="Culture.galactic_republic" weight="2.2" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="36" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="barc_trooper_helmet" name="BARC Trooper Helmet" mesh="barc_trooper_helmet" culture="Culture.galactic_republic" weight="2" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="30" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="clone_paratrooper_helmet" name="Clone Paratrooper Helmet" mesh="clone_paratrooper_helmet" culture="Culture.galactic_republic" weight="2.4" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="38" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_cody" name="{=iAWzr8Q0}Phase I Commander Cody Helmet" mesh="p1_clone_helmet_cody" culture="Culture.galactic_republic" weight="3.9" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="39" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_helmet_rex" name="{=iAWzr8Q0}Phase I Captain Rex Helmet" mesh="p1_clone_helmet_rex" culture="Culture.galactic_republic" weight="3.9" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="39" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="republic_officer_hat" name="{=iAWzr8Q0}Republic Officer Hat" mesh="republic_officer_hat" culture="Culture.galactic_republic" weight="0.3" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="6" covers_head = "false" hair_cover_type ="all" modifier_group="cloth" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="nimbus_commando_helmet" name="{=iAWzr8Q0}Nimbus Commando Helmet" mesh="nimbus_commando_helmet" culture="Culture.separatistalliance" weight="2.8" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="26" covers_head = "false" hair_cover_type ="all" beard_cover_type ="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="bodyguard_commander_helmet" name="{=iAWzr8Q0}Bodyguard Commander Helmet" mesh="bodyguard_commander_helmet" culture="Culture.neutral_faction" weight="2.9" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="36" covers_head = "false" hair_cover_type ="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="bodyguard_heavy_helmet" name="{=iAWzr8Q0}Bodyguard Heavy Helmet" mesh="bodyguard_heavy_helmet" culture="Culture.neutral_faction" weight="2.7" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="27" covers_head = "false" hair_cover_type ="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="bodyguard_helmet" name="{=iAWzr8Q0}Bodyguard Helmet" mesh="bodyguard_helmet" culture="Culture.neutral_faction" weight="1.6" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="18" covers_head = "false" hair_cover_type ="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="bodyguard_pilot_helmet" name="{=iAWzr8Q0}Bodyguard Pilot Helmet" mesh="bodyguard_pilot_helmet" culture="Culture.neutral_faction" weight="1.9" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="28" covers_head = "false" hair_cover_type ="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="bodyguard_scout_helmet" name="{=iAWzr8Q0}Bodyguard Scout Helmet" mesh="bodyguard_scout_helmet" culture="Culture.neutral_faction" weight="1.2" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="16" covers_head = "false" hair_cover_type ="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="senate_commando_helmet" name="Senate Commando Helmet" mesh="senate_commando_helmet" culture="Culture.galactic_republic" weight="2.8" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="26" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="senate_commando_helmet_captain" name="Senate Commando Captain Helmet" mesh="senate_commando_helmet_captain" culture="Culture.galactic_republic" weight="3.2" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="32" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="senate_commando_helmet_Jayfon" name="Jayfon's Senate Commando Helmet" mesh="senate_commando_helmet_jayfon" culture="Culture.galactic_republic" weight="3.2" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="32" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_helmet_t2" name="Death Watch Tier 2 Helmet" mesh="dw_helmet_t2" culture="Culture.mandalorians" weight="3.2" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="28" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_helmet_t3" name="Death Watch Tier 3 Helmet" mesh="dw_helmet_t3" culture="Culture.mandalorians" weight="3.4" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="30" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_helmet_t4" name="Death Watch Tier 4 Helmet" mesh="dw_helmet_t4" culture="Culture.mandalorians" weight="3.6" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="32" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_helmet_t5" name="Death Watch Tier 5 Helmet" mesh="dw_helmet_t5" culture="Culture.mandalorians" weight="3.8" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="34" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_helmet_t6" name="Death Watch Tier 6 Helmet" mesh="dw_helmet_t6" culture="Culture.mandalorians" weight="4.0" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="36" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="neo_crusader_helmet_recruit" name="Neo-Crusader Recruit Helmet" mesh="neo_crusader_helmet_recruit" culture="Culture.mandalorians" weight="3.2" appearance="1" Type="HeadArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor head_armor="42" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="neo_crusader_helmet_rally_master" name="Neo-Crusader Rally Master Helmet" mesh="neo_crusader_helmet_rally_master" culture="Culture.mandalorians" weight="3.2" appearance="1" Type="HeadArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor head_armor="42" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="neo_crusader_helmet_field_marshal" name="Neo-Crusader Field Marshal Helmet" mesh="neo_crusader_helmet_field_marshal" culture="Culture.mandalorians" weight="3.2" appearance="1" Type="HeadArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor head_armor="42" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="mandalore_ultimate_helmet" name="Mandalore the Ultimate's Mask" mesh="mandalore_ultimate_helmet" culture="Culture.mandalorians" weight="2.1" appearance="1" Type="HeadArmor" is_merchandise="false">
+		<ItemComponent>
+			<Armor head_armor="58" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="b1_droid_head_new" name="B1 Battle Droid Factory New Head" mesh="b1_droid_head_new" culture="Culture.mandalorians" weight="2.1" appearance="1" Type="HeadArmor" is_merchandise="false">
+		<ItemComponent>
+			<Armor head_armor="58" covers_head = "true" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="clone_p1_helmet_501_trooper" name="New Phase I Clone Trooper Helmet" mesh="clone_p1_helmet_501_trooper" culture="Culture.galactic_republic" weight="0.6" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="10" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="b1_droid_head_factory_new" name="New B1 Battle Droid Factory New Head" mesh="b1_droid_head_factory_new" culture="Culture.separatist" weight="2.1" appearance="1" Type="HeadArmor" is_merchandise="false">
+		<ItemComponent>
+			<Armor head_armor="58" covers_head = "true" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+
+
+	<!--Body Armor Slot-->
+
+	<Item id="clone_cadet_armor" name="Clone Cadet Armor" mesh="clone_cadet_armor" culture="Culture.galactic_republic" weight="1.7" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="10" leg_armor="5" arm_armor="2" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>	
+	<Item id="p1_clone_armor_trooper" name="Phase I Clone Trooper Armor" mesh="p1_clone_armor_trooper" culture="Culture.galactic_republic" weight="2.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="15" leg_armor="7" arm_armor="4" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_corporal" name="Phase I Clone Corporal Armor" mesh="p1_clone_armor_corporal" culture="Culture.galactic_republic" weight="2.5" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" leg_armor="10" arm_armor="7" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_sergeant" name="Phase I Clone Sergeant Armor" mesh="p1_clone_armor_sergeant" culture="Culture.galactic_republic" weight="2.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="21" leg_armor="13" arm_armor="10" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_sergeant_major" name="Phase I Clone Sergeant Major Armor" mesh="p1_clone_armor_sergeant_major" culture="Culture.galactic_republic" weight="3.3" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="24" leg_armor="16" arm_armor="13" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_shock_trooper" name="Phase I Clone Shock Trooper Armor" mesh="p1_clone_armor_shock_trooper" culture="Culture.galactic_republic" weight="2.3" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="17" leg_armor="9" arm_armor="6" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_shock_corporal" name="Phase I Clone Shock Corporal Armor" mesh="p1_clone_armor_shock_corporal" culture="Culture.galactic_republic" weight="2.7" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="12" arm_armor="9" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_shock_sergeant" name="Phase I Clone Shock Sergeant Armor" mesh="p1_clone_armor_shock_sergeant" culture="Culture.galactic_republic" weight="3.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="23" leg_armor="15" arm_armor="12" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_shock_sergeant_major" name="Phase I Clone Shock Sergeant Major Armor" mesh="p1_clone_armor_shock_sergeant_major" culture="Culture.galactic_republic" weight="3.5" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" leg_armor="18" arm_armor="15" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_vanguard_sergeant" name="Phase I Clone Vanguard Sergeant Armor" mesh="p1_clone_armor_vanguard_sergeant" culture="Culture.galactic_republic" weight="3.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="23" leg_armor="15" arm_armor="12" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_vanguard_sergeant_major" name="Phase I Clone Vanguard Sergeant Major Armor" mesh="p1_clone_armor_vanguard_sergeant_major" culture="Culture.galactic_republic" weight="3.5" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" leg_armor="18" arm_armor="15" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_sniper" name="Phase I Clone Sniper Armor" mesh="p1_clone_armor_sniper" culture="Culture.galactic_republic" weight="2.2" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="17" leg_armor="9" arm_armor="6" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_marksman" name="Phase I Clone Marksman Armor" mesh="p1_clone_armor_marksman" culture="Culture.galactic_republic" weight="2.4" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="19" leg_armor="11" arm_armor="8" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_veteran_marksman" name="Phase I Clone Veteran Marksman Armor" mesh="p1_clone_armor_veteran_marksman" culture="Culture.galactic_republic" weight="2.6" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="21" leg_armor="13" arm_armor="10" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_first_lt" name="Phase I Clone 1st Lieutenant Armor" mesh="p1_clone_armor_first_lt" culture="Culture.galactic_republic" weight="2.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="21" leg_armor="13" arm_armor="10" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_captain" name="Phase I Clone Captain Armor" mesh="p1_clone_armor_captain" culture="Culture.galactic_republic" weight="3.3" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="24" leg_armor="16" arm_armor="13" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_major" name="Phase I Clone Major Armor" mesh="p1_clone_armor_major" culture="Culture.galactic_republic" weight="3.7" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="27" leg_armor="19" arm_armor="16" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_arf_trooper" name="Phase I Clone ARF Trooper Armor" mesh="p1_clone_armor_arf_trooper" culture="Culture.galactic_republic" weight="3.7" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="27" leg_armor="19" arm_armor="16" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_arf_hound" name="Phase I Clone ARF Hound Armor" mesh="p1_clone_armor_arf_hound" culture="Culture.galactic_republic" weight="3.7" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="27" leg_armor="19" arm_armor="16" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_shadow_trooper" name="Phase I Clone Shadow Trooper Armor" mesh="p1_clone_armor_shadow_trooper" culture="Culture.galactic_republic" weight="3.7" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="27" leg_armor="19" arm_armor="16" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>	
+	<Item id="p1_clone_armor_arc_trooper" name="Phase I Clone ARC Trooper Armor" mesh="p1_clone_armor_arc_trooper" culture="Culture.galactic_republic" weight="3.7" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="27" leg_armor="19" arm_armor="16" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_arc_lieutenant" name="Phase I Clone ARC Lieutenant Armor" mesh="p1_clone_armor_arc_lieutenant" culture="Culture.galactic_republic" weight="3.7" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="27" leg_armor="19" arm_armor="16" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_arc_captain" name="Phase I Clone ARC Captain Armor" mesh="p1_clone_armor_arc_captain" culture="Culture.galactic_republic" weight="3.7" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="27" leg_armor="19" arm_armor="16" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_arc_major" name="Phase I Clone ARC Major Armor" mesh="p1_clone_armor_arc_major" culture="Culture.galactic_republic" weight="3.7" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="27" leg_armor="19" arm_armor="16" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="clone_bodysuit" name="Clone Bodysuit" mesh="clone_bodysuit" culture="Culture.galactic_republic" weight="2.3" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="6" leg_armor="2" arm_armor="2" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="cloth" material_type="Cloth"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="nimbus_commando_armor" name="{=iAWzr8Q0}Nimbus Commando Armor" mesh="nimbus_commando_armor" culture="Culture.separatistalliance" weight="9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="5" arm_armor="2" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_captain_armor_rex" name="{=iAWzr8Q0}Phase I Captain Rex Armor" mesh="p1_clone_captain_armor_rex" culture="Culture.galactic_republic" weight="10.5" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="30" leg_armor="15" arm_armor="9" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_armor_cody" name="{=iAWzr8Q0}Phase I Commander Cody Armor" mesh="p1_clone_armor_cody" culture="Culture.galactic_republic" weight="10.5" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="30" leg_armor="15" arm_armor="9" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="republic_officer_second_lt" name="{=iAWzr8Q0}Republic 2nd Lieutenant Uniform" mesh="republic_officer_second_lt" culture="Culture.galactic_republic" weight="1.6" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="16" leg_armor="8" arm_armor="4" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="cloth" material_type="Cloth"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="republic_officer_first_lt" name="{=iAWzr8Q0}Republic 1st Lieutenant Uniform" mesh="republic_officer_first_lt" culture="Culture.galactic_republic" weight="1.7" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" leg_armor="10" arm_armor="6" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="cloth" material_type="Cloth"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="republic_officer_cpt" name="{=iAWzr8Q0}Republic Captain Uniform" mesh="republic_officer_cpt" culture="Culture.galactic_republic" weight="1.8" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="12" arm_armor="8" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="cloth" material_type="Cloth"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="republic_officer_maj" name="{=iAWzr8Q0}Republic Major Uniform" mesh="republic_officer_maj" culture="Culture.galactic_republic" weight="1.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="22" leg_armor="14" arm_armor="10" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="cloth" material_type="Cloth"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="senate_commando_armor" name="Senate Commando Armor" mesh="senate_commando_armor" culture="Culture.galactic_republic" weight="9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="5" arm_armor="2" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="senate_commando_armor_captain" name="Senate Commando Captain Armor" mesh="senate_commando_armor_captain" culture="Culture.galactic_republic" weight="9.4" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" leg_armor="11" arm_armor="8" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="obiwan_robes" name="Obi Wan Kenobi's Robes" mesh="obiwan_robes" culture="Culture.galactic_republic" weight="0.6" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="48" leg_armor="22" arm_armor="12" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="cloth" material_type="Cloth"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="windu_robes" name="Mace Windu's Robes" mesh="windu_robes" culture="Culture.galactic_republic" weight="0.6" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="48" leg_armor="22" arm_armor="12" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="cloth" material_type="Cloth"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="dw_armor_t1" name="Death Watch Tier 1 Armor" mesh="dw_armor_t1" culture="Culture.mandalorians" weight="6" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="5" arm_armor="2" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="cloth" material_type="Cloth"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="dw_armor_t2" name="Death Watch Tier 2 Armor" mesh="dw_armor_t2" culture="Culture.mandalorians" weight="11" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="22" leg_armor="7" arm_armor="4" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>	
+	<Item id="dw_armor_t3" name="Death Watch Tier 3 Armor" mesh="dw_armor_t3" culture="Culture.mandalorians" weight="12" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="24" leg_armor="9" arm_armor="6" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_armor_t4" name="Death Watch Tier 4 Armor" mesh="dw_armor_t4" culture="Culture.mandalorians" weight="13" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" leg_armor="11" arm_armor="8" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_armor_t5" name="Death Watch Tier 5 Armor" mesh="dw_armor_t5" culture="Culture.mandalorians" weight="14" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="28" leg_armor="13" arm_armor="10" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_armor_t5" name="Death Watch Tier 5 Armor" mesh="dw_armor_t5" culture="Culture.mandalorians" weight="15" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="30" leg_armor="15" arm_armor="12" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_armor_t6" name="Death Watch Tier 6 Armor" mesh="dw_armor_t6" culture="Culture.mandalorians" weight="16" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="32" leg_armor="17" arm_armor="14" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="neo_crusader_armor_recruit" name="Neo-Crusader Recruit Armor" mesh="neo_crusader_armor_recruit" culture="Culture.mandalorians" weight="24.4" appearance="1" Type="BodyArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor body_armor="50" leg_armor="25" arm_armor="15" covers_body="true" covers_hands="false" covers_legs="false" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="neo_crusader_armor_rally_master" name="Neo-Crusader Rally Master Armor" mesh="neo_crusader_armor_rally_master" culture="Culture.mandalorians" weight="24.4" appearance="1" Type="BodyArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor body_armor="50" leg_armor="25" arm_armor="15" covers_body="true" covers_hands="false" covers_legs="false" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="neo_crusader_armor_field_marshal" name="Neo-Crusader Field Marshal Armor" mesh="neo_crusader_armor_field_marshal" culture="Culture.mandalorians" weight="24.4" appearance="1" Type="BodyArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor body_armor="50" leg_armor="25" arm_armor="15" covers_body="true" covers_hands="false" covers_legs="false" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="mandalore_ultimate_armor" name="Mandalore the Ultimate's Armor" mesh="mandalore_ultimate_armor" culture="Culture.mandalorians" weight="10" appearance="1" Type="BodyArmor" is_merchandise="false">
+		<ItemComponent>
+			<Armor body_armor="60" leg_armor="35" arm_armor="25" covers_body="true" covers_hands="false" covers_legs="false" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="b1_droid_body_new" name="B1 Battle Droid Factory New Body" mesh="b1_droid_body_new" culture="Culture.mandalorians" weight="10" appearance="1" Type="BodyArmor" is_merchandise="false">
+		<ItemComponent>
+			<Armor body_armor="60" leg_armor="35" arm_armor="25" covers_body="true" covers_hands="false" covers_legs="false" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="clone_p1_armor_501_trooper" name="New Phase I Clone Trooper Armor" mesh="clone_p1_armor_501_trooper" culture="Culture.galactic_republic" weight="2.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="15" leg_armor="7" arm_armor="4" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="b1_droid_body_factory_new" name="New B1 Battle Droid Factory New Body" mesh="b1_droid_body_factory_new" culture="Culture.separatist" weight="10" appearance="1" Type="BodyArmor" is_merchandise="false">
+		<ItemComponent>
+			<Armor body_armor="60" leg_armor="35" arm_armor="25" covers_body="true" covers_hands="false" covers_legs="false" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+
+
+	<!--Cape Armor Slot-->
+
+	<Item id="clone_cadet_pauldrons" name="Clone Cadet Pauldrons" mesh="clone_cadet_pauldrons" culture="Culture.galactic_republic" weight="2.9" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="12" arm_armor="5" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>	
+	<Item id="p1_clone_pauldrons_trooper" name="Phase I Clone Trooper Pauldrons" mesh="p1_clone_pauldrons_trooper" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_corporal" name="Phase I Clone Corporal Pauldrons" mesh="p1_clone_pauldrons_corporal" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_sergeant" name="Phase I Clone Sergeant Pauldrons" mesh="p1_clone_pauldrons_sergeant" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_sergeant_major" name="Phase I Clone Sergeant Major Pauldrons" mesh="p1_clone_pauldrons_sergeant_major" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_shock_trooper" name="Phase I Clone Shock Trooper Pauldrons" mesh="p1_clone_pauldrons_shock_trooper" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_shock_corporal" name="Phase I Clone Shock Corporal Pauldrons" mesh="p1_clone_pauldrons_shock_corporal" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_shock_sergeant" name="Phase I Clone Shock Sergeant Pauldrons" mesh="p1_clone_pauldrons_shock_sergeant" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_shock_sergeant_major" name="Phase I Clone Shock Sergeant Major Pauldrons" mesh="p1_clone_pauldrons_shock_sergeant_major" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_vanguard_sergeant" name="Phase I Clone Vanguard Sergeant Pauldrons" mesh="p1_clone_pauldrons_vanguard_sergeant" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_vanguard_sergeant_major" name="Phase I Clone Vanguard Sergeant Major Pauldrons" mesh="p1_clone_pauldrons_vanguard_sergeant_major" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_sniper" name="Phase I Clone Sniper Pauldrons" mesh="p1_clone_pauldrons_sniper" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_marksman" name="Phase I Clone Marksman Pauldrons" mesh="p1_clone_pauldrons_marksman" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_veteran_marksman" name="Phase I Clone Veteran Marksman Pauldrons" mesh="p1_clone_pauldrons_veteran_marksman" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_first_lt" name="Phase I Clone 1st Lieutenant Pauldrons" mesh="p1_clone_pauldrons_first_lt" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_captain" name="Phase I Clone Captain Pauldrons" mesh="p1_clone_pauldrons_captain" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_major" name="Phase I Clone Major Pauldrons" mesh="p1_clone_pauldrons_major" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_arf_trooper" name="Phase I Clone ARF Trooper Pauldrons" mesh="p1_clone_pauldrons_arf_trooper" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_arf_hound" name="Phase I Clone ARF Hound Pauldrons" mesh="p1_clone_pauldrons_arf_hound" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_shadow_trooper" name="Phase I Clone Shadow Trooper Pauldrons" mesh="p1_clone_pauldrons_shadow_trooper" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>	
+	<Item id="p1_clone_pauldrons_arc_trooper" name="Phase I Clone ARC Trooper Pauldrons" mesh="p1_clone_pauldrons_arc_trooper" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_arc_lieutenant" name="Phase I Clone ARC Lieutenant Pauldrons" mesh="p1_clone_pauldrons_arc_lieutenant" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_arc_captain" name="Phase I Clone ARC Captain Pauldrons" mesh="p1_clone_pauldrons_arc_captain" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_arc_major" name="Phase I Clone ARC Major Pauldrons" mesh="p1_clone_pauldrons_arc_major" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_rex" name="{=iAWzr8Q0}Phase I Captain Rex Pauldrons" mesh="p1_clone_pauldrons_rex" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="21" arm_armor="12" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_pauldrons_cody" name="{=iAWzr8Q0}Phase I Commander Cody Pauldrons" mesh="p1_clone_pauldrons_cody" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="21" arm_armor="12" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="nimbus_commando_pauldrons" name="{=iAWzr8Q0}Nimbus Commando Pauldrons" mesh="nimbus_commando_pauldrons" culture="Culture.separatistalliance" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="senate_commando_pauldrons" name="Senate Commando Pauldrons" mesh="senate_commando_pauldrons" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="senate_commando_pauldrons_captain" name="Senate Commando Captain Pauldrons" mesh="senate_commando_pauldrons_captain" culture="Culture.galactic_republic" weight="4.2" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="22" arm_armor="13" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_pauldrons_t3" name="Death Watch Tier 3 Pauldrons" mesh="dw_pauldrons_t3" culture="Culture.mandalorians" weight="4" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="18" arm_armor="9" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_pauldrons_t4" name="Death Watch Tier 4 Pauldrons" mesh="dw_pauldrons_t4" culture="Culture.mandalorians" weight="4.2" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="20" arm_armor="11" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_pauldrons_t5" name="Death Watch Tier 5 Pauldrons" mesh="dw_pauldrons_t5" culture="Culture.mandalorians" weight="4.4" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="22" arm_armor="13" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_pauldrons_t6" name="Death Watch Tier 6 Pauldrons" mesh="dw_pauldrons_t6" culture="Culture.mandalorians" weight="4.6" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="24" arm_armor="15" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="neo_crusader_pauldrons_recruit" name="Neo-Crusader Recruit Pauldrons" mesh="neo_crusader_pauldrons_recruit" culture="Culture.mandalorians" weight="4.3" appearance="1" Type="Cape" is_merchandise="true">
+		<ItemComponent>
+			<Armor body_armor="14" arm_armor="8" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="neo_crusader_pauldrons_rally_master" name="Neo-Crusader Rally Master Pauldrons" mesh="neo_crusader_pauldrons_rally_master" culture="Culture.mandalorians" weight="4.3" appearance="1" Type="Cape" is_merchandise="true">
+		<ItemComponent>
+			<Armor body_armor="14" arm_armor="8" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="neo_crusader_pauldrons_field_marshal" name="Neo-Crusader Field Marshal Pauldrons" mesh="neo_crusader_pauldrons_field_marshal" culture="Culture.mandalorians" weight="4.3" appearance="1" Type="Cape" is_merchandise="true">
+		<ItemComponent>
+			<Armor body_armor="14" arm_armor="8" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="mandalore_ultimate_pauldrons" name="Mandalore the Ultimate's Pauldrons" mesh="mandalore_ultimate_pauldrons" culture="Culture.mandalorians" weight="2.2" appearance="1" Type="Cape" is_merchandise="false">
+		<ItemComponent>
+			<Armor body_armor="32" arm_armor="18" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="b1_droid_backpack_new" name="B1 Battle Droid Factory New Backpack" mesh="b1_droid_backpack_new" culture="Culture.mandalorians" weight="2.2" appearance="1" Type="Cape" is_merchandise="false">
+		<ItemComponent>
+			<Armor body_armor="32" arm_armor="18" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="clone_p1_pauldrons_501_trooper" name="New Phase I Clone Trooper Pauldrons" mesh="clone_p1_pauldrons_501_trooper" culture="Culture.galactic_republic" weight="3.8" appearance="1" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="7" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="b1_droid_backpack_factory_new" name="New B1 Battle Droid Factory New Backpack" mesh="b1_droid_backpack_factory_new" culture="Culture.separatist" weight="2.2" appearance="1" Type="Cape" is_merchandise="false">
+		<ItemComponent>
+			<Armor body_armor="32" arm_armor="18" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+
+
+	<!--Hand Armor Slot-->
+
+	<Item id="clone_cadet_gauntlets" name="Clone Cadet Gauntlets" mesh="clone_cadet_gauntlets" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="12" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_trooper" name="Phase I Clone Trooper Gauntlets" mesh="p1_clone_gauntlets_trooper" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_corporal" name="Phase I Clone Corporal Gauntlets" mesh="p1_clone_gauntlets_corporal" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_sergeant" name="Phase I Clone Sergeant Gauntlets" mesh="p1_clone_gauntlets_sergeant" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_sergeant_major" name="Phase I Clone Sergeant Major Gauntlets" mesh="p1_clone_gauntlets_sergeant_major" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_shock_trooper" name="Phase I Clone Shock Trooper Gauntlets" mesh="p1_clone_gauntlets_shock_trooper" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_shock_corporal" name="Phase I Clone Shock Corporal Gauntlets" mesh="p1_clone_gauntlets_shock_corporal" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_shock_sergeant" name="Phase I Clone Shock Sergeant Gauntlets" mesh="p1_clone_gauntlets_shock_sergeant" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_shock_sergeant_major" name="Phase I Clone Shock Sergeant Major Gauntlets" mesh="p1_clone_gauntlets_shock_sergeant_major" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_vanguard_sergeant" name="Phase I Clone Vanguard Sergeant Gauntlets" mesh="p1_clone_gauntlets_vanguard_sergeant" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_vanguard_sergeant_major" name="Phase I Clone Vanguard Sergeant Major Gauntlets" mesh="p1_clone_gauntlets_vanguard_sergeant_major" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_sniper" name="Phase I Clone Sniper Gauntlets" mesh="p1_clone_gauntlets_sniper" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_marksman" name="Phase I Clone Marksman Gauntlets" mesh="p1_clone_gauntlets_marksman" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_veteran_marksman" name="Phase I Clone Veteran Marksman Gauntlets" mesh="p1_clone_gauntlets_veteran_marksman" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_first_lt" name="Phase I Clone 1st Lieutenant Gauntlets" mesh="p1_clone_gauntlets_first_lt" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_captain" name="Phase I Clone Captain Gauntlets" mesh="p1_clone_gauntlets_captain" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_major" name="Phase I Clone Major Gauntlets" mesh="p1_clone_gauntlets_major" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_arf_trooper" name="Phase I Clone ARF Trooper Gauntlets" mesh="p1_clone_gauntlets_arf_trooper" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_arf_hound" name="Phase I Clone ARF Hound Gauntlets" mesh="p1_clone_gauntlets_arf_hound" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_shadow_trooper" name="Phase I Clone Shadow Trooper Gauntlets" mesh="p1_clone_gauntlets_shadow_trooper" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true"/>
+	</Item>	
+	<Item id="p1_clone_gauntlets_arc_trooper" name="Phase I Clone ARC Trooper Gauntlets" mesh="p1_clone_gauntlets_arc_trooper" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_arc_lieutenant" name="Phase I Clone ARC Lieutenant Gauntlets" mesh="p1_clone_gauntlets_arc_lieutenant" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_arc_captain" name="Phase I Clone ARC Captain Gauntlets" mesh="p1_clone_gauntlets_arc_captain" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_arc_major" name="Phase I Clone ARC Major Gauntlets" mesh="p1_clone_gauntlets_arc_major" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_rex" name="{=iAWzr8Q0}Phase I Captain Rex Gauntlets" mesh="p1_clone_gauntlets_rex" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="15" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true"/>
+	</Item>
+	<Item id="p1_clone_gauntlets_cody" name="{=iAWzr8Q0}Phase I Commander Cody Gauntlets" mesh="p1_clone_gauntlets_cody" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="15" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true"/>
+	</Item>
+	<Item id="nimbus_commando_gauntlets" name="{=iAWzr8Q0}Nimbus Commando Gauntlets" mesh="nimbus_commando_gauntlets" culture="Culture.separatistalliance" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true"/>
+	</Item>
+	<Item id="senate_commando_gauntlets" name="Senate Commando Gauntlets" mesh="senate_commando_gauntlets" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true"/>
+	</Item>
+	<Item id="senate_commando_gauntlets_captain" name="Senate Commando Captain Gauntlets" mesh="senate_commando_gauntlets_captain" culture="Culture.galactic_republic" weight="3.4" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="16" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true"/>
+	</Item>
+	<Item id="dw_gauntlets_t2" name="Death Watch Tier 2 Gauntlets" mesh="dw_gauntlets_t2" culture="Culture.mandalorians" weight="3.2" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="12" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true"/>
+	</Item>
+	<Item id="dw_gauntlets_t3" name="Death Watch Tier 3 Gauntlets" mesh="dw_gauntlets_t3" culture="Culture.mandalorians" weight="3.4" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="14" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true"/>
+	</Item>
+	<Item id="dw_gauntlets_t4" name="Death Watch Tier 4 Gauntlets" mesh="dw_gauntlets_t4" culture="Culture.mandalorians" weight="3.6" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="16" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true"/>
+	</Item>
+	<Item id="dw_gauntlets_t5" name="Death Watch Tier 5 Gauntlets" mesh="dw_gauntlets_t5" culture="Culture.mandalorians" weight="3.8" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="18" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true"/>
+	</Item>
+	<Item id="dw_gauntlets_t6" name="Death Watch Tier 6 Gauntlets" mesh="dw_gauntlets_t6" culture="Culture.mandalorians" weight="4" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="20" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true"/>
+	</Item>
+	<Item id="neo_crusader_gauntlets_recruit" name="Neo-Crusader Recruit Gauntlets" mesh="neo_crusader_gauntlets_recruit" culture="Culture.mandalorians" weight="6.8" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="26" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="neo_crusader_gauntlets_rally_master" name="Neo-Crusader Rally Master Gauntlets" mesh="neo_crusader_gauntlets_rally_master" culture="Culture.mandalorians" weight="6.8" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="26" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="neo_crusader_gauntlets_field_marshal" name="Neo-Crusader Field Marshal Gauntlets" mesh="neo_crusader_gauntlets_field_marshal" culture="Culture.mandalorians" weight="6.8" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="26" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="mandalore_ultimate_gauntlets" name="Mandalore the Ultimate's Gauntlets" mesh="mandalore_ultimate_gauntlets" culture="Culture.mandalorians" weight="2.2" appearance="1" Type="HandArmor" is_merchandise="false">
+		<ItemComponent>
+			<Armor arm_armor="38" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true"/>
+	</Item>
+	<Item id="b1_droid_hands_new" name="B1 Battle Droid Factory New Hands" mesh="b1_droid_hands_new" culture="Culture.mandalorians" weight="2.2" appearance="1" Type="HandArmor" is_merchandise="false">
+		<ItemComponent>
+			<Armor arm_armor="38" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true"/>
+	</Item>
+	<Item id="clone_p1_gauntlets_501_trooper" name="New Phase I Clone Trooper Gauntlets" mesh="clone_p1_gauntlets_501_trooper" culture="Culture.galactic_republic" weight="3" appearance="1" Type="HandArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor arm_armor="10" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"/>
+	</Item>
+	<Item id="b1_droid_hands_factory_new" name="New B1 Battle Droid Factory New Hands" mesh="b1_droid_hands_factory_new" culture="Culture.separatist" weight="2.2" appearance="1" Type="HandArmor" is_merchandise="false">
+		<ItemComponent>
+			<Armor arm_armor="38" covers_hands="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags Civilian="true"/>
+	</Item>
+
+
+	<!--Leg Armor Slot-->
+
+	<Item id="clone_cadet_boots" name="Clone Cadet Boots" mesh="clone_cadet_boots" culture="Culture.galactic_republic" weight="1.8" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="12" covers_legs="true" modifier_group="leather" material_type="Leather"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>	
+	<Item id="p1_clone_boots_trooper" name="Phase I Clone Trooper Boots" mesh="p1_clone_boots_trooper" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_corporal" name="Phase I Clone Corporal Boots" mesh="p1_clone_boots_corporal" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_sergeant" name="Phase I Clone Sergeant Boots" mesh="p1_clone_boots_sergeant" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_sergeant_major" name="Phase I Clone Sergeant Major Boots" mesh="p1_clone_boots_sergeant_major" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_shock_trooper" name="Phase I Clone Shock Trooper Boots" mesh="p1_clone_boots_shock_trooper" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_shock_corporal" name="Phase I Clone Shock Corporal Boots" mesh="p1_clone_boots_shock_corporal" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_shock_sergeant" name="Phase I Clone Shock Sergeant Boots" mesh="p1_clone_boots_shock_sergeant" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_shock_sergeant_major" name="Phase I Clone Shock Sergeant Major Boots" mesh="p1_clone_boots_shock_sergeant_major" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_vanguard_sergeant" name="Phase I Clone Vanguard Sergeant Boots" mesh="p1_clone_boots_vanguard_sergeant" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_vanguard_sergeant_major" name="Phase I Clone Vanguard Sergeant Major Boots" mesh="p1_clone_boots_vanguard_sergeant_major" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_sniper" name="Phase I Clone Sniper Boots" mesh="p1_clone_boots_sniper" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_marksman" name="Phase I Clone Marksman Boots" mesh="p1_clone_boots_marksman" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_veteran_marksman" name="Phase I Clone Veteran Marksman Boots" mesh="p1_clone_boots_veteran_marksman" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_first_lt" name="Phase I Clone 1st Lieutenant Boots" mesh="p1_clone_boots_first_lt" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_captain" name="Phase I Clone Captain Boots" mesh="p1_clone_boots_captain" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_major" name="Phase I Clone Major Boots" mesh="p1_clone_boots_major" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_arf_trooper" name="Phase I Clone ARF Trooper Boots" mesh="p1_clone_boots_arf_trooper" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_arf_hound" name="Phase I Clone ARF Hound Boots" mesh="p1_clone_boots_arf_hound" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_shadow_trooper" name="Phase I Clone Shadow Trooper Boots" mesh="p1_clone_boots_shadow_trooper" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_arc_trooper" name="Phase I Clone ARC Trooper Boots" mesh="p1_clone_boots_arc_trooper" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_arc_lieutenant" name="Phase I Clone ARC Lieutenant Boots" mesh="p1_clone_boots_arc_lieutenant" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_arc_captain" name="Phase I Clone ARC Captain Boots" mesh="p1_clone_boots_arc_captain" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="p1_clone_boots_arc_major" name="Phase I Clone ARC Major Boots" mesh="p1_clone_boots_arc_major" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="nimbus_commando_boots" name="{=iAWzr8Q0}Nimbus Commando Boots" mesh="nimbus_commando_boots" culture="Culture.separatistalliance" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="senate_commando_boots" name="Senate Commando Boots" mesh="senate_commando_boots" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="senate_commando_boots_captain" name="Senate Commando Captain Boots" mesh="senate_commando_boots_captain" culture="Culture.galactic_republic" weight="2.4" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="22" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_boots_t1" name="Death Watch Tier 1 Boots" mesh="dw_boots_t1" culture="Culture.mandalorians" weight="2.2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="18" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_boots_t2" name="Death Watch Tier 2 Boots" mesh="dw_boots_t2" culture="Culture.mandalorians" weight="2.4" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_boots_t3" name="Death Watch Tier 3 Boots" mesh="dw_boots_t3" culture="Culture.mandalorians" weight="2.6" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="22" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_boots_t4" name="Death Watch Tier 4 Boots" mesh="dw_boots_t4" culture="Culture.mandalorians" weight="2.8" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="24" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_boots_t5" name="Death Watch Tier 5 Boots" mesh="dw_boots_t5" culture="Culture.mandalorians" weight="3" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="26" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="dw_boots_t6" name="Death Watch Tier 6 Boots" mesh="dw_boots_t6" culture="Culture.mandalorians" weight="3.2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="28" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true"></Flags>
+	</Item>
+	<Item id="neo_crusader_boots_recruit" name="Neo-Crusader Recruit Boots" mesh="neo_crusader_boots_recruit" culture="Culture.mandalorians" weight="3.3" appearance="1" Type="LegArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor leg_armor="24" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="neo_crusader_boots_rally_master" name="Neo-Crusader Rally Master Boots" mesh="neo_crusader_boots_rally_master" culture="Culture.mandalorians" weight="3.3" appearance="1" Type="LegArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor leg_armor="24" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="neo_crusader_boots_field_marshal" name="Neo-Crusader Field Marshal Boots" mesh="neo_crusader_boots_field_marshal" culture="Culture.mandalorians" weight="3.3" appearance="1" Type="LegArmor" is_merchandise="true">
+		<ItemComponent>
+			<Armor leg_armor="24" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="mandalore_ultimate_boots" name="Mandalore the Ultimate's Boots" mesh="mandalore_ultimate_boots" culture="Culture.mandalorians" weight="1.8" appearance="1" Type="LegArmor" is_merchandise="false">
+		<ItemComponent>
+			<Armor leg_armor="38" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="b1_droid_feet_new" name="B1 Battle Droid Factory New Feet" mesh="b1_droid_feet_new" culture="Culture.mandalorians" weight="1.8" appearance="1" Type="LegArmor" is_merchandise="false">
+		<ItemComponent>
+			<Armor leg_armor="38" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="clone_p1_boots_501_trooper" name="New Phase I Clone Trooper Boots" mesh="clone_p1_boots_501_trooper" culture="Culture.galactic_republic" weight="2" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="16" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+	<Item id="b1_droid_feet_factory_new" name="New B1 Battle Droid Factory New Feet" mesh="b1_droid_feet_factory_new" culture="Culture.separatist" weight="1.8" appearance="1" Type="LegArmor" is_merchandise="false">
+		<ItemComponent>
+			<Armor leg_armor="38" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
+		</ItemComponent>
+		<Flags Civilian="true" UseTeamColor="true"></Flags>
+	</Item>
+
+
+	<!--Shields-->
+	<!--Shield Position:Left/Right, Up/Down, Forward/Backward-->
+
+	<Item id="brood_alpha_shield" name="{=rF7Xm7C0}Brood Alpha Shield" body_name="bo_cap_heater_shield_g" shield_body_name="bo_heater_shield_g" recalculate_body="false" mesh="brood_alpha_shield" culture="Culture.separatist" using_tableau="false" weight="4.6" appearance="1" Type="Shield" item_holsters="shield:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="10" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="87" physics_material="wood_shield" item_usage="shield" position="0, 0.2, 0.05" rotation="0.0,10.0,40.00" weapon_length="100" center_of_mass="0.0,0.05,0.05" hit_points="510" >
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+
+	<Item id="clone_riot_shield" name="{=rF7Xm7C0}Clone Riot Shield" body_name="bo_cap_heater_shield_g" shield_body_name="bo_heater_shield_g" recalculate_body="false" mesh="clone_riot_shield" culture="Culture.galactic_republic" using_tableau="false" weight="4.6" appearance="1" Type="Shield" item_holsters="shield:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="10" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="87" physics_material="wood_shield" item_usage="shield" position="0.14, 0.15, 0" rotation="0.0,10.0,40.00" weapon_length="100" center_of_mass="0.0,0.05,0.05" hit_points="510" >
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+
+	<Item id="mandalorian_energy_shield" name="Mandalorian Melee Shield" body_name="bo_cap_heater_shield_g" shield_body_name="bo_heater_shield_g" recalculate_body="false" mesh="mandalorian_energy_shield" culture="Culture.neutral_culture" using_tableau="false" weight="4.6" appearance="1" Type="Shield" item_holsters="shield:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="10" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="87" physics_material="wood_shield" item_usage="shield" position="0, 0, 0.15" rotation="0.0,0.0,0.0" weapon_length="33" center_of_mass="0.0,0.05,0.05" hit_points="510" >
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+
+	<Item id="mandalorian_ranged_shield" name="Mandalorian Energy Shield" body_name="bo_cap_heater_shield_g" shield_body_name="bo_heater_shield_g" recalculate_body="false" mesh="mandalorian_ranged_shield" culture="Culture.neutral_culture" using_tableau="false" weight="4.6" appearance="1" Type="Shield" item_holsters="shield:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="10" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="87" physics_material="wood_shield" item_usage="shield" position="0, 0, 0.15" rotation="0.0,0.0,0.0" weapon_length="51" center_of_mass="0.0,0.05,0.05" hit_points="510" >
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+
+	<Item id="commando_droid_shield" name="Commando Droid Shield" body_name="bo_cap_heater_shield_g" shield_body_name="bo_heater_shield_g" recalculate_body="false" mesh="commando_droid_shield" culture="Culture.neutral_culture" using_tableau="false" weight="4.6" appearance="1" Type="Shield" item_holsters="shield:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="10" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="87" physics_material="wood_shield" item_usage="shield" position="0, 0, -0.1" rotation="0.0,0.0,0.0" weapon_length="51" center_of_mass="0.0,0.05,0.05" hit_points="510" >
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+
+</Items>

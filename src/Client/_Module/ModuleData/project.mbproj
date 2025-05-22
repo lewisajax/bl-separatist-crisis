@@ -1,12 +1,12 @@
-<base type="solution">
-	<Module id="soln_physics_materials" name="ModuleData/physics_materials.xml" type="physics_material"/>
-	<Module id="soln_collision_infos" name="ModuleData/collision_infos.xml" type="collision_infos"/>
-	<Module id="soln_face_animation_records" name="ModuleData/face_animations.xml" type="face_animation_record"/>
-	<Module id="soln_action_sets" name="ModuleData/action_sets.xml" type="action_set"/>
-	<Module id="soln_action_sets" name="ModuleData/action_types.xml" type="action_type"/>
-	<Module id="soln_combat_system" name="ModuleData/combat_parameters.xml" type="animation_combat_parameters"/>
-	<Module id="soln_combat_system" name="ModuleData/native_parameters.xml" type="native_parameters"/>
-	<Module id="soln_item_holsters" name="ModuleData/item_holsters.xml" type="item_holsters"/>
-	<Module id="soln_skins" name="ModuleData/skins.xml" type="skin"/>
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="solution">
+	<outputDirectory>../MBModule/MBModule/</outputDirectory>
+	<XMLDirectory>../WOTS/Modules/TOR_Core/</XMLDirectory>
+	<ModuleAssemblyDirectory>../WOTS/bin/</ModuleAssemblyDirectory>
+	<file id="soln_action_sets" name="ModuleData/anim/swsc_action_sets.xml" type="action_set" />
+  	<file id="soln_action_types" name="ModuleData/anim/swsc_action_types.xml" type="action_type" />
+	<file id="soln_item_usage_sets" name="ModuleData/anim/swsc_item_usage_sets.xml" type="item_usage_set" />
+	<file id="soln_movement_sets" name="ModuleData/anim/swsc_movement_sets.xml" type="movement_set" />
+	<file id="soln_full_movement_sets" name="ModuleData/anim/swsc_full_movement_sets.xml" type="full_movement_set" />
+	<file id="soln_combat_parameters" name="ModuleData/swsc_combat_parameters.xml" type="combat_parameters" />
 </base>
-

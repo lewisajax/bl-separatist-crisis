@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+
+	<!--Ammunition-->
+	
+	<Item id="blaster_bolt_long_red"
+		  name="High Power Red Tibanna Cannister"
+		  body_name="bo_capsule_arrow"
+		  holster_body_name="bo_axe_short"
+		  mesh="blaster_bolt_invisible"
+		  holster_mesh="tibanna_magazine_red"
+		  holster_mesh_with_weapon="tibanna_magazine_red"
+		  flying_mesh="blaster_bolt_long_red"
+		  weight="0.05"
+		  appearance="1"
+		  Type="Bolts"
+		  item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
+		<ItemComponent>
+			<Weapon weapon_class="Bolt"
+					stack_amount="40"
+					thrust_speed="0"
+					thrust_damage_type="Pierce"
+					thrust_damage="4"
+					speed_rating="0"
+					missile_speed="120"
+					weapon_length="285"
+					item_usage=""
+					passby_sound_code="event:/mission/combat/missile/passby"
+					rotation="180, 0, 0"
+					physics_material="missile"
+					trail_particle_name="blaster_flying_particle_2"
+					sticking_position="0,-0.37,0"
+					sticking_rotation="90,0,0"
+					center_of_mass="0,0,-0.1">
+				<WeaponFlags AttachAmmoToVisual="false"
+							 MultiplePenetration="true"
+							 Consumable="true"
+							 AmmoSticksWhenShot="false"
+							 AmmoBreaksOnBounceBack="true"/>
+			</Weapon>
+		</ItemComponent>
+		<Flags ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+
+	<Item id="blaster_bolt_long_green"
+		  name="High Power Green Tibanna Cannister"
+		  body_name="bo_capsule_arrow"
+		  holster_body_name="bo_axe_short"
+		  mesh="blaster_bolt_invisible"
+		  holster_mesh="tibanna_magazine_green"
+		  holster_mesh_with_weapon="tibanna_magazine_green"
+		  flying_mesh="blaster_bolt_long_green"
+		  weight="0.05"
+		  appearance="1"
+		  Type="Bolts"
+		  item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
+		<ItemComponent>
+			<Weapon weapon_class="Bolt"
+					stack_amount="40"
+					thrust_speed="0"
+					thrust_damage_type="Pierce"
+					thrust_damage="4"					
+					speed_rating="0"
+					missile_speed="120"
+					weapon_length="285"
+					item_usage=""
+					passby_sound_code="event:/mission/combat/missile/passby"
+					rotation="180, 0, 0"
+					physics_material="missile"
+					trail_particle_name="blaster_flying_particle_2"
+					sticking_position="0,-0.37,0"
+					sticking_rotation="90,0,0"
+					center_of_mass="0,0,-0.1">
+				<WeaponFlags AttachAmmoToVisual="false"
+							 MultiplePenetration="true"
+							 Consumable="true"
+							 AmmoSticksWhenShot="false"
+							 AmmoBreaksOnBounceBack="true"/>
+			</Weapon>
+		</ItemComponent>
+		<Flags ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+
+	<Item id="blaster_bolt_long_blue"
+		  name="High Power Blue Tibanna Cannister"
+		  body_name="bo_capsule_arrow"
+		  holster_body_name="bo_axe_short"
+		  mesh="blaster_bolt_invisible"
+		  holster_mesh="tibanna_magazine_blue"
+		  holster_mesh_with_weapon="tibanna_magazine_blue"
+		  flying_mesh="blaster_bolt_long_blue"
+		  weight="0.05"
+		  appearance="1"
+		  Type="Bolts"
+		  item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
+		<ItemComponent>
+			<Weapon weapon_class="Bolt"
+					stack_amount="40"
+					thrust_speed="0"
+					thrust_damage_type="Pierce"
+					thrust_damage="4"					
+					speed_rating="0"
+					missile_speed="120"
+					weapon_length="285"
+					item_usage=""
+					passby_sound_code="event:/mission/combat/missile/passby"
+					rotation="180, 0, 0"
+					physics_material="missile"
+					trail_particle_name="blaster_flying_particle_2"
+					sticking_position="0,-0.37,0"
+					sticking_rotation="90,0,0"
+					center_of_mass="0,0,-0.1">
+				<WeaponFlags AttachAmmoToVisual="false"
+							 MultiplePenetration="true"
+							 Consumable="true"
+							 AmmoSticksWhenShot="false"
+							 AmmoBreaksOnBounceBack="true"/>
+			</Weapon>
+		</ItemComponent>
+		<Flags ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+
+	<Item id="blaster_bolt_medium_red"
+		  name="Red Tibanna Cannister"
+		  body_name="bo_capsule_arrow"
+		  holster_body_name="bo_axe_short"
+		  mesh="blaster_bolt_invisible"
+		  holster_mesh="tibanna_magazine_red"
+		  holster_mesh_with_weapon="tibanna_magazine_red"
+		  flying_mesh="blaster_bolt_long_red"
+		  weight="0.05"
+		  appearance="1"
+		  Type="Bolts"
+		  item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
+		<ItemComponent>
+			<Weapon weapon_class="Bolt"
+					stack_amount="80"
+					thrust_speed="0"
+					thrust_damage_type="Pierce"
+					thrust_damage="2"					
+					speed_rating="0"
+					missile_speed="100"
+					weapon_length="153"
+					item_usage=""
+					passby_sound_code="event:/mission/combat/missile/passby"
+					rotation="180, 0, 0"
+					physics_material="missile"
+					trail_particle_name="blaster_flying_particle_2"
+					sticking_position="0,-0.37,0"
+					sticking_rotation="90,0,0"
+					center_of_mass="0,0,-0.1">
+				<WeaponFlags AttachAmmoToVisual="false"
+							 Consumable="true"
+							 AmmoSticksWhenShot="false"
+							 AmmoBreaksOnBounceBack="true"/>
+			</Weapon>
+		</ItemComponent>
+		<Flags ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+
+	<Item id="blaster_bolt_medium_green"
+		  name="Green Tibanna Cannister"
+		  body_name="bo_capsule_arrow"
+		  holster_body_name="bo_axe_short"
+		  mesh="blaster_bolt_invisible"
+		  holster_mesh="tibanna_magazine_green"
+		  holster_mesh_with_weapon="tibanna_magazine_green"
+		  flying_mesh="blaster_bolt_long_green"
+		  weight="0.05"
+		  appearance="1"
+		  Type="Bolts"
+		  item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
+		<ItemComponent>
+			<Weapon weapon_class="Bolt"
+					stack_amount="80"
+					thrust_speed="0"
+					thrust_damage_type="Pierce"
+					thrust_damage="2"						
+					speed_rating="0"
+					missile_speed="100"
+					weapon_length="153"
+					item_usage=""
+					passby_sound_code="event:/mission/combat/missile/passby"
+					rotation="180, 0, 0"
+					physics_material="missile"
+					trail_particle_name="blaster_flying_particle_2"
+					sticking_position="0,-0.37,0"
+					sticking_rotation="90,0,0"
+					center_of_mass="0,0,-0.1">
+				<WeaponFlags AttachAmmoToVisual="false"
+							 Consumable="true"
+							 AmmoSticksWhenShot="false"
+							 AmmoBreaksOnBounceBack="true"/>
+			</Weapon>
+		</ItemComponent>
+		<Flags ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+
+	<Item id="blaster_bolt_medium_blue"
+		  name="Blue Tibanna Cannister"
+		  body_name="bo_capsule_arrow"
+		  holster_body_name="bo_axe_short"
+		  mesh="blaster_bolt_invisible"
+		  holster_mesh="tibanna_magazine_blue"
+		  holster_mesh_with_weapon="tibanna_magazine_blue"
+		  flying_mesh="blaster_bolt_long_blue"
+		  weight="0.05"
+		  appearance="1"
+		  Type="Bolts"
+		  item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
+		<ItemComponent>
+			<Weapon weapon_class="Bolt"
+					stack_amount="80"
+					thrust_speed="0"
+					thrust_damage_type="Pierce"
+					thrust_damage="2"						
+					speed_rating="0"
+					missile_speed="100"
+					weapon_length="153"
+					item_usage=""
+					passby_sound_code="event:/mission/combat/missile/passby"
+					rotation="180, 0, 0"
+					physics_material="missile"
+					trail_particle_name="blaster_flying_particle_2"
+					sticking_position="0,-0.37,0"
+					sticking_rotation="90,0,0"
+					center_of_mass="0,0,-0.1">
+				<WeaponFlags AttachAmmoToVisual="false"
+							 Consumable="true"
+							 AmmoSticksWhenShot="false"
+							 AmmoBreaksOnBounceBack="true"/>
+			</Weapon>
+		</ItemComponent>
+		<Flags ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+
+	<Item id="blaster_bolt_short_red"
+		  name="Low Power Red Tibanna Cannister"
+		  body_name="bo_capsule_arrow"
+		  holster_body_name="bo_axe_short"
+		  mesh="blaster_bolt_invisible"
+		  holster_mesh="tibanna_magazine_red"
+		  holster_mesh_with_weapon="tibanna_magazine_red"
+		  flying_mesh="blaster_bolt_short_red"
+		  weight="0.05"
+		  appearance="1"
+		  Type="Bolts"
+		  item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
+		<ItemComponent>
+			<Weapon weapon_class="Bolt"
+					stack_amount="120"
+					thrust_speed="0"
+					thrust_damage_type="Pierce"
+					thrust_damage="2"						
+					speed_rating="0"
+					missile_speed="80"
+					weapon_length="64"
+					item_usage=""
+					passby_sound_code="event:/mission/combat/missile/passby"
+					rotation="180, 0, 0"
+					physics_material="missile"
+					trail_particle_name="blaster_flying_particle_2"
+					sticking_position="0,-0.37,0"
+					sticking_rotation="90,0,0"
+					center_of_mass="0,0,-0.1">
+				<WeaponFlags AttachAmmoToVisual="false"
+							 Consumable="true"
+							 AmmoSticksWhenShot="false"
+							 AmmoBreaksOnBounceBack="true"/>
+			</Weapon>
+		</ItemComponent>
+		<Flags ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+
+	<Item id="blaster_bolt_short_green"
+		  name="Low Power Green Tibanna Cannister"
+		  body_name="bo_capsule_arrow"
+		  holster_body_name="bo_axe_short"
+		  mesh="blaster_bolt_invisible"
+		  holster_mesh="tibanna_magazine_green"
+		  holster_mesh_with_weapon="tibanna_magazine_green"
+		  flying_mesh="blaster_bolt_short_green"
+		  weight="0.05"
+		  appearance="1"
+		  Type="Bolts"
+		  item_holsters="'quiver_back_lower:quiver_back_lower_2'">
+		<ItemComponent>
+			<Weapon weapon_class="Bolt"
+					stack_amount="120"
+					thrust_speed="0"
+					thrust_damage_type="Pierce"
+					thrust_damage="0"						
+					speed_rating="0"
+					missile_speed="80"
+					weapon_length="64"
+					item_usage=""
+					passby_sound_code="event:/mission/combat/missile/passby"
+					rotation="180, 0, 0"
+					physics_material="missile"
+					trail_particle_name="blaster_flying_particle_2"
+					sticking_position="0,-0.37,0"
+					sticking_rotation="90,0,0"
+					center_of_mass="0,0,-0.1">
+				<WeaponFlags AttachAmmoToVisual="false"
+							 Consumable="true"
+							 AmmoSticksWhenShot="false"
+							 AmmoBreaksOnBounceBack="true"/>
+			</Weapon>
+		</ItemComponent>
+		<Flags ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+
+	<Item id="blaster_bolt_short_blue"
+		  name="Low Power Blue Tibanna Cannister"
+		  body_name="bo_capsule_arrow"
+		  holster_body_name="bo_axe_short"
+		  mesh="blaster_bolt_invisible"
+		  holster_mesh="tibanna_magazine_blue"
+		  holster_mesh_with_weapon="tibanna_magazine_blue"
+		  flying_mesh="blaster_bolt_short_blue"
+		  weight="0.05"
+		  appearance="1"
+		  Type="Bolts"
+		  item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
+		<ItemComponent>
+			<Weapon weapon_class="Bolt"
+					stack_amount="120"
+					thrust_speed="0"
+					thrust_damage_type="Pierce"
+					thrust_damage="0"					
+					speed_rating="0"
+					missile_speed="80"
+					weapon_length="64"
+					item_usage=""
+					passby_sound_code="event:/mission/combat/missile/passby"
+					rotation="180, 0, 0"
+					physics_material="missile"
+					trail_particle_name="blaster_flying_particle_2"
+					sticking_position="0,-0.37,0"
+					sticking_rotation="90,0,0"
+					center_of_mass="0,0,-0.1">
+				<WeaponFlags AttachAmmoToVisual="false"
+							 Consumable="true"
+							 AmmoSticksWhenShot="false"
+							 AmmoBreaksOnBounceBack="true"/>
+			</Weapon>
+		</ItemComponent>
+		<Flags ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+	
+		<Item id="blaster_bolt_stun"
+		  name="Stun Rounds Cannister"
+		  body_name="bo_capsule_arrow"
+		  holster_body_name="bo_axe_short"
+		  mesh="blaster_bolt_invisible"
+		  holster_mesh="tibanna_magazine_blue"
+		  holster_mesh_with_weapon="tibanna_magazine_blue"
+		  flying_mesh="blaster_bolt_stun"
+		  weight="0.05"
+		  appearance="1"
+		  Type="Bolts"
+		  item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
+		<ItemComponent>
+			<Weapon weapon_class="Bolt"
+					stack_amount="120"
+					thrust_speed="0"
+					thrust_damage_type="Blunt"
+					thrust_damage="4"					
+					speed_rating="0"
+					missile_speed="120"
+					weapon_length="285"
+					item_usage=""
+					passby_sound_code="event:/mission/combat/missile/passby"
+					rotation="180, 0, 0"
+					physics_material="missile"
+					trail_particle_name="blaster_flying_particle_2"
+					sticking_position="0,-0.37,0"
+					sticking_rotation="90,0,0"
+					center_of_mass="0,0,-0.1">
+				<WeaponFlags AttachAmmoToVisual="false"
+							 Consumable="true"
+							 AmmoSticksWhenShot="false"
+							 AmmoBreaksOnBounceBack="true"/>
+			</Weapon>
+		</ItemComponent>
+		<Flags ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+
+	<Item id="missile"
+		  name="Missile Pack"
+		  body_name="bo_ballista_projectile_a"
+		  holster_body_name="bo_axe_short"
+		  mesh="ballista_projectile_a"
+		  holster_mesh="quiver"
+		  is_merchandise="false"
+		  subtype="arrows"
+		  flying_mesh="ballista_projectile_flying"
+		  weight="0.8"
+		  difficulty="0"
+		  appearance="1"
+		  Type="Arrows"
+		  item_holsters="">
+		<ItemComponent>
+			<Weapon weapon_class="Arrow"
+					stack_amount="20"
+					physics_material="ballista_missile"
+					thrust_speed="0"
+					speed_rating="0"
+					missile_speed="80"
+					weapon_length="95"
+					thrust_damage="400"
+					thrust_damage_type="Pierce"
+					item_usage=""
+					flying_sound_code="event:/mission/combat/missile/foley/passby"
+					sticking_rotation="90,0,0"
+					sticking_position="0,-1.2,0"
+					center_of_mass="0,0,-0.3">
+				<WeaponFlags Consumable="true"
+							 AmmoSticksWhenShot="true"
+							 CanPenetrateShield="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags CannotBePickedUp="true" />
+	</Item>
+
+	<!--Blasters-->
+
+	<Item id="acp_repeater_gun"
+	name="ACP Repeater Gun"
+    value="850"		  
+	body_name="bo_cross_bow_heavy"
+	mesh="acp_repeater_gun"
+	culture="Culture.neutral_culture"
+	weight="2.6"
+	appearance="0.8"
+	difficulty="0"
+	Type="Crossbow"
+	AmmoOffset="0.0, 0.02131, 0.22975"
+	item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
+	holster_position_shift="0, 0.05, 0">
+		<!--left/right,forward/backward,up/down -->
+		<ItemComponent>
+			<Weapon weapon_class="Crossbow"
+				    ammo_class="Bolt"
+					ammo_limit="20"
+					thrust_speed="75"
+					speed_rating="63"
+					missile_speed="200"
+					weapon_length="54"
+					accuracy="100"
+					thrust_damage="110"
+					thrust_damage_type="Pierce"
+					item_usage="crossbow_fast"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,0.2"
+					position="0, 0, 0.2"
+				    rotation="0, 1, 180">
+				<!--Position: Left/Right, Up/Down, Forward/Backward-->
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 CanPenetrateShield="true"
+							 NotUsableWithOneHand="false"
+							 TwoHandIdleOnMount="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item id="a_280_rifle"
+	name="A-280 Blaster Rifle"
+    value="2300"		  
+	body_name="bo_cross_bow_heavy"
+	mesh="a_280_rifle"
+	culture="Culture.neutral_culture"
+	weight="3.6"
+	appearance="0.8"
+	difficulty="0"
+	Type="Crossbow"
+	AmmoOffset="0.0, 0.02131, 0.22975"
+	item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
+	holster_position_shift="0, 0.05, 0">
+		<!--left/right,forward/backward,up/down -->
+		<ItemComponent>
+			<Weapon weapon_class="Crossbow"
+				    ammo_class="Bolt"
+					ammo_limit="30"
+					thrust_speed="75"
+					speed_rating="63"
+					missile_speed="250"
+					weapon_length="107"
+					accuracy="100"
+					thrust_damage="130"
+					thrust_damage_type="Pierce"
+					item_usage="crossbow_fast"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,0"
+					position="0, 0, 0.35"
+				    rotation="0, 1, 180">
+				<!--Position: Left/Right, Up/Down, Forward/Backward-->
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 CanPenetrateShield="true"
+							 NotUsableWithOneHand="false"
+							 TwoHandIdleOnMount="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item id="bowcaster"
+	name="Bowcaster"
+    value="4400"		  
+	body_name="bo_cross_bow_heavy"
+	mesh="bowcaster"
+	culture="Culture.neutral_culture"
+	weight="4.3"
+	appearance="0.8"
+	difficulty="0"
+	Type="Crossbow"
+	AmmoOffset="0.0, 0.02131, 0.22975"
+	item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
+	holster_position_shift="0, 0.05, -0.3">
+		<!--left/right,forward/backward,up/down -->
+		<ItemComponent>
+			<Weapon weapon_class="Crossbow"
+				    ammo_class="Bolt"
+					ammo_limit="5"
+					thrust_speed="75"
+					speed_rating="63"
+					missile_speed="295"
+					weapon_length="115"
+					accuracy="100"
+					thrust_damage="140"
+					thrust_damage_type="Pierce"
+					item_usage="crossbow_fast"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,0.2"
+					position="0, 0, 0.2"
+				    rotation="0, 0, 180">
+				<!--Position: Left/Right, Up/Down, Forward/Backward-->
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 CanPenetrateShield="true"
+							 NotUsableWithOneHand="false"
+							 TwoHandIdleOnMount="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+	
+	<Item id="dc_15a_rifle"
+	name="DC-15A Blaster Rifle"
+    value="1800"		  
+	body_name="bo_cross_bow_heavy"
+	mesh="dc_15a_rifle"
+	culture="Culture.galactic_republic"
+	weight="5.3"
+	appearance="0.8"
+	difficulty="0"
+	Type="Crossbow"
+	AmmoOffset="0.0, 0.02131, 0.22975"
+	item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
+	holster_position_shift="0, 0.05, -0.5">
+		<!--left/right,forward/backward,up/down -->
+		<ItemComponent>
+			<Weapon weapon_class="Crossbow"
+				    ammo_class="Bolt"
+					ammo_limit="30"
+					thrust_speed="75"
+					speed_rating="63"
+					missile_speed="260"
+					weapon_length="144"
+					accuracy="100"
+					thrust_damage="115"
+					thrust_damage_type="Pierce"
+					item_usage="crossbow_fast"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,0.2"
+					position="0, 0, 0"
+				    rotation="0, 1, 180">
+				<!--Position: Left/Right, Up/Down, Forward/Backward-->
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 CanPenetrateShield="true"
+							 NotUsableWithOneHand="false"
+							 TwoHandIdleOnMount="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item id="dc_15a_rifle_commando"
+	name="DC-15A Commando Blaster Rifle"
+    value="2100"		  
+	body_name="bo_cross_bow_heavy"
+	mesh="dc_15a_rifle_commando"
+	culture="Culture.galactic_republic"
+	weight="5.6"
+	appearance="0.8"
+	difficulty="0"
+	Type="Crossbow"
+	AmmoOffset="0.0, 0.02131, 0.22975"
+	item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
+	holster_position_shift="0, 0.05, -0.5">
+		<!--left/right,forward/backward,up/down -->
+		<ItemComponent>
+			<Weapon weapon_class="Crossbow"
+				    ammo_class="Bolt"
+					ammo_limit="30"
+					thrust_speed="75"
+					speed_rating="63"
+					missile_speed="260"
+					weapon_length="144"
+					accuracy="100"
+					thrust_damage="125"
+					thrust_damage_type="Pierce"
+					item_usage="crossbow_fast"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,0.2"
+					position="0, 0, 0"
+				    rotation="0, 1, 180">
+				<!--Position: Left/Right, Up/Down, Forward/Backward-->
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 CanPenetrateShield="true"
+							 NotUsableWithOneHand="false"
+							 TwoHandIdleOnMount="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>	
+	
+	<Item id="e_5_rifle"
+	name="E-5 Blaster Rifle"
+    value="1100"		  
+	body_name="bo_cross_bow_heavy"
+	mesh="e_5_rifle"
+	culture="Culture.neutral_culture"
+	weight="3.1"
+	appearance="0.8"
+	difficulty="0"
+	Type="Pistol"
+	AmmoOffset="0.0, 0.02131, 0.22975"
+	item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
+	holster_position_shift="0, 0.05, 0">
+		<!--left/right,forward/backward,up/down -->
+		<ItemComponent>
+			<Weapon weapon_class="Pistol"
+				    ammo_class="Bolt"
+					ammo_limit="30"
+					thrust_speed="75"
+					speed_rating="63"
+					missile_speed="230"
+					weapon_length="66"
+					accuracy="100"
+					thrust_damage="105"
+					thrust_damage_type="Pierce"
+					item_usage="blaster_light"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,0.1"
+					position="0, 0, 0.2"
+				    rotation="0, 1, 180">
+				<!--Position: Left/Right, Up/Down, Forward/Backward-->
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 CanPenetrateShield="true"
+							 NotUsableWithOneHand="false"
+							 TwoHandIdleOnMount="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item id="dc_15s_carbine"
+	name="DC-15S Blaster Carbine"
+    value="1250"		  
+	body_name="bo_cross_bow_heavy"
+	mesh="dc_15s_carbine"
+	culture="Culture.galactic_republic"
+	weight="3.3"
+	appearance="0.8"
+	difficulty="0"
+	Type="Pistol"
+	AmmoOffset="0.0, 0.02131, 0.22975"
+	item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
+	holster_position_shift="0, 0.05, -0.1">
+		<!--left/right,forward/backward,up/down -->
+		<ItemComponent>
+			<Weapon weapon_class="Pistol"
+				    ammo_class="Bolt"
+					ammo_limit="20"
+					thrust_speed="75"
+					speed_rating="63"
+					missile_speed="240"
+					weapon_length="69"
+					accuracy="100"
+					thrust_damage="110"
+					thrust_damage_type="Pierce"
+					item_usage="crossbow_fast"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,0.2"
+					position="0, 0, 0.35"
+				    rotation="0, 1, 180">
+				<!--Position: Left/Right, Up/Down, Forward/Backward-->
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 CanPenetrateShield="true"
+							 NotUsableWithOneHand="false"
+							 TwoHandIdleOnMount="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item id="dc_15x_sniper"
+	name="DC-15X Sniper Rifle"
+    value="3200"		  
+	body_name="bo_cross_bow_heavy"
+	mesh="dc_15x_sniper"
+	culture="Culture.galactic_republic"
+	weight="6.7"
+	appearance="0.8"
+	difficulty="0"
+	Type="Crossbow"
+	AmmoOffset="0.0, 0.02131, 0.22975"
+	item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
+	holster_position_shift="0, 0.1, 0">
+		<!--left/right,forward/backward,up/down -->
+		<ItemComponent>
+			<Weapon weapon_class="Crossbow"
+				    ammo_class="Bolt"
+					ammo_limit="5"
+					thrust_speed="75"
+					speed_rating="63"
+					missile_speed="300"
+					weapon_length="145"
+					accuracy="100"
+					thrust_damage="180"
+					thrust_damage_type="Pierce"
+					item_usage="crossbow_fast"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,0.2"
+					position="0, 0, 0.3"
+				    rotation="0, 1, 180">
+				<!--Position: Left/Right, Up/Down, Forward/Backward-->
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 CanPenetrateShield="true"
+							 NotUsableWithOneHand="false"
+							 TwoHandIdleOnMount="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+	
+	<Item id="dc_17m_rifle"
+	name="DC-17M ICWS Rifle Config"
+    value="6300"		  
+	body_name="bo_cross_bow_heavy"
+	mesh="dc_17m_rifle"
+	culture="Culture.galactic_republic"
+	weight="4.8"
+	appearance="0.8"
+	difficulty="0"
+	Type="Crossbow"
+	AmmoOffset="0.0, 0.02131, 0.22975"
+	item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
+	holster_position_shift="0, 0.1, -0.1">
+		<!--left/right,forward/backward,up/down -->
+		<ItemComponent>
+			<Weapon weapon_class="Crossbow"
+				    ammo_class="Bolt"
+					ammo_limit="30"
+					thrust_speed="75"
+					speed_rating="63"
+					missile_speed="260"
+					weapon_length="64"
+					accuracy="100"
+					thrust_damage="140"
+					thrust_damage_type="Pierce"
+					item_usage="crossbow_fast"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,0.2"
+					position="0, 0, 0.2"
+				    rotation="0, 1, 180">
+				<!--Position: Left/Right, Up/Down, Forward/Backward-->
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 CanPenetrateShield="true"
+							 NotUsableWithOneHand="false"
+							 TwoHandIdleOnMount="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item id="dc_17m_sniper"
+	name="DC-17M ICWS Sniper Config"
+	body_name="bo_cross_bow_heavy"
+	mesh="dc_17m_sniper"
+	culture="Culture.galactic_republic"
+    value="10500"		  
+	weight="5.2"
+	appearance="0.8"
+	difficulty="0"
+	Type="Crossbow"
+	AmmoOffset="0.0, 0.02131, 0.22975"
+	item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
+	holster_position_shift="0, 0.1, 0">
+		<!--left/right,forward/backward,up/down -->
+		<ItemComponent>
+			<Weapon weapon_class="Crossbow"
+				    ammo_class="Bolt"
+					ammo_limit="30"
+					thrust_speed="75"
+					speed_rating="63"
+					missile_speed="260"
+					weapon_length="97"
+					accuracy="100"
+					thrust_damage="195"
+					thrust_damage_type="Pierce"
+					item_usage="crossbow_fast"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,0.2"
+					position="0, 0, 0.4"
+				    rotation="0, 1, 180">
+				<!--Position: Left/Right, Up/Down, Forward/Backward-->
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 CanPenetrateShield="true"
+							 NotUsableWithOneHand="false"
+							 TwoHandIdleOnMount="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item id="ee_3_carbine"
+	name="EE-3 Blaster Carbine"
+    value="1580"
+	body_name="bo_cross_bow_heavy"
+	mesh="ee_3_carbine"
+	culture="Culture.neutral_culture"
+	weight="3.6"
+	appearance="1"
+	difficulty="0"
+	Type="Crossbow"
+	AmmoOffset="0.0, 0.02131, 0.22975"
+	item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
+	holster_position_shift="0, 0.05, -0.1">
+		<!--left/right,forward/backward,up/down -->
+		<ItemComponent>
+			<Weapon weapon_class="Crossbow"
+				    ammo_class="Bolt"
+					ammo_limit="20"
+					thrust_speed="75"
+					speed_rating="63"
+					missile_speed="260"
+					weapon_length="92"
+					accuracy="100"
+					thrust_damage="130"
+					thrust_damage_type="Pierce"
+					item_usage="crossbow_fast"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,0.2"
+					position="0, 0, -0.05"
+				    rotation="0, 1, 180">
+				<!--Position: Left/Right, Up/Down, Forward/Backward-->
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 CanPenetrateShield="true"
+							 NotUsableWithOneHand="false"
+							 TwoHandIdleOnMount="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+	
+	<Item id="plx_launcher"
+	name="PLX-1 Missile Launcher"
+    value="9400"
+	body_name="bo_cross_bow_heavy"
+	mesh="plx_launcher"
+	culture="Culture.galactic_republic"
+	weight="6.1"
+	appearance="1"
+	difficulty="0"
+	Type="Crossbow"
+	AmmoOffset="0.0, 0.02131, 0.22975"
+	item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
+	holster_position_shift="0, 0.05, -0.4">
+		<!--left/right,forward/backward,up/down -->
+		<ItemComponent>
+			<Weapon weapon_class="Bow"
+				    ammo_class="Arrow"
+					ammo_limit="20"
+					thrust_speed="75"
+					speed_rating="63"
+					missile_speed="260"
+					weapon_length="92"
+					accuracy="100"
+					thrust_damage="130"
+					thrust_damage_type="Pierce"
+					item_usage="crossbow_fast"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,0.2"
+					position="-0.15, 0.05, -0.35"
+				    rotation="0, 1, 180">
+				<!--Position: Left/Right, Up/Down, Forward/Backward-->
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 CanPenetrateShield="true"
+							 NotUsableWithOneHand="false"
+							 TwoHandIdleOnMount="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item id="mandalorian_heavy_pistol"
+		  name="Mandalorian Heavy Blaster Pistol"
+		  value="3500"
+		  body_name="bo_cross_bow_heavy"
+		  mesh="mandalorian_heavy_pistol"
+		  culture="Culture.mandalorian"
+		  weight="1.2"
+		  appearance="1"
+		  difficulty="0"
+		  Type="Crossbow"
+		  AmmoOffset="0.0, 0.02131, 0.22975"
+		  item_holsters="pistol_left_hip:pistol_right_hip:pistol_lower_back"
+		  holster_position_shift="0, 0, 0">
+		<!--left/right,forward/backward,up/down -->
+		<ItemComponent>
+			<Weapon weapon_class="Crossbow"
+				    ammo_class="Bolt"
+					ammo_limit="15"
+					thrust_speed="75"
+					speed_rating="63"
+					missile_speed="260"
+					weapon_length="46"
+					accuracy="100"
+					thrust_damage="85"
+					thrust_damage_type="Pierce"
+					item_usage="crossbow_fast"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,0.2"
+					position="0, 0, 0.1"
+				    rotation="0, 1, 180">
+				<!--Position: Left/Right, Up/Down, Forward/Backward-->
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 CanPenetrateShield="false"
+							 NotUsableWithOneHand="false"
+							 TwoHandIdleOnMount="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item id="mandalorian_pistol"
+		  name="Mandalorian Blaster Pistol"
+		  value="2200"
+		  body_name="bo_cross_bow_heavy"
+		  mesh="mandalorian_pistol"
+		  culture="Culture.mandalorian"
+		  weight="1.2"
+		  appearance="1"
+		  difficulty="0"
+		  Type="Crossbow"
+		  AmmoOffset="0.0, 0.02131, 0.22975"
+		  item_holsters="pistol_left_hip:pistol_right_hip:pistol_lower_back"
+		  holster_position_shift="0, 0, 0">
+		<!--left/right,forward/backward,up/down -->
+		<ItemComponent>
+			<Weapon weapon_class="Crossbow"
+				    ammo_class="Bolt"
+					ammo_limit="15"
+					thrust_speed="75"
+					speed_rating="63"
+					missile_speed="260"
+					weapon_length="46"
+					accuracy="100"
+					thrust_damage="85"
+					thrust_damage_type="Pierce"
+					item_usage="crossbow_fast"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,0.2"
+					position="0, 0, 0.1"
+				    rotation="0, 1, 180">
+				<!--Position: Left/Right, Up/Down, Forward/Backward-->
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 CanPenetrateShield="false"
+							 NotUsableWithOneHand="false"
+							 TwoHandIdleOnMount="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item id="model_73_pistol"
+		  name="Model 73 Blaster Pistol"
+		  value="2200"
+		  body_name="bo_cross_bow_heavy"
+		  mesh="model_73_pistol"
+		  culture="Culture.neutral_culture"
+		  weight="1.2"
+		  appearance="1"
+		  difficulty="0"
+		  Type="Crossbow"
+		  AmmoOffset="0.0, 0.02131, 0.22975"
+		  item_holsters="pistol_left_hip:pistol_right_hip:pistol_lower_back"
+		  holster_position_shift="0, 0, 0">
+		<!--left/right,forward/backward,up/down -->
+		<ItemComponent>
+			<Weapon weapon_class="Crossbow"
+				    ammo_class="Bolt"
+					ammo_limit="15"
+					thrust_speed="75"
+					speed_rating="63"
+					missile_speed="260"
+					weapon_length="46"
+					accuracy="100"
+					thrust_damage="85"
+					thrust_damage_type="Pierce"
+					item_usage="crossbow_fast"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,0.2"
+					position="0, 0, -0.02"
+				    rotation="0, 1, 180">
+				<!--Position: Left/Right, Up/Down, Forward/Backward-->
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 CanPenetrateShield="false"
+							 NotUsableWithOneHand="false"
+							 TwoHandIdleOnMount="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item id="rg_4d_pistol"
+		  name="RG-4D Blaster Pistol"
+		  value="2200"
+		  body_name="bo_cross_bow_heavy"
+		  mesh="rg_4d_pistol"
+		  culture="Culture.separatist"
+		  weight="1.2"
+		  appearance="1"
+		  difficulty="0"
+		  Type="Crossbow"
+		  AmmoOffset="0.0, 0.02131, 0.22975"
+		  item_holsters="pistol_left_hip:pistol_right_hip:pistol_lower_back"
+		  holster_position_shift="0, 0, 0">
+		<!--left/right,forward/backward,up/down -->
+		<ItemComponent>
+			<Weapon weapon_class="Crossbow"
+				    ammo_class="Bolt"
+					ammo_limit="15"
+					thrust_speed="75"
+					speed_rating="63"
+					missile_speed="260"
+					weapon_length="56"
+					accuracy="100"
+					thrust_damage="85"
+					thrust_damage_type="Pierce"
+					item_usage="crossbow_fast"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,0.2"
+					position="0, 0, -0.02"
+				    rotation="0, 1, 180">
+				<!--Position: Left/Right, Up/Down, Forward/Backward-->
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 CanPenetrateShield="false"
+							 NotUsableWithOneHand="false"
+							 TwoHandIdleOnMount="true"
+							 MultiplePenetration="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<!--Grenades-->
+	<Item id="thermal_detonator"
+		  name="{=1CPdu9K0}Thermal Detonator"
+		  is_merchandise="true"
+		  body_name="bo_throwing_stone"
+		  holster_body_name="bo_axe_short"
+		  holster_mesh="thermal_detonator_pack"
+		  holster_mesh_with_weapon="thermal_detonator_pack"
+		  mesh="thermal_detonator"
+		  AmmoOffset="0.0, 0.0, 0.0"
+		  value="4600"
+		  weight="0.1"
+		  appearance="0.1"
+		  Type="Thrown"
+		  item_holsters="throwing_stone:throwing_stone_2">
+		<ItemComponent>
+			<Weapon weapon_class="Stone"
+					ammo_class="Stone"
+					stack_amount="4"
+					physics_material="missile"
+					accuracy="90"
+					thrust_speed="102"
+					speed_rating="102"
+					missile_speed="50"
+					weapon_length="10"
+					thrust_damage="400"
+					item_usage="stone"
+					rotation="100,30,20"
+					passby_sound_code="event:/mission/combat/boulder/passby"
+                    trail_particle_name="psys_game_burning_agent"
+					rotation_speed="0, -3.0, 0">
+				<WeaponFlags RangedWeapon="true"
+							 Consumable="true"
+						     CanPenetrateShield="true"
+							 AutoReload="true"
+                             Burning="true"
+						     AffectsAreaBig="true"
+							 UnloadWhenSheathed="true"
+							 UseHandAsThrowBase="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+</Items>

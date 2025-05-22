@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<strings>
+		<string id="str_crafting_template.Lightsaber" text="Lightsaber" />
+		<string id="str_crafting_template.Vibrodagger" text="Vibrodagger" />
+		<string id="str_crafting_template.Vibrosword" text="Vibrosword" />
+		<string id="str_crafting_template.SWSCThrowingKnife" text="Throwing Knife" />
+		<string id="str_crafting_template.SWSCTwoHandedAxe" text="Two-Handed Axe" />
+		<string id="str_crafting_template.SWSCTwoHandedPolearm" text="Two-Handed Polearm" />
+		<string id="str_crafting_template.SWSCMace" text="One-Handed Mace" />
+
+		<string id="str_weapon_usage.Lightsaber" text="One Handed" />
+		<string id="str_weapon_usage.LightsaberBastardSword" text="Two Handed" />
+		<string id="str_weapon_usage.Vibrodagger" text="One Handed" />
+		<string id="str_weapon_usage.Vibrosword" text="One Handed" />
+		<string id="str_weapon_usage.VibroswordBastardSword" text="Two Handed" />
+		<string id="str_weapon_usage.SWSCThrowingKnife" text="Thrown" />
+		<string id="str_weapon_usage.SWSCTwoHandedAxe" text="Two Handed" />
+		<string id="str_weapon_usage.SWSCTwoHandedPolearm" text="Two Handed" />
+		<string id="str_weapon_usage.SWSCTwoHandedPolearm_Couchable" text="Couch-Able" />
+		<string id="str_weapon_usage.SWSCTwoHandedPolearm_Bracing" text="Braced" />
+		<string id="str_weapon_usage.SWSCMace" text="One Handed" />
+
+		<string id="str_item_category.mandalorian_data_pad" text="Mandalorian Data Pad" />
+
+	</strings>

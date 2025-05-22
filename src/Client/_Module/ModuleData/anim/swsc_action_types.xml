@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<action_types>
+    <action name="act_rider_stand_blaster_pace_0" />
+	<action name="act_rider_stand_blaster_pace_1" />
+	<action name="act_rider_stand_blaster_pace_2" />
+	<action name="act_rider_stand_blaster_pace_3" />
+	<action name="act_rider_stand_blaster_pace_4" />
+	<action name="act_rider_stand_blaster_pace_5" />
+    <action name="act_run_idle_blaster" />
+	<action name="act_run_forward_blaster" />
+	<action name="act_run_right_blaster" />
+	<action name="act_run_left_blaster" />
+	<action name="act_run_backward_blaster" />
+	<action name="act_run_right_back_blaster" />
+	<action name="act_run_left_back_blaster" />
+	<action name="act_run_right_to_left_blaster" />
+	<action name="act_run_left_to_right_blaster" />
+	<action name="act_turn_blaster" />
+	<action name="act_run_idle_blaster_left_stance" />
+	<action name="act_run_forward_blaster_left_stance" />
+	<action name="act_run_right_blaster_left_stance" />
+	<action name="act_run_left_blaster_left_stance" />
+	<action name="act_run_backward_blaster_left_stance" />
+	<action name="act_run_right_back_blaster_left_stance" />
+	<action name="act_run_left_back_blaster_left_stance" />
+	<action name="act_run_right_to_left_blaster_left_stance" />
+	<action name="act_run_left_to_right_blaster_left_stance" />
+	<action name="act_turn_blaster_left_stance" />
+    <action name="act_walk_idle_blaster" />
+	<action name="act_walk_forward_blaster" />
+	<action name="act_walk_right_blaster" />
+	<action name="act_walk_left_blaster" />
+	<action name="act_walk_backward_blaster" />
+	<action name="act_walk_right_back_blaster" />
+	<action name="act_walk_left_back_blaster" />
+	<action name="act_walk_right_to_left_blaster" />
+	<action name="act_walk_left_to_right_blaster" />
+	<action name="act_walk_idle_blaster_left_stance" />
+	<action name="act_walk_forward_blaster_left_stance" />
+	<action name="act_walk_right_blaster_left_stance" />
+	<action name="act_walk_left_blaster_left_stance" />
+	<action name="act_walk_backward_blaster_left_stance" />
+	<action name="act_walk_right_back_blaster_left_stance" />
+	<action name="act_walk_left_back_blaster_left_stance" />
+	<action name="act_walk_right_to_left_blaster_left_stance" />
+	<action name="act_walk_left_to_right_blaster_left_stance" />
+    <action name="act_crouch_walk_idle_blaster" />
+	<action name="act_crouch_walk_forward_blaster" />
+	<action name="act_crouch_walk_right_blaster" />
+	<action name="act_crouch_walk_left_blaster" />
+	<action name="act_crouch_walk_backward_blaster" />
+	<action name="act_crouch_walk_right_back_blaster" />
+	<action name="act_crouch_walk_left_back_blaster" />
+	<action name="act_crouch_walk_right_to_left_blaster" />
+	<action name="act_crouch_walk_left_to_right_blaster" />
+	<action name="act_crouch_walk_idle_blaster_left_stance" />
+	<action name="act_crouch_walk_forward_blaster_left_stance" />
+	<action name="act_crouch_walk_right_blaster_left_stance" />
+	<action name="act_crouch_walk_left_blaster_left_stance" />
+	<action name="act_crouch_walk_backward_blaster_left_stance" />
+	<action name="act_crouch_walk_right_back_blaster_left_stance" />
+	<action name="act_crouch_walk_left_back_blaster_left_stance" />
+	<action name="act_crouch_walk_right_to_left_blaster_left_stance" />
+	<action name="act_crouch_walk_left_to_right_blaster_left_stance" />
+    <action name="act_crouch_run_idle_blaster" />
+	<action name="act_crouch_run_forward_blaster" />
+	<action name="act_crouch_run_right_blaster" />
+	<action name="act_crouch_run_left_blaster" />
+	<action name="act_crouch_run_backward_blaster" />
+	<action name="act_crouch_run_right_back_blaster" />
+	<action name="act_crouch_run_left_back_blaster" />
+	<action name="act_crouch_run_right_to_left_blaster" />
+	<action name="act_crouch_run_left_to_right_blaster" />
+	<action name="act_crouch_turn_blaster" />
+	<action name="act_crouch_run_idle_blaster_left_stance" />
+	<action name="act_crouch_run_forward_blaster_left_stance" />
+	<action name="act_crouch_run_right_blaster_left_stance" />
+	<action name="act_crouch_run_left_blaster_left_stance" />
+	<action name="act_crouch_run_backward_blaster_left_stance" />
+	<action name="act_crouch_run_right_back_blaster_left_stance" />
+	<action name="act_crouch_run_left_back_blaster_left_stance" />
+	<action name="act_crouch_run_right_to_left_blaster_left_stance" />
+	<action name="act_crouch_run_left_to_right_blaster_left_stance" />
+	<action name="act_crouch_turn_blaster_left_stance" />
+    <action name="act_idle_blaster_1" type="actt_idle" />
+	<action name="act_idle_blaster_2" type="actt_idle" />
+	<action name="act_idle_blaster_3" type="actt_idle" />
+    <action name="act_equip_blaster" type="actt_equip_unequip" />
+	<action name="act_equip_blaster_left_stance" type="actt_equip_unequip" />
+	<action name="act_unequip_blaster" type="actt_equip_unequip" />
+	<action name="act_unequip_blaster_left_stance" type="actt_equip_unequip" />
+    <action name="act_ready_blaster" type="actt_ready_ranged" action_stage="as_attack_ready" />
+	<action name="act_ready_continue_blaster" type="actt_ready_ranged" action_stage="as_attack_ready" />
+	<action name="act_release_blaster" type="actt_release_ranged" action_stage="as_attack_release" />
+	<action name="act_reload_blaster" type="actt_reload" action_stage="as_reload_mid_phase" />
+	<action name="act_reload_blaster_fast" type="actt_reload" action_stage="as_reload_mid_phase" />
+	<action name="act_reload_blaster_light" type="actt_reload" action_stage="as_reload_mid_phase" />
+	<action name="act_reload_blaster_continue" type="actt_reload" action_stage="as_reload_last_phase" />
+	<action name="act_reload_blaster_horseback" type="actt_reload" action_stage="as_reload_mid_phase" />
+	<action name="act_reload_blaster_continue_horseback" type="actt_reload" action_stage="as_reload_last_phase" />
+    <action name="act_rider_idle_blaster_1" type="actt_idle" />
+	<action name="act_rider_idle_blaster_2" type="actt_idle" />
+	<action name="act_rider_idle_blaster_3" type="actt_idle" />
+	<action name="act_rider_idle_blaster_4" type="actt_idle" />
+    <action name="act_rider_stand_blaster_1" />
+	<action name="act_rider_stand_blaster_2" />
+	<action name="act_rider_stand_blaster_3" />
+	<action name="act_rider_stand_blaster_4" />
+    <action name="act_pose_archer_blaster" />
+    <action name="act_pose_troop_blaster" />
+</action_types>

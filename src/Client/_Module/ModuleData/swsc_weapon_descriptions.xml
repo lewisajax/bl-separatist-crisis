@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<WeaponDescriptions>
+	<WeaponDescription id="Lightsaber" weapon_class="OneHandedSword" item_usage_features="onehanded:block:shield:swing:thrust">
+		<WeaponFlags>
+			<WeaponFlag value="MeleeWeapon"/>
+		</WeaponFlags>
+		<AvailablePieces>
+
+			<AvailablePiece id="lightsaber_blade_blue"/>
+			<AvailablePiece id="lightsaber_blade_green"/>
+			<AvailablePiece id="lightsaber_blade_purple"/>
+			<AvailablePiece id="lightsaber_blade_red"/>
+			<AvailablePiece id="lightsaber_blade_white"/>
+			<AvailablePiece id="lightsaber_blade_yellow"/>
+			<AvailablePiece id="lightsaber_darksaber_blade"/>
+
+			<AvailablePiece id="kyle_katarn_lightsaber_emitter"/>
+			<AvailablePiece id="aayla_secura_lightsaber_emitter"/>
+			<AvailablePiece id="mace_windu_lightsaber_emitter"/>
+			<AvailablePiece id="darth_revan_lightsaber_emitter"/>
+			<AvailablePiece id="lightsaber_obiwan_emitter"/>
+			<AvailablePiece id="lightsaber_anakin_emitter"/>
+
+			<AvailablePiece id="kyle_katarn_lightsaber_handle"/>
+			<AvailablePiece id="aayla_secura_lightsaber_handle"/>
+			<AvailablePiece id="mace_windu_lightsaber_handle"/>
+			<AvailablePiece id="darth_revan_lightsaber_handle"/>
+			<AvailablePiece id="lightsaber_darksaber_handle"/>
+			<AvailablePiece id="lightsaber_ahsoka_main_handle"/>
+			<AvailablePiece id="lightsaber_ahsoka_shoto_handle"/>
+			<AvailablePiece id="lightsaber_obiwan_handle"/>
+			<AvailablePiece id="lightsaber_anakin_handle"/>
+
+			<AvailablePiece id="kyle_katarn_lightsaber_pommel"/>
+			<AvailablePiece id="aayla_secura_lightsaber_pommel"/>
+			<AvailablePiece id="mace_windu_lightsaber_pommel"/>
+			<AvailablePiece id="darth_revan_lightsaber_pommel"/>
+			<AvailablePiece id="lightsaber_darksaber_pommel"/>
+			<AvailablePiece id="lightsaber_ahsoka_main_pommel"/>
+			<AvailablePiece id="lightsaber_ahsoka_shoto_pommel"/>
+			<AvailablePiece id="lightsaber_obiwan_pommel"/>
+
+		</AvailablePieces>
+	</WeaponDescription>
+
+	<WeaponDescription id="LightsaberBastardSword" weapon_class="TwoHandedSword" item_usage_features="twohanded:block:swing:thrust">
+		<WeaponFlags>
+			<WeaponFlag value="MeleeWeapon"/>
+		</WeaponFlags>
+		<AvailablePieces>
+
+			<AvailablePiece id="lightsaber_blade_blue"/>
+			<AvailablePiece id="lightsaber_blade_green"/>
+			<AvailablePiece id="lightsaber_blade_purple"/>
+			<AvailablePiece id="lightsaber_blade_red"/>
+			<AvailablePiece id="lightsaber_blade_white"/>
+			<AvailablePiece id="lightsaber_blade_yellow"/>
+			<AvailablePiece id="lightsaber_darksaber_blade"/>
+
+			<AvailablePiece id="kyle_katarn_lightsaber_emitter"/>
+			<AvailablePiece id="aayla_secura_lightsaber_emitter"/>
+			<AvailablePiece id="mace_windu_lightsaber_emitter"/>
+			<AvailablePiece id="darth_revan_lightsaber_emitter"/>
+			<AvailablePiece id="lightsaber_obiwan_emitter"/>
+			<AvailablePiece id="lightsaber_anakin_emitter"/>
+
+			<AvailablePiece id="kyle_katarn_lightsaber_handle"/>
+			<AvailablePiece id="aayla_secura_lightsaber_handle"/>
+			<AvailablePiece id="mace_windu_lightsaber_handle"/>
+			<AvailablePiece id="darth_revan_lightsaber_handle"/>
+			<AvailablePiece id="lightsaber_darksaber_handle"/>
+			<AvailablePiece id="lightsaber_ahsoka_main_handle"/>
+			<AvailablePiece id="lightsaber_ahsoka_shoto_handle"/>
+			<AvailablePiece id="lightsaber_obiwan_handle"/>
+			<AvailablePiece id="lightsaber_anakin_handle"/>
+
+			<AvailablePiece id="kyle_katarn_lightsaber_pommel"/>
+			<AvailablePiece id="aayla_secura_lightsaber_pommel"/>
+			<AvailablePiece id="mace_windu_lightsaber_pommel"/>
+			<AvailablePiece id="darth_revan_lightsaber_pommel"/>
+			<AvailablePiece id="lightsaber_darksaber_pommel"/>
+			<AvailablePiece id="lightsaber_ahsoka_main_pommel"/>
+			<AvailablePiece id="lightsaber_ahsoka_shoto_pommel"/>
+			<AvailablePiece id="lightsaber_obiwan_pommel"/>
+
+		</AvailablePieces>
+	</WeaponDescription>
+
+	<WeaponDescription id="Vibrodagger" weapon_class="Dagger" item_usage_features="onehanded:block:shield:swing:thrust">
+		<WeaponFlags>
+			<WeaponFlag value="MeleeWeapon"/>
+		</WeaponFlags>
+		<AvailablePieces>
+			
+			<AvailablePiece id="vibrodagger_swept_blade"/>
+			<AvailablePiece id="vibrodagger_bayonet_blade"/>
+			<AvailablePiece id="switch_vibrodagger_blade"/>
+			<AvailablePiece id="vibrodagger_jagged_blade"/>
+			<AvailablePiece id="vibrodagger_opulent_blade"/>
+			<AvailablePiece id="vibrodagger_kal_blade_beskar"/>
+			<AvailablePiece id="vibrodagger_kal_blade_durasteel"/>
+			<AvailablePiece id="vibrodagger_kal_blade_bronzium"/>			
+
+			<AvailablePiece id="vibrodagger_swept_guard"/>
+			<AvailablePiece id="vibrodagger_block_guard"/>
+			<AvailablePiece id="switch_vibrodagger_guard"/>
+			<AvailablePiece id="vibrodagger_ringed_guard"/>
+			<AvailablePiece id="vibrodagger_opulent_guard"/>
+
+			<AvailablePiece id="vibrodagger_lobed_handle"/>
+			<AvailablePiece id="vibrodagger_block_grip"/>
+			<AvailablePiece id="braced_vibrodagger_handle"/>
+			<AvailablePiece id="vibrodagger_stoneskin_handle"/>
+			<AvailablePiece id="vibrodagger_opulent_handle"/>
+			<AvailablePiece id="vibrodagger_kal_handle_beskar"/>
+			<AvailablePiece id="vibrodagger_kal_handle_durasteel"/>
+			<AvailablePiece id="vibrodagger_kal_handle_bronzium"/>			
+
+			<AvailablePiece id="vibrodagger_horn_pommel"/>
+			<AvailablePiece id="vibrodagger_ringed_pommel"/>
+			<AvailablePiece id="skullcrusher_vibrodagger_pommel"/>
+			<AvailablePiece id="vibrodagger_stinger_pommel"/>
+			<AvailablePiece id="vibrodagger_opulent_pommel"/>
+
+		</AvailablePieces>
+	</WeaponDescription>
+
+	<WeaponDescription id="SWSCThrowingKnife" weapon_class="ThrowingKnife" item_usage_features="throwing:knife">
+		<WeaponFlags>
+			<WeaponFlag value="RangedWeapon"/>
+			<WeaponFlag value="Consumable"/>
+			<WeaponFlag value="AmmoSticksWhenShot"/>
+			<WeaponFlag value="UseHandAsThrowBase"/>
+			<WeaponFlag value="AutoReload"/>
+			<WeaponFlag value="UnloadWhenSheathed"/>
+		</WeaponFlags>
+		<AvailablePieces>
+
+			<AvailablePiece id="vibrodagger_swept_blade"/>
+			<AvailablePiece id="vibrodagger_bayonet_blade"/>
+			<AvailablePiece id="switch_vibrodagger_blade"/>
+			<AvailablePiece id="vibrodagger_jagged_blade"/>
+			<AvailablePiece id="vibrodagger_opulent_blade"/>
+			<AvailablePiece id="vibrodagger_kal_blade_beskar"/>
+			<AvailablePiece id="vibrodagger_kal_blade_durasteel"/>
+			<AvailablePiece id="vibrodagger_kal_blade_bronzium"/>
+
+			<AvailablePiece id="vibrodagger_swept_guard"/>
+			<AvailablePiece id="vibrodagger_block_guard"/>
+			<AvailablePiece id="switch_vibrodagger_guard"/>
+			<AvailablePiece id="vibrodagger_ringed_guard"/>
+			<AvailablePiece id="vibrodagger_opulent_guard"/>
+
+			<AvailablePiece id="vibrodagger_lobed_handle"/>
+			<AvailablePiece id="vibrodagger_block_grip"/>
+			<AvailablePiece id="braced_vibrodagger_handle"/>
+			<AvailablePiece id="vibrodagger_stoneskin_handle"/>
+			<AvailablePiece id="vibrodagger_opulent_handle"/>
+			<AvailablePiece id="vibrodagger_kal_handle_beskar"/>
+			<AvailablePiece id="vibrodagger_kal_handle_durasteel"/>
+			<AvailablePiece id="vibrodagger_kal_handle_bronzium"/>
+
+			<AvailablePiece id="vibrodagger_horn_pommel"/>
+			<AvailablePiece id="vibrodagger_ringed_pommel"/>
+			<AvailablePiece id="skullcrusher_vibrodagger_pommel"/>
+			<AvailablePiece id="vibrodagger_stinger_pommel"/>
+			<AvailablePiece id="vibrodagger_opulent_pommel"/>
+
+		</AvailablePieces>
+	</WeaponDescription>
+
+	<WeaponDescription id="Vibrosword" weapon_class="OneHandedSword" item_usage_features="onehanded:block:shield:swing:thrust">
+		<WeaponFlags>
+			<WeaponFlag value="MeleeWeapon"/>
+		</WeaponFlags>
+		<AvailablePieces>
+
+			<AvailablePiece id="vibrosword_dark_honor_guard_blade"/>
+			<AvailablePiece id="vibrosword_ancient_blade"/>
+			<AvailablePiece id="vibrosword_bx_droid_blade"/>
+			<AvailablePiece id="vibrosword_aran_beskad_durasteel_blade"/>
+			<AvailablePiece id="vibrosword_aran_beskad_bronzium_blade"/>
+			<AvailablePiece id="vibrosword_biirud_beskad_blade"/>
+			<AvailablePiece id="vibroblade_ruug_beskad_blade"/>
+
+			<AvailablePiece id="vibrosword_dark_honor_guard_guard"/>
+			<AvailablePiece id="vibrosword_ancient_guard"/>
+			<AvailablePiece id="vibrosword_aran_beskad_durasteel_guard"/>
+			<AvailablePiece id="vibrosword_biirud_beskad_guard"/>
+			<AvailablePiece id="vibroblade_ruug_beskad_guard"/>
+
+			<AvailablePiece id="vibrosword_dark_honor_guard_handle"/>
+			<AvailablePiece id="vibrosword_ancient_handle"/>
+			<AvailablePiece id="vibrosword_bx_droid_handle"/>
+			<AvailablePiece id="vibrosword_aran_beskad_durasteel_handle"/>
+			<AvailablePiece id="vibrosword_aran_beskad_bronzium_handle"/>
+			<AvailablePiece id="vibrosword_biirud_beskad_handle"/>
+			<AvailablePiece id="vibroblade_ruug_beskad_handle"/>
+
+			<AvailablePiece id="vibrosword_dark_honor_guard_pommel"/>
+			<AvailablePiece id="vibrosword_ancient_pommel"/>
+			<AvailablePiece id="vibrosword_biirud_beskad_pommel"/>
+
+		</AvailablePieces>
+	</WeaponDescription>
+
+	<WeaponDescription id="VibroswordBastardSword" weapon_class="TwoHandedSword" item_usage_features="twohanded:block:swing:thrust">
+		<WeaponFlags>
+			<WeaponFlag value="MeleeWeapon"/>
+		</WeaponFlags>
+		<AvailablePieces>
+
+			<AvailablePiece id="vibrosword_dark_honor_guard_blade"/>
+			<AvailablePiece id="vibrosword_ancient_blade"/>
+			<AvailablePiece id="vibrosword_bx_droid_blade"/>
+
+			<AvailablePiece id="vibrosword_dark_honor_guard_guard"/>
+			<AvailablePiece id="vibrosword_ancient_guard"/>
+
+			<AvailablePiece id="vibrosword_dark_honor_guard_handle"/>
+			<AvailablePiece id="vibrosword_ancient_handle"/>
+			<AvailablePiece id="vibrosword_bx_droid_handle"/>
+
+			<AvailablePiece id="vibrosword_dark_honor_guard_pommel"/>
+			<AvailablePiece id="vibrosword_ancient_pommel"/>
+
+		</AvailablePieces>
+	</WeaponDescription>
+
+	<WeaponDescription id="SWSCTwoHandedAxe" weapon_class="TwoHandedAxe" item_usage_features="twohanded:widegrip:axe">
+		<WeaponFlags>
+			<WeaponFlag value="MeleeWeapon"/>
+			<WeaponFlag value="NotUsableWithOneHand"/>
+			<WeaponFlag value="BonusAgainstShield"/>
+			<WeaponFlag value="TwoHandIdleOnMount"/>
+		</WeaponFlags>
+		<AvailablePieces>
+
+			<AvailablePiece id="vibroaxe_mandalore_ultimate_head"/>
+			<AvailablePiece id="vibroax_bd1_cutter_head"/>
+
+			<AvailablePiece id="vibroaxe_mandalore_ultimate_shaft"/>
+			<AvailablePiece id="vibroax_bd1_cutter_shaft"/>
+
+			<AvailablePiece id="vibroaxe_mandalore_ultimate_pommel"/>
+			<AvailablePiece id="vibroax_bd1_cutter_pommel"/>
+
+		</AvailablePieces>
+	</WeaponDescription>
+
+	<WeaponDescription id="SWSCTwoHandedPolearm" weapon_class="TwoHandedPolearm" item_usage_features="polearm:block:long:shield:swing:thrust">
+		<WeaponFlags>
+			<WeaponFlag value="MeleeWeapon"/>
+			<WeaponFlag value="NotUsableWithOneHand"/>
+			<WeaponFlag value="WideGrip"/>
+			<WeaponFlag value="TwoHandIdleOnMount"/>
+		</WeaponFlags>
+		<AvailablePieces>
+
+			<AvailablePiece id="polearm_rally_master_lance_head"/>
+			<AvailablePiece id="polearm_verpine_lance_head"/>
+
+			<AvailablePiece id="polearm_rally_master_lance_shaft"/>
+			<AvailablePiece id="polearm_verpine_lance_shaft"/>
+
+			<AvailablePiece id="polearm_rally_master_lance_pommel"/>
+			<AvailablePiece id="polearm_verpine_lance_pommel"/>
+
+		</AvailablePieces>
+	</WeaponDescription>
+
+	<WeaponDescription id="SWSCTwoHandedPolearm_Couchable" weapon_class="TwoHandedPolearm" item_usage_features="polearm:couch">
+		<WeaponFlags>
+			<WeaponFlag value="MeleeWeapon"/>
+			<WeaponFlag value="WideGrip"/>
+		</WeaponFlags>
+		<AvailablePieces>
+
+			<AvailablePiece id="polearm_rally_master_lance_head"/>
+			<AvailablePiece id="polearm_verpine_lance_head"/>
+
+			<AvailablePiece id="polearm_rally_master_lance_shaft"/>
+			<AvailablePiece id="polearm_verpine_lance_shaft"/>
+
+			<AvailablePiece id="polearm_rally_master_lance_pommel"/>
+			<AvailablePiece id="polearm_verpine_lance_pommel"/>
+
+		</AvailablePieces>
+	</WeaponDescription>
+
+	<WeaponDescription id="SWSCTwoHandedPolearm_Bracing" weapon_class="TwoHandedPolearm" item_usage_features="polearm:bracing">
+		<WeaponFlags>
+			<WeaponFlag value="MeleeWeapon"/>
+			<WeaponFlag value="NotUsableWithOneHand"/>
+			<WeaponFlag value="WideGrip"/>
+			<WeaponFlag value="TwoHandIdleOnMount"/>
+		</WeaponFlags>
+		<AvailablePieces>
+
+			<AvailablePiece id="polearm_rally_master_lance_head"/>
+			<AvailablePiece id="polearm_verpine_lance_head"/>
+
+			<AvailablePiece id="polearm_rally_master_lance_shaft"/>
+			<AvailablePiece id="polearm_verpine_lance_shaft"/>
+
+			<AvailablePiece id="polearm_rally_master_lance_pommel"/>
+			<AvailablePiece id="polearm_verpine_lance_pommel"/>
+
+		</AvailablePieces>
+	</WeaponDescription>
+
+	<WeaponDescription id="SWSCMace" weapon_class="Mace" item_usage_features="onehanded:block:shield:tipdraw:swing:thrust">
+		<WeaponFlags>
+			<WeaponFlag value="MeleeWeapon"/>
+		</WeaponFlags>
+		<AvailablePieces>
+			
+			<AvailablePiece id="mace_gaderffii_head"/>
+			<AvailablePiece id="mace_clone_riot_baton_head"/>
+			<AvailablePiece id="mace_bothan_stun_stick_head"/>
+
+			<AvailablePiece id="mace_gaderffii_shaft"/>
+			<AvailablePiece id="mace_clone_riot_baton_handle"/>
+			<AvailablePiece id="mace_bothan_stun_stick_handle"/>
+			
+			<AvailablePiece id="mace_gaderffii_pommel"/>
+			<AvailablePiece id="mace_clone_riot_baton_pommel"/>
+			<AvailablePiece id="mace_bothan_stun_stick_pommel"/>		
+
+		</AvailablePieces>
+	</WeaponDescription>
+
+</WeaponDescriptions>

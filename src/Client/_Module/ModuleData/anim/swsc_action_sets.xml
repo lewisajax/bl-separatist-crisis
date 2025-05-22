@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<action_sets>
+    <!-- "(?!/>)\n\s* -->
+    <!-- MALE -->
+    <action_set id="as_human_warrior" skeleton="human_skeleton" movement_system="bipedal">
+        <!-- BLASTER RUN ANIMATIONS - BEGIN /-->
+        <action type="act_run_idle_blaster" animation="stand_crossbow" />
+        <action type="act_run_forward_blaster" animation="run_forward_crossbow" />
+        <action type="act_run_right_blaster" animation="run_right_crossbow" />
+        <action type="act_run_left_blaster" animation="run_left_crossbow" />
+        <action type="act_run_backward_blaster" animation="run_backward_crossbow" />
+        <action type="act_run_right_back_blaster" animation="run_right_back_crossbow" />
+        <action type="act_run_left_back_blaster" animation="run_left_back_crossbow" />
+        <action type="act_run_right_to_left_blaster" animation="run_right_to_left_crossbow" />
+        <action type="act_run_left_to_right_blaster" animation="run_left_to_right_crossbow" />
+        <!-- TURN ANIMATIONS /-->
+        <action type="act_turn_blaster" animation="turn_crossbow" />
+        <!-- LEFT STANCE /-->
+        <action type="act_run_idle_blaster_left_stance" animation="stand_crossbow" />
+        <action type="act_run_forward_blaster_left_stance" animation="run_forward_crossbow" />
+        <action type="act_run_right_blaster_left_stance" animation="run_right_crossbow" />
+        <action type="act_run_left_blaster_left_stance" animation="run_left_crossbow" />
+        <action type="act_run_backward_blaster_left_stance" animation="run_backward_crossbow" />
+        <action type="act_run_right_back_blaster_left_stance" animation="run_right_back_crossbow" />
+        <action type="act_run_left_back_blaster_left_stance" animation="run_left_back_crossbow" />
+        <action type="act_run_right_to_left_blaster_left_stance" animation="run_right_to_left_crossbow" />
+        <action type="act_run_left_to_right_blaster_left_stance" animation="run_left_to_right_crossbow" />
+        <!-- TURN ANIMATIONS /-->
+        <action type="act_turn_blaster_left_stance" animation="turn_unarmed" />
+        <!-- BLASTER WALK ANIMATIONS - BEGIN /-->
+        <action type="act_walk_idle_blaster" animation="stand_crossbow" />
+        <action type="act_walk_forward_blaster" animation="walk_forward_crossbow" />
+        <action type="act_walk_right_blaster" animation="walk_right_crossbow" />
+        <action type="act_walk_left_blaster" animation="walk_left_crossbow" />
+        <action type="act_walk_backward_blaster" animation="walk_backward_crossbow" />
+        <action type="act_walk_right_back_blaster" animation="walk_right_back_crossbow" />
+        <action type="act_walk_left_back_blaster" animation="walk_left_back_crossbow" />
+        <action type="act_walk_right_to_left_blaster" animation="walk_right_to_left_crossbow" />
+        <action type="act_walk_left_to_right_blaster" animation="walk_left_to_right_crossbow" />
+        <!-- LEFT STANCE /-->
+        <action type="act_walk_idle_blaster_left_stance" animation="stand_crossbow" />
+        <action type="act_walk_forward_blaster_left_stance" animation="walk_forward_crossbow" />
+        <action type="act_walk_right_blaster_left_stance" animation="walk_right_crossbow" />
+        <action type="act_walk_left_blaster_left_stance" animation="walk_left_crossbow" />
+        <action type="act_walk_backward_blaster_left_stance" animation="walk_backward_crossbow" />
+        <action type="act_walk_right_back_blaster_left_stance" animation="walk_right_back_crossbow" />
+        <action type="act_walk_left_back_blaster_left_stance" animation="walk_left_back_crossbow" />
+        <action type="act_walk_right_to_left_blaster_left_stance" animation="walk_right_to_left_crossbow" />
+        <action type="act_walk_left_to_right_blaster_left_stance" animation="walk_left_to_right_crossbow" />
+        <!-- BLASTER CROUCH WALK ANIMATIONS - BEGIN /-->
+        <action type="act_crouch_walk_idle_blaster" animation="crouch_stand_crossbow" />
+        <action type="act_crouch_walk_forward_blaster" animation="crouch_walk_forward_staff" />
+        <action type="act_crouch_walk_right_blaster" animation="crouch_walk_right_staff" />
+        <action type="act_crouch_walk_left_blaster" animation="crouch_walk_left_staff" />
+        <action type="act_crouch_walk_backward_blaster" animation="crouch_walk_backward_staff" />
+        <action type="act_crouch_walk_right_back_blaster" animation="crouch_walk_right_back_staff" />
+        <action type="act_crouch_walk_left_back_blaster" animation="crouch_walk_left_back_staff" />
+        <action type="act_crouch_walk_right_to_left_blaster" animation="crouch_walk_right_to_left_staff" />
+        <action type="act_crouch_walk_left_to_right_blaster" animation="crouch_walk_left_to_right_staff" />
+        <!-- LEFT STANCE /-->
+        <action type="act_crouch_walk_idle_blaster_left_stance" animation="crouch_stand_crossbow" />
+        <action type="act_crouch_walk_forward_blaster_left_stance" animation="crouch_walk_forward_staff" />
+        <action type="act_crouch_walk_right_blaster_left_stance" animation="crouch_walk_right_staff" />
+        <action type="act_crouch_walk_left_blaster_left_stance" animation="crouch_walk_left_staff" />
+        <action type="act_crouch_walk_backward_blaster_left_stance" animation="crouch_walk_backward_staff" />
+        <action type="act_crouch_walk_right_back_blaster_left_stance" animation="crouch_walk_right_back_staff" />
+        <action type="act_crouch_walk_left_back_blaster_left_stance" animation="crouch_walk_left_back_staff" />
+        <action type="act_crouch_walk_right_to_left_blaster_left_stance" animation="crouch_walk_right_to_left_staff" />
+        <action type="act_crouch_walk_left_to_right_blaster_left_stance" animation="crouch_walk_left_to_right_staff" />
+        <!-- BLASTER CROUCH RUN ANIMATIONS - BEGIN /-->
+        <action type="act_crouch_run_idle_blaster" animation="crouch_stand_crossbow" />
+        <action type="act_crouch_run_forward_blaster" animation="crouch_run_forward_staff" />
+        <action type="act_crouch_run_right_blaster" animation="crouch_run_right_staff" />
+        <action type="act_crouch_run_left_blaster" animation="crouch_run_left_staff" />
+        <action type="act_crouch_run_backward_blaster" animation="crouch_run_backward_staff" />
+        <action type="act_crouch_run_right_back_blaster" animation="crouch_run_right_back_staff" />
+        <action type="act_crouch_run_left_back_blaster" animation="crouch_run_left_back_staff" />
+        <action type="act_crouch_run_right_to_left_blaster" animation="crouch_run_right_to_left_staff" />
+        <action type="act_crouch_run_left_to_right_blaster" animation="crouch_run_left_to_right_staff" />
+        <!-- TURN ANIMATIONS /-->
+        <action type="act_crouch_turn_blaster" animation="turn_crouch_unarmed" />
+        <action type="act_crouch_turn_blaster_left_stance" animation="turn_crouch_unarmed" />
+        <!-- LEFT STANCE /-->
+        <action type="act_crouch_run_idle_blaster_left_stance" animation="crouch_stand_crossbow" />
+        <action type="act_crouch_run_forward_blaster_left_stance" animation="crouch_run_forward_staff" />
+        <action type="act_crouch_run_right_blaster_left_stance" animation="crouch_run_right_staff" />
+        <action type="act_crouch_run_left_blaster_left_stance" animation="crouch_run_left_staff" />
+        <action type="act_crouch_run_backward_blaster_left_stance" animation="crouch_run_backward_staff" />
+        <action type="act_crouch_run_right_back_blaster_left_stance" animation="crouch_run_right_back_staff" />
+        <action type="act_crouch_run_left_back_blaster_left_stance" animation="crouch_run_left_back_staff" />
+        <action type="act_crouch_run_right_to_left_blaster_left_stance" animation="crouch_run_right_to_left_staff" />
+        <action type="act_crouch_run_left_to_right_blaster_left_stance" animation="crouch_run_left_to_right_staff" />
+        <!-- IDLE ANIMS -->
+        <action type="act_idle_blaster_1" animation="troop_stand_crossbow_1" alternative_group="idle_blaster" />
+        <action type="act_idle_blaster_2" animation="troop_stand_crossbow_2" alternative_group="idle_blaster" />
+        <action type="act_idle_blaster_3" animation="troop_stand_crossbow_3" alternative_group="idle_blaster" />
+        <!-- RIDING ANIMS -->
+        <action type="act_rider_idle_blaster_1" animation="rider_idle_crossbow_1" />
+        <action type="act_rider_idle_blaster_2" animation="rider_idle_crossbow_2" />
+        <action type="act_rider_idle_blaster_3" animation="rider_idle_crossbow_3" />
+        <action type="act_rider_idle_blaster_4" animation="horse_rider_stand_2_crossbow" />
+        <action type="act_rider_stand_blaster_1" animation="horse_rider_stand_1_crossbow" />
+        <action type="act_rider_stand_blaster_2" animation="horse_rider_stand_2_crossbow" />
+        <action type="act_rider_stand_blaster_3" animation="horse_rider_stand_3_crossbow" />
+        <action type="act_rider_stand_blaster_4" animation="horse_rider_stand_4_crossbow" />
+        <action type="act_rider_stand_blaster_pace_0" animation="rider_walk_crossbow" />
+        <action type="act_rider_stand_blaster_pace_1" animation="rider_stand_crossbow" />
+        <action type="act_rider_stand_blaster_pace_2" animation="rider_walk_crossbow" />
+        <action type="act_rider_stand_blaster_pace_3" animation="rider_trot_crossbow" />
+        <action type="act_rider_stand_blaster_pace_4" animation="rider_canter_crossbow" />
+        <action type="act_rider_stand_blaster_pace_5" animation="rider_gallop_crossbow" />
+        <!-- UNEQUIP ANIMS-->
+        <action type="act_equip_blaster" animation="equip_crossbow" />
+        <action type="act_equip_blaster_left_stance" animation="equip_crossbow_left_stance" />
+        <action type="act_unequip_blaster" animation="unequip_crossbow" />
+        <action type="act_unequip_blaster_left_stance" animation="unequip_crossbow_left_stance" />
+        <!-- ATTACK ANIMS -->
+        <action type="act_ready_blaster" animation="ready_crossbow" />
+        <action type="act_release_blaster" animation="release_crossbow" />
+        <action type="act_ready_continue_blaster" animation="ready_continue_crossbow" />
+        <action type="act_reload_blaster" animation="reload_crossbow" />
+        <action type="act_reload_blaster_fast" animation="reload_crossbow_fast" />
+        <action type="act_reload_blaster_light" animation="reload_crossbow_light" />
+        <action type="act_reload_blaster_continue" animation="reload_crossbow_continue" />
+        <action type="act_reload_blaster_horseback" animation="reload_crossbow_horseback" />
+        <action type="act_reload_blaster_continue_horseback" animation="reload_crossbow_continue_horseback" />
+        <!-- POSES ANIMS -->
+        <action type="act_pose_troop_blaster" animation="pose_troop_crossbow" />
+        <action type="act_pose_archer_blaster" animation="pose_archer_crossbow" />
+        <!-- IDK -->
+        <!-- <action type="act_run_idle_blaster" animation="stand_mainmap" />
+        <action type="act_run_idle_blaster_left_stance" animation="stand_mainmap" />
+        <action type="act_walk_idle_blaster" animation="stand_mainmap" />
+        <action type="act_walk_idle_blaster_left_stance" animation="stand_mainmap" /> -->
+    </action_set>
+    <!-- FEMALE -->
+    <action_set id="as_human_female_warrior" base_set="as_human_warrior">
+        <!-- BLASTER RUN ANIMATIONS - BEGIN /-->
+        <action type="act_run_idle_blaster" animation="female_stand_crossbow" />
+        <action type="act_run_forward_blaster" animation="female_run_forward_crossbow" />
+        <action type="act_run_right_blaster" animation="female_run_right_crossbow" />
+        <action type="act_run_left_blaster" animation="female_run_left_crossbow" />
+        <action type="act_run_backward_blaster" animation="female_run_backward_crossbow" />
+        <action type="act_run_right_back_blaster" animation="female_run_right_back_crossbow" />
+        <action type="act_run_left_back_blaster" animation="female_run_left_back_crossbow" />
+        <action type="act_run_right_to_left_blaster" animation="female_run_right_to_left_crossbow" />
+        <action type="act_run_left_to_right_blaster" animation="female_run_left_to_right_crossbow" />
+        <!-- LEFT STANCE /-->
+        <action type="act_run_idle_blaster_left_stance" animation="female_stand_crossbow" />
+        <action type="act_run_forward_blaster_left_stance" animation="female_run_forward_crossbow" />
+        <action type="act_run_right_blaster_left_stance" animation="female_run_right_crossbow" />
+        <action type="act_run_left_blaster_left_stance" animation="female_run_left_crossbow" />
+        <action type="act_run_backward_blaster_left_stance" animation="female_run_backward_crossbow" />
+        <action type="act_run_right_back_blaster_left_stance" animation="female_run_right_back_crossbow" />
+        <action type="act_run_left_back_blaster_left_stance" animation="female_run_left_back_crossbow" />
+        <action type="act_run_right_to_left_blaster_left_stance" animation="female_run_right_to_left_crossbow" />
+        <action type="act_run_left_to_right_blaster_left_stance" animation="female_run_left_to_right_crossbow" />
+        <!-- BLASTER WALK ANIMATIONS - BEGIN -->
+        <action type="act_walk_idle_blaster" animation="female_stand_crossbow" />
+        <action type="act_walk_forward_blaster" animation="female_walk_forward_crossbow" />
+        <action type="act_walk_right_blaster" animation="female_walk_right_crossbow_2" />
+        <action type="act_walk_left_blaster" animation="female_walk_left_crossbow_2" />
+        <action type="act_walk_backward_blaster" animation="female_walk_backward_crossbow" />
+        <action type="act_walk_right_back_blaster" animation="female_walk_right_back_crossbow" />
+        <action type="act_walk_left_back_blaster" animation="female_walk_left_back_crossbow" />
+        <action type="act_walk_right_to_left_blaster" animation="female_walk_right_to_left_crossbow" />
+        <action type="act_walk_left_to_right_blaster" animation="female_walk_left_to_right_crossbow" />
+        <!-- LEFT STANCE -->
+        <action type="act_walk_idle_blaster_left_stance" animation="female_stand_crossbow" />
+        <action type="act_walk_forward_blaster_left_stance" animation="female_walk_forward_crossbow" />
+        <action type="act_walk_right_blaster_left_stance" animation="female_walk_right_crossbow_2" />
+        <action type="act_walk_left_blaster_left_stance" animation="female_walk_left_crossbow_2" />
+        <action type="act_walk_backward_blaster_left_stance" animation="female_walk_backward_crossbow" />
+        <action type="act_walk_right_back_blaster_left_stance" animation="female_walk_right_back_crossbow" />
+        <action type="act_walk_left_back_blaster_left_stance" animation="female_walk_left_back_crossbow" />
+        <action type="act_walk_right_to_left_blaster_left_stance" animation="female_walk_right_to_left_crossbow" />
+        <action type="act_walk_left_to_right_blaster_left_stance" animation="female_walk_left_to_right_crossbow" />
+        <!-- TURNING -->
+        <action type="act_turn_blaster" animation="female_turn_right_unarmed" />
+        <action type="act_turn_blaster_left_stance" animation="female_turn_right_unarmed" />
+    </action_set>
+</action_sets>

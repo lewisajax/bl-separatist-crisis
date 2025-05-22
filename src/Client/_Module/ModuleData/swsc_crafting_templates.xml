@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CraftingTemplates>
+	<CraftingTemplate id="Lightsaber"
+					  item_type="OneHandedWeapon"
+					  modifier_group="sword"
+					  item_holsters="sword_left_hip_3:sword_left_hip:sword_left_hip_2:sword_back"
+					  piece_type_to_scale_holster_with="Blade"
+					  hidden_piece_types_on_holster="Blade"
+					  default_item_holster_position_offset="0,0,-0.1">
+		<PieceDatas>
+      <PieceData piece_type="Handle" build_order="0" />
+      <PieceData piece_type="Guard" build_order="1" />
+      <PieceData piece_type="Blade" build_order="2" />
+      <PieceData piece_type="Pommel" build_order="-1" />
+    </PieceDatas>
+    <WeaponDescriptions>
+      <WeaponDescription id="Lightsaber" />
+	  <WeaponDescription id="LightsaberBastardSword" />
+    </WeaponDescriptions>
+    <StatsData>
+      <StatData stat_type="Weight" max_value="7.0" />
+      <StatData stat_type="WeaponReach" max_value="300" />
+      <StatData stat_type="ThrustSpeed" max_value="200" />
+      <StatData stat_type="SwingSpeed" max_value="200" />
+      <StatData stat_type="ThrustDamage" max_value="500" />
+      <StatData stat_type="SwingDamage" max_value="500" />
+      <StatData stat_type="Handling" max_value="200" />
+      <!--<StatData stat_type="FollowUp" max_value="200" />-->
+    </StatsData>	  
+    <UsablePieces>
+
+		<UsablePiece piece_id="lightsaber_blade_blue"/>
+		<UsablePiece piece_id="lightsaber_blade_green"/>
+		<UsablePiece piece_id="lightsaber_blade_purple"/>
+		<UsablePiece piece_id="lightsaber_blade_red"/>
+		<UsablePiece piece_id="lightsaber_blade_white"/>
+		<UsablePiece piece_id="lightsaber_blade_yellow"/>
+		<UsablePiece piece_id="lightsaber_darksaber_blade"/>
+
+		<UsablePiece piece_id="kyle_katarn_lightsaber_emitter"/>
+		<UsablePiece piece_id="aayla_secura_lightsaber_emitter"/>
+		<UsablePiece piece_id="mace_windu_lightsaber_emitter"/>
+		<UsablePiece piece_id="darth_revan_lightsaber_emitter"/>
+		<UsablePiece piece_id="lightsaber_obiwan_emitter"/>
+		<UsablePiece piece_id="lightsaber_anakin_emitter"/>
+
+		<UsablePiece piece_id="kyle_katarn_lightsaber_handle"/>
+		<UsablePiece piece_id="aayla_secura_lightsaber_handle"/>
+		<UsablePiece piece_id="mace_windu_lightsaber_handle"/>
+		<UsablePiece piece_id="darth_revan_lightsaber_handle"/>
+		<UsablePiece piece_id="lightsaber_darksaber_handle"/>
+		<UsablePiece piece_id="lightsaber_ahsoka_main_handle"/>
+		<UsablePiece piece_id="lightsaber_ahsoka_shoto_handle"/>
+		<UsablePiece piece_id="lightsaber_obiwan_handle"/>
+		<UsablePiece piece_id="lightsaber_anakin_handle"/>
+
+		<UsablePiece piece_id="kyle_katarn_lightsaber_pommel"/>
+		<UsablePiece piece_id="aayla_secura_lightsaber_pommel"/>
+		<UsablePiece piece_id="mace_windu_lightsaber_pommel"/>
+		<UsablePiece piece_id="darth_revan_lightsaber_pommel"/>
+		<UsablePiece piece_id="lightsaber_darksaber_pommel"/>
+		<UsablePiece piece_id="lightsaber_ahsoka_main_pommel"/>
+		<UsablePiece piece_id="lightsaber_ahsoka_shoto_pommel"/>
+		<UsablePiece piece_id="lightsaber_obiwan_pommel"/>
+		
+    </UsablePieces>
+  </CraftingTemplate>
+
+	<CraftingTemplate id="Vibrodagger"
+				  item_type="OneHandedWeapon"
+				  modifier_group="sword"
+				  item_holsters="sword_left_hip_3:sword_left_hip_2:sword_left_hip:sword_back"
+				  default_item_holster_position_offset="0,0,-0.1"
+				  use_weapon_as_holster_mesh="true">
+		<PieceDatas>
+			<PieceData piece_type="Handle" build_order="0" />
+			<PieceData piece_type="Guard" build_order="1" />
+			<PieceData piece_type="Blade" build_order="2" />
+			<PieceData piece_type="Pommel" build_order="-1" />
+		</PieceDatas>
+		<WeaponDescriptions>
+			<WeaponDescription id="Vibrodagger" />
+			<WeaponDescription id="SWSCThrowingKnife" />
+		</WeaponDescriptions>
+		<StatsData weapon_description="SWSCThrowingKnife">
+			<StatData stat_type="Weight" max_value="2.0" />
+			<StatData stat_type="WeaponReach" max_value="100" />
+			<StatData stat_type="MissileSpeed" max_value="150" />
+			<StatData stat_type="MissileDamage" max_value="200" />
+			<StatData stat_type="Accuracy" max_value="100" />
+		</StatsData>
+		<StatsData weapon_description="Vibrodagger">
+			<StatData stat_type="Weight" max_value="7.0" />
+			<StatData stat_type="WeaponReach" max_value="300" />
+			<StatData stat_type="ThrustSpeed" max_value="200" />
+			<StatData stat_type="SwingSpeed" max_value="200" />
+			<StatData stat_type="ThrustDamage" max_value="500" />
+			<StatData stat_type="SwingDamage" max_value="500" />
+			<StatData stat_type="Handling" max_value="200" />
+		</StatsData>
+		<UsablePieces>
+			<UsablePiece piece_id="vibrodagger_swept_blade" />
+			<UsablePiece piece_id="vibrodagger_bayonet_blade" />
+			<UsablePiece piece_id="switch_vibrodagger_blade" />
+			<UsablePiece piece_id="vibrodagger_jagged_blade" />
+			<UsablePiece piece_id="vibrodagger_opulent_blade" />
+			<UsablePiece piece_id="vibrodagger_kal_blade_beskar" />
+			<UsablePiece piece_id="vibrodagger_kal_blade_durasteel" />
+			<UsablePiece piece_id="vibrodagger_kal_blade_bronzium" />	
+
+			<UsablePiece piece_id="vibrodagger_swept_guard" />
+			<UsablePiece piece_id="vibrodagger_block_guard" />
+			<UsablePiece piece_id="switch_vibrodagger_guard" />
+			<UsablePiece piece_id="vibrodagger_ringed_guard" />
+			<UsablePiece piece_id="vibrodagger_opulent_guard" />
+
+			<UsablePiece piece_id="vibrodagger_lobed_handle" />
+			<UsablePiece piece_id="vibrodagger_block_grip" />
+			<UsablePiece piece_id="braced_vibrodagger_handle" />
+			<UsablePiece piece_id="vibrodagger_stoneskin_handle" />
+			<UsablePiece piece_id="vibrodagger_opulent_handle" />
+			<UsablePiece piece_id="vibrodagger_kal_handle_beskar" />
+			<UsablePiece piece_id="vibrodagger_kal_handle_durasteel" />
+			<UsablePiece piece_id="vibrodagger_kal_handle_bronzium" />
+
+			<UsablePiece piece_id="vibrodagger_horn_pommel" />
+			<UsablePiece piece_id="vibrodagger_ringed_pommel" />
+			<UsablePiece piece_id="skullcrusher_vibrodagger_pommel" />
+			<UsablePiece piece_id="vibrodagger_stinger_pommel" />
+			<UsablePiece piece_id="vibrodagger_opulent_pommel" />
+
+		</UsablePieces>
+	</CraftingTemplate>
+
+	<CraftingTemplate id="SWSCThrowingKnife"
+					  item_type="Thrown"
+					  modifier_group="knife_throwing"
+					  item_holsters="throwing_knife_2:throwing_knife:throwing_stone:throwing_stone_2"
+					  piece_type_to_scale_holster_with="Blade"
+					  default_item_holster_position_offset="0,0,-0.1"
+					  always_show_holster_with_weapon="true">
+		<PieceDatas>
+			<PieceData piece_type="Handle" build_order="0" />
+			<PieceData piece_type="Guard" build_order="1" />
+			<PieceData piece_type="Blade" build_order="2" />
+			<PieceData piece_type="Pommel" build_order="-1" />
+		</PieceDatas>
+		<WeaponDescriptions>
+			<WeaponDescription id="Vibrodagger" />
+			<WeaponDescription id="SWSCThrowingKnife" />
+		</WeaponDescriptions>
+		<StatsData weapon_description="SWSCThrowingKnife">
+			<StatData stat_type="Weight" max_value="2.0" />
+			<StatData stat_type="WeaponReach" max_value="100" />
+			<StatData stat_type="MissileSpeed" max_value="150" />
+			<StatData stat_type="MissileDamage" max_value="200" />
+			<StatData stat_type="Accuracy" max_value="100" />
+		</StatsData>
+		<StatsData weapon_description="Vibrodagger">
+			<StatData stat_type="Weight" max_value="7.0" />
+			<StatData stat_type="WeaponReach" max_value="300" />
+			<StatData stat_type="ThrustSpeed" max_value="200" />
+			<StatData stat_type="SwingSpeed" max_value="200" />
+			<StatData stat_type="ThrustDamage" max_value="500" />
+			<StatData stat_type="SwingDamage" max_value="500" />
+			<StatData stat_type="Handling" max_value="200" />
+		</StatsData>
+		<UsablePieces>
+			<UsablePiece piece_id="vibrodagger_swept_blade" />
+			<UsablePiece piece_id="vibrodagger_bayonet_blade" />
+			<UsablePiece piece_id="switch_vibrodagger_blade" />
+			<UsablePiece piece_id="vibrodagger_jagged_blade" />
+			<UsablePiece piece_id="vibrodagger_opulent_blade" />
+			<UsablePiece piece_id="vibrodagger_kal_blade_beskar" />
+			<UsablePiece piece_id="vibrodagger_kal_blade_durasteel" />
+			<UsablePiece piece_id="vibrodagger_kal_blade_bronzium" />
+
+			<UsablePiece piece_id="vibrodagger_swept_guard" />
+			<UsablePiece piece_id="vibrodagger_block_guard" />
+			<UsablePiece piece_id="switch_vibrodagger_guard" />
+			<UsablePiece piece_id="vibrodagger_ringed_guard" />
+			<UsablePiece piece_id="vibrodagger_opulent_guard" />
+
+			<UsablePiece piece_id="vibrodagger_lobed_handle" />
+			<UsablePiece piece_id="vibrodagger_block_grip" />
+			<UsablePiece piece_id="braced_vibrodagger_handle" />
+			<UsablePiece piece_id="vibrodagger_stoneskin_handle" />
+			<UsablePiece piece_id="vibrodagger_opulent_handle" />
+			<UsablePiece piece_id="vibrodagger_kal_handle_beskar" />
+			<UsablePiece piece_id="vibrodagger_kal_handle_durasteel" />
+			<UsablePiece piece_id="vibrodagger_kal_handle_bronzium" />
+
+			<UsablePiece piece_id="vibrodagger_horn_pommel" />
+			<UsablePiece piece_id="vibrodagger_ringed_pommel" />
+			<UsablePiece piece_id="skullcrusher_vibrodagger_pommel" />
+			<UsablePiece piece_id="vibrodagger_stinger_pommel" />
+			<UsablePiece piece_id="vibrodagger_opulent_pommel" />
+
+		</UsablePieces>
+	</CraftingTemplate>	
+
+	<CraftingTemplate id="Vibrosword"
+					  item_type="OneHandedWeapon"
+					  modifier_group="sword"
+					  item_holsters="sword_left_hip_3:sword_left_hip:sword_left_hip_2:sword_back"
+					  piece_type_to_scale_holster_with="Blade"
+					  hidden_piece_types_on_holster="Blade"
+					  default_item_holster_position_offset="0,0,-0.1">
+		<PieceDatas>
+			<PieceData piece_type="Handle"
+					   build_order="0" />
+			<PieceData piece_type="Guard"
+					   build_order="1" />
+			<PieceData piece_type="Blade"
+					   build_order="2" />
+			<PieceData piece_type="Pommel"
+					   build_order="-1" />
+		</PieceDatas>
+		<WeaponDescriptions>
+			<WeaponDescription id="Vibrosword" />
+			<WeaponDescription id="VibroswordBastardSword" />
+		</WeaponDescriptions>
+		<StatsData>
+			<StatData stat_type="Weight" max_value="7.0" />
+			<StatData stat_type="WeaponReach" max_value="300" />
+			<StatData stat_type="ThrustSpeed" max_value="200" />
+			<StatData stat_type="SwingSpeed" max_value="200" />
+			<StatData stat_type="ThrustDamage" max_value="500" />
+			<StatData stat_type="SwingDamage" max_value="500" />
+			<StatData stat_type="Handling" max_value="200" />
+			<!--<StatData stat_type="FollowUp" max_value="200" />-->
+		</StatsData>
+		<UsablePieces>
+
+			<UsablePiece piece_id="vibrosword_dark_honor_guard_blade"/>
+			<UsablePiece piece_id="vibrosword_ancient_blade"/>
+			<UsablePiece piece_id="vibrosword_bx_droid_blade"/>
+			<UsablePiece piece_id="vibrosword_aran_beskad_durasteel_blade" />
+			<UsablePiece piece_id="vibrosword_aran_beskad_bronzium_blade" />
+			<UsablePiece piece_id="vibrosword_biirud_beskad_blade" />
+			<UsablePiece piece_id="vibroblade_ruug_beskad_blade" />
+
+			<UsablePiece piece_id="vibrosword_dark_honor_guard_guard"/>
+			<UsablePiece piece_id="vibrosword_ancient_guard"/>
+			<UsablePiece piece_id="vibrosword_aran_beskad_durasteel_guard" />
+			<UsablePiece piece_id="vibrosword_biirud_beskad_guard" />
+			<UsablePiece piece_id="vibroblade_ruug_beskad_guard" />			
+
+			<UsablePiece piece_id="vibrosword_dark_honor_guard_handle"/>
+			<UsablePiece piece_id="vibrosword_ancient_handle"/>
+			<UsablePiece piece_id="vibrosword_bx_droid_handle"/>
+			<UsablePiece piece_id="vibrosword_aran_beskad_durasteel_handle" />
+			<UsablePiece piece_id="vibrosword_aran_beskad_bronzium_handle" />
+			<UsablePiece piece_id="vibrosword_biirud_beskad_handle" />
+			<UsablePiece piece_id="vibroblade_ruug_beskad_handle" />			
+
+			<UsablePiece piece_id="vibrosword_dark_honor_guard_pommel"/>
+			<UsablePiece piece_id="vibrosword_ancient_pommel"/>
+			<UsablePiece piece_id="vibrosword_biirud_beskad_pommel" />			
+			
+		</UsablePieces>
+	</CraftingTemplate>
+
+	<CraftingTemplate id="SWSCTwoHandedAxe"
+					  item_type="TwoHandedWeapon"
+					  modifier_group="axe"
+					  item_holsters="axe_back:axe_back_2:axe_back_3:axe_back_4"
+					  default_item_holster_position_offset="0,0,-0.65"
+					  use_weapon_as_holster_mesh="true">
+		<PieceDatas>
+			<PieceData piece_type="Handle" build_order="0" />
+			<PieceData piece_type="Blade" build_order="1" />
+			<PieceData piece_type="Pommel" build_order="-1" />
+		</PieceDatas>
+		<WeaponDescriptions>
+			<WeaponDescription id="SWSCTwoHandedAxe" />
+		</WeaponDescriptions>
+		<StatsData>
+			<StatData stat_type="Weight" max_value="10.0" />
+			<StatData stat_type="WeaponReach" max_value="300" />
+			<StatData stat_type="ThrustSpeed" max_value="200" />
+			<StatData stat_type="SwingSpeed" max_value="200" />
+			<StatData stat_type="ThrustDamage" max_value="500" />
+			<StatData stat_type="SwingDamage" max_value="500" />
+			<StatData stat_type="Handling" max_value="200" />
+			<!--<StatData stat_type="FollowUp" max_value="200" />-->
+		</StatsData>
+		<UsablePieces>
+
+			<UsablePiece piece_id="vibroaxe_mandalore_ultimate_head" />
+			<UsablePiece piece_id="vibroax_bd1_cutter_head" />
+
+			<UsablePiece piece_id="vibroaxe_mandalore_ultimate_shaft" />
+			<UsablePiece piece_id="vibroax_bd1_cutter_shaft" />
+
+			<UsablePiece piece_id="vibroaxe_mandalore_ultimate_pommel" />
+			<UsablePiece piece_id="vibroax_bd1_cutter_pommel" />
+
+		</UsablePieces>
+	</CraftingTemplate>
+
+	<CraftingTemplate id="SWSCTwoHandedPolearm"
+				  item_type="Polearm"
+				  modifier_group="polearm"
+				  item_holsters="polearm_back:polearm_back_2:polearm_back_3:polearm_back_4"
+				  default_item_holster_position_offset="0,0,-0.30"
+				  use_weapon_as_holster_mesh="true">
+		<PieceDatas>
+			<PieceData piece_type="Handle" build_order="0" />
+			<PieceData piece_type="Blade" build_order="1" />
+			<PieceData piece_type="Pommel" build_order="-1" />
+		</PieceDatas>
+		<WeaponDescriptions>
+			<WeaponDescription id="SWSCTwoHandedPolearm" />
+			<WeaponDescription id="SWSCTwoHandedPolearm_Couchable" />
+			<WeaponDescription id="SWSCTwoHandedPolearm_Bracing" />
+		</WeaponDescriptions>
+		<StatsData>
+			<StatData stat_type="Weight" max_value="7.0" />
+			<StatData stat_type="WeaponReach" max_value="300" />
+			<StatData stat_type="ThrustSpeed" max_value="200" />
+			<StatData stat_type="SwingSpeed" max_value="200" />
+			<StatData stat_type="ThrustDamage" max_value="500" />
+			<StatData stat_type="SwingDamage" max_value="500" />
+			<StatData stat_type="Handling" max_value="200" />
+		</StatsData>
+		<UsablePieces>
+
+			<UsablePiece piece_id="polearm_rally_master_lance_head" />
+			<UsablePiece piece_id="polearm_verpine_lance_head" />
+
+			<UsablePiece piece_id="polearm_rally_master_lance_shaft" />
+			<UsablePiece piece_id="polearm_verpine_lance_shaft" />
+
+			<UsablePiece piece_id="polearm_rally_master_lance_pommel" />
+			<UsablePiece piece_id="polearm_verpine_lance_pommel" />
+
+		</UsablePieces>
+	</CraftingTemplate>
+
+	<CraftingTemplate id="SWSCMace"
+					  item_type="OneHandedWeapon"
+					  modifier_group="mace"
+					  item_holsters="mace_right_hip:axe_right_hip_2:axe_right_hip:axe_back"
+					  default_item_holster_position_offset="0,0,-0.40"
+					  use_weapon_as_holster_mesh="true">
+		<PieceDatas>
+			<PieceData piece_type="Handle" build_order="0" />
+			<PieceData piece_type="Blade" build_order="1" />
+			<PieceData piece_type="Pommel" build_order="-1" />
+		</PieceDatas>
+		<WeaponDescriptions>
+			<WeaponDescription id="SWSCMace" />
+		</WeaponDescriptions>
+		<StatsData>
+			<StatData stat_type="Weight" max_value="7.0" />
+			<StatData stat_type="WeaponReach" max_value="300" />
+			<StatData stat_type="ThrustSpeed" max_value="200" />
+			<StatData stat_type="SwingSpeed" max_value="200" />
+			<StatData stat_type="ThrustDamage" max_value="500" />
+			<StatData stat_type="SwingDamage" max_value="500" />
+			<StatData stat_type="Handling" max_value="200" />
+			<!--<StatData stat_type="FollowUp" max_value="200" />-->
+		</StatsData>
+		<UsablePieces>
+			
+			<UsablePiece piece_id="mace_gaderffii_head" />
+			<UsablePiece piece_id="mace_clone_riot_baton_head" />
+			<UsablePiece piece_id="mace_bothan_stun_stick_head" />
+
+			<UsablePiece piece_id="mace_gaderffii_shaft" />
+			<UsablePiece piece_id="mace_clone_riot_baton_handle" />
+			<UsablePiece piece_id="mace_bothan_stun_stick_handle" />
+
+			<UsablePiece piece_id="mace_gaderffii_pommel" />
+			<UsablePiece piece_id="mace_clone_riot_baton_pommel" />
+			<UsablePiece piece_id="mace_bothan_stun_stick_pommel" />
+
+		</UsablePieces>
+	</CraftingTemplate>
+
+</CraftingTemplates>

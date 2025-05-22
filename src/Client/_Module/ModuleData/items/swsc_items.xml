@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+	<Item id="beskar_ingot"
+		  name="Beskar Steel Ingot"
+		  mesh="beskar_ingot"
+		  item_category="beskar"
+		  IsFood="false"
+		  value="7600"
+		  weight="1"
+		  Type="Goods">
+		<Flags Civilian="true" />
+	</Item>
+
+	<Item id="bacta_cannister"
+		  name="Bacta Cannister"
+		  mesh="bacta_cannister"
+		  item_category="bacta_cannister"
+		  IsFood="false"
+		  value="1350"
+		  weight="1"
+		  Type="Goods">
+		<Flags Civilian="true" />
+	</Item>
+
+	<Item id="kyber_crystal"
+	  name="Kyber Crystal"
+	  mesh="kyber_crystal"
+	  item_category="kyber_crystal"
+	  IsFood="false"
+	  value="50000"
+	  weight="0.1"
+	  Type="Goods">
+		<Flags Civilian="true" />
+	</Item>
+
+	<Item id="duraplast_container"
+		  name="Duraplast Container"
+		  mesh="beskar_ingot"
+		  item_category="duraplast_container"
+		  IsFood="false"
+		  value="3100"
+		  weight="1"
+		  Type="Goods">
+		<Flags Civilian="true" />
+	</Item>
+
+	<Item id="mandalorian_data_pad"
+		  name="Mandalorian Data Pad"
+		  mesh="beskar_ingot"
+		  item_category="mandalorian_data_pad"
+		  IsFood="false"
+		  value="2600"
+		  weight="1"
+		  Type="Goods">
+		<Flags Civilian="true" />
+	</Item>
+
+</Items>

@@ -1,0 +1,923 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CraftingPieces>
+	
+	<!--Positive Next Piece Offset Moves the Next Piece Closer-->
+	
+	<!--Blades-->
+	
+	<!--Lightsaber-->
+	
+	<CraftingPiece id="lightsaber_blade_blue" name="Blue Kyber Crystal" tier="5" piece_type="Blade" mesh="lightsaber_blade_blue" culture="Culture.neutral_culture" length="86.169" weight="0.01" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_sword_one_handed" holster_mesh="lightsaber_holster">
+			<Thrust damage_type="Pierce" damage_factor="15" />
+			<Swing damage_type="Cut" damage_factor="200" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron5" count="1" />
+		</Materials>
+	</CraftingPiece>
+	
+	<CraftingPiece id="lightsaber_blade_green" name="Green Kyber Crystal" tier="5" piece_type="Blade" mesh="lightsaber_blade_green" culture="Culture.neutral_culture" length="86.169" weight="0.01" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_sword_one_handed" holster_mesh="lightsaber_holster">
+			<Thrust damage_type="Pierce" damage_factor="15" />
+			<Swing damage_type="Cut" damage_factor="200" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron5" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="lightsaber_blade_purple" name="Purple Kyber Crystal" tier="5" piece_type="Blade" mesh="lightsaber_blade_purple" culture="Culture.neutral_culture" length="86.169" weight="0.01" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_sword_one_handed" holster_mesh="lightsaber_holster">
+			<Thrust damage_type="Pierce" damage_factor="15" />
+			<Swing damage_type="Cut" damage_factor="200" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron5" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="lightsaber_blade_red" name="Red Kyber Crystal" tier="5" piece_type="Blade" mesh="lightsaber_blade_red" culture="Culture.neutral_culture" length="86.169" weight="0.01" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_sword_one_handed" holster_mesh="lightsaber_holster">
+			<Thrust damage_type="Pierce" damage_factor="15" />
+			<Swing damage_type="Cut" damage_factor="200" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron5" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="lightsaber_blade_white" name="White Kyber Crystal" tier="5" piece_type="Blade" mesh="lightsaber_blade_white" culture="Culture.neutral_culture" length="86.169" weight="0.01" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_sword_one_handed" holster_mesh="lightsaber_holster">
+			<Thrust damage_type="Pierce" damage_factor="15" />
+			<Swing damage_type="Cut" damage_factor="200" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron5" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="lightsaber_blade_yellow" name="Yellow Kyber Crystal" tier="5" piece_type="Blade" mesh="lightsaber_blade_yellow" culture="Culture.neutral_culture" length="86.169" weight="0.01" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_sword_one_handed" holster_mesh="lightsaber_holster">
+			<Thrust damage_type="Pierce" damage_factor="15" />
+			<Swing damage_type="Cut" damage_factor="200" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron5" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="lightsaber_darksaber_blade" name="Darksaber Kyber Crystal" tier="5" piece_type="Blade" mesh="lightsaber_darksaber_blade" culture="Culture.neutral_culture" length="79.898" weight="0.01" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_sword_one_handed" holster_mesh="lightsaber_holster">
+			<Thrust damage_type="Pierce" damage_factor="15" />
+			<Swing damage_type="Cut" damage_factor="200" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron5" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<!--Vibrodagger-->
+
+	<CraftingPiece id="vibrodagger_swept_blade" name="Swept Vibrodagger Blade" tier="5" piece_type="Blade" mesh="vibrodagger_swept_blade" culture="Culture.neutral_culture" length="32.446" weight="0.205" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_knife_a" holster_mesh="">
+			<Thrust damage_type="Pierce" damage_factor="2.4" />
+			<Swing damage_type="Cut" damage_factor="6" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrodagger_bayonet_blade" name="Bayonet Vibrodagger Blade" tier="5" piece_type="Blade" mesh="vibrodagger_bayonet_blade" culture="Culture.neutral_culture" length="24.404" weight="0.205" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_knife_a" holster_mesh="">
+			<Thrust damage_type="Pierce" damage_factor="2.4" />
+			<Swing damage_type="Cut" damage_factor="6" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="switch_vibrodagger_blade" name="Switch Vibrodagger Blade" tier="5" piece_type="Blade" mesh="switch_vibrodagger_blade" culture="Culture.neutral_culture" length="22.694" weight="0.205" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_knife_a" holster_mesh="">
+			<Thrust damage_type="Pierce" damage_factor="2.4" />
+			<Swing damage_type="Cut" damage_factor="6" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrodagger_jagged_blade" name="Jagged Vibrodagger Blade" tier="5" piece_type="Blade" mesh="vibrodagger_jagged_blade" culture="Culture.neutral_culture" length="29.941" weight="0.205" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_knife_a" holster_mesh="">
+			<Thrust damage_type="Pierce" damage_factor="2.4" />
+			<Swing damage_type="Cut" damage_factor="6" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrodagger_opulent_blade" name="Opulent Vibrodagger Blade" tier="5" piece_type="Blade" mesh="vibrodagger_opulent_blade" culture="Culture.neutral_culture" length="30.681" weight="0.205" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_knife_a" holster_mesh="">
+			<Thrust damage_type="Pierce" damage_factor="2.4" />
+			<Swing damage_type="Cut" damage_factor="6" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrodagger_kal_blade_beskar" name="Kal Beskar Blade" tier="3" piece_type="Blade" mesh="vibrodagger_kal_blade_beskar" culture="Culture.neutral_culture" length="16.765" weight="0.205" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_knife_a" holster_mesh="">
+			<Thrust damage_type="Pierce" damage_factor="4.2" />
+			<Swing damage_type="Cut" damage_factor="12" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrodagger_kal_blade_durasteel" name="Kal Durasteel Blade" tier="2" piece_type="Blade" mesh="vibrodagger_kal_blade_durasteel" culture="Culture.neutral_culture" length="16.765" weight="0.22" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_knife_a" holster_mesh="">
+			<Thrust damage_type="Pierce" damage_factor="4" />
+			<Swing damage_type="Cut" damage_factor="10.2" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrodagger_kal_blade_bronzium" name="Kal Durasteel Blade" tier="2" piece_type="Blade" mesh="vibrodagger_kal_blade_bronzium" culture="Culture.neutral_culture" length="16.765" weight="0.26" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_knife_a" holster_mesh="">
+			<Thrust damage_type="Pierce" damage_factor="3.7" />
+			<Swing damage_type="Cut" damage_factor="9" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>	
+	
+	<!--Vibrosword-->
+
+	<CraftingPiece id="vibrosword_dark_honor_guard_blade" name="Dark Honor Guard Vibrosword Blade" tier="5" piece_type="Blade" mesh="vibrosword_dark_honor_guard_blade" culture="Culture.neutral_culture" length="104.48" weight="1.1" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_knife_a" holster_mesh="">
+			<Thrust damage_type="Pierce" damage_factor="2.4" />
+			<Swing damage_type="Cut" damage_factor="6" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrosword_ancient_blade" name="Ancient Vibrosword Blade" tier="5" piece_type="Blade" mesh="vibrosword_ancient_blade" culture="Culture.neutral_culture" length="74.079" weight="0.8" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_knife_a" holster_mesh="">
+			<Thrust damage_type="Pierce" damage_factor="2.4" />
+			<Swing damage_type="Cut" damage_factor="6" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrosword_bx_droid_blade" name="BX Droid Vibrosword Blade" tier="5" piece_type="Blade" mesh="vibrosword_bx_droid_blade" culture="Culture.neutral_culture" length="66.392" weight="0.7" is_hidden="true" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_knife_a" holster_mesh="">
+			<Thrust damage_type="Pierce" damage_factor="2.4" />
+			<Swing damage_type="Cut" damage_factor="6" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrosword_aran_beskad_durasteel_blade" name="Aran Beskad Durasteel Blade" tier="3" piece_type="Blade" mesh="vibrosword_aran_beskad_durasteel_blade" culture="Culture.neutral_culture" length="76.489" weight="0.8" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_sword_one_handed" holster_mesh="">
+			<Thrust damage_type="Pierce" damage_factor="2.4" />
+			<Swing damage_type="Cut" damage_factor="4" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrosword_aran_beskad_bronzium_blade" name="Aran Beskad Bronzium Blade" tier="2" piece_type="Blade" mesh="vibrosword_aran_beskad_bronzium_blade" culture="Culture.neutral_culture" length="76.489" weight="0.7" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_sword_one_handed" holster_mesh="">
+			<Thrust damage_type="Pierce" damage_factor="2.2" />
+			<Swing damage_type="Cut" damage_factor="3.6" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrosword_biirud_beskad_blade" name="Briirud Beskad Blade" tier="4" piece_type="Blade" mesh="vibrosword_biirud_beskad_blade" culture="Culture.neutral_culture" length="88.567" weight="0.73" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_sword_one_handed" holster_mesh="">
+			<Thrust damage_type="Pierce" damage_factor="3.4" />
+			<Swing damage_type="Cut" damage_factor="4.9" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibroblade_ruug_beskad_blade" name="Ruug Beskad Blade" tier="5" piece_type="Blade" mesh="vibroblade_ruug_beskad_blade" culture="Culture.neutral_culture" length="63.874" weight="0.6" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_sword_one_handed" holster_mesh="">
+			<Thrust damage_type="Pierce" damage_factor="4.6" />
+			<Swing damage_type="Cut" damage_factor="5.8" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<!--Two-Handed Axes-->
+
+	<CraftingPiece id="vibroaxe_mandalore_ultimate_head" name="Mandalore the Ultimate's Axe Head" tier="5" piece_type="Blade" mesh="vibroaxe_mandalore_ultimate_head" culture="Culture.neutral_culture" length="52.317" weight="1.1" is_hidden="false" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="">
+			<Swing damage_type="Cut" damage_factor="12" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibroax_bd1_cutter_head" name="BD-1 Cutter Vibro-Ax Head" tier="3" piece_type="Blade" mesh="vibroax_bd1_cutter_head" culture="Culture.neutral_culture" length="60.72" weight="0.6" is_hidden="false" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="">
+			<Swing damage_type="Cut" damage_factor="12" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<!--Polearms-->
+
+	<CraftingPiece id="polearm_rally_master_lance_head" name="Rally Master Lance Head" tier="4" piece_type="Blade" mesh="polearm_rally_master_lance_head" culture="Culture.neutral_culture" length="32.767" weight="0.3" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_spear_b" holster_mesh="">
+			<Thrust damage_type="Blunt" damage_factor="2.4" />
+			<Swing damage_type="Blunt" damage_factor="4" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+	
+	<CraftingPiece id="polearm_verpine_lance_head" name="Verpine Power Lance Head" tier="3" piece_type="Blade" mesh="polearm_verpine_lance_head" culture="Culture.neutral_culture" length="50.573" weight="0.3" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_spear_b" holster_mesh="">
+			<Thrust damage_type="Blunt" damage_factor="2.4" />
+			<Swing damage_type="Blunt" damage_factor="4" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>	
+	
+	<!--Maces-->
+
+	<CraftingPiece id="mace_gaderffii_head" name="Gaderffii Head" tier="3" piece_type="Blade" mesh="mace_gaderffii_head" culture="Culture.neutral_culture" length="20.467" weight="0.3" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_spear_b" holster_mesh="">
+			<Thrust damage_type="Blunt" damage_factor="2.4" />
+			<Swing damage_type="Blunt" damage_factor="4" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="mace_clone_riot_baton_head" name="Clone Riot Baton Head" tier="4" piece_type="Blade" mesh="mace_clone_riot_baton_head" culture="Culture.neutral_culture" length="72.343" weight="0.3" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_spear_b" holster_mesh="">
+			<Thrust damage_type="Blunt" damage_factor="2.4" />
+			<Swing damage_type="Blunt" damage_factor="4" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="mace_bothan_stun_stick_head" name="Bothan Stun Stick Head" tier="4" piece_type="Blade" mesh="mace_bothan_stun_stick_head" culture="Culture.neutral_culture" length="31.345" weight="0.3" is_default="true">
+		<BladeData stack_amount="1" physics_material="metal_weapon" body_name="bo_spear_b" holster_mesh="">
+			<Thrust damage_type="Blunt" damage_factor="2.4" />
+			<Swing damage_type="Blunt" damage_factor="4" />
+		</BladeData>
+		<Flags>
+			<Flag name="Civilian" type="ItemFlags" />
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<!--Guards/Emitters-->
+	
+	<!--Lightsaber-->
+	
+	<CraftingPiece id="kyle_katarn_lightsaber_emitter" name="Kyle Katarn's Emitter" tier="5" piece_type="Guard" mesh="kyle_katarn_lightsaber_emitter" culture="Culture.neutral_culture" length="8.746" weight="0.01" is_default="true">
+		<BuildData next_piece_offset="1" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="aayla_secura_lightsaber_emitter" name="Aayla Secura's Emitter" tier="5" piece_type="Guard" mesh="aayla_secura_lightsaber_emitter" culture="Culture.neutral_culture" length="8.853" weight="0.01" is_default="true">
+		<BuildData next_piece_offset="1" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="mace_windu_lightsaber_emitter" name="Mace Windu's Emitter" tier="5" piece_type="Guard" mesh="mace_windu_lightsaber_emitter" culture="Culture.neutral_culture" length="2.791" weight="0.01" is_default="true">
+		<BuildData next_piece_offset="1" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="mace_windu_lightsaber_emitter" name="Mace Windu's Emitter" tier="5" piece_type="Guard" mesh="mace_windu_lightsaber_emitter" culture="Culture.neutral_culture" length="2.791" weight="0.01" is_default="true">
+		<BuildData next_piece_offset="1" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="darth_revan_lightsaber_emitter" name="Darth Revan's Emitter" tier="5" piece_type="Guard" mesh="darth_revan_lightsaber_emitter" culture="Culture.neutral_culture" length="2.756" weight="0.01" is_default="true">
+		<BuildData next_piece_offset="1" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="lightsaber_obiwan_emitter" name="Obi-Wan Kenobi's Emitter" tier="5" piece_type="Guard" mesh="lightsaber_obiwan_emitter" culture="Culture.neutral_culture" length="11.549" weight="0.01" is_default="true">
+		<BuildData next_piece_offset="1" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="lightsaber_anakin_emitter" name="Anakin Skywalker's Emitter" tier="5" piece_type="Guard" mesh="lightsaber_anakin_emitter" culture="Culture.neutral_culture" length="17.837" weight="0.01" is_default="true">
+		<BuildData next_piece_offset="2.5" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<!--Vibrodagger-->
+
+	<CraftingPiece id="vibrodagger_swept_guard" name="Swept Vibrodagger Guard" tier="5" piece_type="Guard" mesh="vibrodagger_swept_guard" culture="Culture.neutral_culture" length="1.62" weight="0.1" is_default="true">
+		<BuildData next_piece_offset="0" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrodagger_block_guard" name="Block Vibrodagger Guard" tier="5" piece_type="Guard" mesh="vibrodagger_block_guard" culture="Culture.neutral_culture" length="4.176" weight="0.1" is_default="true">
+		<BuildData next_piece_offset="-0.05" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="switch_vibrodagger_guard" name="Switch Vibrodagger Guard" tier="5" piece_type="Guard" mesh="switch_vibrodagger_guard" culture="Culture.neutral_culture" length="5.801" weight="0.1" is_default="true">
+		<BuildData next_piece_offset="1.2" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrodagger_ringed_guard" name="Ringed Vibrodagger Guard" tier="5" piece_type="Guard" mesh="vibrodagger_ringed_guard" culture="Culture.neutral_culture" length="0.813" weight="0.1" is_default="true">
+		<BuildData next_piece_offset="0" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrodagger_opulent_guard" name="Opulent Vibrodagger Guard" tier="5" piece_type="Guard" mesh="vibrodagger_opulent_guard" culture="Culture.neutral_culture" length="4.998" weight="0.1" is_default="true">
+		<BuildData next_piece_offset="1.5" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+	
+	<!--Vibrosword-->
+
+	<CraftingPiece id="vibrosword_dark_honor_guard_guard" name="Dark Honor Guard Vibrosword Guard" tier="5" piece_type="Guard" mesh="vibrosword_dark_honor_guard_guard" culture="Culture.neutral_culture" length="7.16" weight="0.4" is_default="true">
+		<BuildData next_piece_offset="1" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrosword_ancient_guard" name="Ancient Vibrosword Guard" tier="5" piece_type="Guard" mesh="vibrosword_ancient_guard" culture="Culture.neutral_culture" length="3.784" weight="0.3" is_default="true">
+		<BuildData next_piece_offset="0.5" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrosword_aran_beskad_durasteel_guard" name="Aran Beskad Guard" tier="3" piece_type="Guard" mesh="vibrosword_aran_beskad_durasteel_guard" culture="Culture.neutral_culture" length="0.786" weight="0.25" is_default="true">
+		<BuildData next_piece_offset="0" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrosword_biirud_beskad_guard" name="Briirud Beskad Guard" tier="4" piece_type="Guard" mesh="vibrosword_biirud_beskad_guard" culture="Culture.neutral_culture" length="1.501" weight="0.25" is_default="true">
+		<BuildData next_piece_offset="-0.7" previous_piece_offset="1.9" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibroblade_ruug_beskad_guard" name="Ruug Beskad Guard" tier="5" piece_type="Guard" mesh="vibroblade_ruug_beskad_guard" culture="Culture.neutral_culture" length="8.409" weight="0.25" is_default="true">
+		<BuildData next_piece_offset="14" previous_piece_offset="-4" />
+		<StatContributions armor_bonus="2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<!--Handles-->
+	
+	<!--Lightsaber-->
+	
+	<CraftingPiece id="kyle_katarn_lightsaber_handle" name="Kyle Katarn's Handle" tier="5" piece_type="Handle" mesh="kyle_katarn_lightsaber_handle" culture="Culture.neutral_culture" length="18.45" weight="0.01" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="aayla_secura_lightsaber_handle" name="Aayla Secura's Handle" tier="5" piece_type="Handle" mesh="aayla_secura_lightsaber_handle" culture="Culture.neutral_culture" length="20.69" weight="0.01" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="mace_windu_lightsaber_handle" name="Mace Windu's Handle" tier="5" piece_type="Handle" mesh="mace_windu_lightsaber_handle" culture="Culture.neutral_culture" length="21.653" weight="0.01" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="darth_revan_lightsaber_handle" name="Darth Revan's Handle" tier="5" piece_type="Handle" mesh="darth_revan_lightsaber_handle" culture="Culture.neutral_culture" length="21.404" weight="0.01" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0.5" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="lightsaber_darksaber_handle" name="Darksaber Handle" tier="5" piece_type="Handle" mesh="lightsaber_darksaber_handle" culture="Culture.neutral_culture" length="28.131" weight="0.01" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="-1" next_piece_offset="0.9" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="lightsaber_ahsoka_main_handle" name="Ahsoka Tano's Main Hand Handle" tier="5" piece_type="Handle" mesh="lightsaber_ahsoka_main_handle" culture="Culture.neutral_culture" length="31.668" weight="0.01" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="4" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="lightsaber_ahsoka_shoto_handle" name="Ahsoka Tano's Shoto Handle" tier="5" piece_type="Handle" mesh="lightsaber_ahsoka_shoto_handle" culture="Culture.neutral_culture" length="30.368" weight="0.01" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="4" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="lightsaber_obiwan_handle" name="Obi-Wan Kenobi's Handle" tier="5" piece_type="Handle" mesh="lightsaber_obiwan_handle" culture="Culture.neutral_culture" length="22.539" weight="0.01" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="lightsaber_anakin_handle" name="Anakin Skywalker's Handle" tier="5" piece_type="Handle" mesh="lightsaber_anakin_handle" culture="Culture.neutral_culture" length="21.801" weight="0.01" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<!--Vibrodagger-->
+	
+	<CraftingPiece id="vibrodagger_lobed_handle" name="Lobed Vibroblade Handle" tier="5" piece_type="Handle" mesh="vibrodagger_lobed_handle" culture="Culture.neutral_culture" length="13.127" weight="0.1" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>	
+	
+	<CraftingPiece id="vibrodagger_block_grip" name="Block Vibroblade Handle" tier="5" piece_type="Handle" mesh="vibrodagger_block_grip" culture="Culture.neutral_culture" length="13.319" weight="0.1" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="braced_vibrodagger_handle" name="Braced Vibroblade Handle" tier="5" piece_type="Handle" mesh="braced_vibrodagger_handle" culture="Culture.neutral_culture" length="14.074" weight="0.1" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrodagger_stoneskin_handle" name="Stoneskin Vibroblade Handle" tier="5" piece_type="Handle" mesh="vibrodagger_stoneskin_handle" culture="Culture.neutral_culture" length="10.429" weight="0.1" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrodagger_opulent_handle" name="Opulent Vibroblade Handle" tier="5" piece_type="Handle" mesh="vibrodagger_opulent_handle" culture="Culture.neutral_culture" length="13.471" weight="0.1" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrodagger_kal_handle_beskar" name="Kal Beskar Handle" tier="3" piece_type="Handle" mesh="vibrodagger_kal_handle_beskar" culture="Culture.neutral_culture" length="14.281" weight="0.1" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0.5" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrodagger_kal_handle_durasteel" name="Kal Beskar Handle" tier="3" piece_type="Handle" mesh="vibrodagger_kal_handle_durasteel" culture="Culture.neutral_culture" length="14.281" weight="0.1" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0.5" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrodagger_kal_handle_bronzium" name="Kal Bronzium Handle" tier="2" piece_type="Handle" mesh="vibrodagger_kal_handle_bronzium" culture="Culture.neutral_culture" length="14.281" weight="0.1" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0.5" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<!--Vibrosword-->
+
+	<CraftingPiece id="vibrosword_dark_honor_guard_handle" name="Dark Honor Guard Vibrosword Handle" tier="5" piece_type="Handle" mesh="vibrosword_dark_honor_guard_handle" culture="Culture.neutral_culture" length="21.76" weight="0.8" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrosword_ancient_handle" name="Ancient Vibrosword Handle" tier="5" piece_type="Handle" mesh="vibrosword_ancient_handle" culture="Culture.neutral_culture" length="18.977" weight="0.7" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrosword_bx_droid_handle" name="BX Droid Vibrosword Handle" tier="5" piece_type="Handle" mesh="vibrosword_bx_droid_handle" culture="Culture.neutral_culture" length="24.395" weight="0.6" is_hidden="true" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="1" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrosword_aran_beskad_durasteel_handle" name="Aran Beskad Durasteel Handle" tier="3" piece_type="Handle" mesh="vibrosword_aran_beskad_durasteel_handle" culture="Culture.neutral_culture" length="17.102" weight="0.23" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="1.8" next_piece_offset="0.2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrosword_aran_beskad_bronzium_handle" name="Aran Beskad Durasteel Handle" tier="3" piece_type="Handle" mesh="vibrosword_aran_beskad_bronzium_handle" culture="Culture.neutral_culture" length="17.102" weight="0.2" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="1.8" next_piece_offset="0.2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrosword_biirud_beskad_handle" name="Briirud Beskad Handle" tier="4" piece_type="Handle" mesh="vibrosword_biirud_beskad_handle" culture="Culture.neutral_culture" length="15.422" weight="0.18" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0.1" next_piece_offset="0.2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibroblade_ruug_beskad_handle" name="Ruug Beskad Handle" tier="5" piece_type="Handle" mesh="vibroblade_ruug_beskad_handle" culture="Culture.neutral_culture" length="28.722" weight="0.22" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="2" next_piece_offset="1.3" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<!--Two-Handed Axe-->
+	
+	<CraftingPiece id="vibroaxe_mandalore_ultimate_shaft" name="Mandalore the Ultimate's Axe Shaft" tier="5" piece_type="Handle" mesh="vibroaxe_mandalore_ultimate_shaft" culture="Culture.neutral_culture" length="149.729" weight="0.6" is_hidden="false" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0.5" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibroax_bd1_cutter_shaft" name="BD-1 Cutter Vibro-Ax Shaft" tier="3" piece_type="Handle" mesh="vibroax_bd1_cutter_shaft" culture="Culture.neutral_culture" length="104.319" weight="0.4" is_hidden="false" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="2.0" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<!--Polearm-->
+
+	<CraftingPiece id="polearm_rally_master_lance_shaft" name="Rally Master Lance Shaft" tier="4" piece_type="Handle" mesh="polearm_rally_master_lance_shaft" culture="Culture.neutral_culture" length="171.686" weight="0.7" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0.2" next_piece_offset="0.2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+	
+	<CraftingPiece id="polearm_verpine_lance_shaft" name="Verpine Power Lance Shaft" tier="3" piece_type="Handle" mesh="polearm_verpine_lance_shaft" culture="Culture.neutral_culture" length="171.248" weight="0.7" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0" next_piece_offset="0" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>	
+	
+	<!--Maces-->
+
+	<CraftingPiece id="mace_gaderffii_shaft" name="Gaderffii Shaft" tier="3" piece_type="Handle" mesh="mace_gaderffii_shaft" culture="Culture.neutral_culture" length="74.355" weight="0.7" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0.2" next_piece_offset="0.2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="mace_clone_riot_baton_handle" name="Clone Riot Baton Handle" tier="4" piece_type="Handle" mesh="mace_clone_riot_baton_handle" culture="Culture.neutral_culture" length="16.557" weight="0.7" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0.2" next_piece_offset="0.2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="mace_bothan_stun_stick_handle" name="Bothan Stun Stick Handle" tier="4" piece_type="Handle" mesh="mace_bothan_stun_stick_handle" culture="Culture.neutral_culture" length="11.833" weight="0.7" is_default="true">
+		<BuildData piece_offset="0" previous_piece_offset="0.2" next_piece_offset="0.2" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<!--Pommels-->
+	
+	<!--Lightsaber-->
+	
+	<CraftingPiece id="kyle_katarn_lightsaber_pommel" name="Kyle Katarn's Pommel" tier="5" piece_type="Pommel" mesh="kyle_katarn_lightsaber_pommel" culture="Culture.neutral_culture" length="3.324" weight="0.01" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="aayla_secura_lightsaber_pommel" name="Aayla Secura's Pommel" tier="5" piece_type="Pommel" mesh="aayla_secura_lightsaber_pommel" culture="Culture.neutral_culture" length="2.922" weight="0.01" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="mace_windu_lightsaber_pommel" name="Mace Windu's Pommel" tier="5" piece_type="Pommel" mesh="mace_windu_lightsaber_pommel" culture="Culture.neutral_culture" length="3.531" weight="0.01" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="darth_revan_lightsaber_pommel" name="Darth Revan's Pommel" tier="5" piece_type="Pommel" mesh="darth_revan_lightsaber_pommel" culture="Culture.neutral_culture" length="2.369" weight="0.01" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="lightsaber_darksaber_pommel" name="Darksaber Pommel" tier="5" piece_type="Pommel" mesh="lightsaber_darksaber_pommel" culture="Culture.neutral_culture" length="1.679" weight="0.01" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="lightsaber_ahsoka_main_pommel" name="Ahsoka Tano's Main Hand Pommel" tier="5" piece_type="Pommel" mesh="lightsaber_ahsoka_main_pommel" culture="Culture.neutral_culture" length="3.153" weight="0.01" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="lightsaber_ahsoka_shoto_pommel" name="Ahsoka Tano's Shoto Pommel" tier="5" piece_type="Pommel" mesh="lightsaber_ahsoka_shoto_pommel" culture="Culture.neutral_culture" length="3.157" weight="0.01" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="lightsaber_obiwan_pommel" name="Obi-Wan Kenobi's Pommel" tier="5" piece_type="Pommel" mesh="lightsaber_obiwan_pommel" culture="Culture.neutral_culture" length="4.513" weight="0.01" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<!--Vibrodagger-->
+	
+	<CraftingPiece id="vibrodagger_horn_pommel" name="Horned Vibrodagger Pommel" tier="5" piece_type="Pommel" mesh="vibrodagger_horn_pommel" culture="Culture.neutral_culture" length="3.082" weight="0.1" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrodagger_ringed_pommel" name="Ringed Vibrodagger Pommel" tier="5" piece_type="Pommel" mesh="vibrodagger_ringed_pommel" culture="Culture.neutral_culture" length="1.432" weight="0.1" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="skullcrusher_vibrodagger_pommel" name="Skullcrusher Vibrodagger Pommel" tier="5" piece_type="Pommel" mesh="skullcrusher_vibrodagger_pommel" culture="Culture.neutral_culture" length="2.725" weight="0.1" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrodagger_stinger_pommel" name="Stinger Vibrodagger Pommel" tier="5" piece_type="Pommel" mesh="vibrodagger_stinger_pommel" culture="Culture.neutral_culture" length="6.753" weight="0.1" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+	
+	<CraftingPiece id="vibrodagger_opulent_pommel" name="Opulent Vibrodagger Pommel" tier="5" piece_type="Pommel" mesh="vibrodagger_opulent_pommel" culture="Culture.neutral_culture" length="2.575" weight="0.1" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>	
+	
+	<!--Vibrosword-->
+
+	<CraftingPiece id="vibrosword_dark_honor_guard_pommel" name="Dark Honor Guard Vibrosword Pommel" tier="5" piece_type="Pommel" mesh="vibrosword_dark_honor_guard_pommel" culture="Culture.neutral_culture" length="14.08" weight="0.4" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrosword_ancient_pommel" name="Ancient Vibrosword Pommel" tier="5" piece_type="Pommel" mesh="vibrosword_ancient_pommel" culture="Culture.neutral_culture" length="4.029" weight="0.1" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibrosword_biirud_beskad_pommel" name="Briirud Beskad Pommel" tier="4" piece_type="Pommel" mesh="vibrosword_biirud_beskad_pommel" culture="Culture.neutral_culture" length="1.948" weight="0" is_default="true">
+		<BuildData next_piece_offset="0.5" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<!--Two-Handed Axe-->
+
+	<CraftingPiece id="vibroaxe_mandalore_ultimate_pommel" name="Mandalore the Ultimate's Axe Pommel" tier="5" piece_type="Pommel" mesh="vibroaxe_mandalore_ultimate_pommel" culture="Culture.neutral_culture" length="30.963" weight="0.8" is_hidden="false" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="vibroax_bd1_cutter_pommel" name="BD-1 Cutter Vibro-Ax Pommel" tier="3" piece_type="Pommel" mesh="vibroax_bd1_cutter_pommel" culture="Culture.neutral_culture" length="29.541" weight="0" is_hidden="false" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+	
+	<!--Polearm-->
+
+	<CraftingPiece id="polearm_rally_master_lance_pommel" name="Rally Master Lance Pommel" tier="4" piece_type="Pommel" mesh="polearm_rally_master_lance_pommel" culture="Culture.neutral_culture" length="13.912" weight="0" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+	
+	<CraftingPiece id="polearm_verpine_lance_pommel" name="Verpine Power Lance Pommel" tier="3" piece_type="Pommel" mesh="polearm_verpine_lance_pommel" culture="Culture.neutral_culture" length="47.017" weight="0" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>	
+	
+	<!--Maces-->
+
+	<CraftingPiece id="mace_gaderffii_pommel" name="Gaderffii Pommel" tier="3" piece_type="Pommel" mesh="mace_gaderffii_pommel" culture="Culture.neutral_culture" length="33.429" weight="0" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="mace_clone_riot_baton_pommel" name="Clone Riot Baton Pommel" tier="4" piece_type="Pommel" mesh="mace_clone_riot_baton_pommel" culture="Culture.neutral_culture" length="2.252" weight="0" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="mace_bothan_stun_stick_pommel" name="Bothan Stun Stick Pommel" tier="4" piece_type="Pommel" mesh="mace_bothan_stun_stick_pommel" culture="Culture.neutral_culture" length="1.939" weight="0" is_default="true">
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+</CraftingPieces>

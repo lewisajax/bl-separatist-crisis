@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+	
+	<!--Lightsabers
+	-->
+	
+	<CraftedItem id="kyle_katarn_lightsaber" name="Kyle Katarn's Lightsaber" crafting_template="Lightsaber" is_merchandise="false">
+		<Pieces>
+			<Piece id="lightsaber_blade_blue" Type="Blade" scale_factor="100" />
+			<Piece id="kyle_katarn_lightsaber_emitter" Type="Guard" scale_factor="100" />
+			<Piece id="kyle_katarn_lightsaber_handle" Type="Handle" scale_factor="100" />
+			<Piece id="kyle_katarn_lightsaber_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="aayla_secura_lightsaber" name="Aayla Secura's Lightsaber" crafting_template="Lightsaber" is_merchandise="false">
+		<Pieces>
+			<Piece id="lightsaber_blade_blue" Type="Blade" scale_factor="100" />
+			<Piece id="aayla_secura_lightsaber_emitter" Type="Guard" scale_factor="100" />
+			<Piece id="aayla_secura_lightsaber_handle" Type="Handle" scale_factor="100" />
+			<Piece id="aayla_secura_lightsaber_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="mace_windu_lightsaber" name="Mace Windu's Lightsaber" crafting_template="Lightsaber" is_merchandise="false">
+		<Pieces>
+			<Piece id="lightsaber_blade_purple" Type="Blade" scale_factor="100" />
+			<Piece id="mace_windu_lightsaber_emitter" Type="Guard" scale_factor="100" />
+			<Piece id="mace_windu_lightsaber_handle" Type="Handle" scale_factor="100" />
+			<Piece id="mace_windu_lightsaber_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="darth_revan_lightsaber" name="Darth Revan's Lightsaber" crafting_template="Lightsaber" is_merchandise="false">
+		<Pieces>
+			<Piece id="lightsaber_blade_red" Type="Blade" scale_factor="100" />
+			<Piece id="darth_revan_lightsaber_emitter" Type="Guard" scale_factor="100" />
+			<Piece id="darth_revan_lightsaber_handle" Type="Handle" scale_factor="100" />
+			<Piece id="darth_revan_lightsaber_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="darksaber" name="Darksaber" crafting_template="Lightsaber" is_merchandise="false">
+		<Pieces>
+			<Piece id="lightsaber_darksaber_blade" Type="Blade" scale_factor="100" />
+			<Piece id="lightsaber_darksaber_handle" Type="Handle" scale_factor="100" />
+			<Piece id="lightsaber_darksaber_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="ahsoka_main_lightsaber" name="Ahsoka Tano's Main Hand Lightsaber" crafting_template="Lightsaber" is_merchandise="false">
+		<Pieces>
+			<Piece id="lightsaber_blade_green" Type="Blade" scale_factor="100" />
+			<Piece id="lightsaber_ahsoka_main_handle" Type="Handle" scale_factor="100" />
+			<Piece id="lightsaber_ahsoka_main_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="ahsoka_shoto_lightsaber" name="Ahsoka Tano's Shoto Lightsaber" crafting_template="Lightsaber" is_merchandise="false">
+		<Pieces>
+			<Piece id="lightsaber_blade_yellow" Type="Blade" scale_factor="100" />
+			<Piece id="lightsaber_ahsoka_shoto_handle" Type="Handle" scale_factor="100" />
+			<Piece id="lightsaber_ahsoka_shoto_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="obiwan_lightsaber" name="Obi-Wan Kenobi's Lightsaber" crafting_template="Lightsaber" is_merchandise="false">
+		<Pieces>
+			<Piece id="lightsaber_blade_blue" Type="Blade" scale_factor="100" />
+			<Piece id="lightsaber_obiwan_emitter" Type="Guard" scale_factor="100" />
+			<Piece id="lightsaber_obiwan_handle" Type="Handle" scale_factor="100" />
+			<Piece id="lightsaber_obiwan_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="anakin_lightsaber" name="Anakin Skywalker's Lightsaber" crafting_template="Lightsaber" is_merchandise="false">
+		<Pieces>
+			<Piece id="lightsaber_blade_blue" Type="Blade" scale_factor="100" />
+			<Piece id="lightsaber_anakin_emitter" Type="Guard" scale_factor="100" />
+			<Piece id="lightsaber_anakin_handle" Type="Handle" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<!--Vibrodaggers-->
+
+	<CraftedItem id="swept_vibrodagger" name="Swept Vibrodagger" crafting_template="Vibrodagger" is_merchandise="true">
+		<Pieces>
+			<Piece id="vibrodagger_swept_blade" Type="Blade" scale_factor="100" />
+			<Piece id="vibrodagger_swept_guard" Type="Guard" scale_factor="100" />
+			<Piece id="vibrodagger_lobed_handle" Type="Handle" scale_factor="100" />
+			<Piece id="vibrodagger_horn_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="block_vibrodagger" name="Block Vibrodagger" crafting_template="Vibrodagger" is_merchandise="true">
+		<Pieces>
+			<Piece id="vibrodagger_bayonet_blade" Type="Blade" scale_factor="100" />
+			<Piece id="vibrodagger_block_guard" Type="Guard" scale_factor="100" />
+			<Piece id="vibrodagger_block_grip" Type="Handle" scale_factor="100" />
+			<Piece id="vibrodagger_ringed_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="switch_vibrodagger" name="Switch Vibrodagger" crafting_template="Vibrodagger" is_merchandise="true">
+		<Pieces>
+			<Piece id="switch_vibrodagger_blade" Type="Blade" scale_factor="100" />
+			<Piece id="switch_vibrodagger_guard" Type="Guard" scale_factor="100" />
+			<Piece id="braced_vibrodagger_handle" Type="Handle" scale_factor="100" />
+			<Piece id="skullcrusher_vibrodagger_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	
+	<CraftedItem id="jagged_vibrodagger" name="Jagged Vibrodagger" crafting_template="Vibrodagger" is_merchandise="true">
+		<Pieces>
+			<Piece id="vibrodagger_jagged_blade" Type="Blade" scale_factor="100" />
+			<Piece id="vibrodagger_ringed_guard" Type="Guard" scale_factor="100" />
+			<Piece id="vibrodagger_stoneskin_handle" Type="Handle" scale_factor="100" />
+			<Piece id="vibrodagger_stinger_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="opulent_vibrodagger" name="Opulent Vibrodagger" crafting_template="Vibrodagger" is_merchandise="true">
+		<Pieces>
+			<Piece id="vibrodagger_opulent_blade" Type="Blade" scale_factor="100" />
+			<Piece id="vibrodagger_opulent_guard" Type="Guard" scale_factor="100" />
+			<Piece id="vibrodagger_opulent_handle" Type="Handle" scale_factor="100" />
+			<Piece id="vibrodagger_opulent_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="kal_dagger_beskar" name="Beskar Kal Dagger" crafting_template="Vibrodagger" is_merchandise="true">
+		<Pieces>
+			<Piece id="vibrodagger_kal_blade_beskar" Type="Blade" scale_factor="100" />
+			<Piece id="vibrodagger_kal_handle_beskar" Type="Handle" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="kal_dagger_durasteel" name="Durasteel Kal Dagger" crafting_template="Vibrodagger" is_merchandise="true">
+		<Pieces>
+			<Piece id="vibrodagger_kal_blade_durasteel" Type="Blade" scale_factor="100" />
+			<Piece id="vibrodagger_kal_handle_durasteel" Type="Handle" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="kal_dagger_bronzium" name="Bronzium Kal Dagger" crafting_template="Vibrodagger" is_merchandise="true">
+		<Pieces>
+			<Piece id="vibrodagger_kal_blade_bronzium" Type="Blade" scale_factor="100" />
+			<Piece id="vibrodagger_kal_handle_bronzium" Type="Handle" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<!--Vibroswords-->
+
+	<CraftedItem id="dark_honor_guard_vibrosword" name="Dark Honor Guard Vibrosword" crafting_template="Vibrosword" is_merchandise="true">
+		<Pieces>
+			<Piece id="vibrosword_dark_honor_guard_blade" Type="Blade" scale_factor="100" />
+			<Piece id="vibrosword_dark_honor_guard_guard" Type="Guard" scale_factor="100" />
+			<Piece id="vibrosword_dark_honor_guard_handle" Type="Handle" scale_factor="100" />
+			<Piece id="vibrosword_dark_honor_guard_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="ancient_vibrosword" name="Ancient Vibrosword" crafting_template="Vibrosword" is_merchandise="true">
+		<Pieces>
+			<Piece id="vibrosword_ancient_blade" Type="Blade" scale_factor="100" />
+			<Piece id="vibrosword_ancient_guard" Type="Guard" scale_factor="100" />
+			<Piece id="vibrosword_ancient_handle" Type="Handle" scale_factor="100" />
+			<Piece id="vibrosword_ancient_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="bx_droid_vibrosword" name="BX Droid Vibrosword" crafting_template="Vibrosword" is_merchandise="true">
+		<Pieces>
+			<Piece id="vibrosword_bx_droid_blade" Type="Blade" scale_factor="100" />
+			<Piece id="vibrosword_bx_droid_handle" Type="Handle" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="aran_beskad_durasteel" name="Durasteel Aran Beskad" crafting_template="Vibrosword" is_merchandise="true">
+		<Pieces>
+			<Piece id="vibrosword_aran_beskad_durasteel_blade" Type="Blade" scale_factor="100" />
+			<Piece id="vibrosword_aran_beskad_durasteel_guard" Type="Guard" scale_factor="100" />
+			<Piece id="vibrosword_aran_beskad_durasteel_handle" Type="Handle" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="aran_beskad_bronzium" name="Bronzium Aran Beskad" crafting_template="Vibrosword" is_merchandise="true">
+		<Pieces>
+			<Piece id="vibrosword_aran_beskad_bronzium_blade" Type="Blade" scale_factor="100" />
+			<Piece id="vibrosword_aran_beskad_durasteel_guard" Type="Guard" scale_factor="100" />
+			<Piece id="vibrosword_aran_beskad_bronzium_handle" Type="Handle" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="briirud_beskad" name="Briirud Beskad" crafting_template="Vibrosword" is_merchandise="true">
+		<Pieces>
+			<Piece id="vibrosword_biirud_beskad_blade" Type="Blade" scale_factor="100" />
+			<Piece id="vibrosword_biirud_beskad_guard" Type="Guard" scale_factor="100" />
+			<Piece id="vibrosword_biirud_beskad_handle" Type="Handle" scale_factor="100" />
+			<Piece id="vibrosword_biirud_beskad_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="ruug_beskad" name="Ruug Beskad" crafting_template="Vibrosword" is_merchandise="true">
+		<Pieces>
+			<Piece id="vibroblade_ruug_beskad_blade" Type="Blade" scale_factor="100" />
+			<Piece id="vibroblade_ruug_beskad_guard" Type="Guard" scale_factor="100" />
+			<Piece id="vibroblade_ruug_beskad_handle" Type="Handle" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<!--Two-Handed Axes-->
+
+	<CraftedItem id="mandalore_ultimate_axe" name="Mandalore the Ultimate's Battle-Axe" crafting_template="SWSCTwoHandedAxe" is_merchandise="false">
+		<Pieces>
+			<Piece id="vibroaxe_mandalore_ultimate_head" Type="Blade" scale_factor="100" />
+			<Piece id="vibroaxe_mandalore_ultimate_shaft" Type="Handle" scale_factor="100" />
+			<Piece id="vibroaxe_mandalore_ultimate_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="bd1_cutter_vibroax" name="BD-1 Cutter Vibro-Ax" crafting_template="SWSCTwoHandedAxe" is_merchandise="false">
+		<Pieces>
+			<Piece id="vibroax_bd1_cutter_head" Type="Blade" scale_factor="100" />
+			<Piece id="vibroax_bd1_cutter_shaft" Type="Handle" scale_factor="100" />
+			<Piece id="vibroax_bd1_cutter_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<!--Polearms-->
+
+	<CraftedItem id="rally_master_lance" name="Rally Master Lance" crafting_template="SWSCTwoHandedPolearm" is_merchandise="true">
+		<Pieces>
+			<Piece id="polearm_rally_master_lance_head" Type="Blade" scale_factor="100" />
+			<Piece id="polearm_rally_master_lance_shaft" Type="Handle" scale_factor="100" />
+			<Piece id="polearm_rally_master_lance_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="verpine_power_lance" name="Verpine Power Lance" crafting_template="SWSCTwoHandedPolearm" is_merchandise="true">
+		<Pieces>
+			<Piece id="polearm_verpine_lance_head" Type="Blade" scale_factor="100" />
+			<Piece id="polearm_verpine_lance_shaft" Type="Handle" scale_factor="100" />
+			<Piece id="polearm_verpine_lance_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<!--Mace-->
+
+	<CraftedItem id="gaderffii" name="Gaderffii" crafting_template="SWSCMace" is_merchandise="true">
+		<Pieces>
+			<Piece id="mace_gaderffii_head" Type="Blade" scale_factor="100" />
+			<Piece id="mace_gaderffii_shaft" Type="Handle" scale_factor="100" />
+			<Piece id="mace_gaderffii_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="bothan_stun_stick" name="Bothan Stun Stick" crafting_template="SWSCMace" is_merchandise="true">
+		<Pieces>
+			<Piece id="mace_bothan_stun_stick_head" Type="Blade" scale_factor="100" />
+			<Piece id="mace_bothan_stun_stick_handle" Type="Handle" scale_factor="100" />
+			<Piece id="mace_bothan_stun_stick_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="clone_riot_baton" name="Clone Riot Baton" crafting_template="SWSCMace" is_merchandise="true">
+		<Pieces>
+			<Piece id="mace_clone_riot_baton_head" Type="Blade" scale_factor="100" />
+			<Piece id="mace_clone_riot_baton_handle" Type="Handle" scale_factor="100" />
+			<Piece id="mace_clone_riot_baton_pommel" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+</Items>

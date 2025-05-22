@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full_movement_sets>
+    <full_movement_set
+		id="blaster">
+		<movement_set
+			id="walk_blaster"
+			left_stance="False"
+			movement_mode="walking" />
+		<movement_set
+			id="run_blaster"
+			left_stance="False"
+			movement_mode="running" />
+		<movement_set
+			id="crouch_walk_blaster"
+			left_stance="False"
+			movement_mode="crouch_walking" />
+		<movement_set
+			id="crouch_run_blaster"
+			left_stance="False"
+			movement_mode="crouch_running" />
+	</full_movement_set>
+</full_movement_sets>
