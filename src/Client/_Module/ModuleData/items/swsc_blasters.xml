@@ -645,13 +645,13 @@
 	weight="3.1"
 	appearance="0.8"
 	difficulty="0"
-	Type="Pistol"
+	Type="Crossbow"
 	AmmoOffset="0.0, 0.02131, 0.22975"
 	item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
 	holster_position_shift="0, 0.05, 0">
 		<!--left/right,forward/backward,up/down -->
 		<ItemComponent>
-			<Weapon weapon_class="Pistol"
+			<Weapon weapon_class="Crossbow"
 				    ammo_class="Bolt"
 					ammo_limit="30"
 					thrust_speed="75"
@@ -661,7 +661,7 @@
 					accuracy="100"
 					thrust_damage="105"
 					thrust_damage_type="Pierce"
-					item_usage="blaster_light"
+					item_usage="blaster"
 					physics_material="wood_weapon"
 					center_of_mass="0,0,0.1"
 					position="0, 0, 0.2"
@@ -703,7 +703,7 @@
 					accuracy="100"
 					thrust_damage="110"
 					thrust_damage_type="Pierce"
-					item_usage="crossbow_fast"
+					item_usage="blaster_light"
 					physics_material="wood_weapon"
 					center_of_mass="0,0,0.2"
 					position="0, 0, 0.35"

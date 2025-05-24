@@ -16,7 +16,7 @@
 				require_free_left_hand="False" />
 		</idles>
 		<movement_sets>
-			<movement_set id="crossbow" />
+			<movement_set id="blaster" />
 		</movement_sets>
 		<rider_idles>
 			<rider_idle

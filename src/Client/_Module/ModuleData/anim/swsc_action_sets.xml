@@ -115,7 +115,7 @@
         <action type="act_unequip_blaster" animation="unequip_crossbow" />
         <action type="act_unequip_blaster_left_stance" animation="unequip_crossbow_left_stance" />
         <!-- ATTACK ANIMS -->
-        <action type="act_ready_blaster" animation="ready_crossbow" />
+        <action type="act_ready_blaster" animation="ready_bow" />
         <action type="act_release_blaster" animation="release_crossbow" />
         <action type="act_ready_continue_blaster" animation="ready_continue_crossbow" />
         <action type="act_reload_blaster" animation="reload_crossbow" />
