@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettlementGroups>
+	<SettlementGroup id="group_1" name="Group1" primaryNode="town_S1" radius="60" posX="468.18" posY="1456.71" text="Group1">
+		<Children>
+			<Node id="town_S1" />
+			<Node id="village_S1_1" />
+			<Node id="village_S1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_2" name="Group2" primaryNode="town_EN2" radius="50" posX="684.29" posY="596.20" text="Group2">
+		<Children>
+			<Node id="town_EN2" />
+			<Node id="village_EN2_1" />
+			<Node id="village_EN2_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_3" name="Group3" primaryNode="town_EW2" radius="80" posX="611.67" posY="853.89" text="Group3">
+		<Children>
+			<Node id="town_EW2" />
+			<Node id="village_EW2_2" />
+			<Node id="village_EW2_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_4" name="Group4" primaryNode="town_ES4" radius="35" posX="534.92" posY="543.23" text="Group4">
+		<Children>
+			<Node id="town_ES4" />
+			<Node id="village_ES4_1" />
+			<Node id="village_ES4_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_5" name="Group5" primaryNode="town_A1" radius="45" posX="1711.20" posY="1188.89" text="Group5">
+		<Children>
+			<Node id="town_A1" />
+			<Node id="village_A1_1" />
+			<Node id="village_A1_2" />
+			<Node id="town_K3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_6" name="Group6" primaryNode="town_V1" radius="70" posX="867.52" posY="256.24" text="Group6">
+		<Children>
+			<Node id="town_V1" />
+			<Node id="village_V1_1" />
+			<Node id="village_V1_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_7" name="Group7" primaryNode="town_B1" radius="50" posX="929.42" posY="1840.83" text="Group7">
+		<Children>
+			<Node id="town_B1" />
+			<Node id="village_B1_1" />
+			<Node id="village_B1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_8" name="Group8" primaryNode="town_K3" radius="45" posX="1675.94" posY="1195.79" text="Group8">
+		<Children>
+			<Node id="town_K3" />
+			<Node id="village_K3_1" />
+			<Node id="village_K3_2" />
+			<Node id="town_A1" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_9" name="Group9" primaryNode="town_GR1" radius="50" posX="858.46" posY="1189.54" text="Group9">
+		<Children>
+			<Node id="town_GR1" />
+			<Node id="village_GR1_1" />
+			<Node id="village_GR1_2" />
+			<Node id="village_GR1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_10" name="Group10" primaryNode="town_NS1" radius="55" posX="1202.29" posY="1472.72" text="Group10">
+		<Children>
+			<Node id="town_NS1" />
+			<Node id="village_NS1_1" />
+			<Node id="village_NS1_2" />
+			<Node id="village_NS1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_11" name="Group11" primaryNode="town_CS1" radius="80" posX="1585.91" posY="978.10" text="Group11">
+		<Children>
+			<Node id="town_CS1" />
+			<Node id="village_CS1_1" />
+			<Node id="village_CS1_2" />
+			<Node id="town_CS2" />
+			<Node id="village_CS2_1" />
+			<Node id="village_CS2_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_12" name="Group12" primaryNode="town_DW1" radius="40" posX="1216.00" posY="1316.84" text="Group12">
+		<Children>
+			<Node id="town_DW1" />
+			<Node id="village_DW1_1" />
+			<Node id="village_DW1_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_13" name="Group13" primaryNode="town_SA1" radius="70" posX="1485.52" posY="503.81" text="Group13">
+		<Children>
+			<Node id="town_SA1" />
+			<Node id="village_SA1_1" />
+			<Node id="village_SA1_2" />
+			<Node id="town_SA2" />
+			<Node id="village_SA2_1" />
+			<Node id="village_SA2_2" />
+		</Children>
+	</SettlementGroup>
+</SettlementGroups>

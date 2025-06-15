@@ -61,35 +61,43 @@
   </ItemGroup>
 
   <ItemGroup>
-		<Reference Include="$(GameFolder)\bin\Win64_Shipping_Client\Newtonsoft.Json.dll">
-			<HintPath>%(Identity)</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.*.dll" Exclude="$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.Native.dll">
-			<HintPath>%(Identity)</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="$(GameFolder)\Modules\Native\bin\Win64_Shipping_Client\*.dll">
-			<HintPath>%(Identity)</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="$(GameFolder)\Modules\Sandbox\bin\Win64_Shipping_Client\*.dll">
-			<HintPath>%(Identity)</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="$(GameFolder)\Modules\CustomBattle\bin\Win64_Shipping_Client\*.dll">
-			<HintPath>%(Identity)</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="$(GameFolder)\Modules\BirthAndDeath\bin\Win64_Shipping_Client\*.dll">
-			<HintPath>%(Identity)</HintPath>
-			<Private>False</Private>
-		</Reference>
+	    <Reference Include="$(GameFolder)\bin\Win64_Shipping_Client\Newtonsoft.Json.dll">
+		    <HintPath>%(Identity)</HintPath>
+		    <Private>False</Private>
+	    </Reference>
+	    <Reference Include="$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.*.dll" Exclude="$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.Native.dll">
+		    <HintPath>%(Identity)</HintPath>
+		    <Private>False</Private>
+	    </Reference>
+	    <Reference Include="$(GameFolder)\Modules\Native\bin\Win64_Shipping_Client\*.dll">
+		    <HintPath>%(Identity)</HintPath>
+		    <Private>False</Private>
+	    </Reference>
+	    <Reference Include="$(GameFolder)\Modules\Sandbox\bin\Win64_Shipping_Client\*.dll">
+		    <HintPath>%(Identity)</HintPath>
+		    <Private>False</Private>
+	    </Reference>
+	    <Reference Include="$(GameFolder)\Modules\CustomBattle\bin\Win64_Shipping_Client\*.dll">
+		    <HintPath>%(Identity)</HintPath>
+		    <Private>False</Private>
+	    </Reference>
+	    <Reference Include="$(GameFolder)\Modules\BirthAndDeath\bin\Win64_Shipping_Client\*.dll">
+		    <HintPath>%(Identity)</HintPath>
+		    <Private>False</Private>
+	    </Reference>
+
+	  <!-- Vectors	-->
+	    <Reference Include="System.Numerics">
+		    <HintPath>$(GameFolder)\bin\Win64_Shipping_Client\Microsoft.NETCore.App\System.Numerics.dll</HintPath>
+	    </Reference>
+	    <Reference Include="System.Numerics.Vectors">
+		    <HintPath>$(GameFolder)\bin\Win64_Shipping_Client\System.Numerics.Vectors.dll</HintPath>
+	    </Reference>
 	  
-	  <!-- If your UIExtender module is in the workshop folder, then use the UIExtender nuget package -->
-	  <Reference Include="$(GameFolder)\Modules\UIExtender\bin\Win64_Shipping_Client\*.dll">
-		  <HintPath>%(Identity)</HintPath>
-		  <Private>False</Private>
-	  </Reference>
+	    <!-- If your UIExtender module is in the workshop folder, then use the UIExtender nuget package -->
+	    <Reference Include="$(GameFolder)\Modules\UIExtender\bin\Win64_Shipping_Client\*.dll">
+		    <HintPath>%(Identity)</HintPath>
+		    <Private>False</Private>
+	    </Reference>
 	</ItemGroup>
 </Project>

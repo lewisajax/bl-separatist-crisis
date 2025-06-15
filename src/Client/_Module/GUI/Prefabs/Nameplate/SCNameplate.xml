@@ -1,0 +1,11 @@
+<Window>
+  <Widget HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" DoNotAcceptEvents="true">
+    <Children>
+      <SCNameplateManagerWidget DataSource="{Nameplates}" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" DoNotAcceptEvents="true">
+        <ItemTemplate>
+          <SCNameplateItem/>
+        </ItemTemplate>
+      </SCNameplateManagerWidget>
+    </Children>
+  </Widget>
+</Window>

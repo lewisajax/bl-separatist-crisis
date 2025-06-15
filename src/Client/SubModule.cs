@@ -11,6 +11,11 @@ using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 using SeparatistCrisis.Missions;
+using SeparatistCrisis.ObjectTypes;
+using TaleWorlds.ObjectSystem;
+using SandBox.Objects;
+using SandBox;
+using SeparatistCrisis.Components;
 
 namespace SeparatistCrisis
 {
@@ -75,7 +80,19 @@ namespace SeparatistCrisis
                 PatchManager.ApplyCampaignPatches(CampaignHarmonyDomain);
 
                 var gameStarter = (CampaignGameStarter) gameStarterObject;
+                this.OnRegisterTypes();
             }
+        }
+
+        private void OnRegisterTypes()
+        {
+            MBObjectManager.Instance.RegisterType<SettlementGroup>("SettlementGroup", "SettlementGroups", 100U, true);
+            MBObjectManager.Instance.RegisterType<SettlementGroupComponent>("SettlementGroupComponent", "SettlementGroupComponents", 101U, true);
+        }
+
+        public override void RegisterSubModuleObjects(bool isSavedCampaign)
+        {
+            MBObjectManager.Instance.LoadXML("SettlementGroups", false);
         }
 
         private T? GetGameModel<T>(IGameStarter gameStarterObject) where T : GameModel

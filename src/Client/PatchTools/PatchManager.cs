@@ -75,7 +75,8 @@ namespace SeparatistCrisis.PatchTools
         private static readonly PatchClass[] _mainPatchClasses = new PatchClass[]
         {
             new OnNewGameCreatedPatch(),
-            new OnNewGameCreatedPartialFollowUpPatch()
+            new OnNewGameCreatedPartialFollowUpPatch(),
+            // new InitializeSandboxXMLsPatch()
         };
 
         // REGISTER ALL ACTIVE HARMONY PATCH CLASSES TO USE OnGameStart HERE:
