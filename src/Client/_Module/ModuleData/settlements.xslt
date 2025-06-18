@@ -6,7 +6,7 @@
         </xsl:copy>
     </xsl:template>
 
-    <!-- Deletes all of the native settlements, then whatever settlement to you to add, you add in SeparatistCrisis/settlements.xml -->
+    <!-- Deletes all of the native settlements, then whatever settlement you want to add, you add in SeparatistCrisis/settlements.xml -->
     
     <xsl:template match="Settlement"/>
 </xsl:stylesheet>

@@ -11,6 +11,9 @@ using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 using SeparatistCrisis.Missions;
+using SeparatistCrisis.Behaviors;
+using SandBox;
+using SeparatistCrisis.Extensions;
 
 namespace SeparatistCrisis
 {
@@ -51,7 +54,7 @@ namespace SeparatistCrisis
             base.OnMissionBehaviorInitialize(mission);
 
             if (mission != null)
-                mission.AddMissionBehavior(new LogicForceAtmosphereMission());
+                mission.AddMissionBehavior(new ForceAtmosphereLogic());
         }
 
         protected override void OnBeforeInitialModuleScreenSetAsRoot()
@@ -63,6 +66,16 @@ namespace SeparatistCrisis
                 _hasLoaded = true;
 
                 InformationManager.DisplayMessage(new InformationMessage(new TextObject($"{{=hPERH3u4}}Loaded {{NAME}}").SetTextVariable("NAME", DisplayName).ToString(), StdTextColor));
+            }
+        }
+
+        public override void OnGameInitializationFinished(Game game)
+        {
+            // We override SandBoxSubModule's CampaignMissionManager assignment since our mod loads after SandBox
+            Campaign campaign = game.GameType as Campaign;
+            if (campaign != null)
+            {
+                campaign.CampaignMissionManager = new SCCampaignMissionManager();
             }
         }
 

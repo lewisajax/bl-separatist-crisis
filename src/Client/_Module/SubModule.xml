@@ -117,10 +117,11 @@
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
-			<XmlName id="Settlements" path="swsc_settlements"/>
+			<XmlName id="Settlements" path="settlements"/>
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
+				<GameType value="EditorGame"/>
 			</IncludedGameTypes>
 		</XmlNode>
 	</Xmls>
