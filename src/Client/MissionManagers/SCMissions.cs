@@ -65,7 +65,7 @@ namespace SeparatistCrisis.Missions
                     new AgentHumanAILogic(),
                     new AgentVictoryLogic(),
                     new BattleSurgeonLogic(),
-                    new FullAutoLogic(), // Custom
+                    new BlasterMissileLogic(), // Custom
                     new MissionAgentPanicHandler(),
                     new BattleMissionAgentInteractionLogic(),
                     new AgentMoraleInteractionLogic(),
