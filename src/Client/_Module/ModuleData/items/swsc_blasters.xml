@@ -443,7 +443,7 @@
 		<ItemComponent>
 			<Weapon weapon_class="Crossbow"
 				    ammo_class="Bolt"
-					ammo_limit="20"
+					ammo_limit="1"
 					thrust_speed="75"
 					speed_rating="63"
 					missile_speed="200"
@@ -485,7 +485,7 @@
 		<ItemComponent>
 			<Weapon weapon_class="Crossbow"
 				    ammo_class="Bolt"
-					ammo_limit="30"
+					ammo_limit="1"
 					thrust_speed="75"
 					speed_rating="63"
 					missile_speed="250"
@@ -527,7 +527,7 @@
 		<ItemComponent>
 			<Weapon weapon_class="Crossbow"
 				    ammo_class="Bolt"
-					ammo_limit="5"
+					ammo_limit="1"
 					thrust_speed="75"
 					speed_rating="63"
 					missile_speed="295"
@@ -569,7 +569,7 @@
 		<ItemComponent>
 			<Weapon weapon_class="Crossbow"
 				    ammo_class="Bolt"
-					ammo_limit="30"
+					ammo_limit="1"
 					thrust_speed="75"
 					speed_rating="63"
 					missile_speed="260"
@@ -611,7 +611,7 @@
 		<ItemComponent>
 			<Weapon weapon_class="Crossbow"
 				    ammo_class="Bolt"
-					ammo_limit="30"
+					ammo_limit="1"
 					thrust_speed="75"
 					speed_rating="63"
 					missile_speed="260"
@@ -653,7 +653,7 @@
 		<ItemComponent>
 			<Weapon weapon_class="Crossbow"
 				    ammo_class="Bolt"
-					ammo_limit="30"
+					ammo_limit="1"
 					thrust_speed="75"
 					speed_rating="63"
 					missile_speed="230"
@@ -695,7 +695,7 @@
 		<ItemComponent>
 			<Weapon weapon_class="Pistol"
 				    ammo_class="Bolt"
-					ammo_limit="20"
+					ammo_limit="1"
 					thrust_speed="75"
 					speed_rating="63"
 					missile_speed="240"
@@ -737,7 +737,7 @@
 		<ItemComponent>
 			<Weapon weapon_class="Crossbow"
 				    ammo_class="Bolt"
-					ammo_limit="5"
+					ammo_limit="1"
 					thrust_speed="75"
 					speed_rating="63"
 					missile_speed="300"
@@ -779,7 +779,7 @@
 		<ItemComponent>
 			<Weapon weapon_class="Crossbow"
 				    ammo_class="Bolt"
-					ammo_limit="30"
+					ammo_limit="1"
 					thrust_speed="75"
 					speed_rating="63"
 					missile_speed="260"
@@ -821,7 +821,7 @@
 		<ItemComponent>
 			<Weapon weapon_class="Crossbow"
 				    ammo_class="Bolt"
-					ammo_limit="30"
+					ammo_limit="1"
 					thrust_speed="75"
 					speed_rating="63"
 					missile_speed="260"
@@ -863,7 +863,7 @@
 		<ItemComponent>
 			<Weapon weapon_class="Crossbow"
 				    ammo_class="Bolt"
-					ammo_limit="20"
+					ammo_limit="1"
 					thrust_speed="75"
 					speed_rating="63"
 					missile_speed="260"
@@ -905,7 +905,7 @@
 		<ItemComponent>
 			<Weapon weapon_class="Bow"
 				    ammo_class="Arrow"
-					ammo_limit="20"
+					ammo_limit="1"
 					thrust_speed="75"
 					speed_rating="63"
 					missile_speed="260"

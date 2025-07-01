@@ -1,5 +1,7 @@
 ﻿using HarmonyLib;
 using NetworkMessages.FromServer;
+using SeparatistCrisis.Entities;
+using SeparatistCrisis.ObjectTypes;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,6 +13,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.DotNet;
 using TaleWorlds.Engine;
+using TaleWorlds.InputSystem;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.MountAndBlade.View;
@@ -26,20 +29,14 @@ namespace SeparatistCrisis.Behaviors
     public class BlasterMissileLogic: MissionLogic
     {
         private MissionState? _state;
-        private Dictionary<Agent, float> _lastShotTimes = null!;
-        private Dictionary<Agent, bool> _canAgentFire = null!;
-        private Dictionary<Agent, EquipmentIndex> _ammoSlots = null!;
+        private Dictionary<Agent, MissileAgent> _missileAgents = null!;
         private delegate void OnAgentShootMissileDelegate(Agent shooterAgent, EquipmentIndex weaponIndex, Vec3 position, Vec3 velocity, Mat3 orientation, bool hasRigidBody, bool isPrimaryWeaponShot, int forcedMissileIndex);
         private OnAgentShootMissileDelegate AgentShootMissile = null!;
-        // private UIntPtr _missionPointer;
-
 
         public override void EarlyStart()
         {
             this._state = Game.Current.GameStateManager.ActiveState as MissionState;
-            this._lastShotTimes = new Dictionary<Agent, float>();
-            this._canAgentFire = new Dictionary<Agent, bool>();
-            this._ammoSlots = new Dictionary<Agent, EquipmentIndex>();
+            this._missileAgents = new Dictionary<Agent, MissileAgent>();
 
             MethodInfo methodInfo = AccessTools.Method(typeof(Mission), "OnAgentShootMissile", new Type[] { typeof(Agent), typeof(EquipmentIndex), typeof(Vec3), typeof(Vec3), typeof(Mat3), typeof(bool), typeof(bool), typeof(int) });
             AgentShootMissile = (OnAgentShootMissileDelegate)methodInfo.CreateDelegate(typeof(OnAgentShootMissileDelegate), this.Mission);
@@ -68,22 +65,52 @@ namespace SeparatistCrisis.Behaviors
                         continue;
 
                     // Double look up on first go around but then its just the 1 from there on
-                    if (!this._lastShotTimes.ContainsKey(agent))
-                        this._lastShotTimes.Add(agent, Mission.Current.CurrentTime);
+                    if (!this._missileAgents.ContainsKey(agent))
+                        this._missileAgents.Add(agent, new MissileAgent(agent));
 
-                    if (!this._canAgentFire.ContainsKey(agent))
-                        this._canAgentFire.Add(agent, true);
+                    MissileAgent missileAgent = this._missileAgents[agent];
+
+                    // If the agent is using a different ranged weapon.
+                    if (missileAgent?.WeaponOptions?.WeaponId != agent.WieldedWeapon.Item.StringId)
+                        missileAgent.WeaponOptions = RangedWeaponOptions.FindFirst(x => x.WeaponId == agent?.WieldedWeapon.Item?.StringId);
+
+                    // If the weapon doesnt have different firing modes, then let it act as default xbow/bow
+                    if (missileAgent?.WeaponOptions == null)
+                        continue;
+
+                    // InputContext.RegisterHotKeyCategory is mainly used inside Views
+                    // We will probably need a view and vm for this stuff anyways, so it's worth cranking 1 out
+                    // And then registering the hot key category inside there
+                    if (agent.IsMainAgent && this.Mission.InputManager.IsKeyReleased(InputKey.V))
+                    {
+                        if (missileAgent.WeaponOptions.FiringModeFlags.Count > (missileAgent.CurrentFiringModeIndex + 1))
+                            missileAgent.CurrentFiringModeIndex += 1;
+                        else
+                            missileAgent.CurrentFiringModeIndex = 0;
+
+                        InformationManager.DisplayMessage(new InformationMessage($"Switched to {missileAgent.CurrentFiringMode} firing mode!"));
+                    }
 
                     // Checks and balances baby!
-                    if (this._canAgentFire[agent] && agent.GetCurrentActionType(1) == Agent.ActionCodeType.ReadyRanged && agent.GetCurrentActionStage(1) == Agent.ActionStage.AttackReady &&
-                        agent.GetActionChannelCurrentActionWeight(1) >= 1f && Mission.Current.CurrentTime - this._lastShotTimes[agent] > 0.3f &&
+                    if (missileAgent.CanFire && agent.GetCurrentActionType(1) == Agent.ActionCodeType.ReadyRanged && agent.GetCurrentActionStage(1) == Agent.ActionStage.AttackReady &&
+                        agent.GetActionChannelCurrentActionWeight(1) >= 1f && Mission.Current.CurrentTime - missileAgent.LastShot > missileAgent.ShootInterval &&
                         !agent.WieldedWeapon.IsEmpty && agent.Equipment.GetAmmoAmount(agent.GetWieldedItemIndex(Agent.HandIndex.MainHand)) > 0)
                     {
                         // There is a hard crash with no exception happening that only happens every now and again
                         // I think its a race condition issue since if we run it without any breakpoints, then 25% of the time it hard crashes.
                         // But with a breakpoint here, it never crashes.
-                        this.ShootWeapon(agent);
-                        this._canAgentFire[agent] = true;
+
+                        // We'll probably want to abstract away the shooting methods or else this could become a god class but I'll leave that for some1 else
+
+                        // The alternative usage key (x) works on OnKeyDown instead of OnKeyUp
+                        // So we'll probably need to use a different key to change firing modes
+                        // Instead of holding x down to change firing modes
+
+                        if (missileAgent.CurrentFiringMode == FiringMode.FULLAUTO)
+                            this.ShootFullAuto(agent);
+
+                        if (missileAgent.CurrentFiringMode == FiringMode.SHOTGUN)
+                            this.ShootShotgun(agent);
 
                         // SetActionChannel works but SetAgentActionChannel doesnt
                         // Could use something like this for recoil, in the future
@@ -94,9 +121,11 @@ namespace SeparatistCrisis.Behaviors
         }
 
         // We'll need to swap out this method for different firing modes, maybe
-        private void ShootWeapon(Agent agent)
+        private void ShootFullAuto(Agent agent)
         {
-            this._canAgentFire[agent] = false;
+            MissileAgent missileAgent = this._missileAgents[agent];
+
+            missileAgent.CanFire = false;
             MissionWeapon weapon = agent.WieldedWeapon;
             EquipmentIndex equipIndex = agent.GetWieldedItemIndex(Agent.HandIndex.MainHand); // This uses a loop
 
@@ -129,13 +158,83 @@ namespace SeparatistCrisis.Behaviors
                 this.AgentShootMissile.Invoke(agent, equipIndex, position, velocity, orientation, true, true, -1);
 
                 this.ConsumeAmmo(agent, equipIndex, 1);
-                this._lastShotTimes[agent] = Mission.Current.CurrentTime;
+                missileAgent.LastShot = Mission.Current.CurrentTime;
 
                 // Don't even know if these do anything yet, havent gotten around to messing with the AI
                 // The AI agents do use this logic its just that there's no code to keep them aiming yet.
                 agent.UpdateLastRangedAttackTimeDueToAnAttack(MBCommon.GetTotalMissionTime());
                 agent.ResetAiWaitBeforeShootFactor();
             }
+
+            missileAgent.CanFire = true;
+        }
+
+        private void ShootShotgun(Agent agent)
+        {
+            MissileAgent missileAgent = this._missileAgents[agent];
+
+            missileAgent.CanFire = false;
+            MissionWeapon weapon = agent.WieldedWeapon;
+            EquipmentIndex equipIndex = agent.GetWieldedItemIndex(Agent.HandIndex.MainHand); // This uses a loop
+
+            if (equipIndex == EquipmentIndex.None)
+                return;
+
+            // This would make it so the missile's position spawns near the main hand but when we send it to OnAgentShootMissile, it looks like it overwrites our pos and uses the eye position for the missile
+            MatrixFrame boneEntitialFrameWithIndex = agent.AgentVisuals.GetSkeleton().GetBoneEntitialFrameWithIndex(agent.Monster.MainHandItemBoneIndex);
+            MatrixFrame globalFrame = agent.AgentVisuals.GetGlobalFrame();
+            MatrixFrame matrixFrame = globalFrame.TransformToParent(boneEntitialFrameWithIndex);
+
+            Vec3 direction = agent.LookDirection;
+            Vec3 position = matrixFrame.origin;
+            Mat3 orientation = Mat3.CreateMat3WithForward(direction);
+            float baseSpeed = weapon.GetModifiedMissileSpeedForCurrentUsage();
+
+            // We just add the skill level on to the speed rating. So 200 in a skill would probably shoot lightning fast missiles. Who says hard work doesn't pay off.
+            SkillObject relevantSkill = WeaponComponentData.GetRelevantSkillFromWeaponClass(weapon.CurrentUsageItem.WeaponClass);
+            float speed = baseSpeed + agent.Character.GetSkillValue(relevantSkill);
+            Vec3 velocity = direction * speed;
+
+            // If we want to go the custom missile route, reznov's code shows that the lower the baseSpeed, the higher the damage.
+            // Mission.Current.AddCustomMissile(agent, weapon.AmmoWeapon, position, direction, orientation, baseSpeed, speed, true, null);
+
+            if (this.AgentShootMissile != null && agent.Equipment[equipIndex].CurrentUsageItem.IsRangedWeapon)
+            {
+                // There's still the issue of the ammo being 0 and the final missile still being in the weapon slot and it gets shot once lmb is released
+                // But since we're doing stuff for blasters, I'm not gonna tackle this just yet.
+
+                int numBullets = agent.Equipment.GetAmmoAmount(equipIndex);
+                short spentBullets = 0;
+
+                for (int i = 3; i > 0; i--)
+                {
+                    if (numBullets - i > 0) 
+                    {
+                        Vec3 dir = new Vec3(direction.x, direction.y, direction.z, direction.w);
+
+                        // Need to tone down these values
+                        dir.RotateAboutX(MBRandom.RandomFloatRanged(-.05f, .05f));
+                        dir.RotateAboutY(MBRandom.RandomFloatRanged(-.05f, .05f));
+                        dir.RotateAboutZ(MBRandom.RandomFloatRanged(-.05f, .05f));
+
+                        Mat3 orien = Mat3.CreateMat3WithForward(dir);
+
+                        // this.AgentShootMissile.Invoke(agent, equipIndex, position, velocity, orien, true, true, -1);
+                        Mission.Current.AddCustomMissile(agent, weapon.AmmoWeapon, position, dir, orien, baseSpeed / 4, speed, true, null);
+                        spentBullets++;
+                    }
+                }
+
+                this.ConsumeAmmo(agent, equipIndex, spentBullets);
+                missileAgent.LastShot = Mission.Current.CurrentTime;
+
+                // Don't even know if these do anything yet, havent gotten around to messing with the AI
+                // The AI agents do use this logic its just that there's no code to keep them aiming yet.
+                agent.UpdateLastRangedAttackTimeDueToAnAttack(MBCommon.GetTotalMissionTime());
+                agent.ResetAiWaitBeforeShootFactor();
+            }
+
+            missileAgent.CanFire = true;
         }
 
         private void ConsumeAmmo(Agent agent, EquipmentIndex weaponSlot, short amount)

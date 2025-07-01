@@ -14,6 +14,14 @@ using SeparatistCrisis.Missions;
 using SeparatistCrisis.Behaviors;
 using SandBox;
 using SeparatistCrisis.Extensions;
+using SeparatistCrisis.ObjectTypes;
+using TaleWorlds.ObjectSystem;
+using System.Collections.Generic;
+using TaleWorlds.Engine.InputSystem;
+using TaleWorlds.InputSystem;
+using TaleWorlds.MountAndBlade.GameKeyCategory;
+using SeparatistCrisis.InputSystem;
+using SeparatistCrisis.MissionManagers;
 
 namespace SeparatistCrisis
 {
@@ -35,13 +43,14 @@ namespace SeparatistCrisis
         protected override void OnSubModuleLoad()
         {
             base.OnSubModuleLoad();
-            Instance = this;
+            SubModule.Instance = this;
+            PatchManager.ApplyMainPatches(MainHarmonyDomain);
 
             var extender = UIExtender.Create(Name);
             extender.Register(typeof(SubModule).Assembly);
             extender.Enable();
 
-            PatchManager.ApplyMainPatches(MainHarmonyDomain);
+            this.InitializeHotKeyManager(true);
         }
 
         protected override void OnSubModuleUnloaded()
@@ -91,6 +100,18 @@ namespace SeparatistCrisis
             }
         }
 
+        public override void BeginGameStart(Game game)
+        {
+            if (game.GameType.GetType() == typeof(Campaign))
+            {
+                if (game.ObjectManager != null)
+                {
+                    game.ObjectManager.RegisterType<RangedWeaponOptions>("RangedWeaponOptions", "RangedWeaponOptionSets", 100U, true);
+                    MBObjectManager.Instance.LoadXML("RangedWeaponOptionSets", false);
+                }
+            }
+        }
+
         private T? GetGameModel<T>(IGameStarter gameStarterObject) where T : GameModel
         {
             var models = gameStarterObject.Models.ToArray();
@@ -101,6 +122,16 @@ namespace SeparatistCrisis
                     return gameModel1;
             }
             return default;
+        }
+
+        private void InitializeHotKeyManager(bool loadKeys)
+        {
+            Dictionary<string, GameKeyContext>.ValueCollection prevContexts = HotKeyManager.GetAllCategories();
+            List<GameKeyContext> newContexts = prevContexts.ToList();
+
+            newContexts.Add(new SCGameKeyContext());
+
+            HotKeyManager.RegisterInitialContexts(newContexts, loadKeys);
         }
 
         public override void OnGameEnd(Game game)

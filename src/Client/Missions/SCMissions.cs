@@ -41,7 +41,7 @@ namespace SeparatistCrisis.Missions
                                       where p.Party == MobileParty.MainParty.Party
                                       select p).IsEmpty<MapEventParty>();
 
-            return MissionState.OpenNew("Battle", rec, delegate (Mission mission)
+            return MissionState.OpenNew("SCBattle", rec, delegate (Mission mission)
             {
                 Hero leaderHero = MapEvent.PlayerMapEvent.AttackerSide.LeaderParty.LeaderHero;
                 TextObject attackerGeneralName = (leaderHero != null) ? leaderHero.Name : null;

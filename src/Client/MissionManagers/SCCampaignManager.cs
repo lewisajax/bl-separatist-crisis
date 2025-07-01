@@ -1,4 +1,5 @@
 ﻿using SandBox;
+using SeparatistCrisis.Missions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ using TaleWorlds.CampaignSystem.Roster;
 using TaleWorlds.CampaignSystem.Settlements.Locations;
 using TaleWorlds.Core;
 
-namespace SeparatistCrisis.Missions
+namespace SeparatistCrisis.MissionManagers
 {
     public sealed class SCCampaignMissionManager: CampaignMission.ICampaignMissionManager
     {

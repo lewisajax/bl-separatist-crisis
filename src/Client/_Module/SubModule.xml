@@ -72,6 +72,7 @@
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
@@ -79,6 +80,7 @@
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
@@ -93,6 +95,7 @@
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
@@ -100,6 +103,7 @@
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
@@ -107,6 +111,7 @@
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
@@ -114,6 +119,7 @@
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
@@ -122,6 +128,14 @@
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
 				<GameType value="EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="RangedWeaponOptionSets" path="additional/swsc_ranged_weapon_options"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
 			</IncludedGameTypes>
 		</XmlNode>
 	</Xmls>
