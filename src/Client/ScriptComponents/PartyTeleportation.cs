@@ -7,7 +7,7 @@ using TaleWorlds.Library;
 
 namespace SeparatistCrisis.ScripComponents
 {
-    public class PartyTeleportation : ScriptComponentBehavior
+    /*public class PartyTeleportation : ScriptComponentBehavior
     {
         private Vec3 _targetPosition = Vec3.Zero;
         private Vec3 _position;
@@ -77,5 +77,5 @@ namespace SeparatistCrisis.ScripComponents
             
             return distance <= this.Radius * this.Radius;
         }
-    }
+    }*/
 }

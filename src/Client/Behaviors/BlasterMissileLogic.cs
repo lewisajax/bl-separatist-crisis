@@ -21,10 +21,10 @@ using TaleWorlds.MountAndBlade.View;
 namespace SeparatistCrisis.Behaviors
 {
     /// <summary>
-    ///   This is where we handle the different firing modes logic.
-    ///   Many thanks to Reznov from the 40k mod and shokuho for helping out. 
-    ///   If anyone's looking at this in the future and the class has dependencies shooting out of it's arse.
-    ///   You can go back however many commits and you'll find that the class is self contained and can be used for native ranged weapons.
+    /// This is where we handle the different firing modes logic.
+    /// Many thanks to Reznov from the 40k mod and shokuho for helping out. 
+    /// If anyone's looking at this in the future and the class has dependencies shooting out of it's arse.
+    /// You can go back however many commits and you'll find that the class is self contained and can be used for native ranged weapons.
     /// </summary>
     public class BlasterMissileLogic: MissionLogic
     {
@@ -72,7 +72,7 @@ namespace SeparatistCrisis.Behaviors
 
                     // If the agent is using a different ranged weapon.
                     if (missileAgent?.WeaponOptions?.WeaponId != agent.WieldedWeapon.Item.StringId)
-                        missileAgent.WeaponOptions = RangedWeaponOptions.FindFirst(x => x.WeaponId == agent?.WieldedWeapon.Item?.StringId);
+                        missileAgent.WeaponOptions = Blaster.FindFirst(x => x.WeaponId == agent?.WieldedWeapon.Item?.StringId);
 
                     // If the weapon doesnt have different firing modes, then let it act as default xbow/bow
                     if (missileAgent?.WeaponOptions == null)

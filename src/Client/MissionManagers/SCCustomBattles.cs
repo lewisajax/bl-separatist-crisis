@@ -138,7 +138,10 @@ namespace SeparatistCrisis.MissionManagers
             new AgentHumanAILogic(),
             new AgentVictoryLogic(),
             new MissionAgentPanicHandler(),
+
             new BlasterMissileLogic(),
+            new AbilitiesLogic(),
+
             new BattleMissionAgentInteractionLogic(),
             new AgentMoraleInteractionLogic(),
             new AssignPlayerRoleInTeamMissionController(isPlayerGeneral, isPlayerSergeant, false, isPlayerSergeant ? Enumerable.Repeat<string>(playerCharacter.StringId, 1).ToList<string>() : new List<string>(), FormationClass.NumberOfRegularFormations),

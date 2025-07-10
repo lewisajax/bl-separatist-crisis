@@ -10,7 +10,7 @@ namespace SeparatistCrisis.Entities
 {
     public class MissileAgent
     {
-        private RangedWeaponOptions? _weaponOptions;
+        private Blaster? _weaponOptions;
         private int _currFiringModeIndex;
 
         public float LastShot { get; set; }
@@ -36,7 +36,7 @@ namespace SeparatistCrisis.Entities
             }
         }
 
-        public RangedWeaponOptions? WeaponOptions
+        public Blaster? WeaponOptions
         {
             get
             {
@@ -57,7 +57,7 @@ namespace SeparatistCrisis.Entities
             this.LastShot = Mission.Current.CurrentTime;
             this.CanFire = true;
 
-            RangedWeaponOptions? options = RangedWeaponOptions.FindFirst(x => x.WeaponId == agent?.WieldedWeapon.Item?.StringId);
+            Blaster? options = Blaster.FindFirst(x => x.WeaponId == agent?.WieldedWeapon.Item?.StringId);
             this.WeaponOptions = options;
             this.CurrentFiringModeIndex = 0;
 

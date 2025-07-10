@@ -8,7 +8,7 @@ using TaleWorlds.Core;
 
 namespace SeparatistCrisis.Components
 {
-    public class SCWeaponComponentData : WeaponComponentData
+    /*public class SCWeaponComponentData : WeaponComponentData
     {
         public SCWeaponComponentData(ItemObject item, WeaponClass weaponClass = WeaponClass.Undefined, WeaponFlags weaponFlags = 0) : base(item, weaponClass, weaponFlags)
         {
@@ -18,5 +18,5 @@ namespace SeparatistCrisis.Components
         {
             base.Deserialize(item, node);
         }
-    }
+    }*/
 }

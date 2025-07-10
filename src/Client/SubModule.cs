@@ -22,6 +22,7 @@ using TaleWorlds.InputSystem;
 using TaleWorlds.MountAndBlade.GameKeyCategory;
 using SeparatistCrisis.InputSystem;
 using SeparatistCrisis.MissionManagers;
+using TaleWorlds.MountAndBlade.CustomBattle;
 
 namespace SeparatistCrisis
 {
@@ -102,12 +103,14 @@ namespace SeparatistCrisis
 
         public override void BeginGameStart(Game game)
         {
-            if (game.GameType.GetType() == typeof(Campaign))
+            if (game?.ObjectManager != null) 
             {
-                if (game.ObjectManager != null)
+                if (game.GameType.GetType() == typeof(CustomGame) || game.GameType.GetType() == typeof(Campaign))
                 {
-                    game.ObjectManager.RegisterType<RangedWeaponOptions>("RangedWeaponOptions", "RangedWeaponOptionSets", 100U, true);
-                    MBObjectManager.Instance.LoadXML("RangedWeaponOptionSets", false);
+                    game.ObjectManager.RegisterType<Blaster>("Blaster", "Blasters", 100U, true);
+                    game.ObjectManager.RegisterType<Ability>("Ability", "Abilities", 101U, true);
+                    MBObjectManager.Instance.LoadXML("Blasters", false);
+                    MBObjectManager.Instance.LoadXML("Abilities", false);
                 }
             }
         }

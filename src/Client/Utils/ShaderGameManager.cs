@@ -10,7 +10,7 @@ using TaleWorlds.ObjectSystem;
 
 namespace SeparatistCrisis.Utils
 {
-    public class ShaderGameManager : CustomGameManager
+    /*public class ShaderGameManager : CustomGameManager
     {
         public override void OnLoadFinished()
         {
@@ -75,5 +75,5 @@ namespace SeparatistCrisis.Utils
         {
             return MBObjectManager.Instance.GetObject<BasicCharacterObject>("republic_clone_cadet");
         }
-    }
+    }*/
 }
