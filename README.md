@@ -1,14 +1,12 @@
-# Star Wars: Separatist Crisis
-A mod to turn your Mount and Blade 2: Bannerlord, into a galaxy far far away.
+# Separatist Crisis
+An unofficial Star Wars mod for [Bannerlord](https://www.taleworlds.com/en/games/bannerlord)
+
+Discord - [https://discord.gg/SUS2ths](https://discord.gg/SUS2ths)\
+Moddb - [https://www.moddb.com/mods/separatist-crisis](https://www.moddb.com/mods/separatist-crisis)\
+Nexus - [https://www.nexusmods.com/mountandblade2bannerlord/mods/3488](https://www.nexusmods.com/mountandblade2bannerlord/mods/3488)
 
 # How to contribute
-Any coder who has no current task can take any free Issue to work on. Check the priorities and assigned milestones before taking an Issue.
-We are following the principle of **Feature-Branching** meaning every Issue is getting their own branch. Branches are created from our master branch and are being merged back into the master branch as soon as the relating Isse has been resolved. **Make sure you are not commiting directly onto the master branch**.
-
-Please name your branch the same as the corresponding Issue.
-
-Remember to link your pull-requests to the corresponding Issues to make tracking development easier.
-Also it is good practice to get another team member to do a code review before you merge your branch into master.
+When other people start contributing to this repo, we'll switch over to feature branching for assigned issues. Which will then be used with pull requests.
 
 ## Progress
 
@@ -22,9 +20,9 @@ See [Changelog](changelog.txt) for more changes
 
 ## Acknowledgement
 
-Please see [Credits](CREDITS) for the full list of contributors and/or other factors.
+Please see [Credits](CREDITS.md) for the full list of contributors and/or other factors.
 
-[Diplomacy](https://github.com/DiplomacyTeam/Bannerlord.Diplomacy) was used as the base for this mod but we've stripped all the features out and only kept the config, utils and helpers.
+[Diplomacy](https://github.com/DiplomacyTeam/Bannerlord.Diplomacy) was used as the base for this mod but we've stripped all the features out and only kept the config, utils and helpers. We'll probably try and re-add the features from Diplomacy later on down the line.
 
 ## License
 
