@@ -2,4 +2,5 @@
 <Abilities>
 	<Ability id="abi_force_push" />
 	<Ability id="abi_force_lightning" />
+	<Ability id="abi_force_choke" />
 </Abilities>

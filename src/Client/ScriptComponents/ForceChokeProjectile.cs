@@ -10,14 +10,14 @@ using TaleWorlds.MountAndBlade;
 
 namespace SeparatistCrisis.ScriptComponents
 {
-    public class ForceLightningProjectile: ScriptComponentBehavior
+    public class ForceChokeProjectile: ScriptComponentBehavior
     {
         private float _creationTime;
         private Dictionary<Agent, float>? _hitAgents;
 
         public Agent? Agent { get; set; }
 
-        public static string Name { get; } = typeof(ForceLightningProjectile).Name;
+        public static string Name { get; } = typeof(ForceChokeProjectile).Name;
 
         // If I can figure out how to get a GameEntity/Agent from OnPhysicsCollison, we wouldnt have to do this
         // But I think OnPhysicsCollision is only meant for testing Physics Materials/Sounds etc
@@ -79,38 +79,19 @@ namespace SeparatistCrisis.ScriptComponents
                 if (this.Agent == agent)
                     continue;
 
-                if (this._hitAgents.TryGetValue(agent, out float time) && time > Mission.Current.CurrentTime + dt)
+                if (this._hitAgents.TryGetValue(agent, out float time) && time > Mission.Current.CurrentTime + dt + .5f)
                     continue;
 
                 Blow? blow = this.CreateBlow(agent);
 
                 if (blow != null)
                 {
-                    // agent.RegisterBlow((Blow)blow, default(AttackCollisionData));
-
-                    // AgentMovementLockedState
-                    // agent.ClearTargetFrame()
-
-                    MBActionSet set = MBActionSet.GetActionSet("as_human_musician");
-                    AnimationSystemData data = MonsterExtensions.FillAnimationSystemData(agent.Monster, set, agent.Character.GetStepSize(), false);
-                    agent.SetActionSet(ref data);
-                    ActionIndexCache action = ActionIndexCache.Create("act_musician_idle_stand_cheerful");
-
-                    // agent.DisableScriptedCombatMovement();
-                    // agent.DisableScriptedMovement();
-                    // agent.ClearTargetFrame();
-                    // agent.SetWatchState(Agent.WatchState.Patrolling);
-                    // agent.ResetLookAgent();
-
-                    if (!agent.Formation.DetachedUnits.Contains(agent))
-                        agent.Formation.DetachUnit(agent, true);
-                    
-                    agent.SetActionChannel(0, action, false);
+                    agent.RegisterBlow((Blow)blow, default(AttackCollisionData));
 
                     if (this._hitAgents.ContainsKey(agent))
-                        this._hitAgents[agent] = Mission.Current.CurrentTime + .8f;
+                        this._hitAgents[agent] = Mission.Current.CurrentTime;
                     else
-                        this._hitAgents.Add(agent, Mission.Current.CurrentTime + .8f);
+                        this._hitAgents.Add(agent, Mission.Current.CurrentTime);
                 }
             }
         }
@@ -122,9 +103,9 @@ namespace SeparatistCrisis.ScriptComponents
                 Blow blow = new Blow(this.Agent.Index);
 
                 blow.DamageType = DamageTypes.Blunt;
-                blow.BlowFlag |= BlowFlags.KnockBack;
+                blow.BlowFlag |= BlowFlags.KnockDown;
                 blow.BaseMagnitude = 0f;
-                blow.InflictedDamage = 2;
+                blow.InflictedDamage = 10;
                 blow.DamageCalculated = true;
                 blow.WeaponRecord.FillAsMeleeBlow(null, null, -1, -1);
                 blow.GlobalPosition = victim.Position;

@@ -12,7 +12,7 @@ using TaleWorlds.MountAndBlade;
 
 namespace SeparatistCrisis.Abilities
 {
-    public class ForceLightningAbility : IAbility
+    public class ForceChokeAbility: IAbility
     {
         private Ability _options;
         private AbilityAgent _abilityAgent;
@@ -53,7 +53,7 @@ namespace SeparatistCrisis.Abilities
 
         public GameEntity? ActiveEntity { get; set; }
 
-        public ForceLightningAbility(AbilityAgent abilityAgent, Ability options)
+        public ForceChokeAbility(AbilityAgent abilityAgent, Ability options)
         {
             this._abilityAgent = abilityAgent;
             this._options = options;
@@ -88,15 +88,6 @@ namespace SeparatistCrisis.Abilities
             cube.UpdateBoundingBox();
             return cube;
         }
-
-        /*anim_reactions_scared_1
-        anim_scared_idle_1 - crouched panicing
-        anim_scared_idle_2 - hands to chest
-
-        beggar_walk_forward - staggered walk if we want the npc to still move
-
-        musician_idle_stand_active
-        musician_idle_stand_cheerful*/
 
         public void OnTick(float dt)
         {
@@ -133,7 +124,7 @@ namespace SeparatistCrisis.Abilities
                     PhysicsShape body = PhysicsShape.GetFromResource("bo_editor_cube");
 
                     object obj = new object();
-                    lock(obj)
+                    lock (obj)
                     {
                         body.Prepare();
                         CapsuleData capsule = new CapsuleData(this.BoxSize, cube.GetBoundingBoxMin(), cube.GetBoundingBoxMax());
@@ -156,8 +147,8 @@ namespace SeparatistCrisis.Abilities
                     entity.SetFrameChanged();
                     entity.RecomputeBoundingBox();
 
-                    entity.CreateAndAddScriptComponent(ForceLightningProjectile.Name);
-                    entity.GetFirstScriptOfType<ForceLightningProjectile>().Agent = agent;
+                    entity.CreateAndAddScriptComponent(ForceChokeProjectile.Name);
+                    entity.GetFirstScriptOfType<ForceChokeProjectile>().Agent = agent;
                     entity.CallScriptCallbacks();
 
                     GameEntity entity2 = GameEntity.CreateEmptyDynamic(Mission.Current.Scene);
