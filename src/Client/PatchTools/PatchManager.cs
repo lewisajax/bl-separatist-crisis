@@ -58,7 +58,7 @@ namespace SeparatistCrisis.PatchTools
 
         private PatchManager(string harmonyId, bool useMainPatches = true)
         {
-            Harmony = new(harmonyId);
+            this.Harmony = new(harmonyId);
             var sourcePatches = useMainPatches ? _mainPatchClasses : _campaignPatchClasses;
             _patches = sourcePatches.SelectMany(pc => pc.Patches).ToArray();
 
@@ -76,7 +76,9 @@ namespace SeparatistCrisis.PatchTools
         {
             new OnNewGameCreatedPatch(),
             new OnNewGameCreatedPartialFollowUpPatch(),
-            // new InitializeSandboxXMLsPatch()
+            new InitializeSandboxXMLsPatch(),
+            new OpenCustomBattleMissionPatch(),
+            new GetGameKeyCategoriesListPatch()
         };
 
         // REGISTER ALL ACTIVE HARMONY PATCH CLASSES TO USE OnGameStart HERE:

@@ -860,6 +860,10 @@
 		text="Placeholder" />
 
 		<!--Royal House of Naboo-->
+	<Hero
+		id="jamillia"
+		faction="Faction.naboo"
+		text="Placeholder" />
 
 	<Hero
 		id="jamillia"

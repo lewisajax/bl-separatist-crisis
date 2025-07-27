@@ -8,16 +8,7 @@
 
     <!-- Deletes all the native clans except for the ids listed below, so it's pretty much left with the royal factions -->
     
-    <xsl:template match="Faction[
-        @id='player_faction' or
-        @id='clan_empire_north_1' or
-        @id='clan_empire_west_1' or
-        @id='clan_empire_south_1' or
-        @id='clan_sturgia_1' or
-        @id='clan_aserai_1' or
-        @id='clan_vlandia_1' or
-        @id='clan_battania_1' or
-        @id='clan_khuzait_1']">
+    <xsl:template match="Faction[@id='player_faction']">
         <xsl:copy-of select="." />
     </xsl:template>
 

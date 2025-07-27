@@ -4870,6 +4870,38 @@
 	</NPCCharacter>
 
 		<!--Royal House of Naboo-->
+	<NPCCharacter
+		id="jamillia"
+		default_group="Cavalry"
+		age="50"
+		voice="earnest"
+		is_hero="true"
+		culture="Culture.naboo"
+		occupation="Lord"
+		name="Jamillia Jamillia"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait id="Commander" value="6" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.vlandia_sword_2_t3" />
+				<equipment slot="Item1" id="Item.fortified_kite_shield" />
+				<equipment slot="Head" id="Item.pointed_skullcap_over_cloth_headwrap" />
+				<equipment slot="Body" id="Item.imperial_lamellar_over_leather" />
+				<equipment slot="Cape" id="Item.wrapped_scarf" />
+				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
+			</EquipmentRoster>
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<equipment  slot="Horse" id="Item.noble_horse" />
+			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
+		</Equipments>
+	</NPCCharacter>
 
 	<NPCCharacter
 		id="jamillia"
@@ -5539,7 +5571,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.wookie"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Grakchawwaa"
 		face_mesh_cache="true">
@@ -5572,7 +5604,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.wookie"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Attimun"
 		face_mesh_cache="true">
@@ -5605,7 +5637,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.wookie"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Chewbacca"
 		face_mesh_cache="true">
@@ -5638,7 +5670,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.wookie"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Attichitcuk"
 		face_mesh_cache="true">
@@ -5671,7 +5703,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.wookie"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Mallatobuck"
 		face_mesh_cache="true">
@@ -5704,7 +5736,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.wookie"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Eugroothwa"
 		face_mesh_cache="true">
@@ -5737,7 +5769,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.wookie"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Grabow"
 		face_mesh_cache="true">
@@ -5770,7 +5802,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.wookie"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Alrrark"
 		face_mesh_cache="true">
@@ -5803,7 +5835,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.wookie"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Guania"
 		face_mesh_cache="true">
@@ -5836,7 +5868,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.wookie"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Guanta"
 		face_mesh_cache="true">
@@ -5869,7 +5901,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.wookie"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Gumbaeki"
 		face_mesh_cache="true">
@@ -5902,7 +5934,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.wookie"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Lachichuk"
 		face_mesh_cache="true">
@@ -5935,7 +5967,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.wookie"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Tarfful"
 		face_mesh_cache="true">
@@ -5968,7 +6000,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.wookie"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Merumeru"
 		face_mesh_cache="true">
@@ -6001,7 +6033,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.wookie"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Clausito"
 		face_mesh_cache="true">
@@ -6036,7 +6068,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.chiss"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Mitth'ras'safis"
 		face_mesh_cache="true">
@@ -6069,7 +6101,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.chiss"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Mitth'raw'nuruodo"
 		face_mesh_cache="true">
@@ -6102,7 +6134,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.chiss"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Mitth'oor'akiord"
 		face_mesh_cache="true">
@@ -6135,7 +6167,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.chiss"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Cohbo'rik'ardok"
 		face_mesh_cache="true">
@@ -6168,7 +6200,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.chiss"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Irizi'ar'alani"
 		face_mesh_cache="true">
@@ -6201,7 +6233,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.chiss"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Dy'lothe"
 		face_mesh_cache="true">
@@ -6234,7 +6266,7 @@
 		age="50"
 		voice="earnest"
 		is_hero="true"
-		culture="Culture.chiss"
+		culture="Culture.galactic_republic"
 		occupation="Lord"
 		name="Tumaz'mor'diamir"
 		face_mesh_cache="true">

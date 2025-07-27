@@ -9,10 +9,10 @@ namespace SeparatistCrisis.Patches
     public class ReplaceCharacterCreation
     {
         [HarmonyPrefix]
-        [HarmonyPatch(typeof(SandBoxGameManager), "LaunchSandboxCharacterCreation")]
+        [HarmonyPatch(typeof(SandBoxGameManager), "LaunchSandboxCharacterCreation")
         private static bool LaunchSandboxCharacterCreation()
         {
-            Game.Current.GameStateManager.CleanAndPushState((GameState) Game.Current.GameStateManager.CreateState<CharacterCreationState>((object) new SCCharacterCreationContent()));
+            Game.Current.GameStateManager.CleanAndPushState((GameState)Game.Current.GameStateManager.CreateState<CharacterCreationState>((object)new SCCharacterCreationContent()));
             return false;
         }
     }*/

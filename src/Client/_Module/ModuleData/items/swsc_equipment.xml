@@ -237,61 +237,61 @@
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_helmet_t2" name="Death Watch Tier 2 Helmet" mesh="dw_helmet_t2" culture="Culture.mandalorians" weight="3.2" appearance="1" Type="HeadArmor">
+	<Item id="dw_helmet_t2" name="Death Watch Tier 2 Helmet" mesh="dw_helmet_t2" culture="Culture.new_mandalorians" weight="3.2" appearance="1" Type="HeadArmor">
 		<ItemComponent>
 			<Armor head_armor="28" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_helmet_t3" name="Death Watch Tier 3 Helmet" mesh="dw_helmet_t3" culture="Culture.mandalorians" weight="3.4" appearance="1" Type="HeadArmor">
+	<Item id="dw_helmet_t3" name="Death Watch Tier 3 Helmet" mesh="dw_helmet_t3" culture="Culture.new_mandalorians" weight="3.4" appearance="1" Type="HeadArmor">
 		<ItemComponent>
 			<Armor head_armor="30" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_helmet_t4" name="Death Watch Tier 4 Helmet" mesh="dw_helmet_t4" culture="Culture.mandalorians" weight="3.6" appearance="1" Type="HeadArmor">
+	<Item id="dw_helmet_t4" name="Death Watch Tier 4 Helmet" mesh="dw_helmet_t4" culture="Culture.new_mandalorians" weight="3.6" appearance="1" Type="HeadArmor">
 		<ItemComponent>
 			<Armor head_armor="32" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_helmet_t5" name="Death Watch Tier 5 Helmet" mesh="dw_helmet_t5" culture="Culture.mandalorians" weight="3.8" appearance="1" Type="HeadArmor">
+	<Item id="dw_helmet_t5" name="Death Watch Tier 5 Helmet" mesh="dw_helmet_t5" culture="Culture.new_mandalorians" weight="3.8" appearance="1" Type="HeadArmor">
 		<ItemComponent>
 			<Armor head_armor="34" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_helmet_t6" name="Death Watch Tier 6 Helmet" mesh="dw_helmet_t6" culture="Culture.mandalorians" weight="4.0" appearance="1" Type="HeadArmor">
+	<Item id="dw_helmet_t6" name="Death Watch Tier 6 Helmet" mesh="dw_helmet_t6" culture="Culture.new_mandalorians" weight="4.0" appearance="1" Type="HeadArmor">
 		<ItemComponent>
 			<Armor head_armor="36" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="neo_crusader_helmet_recruit" name="Neo-Crusader Recruit Helmet" mesh="neo_crusader_helmet_recruit" culture="Culture.mandalorians" weight="3.2" appearance="1" Type="HeadArmor" is_merchandise="true">
+	<Item id="neo_crusader_helmet_recruit" name="Neo-Crusader Recruit Helmet" mesh="neo_crusader_helmet_recruit" culture="Culture.new_mandalorians" weight="3.2" appearance="1" Type="HeadArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor head_armor="42" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="neo_crusader_helmet_rally_master" name="Neo-Crusader Rally Master Helmet" mesh="neo_crusader_helmet_rally_master" culture="Culture.mandalorians" weight="3.2" appearance="1" Type="HeadArmor" is_merchandise="true">
+	<Item id="neo_crusader_helmet_rally_master" name="Neo-Crusader Rally Master Helmet" mesh="neo_crusader_helmet_rally_master" culture="Culture.new_mandalorians" weight="3.2" appearance="1" Type="HeadArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor head_armor="42" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="neo_crusader_helmet_field_marshal" name="Neo-Crusader Field Marshal Helmet" mesh="neo_crusader_helmet_field_marshal" culture="Culture.mandalorians" weight="3.2" appearance="1" Type="HeadArmor" is_merchandise="true">
+	<Item id="neo_crusader_helmet_field_marshal" name="Neo-Crusader Field Marshal Helmet" mesh="neo_crusader_helmet_field_marshal" culture="Culture.new_mandalorians" weight="3.2" appearance="1" Type="HeadArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor head_armor="42" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="mandalore_ultimate_helmet" name="Mandalore the Ultimate's Mask" mesh="mandalore_ultimate_helmet" culture="Culture.mandalorians" weight="2.1" appearance="1" Type="HeadArmor" is_merchandise="false">
+	<Item id="mandalore_ultimate_helmet" name="Mandalore the Ultimate's Mask" mesh="mandalore_ultimate_helmet" culture="Culture.new_mandalorians" weight="2.1" appearance="1" Type="HeadArmor" is_merchandise="false">
 		<ItemComponent>
 			<Armor head_armor="58" covers_head = "false" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="b1_droid_head_new" name="B1 Battle Droid Factory New Head" mesh="b1_droid_head_new" culture="Culture.mandalorians" weight="2.1" appearance="1" Type="HeadArmor" is_merchandise="false">
+	<Item id="b1_droid_head_new" name="B1 Battle Droid Factory New Head" mesh="b1_droid_head_new" culture="Culture.new_mandalorians" weight="2.1" appearance="1" Type="HeadArmor" is_merchandise="false">
 		<ItemComponent>
 			<Armor head_armor="58" covers_head = "true" hair_cover_type ="all" beard_cover_type="all" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
@@ -529,73 +529,73 @@
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="dw_armor_t1" name="Death Watch Tier 1 Armor" mesh="dw_armor_t1" culture="Culture.mandalorians" weight="6" appearance="1" Type="BodyArmor">
+	<Item id="dw_armor_t1" name="Death Watch Tier 1 Armor" mesh="dw_armor_t1" culture="Culture.new_mandalorians" weight="6" appearance="1" Type="BodyArmor">
 		<ItemComponent>
 			<Armor body_armor="20" leg_armor="5" arm_armor="2" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="cloth" material_type="Cloth"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="dw_armor_t2" name="Death Watch Tier 2 Armor" mesh="dw_armor_t2" culture="Culture.mandalorians" weight="11" appearance="1" Type="BodyArmor">
+	<Item id="dw_armor_t2" name="Death Watch Tier 2 Armor" mesh="dw_armor_t2" culture="Culture.new_mandalorians" weight="11" appearance="1" Type="BodyArmor">
 		<ItemComponent>
 			<Armor body_armor="22" leg_armor="7" arm_armor="4" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>	
-	<Item id="dw_armor_t3" name="Death Watch Tier 3 Armor" mesh="dw_armor_t3" culture="Culture.mandalorians" weight="12" appearance="1" Type="BodyArmor">
+	<Item id="dw_armor_t3" name="Death Watch Tier 3 Armor" mesh="dw_armor_t3" culture="Culture.new_mandalorians" weight="12" appearance="1" Type="BodyArmor">
 		<ItemComponent>
 			<Armor body_armor="24" leg_armor="9" arm_armor="6" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_armor_t4" name="Death Watch Tier 4 Armor" mesh="dw_armor_t4" culture="Culture.mandalorians" weight="13" appearance="1" Type="BodyArmor">
+	<Item id="dw_armor_t4" name="Death Watch Tier 4 Armor" mesh="dw_armor_t4" culture="Culture.new_mandalorians" weight="13" appearance="1" Type="BodyArmor">
 		<ItemComponent>
 			<Armor body_armor="26" leg_armor="11" arm_armor="8" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_armor_t5" name="Death Watch Tier 5 Armor" mesh="dw_armor_t5" culture="Culture.mandalorians" weight="14" appearance="1" Type="BodyArmor">
+	<Item id="dw_armor_t5" name="Death Watch Tier 5 Armor" mesh="dw_armor_t5" culture="Culture.new_mandalorians" weight="14" appearance="1" Type="BodyArmor">
 		<ItemComponent>
 			<Armor body_armor="28" leg_armor="13" arm_armor="10" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_armor_t5" name="Death Watch Tier 5 Armor" mesh="dw_armor_t5" culture="Culture.mandalorians" weight="15" appearance="1" Type="BodyArmor">
+	<Item id="dw_armor_t5" name="Death Watch Tier 5 Armor" mesh="dw_armor_t5" culture="Culture.new_mandalorians" weight="15" appearance="1" Type="BodyArmor">
 		<ItemComponent>
 			<Armor body_armor="30" leg_armor="15" arm_armor="12" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_armor_t6" name="Death Watch Tier 6 Armor" mesh="dw_armor_t6" culture="Culture.mandalorians" weight="16" appearance="1" Type="BodyArmor">
+	<Item id="dw_armor_t6" name="Death Watch Tier 6 Armor" mesh="dw_armor_t6" culture="Culture.new_mandalorians" weight="16" appearance="1" Type="BodyArmor">
 		<ItemComponent>
 			<Armor body_armor="32" leg_armor="17" arm_armor="14" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="neo_crusader_armor_recruit" name="Neo-Crusader Recruit Armor" mesh="neo_crusader_armor_recruit" culture="Culture.mandalorians" weight="24.4" appearance="1" Type="BodyArmor" is_merchandise="true">
+	<Item id="neo_crusader_armor_recruit" name="Neo-Crusader Recruit Armor" mesh="neo_crusader_armor_recruit" culture="Culture.new_mandalorians" weight="24.4" appearance="1" Type="BodyArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor body_armor="50" leg_armor="25" arm_armor="15" covers_body="true" covers_hands="false" covers_legs="false" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="neo_crusader_armor_rally_master" name="Neo-Crusader Rally Master Armor" mesh="neo_crusader_armor_rally_master" culture="Culture.mandalorians" weight="24.4" appearance="1" Type="BodyArmor" is_merchandise="true">
+	<Item id="neo_crusader_armor_rally_master" name="Neo-Crusader Rally Master Armor" mesh="neo_crusader_armor_rally_master" culture="Culture.new_mandalorians" weight="24.4" appearance="1" Type="BodyArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor body_armor="50" leg_armor="25" arm_armor="15" covers_body="true" covers_hands="false" covers_legs="false" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="neo_crusader_armor_field_marshal" name="Neo-Crusader Field Marshal Armor" mesh="neo_crusader_armor_field_marshal" culture="Culture.mandalorians" weight="24.4" appearance="1" Type="BodyArmor" is_merchandise="true">
+	<Item id="neo_crusader_armor_field_marshal" name="Neo-Crusader Field Marshal Armor" mesh="neo_crusader_armor_field_marshal" culture="Culture.new_mandalorians" weight="24.4" appearance="1" Type="BodyArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor body_armor="50" leg_armor="25" arm_armor="15" covers_body="true" covers_hands="false" covers_legs="false" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="mandalore_ultimate_armor" name="Mandalore the Ultimate's Armor" mesh="mandalore_ultimate_armor" culture="Culture.mandalorians" weight="10" appearance="1" Type="BodyArmor" is_merchandise="false">
+	<Item id="mandalore_ultimate_armor" name="Mandalore the Ultimate's Armor" mesh="mandalore_ultimate_armor" culture="Culture.new_mandalorians" weight="10" appearance="1" Type="BodyArmor" is_merchandise="false">
 		<ItemComponent>
 			<Armor body_armor="60" leg_armor="35" arm_armor="25" covers_body="true" covers_hands="false" covers_legs="false" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="b1_droid_body_new" name="B1 Battle Droid Factory New Body" mesh="b1_droid_body_new" culture="Culture.mandalorians" weight="10" appearance="1" Type="BodyArmor" is_merchandise="false">
+	<Item id="b1_droid_body_new" name="B1 Battle Droid Factory New Body" mesh="b1_droid_body_new" culture="Culture.new_mandalorians" weight="10" appearance="1" Type="BodyArmor" is_merchandise="false">
 		<ItemComponent>
 			<Armor body_armor="60" leg_armor="35" arm_armor="25" covers_body="true" covers_hands="false" covers_legs="false" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
@@ -791,55 +791,55 @@
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_pauldrons_t3" name="Death Watch Tier 3 Pauldrons" mesh="dw_pauldrons_t3" culture="Culture.mandalorians" weight="4" appearance="1" Type="Cape">
+	<Item id="dw_pauldrons_t3" name="Death Watch Tier 3 Pauldrons" mesh="dw_pauldrons_t3" culture="Culture.new_mandalorians" weight="4" appearance="1" Type="Cape">
 		<ItemComponent>
 			<Armor body_armor="18" arm_armor="9" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_pauldrons_t4" name="Death Watch Tier 4 Pauldrons" mesh="dw_pauldrons_t4" culture="Culture.mandalorians" weight="4.2" appearance="1" Type="Cape">
+	<Item id="dw_pauldrons_t4" name="Death Watch Tier 4 Pauldrons" mesh="dw_pauldrons_t4" culture="Culture.new_mandalorians" weight="4.2" appearance="1" Type="Cape">
 		<ItemComponent>
 			<Armor body_armor="20" arm_armor="11" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_pauldrons_t5" name="Death Watch Tier 5 Pauldrons" mesh="dw_pauldrons_t5" culture="Culture.mandalorians" weight="4.4" appearance="1" Type="Cape">
+	<Item id="dw_pauldrons_t5" name="Death Watch Tier 5 Pauldrons" mesh="dw_pauldrons_t5" culture="Culture.new_mandalorians" weight="4.4" appearance="1" Type="Cape">
 		<ItemComponent>
 			<Armor body_armor="22" arm_armor="13" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_pauldrons_t6" name="Death Watch Tier 6 Pauldrons" mesh="dw_pauldrons_t6" culture="Culture.mandalorians" weight="4.6" appearance="1" Type="Cape">
+	<Item id="dw_pauldrons_t6" name="Death Watch Tier 6 Pauldrons" mesh="dw_pauldrons_t6" culture="Culture.new_mandalorians" weight="4.6" appearance="1" Type="Cape">
 		<ItemComponent>
 			<Armor body_armor="24" arm_armor="15" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="neo_crusader_pauldrons_recruit" name="Neo-Crusader Recruit Pauldrons" mesh="neo_crusader_pauldrons_recruit" culture="Culture.mandalorians" weight="4.3" appearance="1" Type="Cape" is_merchandise="true">
+	<Item id="neo_crusader_pauldrons_recruit" name="Neo-Crusader Recruit Pauldrons" mesh="neo_crusader_pauldrons_recruit" culture="Culture.new_mandalorians" weight="4.3" appearance="1" Type="Cape" is_merchandise="true">
 		<ItemComponent>
 			<Armor body_armor="14" arm_armor="8" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="neo_crusader_pauldrons_rally_master" name="Neo-Crusader Rally Master Pauldrons" mesh="neo_crusader_pauldrons_rally_master" culture="Culture.mandalorians" weight="4.3" appearance="1" Type="Cape" is_merchandise="true">
+	<Item id="neo_crusader_pauldrons_rally_master" name="Neo-Crusader Rally Master Pauldrons" mesh="neo_crusader_pauldrons_rally_master" culture="Culture.new_mandalorians" weight="4.3" appearance="1" Type="Cape" is_merchandise="true">
 		<ItemComponent>
 			<Armor body_armor="14" arm_armor="8" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="neo_crusader_pauldrons_field_marshal" name="Neo-Crusader Field Marshal Pauldrons" mesh="neo_crusader_pauldrons_field_marshal" culture="Culture.mandalorians" weight="4.3" appearance="1" Type="Cape" is_merchandise="true">
+	<Item id="neo_crusader_pauldrons_field_marshal" name="Neo-Crusader Field Marshal Pauldrons" mesh="neo_crusader_pauldrons_field_marshal" culture="Culture.new_mandalorians" weight="4.3" appearance="1" Type="Cape" is_merchandise="true">
 		<ItemComponent>
 			<Armor body_armor="14" arm_armor="8" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="mandalore_ultimate_pauldrons" name="Mandalore the Ultimate's Pauldrons" mesh="mandalore_ultimate_pauldrons" culture="Culture.mandalorians" weight="2.2" appearance="1" Type="Cape" is_merchandise="false">
+	<Item id="mandalore_ultimate_pauldrons" name="Mandalore the Ultimate's Pauldrons" mesh="mandalore_ultimate_pauldrons" culture="Culture.new_mandalorians" weight="2.2" appearance="1" Type="Cape" is_merchandise="false">
 		<ItemComponent>
 			<Armor body_armor="32" arm_armor="18" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="b1_droid_backpack_new" name="B1 Battle Droid Factory New Backpack" mesh="b1_droid_backpack_new" culture="Culture.mandalorians" weight="2.2" appearance="1" Type="Cape" is_merchandise="false">
+	<Item id="b1_droid_backpack_new" name="B1 Battle Droid Factory New Backpack" mesh="b1_droid_backpack_new" culture="Culture.new_mandalorians" weight="2.2" appearance="1" Type="Cape" is_merchandise="false">
 		<ItemComponent>
 			<Armor body_armor="32" arm_armor="18" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
@@ -1035,61 +1035,61 @@
 		</ItemComponent>
 		<Flags Civilian="true"/>
 	</Item>
-	<Item id="dw_gauntlets_t2" name="Death Watch Tier 2 Gauntlets" mesh="dw_gauntlets_t2" culture="Culture.mandalorians" weight="3.2" appearance="1" Type="HandArmor" is_merchandise="true">
+	<Item id="dw_gauntlets_t2" name="Death Watch Tier 2 Gauntlets" mesh="dw_gauntlets_t2" culture="Culture.new_mandalorians" weight="3.2" appearance="1" Type="HandArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor arm_armor="12" covers_hands="true" modifier_group="plate" material_type="Plate"/>
 		</ItemComponent>
 		<Flags Civilian="true"/>
 	</Item>
-	<Item id="dw_gauntlets_t3" name="Death Watch Tier 3 Gauntlets" mesh="dw_gauntlets_t3" culture="Culture.mandalorians" weight="3.4" appearance="1" Type="HandArmor" is_merchandise="true">
+	<Item id="dw_gauntlets_t3" name="Death Watch Tier 3 Gauntlets" mesh="dw_gauntlets_t3" culture="Culture.new_mandalorians" weight="3.4" appearance="1" Type="HandArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor arm_armor="14" covers_hands="true" modifier_group="plate" material_type="Plate"/>
 		</ItemComponent>
 		<Flags Civilian="true"/>
 	</Item>
-	<Item id="dw_gauntlets_t4" name="Death Watch Tier 4 Gauntlets" mesh="dw_gauntlets_t4" culture="Culture.mandalorians" weight="3.6" appearance="1" Type="HandArmor" is_merchandise="true">
+	<Item id="dw_gauntlets_t4" name="Death Watch Tier 4 Gauntlets" mesh="dw_gauntlets_t4" culture="Culture.new_mandalorians" weight="3.6" appearance="1" Type="HandArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor arm_armor="16" covers_hands="true" modifier_group="plate" material_type="Plate"/>
 		</ItemComponent>
 		<Flags Civilian="true"/>
 	</Item>
-	<Item id="dw_gauntlets_t5" name="Death Watch Tier 5 Gauntlets" mesh="dw_gauntlets_t5" culture="Culture.mandalorians" weight="3.8" appearance="1" Type="HandArmor" is_merchandise="true">
+	<Item id="dw_gauntlets_t5" name="Death Watch Tier 5 Gauntlets" mesh="dw_gauntlets_t5" culture="Culture.new_mandalorians" weight="3.8" appearance="1" Type="HandArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor arm_armor="18" covers_hands="true" modifier_group="plate" material_type="Plate"/>
 		</ItemComponent>
 		<Flags Civilian="true"/>
 	</Item>
-	<Item id="dw_gauntlets_t6" name="Death Watch Tier 6 Gauntlets" mesh="dw_gauntlets_t6" culture="Culture.mandalorians" weight="4" appearance="1" Type="HandArmor" is_merchandise="true">
+	<Item id="dw_gauntlets_t6" name="Death Watch Tier 6 Gauntlets" mesh="dw_gauntlets_t6" culture="Culture.new_mandalorians" weight="4" appearance="1" Type="HandArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor arm_armor="20" covers_hands="true" modifier_group="plate" material_type="Plate"/>
 		</ItemComponent>
 		<Flags Civilian="true"/>
 	</Item>
-	<Item id="neo_crusader_gauntlets_recruit" name="Neo-Crusader Recruit Gauntlets" mesh="neo_crusader_gauntlets_recruit" culture="Culture.mandalorians" weight="6.8" appearance="1" Type="HandArmor" is_merchandise="true">
+	<Item id="neo_crusader_gauntlets_recruit" name="Neo-Crusader Recruit Gauntlets" mesh="neo_crusader_gauntlets_recruit" culture="Culture.new_mandalorians" weight="6.8" appearance="1" Type="HandArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor arm_armor="26" covers_hands="true" modifier_group="plate" material_type="Plate"/>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"/>
 	</Item>
-	<Item id="neo_crusader_gauntlets_rally_master" name="Neo-Crusader Rally Master Gauntlets" mesh="neo_crusader_gauntlets_rally_master" culture="Culture.mandalorians" weight="6.8" appearance="1" Type="HandArmor" is_merchandise="true">
+	<Item id="neo_crusader_gauntlets_rally_master" name="Neo-Crusader Rally Master Gauntlets" mesh="neo_crusader_gauntlets_rally_master" culture="Culture.new_mandalorians" weight="6.8" appearance="1" Type="HandArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor arm_armor="26" covers_hands="true" modifier_group="plate" material_type="Plate"/>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"/>
 	</Item>
-	<Item id="neo_crusader_gauntlets_field_marshal" name="Neo-Crusader Field Marshal Gauntlets" mesh="neo_crusader_gauntlets_field_marshal" culture="Culture.mandalorians" weight="6.8" appearance="1" Type="HandArmor" is_merchandise="true">
+	<Item id="neo_crusader_gauntlets_field_marshal" name="Neo-Crusader Field Marshal Gauntlets" mesh="neo_crusader_gauntlets_field_marshal" culture="Culture.new_mandalorians" weight="6.8" appearance="1" Type="HandArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor arm_armor="26" covers_hands="true" modifier_group="plate" material_type="Plate"/>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"/>
 	</Item>
-	<Item id="mandalore_ultimate_gauntlets" name="Mandalore the Ultimate's Gauntlets" mesh="mandalore_ultimate_gauntlets" culture="Culture.mandalorians" weight="2.2" appearance="1" Type="HandArmor" is_merchandise="false">
+	<Item id="mandalore_ultimate_gauntlets" name="Mandalore the Ultimate's Gauntlets" mesh="mandalore_ultimate_gauntlets" culture="Culture.new_mandalorians" weight="2.2" appearance="1" Type="HandArmor" is_merchandise="false">
 		<ItemComponent>
 			<Armor arm_armor="38" covers_hands="true" modifier_group="plate" material_type="Plate"/>
 		</ItemComponent>
 		<Flags Civilian="true"/>
 	</Item>
-	<Item id="b1_droid_hands_new" name="B1 Battle Droid Factory New Hands" mesh="b1_droid_hands_new" culture="Culture.mandalorians" weight="2.2" appearance="1" Type="HandArmor" is_merchandise="false">
+	<Item id="b1_droid_hands_new" name="B1 Battle Droid Factory New Hands" mesh="b1_droid_hands_new" culture="Culture.new_mandalorians" weight="2.2" appearance="1" Type="HandArmor" is_merchandise="false">
 		<ItemComponent>
 			<Armor arm_armor="38" covers_hands="true" modifier_group="plate" material_type="Plate"/>
 		</ItemComponent>
@@ -1273,67 +1273,67 @@
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_boots_t1" name="Death Watch Tier 1 Boots" mesh="dw_boots_t1" culture="Culture.mandalorians" weight="2.2" appearance="1" Type="LegArmor">
+	<Item id="dw_boots_t1" name="Death Watch Tier 1 Boots" mesh="dw_boots_t1" culture="Culture.new_mandalorians" weight="2.2" appearance="1" Type="LegArmor">
 		<ItemComponent>
 			<Armor leg_armor="18" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_boots_t2" name="Death Watch Tier 2 Boots" mesh="dw_boots_t2" culture="Culture.mandalorians" weight="2.4" appearance="1" Type="LegArmor">
+	<Item id="dw_boots_t2" name="Death Watch Tier 2 Boots" mesh="dw_boots_t2" culture="Culture.new_mandalorians" weight="2.4" appearance="1" Type="LegArmor">
 		<ItemComponent>
 			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_boots_t3" name="Death Watch Tier 3 Boots" mesh="dw_boots_t3" culture="Culture.mandalorians" weight="2.6" appearance="1" Type="LegArmor">
+	<Item id="dw_boots_t3" name="Death Watch Tier 3 Boots" mesh="dw_boots_t3" culture="Culture.new_mandalorians" weight="2.6" appearance="1" Type="LegArmor">
 		<ItemComponent>
 			<Armor leg_armor="22" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_boots_t4" name="Death Watch Tier 4 Boots" mesh="dw_boots_t4" culture="Culture.mandalorians" weight="2.8" appearance="1" Type="LegArmor">
+	<Item id="dw_boots_t4" name="Death Watch Tier 4 Boots" mesh="dw_boots_t4" culture="Culture.new_mandalorians" weight="2.8" appearance="1" Type="LegArmor">
 		<ItemComponent>
 			<Armor leg_armor="24" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_boots_t5" name="Death Watch Tier 5 Boots" mesh="dw_boots_t5" culture="Culture.mandalorians" weight="3" appearance="1" Type="LegArmor">
+	<Item id="dw_boots_t5" name="Death Watch Tier 5 Boots" mesh="dw_boots_t5" culture="Culture.new_mandalorians" weight="3" appearance="1" Type="LegArmor">
 		<ItemComponent>
 			<Armor leg_armor="26" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_boots_t6" name="Death Watch Tier 6 Boots" mesh="dw_boots_t6" culture="Culture.mandalorians" weight="3.2" appearance="1" Type="LegArmor">
+	<Item id="dw_boots_t6" name="Death Watch Tier 6 Boots" mesh="dw_boots_t6" culture="Culture.new_mandalorians" weight="3.2" appearance="1" Type="LegArmor">
 		<ItemComponent>
 			<Armor leg_armor="28" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="neo_crusader_boots_recruit" name="Neo-Crusader Recruit Boots" mesh="neo_crusader_boots_recruit" culture="Culture.mandalorians" weight="3.3" appearance="1" Type="LegArmor" is_merchandise="true">
+	<Item id="neo_crusader_boots_recruit" name="Neo-Crusader Recruit Boots" mesh="neo_crusader_boots_recruit" culture="Culture.new_mandalorians" weight="3.3" appearance="1" Type="LegArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor leg_armor="24" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="neo_crusader_boots_rally_master" name="Neo-Crusader Rally Master Boots" mesh="neo_crusader_boots_rally_master" culture="Culture.mandalorians" weight="3.3" appearance="1" Type="LegArmor" is_merchandise="true">
+	<Item id="neo_crusader_boots_rally_master" name="Neo-Crusader Rally Master Boots" mesh="neo_crusader_boots_rally_master" culture="Culture.new_mandalorians" weight="3.3" appearance="1" Type="LegArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor leg_armor="24" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="neo_crusader_boots_field_marshal" name="Neo-Crusader Field Marshal Boots" mesh="neo_crusader_boots_field_marshal" culture="Culture.mandalorians" weight="3.3" appearance="1" Type="LegArmor" is_merchandise="true">
+	<Item id="neo_crusader_boots_field_marshal" name="Neo-Crusader Field Marshal Boots" mesh="neo_crusader_boots_field_marshal" culture="Culture.new_mandalorians" weight="3.3" appearance="1" Type="LegArmor" is_merchandise="true">
 		<ItemComponent>
 			<Armor leg_armor="24" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="mandalore_ultimate_boots" name="Mandalore the Ultimate's Boots" mesh="mandalore_ultimate_boots" culture="Culture.mandalorians" weight="1.8" appearance="1" Type="LegArmor" is_merchandise="false">
+	<Item id="mandalore_ultimate_boots" name="Mandalore the Ultimate's Boots" mesh="mandalore_ultimate_boots" culture="Culture.new_mandalorians" weight="1.8" appearance="1" Type="LegArmor" is_merchandise="false">
 		<ItemComponent>
 			<Armor leg_armor="38" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="b1_droid_feet_new" name="B1 Battle Droid Factory New Feet" mesh="b1_droid_feet_new" culture="Culture.mandalorians" weight="1.8" appearance="1" Type="LegArmor" is_merchandise="false">
+	<Item id="b1_droid_feet_new" name="B1 Battle Droid Factory New Feet" mesh="b1_droid_feet_new" culture="Culture.new_mandalorians" weight="1.8" appearance="1" Type="LegArmor" is_merchandise="false">
 		<ItemComponent>
 			<Armor leg_armor="38" covers_legs="true" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>

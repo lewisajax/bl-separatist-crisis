@@ -11,6 +11,17 @@ using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 using SeparatistCrisis.Missions;
+using SeparatistCrisis.Behaviors;
+using SandBox;
+using SeparatistCrisis.Extensions;
+using SeparatistCrisis.ObjectTypes;
+using TaleWorlds.ObjectSystem;
+using System.Collections.Generic;
+using TaleWorlds.Engine.InputSystem;
+using TaleWorlds.InputSystem;
+using TaleWorlds.MountAndBlade.GameKeyCategory;
+using SeparatistCrisis.InputSystem;
+using SeparatistCrisis.MissionManagers;
 using SeparatistCrisis.ObjectTypes;
 using TaleWorlds.ObjectSystem;
 using SandBox.Objects;
@@ -37,13 +48,14 @@ namespace SeparatistCrisis
         protected override void OnSubModuleLoad()
         {
             base.OnSubModuleLoad();
-            Instance = this;
+            SubModule.Instance = this;
+            PatchManager.ApplyMainPatches(MainHarmonyDomain);
 
             var extender = UIExtender.Create(Name);
             extender.Register(typeof(SubModule).Assembly);
             extender.Enable();
 
-            PatchManager.ApplyMainPatches(MainHarmonyDomain);
+            this.InitializeHotKeyManager(true);
         }
 
         protected override void OnSubModuleUnloaded()
@@ -56,7 +68,7 @@ namespace SeparatistCrisis
             base.OnMissionBehaviorInitialize(mission);
 
             if (mission != null)
-                mission.AddMissionBehavior(new LogicForceAtmosphereMission());
+                mission.AddMissionBehavior(new ForceAtmosphereLogic());
         }
 
         protected override void OnBeforeInitialModuleScreenSetAsRoot()
@@ -68,6 +80,16 @@ namespace SeparatistCrisis
                 _hasLoaded = true;
 
                 InformationManager.DisplayMessage(new InformationMessage(new TextObject($"{{=hPERH3u4}}Loaded {{NAME}}").SetTextVariable("NAME", DisplayName).ToString(), StdTextColor));
+            }
+        }
+
+        public override void OnGameInitializationFinished(Game game)
+        {
+            // We override SandBoxSubModule's CampaignMissionManager assignment since our mod loads after SandBox
+            Campaign campaign = game.GameType as Campaign;
+            if (campaign != null)
+            {
+                campaign.CampaignMissionManager = new SCCampaignMissionManager();
             }
         }
 
@@ -95,6 +117,18 @@ namespace SeparatistCrisis
             MBObjectManager.Instance.LoadXML("SettlementGroups", false);
         }
 
+        public override void BeginGameStart(Game game)
+        {
+            if (game.GameType.GetType() == typeof(Campaign))
+            {
+                if (game.ObjectManager != null)
+                {
+                    game.ObjectManager.RegisterType<RangedWeaponOptions>("RangedWeaponOptions", "RangedWeaponOptionSets", 100U, true);
+                    MBObjectManager.Instance.LoadXML("RangedWeaponOptionSets", false);
+                }
+            }
+        }
+
         private T? GetGameModel<T>(IGameStarter gameStarterObject) where T : GameModel
         {
             var models = gameStarterObject.Models.ToArray();
@@ -105,6 +139,16 @@ namespace SeparatistCrisis
                     return gameModel1;
             }
             return default;
+        }
+
+        private void InitializeHotKeyManager(bool loadKeys)
+        {
+            Dictionary<string, GameKeyContext>.ValueCollection prevContexts = HotKeyManager.GetAllCategories();
+            List<GameKeyContext> newContexts = prevContexts.ToList();
+
+            newContexts.Add(new SCGameKeyContext());
+
+            HotKeyManager.RegisterInitialContexts(newContexts, loadKeys);
         }
 
         public override void OnGameEnd(Game game)

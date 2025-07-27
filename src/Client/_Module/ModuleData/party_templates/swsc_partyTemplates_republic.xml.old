@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You can add new or override old party templates by adding nodes to this xml. For examples please refer to: SandBox/ModuleData/partyTemplates.xml.-->
+<partyTemplates>
+	<!--Villagers Templates-->
+	<MBPartyTemplate id="republic_villager_template" >
+		<stacks>
+			<PartyTemplateStack min_value="15" max_value="30" troop="NPCCharacter.republic_villager" />
+		</stacks>
+	</MBPartyTemplate>
+	<!--Caravan Templates-->
+	<MBPartyTemplate id="republic_caravan_template" >
+		<stacks>
+			<PartyTemplateStack  min_value="8" max_value="8" troop="NPCCharacter.republic_armed_trader" />
+			<PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.republic_caravan_guard" />
+			<PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.republic_veteran_caravan_guard" />
+		</stacks>
+	</MBPartyTemplate>
+	<!--Elite Caravan Templates-->
+	<MBPartyTemplate id="republic_elite_caravan_template" >
+		<stacks>
+			<PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.republic_armed_trader" />
+			<PartyTemplateStack min_value="7" max_value="7" troop="NPCCharacter.republic_caravan_guard" />
+			<PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.republic_veteran_caravan_guard" />
+			<PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.republic_caravan_master" />
+		</stacks>
+	</MBPartyTemplate>
+	<!--Militia Templates-->
+	<MBPartyTemplate id="republic_militia_template" >
+		<stacks>
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.republic_melee_militia" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.republic_ranged_militia" />
+		</stacks>
+	</MBPartyTemplate>
+	<!--Rebel Templates-->
+	<MBPartyTemplate id="republic_rebels_template" >
+		<stacks>
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.republic_clone_cadet" />
+		</stacks>
+	</MBPartyTemplate>
+    <!-- Vassal Reward Troops-->
+	<MBPartyTemplate id="republic_vassal_reward_troops" >
+		<stacks>
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.republic_commando_major" />
+			<PartyTemplateStack min_value="5" max_value="5" troop="NPCCharacter.republic_shadow_trooper" />
+		</stacks>
+	</MBPartyTemplate>
+	<!--Lord Party Templates-->
+	<MBPartyTemplate id="republic_kingdom_hero_party_template" >
+		<stacks>
+			<PartyTemplateStack min_value="16" max_value="16" troop="NPCCharacter.republic_clone_cadet" />
+			<PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.republic_clone_shock_trooper" />
+			<PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.republic_clone_trooper" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.republic_clone_shock_corporal" />
+			<PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.republic_clone_corporal" />
+			<PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.republic_clone_sniper" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.republic_clone_vanguard_sergeant" />
+			<PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.republic_clone_sergeant" />
+			<PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.republic_clone_marksman" />
+			<PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.republic_clone_shock_sergeant_major" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.republic_clone_vanguard_sergeant_major" />
+			<PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.republic_clone_sergeant_major" />
+			<PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.republic_veteran_marksman" />
+		</stacks>
+	</MBPartyTemplate>
+	<!--Minor Faction Party Template-->
+    <MBPartyTemplate id="republic_kingdom_hero_party_mercenary_template" >
+        <stacks>
+        <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.republic_second_lt" />
+        <PartyTemplateStack min_value="16" max_value="16" troop="NPCCharacter.republic_clone_cadet" />
+        </stacks>
+    </MBPartyTemplate>
+	<!--Outlaw Minor Faction Party Templates-->
+    <MBPartyTemplate id="republic_kingdom_hero_party_outlaw_template" >
+        <stacks>
+        <PartyTemplateStack min_value="16" max_value="16" troop="NPCCharacter.republic_clone_cadet" />
+        <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.republic_second_lt" />
+        </stacks>
+    </MBPartyTemplate>
+</partyTemplates>
