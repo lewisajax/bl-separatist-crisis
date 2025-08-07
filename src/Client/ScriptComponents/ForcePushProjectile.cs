@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using SeparatistCrisis.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace SeparatistCrisis.ScriptComponents
         private float _creationTime;
         private List<Agent>? _hitAgents;
 
-        public Agent? Agent { get; set; }
+        public AbilityAgent? AbilityAgent { get; set; }
 
         public static string Name { get; } = typeof(ForcePushProjectile).Name;
 
@@ -44,7 +45,7 @@ namespace SeparatistCrisis.ScriptComponents
             {
                 Agent agent = mblist[i];
 
-                if (this.Agent == agent)
+                if (this.AbilityAgent?.Agent == agent)
                     continue;
 
                 if (this._hitAgents == null)
@@ -70,9 +71,9 @@ namespace SeparatistCrisis.ScriptComponents
 
         public Blow? CreateBlow(Agent victim)
         {
-            if (this.Agent != null && victim != null) 
+            if (this.AbilityAgent?.Agent != null && victim != null) 
             {
-                Blow blow = new Blow(this.Agent.Index);
+                Blow blow = new Blow(this.AbilityAgent.Agent.Index);
 
                 blow.DamageType = DamageTypes.Blunt;
                 blow.BlowFlag |= BlowFlags.KnockDown;
@@ -98,7 +99,7 @@ namespace SeparatistCrisis.ScriptComponents
         {
             base.OnRemoved(removeReason);
             this._hitAgents = null;
-            this.Agent = null;
+            this.AbilityAgent = null;
         }
 
         protected override void OnInit()

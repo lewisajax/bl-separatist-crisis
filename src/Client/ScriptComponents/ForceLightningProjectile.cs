@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SeparatistCrisis.Entities;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +17,7 @@ namespace SeparatistCrisis.ScriptComponents
         private float _creationTime;
         private Dictionary<Agent, float>? _hitAgents;
 
-        public Agent? Agent { get; set; }
+        public AbilityAgent? AbilityAgent { get; set; }
 
         public static string Name { get; } = typeof(ForceLightningProjectile).Name;
 
@@ -52,13 +54,13 @@ namespace SeparatistCrisis.ScriptComponents
 
             MatrixFrame newFrame = this.GameEntity.GetGlobalFrame();
 
-            if (this.Agent != null)
+            if (this.AbilityAgent?.Agent != null)
             {
-                MatrixFrame globalFrame = this.Agent.AgentVisuals.GetGlobalFrame();
-                MatrixFrame boneEntitialFrameWithIndex = this.Agent.AgentVisuals.GetSkeleton().GetBoneEntitialFrameWithIndex(this.Agent.Monster.MainHandItemBoneIndex);
+                MatrixFrame globalFrame = this.AbilityAgent.Agent.AgentVisuals.GetGlobalFrame();
+                MatrixFrame boneEntitialFrameWithIndex = this.AbilityAgent.Agent.AgentVisuals.GetSkeleton().GetBoneEntitialFrameWithIndex(this.AbilityAgent.Agent.Monster.MainHandItemBoneIndex);
                 MatrixFrame matrixFrame = globalFrame.TransformToParent(boneEntitialFrameWithIndex);
 
-                this.GameEntity.SetGlobalFrame(new MatrixFrame(this.Agent.LookRotation, matrixFrame.origin));
+                this.GameEntity.SetGlobalFrame(new MatrixFrame(this.AbilityAgent.Agent.LookRotation, matrixFrame.origin));
                 this.GameEntity.UpdateGlobalBounds();
                 this.GameEntity.RecomputeBoundingBox();
             }
@@ -72,14 +74,25 @@ namespace SeparatistCrisis.ScriptComponents
             if (this._hitAgents == null)
                 this._hitAgents = new Dictionary<Agent, float>();
 
+            float currTime = Mission.Current.CurrentTime + dt;
+
+            foreach (Agent agent in this._hitAgents.Keys.ToArray()) 
+            {
+                if (this._hitAgents[agent] < currTime && !mblist.Contains(agent))
+                {
+                    agent.SetActionChannel(0, ActionIndexCache.act_none, true);
+                    this._hitAgents.Remove(agent);
+                }
+            }
+
             for (int i = 0; i < mblist.Count; i++)
             {
                 Agent agent = mblist[i];
 
-                if (this.Agent == agent)
+                if (this.AbilityAgent?.Agent == agent)
                     continue;
 
-                if (this._hitAgents.TryGetValue(agent, out float time) && time > Mission.Current.CurrentTime + dt)
+                if (this._hitAgents.TryGetValue(agent, out float hitTime) && hitTime > currTime)
                     continue;
 
                 Blow? blow = this.CreateBlow(agent);
@@ -91,10 +104,21 @@ namespace SeparatistCrisis.ScriptComponents
                     // AgentMovementLockedState
                     // agent.ClearTargetFrame()
 
-                    MBActionSet set = MBActionSet.GetActionSet("as_human_musician");
+                    MBActionSet set = MBActionSet.GetActionSet("as_human_hideout_bandit");
                     AnimationSystemData data = MonsterExtensions.FillAnimationSystemData(agent.Monster, set, agent.Character.GetStepSize(), false);
                     agent.SetActionSet(ref data);
-                    ActionIndexCache action = ActionIndexCache.Create("act_musician_idle_stand_cheerful");
+                    ActionIndexCache action = ActionIndexCache.Create("act_scared_idle_1");
+
+                    Blow bloww = (Blow)blow;
+
+                    //agent.RegisterBlow(bloww, AttackCollisionData.GetAttackCollisionDataForDebugPurpose(false, false, false, true,
+                    //    false, false, false, false, false, false, false, false, CombatCollisionResult.StrikeAgent, -1, 1, 2, bloww.BoneIndex,
+                    //    bloww.VictimBodyPart, agent.Monster.MainHandItemBoneIndex, Agent.UsageDirection.AttackUp, -1, CombatHitResultFlags.NormalHit, 0.5f,
+                    //    1f, 0f, 0f, 0f, 0f, 0f, 0f, Vec3.Up, bloww.Direction, bloww.GlobalPosition, Vec3.Zero, Vec3.Zero, agent.Velocity, Vec3.Up));
+                    
+                    //agent.RegisterBlow(bloww, new AttackCollisionData());
+
+                    // ActionIndexCache action = ActionIndexCache.Create("act_sit_1");
 
                     // agent.DisableScriptedCombatMovement();
                     // agent.DisableScriptedMovement();
@@ -102,24 +126,28 @@ namespace SeparatistCrisis.ScriptComponents
                     // agent.SetWatchState(Agent.WatchState.Patrolling);
                     // agent.ResetLookAgent();
 
-                    if (!agent.Formation.DetachedUnits.Contains(agent))
-                        agent.Formation.DetachUnit(agent, true);
+                    /*if (!agent.Formation.DetachedUnits.Contains(agent))
+                        agent.Formation.DetachUnit(agent, true);*/
                     
                     agent.SetActionChannel(0, action, false);
 
                     if (this._hitAgents.ContainsKey(agent))
+                    {
                         this._hitAgents[agent] = Mission.Current.CurrentTime + .8f;
+                    }
                     else
+                    {
                         this._hitAgents.Add(agent, Mission.Current.CurrentTime + .8f);
+                    }
                 }
             }
         }
 
         public Blow? CreateBlow(Agent victim)
         {
-            if (this.Agent != null && victim != null)
+            if (this.AbilityAgent?.Agent != null && victim != null)
             {
-                Blow blow = new Blow(this.Agent.Index);
+                Blow blow = new Blow(this.AbilityAgent.Agent.Index);
 
                 blow.DamageType = DamageTypes.Blunt;
                 blow.BlowFlag |= BlowFlags.KnockBack;
@@ -140,8 +168,15 @@ namespace SeparatistCrisis.ScriptComponents
         protected override void OnRemoved(int removeReason)
         {
             base.OnRemoved(removeReason);
+            if (this._hitAgents != null)
+            {
+                foreach (Agent agent in this._hitAgents.Keys)
+                {
+                    agent.SetActionChannel(0, ActionIndexCache.act_none, true);
+                }
+            }
             this._hitAgents = null;
-            this.Agent = null;
+            this.AbilityAgent = null;
         }
 
         protected override void OnInit()

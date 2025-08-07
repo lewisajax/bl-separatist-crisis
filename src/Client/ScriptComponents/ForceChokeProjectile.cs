@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SeparatistCrisis.Entities;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,12 +12,14 @@ using TaleWorlds.MountAndBlade;
 
 namespace SeparatistCrisis.ScriptComponents
 {
-    public class ForceChokeProjectile: ScriptComponentBehavior
+    public class ForceChokeProjectile : ScriptComponentBehavior
     {
         private float _creationTime;
         private Dictionary<Agent, float>? _hitAgents;
+        private Dictionary<Agent, GameEntity> _platforms;
+        private Dictionary<GameEntity, int>? _platformHeights;
 
-        public Agent? Agent { get; set; }
+        public AbilityAgent? AbilityAgent { get; set; }
 
         public static string Name { get; } = typeof(ForceChokeProjectile).Name;
 
@@ -52,13 +56,13 @@ namespace SeparatistCrisis.ScriptComponents
 
             MatrixFrame newFrame = this.GameEntity.GetGlobalFrame();
 
-            if (this.Agent != null)
+            if (this.AbilityAgent?.Agent != null)
             {
-                MatrixFrame globalFrame = this.Agent.AgentVisuals.GetGlobalFrame();
-                MatrixFrame boneEntitialFrameWithIndex = this.Agent.AgentVisuals.GetSkeleton().GetBoneEntitialFrameWithIndex(this.Agent.Monster.MainHandItemBoneIndex);
+                MatrixFrame globalFrame = this.AbilityAgent.Agent.AgentVisuals.GetGlobalFrame();
+                MatrixFrame boneEntitialFrameWithIndex = this.AbilityAgent.Agent.AgentVisuals.GetSkeleton().GetBoneEntitialFrameWithIndex(this.AbilityAgent.Agent.Monster.MainHandItemBoneIndex);
                 MatrixFrame matrixFrame = globalFrame.TransformToParent(boneEntitialFrameWithIndex);
 
-                this.GameEntity.SetGlobalFrame(new MatrixFrame(this.Agent.LookRotation, matrixFrame.origin));
+                this.GameEntity.SetGlobalFrame(new MatrixFrame(this.AbilityAgent.Agent.LookRotation, matrixFrame.origin));
                 this.GameEntity.UpdateGlobalBounds();
                 this.GameEntity.RecomputeBoundingBox();
             }
@@ -72,40 +76,61 @@ namespace SeparatistCrisis.ScriptComponents
             if (this._hitAgents == null)
                 this._hitAgents = new Dictionary<Agent, float>();
 
+            float currTime = Mission.Current.CurrentTime + dt;
+
+            foreach (Agent agent in this._hitAgents.Keys.ToArray())
+            {
+                if (this._hitAgents[agent] < currTime && !mblist.Contains(agent))
+                {
+                    agent.SetActionChannel(0, ActionIndexCache.act_none, true);
+                    this._hitAgents.Remove(agent);
+                }
+            }
+
             for (int i = 0; i < mblist.Count; i++)
             {
                 Agent agent = mblist[i];
 
-                if (this.Agent == agent)
+                if (this.AbilityAgent?.Agent == agent)
                     continue;
 
-                if (this._hitAgents.TryGetValue(agent, out float time) && time > Mission.Current.CurrentTime + dt + .5f)
+                if (this._hitAgents.TryGetValue(agent, out float hitTime) && hitTime > currTime)
                     continue;
 
                 Blow? blow = this.CreateBlow(agent);
 
                 if (blow != null)
                 {
-                    agent.RegisterBlow((Blow)blow, default(AttackCollisionData));
+                    MBActionSet set = MBActionSet.GetActionSet("as_human_hideout_bandit");
+                    AnimationSystemData data = MonsterExtensions.FillAnimationSystemData(agent.Monster, set, agent.Character.GetStepSize(), false);
+                    agent.SetActionSet(ref data);
+                    ActionIndexCache action = ActionIndexCache.Create("act_scared_idle_1");
+
+                    agent.SetActionChannel(0, action, false);
 
                     if (this._hitAgents.ContainsKey(agent))
-                        this._hitAgents[agent] = Mission.Current.CurrentTime;
+                    {
+                        this._hitAgents[agent] = Mission.Current.CurrentTime + .8f;
+                    }
                     else
-                        this._hitAgents.Add(agent, Mission.Current.CurrentTime);
+                    {
+                        this._hitAgents.Add(agent, Mission.Current.CurrentTime + .8f);
+                    }
+
                 }
             }
         }
 
         public Blow? CreateBlow(Agent victim)
         {
-            if (this.Agent != null && victim != null)
+            if (this.AbilityAgent?.Agent != null && victim != null)
             {
-                Blow blow = new Blow(this.Agent.Index);
+                Blow blow = new Blow(this.AbilityAgent.Agent.Index);
 
                 blow.DamageType = DamageTypes.Blunt;
-                blow.BlowFlag |= BlowFlags.KnockDown;
+                blow.BlowFlag |= BlowFlags.KnockBack;
                 blow.BaseMagnitude = 0f;
-                blow.InflictedDamage = 10;
+                blow.InflictedDamage = 2;
                 blow.DamageCalculated = true;
                 blow.WeaponRecord.FillAsMeleeBlow(null, null, -1, -1);
                 blow.GlobalPosition = victim.Position;
@@ -121,8 +146,15 @@ namespace SeparatistCrisis.ScriptComponents
         protected override void OnRemoved(int removeReason)
         {
             base.OnRemoved(removeReason);
+            if (this._hitAgents != null)
+            {
+                foreach (Agent agent in this._hitAgents.Keys)
+                {
+                    agent.SetActionChannel(0, ActionIndexCache.act_none, true);
+                }
+            }
             this._hitAgents = null;
-            this.Agent = null;
+            this.AbilityAgent = null;
         }
 
         protected override void OnInit()
@@ -131,6 +163,8 @@ namespace SeparatistCrisis.ScriptComponents
             base.SetScriptComponentToTick(this.GetTickRequirement());
             this._creationTime = Mission.Current.CurrentTime;
             this._hitAgents = new Dictionary<Agent, float>();
+            this._platforms = new Dictionary<Agent, GameEntity>();
+            this._platformHeights = new Dictionary<GameEntity, int>();
         }
 
         public override ScriptComponentBehavior.TickRequirement GetTickRequirement()

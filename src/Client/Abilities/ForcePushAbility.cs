@@ -154,7 +154,7 @@ namespace SeparatistCrisis.Abilities
                     // ScriptComponentBehavior
 
                     entity.CreateAndAddScriptComponent(ForcePushProjectile.Name);
-                    entity.GetFirstScriptOfType<ForcePushProjectile>().Agent = agent;
+                    entity.GetFirstScriptOfType<ForcePushProjectile>().AbilityAgent = this.AbilityAgent;
                     entity.CallScriptCallbacks();
 
                     this.ActiveEntity = entity;

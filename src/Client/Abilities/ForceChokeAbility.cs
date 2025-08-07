@@ -12,7 +12,7 @@ using TaleWorlds.MountAndBlade;
 
 namespace SeparatistCrisis.Abilities
 {
-    public class ForceChokeAbility: IAbility
+    public class ForceChokeAbility : IAbility
     {
         private Ability _options;
         private AbilityAgent _abilityAgent;
@@ -66,6 +66,7 @@ namespace SeparatistCrisis.Abilities
         public Mesh CreateMesh()
         {
             Mesh cube = Mesh.GetFromResource("editor_cube").CreateCopy();
+            cube.SetMaterial(Material.GetFromResource("editor_gizmo"));
 
             UIntPtr uintPtr = cube.LockEditDataWrite();
             ManagedMeshEditOperations edit = ManagedMeshEditOperations.Create(cube);
@@ -97,6 +98,7 @@ namespace SeparatistCrisis.Abilities
                 this.ActiveEntity = null;
                 this.LastCheck = Mission.Current.CurrentTime;
                 this.IsActive = false;
+
                 return;
             }
 
@@ -107,18 +109,6 @@ namespace SeparatistCrisis.Abilities
                     Agent agent = this.AbilityAgent.Agent;
 
                     Mesh cube = this.CreateMesh();
-                    // Mesh cube = Mesh.GetFromResource("physics_capsule");
-
-                    // physics_capsule
-                    // physics_test_capsule
-                    // barrier_capsule
-
-                    // bo_editor_cube
-
-                    // editor_cylinder
-                    // bo_physics_test_cylinder
-
-                    // bo_barrier_cone for cone collider
 
                     GameEntity entity = GameEntity.CreateEmptyDynamic(Mission.Current.Scene);
                     PhysicsShape body = PhysicsShape.GetFromResource("bo_editor_cube");
@@ -133,8 +123,6 @@ namespace SeparatistCrisis.Abilities
 
                     entity.SetBodyShape(body);
                     entity.AddPhysics(1, entity.CenterOfMass, entity.GetBodyShape(), agent.LookDirection * 10, agent.LookDirection * 10, PhysicsMaterial.GetFromName("boulder_stone"), false, 1);
-                    // entity.SetPhysicsState(true, true);
-                    // entity.EnableDynamicBody();
 
                     entity.AddMesh(cube);
 
@@ -148,7 +136,7 @@ namespace SeparatistCrisis.Abilities
                     entity.RecomputeBoundingBox();
 
                     entity.CreateAndAddScriptComponent(ForceChokeProjectile.Name);
-                    entity.GetFirstScriptOfType<ForceChokeProjectile>().Agent = agent;
+                    entity.GetFirstScriptOfType<ForceChokeProjectile>().AbilityAgent = this.AbilityAgent;
                     entity.CallScriptCallbacks();
 
                     GameEntity entity2 = GameEntity.CreateEmptyDynamic(Mission.Current.Scene);

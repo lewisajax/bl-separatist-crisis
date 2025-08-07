@@ -66,6 +66,11 @@ namespace SeparatistCrisis.Abilities
         public Mesh CreateMesh()
         {
             Mesh cube = Mesh.GetFromResource("editor_cube").CreateCopy();
+            cube.SetMaterial(Material.GetFromResource("editor_gizmo"));
+
+            // Changes the material globally
+            /*cube.GetMaterial().SetAlphaBlendMode(Material.MBAlphaBlendMode.Multiply);
+            cube.SetColorAlpha(0U);*/
 
             UIntPtr uintPtr = cube.LockEditDataWrite();
             ManagedMeshEditOperations edit = ManagedMeshEditOperations.Create(cube);
@@ -106,6 +111,7 @@ namespace SeparatistCrisis.Abilities
                 this.ActiveEntity = null;
                 this.LastCheck = Mission.Current.CurrentTime;
                 this.IsActive = false;
+
                 return;
             }
 
@@ -156,8 +162,22 @@ namespace SeparatistCrisis.Abilities
                     entity.SetFrameChanged();
                     entity.RecomputeBoundingBox();
 
+                    GameEntity prtEntity = GameEntity.CreateEmptyDynamic(Mission.Current.Scene);
+                    prtEntity.AddParticleSystemComponent("prt_basic_fire_smoke");
+
+                    MatrixFrame prtTransform = new MatrixFrame(
+                        this.BoxSize, 0f, 0f, 0f,
+                        0f, this.BoxLength, 0f, 0f,
+                        0f, 0f, this.BoxSize, 0f,
+                        0f, 1f, 0f, 1f);
+                    prtTransform.rotation.RotateAboutForward(90f);
+
+                    prtEntity.SetFrame(ref prtTransform);
+
+                    entity.AddChild(prtEntity);
+
                     entity.CreateAndAddScriptComponent(ForceLightningProjectile.Name);
-                    entity.GetFirstScriptOfType<ForceLightningProjectile>().Agent = agent;
+                    entity.GetFirstScriptOfType<ForceLightningProjectile>().AbilityAgent = this.AbilityAgent;
                     entity.CallScriptCallbacks();
 
                     GameEntity entity2 = GameEntity.CreateEmptyDynamic(Mission.Current.Scene);
