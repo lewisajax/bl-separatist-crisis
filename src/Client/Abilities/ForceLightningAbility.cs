@@ -180,7 +180,7 @@ namespace SeparatistCrisis.Abilities
                     entity.GetFirstScriptOfType<ForceLightningProjectile>().AbilityAgent = this.AbilityAgent;
                     entity.CallScriptCallbacks();
 
-                    GameEntity entity2 = GameEntity.CreateEmptyDynamic(Mission.Current.Scene);
+                    /*GameEntity entity2 = GameEntity.CreateEmptyDynamic(Mission.Current.Scene);
                     Mesh cube2 = Mesh.GetFromResource("editor_cube").CreateCopy();
                     cube2.Color = 0xFF0000;
                     entity2.AddMesh(cube2);
@@ -190,7 +190,7 @@ namespace SeparatistCrisis.Abilities
                     Mesh cube3 = Mesh.GetFromResource("editor_cube").CreateCopy();
                     cube3.Color = 0x00F0FF;
                     entity3.AddMesh(cube2);
-                    entity3.SetGlobalFrame(new MatrixFrame(entity.GetFrame().rotation, entity.GlobalBoxMin));
+                    entity3.SetGlobalFrame(new MatrixFrame(entity.GetFrame().rotation, entity.GlobalBoxMin));*/
 
                     if (this.ActiveEntity == null)
                     {

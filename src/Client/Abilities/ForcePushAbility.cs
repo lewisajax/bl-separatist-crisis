@@ -71,6 +71,7 @@ namespace SeparatistCrisis.Abilities
         {
             // Mesh cube = MeshBuilder.CreateUnitMesh(); // It's a 2d unit mesh not 3d
             Mesh cube = Mesh.GetFromResource("editor_cube").CreateCopy();
+            cube.SetMaterial(Material.GetFromResource("editor_gizmo"));
 
             UIntPtr uintPtr = cube.LockEditDataWrite();
             ManagedMeshEditOperations edit = ManagedMeshEditOperations.Create(cube);

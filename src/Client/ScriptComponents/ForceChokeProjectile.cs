@@ -16,8 +16,8 @@ namespace SeparatistCrisis.ScriptComponents
     {
         private float _creationTime;
         private Dictionary<Agent, float>? _hitAgents;
-        private Dictionary<Agent, GameEntity> _platforms;
-        private Dictionary<GameEntity, int>? _platformHeights;
+        private Dictionary<Agent, GameEntity>? _platforms;
+        private Dictionary<GameEntity, float>? _platformHeights;
 
         public AbilityAgent? AbilityAgent { get; set; }
 
@@ -84,6 +84,16 @@ namespace SeparatistCrisis.ScriptComponents
                 {
                     agent.SetActionChannel(0, ActionIndexCache.act_none, true);
                     this._hitAgents.Remove(agent);
+
+                    if (this._platforms != null && this._platforms.TryGetValue(agent, out GameEntity? platform))
+                    {
+                        this._platforms.Remove(agent);
+                        if (platform != null)
+                        {
+                            this._platformHeights?.Remove(platform);
+                            platform.Remove(0);
+                        }
+                    }
                 }
             }
 
@@ -93,6 +103,36 @@ namespace SeparatistCrisis.ScriptComponents
 
                 if (this.AbilityAgent?.Agent == agent)
                     continue;
+
+                // Platforms
+                if (this._platforms != null && this._platforms.ContainsKey(agent))
+                {
+                    if (this._platformHeights != null)
+                    {
+                        GameEntity platform = this._platforms[agent];
+
+                        // Don't increase the height beyond 1m/cm/in/ft
+                        if (this._platformHeights[platform] + dt < 1)
+                        {
+                            this._platformHeights[platform] += dt;
+                            // agent.AgentVisuals.GetEntity().SetGlobalFrame(agent.AgentVisuals.GetEntity().GetGlobalFrame().Elevate(this._platformHeights[platform]));
+                            platform.SetGlobalFrame(platform.GetGlobalFrame().Elevate(dt));
+                        }
+                        else
+                        {
+                            // Keeps the platform hovering. We're fighting gravity since if we turn it off, it uses the velocity to do some crazy shenanigans
+                            this._platformHeights[platform] -= dt;
+                            // agent.AgentVisuals.GetEntity().SetGlobalFrame(agent.AgentVisuals.GetEntity().GetGlobalFrame().Elevate(this._platformHeights[platform]));
+                            platform.SetGlobalFrame(platform.GetGlobalFrame().Elevate(-dt));
+                        }
+                    }
+                }
+                else
+                {
+                    GameEntity platform = this.CreatePlatform(agent);
+                    this._platforms?.Add(agent, platform);
+                    this._platformHeights?.Add(platform, 0);
+                }
 
                 if (this._hitAgents.TryGetValue(agent, out float hitTime) && hitTime > currTime)
                     continue;
@@ -116,7 +156,6 @@ namespace SeparatistCrisis.ScriptComponents
                     {
                         this._hitAgents.Add(agent, Mission.Current.CurrentTime + .8f);
                     }
-
                 }
             }
         }
@@ -143,6 +182,28 @@ namespace SeparatistCrisis.ScriptComponents
             return null;
         }
 
+        private GameEntity CreatePlatform(Agent agent)
+        {
+            Mesh rectangle = MeshBuilder.CreateUnitMesh(); // 2D unit mesh with the origin set to 1 of the corners
+            MatrixFrame frame = rectangle.GetLocalFrame() * new MatrixFrame(Mat3.Identity, new Vec3(-.5f, .5f, 0)); // Put the origin in the centre
+            rectangle.SetLocalFrame(frame);
+
+            rectangle.SetMaterial(Material.GetFromResource("editor_gizmo"));
+
+            GameEntity entity = GameEntity.CreateEmptyDynamic(Mission.Current.Scene);
+            PhysicsShape body = PhysicsShape.GetFromResource("bo_editor_cube");
+            entity.SetBodyShape(body);
+            entity.AddPhysics(1, entity.CenterOfMass, entity.GetBodyShape(), Vec3.Zero, Vec3.Zero, PhysicsMaterial.GetFromName("boulder_stone"), true, 1);
+            entity.AddMesh(rectangle);
+            entity.UpdateGlobalBounds();
+            entity.SetPhysicsState(true, true);
+
+            // We leave it unattached to the agent entity
+            entity.SetGlobalFrame(new MatrixFrame(Mat3.Identity, new Vec3(agent.Position.AsVec2, agent.AgentVisuals.GetEntity().GlobalBoxMin.Z)));
+
+            return entity;
+        }
+
         protected override void OnRemoved(int removeReason)
         {
             base.OnRemoved(removeReason);
@@ -151,6 +212,16 @@ namespace SeparatistCrisis.ScriptComponents
                 foreach (Agent agent in this._hitAgents.Keys)
                 {
                     agent.SetActionChannel(0, ActionIndexCache.act_none, true);
+
+                    if (this._platforms != null && this._platforms.TryGetValue(agent, out GameEntity? platform))
+                    {
+                        this._platforms.Remove(agent);
+                        if (platform != null)
+                        {
+                            this._platformHeights?.Remove(platform);
+                            platform.Remove(0);
+                        }
+                    }
                 }
             }
             this._hitAgents = null;
@@ -164,7 +235,7 @@ namespace SeparatistCrisis.ScriptComponents
             this._creationTime = Mission.Current.CurrentTime;
             this._hitAgents = new Dictionary<Agent, float>();
             this._platforms = new Dictionary<Agent, GameEntity>();
-            this._platformHeights = new Dictionary<GameEntity, int>();
+            this._platformHeights = new Dictionary<GameEntity, float>();
         }
 
         public override ScriptComponentBehavior.TickRequirement GetTickRequirement()

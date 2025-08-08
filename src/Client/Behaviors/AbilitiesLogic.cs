@@ -78,10 +78,10 @@ namespace SeparatistCrisis.Behaviors
                     if (!this._abilities.ContainsKey(agent))
                     {
                         // We'll just get a few abilities out of the way and then we'll look at cleaning up the code since I don't know what we'll need
-                        Ability? options =  Ability.FindFirst(x => x.StringId == "abi_force_lightning");
+                        Ability? options =  Ability.FindFirst(x => x.StringId == "abi_force_push");
 
                         if (options != null)
-                            this._abilities.Add(agent, new ForceLightningAbility(this._abilityAgents[agent], options));
+                            this._abilities.Add(agent, new ForcePushAbility(this._abilityAgents[agent], options));
                     }
 
                     // Gonna let the ability itself decide on what key activates or how long the delay is etc

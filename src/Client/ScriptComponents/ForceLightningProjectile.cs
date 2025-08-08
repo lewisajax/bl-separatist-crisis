@@ -152,7 +152,7 @@ namespace SeparatistCrisis.ScriptComponents
                 blow.DamageType = DamageTypes.Blunt;
                 blow.BlowFlag |= BlowFlags.KnockBack;
                 blow.BaseMagnitude = 0f;
-                blow.InflictedDamage = 2;
+                blow.InflictedDamage = 25;
                 blow.DamageCalculated = true;
                 blow.WeaponRecord.FillAsMeleeBlow(null, null, -1, -1);
                 blow.GlobalPosition = victim.Position;
