@@ -271,6 +271,7 @@ dotnet_diagnostic.CA1862.severity = silent
 
 # CA1034: Nested types should not be visible
 dotnet_diagnostic.CA1034.severity = suggestion
+csharp_prefer_system_threading_lock = true:suggestion
 
 [*.{cs,vb}]
 dotnet_style_operator_placement_when_wrapping = beginning_of_line

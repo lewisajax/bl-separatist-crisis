@@ -15,6 +15,8 @@
         <DependedModule Id="SandBoxCore" DependentVersion="$gameversion$" />
         <DependedModule Id="Sandbox" DependentVersion="$gameversion$" />
         <DependedModule Id="StoryMode" DependentVersion="$gameversion$" />
+        <DependedModule Id="SeparatistCrisis.Items" DependentVersion="$itemsversion$" />
+        <DependedModule Id="SeparatistCrisis.Scenes" DependentVersion="$scenesversion$" />
     </DependedModules>
     <DependedModuleMetadatas>
         <DependedModuleMetadata id="Bannerlord.Harmony" order="LoadBeforeThis" version="v$harmonyversion$" />
@@ -25,6 +27,8 @@
         <DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" version="$gameversion$.*" />
         <DependedModuleMetadata id="CustomBattle" order="LoadBeforeThis" version="$gameversion$.*" optional="true" />
         <DependedModuleMetadata id="BirthAndDeath" order="LoadBeforeThis" version="$gameversion$.*" optional="true" />
+        <DependedModuleMetadata id="SeparatistCrisis.Items" order="LoadBeforeThis" version="$itemsversion$.*" optional="false" />
+        <DependedModuleMetadata id="SeparatistCrisis.Scenes" order="LoadBeforeThis" version="$scenesversion$.*" optional="false" />
     </DependedModuleMetadatas>
     <SubModules>
         <SubModule>
@@ -34,54 +38,6 @@
 			<Tags />
 		</SubModule>
     </SubModules>
-	<Xmls>
-		<XmlNode>
-			<XmlName id="Heroes" path="filters/heroes"/>
-			<IncludedGameTypes>
-				<GameType value="Campaign"/>
-				<GameType value="CampaignStoryMode"/>
-				<GameType value="CustomGame"/>
-				<GameType value="EditorGame"/>
-			</IncludedGameTypes>
-		</XmlNode>
-		<XmlNode>
-			<XmlName id="NPCCharacters" path="filters/lords"/>
-			<IncludedGameTypes>
-				<GameType value="Campaign"/>
-				<GameType value="CampaignStoryMode"/>
-				<GameType value="CustomGame"/>
-				<GameType value="EditorGame"/>
-			</IncludedGameTypes>
-		</XmlNode>
-		<XmlNode>
-			<XmlName id="NPCCharacters" path="filters/npccharacters"/>
-			<IncludedGameTypes>
-				<GameType value="Campaign"/>
-				<GameType value="CampaignStoryMode"/>
-				<GameType value="CustomGame"/>
-				<GameType value="EditorGame"/>
-			</IncludedGameTypes>
-		</XmlNode>
-		<XmlNode>
-			<XmlName id="Factions" path="filters/spclans"/>
-			<IncludedGameTypes>
-				<GameType value="Campaign"/>
-				<GameType value="CampaignStoryMode"/>
-				<GameType value="CustomGame"/>
-				<GameType value="EditorGame"/>
-			</IncludedGameTypes>
-		</XmlNode>
-		<XmlNode>
-			<XmlName id="Kingdoms" path="filters/spkingdoms"/>
-			<IncludedGameTypes>
-				<GameType value="Campaign"/>
-				<GameType value="CampaignStoryMode"/>
-				<GameType value="CustomGame"/>
-				<GameType value="EditorGame"/>
-			</IncludedGameTypes>
-		</XmlNode>
-	</Xmls>
-	
 	<Xmls>
 		<XmlNode>
 			<XmlName id="GameText" path="swsc_equipment_strings"/>

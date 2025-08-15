@@ -9,6 +9,12 @@
       <BuildForWindowsStore>false</BuildForWindowsStore>
   </PropertyGroup>
 
+	<PropertyGroup>
+    <ModuleId>SeparatistCrisis.Core</ModuleId>
+		<ModuleName>SeparatistCrisis</ModuleName>
+		<RootNamespace>SeparatistCrisis</RootNamespace>
+	</PropertyGroup>
+
   <PropertyGroup Condition="$(TargetFramework) == 'net472'">
       <BuildForWindows>true</BuildForWindows>
   </PropertyGroup>
