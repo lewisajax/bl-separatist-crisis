@@ -85,7 +85,7 @@
 				<GameType value="EditorGame"/>
 			</IncludedGameTypes>
 		</XmlNode>
-
+		
 		<!-- Not Filters -->
 		<XmlNode>
 			<XmlName id="GameText" path="swsc_equipment_strings"/>

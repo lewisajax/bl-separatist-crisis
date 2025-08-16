@@ -12,5 +12,5 @@
         <xsl:copy-of select="." />
     </xsl:template>
 
-    <!-- <xsl:template match="NPCCharacter" /> -->
+    <xsl:template match="NPCCharacter[@occupation='Lord' and @id!='main_hero' and is_template!='true']" />
 </xsl:stylesheet>
