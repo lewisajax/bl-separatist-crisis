@@ -22,19 +22,19 @@ using TaleWorlds.MountAndBlade.CustomBattle.CustomBattle;
 
 namespace SeparatistCrisis.Patches
 {
-    public class OpenCustomBattleMissionPatch : PatchClass<OpenCustomBattleMissionPatch, CustomBattleMenuVM>
-    {
-        protected override IEnumerable<Patch> Prepare() => new Patch[]
-        {
-            new Prefix(nameof(OnNewGameCreatedPrefix), "ExecuteStart")
-        };
+    //public class OpenCustomBattleMissionPatch : PatchClass<OpenCustomBattleMissionPatch, CustomBattleMenuVM>
+    //{
+    //    protected override IEnumerable<Patch> Prepare() => new Patch[]
+    //    {
+    //        new Prefix(nameof(OnNewGameCreatedPrefix), "ExecuteStart")
+    //    };
 
-        private static bool OnNewGameCreatedPrefix(CustomBattleMenuVM __instance)
-        {
-            Type type = __instance.GetType();
-            SCCustomBattles.StartGame((CustomBattleData)AccessTools.DeclaredMethod(__instance.GetType(), "PrepareBattleData").Invoke(__instance, Array.Empty<object>()));
-            Debug.Print("EXECUTE START - PRESSED", 0, Debug.DebugColor.Green, 17592186044416UL);
-            return false;
-        }
-    }
+    //    private static bool OnNewGameCreatedPrefix(CustomBattleMenuVM __instance)
+    //    {
+    //        Type type = __instance.GetType();
+    //        SCCustomBattles.StartGame((CustomBattleData)AccessTools.DeclaredMethod(__instance.GetType(), "PrepareBattleData").Invoke(__instance, Array.Empty<object>()));
+    //        Debug.Print("EXECUTE START - PRESSED", 0, Debug.DebugColor.Green, 17592186044416UL);
+    //        return false;
+    //    }
+    //}
 }
