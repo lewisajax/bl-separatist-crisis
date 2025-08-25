@@ -20,9 +20,9 @@ namespace SeparatistCrisis.ViewModels
 
         private TroopTypeSelectionPopUpVM _troopTypeSelectionPopUp = null!;
 
-        private CustomBattleMenuSideVM _enemySide = null!;
+        private SCCustomBattleMenuSideVM _enemySide = null!;
 
-        private CustomBattleMenuSideVM _playerSide = null!;
+        private SCCustomBattleMenuSideVM _playerSide = null!;
 
         private bool _isAttackerCustomMachineSelectionEnabled;
 
@@ -157,8 +157,8 @@ namespace SeparatistCrisis.ViewModels
             this._customBattleState = battleState;
             this.IsAttackerCustomMachineSelectionEnabled = false;
             this.TroopTypeSelectionPopUp = new TroopTypeSelectionPopUpVM();
-            this.PlayerSide = new CustomBattleMenuSideVM(new TextObject("{=BC7n6qxk}PLAYER", null), true, this.TroopTypeSelectionPopUp);
-            this.EnemySide = new CustomBattleMenuSideVM(new TextObject("{=35IHscBa}ENEMY", null), false, this.TroopTypeSelectionPopUp);
+            this.PlayerSide = new SCCustomBattleMenuSideVM(new TextObject("{=BC7n6qxk}PLAYER", null), true, this.TroopTypeSelectionPopUp);
+            this.EnemySide = new SCCustomBattleMenuSideVM(new TextObject("{=35IHscBa}ENEMY", null), false, this.TroopTypeSelectionPopUp);
             this.PlayerSide.OppositeSide = this.EnemySide;
             this.EnemySide.OppositeSide = this.PlayerSide;
             this.MapSelectionGroup = new MapSelectionGroupVM();
@@ -555,7 +555,7 @@ namespace SeparatistCrisis.ViewModels
         }
 
         [DataSourceProperty]
-        public CustomBattleMenuSideVM EnemySide
+        public SCCustomBattleMenuSideVM EnemySide
         {
             get
             {
@@ -566,13 +566,13 @@ namespace SeparatistCrisis.ViewModels
                 if (value != this._enemySide)
                 {
                     this._enemySide = value;
-                    base.OnPropertyChangedWithValue<CustomBattleMenuSideVM>(value, "EnemySide");
+                    base.OnPropertyChangedWithValue<SCCustomBattleMenuSideVM>(value, "EnemySide");
                 }
             }
         }
 
         [DataSourceProperty]
-        public CustomBattleMenuSideVM PlayerSide
+        public SCCustomBattleMenuSideVM PlayerSide
         {
             get
             {
@@ -583,7 +583,7 @@ namespace SeparatistCrisis.ViewModels
                 if (value != this._playerSide)
                 {
                     this._playerSide = value;
-                    base.OnPropertyChangedWithValue<CustomBattleMenuSideVM>(value, "PlayerSide");
+                    base.OnPropertyChangedWithValue<SCCustomBattleMenuSideVM>(value, "PlayerSide");
                 }
             }
         }

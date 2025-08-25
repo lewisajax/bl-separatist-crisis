@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Prefab>
+	<Constants>
+		<Constant Name="Encyclopedia.SubPage.Element.Width" BrushLayer="Default" BrushName="Encyclopedia.SubPage.Element" BrushValueType="Width" />
+		<Constant Name="Encyclopedia.SubPage.Element.Height" BrushLayer="Default" BrushName="Encyclopedia.SubPage.Element" BrushValueType="Height" />
+	</Constants>
+	<Window>
+		<ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Encyclopedia.SubPage.Element.Width" SuggestedHeight="!Encyclopedia.SubPage.Element.Height" HorizontalAlignment="Center" Command.Click="ExecuteLink">
+			<Children>
+
+				<!--Alive Element Image-->
+				<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="@IsDead">
+					<Children>
+						<BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Encyclopedia.SubPage.Element"  />
+						<ImageIdentifierWidget Id="ElementImageAlive" DataSource="{ImageIdentifier}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" MarginLeft="3" MarginRight="3" MarginTop="3" MarginBottom="3" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" />
+					</Children>
+				</Widget>
+
+				<!--Dead Element Image-->
+				<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsDead">
+					<Children>
+						<BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Encyclopedia.SubPage.Element.Dead" />
+						<ImageIdentifierWidget Id="ElementImageDead" DataSource="{ImageIdentifier}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" MarginLeft="3" MarginRight="3" MarginTop="3" MarginBottom="3" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" Brush.SaturationFactor="-100"/>
+					</Children>
+				</Widget>
+
+				<!--Child Image-->
+				<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" MarginLeft="3" MarginRight="3" MarginTop="3" MarginBottom="3" IsVisible="@IsChild" Sprite="Encyclopedia\portrait_baby"/>
+
+				<!--Element Name-->
+				<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="30" VerticalAlignment="Bottom" PositionYOffset="34" Brush="Encyclopedia.SubPage.Element.Name.Text" Brush.TextVerticalAlignment="Top" Text="@NameText" />
+
+				<!--Element Hint-->
+				<HintWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+			</Children>
+		</ButtonWidget>
+	</Window>
+</Prefab>

@@ -9,7 +9,7 @@
   <Window>
     <Widget DataSource="*CompositionDataSource" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren">
       <Children>
-				<NavigationScopeTargeter ScopeID="CompositionSliderScope" ScopeParent="..\SliderParent" ScopeMovements="Horizontal" ExtendDiscoveryAreaBottom="-10"/>
+		<NavigationScopeTargeter ScopeID="CompositionSliderScope" ScopeParent="..\SliderParent" ScopeMovements="Horizontal" ExtendDiscoveryAreaBottom="-10"/>
         <ListPanel Id="SliderParent" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" LayoutImp.LayoutMethod="HorizontalLeftToRight" >
           <Children>
 

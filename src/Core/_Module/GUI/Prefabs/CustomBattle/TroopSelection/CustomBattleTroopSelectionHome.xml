@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Prefab>
+	<Constants>
+		<Constant Name="Search.Popup.MarginLeft" Value="221"/>
+		<Constant Name="Search.Popup.MarginRight" Value="221"/>
+		<Constant Name="Search.Popup.MarginBottom" Value="0"/>
+		<Constant Name="Search.Popup.MarginTop" Value="0"/>
+
+		<Constant Name="Encyclopedia.Canvas.Width" BrushName="Encyclopedia.Canvas" BrushLayer="Default" BrushValueType="Width"/>
+		<Constant Name="Encyclopedia.Canvas.Height" BrushName="Encyclopedia.Canvas" BrushLayer="Default" BrushValueType="Height"/>
+
+		<Constant Name="Encyclopedia.Width" Value="!Encyclopedia.Canvas.Width" Additive="-35"/>
+		<Constant Name="Encyclopedia.Height" Value="!Encyclopedia.Canvas.Height" Additive="-198" />
+
+	</Constants>
+	<Window>
+		<BrushWidget HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" DoNotAcceptEvents="true" Brush="Encyclopedia.Page.SoundBrush">
+			<Children>
+
+				<Widget HeightSizePolicy ="Fixed" WidthSizePolicy="Fixed" SuggestedHeight="!Encyclopedia.Height" SuggestedWidth="!Encyclopedia.Width" HorizontalAlignment="Center" VerticalAlignment="Center" DoNotAcceptEvents="true">
+					<Children>
+
+						<NavigationScopeTargeter ScopeID="EncyclopediaHomeScope" ScopeParent="..\EncyclopediaHomeList" ScopeMovements="Horizontal" IsDefaultNavigationScope="true" HasCircularMovement="false" />
+						<NavigatableListPanel Id="EncyclopediaHomeList" DataSource="{Lists}" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "CoverChildren" MarginLeft="15" HorizontalAlignment="Left" VerticalAlignment="Center">
+							<ItemTemplate>
+
+								<ButtonWidget Command.Click="Execute" DoNotPassEventsToChildren="true" HeightSizePolicy ="Fixed" WidthSizePolicy="Fixed" SuggestedHeight="520" SuggestedWidth="230" VerticalAlignment="Center" HorizontalAlignment="Center" Brush="@ImageID" MarginRight="11" FrictionEnabled="false">
+									<Children>
+										<TextWidget HeightSizePolicy ="Fixed" WidthSizePolicy="StretchToParent" SuggestedHeight="80" VerticalAlignment="Top" Text="@Name" Brush="EncyclopediaHome.Type.Text">
+										</TextWidget>
+									</Children>
+								</ButtonWidget>
+
+							</ItemTemplate>
+						</NavigatableListPanel>
+
+
+					</Children>
+				</Widget>
+
+			</Children>
+		</BrushWidget>
+	</Window>
+</Prefab>
