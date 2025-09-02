@@ -318,7 +318,8 @@
           </Children>
         </ListPanel>
 
-        <TroopTypeSelectionPopUp Parameter.PopUpDataSource="{TroopTypeSelectionPopUp}"/>
+        <TroopSelectionPopUp Parameter.PopUpDataSource="{TroopTypeSelectionPopUp}"/>
+		<!--<CustomBattleTroopSelectionHome Parameter.PopUpDataSource="{TroopTypeSelectionPopUp}"/>-->
 
       </Children>
     </Widget>

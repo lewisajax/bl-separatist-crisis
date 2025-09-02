@@ -1,0 +1,250 @@
+<Prefab>
+	<Parameters>
+		<Parameter Name="PopUpDataSource" DefaultValue="" />
+	</Parameters>
+	
+	<Constants>
+		<!-- Bar -->
+		<Constant Name="Search.Popup.MarginLeft" Value="221"/>
+		<Constant Name="Search.Popup.MarginRight" Value="221"/>
+		<Constant Name="Search.Popup.MarginBottom" Value="0"/>
+		<Constant Name="Search.Popup.MarginTop" Value="-80"/>
+
+		<Constant Name="SearchResult.Popup.MarginRight" Value="!Search.Popup.MarginRight" Additive="-5"/>
+
+		<Constant Name="Search.TextField.Height" Value="40"/>
+		<Constant Name="Search.TextField.MarginTop" Value="!Search.Popup.MarginTop" Additive="!Search.TextField.Height"/>
+
+		<Constant Name="Encyclopedia.Frame.Width" BrushName="Encyclopedia.Frame" BrushLayer="Default" BrushValueType="Width"/>
+		<Constant Name="Encyclopedia.Frame.Height" BrushName="Encyclopedia.Frame" BrushLayer="Default" BrushValueType="Height"/>
+
+		<Constant Name="DoneButton.Margin.Top" Value="!Encyclopedia.Frame.Height" Additive="-10"/>
+
+		<Constant Name="Popup.CloseButton.Width" BrushName="Popup.CloseButton" BrushLayer="Default" BrushValueType="Width"/>
+		<Constant Name="Popup.CloseButton.Height" BrushName="Popup.CloseButton" BrushLayer="Default" BrushValueType="Height"/>
+
+		<!-- ItemList -->
+		<Constant Name="Encyclopedia.Canvas.Width" BrushName="Encyclopedia.Canvas" BrushLayer="Default" BrushValueType="Width"/>
+		<Constant Name="Encyclopedia.Canvas.Height" BrushName="Encyclopedia.Canvas" BrushLayer="Default" BrushValueType="Height"/>
+
+		<Constant Name="Encyclopedia.Width" Value="!Encyclopedia.Canvas.Width" Additive="-35"/>
+		<Constant Name="Encyclopedia.Height" Value="!Encyclopedia.Canvas.Height" Additive="-198" />
+	</Constants>
+
+  
+  <Window>
+    <Widget DataSource="*PopUpDataSource" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsOpen">
+      	<Children>
+			<!-- Bar-->
+			<BrushWidget HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" Brush="Encyclopedia.SoundBrush" Sprite="BlankWhiteSquare_9" Brush.Color="#000000CC">
+				<Children>
+
+					<BrushWidget HeightSizePolicy="Fixed" WidthSizePolicy="Fixed" SuggestedHeight="!Encyclopedia.Frame.Height" SuggestedWidth="!Encyclopedia.Frame.Width" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="!Search.Popup.MarginTop" Brush="Encyclopedia.Frame" >
+					<Children>
+
+						<Widget HeightSizePolicy ="Fixed" WidthSizePolicy="StretchToParent" SuggestedHeight="150">
+							<Children>
+								<!--Page Title-->
+								<Widget WidthSizePolicy = "Fixed" HeightSizePolicy = "Fixed" SuggestedHeight="150" SuggestedWidth="576" PositionYOffset="-17" HorizontalAlignment="Center" Sprite="StdAssets\tabbar_popup"  DoNotAcceptEvents="true">
+								<Children>
+									<RichTextWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy = "CoverChildren" VerticalAlignment="Center" PositionYOffset="-22" Brush="Recruitment.Popup.Title.Text" Text="Select Troops" Brush.FontSize="46"/>
+								</Children>
+								</Widget>
+							</Children>
+						</Widget>
+					</Children>
+					</BrushWidget>
+
+
+					<!--Search Text Bar-->
+					<NavigationScopeTargeter ScopeID="EncyclopediaSearchButtonScope" ScopeParent="..\SearchButton" ScopeMovements="Vertical" NavigateFromScopeEdges="true" />
+					<EncyclopediaSearchBarBrushWidget Id="SearchButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="331" SuggestedHeight="94" Sprite="Encyclopedia\search_bar" VerticalAlignment="Center" HorizontalAlignment="Center" MarginLeft="1100" MarginBottom="900" DoNotAcceptEvents="true" SearchResultPanel="..\SearchResultListScrollablePanel" SearchInputWidget="SearchInputWidget" MinCharAmountToShowResults="3" ShowResults="false" Command.SearchBarClick="ExecuteOnSearchActivated">
+					<Children>
+						<EditableTextWidget Id="SearchInputWidget" Text="SearchText" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="!Search.TextField.Height" SuggestedWidth="200" VerticalAlignment="Center" HorizontalAlignment="Left" Brush="Encyclopedia.Search.TextBox" MarginLeft="60" GamepadNavigationIndex="0"/>
+						<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="24" Sprite="Encyclopedia\icon_search" VerticalAlignment="Center" HorizontalAlignment="Right" IsDisabled="true" MarginRight="38"/>
+					</Children>
+					</EncyclopediaSearchBarBrushWidget>
+
+
+					<ScrollbarWidget HeightSizePolicy ="Fixed" WidthSizePolicy="Fixed" Id="SearchResultListScrollbar" SuggestedHeight="110" SuggestedWidth="15" MinValue = "0" MaxValue = "100" VerticalAlignment="Top" HorizontalAlignment="Center" MarginLeft="1000" MarginTop="115" AlignmentAxis="Vertical"   Handle = "SearchResultListScrollbarHandle" IsVisible="false" IsEnabled="false">
+					<Children>
+						<Widget HeightSizePolicy ="StretchToParent" WidthSizePolicy="Fixed" SuggestedWidth="5"  HorizontalAlignment="Center" IsVisible="false"/>
+						<ImageWidget Id="SearchResultListScrollbarHandle" WidthSizePolicy = "StretchToParent" MarginRight="3" MarginLeft="3" HeightSizePolicy="Fixed" HorizontalAlignment = "Center" IsVisible="false"/>
+					</Children>
+					</ScrollbarWidget>
+
+
+					<ScrollablePanel Id="SearchResultListScrollablePanel"  HeightSizePolicy ="Fixed" WidthSizePolicy="Fixed" SuggestedHeight="135" SuggestedWidth="260" InnerPanel="SearchResultListRect\SearchResultList" ClipRect="SearchResultListRect" MouseScrollAxis="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" MarginLeft="1000" MarginBottom="690" VerticalScrollbar="..\SearchResultListScrollbar" AutoHideScrollBars="true" AutoHideScrollBarHandle="true" Sprite="Encyclopedia\search_bar_expansion">
+					<Children>
+
+						<Widget Id="SearchResultListRect" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" ClipContents = "true" MarginBottom="15" MarginRight="20" MarginLeft="20" MarginTop="5">
+						<Children>
+
+							<NavigationForcedScopeCollectionTargeter CollectionID="EncyclopediaSearchResultsCollection" CollectionParent="..\." />
+							<NavigationScopeTargeter ScopeID="EncyclopediaSearchResultsScope" ScopeParent="..\SearchResultList" ScopeMovements="Vertical" />
+							<NavigatableListPanel DataSource="{Items}" Id="SearchResultList" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Top" HorizontalAlignment="Right"  StackLayout.LayoutMethod = "VerticalTopToBottom" >
+							<ItemTemplate>
+								<RichTextWidget WidthSizePolicy = "CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="20" Text="NameText" Brush="EncyclopediaSearchResult.Text" Brush.FontSize="20" IsDisabled="true" />
+							</ItemTemplate>
+							</NavigatableListPanel>
+
+						</Children>
+						</Widget>
+
+					</Children>
+					</ScrollablePanel>
+				</Children>
+			</BrushWidget>
+
+			<!-- ItemList -->
+			<BrushWidget DataSource="{ItemList}" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" DoNotAcceptEvents="true" Brush="Encyclopedia.Page.SoundBrush">
+				<Children>
+					<Widget HeightSizePolicy ="Fixed" WidthSizePolicy="Fixed" SuggestedHeight="!Encyclopedia.Height" SuggestedWidth="!Encyclopedia.Width" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="80" DoNotAcceptEvents="true">
+					<Children>
+
+						<Widget HeightSizePolicy ="StretchToParent"  WidthSizePolicy="Fixed" SuggestedWidth="5" Sprite="list_divider_9" MarginLeft="350"/>
+
+						<Widget DataSource="{SortController}" HeightSizePolicy ="StretchToParent"  WidthSizePolicy="Fixed" SuggestedWidth="2" Sprite="Encyclopedia\divider_vertical" MarginLeft="900" IsVisible="@IsAlternativeSortVisible"/>
+						<!--Top Gradient-->
+						<BrushWidget DoNotAcceptEvents="true" HeightSizePolicy ="Fixed"  WidthSizePolicy="StretchToParent" SuggestedHeight="100" MarginLeft="5" MarginRight="5" Brush="Encyclopedia.Scroll.Shadow">
+							<Children>
+								<ListPanel DoNotAcceptEvents="true" HeightSizePolicy="StretchToParent" WidthSizePolicy="StretchToParent" MarginLeft="348" MarginTop="8">
+									<Children>
+										<ListPanel Id="EncyclopediaListSortController" DataSource="{SortController}" DoNotAcceptEvents="true" HeightSizePolicy="StretchToParent" WidthSizePolicy="StretchToParent" >
+											<Children>
+												<TextWidget HeightSizePolicy="StretchToParent" WidthSizePolicy="Fixed" SuggestedWidth="490" MarginLeft="40" Brush="Encyclopedia.ItemList.NameTitle" Text="Available Troops" IsDisabled="@IsAlternativeSortVisible"/>
+											</Children>
+										</ListPanel>
+										<ListPanel Id="EncyclopediaListSortController" DataSource="{SortController}" DoNotAcceptEvents="true" HeightSizePolicy="StretchToParent" WidthSizePolicy="StretchToParent" >
+											<Children>
+												<TextWidget Id="SortedValueLabel" HeightSizePolicy="StretchToParent" WidthSizePolicy="StretchToParent" VerticalAlignment="Top" MarginLeft="40" Brush="Encyclopedia.ItemList.NameTitle" Text="Selected Troops" />
+											</Children>
+										</ListPanel>
+									
+									</Children>
+								</ListPanel>
+							</Children>
+						</BrushWidget>
+
+						<ListPanel DoNotAcceptEvents="true" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent">
+						<Children>
+
+							<Widget HeightSizePolicy ="StretchToParent" WidthSizePolicy="Fixed" SuggestedWidth="355" DoNotAcceptEvents="true" >
+							<Children>
+
+								<ScrollablePanel Id="ListPageScrollablePanel"  HeightSizePolicy ="StretchToParent" MarginTop="20" WidthSizePolicy="StretchToParent" InnerPanel="EncyclopediaFiltersContainer\InnerPanel" ClipRect="EncyclopediaFiltersContainer" MouseScrollAxis="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" VerticalScrollbar="..\ListPageScrollbar" UpdateScrollbarVisibility="false">
+								<Children>
+
+									<Widget Id="EncyclopediaFiltersContainer" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" ClipContents = "true">
+									<Children>
+										<!--Filter Panel-->
+										<Widget Id="InnerPanel" HeightSizePolicy ="CoverChildren" WidthSizePolicy="Fixed" SuggestedWidth="291" MarginLeft="25">
+										<Children>
+																			
+											<ListPanel Id="FiltersListPanel"  DataSource="{FilterGroups}" StackLayout.LayoutMethod = "VerticalBottomToTop" WidthSizePolicy = "StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="5" >
+											<ItemTemplate>
+												<TroopSelectionFilterGroup MarginBottom="30"/>
+											</ItemTemplate>
+											</ListPanel>
+										</Children>
+										</Widget>
+									</Children>
+									</Widget>
+								</Children>
+								</ScrollablePanel>
+
+								<ScrollbarWidget HeightSizePolicy ="StretchToParent" WidthSizePolicy="Fixed" Id="ListPageScrollbar" SuggestedWidth="30" MinValue = "0" MaxValue = "100" AlignmentAxis="Vertical" HorizontalAlignment="Right" VerticalAlignment="Center" Handle = "ListPageScrollbarHandle" IsVisible="false">
+								<Children>
+									<Widget Id="ListPageScrollbarBed" WidthSizePolicy = "Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="0" HorizontalAlignment = "Center"  Sprite="SPGeneral\SPRecruitment\slider_thin_bed_vertical" IsVisible="false"/>
+									<Widget Id="ListPageScrollbarHandle" WidthSizePolicy = "Fixed" HeightSizePolicy="Fixed" MinHeight="153" SuggestedWidth="0" SuggestedHeight="150" HorizontalAlignment = "Center" Sprite="slider_thin_vertical_9" IsVisible="false"/>
+								</Children>
+								</ScrollbarWidget>
+
+							</Children>
+							</Widget>
+
+							<EncyclopediaListWidget HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" DoNotAcceptEvents="true" LastSelectedItemId="@LastSelectedItemId" ItemList="ListPageScrollablePanel\ListPageRect\ItemsListPanel" ItemListScroll="ListPageScrollbar">
+							<Children>
+								<ListPanel HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" MarginTop="50">
+									<Children>
+										<ScrollablePanel Id="AvailableListPageScrollablePanel"  HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" InnerPanel="AvailableListPageRect\AvailableItemsListPanel" ClipRect="AvailableListPageRect" MouseScrollAxis="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" VerticalScrollbar="..\AvailableListPageScrollbar" AutoHideScrollBars="false" >
+											<Children>
+												<NavigationScopeTargeter ScopeID="EncyclopediaAvailableListScope" ScopeParent="..\AvailableListPageRect" ScopeMovements="Vertical" HasCircularMovement="true" IsDefaultNavigationScope="true" NavigateFromScopeEdges="true" UseDiscoveryAreaAsScopeEdges="true" ExtendChildrenCursorAreaRight="-200" ExtendDiscoveryAreaRight="-200"/>
+												<Widget Id="AvailableListPageRect" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" ClipContents="true">
+													<Children>
+														<!--List Item Panel-->
+														<NavigatableListPanel Id="AvailableItemsListPanel" DataSource="{Items}" StackLayout.LayoutMethod = "VerticalBottomToTop" WidthSizePolicy = "StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="5">
+															<ItemTemplate>
+																<TroopSelectionItemListItem Parameter.HideTroop="@HideAvailable" />
+															</ItemTemplate>
+														</NavigatableListPanel>
+													</Children>
+												</Widget>
+											</Children>
+										</ScrollablePanel>
+		
+										<ScrollbarWidget HeightSizePolicy ="StretchToParent" WidthSizePolicy="Fixed" Id="AvailableListPageScrollbar" SuggestedWidth="30" MinValue = "0" MaxValue = "100" MarginRight="10" MarginBottom="15" AlignmentAxis="Vertical" HorizontalAlignment="Right" VerticalAlignment="Center" Handle = "AvailableListPageScrollbarHandle" >
+											<Children>
+												<Widget Id="AvailableListPageScrollbarBed" WidthSizePolicy = "Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment = "Center"  Sprite="SPGeneral\SPRecruitment\slider_thin_bed_vertical" />
+												<ImageWidget Id="AvailableListPageScrollbarHandle" WidthSizePolicy = "Fixed" HeightSizePolicy="Fixed" MinHeight="153" SuggestedWidth="30" SuggestedHeight="150" HorizontalAlignment = "Center" Brush="Encyclopedia.Scroll.Handle.Vertical" />
+											</Children>
+										</ScrollbarWidget>
+
+										<ScrollablePanel Id="SelectedListPageScrollablePanel"  HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" InnerPanel="SelectedListPageRect\SelectedItemsListPanel" ClipRect="SelectedListPageRect" MouseScrollAxis="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" VerticalScrollbar="..\SelectedListPageScrollbar" AutoHideScrollBars="false" >
+											<Children>
+												<NavigationScopeTargeter ScopeID="EncyclopediaSelectedListScope" ScopeParent="..\SelectedListPageRect" ScopeMovements="Vertical" HasCircularMovement="true" IsDefaultNavigationScope="true" NavigateFromScopeEdges="true" UseDiscoveryAreaAsScopeEdges="true" ExtendChildrenCursorAreaRight="-200" ExtendDiscoveryAreaRight="-200"/>
+												<Widget Id="SelectedListPageRect" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" ClipContents="true">
+													<Children>
+														<!--List Item Panel-->
+														<NavigatableListPanel Id="SelectedItemsListPanel" DataSource="{Items}" StackLayout.LayoutMethod = "VerticalBottomToTop" WidthSizePolicy = "StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="5">
+															<ItemTemplate>
+																<TroopSelectionItemListItem Parameter.HideTroop="@HideSelected" />
+															</ItemTemplate>
+														</NavigatableListPanel>
+													</Children>
+												</Widget>
+											</Children>
+										</ScrollablePanel>
+		
+										<ScrollbarWidget HeightSizePolicy ="StretchToParent" WidthSizePolicy="Fixed" Id="SelectedListPageScrollbar" SuggestedWidth="30" MinValue = "0" MaxValue = "100" MarginRight="10" MarginBottom="15" AlignmentAxis="Vertical" HorizontalAlignment="Right" VerticalAlignment="Center" Handle = "SelectedListPageScrollbarHandle" >
+											<Children>
+												<Widget Id="SelectedListPageScrollbarBed" WidthSizePolicy = "Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment = "Center"  Sprite="SPGeneral\SPRecruitment\slider_thin_bed_vertical" />
+												<ImageWidget Id="SelectedListPageScrollbarHandle" WidthSizePolicy = "Fixed" HeightSizePolicy="Fixed" MinHeight="153" SuggestedWidth="30" SuggestedHeight="150" HorizontalAlignment = "Center" Brush="Encyclopedia.Scroll.Handle.Vertical" />
+											</Children>
+										</ScrollbarWidget>
+									</Children>
+								</ListPanel>
+
+
+							</Children>
+							</EncyclopediaListWidget>
+
+						</Children>
+						</ListPanel>
+
+						<!--Orange Sort Dropdown - It manged a TextWidget up above for the sorted side of the list -->
+						<!-- <NavigationScopeTargeter ScopeID="EncyclopediaListSortControllerScope" ScopeParent="..\EncyclopediaListSortController" ScopeMovements="Vertical" UpNavigationScope="EncyclopediaSearchButtonScope" HasCircularMovement="false" ExtendDiscoveryAreaLeft="-100" ExtendDiscoveryAreaTop="20" ExtendDiscoveryAreaBottom="300" />
+						<ListPanel Id="EncyclopediaListSortController" DataSource="{SortController}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" MarginTop="10" MarginRight="0" StackLayout.LayoutMethod="HorizontalRightToLeft">
+							<Children>
+								<Standard.DropdownWithHorizontalControl Id="EncyclopediaSortButton" Parameter.IsFlatDesign="true" Parameter.ShowNextAndPrevious="false" Parameter.IsCustomWidth="true" Parameter.CustomWidth="160" Parameter.SelectorDataSource="{SortSelection}" Parameter.OnDropdownClick="ExecuteOnDropdownActivated" UpdateChildrenStates="true" ExtendCursorAreaRight="-20" GamepadNavigationIndex="0">
+									<Children>
+										<BrushWidget Id="TypeSortVisualWidget" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" PositionXOffset="-20" VerticalAlignment="Center" Brush="Encyclopedia.Dropdown.Arrow" />
+									</Children>
+								</Standard.DropdownWithHorizontalControl>
+								<TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginTop="5" MarginRight="10" Brush="Standard.DropdownItem.Text" Text="@SortByLabel"/>
+							</Children>
+						</ListPanel> -->
+					</Children>
+					</Widget>
+
+					<Widget HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" Sprite="Encyclopedia\sp_encyclopedia_screen2" AlphaFactor="0" IsEnabled="false"/>
+				</Children>
+			</BrushWidget>
+
+			<!--Close Buttons-->
+			<Standard.TriplePopupCloseButtons VerticalAlignment="Bottom" PositionYOffset="-24" Parameter.CancelButtonText="@CancelLbl" Parameter.DoneButtonText="@DoneLbl" Parameter.CancelButtonAction="ExecuteCancel" Parameter.ResetButtonAction="ExecuteReset" Parameter.DoneButtonAction="ExecuteDone" Parameter.IsDoneEnabled="true" Parameter.ResetInputKeyDataSource="{ResetInputKey}" Parameter.DoneInputKeyDataSource="{DoneInputKey}" Parameter.CancelInputKeyDataSource="{CancelInputKey}"/>
+
+		</Children>
+    </Widget>
+  </Window>
+</Prefab>

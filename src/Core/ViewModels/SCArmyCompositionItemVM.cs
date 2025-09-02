@@ -29,7 +29,7 @@ namespace SeparatistCrisis.ViewModels
 
         private readonly Action<int, int> _onCompositionValueChanged;
 
-        private readonly TroopTypeSelectionPopUpVM _troopTypeSelectionPopUp;
+        private readonly SCTroopSelectionPopUpVM _troopTypeSelectionPopUp;
 
         private BasicCultureObject? _culture;
 
@@ -48,6 +48,8 @@ namespace SeparatistCrisis.ViewModels
         private bool _isLocked;
 
         private bool _isValid;
+
+        public SCTroopSelectionItemListVM? ItemListVM { get; private set; }
 
         [DataSourceProperty]
         public MBBindingList<CustomBattleTroopTypeVM> TroopTypes
@@ -151,7 +153,7 @@ namespace SeparatistCrisis.ViewModels
             }
         }
 
-        public SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType type, List<BasicCharacterObject> allCharacterObjects, MBReadOnlyList<SkillObject> allSkills, Action<int, int> onCompositionValueChanged, TroopTypeSelectionPopUpVM troopTypeSelectionPopUp, int[] compositionValues)
+        public SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType type, List<BasicCharacterObject> allCharacterObjects, MBReadOnlyList<SkillObject> allSkills, Action<int, int> onCompositionValueChanged, SCTroopSelectionPopUpVM troopTypeSelectionPopUp, SCTroopSelectionItemListVM? itemList, int[] compositionValues)
         {
             this._allCharacterObjects = allCharacterObjects;
             this._allSkills = allSkills;
@@ -163,6 +165,7 @@ namespace SeparatistCrisis.ViewModels
             this.TroopTypes = new MBBindingList<CustomBattleTroopTypeVM>();
             this.InvalidHint = new HintViewModel(new TextObject("{=iSQTtNUD}This faction doesn't have this troop type.", null), null);
             this.AddTroopTypeHint = new HintViewModel(new TextObject("{=eMbuGGus}Select troops to spawn in formation.", null), null);
+            this.ItemListVM = itemList;
         }
 
         public override void RefreshValues()
@@ -196,11 +199,12 @@ namespace SeparatistCrisis.ViewModels
         public void ExecuteAddTroopTypes()
         {
             string title = GameTexts.FindText("str_custom_battle_choose_troop", this._type.ToString()).ToString();
-            TroopTypeSelectionPopUpVM troopTypeSelectionPopUp = this._troopTypeSelectionPopUp;
+            SCTroopSelectionPopUpVM troopTypeSelectionPopUp = this._troopTypeSelectionPopUp;
             if (troopTypeSelectionPopUp == null)
             {
                 return;
             }
+            troopTypeSelectionPopUp.ItemList = this.ItemListVM;
             troopTypeSelectionPopUp.OpenPopUp(title, this.TroopTypes);
         }
 

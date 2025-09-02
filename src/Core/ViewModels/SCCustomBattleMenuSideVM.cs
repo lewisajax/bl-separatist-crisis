@@ -20,7 +20,7 @@ namespace SeparatistCrisis.ViewModels
 
         private readonly bool _isPlayerSide;
 
-        private ArmyCompositionGroupVM _compositionGroup = null!;
+        private SCArmyCompositionGroupVM _compositionGroup = null!;
 
         private SelectorVM<SCFactionItemVM> _factionSelectionGroup = null!;
 
@@ -165,7 +165,7 @@ namespace SeparatistCrisis.ViewModels
         }
 
         [DataSourceProperty]
-        public ArmyCompositionGroupVM CompositionGroup
+        public SCArmyCompositionGroupVM CompositionGroup
         {
             get
             {
@@ -176,7 +176,7 @@ namespace SeparatistCrisis.ViewModels
                 if (value != this._compositionGroup)
                 {
                     this._compositionGroup = value;
-                    base.OnPropertyChangedWithValue<ArmyCompositionGroupVM>(value, "CompositionGroup");
+                    base.OnPropertyChangedWithValue<SCArmyCompositionGroupVM>(value, "CompositionGroup");
                 }
             }
         }
@@ -215,11 +215,11 @@ namespace SeparatistCrisis.ViewModels
             }
         }
 
-        public SCCustomBattleMenuSideVM(TextObject sideName, bool isPlayerSide, TroopTypeSelectionPopUpVM troopTypeSelectionPopUp)
+        public SCCustomBattleMenuSideVM(TextObject sideName, bool isPlayerSide, SCTroopSelectionPopUpVM troopTypeSelectionPopUp)
         {
             this._sideName = sideName;
             this._isPlayerSide = isPlayerSide;
-            this.CompositionGroup = new ArmyCompositionGroupVM(this._isPlayerSide, troopTypeSelectionPopUp);
+            this.CompositionGroup = new SCArmyCompositionGroupVM(this._isPlayerSide, troopTypeSelectionPopUp);
             this.FactionSelectionGroup = new SelectorVM<SCFactionItemVM>(0, new Action<SelectorVM<SCFactionItemVM>>(this.OnCultureSelection));
             this.CharacterSelectionGroup = new SelectorVM<CharacterItemVM>(0, new Action<SelectorVM<CharacterItemVM>>(this.OnCharacterSelection));
             this.ArmorsList = new MBBindingList<CharacterEquipmentItemVM>();

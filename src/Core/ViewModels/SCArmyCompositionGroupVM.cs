@@ -41,6 +41,8 @@ namespace SeparatistCrisis.ViewModels
 
         public int[] CompositionValues { get; set; }
 
+        public SCTroopSelectionItemListVM? ItemListVM { get; private set; }
+
         public int ArmySize
         {
             get
@@ -174,7 +176,7 @@ namespace SeparatistCrisis.ViewModels
             }
         }
 
-        public SCArmyCompositionGroupVM(bool isPlayerSide, TroopTypeSelectionPopUpVM troopTypeSelectionPopUp)
+        public SCArmyCompositionGroupVM(bool isPlayerSide, SCTroopSelectionPopUpVM troopTypeSelectionPopUp)
         {
             this._isPlayerSide = isPlayerSide;
             this.MinArmySize = 1;
@@ -190,10 +192,11 @@ namespace SeparatistCrisis.ViewModels
             this.CompositionValues[1] = 25;
             this.CompositionValues[2] = 25;
             this.CompositionValues[3] = 25;
-            this.MeleeInfantryComposition = new SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType.MeleeInfantry, this._allCharacterObjects, this._allSkills, new Action<int, int>(this.UpdateSliders), troopTypeSelectionPopUp, this.CompositionValues);
-            this.RangedInfantryComposition = new SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType.RangedInfantry, this._allCharacterObjects, this._allSkills, new Action<int, int>(this.UpdateSliders), troopTypeSelectionPopUp, this.CompositionValues);
-            this.MeleeCavalryComposition = new SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType.MeleeCavalry, this._allCharacterObjects, this._allSkills, new Action<int, int>(this.UpdateSliders), troopTypeSelectionPopUp, this.CompositionValues);
-            this.RangedCavalryComposition = new SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType.RangedCavalry, this._allCharacterObjects, this._allSkills, new Action<int, int>(this.UpdateSliders), troopTypeSelectionPopUp, this.CompositionValues);
+            this.ItemListVM = new SCTroopSelectionItemListVM();
+            this.MeleeInfantryComposition = new SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType.MeleeInfantry, this._allCharacterObjects, this._allSkills, new Action<int, int>(this.UpdateSliders), troopTypeSelectionPopUp, this.ItemListVM, this.CompositionValues);
+            this.RangedInfantryComposition = new SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType.RangedInfantry, this._allCharacterObjects, this._allSkills, new Action<int, int>(this.UpdateSliders), troopTypeSelectionPopUp, this.ItemListVM, this.CompositionValues);
+            this.MeleeCavalryComposition = new SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType.MeleeCavalry, this._allCharacterObjects, this._allSkills, new Action<int, int>(this.UpdateSliders), troopTypeSelectionPopUp, this.ItemListVM, this.CompositionValues);
+            this.RangedCavalryComposition = new SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType.RangedCavalry, this._allCharacterObjects, this._allSkills, new Action<int, int>(this.UpdateSliders), troopTypeSelectionPopUp, this.ItemListVM, this.CompositionValues);
             this.ArmySize = BannerlordConfig.GetRealBattleSize() / 5;
             this.RefreshValues();
         }

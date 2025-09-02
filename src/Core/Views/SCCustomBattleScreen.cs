@@ -15,6 +15,7 @@ using TaleWorlds.MountAndBlade.CustomBattle.CustomBattle;
 using TaleWorlds.MountAndBlade.View;
 using TaleWorlds.MountAndBlade.View.Screens;
 using TaleWorlds.ScreenSystem;
+using TaleWorlds.TwoDimension;
 
 namespace SeparatistCrisis.Views
 {
@@ -63,15 +64,24 @@ namespace SeparatistCrisis.Views
             this._dataSource.SetCancelInputKey(HotKeyManager.GetCategory("GenericPanelGameKeyCategory").GetHotKey("Exit"));
             this._dataSource.SetResetInputKey(HotKeyManager.GetCategory("GenericPanelGameKeyCategory").GetHotKey("Reset"));
             this._dataSource.SetRandomizeInputKey(HotKeyManager.GetCategory("GenericPanelGameKeyCategory").GetHotKey("Randomize"));
-            TroopTypeSelectionPopUpVM troopTypeSelectionPopUp = this._dataSource.TroopTypeSelectionPopUp;
+
+            SCTroopSelectionPopUpVM troopTypeSelectionPopUp = this._dataSource.TroopTypeSelectionPopUp;
+
             if (troopTypeSelectionPopUp != null)
             {
                 troopTypeSelectionPopUp.SetDoneInputKey(HotKeyManager.GetCategory("GenericPanelGameKeyCategory").GetHotKey("Confirm"));
             }
+
+            SpriteData spriteData = UIResourceManager.SpriteData;
+            SpriteCategory spriteCategory = spriteData.SpriteCategories["ui_encyclopedia"];
+            spriteCategory.Load(UIResourceManager.ResourceContext, UIResourceManager.UIResourceDepot);
+
             this._gauntletLayer = new GauntletLayer(1, "GauntletLayer", true);
             this._gauntletLayer.Input.RegisterHotKeyCategory(HotKeyManager.GetCategory("GenericPanelGameKeyCategory"));
             this._gauntletLayer.Input.RegisterHotKeyCategory(HotKeyManager.GetCategory("GenericCampaignPanelsGameKeyCategory"));
+
             this.LoadMovie();
+
             this._gauntletLayer.InputRestrictions.SetInputRestrictions(true, InputUsageMask.All);
             this._dataSource.SetActiveState(true);
             base.AddLayer(this._gauntletLayer);
@@ -94,7 +104,7 @@ namespace SeparatistCrisis.Views
             }
             if (this._gauntletLayer != null && this._dataSource != null && !this._gauntletLayer.IsFocusedOnInput())
             {
-                TroopTypeSelectionPopUpVM troopTypeSelectionPopUp = this._dataSource.TroopTypeSelectionPopUp;
+                SCTroopSelectionPopUpVM troopTypeSelectionPopUp = this._dataSource.TroopTypeSelectionPopUp;
                 if (troopTypeSelectionPopUp != null && troopTypeSelectionPopUp.IsOpen)
                 {
                     if (this._gauntletLayer.Input.IsHotKeyDownAndReleased("Exit"))
