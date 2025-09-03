@@ -18,14 +18,14 @@ namespace SeparatistCrisis.ViewModels
 {
     public class SCTroopSelectionItemListVM: ViewModel
     {
-        const string FilterTypeSoldier = "Soldier";
-        const string FilterTypeBandit = "Bandit";
-        const string FilterTypeCivilian = "Civilian";
-        const string FilterTypeHero = "Hero";
-        const string FilterClassInfantry = "Infantry";
-        const string FilterClassRanged = "Ranged";
-        const string FilterClassCavalary = "Cavalry";
-        const string FilterClassMountedArcher = "Mounted Archer";
+        public static TextObject FilterTypeSoldier { get; } = new TextObject("Soldier");
+        public static TextObject FilterTypeBandit { get; } = new TextObject("Bandit");
+        public static TextObject FilterTypeCivilian { get; } = new TextObject("Civilian");
+        public static TextObject FilterTypeHero { get; } = new TextObject("Hero");
+        public static TextObject FilterClassInfantry { get; } = new TextObject("Infantry");
+        public static TextObject FilterClassRanged { get; } = new TextObject("Ranged");
+        public static TextObject FilterClassCavalary { get; } = new TextObject("Cavalry");
+        public static TextObject FilterClassMountedArcher { get; } = new TextObject("Mounted Archer");
 
         private MBBindingList<EncyclopediaFilterGroupVM> _filterGroupVMs;
 
@@ -217,18 +217,18 @@ namespace SeparatistCrisis.ViewModels
             List<EncyclopediaFilterGroup> filterGroups = new List<EncyclopediaFilterGroup>();
 
             List<EncyclopediaFilterItem> types = new List<EncyclopediaFilterItem>();
-            types.Add(new EncyclopediaFilterItem(new TextObject(SCTroopSelectionItemListVM.FilterTypeSoldier), (object f) => ((BasicCharacterObject)f).IsSoldier));
-            types.Add(new EncyclopediaFilterItem(new TextObject(SCTroopSelectionItemListVM.FilterTypeBandit), (object f) => ((BasicCharacterObject)f).Culture.IsBandit));
-            types.Add(new EncyclopediaFilterItem(new TextObject(SCTroopSelectionItemListVM.FilterTypeCivilian), (object f) => ((BasicCharacterObject)f).IsInfantry));
-            types.Add(new EncyclopediaFilterItem(new TextObject(SCTroopSelectionItemListVM.FilterTypeHero), (object f) => ((BasicCharacterObject)f).IsHero));
+            types.Add(new EncyclopediaFilterItem(SCTroopSelectionItemListVM.FilterTypeSoldier, (object f) => ((BasicCharacterObject)f).IsSoldier));
+            types.Add(new EncyclopediaFilterItem(SCTroopSelectionItemListVM.FilterTypeBandit, (object f) => ((BasicCharacterObject)f).Culture.IsBandit));
+            types.Add(new EncyclopediaFilterItem(SCTroopSelectionItemListVM.FilterTypeCivilian, (object f) => ((BasicCharacterObject)f).IsInfantry));
+            types.Add(new EncyclopediaFilterItem(SCTroopSelectionItemListVM.FilterTypeHero, (object f) => ((BasicCharacterObject)f).IsHero));
             // types.Add(new EncyclopediaFilterItem(new TextObject("Template"), (object f) => ((BasicCharacterObject)f).)); // BasicCharacterObject doesn't deserialise the IsTemplate property
             filterGroups.Add(new EncyclopediaFilterGroup(types, new TextObject("Types")));
 
             List<EncyclopediaFilterItem> classes = new List<EncyclopediaFilterItem>();
-            classes.Add(new EncyclopediaFilterItem(new TextObject(SCTroopSelectionItemListVM.FilterClassInfantry), (object f) => (!((BasicCharacterObject)f).IsRanged) && !((BasicCharacterObject)f).IsMounted));
-            classes.Add(new EncyclopediaFilterItem(new TextObject(SCTroopSelectionItemListVM.FilterClassRanged), (object f) => (((BasicCharacterObject)f).IsRanged) && !((BasicCharacterObject)f).IsMounted));
-            classes.Add(new EncyclopediaFilterItem(new TextObject(SCTroopSelectionItemListVM.FilterClassCavalary), (object f) => (!((BasicCharacterObject)f).IsRanged) && ((BasicCharacterObject)f).IsMounted));
-            classes.Add(new EncyclopediaFilterItem(new TextObject(SCTroopSelectionItemListVM.FilterClassMountedArcher), (object f) => (((BasicCharacterObject)f).IsRanged) && ((BasicCharacterObject)f).IsMounted));
+            classes.Add(new EncyclopediaFilterItem(SCTroopSelectionItemListVM.FilterClassInfantry, (object f) => (!((BasicCharacterObject)f).IsRanged) && !((BasicCharacterObject)f).IsMounted));
+            classes.Add(new EncyclopediaFilterItem(SCTroopSelectionItemListVM.FilterClassRanged, (object f) => (((BasicCharacterObject)f).IsRanged) && !((BasicCharacterObject)f).IsMounted));
+            classes.Add(new EncyclopediaFilterItem(SCTroopSelectionItemListVM.FilterClassCavalary, (object f) => (!((BasicCharacterObject)f).IsRanged) && ((BasicCharacterObject)f).IsMounted));
+            classes.Add(new EncyclopediaFilterItem(SCTroopSelectionItemListVM.FilterClassMountedArcher, (object f) => (((BasicCharacterObject)f).IsRanged) && ((BasicCharacterObject)f).IsMounted));
             filterGroups.Add(new EncyclopediaFilterGroup(classes, new TextObject("Classes")));
 
             List<EncyclopediaFilterItem> cultures = new List<EncyclopediaFilterItem>();
@@ -315,6 +315,14 @@ namespace SeparatistCrisis.ViewModels
 
         public void Refresh()
         {
+        }
+
+        public void ReCheckFilters(IEnumerable<TextObject> filterNames)
+        {
+            foreach (EncyclopediaFilterGroupVM filterGroup in this.FilterGroups)
+                foreach (EncyclopediaListFilterVM listFilter in filterGroup.Filters)
+                    listFilter.IsSelected = filterNames.Contains(listFilter.Filter.Name);
+            
         }
 
         private void UpdateFilters(EncyclopediaListFilterVM filterVM)

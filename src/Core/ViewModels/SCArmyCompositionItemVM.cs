@@ -204,8 +204,42 @@ namespace SeparatistCrisis.ViewModels
             {
                 return;
             }
+            this.ResetFilters(this.ItemListVM);
             troopTypeSelectionPopUp.ItemList = this.ItemListVM;
             troopTypeSelectionPopUp.OpenPopUp(title, this.TroopTypes);
+        }
+
+        public void ResetFilters(SCTroopSelectionItemListVM? itemList)
+        {
+            TextObject compName;
+            switch(this._type)
+            {
+                case SCArmyCompositionItemVM.CompositionType.MeleeCavalry:
+                    compName = SCTroopSelectionItemListVM.FilterClassCavalary;
+                    break;
+                case SCArmyCompositionItemVM.CompositionType.RangedCavalry:
+                    compName = SCTroopSelectionItemListVM.FilterClassMountedArcher;
+                    break;
+                case SCArmyCompositionItemVM.CompositionType.RangedInfantry:
+                    compName = SCTroopSelectionItemListVM.FilterClassRanged;
+                    break;
+                case SCArmyCompositionItemVM.CompositionType.MeleeInfantry:
+                default:
+                    compName = SCTroopSelectionItemListVM.FilterClassInfantry;
+                    break;
+            }
+
+            if (this._culture == null)
+                return; // Not a big deal if we cant reset the filters
+
+            IEnumerable<TextObject> filterNames = new TextObject[3]
+            {
+                SCTroopSelectionItemListVM.FilterTypeSoldier,
+                this._culture.Name,
+                compName
+            };
+
+            itemList?.ReCheckFilters(filterNames);
         }
 
         public void RefreshCompositionValue()

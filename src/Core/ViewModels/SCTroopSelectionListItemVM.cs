@@ -49,7 +49,7 @@ namespace SeparatistCrisis.ViewModels
                 {
                     this._isFiltered = value;
                     base.OnPropertyChangedWithValue(value, "IsFiltered");
-                    this.RefreshValues();
+                    this.RefreshValues(); // I didnt want to take control of even more classes so we're taking a shortcut with this.
                 }
             }
         }
