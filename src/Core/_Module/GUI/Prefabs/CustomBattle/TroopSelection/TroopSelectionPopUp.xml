@@ -35,11 +35,17 @@
   <Window>
     <Widget DataSource="*PopUpDataSource" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsOpen">
       	<Children>
+			<BrushWidget HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" Brush="Encyclopedia.SoundBrush" Sprite="BlankWhiteSquare_9" Brush.Color="#000000CC" />
+	
+			<!--Close Buttons-->
+			<Standard.TriplePopupCloseButtons VerticalAlignment="Bottom" PositionYOffset="-20" Parameter.CancelButtonText="@CancelLbl" Parameter.DoneButtonText="@DoneLbl" Parameter.CancelButtonAction="ExecuteCancel" Parameter.ResetButtonAction="ExecuteReset" Parameter.DoneButtonAction="ExecuteDone" Parameter.IsDoneEnabled="true" Parameter.ResetInputKeyDataSource="{ResetInputKey}" Parameter.DoneInputKeyDataSource="{DoneInputKey}" Parameter.CancelInputKeyDataSource="{CancelInputKey}"/>
+
+
 			<!-- Bar-->
-			<BrushWidget HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" Brush="Encyclopedia.SoundBrush" Sprite="BlankWhiteSquare_9" Brush.Color="#000000CC">
+			<Widget HeightSizePolicy ="Fixed" WidthSizePolicy="Fixed" SuggestedHeight="!Encyclopedia.Frame.Height" SuggestedWidth="!Encyclopedia.Frame.Width" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="!Search.Popup.MarginTop">
 				<Children>
 
-					<BrushWidget HeightSizePolicy="Fixed" WidthSizePolicy="Fixed" SuggestedHeight="!Encyclopedia.Frame.Height" SuggestedWidth="!Encyclopedia.Frame.Width" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="!Search.Popup.MarginTop" Brush="Encyclopedia.Frame" >
+					<BrushWidget HeightSizePolicy="StretchToParent" WidthSizePolicy="StretchToParent" Brush="Encyclopedia.Frame" >
 					<Children>
 
 						<Widget HeightSizePolicy ="Fixed" WidthSizePolicy="StretchToParent" SuggestedHeight="150">
@@ -58,15 +64,15 @@
 
 					<!--Search Text Bar-->
 					<NavigationScopeTargeter ScopeID="EncyclopediaSearchButtonScope" ScopeParent="..\SearchButton" ScopeMovements="Vertical" NavigateFromScopeEdges="true" />
-					<EncyclopediaSearchBarBrushWidget Id="SearchButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="331" SuggestedHeight="94" Sprite="Encyclopedia\search_bar" VerticalAlignment="Center" HorizontalAlignment="Center" MarginLeft="1100" MarginBottom="900" DoNotAcceptEvents="true" SearchResultPanel="..\SearchResultListScrollablePanel" SearchInputWidget="SearchInputWidget" MinCharAmountToShowResults="3" ShowResults="false" Command.SearchBarClick="ExecuteOnSearchActivated">
+					<EncyclopediaSearchBarBrushWidget Id="SearchButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="331" SuggestedHeight="94" Sprite="Encyclopedia\search_bar" VerticalAlignment="Center" HorizontalAlignment="Center" MarginLeft="1100" MarginBottom="840" DoNotAcceptEvents="true" SearchResultPanel="..\SearchResultListScrollablePanel" SearchInputWidget="SearchInputWidget" MinCharAmountToShowResults="3" ShowResults="false" Command.SearchBarClick="ExecuteOnSearchActivated">
 					<Children>
-						<EditableTextWidget Id="SearchInputWidget" Text="SearchText" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="!Search.TextField.Height" SuggestedWidth="200" VerticalAlignment="Center" HorizontalAlignment="Left" Brush="Encyclopedia.Search.TextBox" MarginLeft="60" GamepadNavigationIndex="0"/>
+						<EditableTextWidget Id="SearchInputWidget" Text="@SearchText" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="!Search.TextField.Height" SuggestedWidth="200" VerticalAlignment="Center" HorizontalAlignment="Left" Brush="Encyclopedia.Search.TextBox" MarginLeft="60" GamepadNavigationIndex="0"/>
 						<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="24" Sprite="Encyclopedia\icon_search" VerticalAlignment="Center" HorizontalAlignment="Right" IsDisabled="true" MarginRight="38"/>
 					</Children>
 					</EncyclopediaSearchBarBrushWidget>
 
 
-					<ScrollbarWidget HeightSizePolicy ="Fixed" WidthSizePolicy="Fixed" Id="SearchResultListScrollbar" SuggestedHeight="110" SuggestedWidth="15" MinValue = "0" MaxValue = "100" VerticalAlignment="Top" HorizontalAlignment="Center" MarginLeft="1000" MarginTop="115" AlignmentAxis="Vertical"   Handle = "SearchResultListScrollbarHandle" IsVisible="false" IsEnabled="false">
+					<ScrollbarWidget  HeightSizePolicy ="Fixed" WidthSizePolicy="Fixed" Id="SearchResultListScrollbar" SuggestedHeight="0" SuggestedWidth="0" MinValue = "0" MaxValue = "100" VerticalAlignment="Top" HorizontalAlignment="Center" AlignmentAxis="Vertical"   Handle = "SearchResultListScrollbarHandle" IsVisible="false" IsEnabled="false">
 					<Children>
 						<Widget HeightSizePolicy ="StretchToParent" WidthSizePolicy="Fixed" SuggestedWidth="5"  HorizontalAlignment="Center" IsVisible="false"/>
 						<ImageWidget Id="SearchResultListScrollbarHandle" WidthSizePolicy = "StretchToParent" MarginRight="3" MarginLeft="3" HeightSizePolicy="Fixed" HorizontalAlignment = "Center" IsVisible="false"/>
@@ -74,27 +80,14 @@
 					</ScrollbarWidget>
 
 
-					<ScrollablePanel Id="SearchResultListScrollablePanel"  HeightSizePolicy ="Fixed" WidthSizePolicy="Fixed" SuggestedHeight="135" SuggestedWidth="260" InnerPanel="SearchResultListRect\SearchResultList" ClipRect="SearchResultListRect" MouseScrollAxis="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" MarginLeft="1000" MarginBottom="690" VerticalScrollbar="..\SearchResultListScrollbar" AutoHideScrollBars="true" AutoHideScrollBarHandle="true" Sprite="Encyclopedia\search_bar_expansion">
+					<ScrollablePanel Id="SearchResultListScrollablePanel" IsVisible="false"  HeightSizePolicy ="Fixed" WidthSizePolicy="Fixed" SuggestedHeight="0" SuggestedWidth="0" InnerPanel="SearchResultListRect\SearchResultList" ClipRect="SearchResultListRect" MouseScrollAxis="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" VerticalScrollbar="..\SearchResultListScrollbar" AutoHideScrollBars="true" AutoHideScrollBarHandle="true" Sprite="Encyclopedia\search_bar_expansion">
 					<Children>
-
-						<Widget Id="SearchResultListRect" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" ClipContents = "true" MarginBottom="15" MarginRight="20" MarginLeft="20" MarginTop="5">
-						<Children>
-
-							<NavigationForcedScopeCollectionTargeter CollectionID="EncyclopediaSearchResultsCollection" CollectionParent="..\." />
-							<NavigationScopeTargeter ScopeID="EncyclopediaSearchResultsScope" ScopeParent="..\SearchResultList" ScopeMovements="Vertical" />
-							<NavigatableListPanel DataSource="{Items}" Id="SearchResultList" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Top" HorizontalAlignment="Right"  StackLayout.LayoutMethod = "VerticalTopToBottom" >
-							<ItemTemplate>
-								<RichTextWidget WidthSizePolicy = "CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="20" Text="NameText" Brush="EncyclopediaSearchResult.Text" Brush.FontSize="20" IsDisabled="true" />
-							</ItemTemplate>
-							</NavigatableListPanel>
-
-						</Children>
-						</Widget>
-
+						<Widget Id="SearchResultListRect" IsVisible="false" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" ClipContents = "true" MarginBottom="15" MarginRight="20" MarginLeft="20" MarginTop="5"/>
 					</Children>
 					</ScrollablePanel>
 				</Children>
-			</BrushWidget>
+			</Widget>
+
 
 			<!-- ItemList -->
 			<BrushWidget DataSource="{ItemList}" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" DoNotAcceptEvents="true" Brush="Encyclopedia.Page.SoundBrush">
@@ -240,9 +233,6 @@
 					<Widget HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" Sprite="Encyclopedia\sp_encyclopedia_screen2" AlphaFactor="0" IsEnabled="false"/>
 				</Children>
 			</BrushWidget>
-
-			<!--Close Buttons-->
-			<Standard.TriplePopupCloseButtons VerticalAlignment="Bottom" PositionYOffset="-24" Parameter.CancelButtonText="@CancelLbl" Parameter.DoneButtonText="@DoneLbl" Parameter.CancelButtonAction="ExecuteCancel" Parameter.ResetButtonAction="ExecuteReset" Parameter.DoneButtonAction="ExecuteDone" Parameter.IsDoneEnabled="true" Parameter.ResetInputKeyDataSource="{ResetInputKey}" Parameter.DoneInputKeyDataSource="{DoneInputKey}" Parameter.CancelInputKeyDataSource="{CancelInputKey}"/>
 
 		</Children>
     </Widget>

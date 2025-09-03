@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Encyclopedia;
+using TaleWorlds.CampaignSystem.ViewModelCollection.Encyclopedia;
 using TaleWorlds.CampaignSystem.ViewModelCollection.Encyclopedia.List;
 using TaleWorlds.Core;
 using TaleWorlds.InputSystem;
@@ -41,9 +42,52 @@ namespace SeparatistCrisis.ViewModels
 
         private bool _isOpen;
 
+        private string _searchText = "";
+
+        private int _minCharAmountToShowResults = 3;
+
         public Action? OnPopUpClosed { get; set; }
 
         public SCTroopSelectionItemListVM? _itemListVM { get; set; }
+
+        [DataSourceProperty]
+        public string SearchText
+        {
+            get
+            {
+                return this._searchText;
+            }
+            set
+            {
+                if (value != this._searchText)
+                {
+                    bool isAppending = value.ToLower().Contains(this._searchText);
+                    bool isPasted = string.IsNullOrEmpty(this._searchText) && !string.IsNullOrEmpty(value);
+                    this._searchText = value.ToLower();
+                    Debug.Print("isAppending: " + isAppending.ToString() + " isPasted: " + isPasted.ToString(), 0, Debug.DebugColor.White, 17592186044416UL);
+                    // this.ItemList?.RefreshSearch(isAppending, isPasted); // The vanilla search bar has some stuff for asian characters. If translations dont work, look at that.
+                    this.ItemList?.UpdateFilters();
+                    base.OnPropertyChangedWithValue<string>(value, "SearchText");
+                }
+            }
+        }
+
+        [DataSourceProperty]
+        public int MinCharAmountToShowResults
+        {
+            get
+            {
+                return this._minCharAmountToShowResults;
+            }
+            set
+            {
+                if (value != this._minCharAmountToShowResults)
+                {
+                    this._minCharAmountToShowResults = value;
+                    base.OnPropertyChangedWithValue(value, "MinCharAmountToShowResults");
+                }
+            }
+        }
 
         [DataSourceProperty]
         public SCTroopSelectionItemListVM? ItemList
@@ -265,6 +309,14 @@ namespace SeparatistCrisis.ViewModels
                 this.Items = troops;
                 this.IsOpen = true;
             }
+
+            EncyclopediaFilterGroup filterGroup = new EncyclopediaFilterGroup(new List<EncyclopediaFilterItem>()
+            {
+                new EncyclopediaFilterItem(new TextObject("Search"), (object f) => ((BasicCharacterObject)f).Name.Value.ToLower().Contains(this.SearchText.ToLower()))
+            }, new TextObject("Other"));
+
+            var _ = filterGroup.Filters.All(x => x.IsActive = true);
+            this.ItemList?.Filters.Add(filterGroup);
         }
 
         public void OnItemSelectionToggled(CustomBattleTroopTypeVM item)

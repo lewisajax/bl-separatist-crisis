@@ -7,6 +7,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Encyclopedia;
 using TaleWorlds.CampaignSystem.Encyclopedia.Pages;
 using TaleWorlds.CampaignSystem.Settlements;
+using TaleWorlds.CampaignSystem.ViewModelCollection.Encyclopedia;
 using TaleWorlds.CampaignSystem.ViewModelCollection.Encyclopedia.List;
 using TaleWorlds.CampaignSystem.ViewModelCollection.Encyclopedia.Pages;
 using TaleWorlds.Core;
@@ -41,9 +42,11 @@ namespace SeparatistCrisis.ViewModels
 
         private string _lastSelectedItemId = "";
 
-        private IEnumerable<EncyclopediaFilterGroup> _filters;
+        private List<EncyclopediaFilterGroup> _filters;
 
         private IEnumerable<EncyclopediaListItem> _listItems;
+
+        public List<EncyclopediaFilterGroup> Filters { get { return _filters; } }
 
         [DataSourceProperty]
         public string EmptyListText
@@ -212,7 +215,7 @@ namespace SeparatistCrisis.ViewModels
             return false;
         }
 
-        public IEnumerable<EncyclopediaFilterGroup> InitializeFilterItems()
+        public List<EncyclopediaFilterGroup> InitializeFilterItems()
         {
             List<EncyclopediaFilterGroup> filterGroups = new List<EncyclopediaFilterGroup>();
 
@@ -320,12 +323,16 @@ namespace SeparatistCrisis.ViewModels
         public void ReCheckFilters(IEnumerable<TextObject> filterNames)
         {
             foreach (EncyclopediaFilterGroupVM filterGroup in this.FilterGroups)
+            {
+                if (filterGroup.FilterGroup.Name.Value == "Other") continue;
+
                 foreach (EncyclopediaListFilterVM listFilter in filterGroup.Filters)
                     listFilter.IsSelected = filterNames.Contains(listFilter.Filter.Name);
+            }
             
         }
 
-        private void UpdateFilters(EncyclopediaListFilterVM filterVM)
+        public void UpdateFilters(EncyclopediaListFilterVM filterVM = null)
         {
             this.IsInitializationOver = false;
             foreach (SCTroopSelectionListItemVM encyclopediaListItemVM in this.Items)
