@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using TaleWorlds.Core;
 using TaleWorlds.Core.ViewModelCollection;
 using TaleWorlds.Core.ViewModelCollection.Selector;
+using TaleWorlds.Engine;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade.CustomBattle;
@@ -39,6 +40,8 @@ namespace SeparatistCrisis.ViewModels
         private string _factionText = null!;
 
         private string _titleText = null!;
+
+        // private ImageIdentifierVM _factionVisual;
 
         public BasicCultureObject SelectedFaction { get; private set; } = null!;
         public BasicCharacterObject SelectedCharacter { get; private set; } = null!;
@@ -215,6 +218,23 @@ namespace SeparatistCrisis.ViewModels
             }
         }
 
+        //[DataSourceProperty]
+        //public ImageIdentifierVM FactionVisual
+        //{
+        //    get
+        //    {
+        //        return this._factionVisual;
+        //    }
+        //    set
+        //    {
+        //        if (value != this._factionVisual)
+        //        {
+        //            this._factionVisual = value;
+        //            base.OnPropertyChangedWithValue<ImageIdentifierVM>(value, "FactionVisual");
+        //        }
+        //    }
+        //}
+
         public SCCustomBattleMenuSideVM(TextObject sideName, bool isPlayerSide, SCTroopSelectionPopUpVM troopTypeSelectionPopUp)
         {
             this._sideName = sideName;
@@ -250,7 +270,7 @@ namespace SeparatistCrisis.ViewModels
             this.CharacterSelectionGroup.SelectedIndex = (this._isPlayerSide ? 0 : 1);
 
             this.FactionSelectionGroup.ItemList.Clear();
-            foreach (BasicCultureObject faction in CustomBattleData.Factions)
+            foreach (BasicCultureObject faction in Game.Current.ObjectManager.GetObjectTypeList<BasicCultureObject>().Where(x => x.IsMainCulture).ToArray())
             {
                 this.FactionSelectionGroup.AddItem(new SCFactionItemVM(faction));
             }
@@ -282,9 +302,13 @@ namespace SeparatistCrisis.ViewModels
             }
 
             if (faction != null)
+            {
                 this.SelectedFactionName = faction.Name.ToString();
+            }
             else
+            {
                 this.SelectedFactionName = string.Empty;
+            }
 
             if (this.OppositeSide != null)
             {

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Encyclopedia;
+using TaleWorlds.CampaignSystem.ViewModelCollection.CharacterDeveloper;
 using TaleWorlds.CampaignSystem.ViewModelCollection.Encyclopedia.List;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
@@ -14,30 +15,39 @@ namespace SeparatistCrisis.ViewModels
     public class SCTroopSelectionListItemVM: ViewModel
     {
         private readonly string _type;
-
         private readonly Action _onShowTooltip;
-
+        private readonly Action<SCTroopSelectionListItemVM, bool> _onSelected;
         private string _id;
-
         private string _name = null!;
-
         private string _comparedValue = null!;
-
         private bool _isFiltered;
-
         private bool _isBookmarked;
-
         private bool _playerCanSeeValues;
-
         private bool _hideAvailable;
-
         private bool _hideSelected;
 
-        private readonly Action<SCTroopSelectionListItemVM, bool> _onSelected;
+        // private ImageIdentifierVM _visual;
 
         public object Object { get; private set; }
 
         public EncyclopediaListItem ListItem { get; }
+
+        // [DataSourceProperty]
+        // public ImageIdentifierVM Visual
+        // {
+        //     get
+        //     {
+        //         return this._visual;
+        //     }
+        //     set
+        //     {
+        //         if (value != this._visual)
+        //         {
+        //             this._visual = value;
+        //             base.OnPropertyChangedWithValue<ImageIdentifierVM>(value, "Visual");
+        //         }
+        //     }
+        // }
 
         [DataSourceProperty]
         public bool IsFiltered
@@ -188,6 +198,12 @@ namespace SeparatistCrisis.ViewModels
             this._id = listItem.Id;
             this._type = listItem.TypeName;
             this.ListItem = listItem;
+
+            // if (this.Object != null)
+            // {
+            //     this.Visual = new ImageIdentifierVM(CharacterCode.CreateFrom((BasicCharacterObject)this.Object));
+            // }
+
             this.PlayerCanSeeValues = listItem.PlayerCanSeeValues;
             this._onShowTooltip = listItem.OnShowTooltip;
             this._isBookmarked = false;

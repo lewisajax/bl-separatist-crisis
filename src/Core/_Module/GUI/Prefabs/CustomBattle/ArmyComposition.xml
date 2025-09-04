@@ -45,7 +45,10 @@
         <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="12" Sprite="StdAssets\subpage_divider" MarginTop="400"/>
 
         <!--_____Faction Selection_______-->
-        <RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="420" Brush="CustomBattle.Character.Title.Text" Text="@SelectedFactionName" />
+		<RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="420" Brush="CustomBattle.Character.Title.Text" Text="@SelectedFactionName" />
+
+	    <!-- Faction Icon Visual - If we want to just have the icon without the coloured background, we'd have to set up our own banner_icons.xml since there's no default transparent colours to be had. -->
+		<!--<ImageIdentifierWidget DataSource="{FactionVisual}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" HorizontalAlignment="Center" VerticalAlignment="Top" SuggestedHeight="64" SuggestedWidth="64" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" MarginLeft="0" MarginTop="420" DoNotAcceptEvents="true" />-->
 
 		<!--<NavigationScopeTargeter ScopeID="ArmyCompositionFactionSelectionScope" ScopeParent="..\FactionSelectionList" ScopeMovements="Horizontal" />
         <NavigatableListPanel Id="FactionSelectionList" DataSource="{FactionSelectionGroup\Factions}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="480">

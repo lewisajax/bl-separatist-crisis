@@ -14,6 +14,14 @@ using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade.CustomBattle;
 using TaleWorlds.MountAndBlade.ViewModelCollection.Input;
 
+// - Disabling/grey out done button when 0 troops selected - Would need to setup our own Standard.TriplePopupCloseButtons xml/widget.
+
+// - Culture icon above faction dropdown - See CustomBattleScreen.xml.
+//   If we want to just have the icon without the coloured background, we'd have to set up our own banner_icons.xml since there's no default transparent colours to be had.
+
+// - Troop cards (optional) - It's pretty heavy and I don't think that NavigatableList is a virtual list. I believe that everything gets loaded at once.
+//   Uncomment the Visual datasource in SCTroopSelectionListItemVM as well as the xml to see it.
+
 namespace SeparatistCrisis.ViewModels
 {
     public class SCTroopSelectionPopUpVM : ViewModel
@@ -59,13 +67,13 @@ namespace SeparatistCrisis.ViewModels
             }
             set
             {
-                if (value != this._searchText)
+                if (value != null && value != this._searchText)
                 {
                     bool isAppending = value.ToLower().Contains(this._searchText);
                     bool isPasted = string.IsNullOrEmpty(this._searchText) && !string.IsNullOrEmpty(value);
                     this._searchText = value.ToLower();
                     Debug.Print("isAppending: " + isAppending.ToString() + " isPasted: " + isPasted.ToString(), 0, Debug.DebugColor.White, 17592186044416UL);
-                    // this.ItemList?.RefreshSearch(isAppending, isPasted); // The vanilla search bar has some stuff for asian characters. If translations dont work, look at that.
+                    // this.ItemList?.RefreshSearch(isAppending, isPasted); // The vanilla search bar has some stuff for asian?? characters. If translations dont work, look at that.
                     this.ItemList?.UpdateFilters();
                     base.OnPropertyChangedWithValue<string>(value, "SearchText");
                 }
@@ -343,7 +351,7 @@ namespace SeparatistCrisis.ViewModels
         {
             if (ItemList != null)
             {
-                IEnumerable<BasicCharacterObject> troopCharacters = new MBBindingList<CustomBattleTroopTypeVM>[] {
+                BasicCharacterObject[] troopCharacters = new MBBindingList<CustomBattleTroopTypeVM>[] {
                     this.ItemList.MeleeTroopTypes, this.ItemList.RangedTroopTypes, this.ItemList.CavalryTroopTypes, this.ItemList.MountedArcherTroopTypes
                 }.SelectMany(x => x.Aggregate(new List<BasicCharacterObject>(), (prev, curr) =>
                 {
@@ -351,14 +359,15 @@ namespace SeparatistCrisis.ViewModels
                         prev.Add(curr.Character);
 
                     return prev;
-                }));
+                })).ToArray();
 
                 this.SetInitialTroops(troopCharacters);
+                this.RefreshValues();
             }
         }
 
         // This could definitely do with some optimising. Noticeable freeze which will no doubt get worse, the more troops we add.
-        public void SetInitialTroops(IEnumerable<BasicCharacterObject> troops)
+        public void SetInitialTroops(BasicCharacterObject[] troops)
         {
             if (this.ItemList != null)
             {

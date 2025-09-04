@@ -15,6 +15,9 @@
 							<!--Space if not bookmarked-->
 							<Widget IsHidden="false" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35" HorizontalAlignment="Center" VerticalAlignment="Center" />
 
+							<!-- Troop portrait next to their name. Uncomment the Visual datasource in SCTroopSelectionListItemVM to get it working -->
+							<!-- <ImageIdentifierWidget DataSource= "{Visual}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="48" SuggestedWidth="64" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" MarginLeft="0" MarginTop="0" DoNotAcceptEvents="true" /> -->
+
 							<!--Name-->
 							<ScrollingTextWidget Id="ListItemNameTextWidget" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" SuggestedWidth="500" MarginLeft="5" Text="@Name"/>
 
