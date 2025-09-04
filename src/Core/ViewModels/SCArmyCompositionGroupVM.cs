@@ -193,11 +193,50 @@ namespace SeparatistCrisis.ViewModels
             this.CompositionValues[2] = 25;
             this.CompositionValues[3] = 25;
             this.ItemListVM = new SCTroopSelectionItemListVM();
-            this.MeleeInfantryComposition = new SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType.MeleeInfantry, this._allCharacterObjects, this._allSkills, new Action<int, int>(this.UpdateSliders), troopTypeSelectionPopUp, this.ItemListVM, this.CompositionValues);
-            this.RangedInfantryComposition = new SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType.RangedInfantry, this._allCharacterObjects, this._allSkills, new Action<int, int>(this.UpdateSliders), troopTypeSelectionPopUp, this.ItemListVM, this.CompositionValues);
-            this.MeleeCavalryComposition = new SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType.MeleeCavalry, this._allCharacterObjects, this._allSkills, new Action<int, int>(this.UpdateSliders), troopTypeSelectionPopUp, this.ItemListVM, this.CompositionValues);
-            this.RangedCavalryComposition = new SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType.RangedCavalry, this._allCharacterObjects, this._allSkills, new Action<int, int>(this.UpdateSliders), troopTypeSelectionPopUp, this.ItemListVM, this.CompositionValues);
+            this.MeleeInfantryComposition = new SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType.MeleeInfantry, this._allCharacterObjects, this._allSkills, new Action<int, int>(this.UpdateSliders), new Action(this.OnPopUpDone), troopTypeSelectionPopUp, this.ItemListVM, this.CompositionValues);
+            this.RangedInfantryComposition = new SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType.RangedInfantry, this._allCharacterObjects, this._allSkills, new Action<int, int>(this.UpdateSliders), new Action(this.OnPopUpDone), troopTypeSelectionPopUp, this.ItemListVM, this.CompositionValues);
+            this.MeleeCavalryComposition = new SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType.MeleeCavalry, this._allCharacterObjects, this._allSkills, new Action<int, int>(this.UpdateSliders), new Action(this.OnPopUpDone), troopTypeSelectionPopUp, this.ItemListVM, this.CompositionValues);
+            this.RangedCavalryComposition = new SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType.RangedCavalry, this._allCharacterObjects, this._allSkills, new Action<int, int>(this.UpdateSliders), new Action(this.OnPopUpDone), troopTypeSelectionPopUp, this.ItemListVM, this.CompositionValues);
+
+            // Lots of circular dependencies going on with this whole feature, so whats a couple more eh?
+            this.ItemListVM.MeleeTroopTypes = this.MeleeInfantryComposition.TroopTypes;
+            this.ItemListVM.RangedTroopTypes = this.RangedInfantryComposition.TroopTypes;
+            this.ItemListVM.CavalryTroopTypes = this.MeleeCavalryComposition.TroopTypes;
+            this.ItemListVM.MountedArcherTroopTypes = this.RangedCavalryComposition.TroopTypes;
+
             this.ArmySize = BannerlordConfig.GetRealBattleSize() / 5;
+            this.RefreshValues();
+        }
+
+        public void OnPopUpDone()
+        {
+            SCArmyCompositionItemVM[] comps = new SCArmyCompositionItemVM[4]
+            {
+                this.MeleeInfantryComposition, this.RangedInfantryComposition,
+                this.MeleeCavalryComposition, this.RangedCavalryComposition
+            };
+
+            // Goes through the compositions, enabling/disabling the sliders if there's no troops when we click 'Ok' in the popup.
+            for (int i = 0; i < comps.Length; i++)
+            {
+                if (comps[i].TroopTypes.Count <= 0)
+                {
+                    // For when the last valid composition has it's troops deleted but we re-add troops to the invalid sliders at the same time.
+                    for (int j = 0; j < comps.Length; j++)
+                    {
+                        if (comps[j].TroopTypes.Count > 0)
+                            comps[j].IsValid = true;
+                    }
+
+                    this.UpdateSliders(0, i);
+                    comps[i].IsValid = false;
+                }
+                else if (comps[i].IsValid == false)
+                {
+                    comps[i].IsValid = true;
+                }
+            }
+
             this.RefreshValues();
         }
 

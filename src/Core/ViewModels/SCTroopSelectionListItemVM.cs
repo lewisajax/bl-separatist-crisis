@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Encyclopedia;
+using TaleWorlds.CampaignSystem.ViewModelCollection.Encyclopedia.List;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 
@@ -31,6 +32,8 @@ namespace SeparatistCrisis.ViewModels
         private bool _hideAvailable;
 
         private bool _hideSelected;
+
+        private readonly Action<SCTroopSelectionListItemVM, bool> _onSelected;
 
         public object Object { get; private set; }
 
@@ -135,6 +138,7 @@ namespace SeparatistCrisis.ViewModels
                 {
                     this._isBookmarked = value;
                     base.OnPropertyChangedWithValue(value, "IsBookmarked");
+                    this._onSelected(this, value);
                 }
             }
         }
@@ -178,7 +182,7 @@ namespace SeparatistCrisis.ViewModels
             }
         }
 
-        public SCTroopSelectionListItemVM(EncyclopediaListItem listItem)
+        public SCTroopSelectionListItemVM(EncyclopediaListItem listItem, Action<SCTroopSelectionListItemVM, bool> onSelected)
         {
             this.Object = listItem.Object;
             this._id = listItem.Id;
@@ -189,6 +193,7 @@ namespace SeparatistCrisis.ViewModels
             this._isBookmarked = false;
             this._hideAvailable = false;
             this._hideSelected = true;
+            this._onSelected = onSelected;
             this.RefreshValues();
         }
 

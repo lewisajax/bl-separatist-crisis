@@ -18,8 +18,6 @@ namespace SeparatistCrisis.ViewModels
 {
     public class SCTroopSelectionPopUpVM : ViewModel
     {
-        private List<bool> _itemSelectionsBackUp = null!;
-
         private int _selectedItemCount;
 
         private InputKeyItemVM _doneInputKey = null!;
@@ -47,6 +45,8 @@ namespace SeparatistCrisis.ViewModels
         private int _minCharAmountToShowResults = 3;
 
         public Action? OnPopUpClosed { get; set; }
+
+        public Action? OnDone { get; set; }
 
         public SCTroopSelectionItemListVM? _itemListVM { get; set; }
 
@@ -295,28 +295,28 @@ namespace SeparatistCrisis.ViewModels
             this.ResetInputKey.OnFinalize();
         }
 
-        public void OpenPopUp(string title, MBBindingList<CustomBattleTroopTypeVM> troops)
+        public void OpenPopUp(string title)
         {
-            this._itemSelectionsBackUp = new List<bool>();
-            if (troops != null)
+            this.ExecuteReset();
+
+            if (this.ItemList != null && !this.ItemList.HasSearchFilter)
             {
-                foreach (CustomBattleTroopTypeVM customBattleTroopTypeVM in troops)
+                // We add the search filter but we don't have it show up in the UI
+                EncyclopediaFilterGroup filterGroup = new EncyclopediaFilterGroup(new List<EncyclopediaFilterItem>()
                 {
-                    this._itemSelectionsBackUp.Add(customBattleTroopTypeVM.IsSelected);
-                }
-                this._selectedItemCount = troops.Count((CustomBattleTroopTypeVM x) => x.IsSelected);
-                this.Title = title;
-                this.Items = troops;
-                this.IsOpen = true;
+                    // Captures names and ids
+                    new EncyclopediaFilterItem(new TextObject("Search"), (object f) => ((BasicCharacterObject)f).Name.Value.ToLower().Contains(this.SearchText.ToLower()) || ((BasicCharacterObject)f).StringId.ToLower().Contains(this.SearchText.ToLower()))
+                }, new TextObject("Other"));
+
+                var _ = filterGroup.Filters.All(x => x.IsActive = true);
+
+                // Atm, with ~1000 entries, there's no need for debouncing. Might need to revisit this later though.
+                this.ItemList.Filters.Add(filterGroup);
+                this.ItemList.HasSearchFilter = true;
             }
 
-            EncyclopediaFilterGroup filterGroup = new EncyclopediaFilterGroup(new List<EncyclopediaFilterItem>()
-            {
-                new EncyclopediaFilterItem(new TextObject("Search"), (object f) => ((BasicCharacterObject)f).Name.Value.ToLower().Contains(this.SearchText.ToLower()))
-            }, new TextObject("Other"));
-
-            var _ = filterGroup.Filters.All(x => x.IsActive = true);
-            this.ItemList?.Filters.Add(filterGroup);
+            this.IsOpen = true;
+            this.RefreshValues();
         }
 
         public void OnItemSelectionToggled(CustomBattleTroopTypeVM item)
@@ -339,18 +339,41 @@ namespace SeparatistCrisis.ViewModels
             this._selectedItemCount = this.Items.Count;
         }
 
-        public void ExecuteBackToDefault()
+        public void ExecuteReset()
         {
-            this.Items.ApplyActionOnAllItems(delegate (CustomBattleTroopTypeVM x)
+            if (ItemList != null)
             {
-                x.IsSelected = x.IsDefault;
-            });
-            this._selectedItemCount = this.Items.Count((CustomBattleTroopTypeVM x) => x.IsSelected);
+                IEnumerable<BasicCharacterObject> troopCharacters = new MBBindingList<CustomBattleTroopTypeVM>[] {
+                    this.ItemList.MeleeTroopTypes, this.ItemList.RangedTroopTypes, this.ItemList.CavalryTroopTypes, this.ItemList.MountedArcherTroopTypes
+                }.SelectMany(x => x.Aggregate(new List<BasicCharacterObject>(), (prev, curr) =>
+                {
+                    if (curr.IsSelected)
+                        prev.Add(curr.Character);
+
+                    return prev;
+                }));
+
+                this.SetInitialTroops(troopCharacters);
+            }
+        }
+
+        // This could definitely do with some optimising. Noticeable freeze which will no doubt get worse, the more troops we add.
+        public void SetInitialTroops(IEnumerable<BasicCharacterObject> troops)
+        {
+            if (this.ItemList != null)
+            {
+                foreach (SCTroopSelectionListItemVM itemVM in this.ItemList.Items)
+                {
+                    if (troops.Contains((BasicCharacterObject)itemVM.Object))
+                        itemVM.IsBookmarked = true;
+                    else
+                        itemVM.IsBookmarked = false;
+                }
+            }
         }
 
         public void ExecuteCancel()
         {
-            this.ExecuteReset();
             Action? onPopUpClosed = this.OnPopUpClosed;
             if (onPopUpClosed != null)
             {
@@ -361,22 +384,63 @@ namespace SeparatistCrisis.ViewModels
 
         public void ExecuteDone()
         {
-            this.IsOpen = false;
-        }
+            // Don't let them leave the popup if there's no troops selected. We should look at disabling the 'Done' button instead.
+            if (this.ItemList?.SelectedItems.Count <= 0) return;
 
-        public void ExecuteReset()
-        {
-            int count = this._itemSelectionsBackUp.Count;
-            if (count != this.Items.Count)
+            this.IsOpen = false;
+
+            // Do we handle the troop assignment in here or should we hand it off the ArmyCompItemVM?
+
+            if (this.ItemList != null)
             {
-                Debug.FailedAssert("Backup troop count does not match with the actual troop count.", "C:\\Develop\\MB3\\Source\\Bannerlord\\TaleWorlds.MountAndBlade.CustomBattle\\CustomBattle\\TroopTypeSelectionPopUpVM.cs", "ExecuteReset", 100);
-                return;
+                // There are caching opportunities here. Don't ignore yourself
+                this.ItemList.MeleeTroopTypes.Clear();
+                this.ItemList.RangedTroopTypes.Clear();
+                this.ItemList.CavalryTroopTypes.Clear();
+                this.ItemList.MountedArcherTroopTypes.Clear();
+
+                MBReadOnlyList<SkillObject> allSkills = Game.Current.ObjectManager.GetObjectTypeList<SkillObject>();
+
+                foreach (SCTroopSelectionListItemVM item in this.ItemList.SelectedItems)
+                {
+                    BasicCharacterObject? character = item.Object as BasicCharacterObject;
+
+                    if (character != null)
+                    {
+                        switch(character.GetFormationClass())
+                        {
+                            case FormationClass.HorseArcher:
+                                CustomBattleTroopTypeVM troopType = new CustomBattleTroopTypeVM(character, new Action<CustomBattleTroopTypeVM>(this.OnItemSelectionToggled),
+                                    SCArmyCompositionItemVM.GetTroopTypeIconData(SCArmyCompositionItemVM.CompositionType.RangedCavalry), allSkills, false);
+                                troopType.IsSelected = true;
+                                this.ItemList.MountedArcherTroopTypes.Add(troopType);
+                                break;
+                            case FormationClass.Cavalry:
+                                CustomBattleTroopTypeVM troopType2 = new CustomBattleTroopTypeVM(character, new Action<CustomBattleTroopTypeVM>(this.OnItemSelectionToggled),
+                                    SCArmyCompositionItemVM.GetTroopTypeIconData(SCArmyCompositionItemVM.CompositionType.MeleeCavalry), allSkills, false);
+                                troopType2.IsSelected = true;
+                                this.ItemList.CavalryTroopTypes.Add(troopType2);
+                                break;
+                            case FormationClass.Ranged:
+                                CustomBattleTroopTypeVM troopType3 = new CustomBattleTroopTypeVM(character, new Action<CustomBattleTroopTypeVM>(this.OnItemSelectionToggled),
+                                    SCArmyCompositionItemVM.GetTroopTypeIconData(SCArmyCompositionItemVM.CompositionType.RangedInfantry), allSkills, false);
+                                troopType3.IsSelected = true;
+                                this.ItemList.RangedTroopTypes.Add(troopType3);
+                                break;
+                            case FormationClass.Infantry:
+                                CustomBattleTroopTypeVM troopType4 = new CustomBattleTroopTypeVM(character, new Action<CustomBattleTroopTypeVM>(this.OnItemSelectionToggled),
+                                    SCArmyCompositionItemVM.GetTroopTypeIconData(SCArmyCompositionItemVM.CompositionType.MeleeInfantry), allSkills, false);
+                                troopType4.IsSelected = true;
+                                this.ItemList.MeleeTroopTypes.Add(troopType4);
+                                break;
+                            default:
+                                return;
+                        }
+                    }
+                }
+
+                this.OnDone?.Invoke();
             }
-            for (int i = 0; i < count; i++)
-            {
-                this.Items[i].IsSelected = this._itemSelectionsBackUp[i];
-            }
-            this._selectedItemCount = this.Items.Count((CustomBattleTroopTypeVM x) => x.IsSelected);
         }
 
         public void SetCancelInputKey(HotKey hotkey)

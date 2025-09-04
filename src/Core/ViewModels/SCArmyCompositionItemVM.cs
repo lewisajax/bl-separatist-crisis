@@ -49,6 +49,8 @@ namespace SeparatistCrisis.ViewModels
 
         private bool _isValid;
 
+        public Action? OnDone { get; set; }
+
         public SCTroopSelectionItemListVM? ItemListVM { get; private set; }
 
         [DataSourceProperty]
@@ -153,7 +155,7 @@ namespace SeparatistCrisis.ViewModels
             }
         }
 
-        public SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType type, List<BasicCharacterObject> allCharacterObjects, MBReadOnlyList<SkillObject> allSkills, Action<int, int> onCompositionValueChanged, SCTroopSelectionPopUpVM troopTypeSelectionPopUp, SCTroopSelectionItemListVM? itemList, int[] compositionValues)
+        public SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType type, List<BasicCharacterObject> allCharacterObjects, MBReadOnlyList<SkillObject> allSkills, Action<int, int> onCompositionValueChanged, Action onPopUpDone, SCTroopSelectionPopUpVM troopTypeSelectionPopUp, SCTroopSelectionItemListVM? itemList, int[] compositionValues)
         {
             this._allCharacterObjects = allCharacterObjects;
             this._allSkills = allSkills;
@@ -166,6 +168,7 @@ namespace SeparatistCrisis.ViewModels
             this.InvalidHint = new HintViewModel(new TextObject("{=iSQTtNUD}This faction doesn't have this troop type.", null), null);
             this.AddTroopTypeHint = new HintViewModel(new TextObject("{=eMbuGGus}Select troops to spawn in formation.", null), null);
             this.ItemListVM = itemList;
+            this.OnDone = onPopUpDone;
         }
 
         public override void RefreshValues()
@@ -196,19 +199,24 @@ namespace SeparatistCrisis.ViewModels
             }
         }
 
+        // This is called when we click the '+' button under each slider.
         public void ExecuteAddTroopTypes()
         {
             string title = GameTexts.FindText("str_custom_battle_choose_troop", this._type.ToString()).ToString();
+
             SCTroopSelectionPopUpVM troopTypeSelectionPopUp = this._troopTypeSelectionPopUp;
             if (troopTypeSelectionPopUp == null)
-            {
                 return;
-            }
+
             this.ResetFilters(this.ItemListVM);
+
+            // Since there's always 2 instances of ArmyCompositionGroupVMs but only 1 popup instance, we inject references to the popup through the individual slider buttons.
             troopTypeSelectionPopUp.ItemList = this.ItemListVM;
-            troopTypeSelectionPopUp.OpenPopUp(title, this.TroopTypes);
+            troopTypeSelectionPopUp.OnDone = this.OnDone;
+            troopTypeSelectionPopUp.OpenPopUp(title);
         }
 
+        // When we click on the infantry/ranged/cav slider's add button, we set the relevant toggles and clear any other filters on start.
         public void ResetFilters(SCTroopSelectionItemListVM? itemList)
         {
             TextObject compName;

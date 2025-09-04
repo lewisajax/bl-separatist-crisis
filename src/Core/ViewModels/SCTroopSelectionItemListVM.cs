@@ -14,6 +14,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Core.ViewModelCollection.Tutorial;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
+using TaleWorlds.MountAndBlade.CustomBattle;
 
 namespace SeparatistCrisis.ViewModels
 {
@@ -46,7 +47,16 @@ namespace SeparatistCrisis.ViewModels
 
         private IEnumerable<EncyclopediaListItem> _listItems;
 
+        public MBBindingList<CustomBattleTroopTypeVM> MeleeTroopTypes { get; set; } = null!;
+        public MBBindingList<CustomBattleTroopTypeVM> RangedTroopTypes { get; set; } = null!;
+        public MBBindingList<CustomBattleTroopTypeVM> CavalryTroopTypes { get; set; } = null!;
+        public MBBindingList<CustomBattleTroopTypeVM> MountedArcherTroopTypes { get; set; } = null!;
+
+        public bool HasSearchFilter { get; set; }
+
         public List<EncyclopediaFilterGroup> Filters { get { return _filters; } }
+
+        public List<SCTroopSelectionListItemVM> SelectedItems { get; } = new List<SCTroopSelectionListItemVM>();
 
         [DataSourceProperty]
         public string EmptyListText
@@ -183,18 +193,29 @@ namespace SeparatistCrisis.ViewModels
                 this._filterGroupVMs.Add(new EncyclopediaFilterGroupVM(filterGroup, new Action<EncyclopediaListFilterVM>(this.UpdateFilters)));
             }
 
+            this.HasSearchFilter = false;
+
             this.IsInitializationOver = false;
 
             this._itemVMs.Clear();
             foreach (EncyclopediaListItem listItem in this._listItems)
             {
-                SCTroopSelectionListItemVM encyclopediaListItemVM = new SCTroopSelectionListItemVM(listItem);
+                SCTroopSelectionListItemVM encyclopediaListItemVM = new SCTroopSelectionListItemVM(listItem, new Action<SCTroopSelectionListItemVM, bool>(this.OnSelected));
                 encyclopediaListItemVM.IsFiltered = this.IsFiltered(encyclopediaListItemVM.Object, this._filters);
                 this._itemVMs.Add(encyclopediaListItemVM);
             }
 
             this.RefreshValues();
             this.IsInitializationOver = true;
+        }
+
+        public void OnSelected(SCTroopSelectionListItemVM item, bool isBookmarked)
+        {
+            // I'm using the vanilla bookmarked prop for when we select troops
+            if (isBookmarked)
+                this.SelectedItems.Add(item);
+            else
+                this.SelectedItems.Remove(item);
         }
 
         public bool IsFiltered(object o, IEnumerable<EncyclopediaFilterGroup> filterGroups)
@@ -263,7 +284,7 @@ namespace SeparatistCrisis.ViewModels
                     BasicCharacterObject character = enumerator.Current;
                     if (this.IsValidEncyclopediaItem(character))
                     {
-                        yield return new EncyclopediaListItem(character, character.Name.ToString(), "", character.StringId, "base.GetIdentifier(typeof(BasicCharacterObject))", true, delegate ()
+                        yield return new EncyclopediaListItem(character, character.Name.ToString(), "", character.StringId, "", true, delegate ()
                         {
                             InformationManager.ShowTooltip(typeof(BasicCharacterObject), new object[]
                             {
@@ -320,10 +341,12 @@ namespace SeparatistCrisis.ViewModels
         {
         }
 
+        // Goes through and disables all the filters except for the ones inside filterNames
         public void ReCheckFilters(IEnumerable<TextObject> filterNames)
         {
             foreach (EncyclopediaFilterGroupVM filterGroup in this.FilterGroups)
             {
+                // 'Other' filters are not shown in the UI. We want them to always be active.
                 if (filterGroup.FilterGroup.Name.Value == "Other") continue;
 
                 foreach (EncyclopediaListFilterVM listFilter in filterGroup.Filters)
