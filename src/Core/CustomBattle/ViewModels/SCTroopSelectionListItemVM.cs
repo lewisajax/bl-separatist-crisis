@@ -10,7 +10,7 @@ using TaleWorlds.CampaignSystem.ViewModelCollection.Encyclopedia.List;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 
-namespace SeparatistCrisis.ViewModels
+namespace SeparatistCrisis.CustomBattle
 {
     public class SCTroopSelectionListItemVM: ViewModel
     {
@@ -54,15 +54,15 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._isFiltered;
+                return _isFiltered;
             }
             set
             {
-                if (value != this._isFiltered)
+                if (value != _isFiltered)
                 {
-                    this._isFiltered = value;
-                    base.OnPropertyChangedWithValue(value, "IsFiltered");
-                    this.RefreshValues(); // I didnt want to take control of even more classes so we're taking a shortcut with this.
+                    _isFiltered = value;
+                    OnPropertyChangedWithValue(value, "IsFiltered");
+                    RefreshValues(); // I didnt want to take control of even more classes so we're taking a shortcut with this.
                 }
             }
         }
@@ -72,14 +72,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._playerCanSeeValues;
+                return _playerCanSeeValues;
             }
             set
             {
-                if (value != this._playerCanSeeValues)
+                if (value != _playerCanSeeValues)
                 {
-                    this._playerCanSeeValues = value;
-                    base.OnPropertyChangedWithValue(value, "PlayerCanSeeValues");
+                    _playerCanSeeValues = value;
+                    OnPropertyChangedWithValue(value, "PlayerCanSeeValues");
                 }
             }
         }
@@ -89,14 +89,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._id;
+                return _id;
             }
             set
             {
-                if (value != this._id)
+                if (value != _id)
                 {
-                    this._id = value;
-                    base.OnPropertyChangedWithValue<string>(value, "Id");
+                    _id = value;
+                    OnPropertyChangedWithValue(value, "Id");
                 }
             }
         }
@@ -106,14 +106,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._name;
+                return _name;
             }
             set
             {
-                if (value != this._name)
+                if (value != _name)
                 {
-                    this._name = value;
-                    base.OnPropertyChangedWithValue<string>(value, "Name");
+                    _name = value;
+                    OnPropertyChangedWithValue(value, "Name");
                 }
             }
         }
@@ -123,14 +123,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._comparedValue;
+                return _comparedValue;
             }
             set
             {
-                if (value != this._comparedValue)
+                if (value != _comparedValue)
                 {
-                    this._comparedValue = value;
-                    base.OnPropertyChangedWithValue<string>(value, "ComparedValue");
+                    _comparedValue = value;
+                    OnPropertyChangedWithValue(value, "ComparedValue");
                 }
             }
         }
@@ -140,15 +140,15 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._isBookmarked;
+                return _isBookmarked;
             }
             set
             {
-                if (value != this._isBookmarked)
+                if (value != _isBookmarked)
                 {
-                    this._isBookmarked = value;
-                    base.OnPropertyChangedWithValue(value, "IsBookmarked");
-                    this._onSelected(this, value);
+                    _isBookmarked = value;
+                    OnPropertyChangedWithValue(value, "IsBookmarked");
+                    _onSelected(this, value);
                 }
             }
         }
@@ -163,14 +163,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._hideAvailable;
+                return _hideAvailable;
             }
             set
             {
-                if (value != this._hideAvailable)
+                if (value != _hideAvailable)
                 {
-                    this._hideAvailable = value;
-                    base.OnPropertyChangedWithValue(value, "HideAvailable");
+                    _hideAvailable = value;
+                    OnPropertyChangedWithValue(value, "HideAvailable");
                 }
             }
         }
@@ -180,53 +180,53 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._hideSelected;
+                return _hideSelected;
             }
             set
             {
-                if (value != this._hideSelected)
+                if (value != _hideSelected)
                 {
-                    this._hideSelected = value;
-                    base.OnPropertyChangedWithValue(value, "HideSelected");
+                    _hideSelected = value;
+                    OnPropertyChangedWithValue(value, "HideSelected");
                 }
             }
         }
 
         public SCTroopSelectionListItemVM(EncyclopediaListItem listItem, Action<SCTroopSelectionListItemVM, bool> onSelected)
         {
-            this.Object = listItem.Object;
-            this._id = listItem.Id;
-            this._type = listItem.TypeName;
-            this.ListItem = listItem;
+            Object = listItem.Object;
+            _id = listItem.Id;
+            _type = listItem.TypeName;
+            ListItem = listItem;
 
             // if (this.Object != null)
             // {
             //     this.Visual = new ImageIdentifierVM(CharacterCode.CreateFrom((BasicCharacterObject)this.Object));
             // }
 
-            this.PlayerCanSeeValues = listItem.PlayerCanSeeValues;
-            this._onShowTooltip = listItem.OnShowTooltip;
-            this._isBookmarked = false;
-            this._hideAvailable = false;
-            this._hideSelected = true;
-            this._onSelected = onSelected;
-            this.RefreshValues();
+            PlayerCanSeeValues = listItem.PlayerCanSeeValues;
+            _onShowTooltip = listItem.OnShowTooltip;
+            _isBookmarked = false;
+            _hideAvailable = false;
+            _hideSelected = true;
+            _onSelected = onSelected;
+            RefreshValues();
         }
 
         public override void RefreshValues()
         {
             base.RefreshValues();
-            this.Name = this.ListItem.Name;
+            Name = ListItem.Name;
 
-            this.HideAvailable = this.ShouldHideAvailable();
-            this.HideSelected = this.ShouldHideSelected();
+            HideAvailable = ShouldHideAvailable();
+            HideSelected = ShouldHideSelected();
         }
 
         private bool ShouldHideSelected()
         {
-            if (!this.IsBookmarked) return true;
+            if (!IsBookmarked) return true;
 
-            if (this.IsFiltered)
+            if (IsFiltered)
                 return true;
             else
                 return false;
@@ -234,23 +234,23 @@ namespace SeparatistCrisis.ViewModels
 
         private bool ShouldHideAvailable()
         {
-            return this.IsBookmarked || this.IsFiltered;
+            return IsBookmarked || IsFiltered;
         }
 
         public void Execute()
         {
-            this.IsBookmarked = !this._isBookmarked;
-            this.RefreshValues();
+            IsBookmarked = !_isBookmarked;
+            RefreshValues();
         }
 
         public void SetComparedValue(EncyclopediaListItemComparerBase comparer)
         {
-            this.ComparedValue = comparer.GetComparedValueText(this.ListItem);
+            ComparedValue = comparer.GetComparedValueText(ListItem);
         }
 
         public void ExecuteBeginTooltip()
         {
-            Action onShowTooltip = this._onShowTooltip;
+            Action onShowTooltip = _onShowTooltip;
             if (onShowTooltip == null)
             {
                 return;
@@ -260,7 +260,7 @@ namespace SeparatistCrisis.ViewModels
 
         public void ExecuteEndTooltip()
         {
-            if (this._onShowTooltip != null)
+            if (_onShowTooltip != null)
             {
                 MBInformationManager.HideInformations();
             }

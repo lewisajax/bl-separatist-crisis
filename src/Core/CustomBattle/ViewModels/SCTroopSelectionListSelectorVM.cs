@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 using TaleWorlds.CampaignSystem.ViewModelCollection.Encyclopedia.List;
 using TaleWorlds.Core.ViewModelCollection.Selector;
 
-namespace SeparatistCrisis.ViewModels
+namespace SeparatistCrisis.CustomBattle
 {
     public class SCTroopSelectionListSelectorVM: SelectorVM<SCTroopSelectionListSelectorItemVM>
     {
         public SCTroopSelectionListSelectorVM(int selectedIndex, Action<SelectorVM<SCTroopSelectionListSelectorItemVM>> onChange, Action onActivate) : base(selectedIndex, onChange)
         {
-            this._onActivate = onActivate;
+            _onActivate = onActivate;
         }
 
         public void ExecuteOnDropdownActivated()
         {
-            Action onActivate = this._onActivate;
+            Action onActivate = _onActivate;
             if (onActivate == null)
             {
                 return;

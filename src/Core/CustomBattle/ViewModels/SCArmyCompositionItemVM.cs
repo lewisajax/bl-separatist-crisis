@@ -11,7 +11,7 @@ using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade.CustomBattle;
 using TaleWorlds.MountAndBlade.CustomBattle.CustomBattle;
 
-namespace SeparatistCrisis.ViewModels
+namespace SeparatistCrisis.CustomBattle
 {
     public class SCArmyCompositionItemVM : ViewModel
     {
@@ -35,7 +35,7 @@ namespace SeparatistCrisis.ViewModels
 
         private readonly StringItemWithHintVM _typeIconData;
 
-        private readonly SCArmyCompositionItemVM.CompositionType _type;
+        private readonly CompositionType _type;
 
         private readonly int[] _compositionValues;
 
@@ -58,14 +58,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._troopTypes;
+                return _troopTypes;
             }
             set
             {
-                if (value != this._troopTypes)
+                if (value != _troopTypes)
                 {
-                    this._troopTypes = value;
-                    base.OnPropertyChangedWithValue<MBBindingList<CustomBattleTroopTypeVM>>(value, "TroopTypes");
+                    _troopTypes = value;
+                    OnPropertyChangedWithValue(value, "TroopTypes");
                 }
             }
         }
@@ -75,14 +75,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._invalidHint;
+                return _invalidHint;
             }
             set
             {
-                if (value != this._invalidHint)
+                if (value != _invalidHint)
                 {
-                    this._invalidHint = value;
-                    base.OnPropertyChangedWithValue<HintViewModel>(value, "InvalidHint");
+                    _invalidHint = value;
+                    OnPropertyChangedWithValue(value, "InvalidHint");
                 }
             }
         }
@@ -92,14 +92,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._addTroopTypeHint;
+                return _addTroopTypeHint;
             }
             set
             {
-                if (value != this._addTroopTypeHint)
+                if (value != _addTroopTypeHint)
                 {
-                    this._addTroopTypeHint = value;
-                    base.OnPropertyChangedWithValue<HintViewModel>(value, "AddTroopTypeHint");
+                    _addTroopTypeHint = value;
+                    OnPropertyChangedWithValue(value, "AddTroopTypeHint");
                 }
             }
         }
@@ -109,14 +109,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._isLocked;
+                return _isLocked;
             }
             set
             {
-                if (value != this._isLocked)
+                if (value != _isLocked)
                 {
-                    this._isLocked = value;
-                    base.OnPropertyChangedWithValue(value, "IsLocked");
+                    _isLocked = value;
+                    OnPropertyChangedWithValue(value, "IsLocked");
                 }
             }
         }
@@ -126,16 +126,16 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._isValid;
+                return _isValid;
             }
             set
             {
-                if (value != this._isValid)
+                if (value != _isValid)
                 {
-                    this._isValid = value;
-                    base.OnPropertyChangedWithValue(value, "IsValid");
+                    _isValid = value;
+                    OnPropertyChangedWithValue(value, "IsValid");
                 }
-                this.OnValidityChanged(value);
+                OnValidityChanged(value);
             }
         }
 
@@ -144,31 +144,31 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._compositionValues[(int)this._type];
+                return _compositionValues[(int)_type];
             }
             set
             {
-                if (value != this._compositionValues[(int)this._type])
+                if (value != _compositionValues[(int)_type])
                 {
-                    this._onCompositionValueChanged(value, (int)this._type);
+                    _onCompositionValueChanged(value, (int)_type);
                 }
             }
         }
 
-        public SCArmyCompositionItemVM(SCArmyCompositionItemVM.CompositionType type, List<BasicCharacterObject> allCharacterObjects, MBReadOnlyList<SkillObject> allSkills, Action<int, int> onCompositionValueChanged, Action onPopUpDone, SCTroopSelectionPopUpVM troopTypeSelectionPopUp, SCTroopSelectionItemListVM? itemList, int[] compositionValues)
+        public SCArmyCompositionItemVM(CompositionType type, List<BasicCharacterObject> allCharacterObjects, MBReadOnlyList<SkillObject> allSkills, Action<int, int> onCompositionValueChanged, Action onPopUpDone, SCTroopSelectionPopUpVM troopTypeSelectionPopUp, SCTroopSelectionItemListVM? itemList, int[] compositionValues)
         {
-            this._allCharacterObjects = allCharacterObjects;
-            this._allSkills = allSkills;
-            this._onCompositionValueChanged = onCompositionValueChanged;
-            this._troopTypeSelectionPopUp = troopTypeSelectionPopUp;
-            this._type = type;
-            this._compositionValues = compositionValues;
-            this._typeIconData = SCArmyCompositionItemVM.GetTroopTypeIconData(type, false);
-            this.TroopTypes = new MBBindingList<CustomBattleTroopTypeVM>();
-            this.InvalidHint = new HintViewModel(new TextObject("{=iSQTtNUD}This faction doesn't have this troop type.", null), null);
-            this.AddTroopTypeHint = new HintViewModel(new TextObject("{=eMbuGGus}Select troops to spawn in formation.", null), null);
-            this.ItemListVM = itemList;
-            this.OnDone = onPopUpDone;
+            _allCharacterObjects = allCharacterObjects;
+            _allSkills = allSkills;
+            _onCompositionValueChanged = onCompositionValueChanged;
+            _troopTypeSelectionPopUp = troopTypeSelectionPopUp;
+            _type = type;
+            _compositionValues = compositionValues;
+            _typeIconData = GetTroopTypeIconData(type, false);
+            TroopTypes = new MBBindingList<CustomBattleTroopTypeVM>();
+            InvalidHint = new HintViewModel(new TextObject("{=iSQTtNUD}This faction doesn't have this troop type.", null), null);
+            AddTroopTypeHint = new HintViewModel(new TextObject("{=eMbuGGus}Select troops to spawn in formation.", null), null);
+            ItemListVM = itemList;
+            OnDone = onPopUpDone;
         }
 
         public override void RefreshValues()
@@ -178,41 +178,41 @@ namespace SeparatistCrisis.ViewModels
 
         public void SetCurrentSelectedCulture(BasicCultureObject culture)
         {
-            this.IsLocked = false;
-            this._culture = culture;
-            this.PopulateTroopTypes();
+            IsLocked = false;
+            _culture = culture;
+            PopulateTroopTypes();
         }
 
         public void ExecuteRandomize(int compositionValue)
         {
-            this.IsValid = true;
-            this.IsLocked = false;
-            this.CompositionValue = compositionValue;
-            this.IsValid = (this.TroopTypes.Count > 0);
-            this.TroopTypes.ApplyActionOnAllItems(delegate (CustomBattleTroopTypeVM x)
+            IsValid = true;
+            IsLocked = false;
+            CompositionValue = compositionValue;
+            IsValid = TroopTypes.Count > 0;
+            TroopTypes.ApplyActionOnAllItems(delegate (CustomBattleTroopTypeVM x)
             {
                 x.ExecuteRandomize();
             });
-            if (!this.TroopTypes.Any((CustomBattleTroopTypeVM x) => x.IsSelected) && this.IsValid)
+            if (!TroopTypes.Any((x) => x.IsSelected) && IsValid)
             {
-                this.TroopTypes[0].IsSelected = true;
+                TroopTypes[0].IsSelected = true;
             }
         }
 
         // This is called when we click the '+' button under each slider.
         public void ExecuteAddTroopTypes()
         {
-            string title = GameTexts.FindText("str_custom_battle_choose_troop", this._type.ToString()).ToString();
+            string title = GameTexts.FindText("str_custom_battle_choose_troop", _type.ToString()).ToString();
 
-            SCTroopSelectionPopUpVM troopTypeSelectionPopUp = this._troopTypeSelectionPopUp;
+            SCTroopSelectionPopUpVM troopTypeSelectionPopUp = _troopTypeSelectionPopUp;
             if (troopTypeSelectionPopUp == null)
                 return;
 
-            this.ResetFilters(this.ItemListVM);
+            ResetFilters(ItemListVM);
 
             // Since there's always 2 instances of ArmyCompositionGroupVMs but only 1 popup instance, we inject references to the popup through the individual slider buttons.
-            troopTypeSelectionPopUp.ItemList = this.ItemListVM;
-            troopTypeSelectionPopUp.OnDone = this.OnDone;
+            troopTypeSelectionPopUp.ItemList = ItemListVM;
+            troopTypeSelectionPopUp.OnDone = OnDone;
             troopTypeSelectionPopUp.OpenPopUp(title);
         }
 
@@ -220,30 +220,30 @@ namespace SeparatistCrisis.ViewModels
         public void ResetFilters(SCTroopSelectionItemListVM? itemList)
         {
             TextObject compName;
-            switch(this._type)
+            switch(_type)
             {
-                case SCArmyCompositionItemVM.CompositionType.MeleeCavalry:
+                case CompositionType.MeleeCavalry:
                     compName = SCTroopSelectionItemListVM.FilterClassCavalary;
                     break;
-                case SCArmyCompositionItemVM.CompositionType.RangedCavalry:
+                case CompositionType.RangedCavalry:
                     compName = SCTroopSelectionItemListVM.FilterClassMountedArcher;
                     break;
-                case SCArmyCompositionItemVM.CompositionType.RangedInfantry:
+                case CompositionType.RangedInfantry:
                     compName = SCTroopSelectionItemListVM.FilterClassRanged;
                     break;
-                case SCArmyCompositionItemVM.CompositionType.MeleeInfantry:
+                case CompositionType.MeleeInfantry:
                 default:
                     compName = SCTroopSelectionItemListVM.FilterClassInfantry;
                     break;
             }
 
-            if (this._culture == null)
+            if (_culture == null)
                 return; // Not a big deal if we cant reset the filters
 
             IEnumerable<TextObject> filterNames = new TextObject[3]
             {
                 SCTroopSelectionItemListVM.FilterTypeSoldier,
-                this._culture.Name,
+                _culture.Name,
                 compName
             };
 
@@ -252,39 +252,39 @@ namespace SeparatistCrisis.ViewModels
 
         public void RefreshCompositionValue()
         {
-            base.OnPropertyChanged("CompositionValue");
+            OnPropertyChanged("CompositionValue");
         }
 
         private void OnValidityChanged(bool value)
         {
-            this.IsLocked = false;
+            IsLocked = false;
             if (!value)
             {
-                this.CompositionValue = 0;
+                CompositionValue = 0;
             }
-            this.IsLocked = !value;
+            IsLocked = !value;
         }
 
         private void PopulateTroopTypes()
         {
-            this.TroopTypes.Clear();
-            MBReadOnlyList<BasicCharacterObject> defaultCharacters = this.GetDefaultCharacters();
-            foreach (BasicCharacterObject basicCharacterObject in this._allCharacterObjects)
+            TroopTypes.Clear();
+            MBReadOnlyList<BasicCharacterObject> defaultCharacters = GetDefaultCharacters();
+            foreach (BasicCharacterObject basicCharacterObject in _allCharacterObjects)
             {
-                if (this.IsValidUnitItem(basicCharacterObject))
+                if (IsValidUnitItem(basicCharacterObject))
                 {
-                    this.TroopTypes.Add(new CustomBattleTroopTypeVM(basicCharacterObject, new Action<CustomBattleTroopTypeVM>(this._troopTypeSelectionPopUp.OnItemSelectionToggled), this._typeIconData, this._allSkills, defaultCharacters.Contains(basicCharacterObject)));
+                    TroopTypes.Add(new CustomBattleTroopTypeVM(basicCharacterObject, new Action<CustomBattleTroopTypeVM>(_troopTypeSelectionPopUp.OnItemSelectionToggled), _typeIconData, _allSkills, defaultCharacters.Contains(basicCharacterObject)));
                 }
             }
-            this.IsValid = (this.TroopTypes.Count > 0);
-            if (this.IsValid)
+            IsValid = TroopTypes.Count > 0;
+            if (IsValid)
             {
-                if (!this.TroopTypes.Any((CustomBattleTroopTypeVM x) => x.IsDefault))
+                if (!TroopTypes.Any((x) => x.IsDefault))
                 {
-                    this.TroopTypes[0].IsDefault = true;
+                    TroopTypes[0].IsDefault = true;
                 }
             }
-            this.TroopTypes.ApplyActionOnAllItems(delegate (CustomBattleTroopTypeVM x)
+            TroopTypes.ApplyActionOnAllItems(delegate (CustomBattleTroopTypeVM x)
             {
                 x.IsSelected = x.IsDefault;
             });
@@ -292,19 +292,19 @@ namespace SeparatistCrisis.ViewModels
 
         private bool IsValidUnitItem(BasicCharacterObject o)
         {
-            if (o == null || this._culture != o.Culture)
+            if (o == null || _culture != o.Culture)
             {
                 return false;
             }
-            switch (this._type)
+            switch (_type)
             {
-                case SCArmyCompositionItemVM.CompositionType.MeleeInfantry:
+                case CompositionType.MeleeInfantry:
                     return o.DefaultFormationClass == FormationClass.Infantry || o.DefaultFormationClass == FormationClass.HeavyInfantry;
-                case SCArmyCompositionItemVM.CompositionType.RangedInfantry:
+                case CompositionType.RangedInfantry:
                     return o.DefaultFormationClass == FormationClass.Ranged;
-                case SCArmyCompositionItemVM.CompositionType.MeleeCavalry:
+                case CompositionType.MeleeCavalry:
                     return o.DefaultFormationClass == FormationClass.Cavalry || o.DefaultFormationClass == FormationClass.HeavyCavalry || o.DefaultFormationClass == FormationClass.LightCavalry;
-                case SCArmyCompositionItemVM.CompositionType.RangedCavalry:
+                case CompositionType.RangedCavalry:
                     return o.DefaultFormationClass == FormationClass.HorseArcher;
                 default:
                     return false;
@@ -315,45 +315,45 @@ namespace SeparatistCrisis.ViewModels
         {
             MBList<BasicCharacterObject> mblist = new MBList<BasicCharacterObject>();
             FormationClass formation = FormationClass.NumberOfAllFormations;
-            switch (this._type)
+            switch (_type)
             {
-                case SCArmyCompositionItemVM.CompositionType.MeleeInfantry:
+                case CompositionType.MeleeInfantry:
                     formation = FormationClass.Infantry;
                     break;
-                case SCArmyCompositionItemVM.CompositionType.RangedInfantry:
+                case CompositionType.RangedInfantry:
                     formation = FormationClass.Ranged;
                     break;
-                case SCArmyCompositionItemVM.CompositionType.MeleeCavalry:
+                case CompositionType.MeleeCavalry:
                     formation = FormationClass.Cavalry;
                     break;
-                case SCArmyCompositionItemVM.CompositionType.RangedCavalry:
+                case CompositionType.RangedCavalry:
                     formation = FormationClass.HorseArcher;
                     break;
             }
-            mblist.Add(CustomBattleHelper.GetDefaultTroopOfFormationForFaction(this._culture, formation));
+            mblist.Add(CustomBattleHelper.GetDefaultTroopOfFormationForFaction(_culture, formation));
             return mblist;
         }
 
-        public static StringItemWithHintVM GetTroopTypeIconData(SCArmyCompositionItemVM.CompositionType type, bool isBig = false)
+        public static StringItemWithHintVM GetTroopTypeIconData(CompositionType type, bool isBig = false)
         {
             TextObject textObject = TextObject.Empty;
             string str;
             switch (type)
             {
-                case SCArmyCompositionItemVM.CompositionType.MeleeInfantry:
-                    str = (isBig ? "infantry_big" : "infantry");
+                case CompositionType.MeleeInfantry:
+                    str = isBig ? "infantry_big" : "infantry";
                     textObject = GameTexts.FindText("str_troop_type_name", "Infantry");
                     break;
-                case SCArmyCompositionItemVM.CompositionType.RangedInfantry:
-                    str = (isBig ? "bow_big" : "bow");
+                case CompositionType.RangedInfantry:
+                    str = isBig ? "bow_big" : "bow";
                     textObject = GameTexts.FindText("str_troop_type_name", "Ranged");
                     break;
-                case SCArmyCompositionItemVM.CompositionType.MeleeCavalry:
-                    str = (isBig ? "cavalry_big" : "cavalry");
+                case CompositionType.MeleeCavalry:
+                    str = isBig ? "cavalry_big" : "cavalry";
                     textObject = GameTexts.FindText("str_troop_type_name", "Cavalry");
                     break;
-                case SCArmyCompositionItemVM.CompositionType.RangedCavalry:
-                    str = (isBig ? "horse_archer_big" : "horse_archer");
+                case CompositionType.RangedCavalry:
+                    str = isBig ? "horse_archer_big" : "horse_archer";
                     textObject = GameTexts.FindText("str_troop_type_name", "HorseArcher");
                     break;
                 default:

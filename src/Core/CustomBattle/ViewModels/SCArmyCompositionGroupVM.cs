@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SeparatistCrisis.CustomBattle;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ using TaleWorlds.MountAndBlade;
 using TaleWorlds.MountAndBlade.CustomBattle;
 using TaleWorlds.MountAndBlade.CustomBattle.CustomBattle;
 
-namespace SeparatistCrisis.ViewModels
+namespace SeparatistCrisis.CustomBattle
 {
     public class SCArmyCompositionGroupVM : ViewModel
     {

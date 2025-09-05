@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using TaleWorlds.Core;
 using TaleWorlds.Core.ViewModelCollection.Selector;
 
-namespace SeparatistCrisis.ViewModels
+namespace SeparatistCrisis.CustomBattle
 {
     public class SCFactionItemVM : SelectorItemVM
     {
@@ -14,7 +14,7 @@ namespace SeparatistCrisis.ViewModels
 
         public SCFactionItemVM(BasicCultureObject faction) : base(faction.Name.ToString())
         {
-            this.Faction = faction;
+            Faction = faction;
         }
     }
 }

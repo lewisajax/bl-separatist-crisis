@@ -16,7 +16,7 @@ using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade.CustomBattle;
 
-namespace SeparatistCrisis.ViewModels
+namespace SeparatistCrisis.CustomBattle
 {
     public class SCTroopSelectionItemListVM: ViewModel
     {
@@ -63,14 +63,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._emptyListText;
+                return _emptyListText;
             }
             set
             {
-                if (value != this._emptyListText)
+                if (value != _emptyListText)
                 {
-                    this._emptyListText = value;
-                    base.OnPropertyChangedWithValue<string>(value, "EmptyListText");
+                    _emptyListText = value;
+                    OnPropertyChangedWithValue(value, "EmptyListText");
                 }
             }
         }
@@ -80,14 +80,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._lastSelectedItemId;
+                return _lastSelectedItemId;
             }
             set
             {
-                if (value != this._lastSelectedItemId)
+                if (value != _lastSelectedItemId)
                 {
-                    this._lastSelectedItemId = value;
-                    base.OnPropertyChangedWithValue<string>(value, "LastSelectedItemId");
+                    _lastSelectedItemId = value;
+                    OnPropertyChangedWithValue(value, "LastSelectedItemId");
                 }
             }
         }
@@ -97,14 +97,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._itemVMs;
+                return _itemVMs;
             }
             set
             {
-                if (value != this._itemVMs)
+                if (value != _itemVMs)
                 {
-                    this._itemVMs = value;
-                    base.OnPropertyChangedWithValue<MBBindingList<SCTroopSelectionListItemVM>>(value, "Items");
+                    _itemVMs = value;
+                    OnPropertyChangedWithValue(value, "Items");
                 }
             }
         }
@@ -114,14 +114,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._sortControllerVM;
+                return _sortControllerVM;
             }
             set
             {
-                if (value != this._sortControllerVM)
+                if (value != _sortControllerVM)
                 {
-                    this._sortControllerVM = value;
-                    base.OnPropertyChangedWithValue<SCTroopSelectionListSortControllerVM>(value, "SortController");
+                    _sortControllerVM = value;
+                    OnPropertyChangedWithValue(value, "SortController");
                 }
             }
         }
@@ -131,14 +131,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._isInitializationOver;
+                return _isInitializationOver;
             }
             set
             {
-                if (value != this._isInitializationOver)
+                if (value != _isInitializationOver)
                 {
-                    this._isInitializationOver = value;
-                    base.OnPropertyChangedWithValue(value, "IsInitializationOver");
+                    _isInitializationOver = value;
+                    OnPropertyChangedWithValue(value, "IsInitializationOver");
                 }
             }
         }
@@ -148,14 +148,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._isFilterHighlightEnabled;
+                return _isFilterHighlightEnabled;
             }
             set
             {
-                if (value != this._isFilterHighlightEnabled)
+                if (value != _isFilterHighlightEnabled)
                 {
-                    this._isFilterHighlightEnabled = value;
-                    base.OnPropertyChangedWithValue(value, "IsFilterHighlightEnabled");
+                    _isFilterHighlightEnabled = value;
+                    OnPropertyChangedWithValue(value, "IsFilterHighlightEnabled");
                 }
             }
         }
@@ -165,57 +165,57 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._filterGroupVMs;
+                return _filterGroupVMs;
             }
             set
             {
-                if (value != this._filterGroupVMs)
+                if (value != _filterGroupVMs)
                 {
-                    this._filterGroupVMs = value;
-                    base.OnPropertyChangedWithValue<MBBindingList<EncyclopediaFilterGroupVM>>(value, "FilterGroups");
+                    _filterGroupVMs = value;
+                    OnPropertyChangedWithValue(value, "FilterGroups");
                 }
             }
         }
 
         public SCTroopSelectionItemListVM()
         {
-            this._itemVMs = new MBBindingList<SCTroopSelectionListItemVM>();
-            this._filterGroupVMs = new MBBindingList<EncyclopediaFilterGroupVM>();
-            this._sortControllerVM = new SCTroopSelectionListSortControllerVM(this.Items);
+            _itemVMs = new MBBindingList<SCTroopSelectionListItemVM>();
+            _filterGroupVMs = new MBBindingList<EncyclopediaFilterGroupVM>();
+            _sortControllerVM = new SCTroopSelectionListSortControllerVM(Items);
 
-            this.IsInitializationOver = true;
+            IsInitializationOver = true;
 
-            this._filters = this.InitializeFilterItems();
-            this._listItems = this.InitializeListItems();
+            _filters = InitializeFilterItems();
+            _listItems = InitializeListItems();
 
-            foreach (EncyclopediaFilterGroup filterGroup in this._filters)
+            foreach (EncyclopediaFilterGroup filterGroup in _filters)
             {
-                this._filterGroupVMs.Add(new EncyclopediaFilterGroupVM(filterGroup, new Action<EncyclopediaListFilterVM>(this.UpdateFilters)));
+                _filterGroupVMs.Add(new EncyclopediaFilterGroupVM(filterGroup, new Action<EncyclopediaListFilterVM>(UpdateFilters)));
             }
 
-            this.HasSearchFilter = false;
+            HasSearchFilter = false;
 
-            this.IsInitializationOver = false;
+            IsInitializationOver = false;
 
-            this._itemVMs.Clear();
-            foreach (EncyclopediaListItem listItem in this._listItems)
+            _itemVMs.Clear();
+            foreach (EncyclopediaListItem listItem in _listItems)
             {
-                SCTroopSelectionListItemVM encyclopediaListItemVM = new SCTroopSelectionListItemVM(listItem, new Action<SCTroopSelectionListItemVM, bool>(this.OnSelected));
-                encyclopediaListItemVM.IsFiltered = this.IsFiltered(encyclopediaListItemVM.Object, this._filters);
-                this._itemVMs.Add(encyclopediaListItemVM);
+                SCTroopSelectionListItemVM encyclopediaListItemVM = new SCTroopSelectionListItemVM(listItem, new Action<SCTroopSelectionListItemVM, bool>(OnSelected));
+                encyclopediaListItemVM.IsFiltered = IsFiltered(encyclopediaListItemVM.Object, _filters);
+                _itemVMs.Add(encyclopediaListItemVM);
             }
 
-            this.RefreshValues();
-            this.IsInitializationOver = true;
+            RefreshValues();
+            IsInitializationOver = true;
         }
 
         public void OnSelected(SCTroopSelectionListItemVM item, bool isBookmarked)
         {
             // I'm using the vanilla bookmarked prop for when we select troops
             if (isBookmarked)
-                this.SelectedItems.Add(item);
+                SelectedItems.Add(item);
             else
-                this.SelectedItems.Remove(item);
+                SelectedItems.Remove(item);
         }
 
         public bool IsFiltered(object o, IEnumerable<EncyclopediaFilterGroup> filterGroups)
@@ -241,31 +241,31 @@ namespace SeparatistCrisis.ViewModels
             List<EncyclopediaFilterGroup> filterGroups = new List<EncyclopediaFilterGroup>();
 
             List<EncyclopediaFilterItem> types = new List<EncyclopediaFilterItem>();
-            types.Add(new EncyclopediaFilterItem(SCTroopSelectionItemListVM.FilterTypeSoldier, (object f) => ((BasicCharacterObject)f).IsSoldier));
-            types.Add(new EncyclopediaFilterItem(SCTroopSelectionItemListVM.FilterTypeBandit, (object f) => ((BasicCharacterObject)f).Culture.IsBandit));
-            types.Add(new EncyclopediaFilterItem(SCTroopSelectionItemListVM.FilterTypeCivilian, (object f) => ((BasicCharacterObject)f).IsInfantry));
-            types.Add(new EncyclopediaFilterItem(SCTroopSelectionItemListVM.FilterTypeHero, (object f) => ((BasicCharacterObject)f).IsHero));
+            types.Add(new EncyclopediaFilterItem(FilterTypeSoldier, (f) => ((BasicCharacterObject)f).IsSoldier));
+            types.Add(new EncyclopediaFilterItem(FilterTypeBandit, (f) => ((BasicCharacterObject)f).Culture.IsBandit));
+            types.Add(new EncyclopediaFilterItem(FilterTypeCivilian, (f) => ((BasicCharacterObject)f).IsInfantry));
+            types.Add(new EncyclopediaFilterItem(FilterTypeHero, (f) => ((BasicCharacterObject)f).IsHero));
             // types.Add(new EncyclopediaFilterItem(new TextObject("Template"), (object f) => ((BasicCharacterObject)f).)); // BasicCharacterObject doesn't deserialise the IsTemplate property
             filterGroups.Add(new EncyclopediaFilterGroup(types, new TextObject("Types")));
 
             List<EncyclopediaFilterItem> classes = new List<EncyclopediaFilterItem>();
-            classes.Add(new EncyclopediaFilterItem(SCTroopSelectionItemListVM.FilterClassInfantry, (object f) => (!((BasicCharacterObject)f).IsRanged) && !((BasicCharacterObject)f).IsMounted));
-            classes.Add(new EncyclopediaFilterItem(SCTroopSelectionItemListVM.FilterClassRanged, (object f) => (((BasicCharacterObject)f).IsRanged) && !((BasicCharacterObject)f).IsMounted));
-            classes.Add(new EncyclopediaFilterItem(SCTroopSelectionItemListVM.FilterClassCavalary, (object f) => (!((BasicCharacterObject)f).IsRanged) && ((BasicCharacterObject)f).IsMounted));
-            classes.Add(new EncyclopediaFilterItem(SCTroopSelectionItemListVM.FilterClassMountedArcher, (object f) => (((BasicCharacterObject)f).IsRanged) && ((BasicCharacterObject)f).IsMounted));
+            classes.Add(new EncyclopediaFilterItem(FilterClassInfantry, (f) => !((BasicCharacterObject)f).IsRanged && !((BasicCharacterObject)f).IsMounted));
+            classes.Add(new EncyclopediaFilterItem(FilterClassRanged, (f) => ((BasicCharacterObject)f).IsRanged && !((BasicCharacterObject)f).IsMounted));
+            classes.Add(new EncyclopediaFilterItem(FilterClassCavalary, (f) => !((BasicCharacterObject)f).IsRanged && ((BasicCharacterObject)f).IsMounted));
+            classes.Add(new EncyclopediaFilterItem(FilterClassMountedArcher, (f) => ((BasicCharacterObject)f).IsRanged && ((BasicCharacterObject)f).IsMounted));
             filterGroups.Add(new EncyclopediaFilterGroup(classes, new TextObject("Classes")));
 
             List<EncyclopediaFilterItem> cultures = new List<EncyclopediaFilterItem>();
             using (List<BasicCultureObject>.Enumerator enumerator = (from x in Game.Current.ObjectManager.GetObjectTypeList<BasicCultureObject>()
                                                                 orderby !x.IsMainCulture descending
-                                                                select x).ThenBy((BasicCultureObject f) => f.Name.ToString()).ToList<BasicCultureObject>().GetEnumerator())
+                                                                select x).ThenBy((f) => f.Name.ToString()).ToList().GetEnumerator())
             {
                 while (enumerator.MoveNext())
                 {
                     BasicCultureObject culture = enumerator.Current;
                     if (culture.StringId != "neutral_culture")
                     {
-                        cultures.Add(new EncyclopediaFilterItem(culture.Name, (object c) => ((BasicCharacterObject)c).Culture == culture));
+                        cultures.Add(new EncyclopediaFilterItem(culture.Name, (c) => ((BasicCharacterObject)c).Culture == culture));
                     }
                 }
             }
@@ -282,7 +282,7 @@ namespace SeparatistCrisis.ViewModels
                 while (enumerator.MoveNext())
                 {
                     BasicCharacterObject character = enumerator.Current;
-                    if (this.IsValidEncyclopediaItem(character))
+                    if (IsValidEncyclopediaItem(character))
                     {
                         yield return new EncyclopediaListItem(character, character.Name.ToString(), "", character.StringId, "", true, delegate ()
                         {
@@ -306,13 +306,13 @@ namespace SeparatistCrisis.ViewModels
         public override void RefreshValues()
         {
             base.RefreshValues();
-            this.SortController.RefreshValues();
-            this.EmptyListText = GameTexts.FindText("str_encyclopedia_empty_list_error", null).ToString();
-            this.Items.ApplyActionOnAllItems(delegate (SCTroopSelectionListItemVM x)
+            SortController.RefreshValues();
+            EmptyListText = GameTexts.FindText("str_encyclopedia_empty_list_error", null).ToString();
+            Items.ApplyActionOnAllItems(delegate (SCTroopSelectionListItemVM x)
             {
                 x.RefreshValues();
             });
-            this.FilterGroups.ApplyActionOnAllItems(delegate (EncyclopediaFilterGroupVM x)
+            FilterGroups.ApplyActionOnAllItems(delegate (EncyclopediaFilterGroupVM x)
             {
                 x.RefreshValues();
             });
@@ -320,7 +320,7 @@ namespace SeparatistCrisis.ViewModels
 
         private void ExecuteResetFilters()
         {
-            foreach (EncyclopediaFilterGroupVM encyclopediaFilterGroupVM in this.FilterGroups)
+            foreach (EncyclopediaFilterGroupVM encyclopediaFilterGroupVM in FilterGroups)
             {
                 foreach (EncyclopediaListFilterVM encyclopediaListFilterVM in encyclopediaFilterGroupVM.Filters)
                 {
@@ -331,7 +331,7 @@ namespace SeparatistCrisis.ViewModels
 
         public void CopyFiltersFrom(Dictionary<EncyclopediaFilterItem, bool> filters)
         {
-            this.FilterGroups.ApplyActionOnAllItems(delegate (EncyclopediaFilterGroupVM x)
+            FilterGroups.ApplyActionOnAllItems(delegate (EncyclopediaFilterGroupVM x)
             {
                 x.CopyFiltersFrom(filters);
             });
@@ -344,7 +344,7 @@ namespace SeparatistCrisis.ViewModels
         // Goes through and disables all the filters except for the ones inside filterNames
         public void ReCheckFilters(IEnumerable<TextObject> filterNames)
         {
-            foreach (EncyclopediaFilterGroupVM filterGroup in this.FilterGroups)
+            foreach (EncyclopediaFilterGroupVM filterGroup in FilterGroups)
             {
                 // 'Other' filters are not shown in the UI. We want them to always be active.
                 if (filterGroup.FilterGroup.Name.Value == "Other") continue;
@@ -357,12 +357,12 @@ namespace SeparatistCrisis.ViewModels
 
         public void UpdateFilters(EncyclopediaListFilterVM filterVM = null)
         {
-            this.IsInitializationOver = false;
-            foreach (SCTroopSelectionListItemVM encyclopediaListItemVM in this.Items)
+            IsInitializationOver = false;
+            foreach (SCTroopSelectionListItemVM encyclopediaListItemVM in Items)
             {
-                encyclopediaListItemVM.IsFiltered = this.IsFiltered(encyclopediaListItemVM.Object, this._filters);
+                encyclopediaListItemVM.IsFiltered = IsFiltered(encyclopediaListItemVM.Object, _filters);
             }
-            this.IsInitializationOver = true;
+            IsInitializationOver = true;
         }
     }
 }

@@ -22,7 +22,7 @@ using TaleWorlds.MountAndBlade.ViewModelCollection.Input;
 // - Troop cards (optional) - It's pretty heavy and I don't think that NavigatableList is a virtual list. I believe that everything gets loaded at once.
 //   Uncomment the Visual datasource in SCTroopSelectionListItemVM as well as the xml to see it.
 
-namespace SeparatistCrisis.ViewModels
+namespace SeparatistCrisis.CustomBattle
 {
     public class SCTroopSelectionPopUpVM : ViewModel
     {
@@ -63,19 +63,19 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._searchText;
+                return _searchText;
             }
             set
             {
-                if (value != null && value != this._searchText)
+                if (value != null && value != _searchText)
                 {
-                    bool isAppending = value.ToLower().Contains(this._searchText);
-                    bool isPasted = string.IsNullOrEmpty(this._searchText) && !string.IsNullOrEmpty(value);
-                    this._searchText = value.ToLower();
+                    bool isAppending = value.ToLower().Contains(_searchText);
+                    bool isPasted = string.IsNullOrEmpty(_searchText) && !string.IsNullOrEmpty(value);
+                    _searchText = value.ToLower();
                     Debug.Print("isAppending: " + isAppending.ToString() + " isPasted: " + isPasted.ToString(), 0, Debug.DebugColor.White, 17592186044416UL);
                     // this.ItemList?.RefreshSearch(isAppending, isPasted); // The vanilla search bar has some stuff for asian?? characters. If translations dont work, look at that.
-                    this.ItemList?.UpdateFilters();
-                    base.OnPropertyChangedWithValue<string>(value, "SearchText");
+                    ItemList?.UpdateFilters();
+                    OnPropertyChangedWithValue(value, "SearchText");
                 }
             }
         }
@@ -85,14 +85,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._minCharAmountToShowResults;
+                return _minCharAmountToShowResults;
             }
             set
             {
-                if (value != this._minCharAmountToShowResults)
+                if (value != _minCharAmountToShowResults)
                 {
-                    this._minCharAmountToShowResults = value;
-                    base.OnPropertyChangedWithValue(value, "MinCharAmountToShowResults");
+                    _minCharAmountToShowResults = value;
+                    OnPropertyChangedWithValue(value, "MinCharAmountToShowResults");
                 }
             }
         }
@@ -102,14 +102,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._itemListVM;
+                return _itemListVM;
             }
             set
             {
-                if (value != this._itemListVM)
+                if (value != _itemListVM)
                 {
-                    this._itemListVM = value;
-                    base.OnPropertyChangedWithValue<SCTroopSelectionItemListVM?>(value, "ItemList");
+                    _itemListVM = value;
+                    OnPropertyChangedWithValue(value, "ItemList");
                 }
             }
         }
@@ -119,14 +119,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._doneInputKey;
+                return _doneInputKey;
             }
             set
             {
-                if (value != this._doneInputKey)
+                if (value != _doneInputKey)
                 {
-                    this._doneInputKey = value;
-                    base.OnPropertyChangedWithValue<InputKeyItemVM>(value, "DoneInputKey");
+                    _doneInputKey = value;
+                    OnPropertyChangedWithValue(value, "DoneInputKey");
                 }
             }
         }
@@ -136,14 +136,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._cancelInputKey;
+                return _cancelInputKey;
             }
             set
             {
-                if (value != this._cancelInputKey)
+                if (value != _cancelInputKey)
                 {
-                    this._cancelInputKey = value;
-                    base.OnPropertyChangedWithValue<InputKeyItemVM>(value, "CancelInputKey");
+                    _cancelInputKey = value;
+                    OnPropertyChangedWithValue(value, "CancelInputKey");
                 }
             }
         }
@@ -153,14 +153,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._resetInputKey;
+                return _resetInputKey;
             }
             set
             {
-                if (value != this._resetInputKey)
+                if (value != _resetInputKey)
                 {
-                    this._resetInputKey = value;
-                    base.OnPropertyChangedWithValue<InputKeyItemVM>(value, "ResetInputKey");
+                    _resetInputKey = value;
+                    OnPropertyChangedWithValue(value, "ResetInputKey");
                 }
             }
         }
@@ -170,14 +170,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._items;
+                return _items;
             }
             set
             {
-                if (value != this._items)
+                if (value != _items)
                 {
-                    this._items = value;
-                    base.OnPropertyChangedWithValue<MBBindingList<CustomBattleTroopTypeVM>>(value, "Items");
+                    _items = value;
+                    OnPropertyChangedWithValue(value, "Items");
                 }
             }
         }
@@ -187,14 +187,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._title;
+                return _title;
             }
             set
             {
-                if (value != this._title)
+                if (value != _title)
                 {
-                    this._title = value;
-                    base.OnPropertyChangedWithValue<string>(value, "Title");
+                    _title = value;
+                    OnPropertyChangedWithValue(value, "Title");
                 }
             }
         }
@@ -204,14 +204,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._doneLbl;
+                return _doneLbl;
             }
             set
             {
-                if (value != this._doneLbl)
+                if (value != _doneLbl)
                 {
-                    this._doneLbl = value;
-                    base.OnPropertyChangedWithValue<string>(value, "DoneLbl");
+                    _doneLbl = value;
+                    OnPropertyChangedWithValue(value, "DoneLbl");
                 }
             }
         }
@@ -221,14 +221,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._cancelLbl;
+                return _cancelLbl;
             }
             set
             {
-                if (value != this._cancelLbl)
+                if (value != _cancelLbl)
                 {
-                    this._cancelLbl = value;
-                    base.OnPropertyChangedWithValue<string>(value, "CancelLbl");
+                    _cancelLbl = value;
+                    OnPropertyChangedWithValue(value, "CancelLbl");
                 }
             }
         }
@@ -238,14 +238,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._selectAllLbl;
+                return _selectAllLbl;
             }
             set
             {
-                if (value != this._selectAllLbl)
+                if (value != _selectAllLbl)
                 {
-                    this._selectAllLbl = value;
-                    base.OnPropertyChangedWithValue<string>(value, "SelectAllLbl");
+                    _selectAllLbl = value;
+                    OnPropertyChangedWithValue(value, "SelectAllLbl");
                 }
             }
         }
@@ -255,14 +255,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._backToDefaultLbl;
+                return _backToDefaultLbl;
             }
             set
             {
-                if (value != this._backToDefaultLbl)
+                if (value != _backToDefaultLbl)
                 {
-                    this._backToDefaultLbl = value;
-                    base.OnPropertyChangedWithValue<string>(value, "BackToDefaultLbl");
+                    _backToDefaultLbl = value;
+                    OnPropertyChangedWithValue(value, "BackToDefaultLbl");
                 }
             }
         }
@@ -272,14 +272,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._isOpen;
+                return _isOpen;
             }
             set
             {
-                if (value != this._isOpen)
+                if (value != _isOpen)
                 {
-                    this._isOpen = value;
-                    base.OnPropertyChangedWithValue(value, "IsOpen");
+                    _isOpen = value;
+                    OnPropertyChangedWithValue(value, "IsOpen");
                 }
             }
         }
@@ -287,64 +287,64 @@ namespace SeparatistCrisis.ViewModels
         public override void RefreshValues()
         {
             base.RefreshValues();
-            this.DoneLbl = GameTexts.FindText("str_done", null).ToString();
-            this.CancelLbl = GameTexts.FindText("str_cancel", null).ToString();
-            this.SelectAllLbl = GameTexts.FindText("str_custom_battle_select_all", null).ToString();
-            this.BackToDefaultLbl = GameTexts.FindText("str_custom_battle_back_to_default", null).ToString();
+            DoneLbl = GameTexts.FindText("str_done", null).ToString();
+            CancelLbl = GameTexts.FindText("str_cancel", null).ToString();
+            SelectAllLbl = GameTexts.FindText("str_custom_battle_select_all", null).ToString();
+            BackToDefaultLbl = GameTexts.FindText("str_custom_battle_back_to_default", null).ToString();
 
-            this.ItemList?.RefreshValues();
+            ItemList?.RefreshValues();
         }
 
         public override void OnFinalize()
         {
             base.OnFinalize();
-            this.DoneInputKey.OnFinalize();
-            this.CancelInputKey.OnFinalize();
-            this.ResetInputKey.OnFinalize();
+            DoneInputKey.OnFinalize();
+            CancelInputKey.OnFinalize();
+            ResetInputKey.OnFinalize();
         }
 
         public void OpenPopUp(string title)
         {
-            this.ExecuteReset();
+            ExecuteReset();
 
-            if (this.ItemList != null && !this.ItemList.HasSearchFilter)
+            if (ItemList != null && !ItemList.HasSearchFilter)
             {
                 // We add the search filter but we don't have it show up in the UI
                 EncyclopediaFilterGroup filterGroup = new EncyclopediaFilterGroup(new List<EncyclopediaFilterItem>()
                 {
                     // Captures names and ids
-                    new EncyclopediaFilterItem(new TextObject("Search"), (object f) => ((BasicCharacterObject)f).Name.Value.ToLower().Contains(this.SearchText.ToLower()) || ((BasicCharacterObject)f).StringId.ToLower().Contains(this.SearchText.ToLower()))
+                    new EncyclopediaFilterItem(new TextObject("Search"), (f) => ((BasicCharacterObject)f).Name.Value.ToLower().Contains(SearchText.ToLower()) || ((BasicCharacterObject)f).StringId.ToLower().Contains(SearchText.ToLower()))
                 }, new TextObject("Other"));
 
                 var _ = filterGroup.Filters.All(x => x.IsActive = true);
 
                 // Atm, with ~1000 entries, there's no need for debouncing. Might need to revisit this later though.
-                this.ItemList.Filters.Add(filterGroup);
-                this.ItemList.HasSearchFilter = true;
+                ItemList.Filters.Add(filterGroup);
+                ItemList.HasSearchFilter = true;
             }
 
-            this.IsOpen = true;
-            this.RefreshValues();
+            IsOpen = true;
+            RefreshValues();
         }
 
         public void OnItemSelectionToggled(CustomBattleTroopTypeVM item)
         {
             if (item == null) return;
 
-            if (this._selectedItemCount > 1 || !item.IsSelected)
+            if (_selectedItemCount > 1 || !item.IsSelected)
             {
                 item.IsSelected = !item.IsSelected;
-                this._selectedItemCount += (item.IsSelected ? 1 : -1);
+                _selectedItemCount += item.IsSelected ? 1 : -1;
             }
         }
 
         public void ExecuteSelectAll()
         {
-            this.Items.ApplyActionOnAllItems(delegate (CustomBattleTroopTypeVM x)
+            Items.ApplyActionOnAllItems(delegate (CustomBattleTroopTypeVM x)
             {
                 x.IsSelected = true;
             });
-            this._selectedItemCount = this.Items.Count;
+            _selectedItemCount = Items.Count;
         }
 
         public void ExecuteReset()
@@ -352,7 +352,7 @@ namespace SeparatistCrisis.ViewModels
             if (ItemList != null)
             {
                 BasicCharacterObject[] troopCharacters = new MBBindingList<CustomBattleTroopTypeVM>[] {
-                    this.ItemList.MeleeTroopTypes, this.ItemList.RangedTroopTypes, this.ItemList.CavalryTroopTypes, this.ItemList.MountedArcherTroopTypes
+                    ItemList.MeleeTroopTypes, ItemList.RangedTroopTypes, ItemList.CavalryTroopTypes, ItemList.MountedArcherTroopTypes
                 }.SelectMany(x => x.Aggregate(new List<BasicCharacterObject>(), (prev, curr) =>
                 {
                     if (curr.IsSelected)
@@ -361,17 +361,17 @@ namespace SeparatistCrisis.ViewModels
                     return prev;
                 })).ToArray();
 
-                this.SetInitialTroops(troopCharacters);
-                this.RefreshValues();
+                SetInitialTroops(troopCharacters);
+                RefreshValues();
             }
         }
 
         // This could definitely do with some optimising. Noticeable freeze which will no doubt get worse, the more troops we add.
         public void SetInitialTroops(BasicCharacterObject[] troops)
         {
-            if (this.ItemList != null)
+            if (ItemList != null)
             {
-                foreach (SCTroopSelectionListItemVM itemVM in this.ItemList.Items)
+                foreach (SCTroopSelectionListItemVM itemVM in ItemList.Items)
                 {
                     if (troops.Contains((BasicCharacterObject)itemVM.Object))
                         itemVM.IsBookmarked = true;
@@ -383,34 +383,34 @@ namespace SeparatistCrisis.ViewModels
 
         public void ExecuteCancel()
         {
-            Action? onPopUpClosed = this.OnPopUpClosed;
+            Action? onPopUpClosed = OnPopUpClosed;
             if (onPopUpClosed != null)
             {
                 onPopUpClosed();
             }
-            this.IsOpen = false;
+            IsOpen = false;
         }
 
         public void ExecuteDone()
         {
             // Don't let them leave the popup if there's no troops selected. We should look at disabling the 'Done' button instead.
-            if (this.ItemList?.SelectedItems.Count <= 0) return;
+            if (ItemList?.SelectedItems.Count <= 0) return;
 
-            this.IsOpen = false;
+            IsOpen = false;
 
             // Do we handle the troop assignment in here or should we hand it off the ArmyCompItemVM?
 
-            if (this.ItemList != null)
+            if (ItemList != null)
             {
                 // There are caching opportunities here. Don't ignore yourself
-                this.ItemList.MeleeTroopTypes.Clear();
-                this.ItemList.RangedTroopTypes.Clear();
-                this.ItemList.CavalryTroopTypes.Clear();
-                this.ItemList.MountedArcherTroopTypes.Clear();
+                ItemList.MeleeTroopTypes.Clear();
+                ItemList.RangedTroopTypes.Clear();
+                ItemList.CavalryTroopTypes.Clear();
+                ItemList.MountedArcherTroopTypes.Clear();
 
                 MBReadOnlyList<SkillObject> allSkills = Game.Current.ObjectManager.GetObjectTypeList<SkillObject>();
 
-                foreach (SCTroopSelectionListItemVM item in this.ItemList.SelectedItems)
+                foreach (SCTroopSelectionListItemVM item in ItemList.SelectedItems)
                 {
                     BasicCharacterObject? character = item.Object as BasicCharacterObject;
 
@@ -419,28 +419,28 @@ namespace SeparatistCrisis.ViewModels
                         switch(character.GetFormationClass())
                         {
                             case FormationClass.HorseArcher:
-                                CustomBattleTroopTypeVM troopType = new CustomBattleTroopTypeVM(character, new Action<CustomBattleTroopTypeVM>(this.OnItemSelectionToggled),
+                                CustomBattleTroopTypeVM troopType = new CustomBattleTroopTypeVM(character, new Action<CustomBattleTroopTypeVM>(OnItemSelectionToggled),
                                     SCArmyCompositionItemVM.GetTroopTypeIconData(SCArmyCompositionItemVM.CompositionType.RangedCavalry), allSkills, false);
                                 troopType.IsSelected = true;
-                                this.ItemList.MountedArcherTroopTypes.Add(troopType);
+                                ItemList.MountedArcherTroopTypes.Add(troopType);
                                 break;
                             case FormationClass.Cavalry:
-                                CustomBattleTroopTypeVM troopType2 = new CustomBattleTroopTypeVM(character, new Action<CustomBattleTroopTypeVM>(this.OnItemSelectionToggled),
+                                CustomBattleTroopTypeVM troopType2 = new CustomBattleTroopTypeVM(character, new Action<CustomBattleTroopTypeVM>(OnItemSelectionToggled),
                                     SCArmyCompositionItemVM.GetTroopTypeIconData(SCArmyCompositionItemVM.CompositionType.MeleeCavalry), allSkills, false);
                                 troopType2.IsSelected = true;
-                                this.ItemList.CavalryTroopTypes.Add(troopType2);
+                                ItemList.CavalryTroopTypes.Add(troopType2);
                                 break;
                             case FormationClass.Ranged:
-                                CustomBattleTroopTypeVM troopType3 = new CustomBattleTroopTypeVM(character, new Action<CustomBattleTroopTypeVM>(this.OnItemSelectionToggled),
+                                CustomBattleTroopTypeVM troopType3 = new CustomBattleTroopTypeVM(character, new Action<CustomBattleTroopTypeVM>(OnItemSelectionToggled),
                                     SCArmyCompositionItemVM.GetTroopTypeIconData(SCArmyCompositionItemVM.CompositionType.RangedInfantry), allSkills, false);
                                 troopType3.IsSelected = true;
-                                this.ItemList.RangedTroopTypes.Add(troopType3);
+                                ItemList.RangedTroopTypes.Add(troopType3);
                                 break;
                             case FormationClass.Infantry:
-                                CustomBattleTroopTypeVM troopType4 = new CustomBattleTroopTypeVM(character, new Action<CustomBattleTroopTypeVM>(this.OnItemSelectionToggled),
+                                CustomBattleTroopTypeVM troopType4 = new CustomBattleTroopTypeVM(character, new Action<CustomBattleTroopTypeVM>(OnItemSelectionToggled),
                                     SCArmyCompositionItemVM.GetTroopTypeIconData(SCArmyCompositionItemVM.CompositionType.MeleeInfantry), allSkills, false);
                                 troopType4.IsSelected = true;
-                                this.ItemList.MeleeTroopTypes.Add(troopType4);
+                                ItemList.MeleeTroopTypes.Add(troopType4);
                                 break;
                             default:
                                 return;
@@ -448,23 +448,23 @@ namespace SeparatistCrisis.ViewModels
                     }
                 }
 
-                this.OnDone?.Invoke();
+                OnDone?.Invoke();
             }
         }
 
         public void SetCancelInputKey(HotKey hotkey)
         {
-            this.CancelInputKey = InputKeyItemVM.CreateFromHotKey(hotkey, true);
+            CancelInputKey = InputKeyItemVM.CreateFromHotKey(hotkey, true);
         }
 
         public void SetDoneInputKey(HotKey hotkey)
         {
-            this.DoneInputKey = InputKeyItemVM.CreateFromHotKey(hotkey, true);
+            DoneInputKey = InputKeyItemVM.CreateFromHotKey(hotkey, true);
         }
 
         public void SetResetInputKey(HotKey hotkey)
         {
-            this.ResetInputKey = InputKeyItemVM.CreateFromHotKey(hotkey, true);
+            ResetInputKey = InputKeyItemVM.CreateFromHotKey(hotkey, true);
         }
     }
 }

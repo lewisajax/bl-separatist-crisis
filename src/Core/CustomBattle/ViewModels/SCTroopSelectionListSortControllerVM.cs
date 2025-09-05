@@ -1,5 +1,4 @@
-﻿using SeparatistCrisis.CustomBattle;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +13,7 @@ using TaleWorlds.Core.ViewModelCollection.Tutorial;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace SeparatistCrisis.ViewModels
+namespace SeparatistCrisis.CustomBattle
 {
     public class SCTroopSelectionListSortControllerVM : ViewModel
     {
@@ -40,7 +39,7 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._items;
+                return _items;
             }
         }
 
@@ -49,14 +48,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._sortSelection;
+                return _sortSelection;
             }
             set
             {
-                if (value != this._sortSelection)
+                if (value != _sortSelection)
                 {
-                    this._sortSelection = value;
-                    base.OnPropertyChangedWithValue<SCTroopSelectionListSelectorVM>(value, "SortSelection");
+                    _sortSelection = value;
+                    OnPropertyChangedWithValue(value, "SortSelection");
                 }
             }
         }
@@ -66,14 +65,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._nameLabel;
+                return _nameLabel;
             }
             set
             {
-                if (value != this._nameLabel)
+                if (value != _nameLabel)
                 {
-                    this._nameLabel = value;
-                    base.OnPropertyChangedWithValue<string>(value, "NameLabel");
+                    _nameLabel = value;
+                    OnPropertyChangedWithValue(value, "NameLabel");
                 }
             }
         }
@@ -83,14 +82,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._sortedValueLabelText;
+                return _sortedValueLabelText;
             }
             set
             {
-                if (value != this._sortedValueLabelText)
+                if (value != _sortedValueLabelText)
                 {
-                    this._sortedValueLabelText = value;
-                    base.OnPropertyChangedWithValue<string>(value, "SortedValueLabelText");
+                    _sortedValueLabelText = value;
+                    OnPropertyChangedWithValue(value, "SortedValueLabelText");
                 }
             }
         }
@@ -100,14 +99,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._sortByLabel;
+                return _sortByLabel;
             }
             set
             {
-                if (value != this._sortByLabel)
+                if (value != _sortByLabel)
                 {
-                    this._sortByLabel = value;
-                    base.OnPropertyChangedWithValue<string>(value, "SortByLabel");
+                    _sortByLabel = value;
+                    OnPropertyChangedWithValue(value, "SortByLabel");
                 }
             }
         }
@@ -117,14 +116,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._alternativeSortState;
+                return _alternativeSortState;
             }
             set
             {
-                if (value != this._alternativeSortState)
+                if (value != _alternativeSortState)
                 {
-                    this._alternativeSortState = value;
-                    base.OnPropertyChangedWithValue(value, "AlternativeSortState");
+                    _alternativeSortState = value;
+                    OnPropertyChangedWithValue(value, "AlternativeSortState");
                 }
             }
         }
@@ -134,14 +133,14 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._isAlternativeSortVisible;
+                return _isAlternativeSortVisible;
             }
             set
             {
-                if (value != this._isAlternativeSortVisible)
+                if (value != _isAlternativeSortVisible)
                 {
-                    this._isAlternativeSortVisible = value;
-                    base.OnPropertyChangedWithValue(value, "IsAlternativeSortVisible");
+                    _isAlternativeSortVisible = value;
+                    OnPropertyChangedWithValue(value, "IsAlternativeSortVisible");
                 }
             }
         }
@@ -151,36 +150,36 @@ namespace SeparatistCrisis.ViewModels
         {
             get
             {
-                return this._isHighlightEnabled;
+                return _isHighlightEnabled;
             }
             set
             {
-                if (value != this._isHighlightEnabled)
+                if (value != _isHighlightEnabled)
                 {
-                    this._isHighlightEnabled = value;
-                    base.OnPropertyChangedWithValue(value, "IsHighlightEnabled");
+                    _isHighlightEnabled = value;
+                    OnPropertyChangedWithValue(value, "IsHighlightEnabled");
                 }
             }
         }
 
         public SCTroopSelectionListSortControllerVM(MBBindingList<SCTroopSelectionListItemVM> items)
         {
-            this._items = items;
-            this.UpdateSortItems();
+            _items = items;
+            UpdateSortItems();
         }
 
         public override void RefreshValues()
         {
             base.RefreshValues();
-            this.NameLabel = GameTexts.FindText("str_sort_by_name_label", null).ToString();
-            this.SortByLabel = GameTexts.FindText("str_sort_by_label", null).ToString();
-            this.SortedValueLabelText = this._sortedValueLabel.ToString();
+            NameLabel = GameTexts.FindText("str_sort_by_name_label", null).ToString();
+            SortByLabel = GameTexts.FindText("str_sort_by_label", null).ToString();
+            SortedValueLabelText = _sortedValueLabel.ToString();
         }
 
         public void SetSortSelection(int index)
         {
-            this.SortSelection.SelectedIndex = index;
-            this.OnSortSelectionChanged(this.SortSelection);
+            SortSelection.SelectedIndex = index;
+            OnSortSelectionChanged(SortSelection);
         }
 
         private void UpdateSortItems()
@@ -190,18 +189,18 @@ namespace SeparatistCrisis.ViewModels
                 new EncyclopediaSortController(new TextObject("{=koX9okuG}None", null), new TroopSelectionListItemNameComparer())
             };
 
-            this.SortSelection = new SCTroopSelectionListSelectorVM(0, new Action<SelectorVM<SCTroopSelectionListSelectorItemVM>>(this.OnSortSelectionChanged), new Action(this.OnSortSelectionActivated));
+            SortSelection = new SCTroopSelectionListSelectorVM(0, new Action<SelectorVM<SCTroopSelectionListSelectorItemVM>>(OnSortSelectionChanged), new Action(OnSortSelectionActivated));
             foreach (EncyclopediaSortController sortController in sortControllers)
             {
                 TroopSelectionListItemComparer comparer = new TroopSelectionListItemComparer(sortController);
-                this.SortSelection.AddItem(new SCTroopSelectionListSelectorItemVM(comparer));
+                SortSelection.AddItem(new SCTroopSelectionListSelectorItemVM(comparer));
             }
         }
 
         private void UpdateAlternativeSortState(EncyclopediaListItemComparerBase comparer)
         {
             CampaignUIHelper.SortState alternativeSortState = comparer.IsAscending ? CampaignUIHelper.SortState.Ascending : CampaignUIHelper.SortState.Descending;
-            this.AlternativeSortState = (int)alternativeSortState;
+            AlternativeSortState = (int)alternativeSortState;
         }
 
         private void OnSortSelectionChanged(SelectorVM<SCTroopSelectionListSelectorItemVM> s)
@@ -210,48 +209,48 @@ namespace SeparatistCrisis.ViewModels
             if (comparer != null)
             {
                 comparer.SortController.Comparer.SetDefaultSortOrder();
-                this._items.Sort(comparer);
-                this._items.ApplyActionOnAllItems(delegate (SCTroopSelectionListItemVM x)
+                _items.Sort(comparer);
+                _items.ApplyActionOnAllItems(delegate (SCTroopSelectionListItemVM x)
                 {
                     x.SetComparedValue(comparer.SortController.Comparer);
                 });
-                this._sortedValueLabel = comparer.SortController.Name;
-                this.SortedValueLabelText = this._sortedValueLabel.ToString();
-                this.IsAlternativeSortVisible = (this.SortSelection.SelectedIndex != 0);
-                this.UpdateAlternativeSortState(comparer.SortController.Comparer);
+                _sortedValueLabel = comparer.SortController.Name;
+                SortedValueLabelText = _sortedValueLabel.ToString();
+                IsAlternativeSortVisible = SortSelection.SelectedIndex != 0;
+                UpdateAlternativeSortState(comparer.SortController.Comparer);
             }
         }
 
         public void ExecuteSwitchSortOrder()
         {
-            TroopSelectionListItemComparer? comparer = this.SortSelection.SelectedItem.Comparer;
+            TroopSelectionListItemComparer? comparer = SortSelection.SelectedItem.Comparer;
             if (comparer != null)
             {
                 comparer.SortController.Comparer.SwitchSortOrder();
-                this._items.Sort(comparer);
-                this.UpdateAlternativeSortState(comparer.SortController.Comparer);
+                _items.Sort(comparer);
+                UpdateAlternativeSortState(comparer.SortController.Comparer);
             }
         }
 
         public void SetSortOrder(bool isAscending)
         {
-            TroopSelectionListItemComparer? comparer = this.SortSelection.SelectedItem.Comparer;
+            TroopSelectionListItemComparer? comparer = SortSelection.SelectedItem.Comparer;
             if (comparer != null && comparer.SortController.Comparer.IsAscending != isAscending)
             {
                 comparer.SortController.Comparer.SetSortOrder(isAscending);
-                this.Items.Sort(comparer);
-                this.UpdateAlternativeSortState(comparer.SortController.Comparer);
+                Items.Sort(comparer);
+                UpdateAlternativeSortState(comparer.SortController.Comparer);
             }
         }
 
         public bool GetSortOrder()
         {
-            return this.SortSelection.SelectedItem.Comparer?.SortController.Comparer.IsAscending ?? false;
+            return SortSelection.SelectedItem.Comparer?.SortController.Comparer.IsAscending ?? false;
         }
 
         private void OnSortSelectionActivated()
         {
-            Game.Current.EventManager.TriggerEvent<OnEncyclopediaListSortedEvent>(new OnEncyclopediaListSortedEvent());
+            Game.Current.EventManager.TriggerEvent(new OnEncyclopediaListSortedEvent());
         }
     }
 }
