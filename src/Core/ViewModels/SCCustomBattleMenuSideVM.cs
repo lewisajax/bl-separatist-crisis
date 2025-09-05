@@ -29,6 +29,8 @@ namespace SeparatistCrisis.ViewModels
 
         private CharacterViewModel _currentSelectedCharacter = null!;
 
+        private string _characterName = null!;
+
         private string _selectedFactionName = null!;
 
         private MBBindingList<CharacterEquipmentItemVM> _armorsList = null!;
@@ -61,6 +63,23 @@ namespace SeparatistCrisis.ViewModels
                 {
                     this._currentSelectedCharacter = value;
                     base.OnPropertyChangedWithValue<CharacterViewModel>(value, "CurrentSelectedCharacter");
+                }
+            }
+        }
+
+        [DataSourceProperty]
+        public string CharacterName
+        {
+            get
+            {
+                return this._characterName;
+            }
+            set
+            {
+                if (value != this._characterName)
+                {
+                    this._characterName = value;
+                    base.OnPropertyChangedWithValue<string>(value, "CharacterName");
                 }
             }
         }
@@ -288,6 +307,31 @@ namespace SeparatistCrisis.ViewModels
             this.CompositionGroup.OnPlayerTypeChange(playerType);
         }
 
+        public void OnHeroSelection()
+        {
+            List<InquiryElement> options = new List<InquiryElement>();
+            // options.Add(new InquiryElement(null, GameTexts.FindText("str_empty", null).ToString(), null));
+
+            foreach (BasicCharacterObject hero in Game.Current.ObjectManager.GetObjectTypeList<BasicCharacterObject>()
+                .Where(x => x.IsHero && x.Culture == this.FactionSelectionGroup.SelectedItem.Faction))
+            {
+                options.Add(new InquiryElement(new CharacterItemVM(hero), hero.Name.ToString(), null));
+            }
+
+            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData(new TextObject("Select a Hero", null).ToString(), 
+                string.Empty, options, true, 1, 1, GameTexts.FindText("str_done", null).ToString(), GameTexts.FindText("str_cancel", null).ToString(), delegate (List<InquiryElement> selectedElements)
+            {
+                InquiryElement? inquiryElement = selectedElements.FirstOrDefault<InquiryElement>();
+                
+                if (inquiryElement != null)
+                {
+                    this.SelectedCharacter = ((CharacterItemVM)inquiryElement.Identifier).Character;
+                    this.CharacterName = this.SelectedCharacter.Name.ToString();
+                    this.UpdateCharacterVisual();
+                }
+            }, delegate (List<InquiryElement> target) { }, "", true), false, false);
+        }
+
         private void OnCultureSelection(SelectorVM<SCFactionItemVM> selector)
         {
             BasicCultureObject faction = selector.SelectedItem.Faction;
@@ -333,6 +377,7 @@ namespace SeparatistCrisis.ViewModels
         {
             BasicCharacterObject character = selector.SelectedItem.Character;
             this.SelectedCharacter = character;
+            this.CharacterName = character.Name.ToString();
             this.UpdateCharacterVisual();
             if (this.OppositeSide != null)
             {
@@ -380,8 +425,20 @@ namespace SeparatistCrisis.ViewModels
 
         public void Randomize()
         {
-            this.CharacterSelectionGroup.ExecuteRandomize();
             this.FactionSelectionGroup.ExecuteRandomize();
+            // this.CharacterSelectionGroup.ExecuteRandomize();
+
+            BasicCharacterObject[] cultureHeroes = Game.Current.ObjectManager.GetObjectTypeList<BasicCharacterObject>()
+                .Where(x => x.IsHero && x.Culture == this.FactionSelectionGroup.SelectedItem.Faction).ToArray();
+
+            if (cultureHeroes != null)
+            {
+                int randNum = cultureHeroes.Length > 1 ? MBRandom.RandomInt(0, cultureHeroes.Length - 1) : 0;
+                this.SelectedCharacter = cultureHeroes[randNum];
+                this.CharacterName = this.SelectedCharacter.Name.ToString();
+                this.UpdateCharacterVisual();
+            }
+
             this.CompositionGroup.ExecuteRandomize();
         }
     }

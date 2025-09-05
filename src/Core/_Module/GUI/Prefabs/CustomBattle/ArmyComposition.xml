@@ -3,6 +3,13 @@
     <Parameter Name="TitleText" DefaultValue="Player" />
     <Parameter Name="FactionText" DefaultValue="Player Faction" />
   </Parameters>
+	<Constants>
+		<Constant Name="DropdownCenterBrush" BooleanCheck="false" OnTrue="MPLobby.CustomServer.CreateGamePanel.DropdownButton" OnFalse="SPOptions.Dropdown.Center" />
+		<Constant Name="DropdownCenterTextBrush" BooleanCheck="false" OnTrue="MPLobby.CustomServer.CreateGamePanel.DropdownText" OnFalse="SPOptions.Dropdown.Center.Text" />
+		<Constant Name="DropdownCenter.Brush.Width" BrushLayer="Default" BrushName="!DropdownCenterBrush" BrushValueType="Width" />
+		<Constant Name="DropdownCenter.Height" BrushLayer="Default" BrushName="!DropdownCenterBrush" BrushValueType="Height" />
+		<Constant Name="DropdownCenter.Width" BooleanCheck="false" OnTrue="0" OnFalse="!DropdownCenter.Brush.Width" />
+	</Constants>
   <Window>
     <!--_______Side Panel_______-->
     <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="585" HorizontalAlignment="Left">
@@ -39,8 +46,20 @@
           </Children>
         </Widget>
 
-		<NavigationScopeTargeter ScopeID="ArmyCompositionCharacterSelectionScope" ScopeParent="..\CharacterSelectionDropdown" />
-        <Standard.DropdownWithHorizontalControl Id="CharacterSelectionDropdown" HorizontalAlignment="Center" Parameter.SelectorDataSource="{CharacterSelectionGroup}" MarginTop="85" GamepadNavigationIndex="0"/>
+		<!-- Character Button -->
+		<Widget Id="HeroSelectButtonContainer" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!DropdownCenter.Width" SuggestedHeight="!DropdownCenter.Height" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="85">
+			<Children>
+				<ButtonWidget Id="HeroSelectButton" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" DoNotPassEventsToChildren="true"  Brush="!DropdownCenterBrush" IsEnabled="true" Command.Click="OnHeroSelection">
+					<Children>
+						<ScrollingRichTextWidget Id="SelectedHeroTextWidget" Text="@CharacterName" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="7" MarginRight="7" PositionYOffset="1" Brush="!DropdownCenterTextBrush" />
+					</Children>
+				</ButtonWidget>
+			</Children>
+		</Widget>
+
+	    <!-- Character Dropdown -->
+		<!--<NavigationScopeTargeter ScopeID="ArmyCompositionCharacterSelectionScope" ScopeParent="..\CharacterSelectionDropdown" />
+        <Standard.DropdownWithHorizontalControl Id="CharacterSelectionDropdown" HorizontalAlignment="Center" Parameter.SelectorDataSource="{CharacterSelectionGroup}" MarginTop="85" GamepadNavigationIndex="0"/>-->
 
         <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="12" Sprite="StdAssets\subpage_divider" MarginTop="400"/>
 
