@@ -15,6 +15,8 @@
         <DependedModule Id="SandBoxCore" DependentVersion="$gameversion$" />
         <DependedModule Id="Sandbox" DependentVersion="$gameversion$" />
         <DependedModule Id="StoryMode" DependentVersion="$gameversion$" />
+        <DependedModule Id="SeparatistCrisis.Items" DependentVersion="$itemsversion$" />
+        <DependedModule Id="SeparatistCrisis.Scenes" DependentVersion="$scenesversion$" />
     </DependedModules>
     <DependedModuleMetadatas>
         <DependedModuleMetadata id="Bannerlord.Harmony" order="LoadBeforeThis" version="v$harmonyversion$" />
@@ -25,6 +27,8 @@
         <DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" version="$gameversion$.*" />
         <DependedModuleMetadata id="CustomBattle" order="LoadBeforeThis" version="$gameversion$.*" optional="true" />
         <DependedModuleMetadata id="BirthAndDeath" order="LoadBeforeThis" version="$gameversion$.*" optional="true" />
+        <DependedModuleMetadata id="SeparatistCrisis.Items" order="LoadBeforeThis" version="$itemsversion$.*" optional="false" />
+        <DependedModuleMetadata id="SeparatistCrisis.Scenes" order="LoadBeforeThis" version="$scenesversion$.*" optional="false" />
     </DependedModuleMetadatas>
     <SubModules>
         <SubModule>
@@ -35,38 +39,6 @@
 		</SubModule>
     </SubModules>
 	<Xmls>
-		<XmlNode>
-			<XmlName id="GameText" path="swsc_equipment_strings"/>
-			<IncludedGameTypes>
-				<GameType value="Campaign"/>
-				<GameType value="CampaignStoryMode"/>
-				<GameType value="CustomGame"/>
-				<GameType value="EditorGame"/>
-			</IncludedGameTypes>
-		</XmlNode>
-		<XmlNode>
-			<XmlName id="Items" path="items/"/>
-			<IncludedGameTypes>
-				<GameType value="Campaign"/>
-				<GameType value="CampaignStoryMode"/>
-				<GameType value="CustomGame"/>
-			</IncludedGameTypes>
-		</XmlNode>
-		<XmlNode>
-			<XmlName id="CraftingPieces" path="swsc_crafting_pieces"/>
-			<IncludedGameTypes>
-				<GameType value="Campaign"/>
-				<GameType value="CampaignStoryMode"/>
-				<GameType value="CustomGame"/>
-				<GameType value="EditorGame"/>
-			</IncludedGameTypes>
-		</XmlNode>
-		<XmlNode>
-			<XmlName id="WeaponDescriptions" path="swsc_weapon_descriptions"/>
-		</XmlNode>
-		<XmlNode>
-			<XmlName id="CraftingTemplates" path="swsc_crafting_templates"/>
-		</XmlNode>
 		<XmlNode>
 			<XmlName id="SPCultures" path="swsc_spcultures"/>
 			<IncludedGameTypes>
@@ -120,14 +92,6 @@
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
 				<GameType value="CustomGame"/>
-			</IncludedGameTypes>
-		</XmlNode>
-		<XmlNode>
-			<XmlName id="Settlements" path="settlements"/>
-			<IncludedGameTypes>
-				<GameType value="Campaign"/>
-				<GameType value="CampaignStoryMode"/>
-				<GameType value="EditorGame"/>
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <Name value="$modulename$" />
+    <Id value="$modulename$" />
+    <Version value="v$version$" />
+    <ModuleType value="Community"/>
+    <Official value="false" />
+    <DefaultModule value="false" />
+    <SingleplayerModule value="true" />
+    <MultiplayerModule value="false" />
+    <DependedModules>
+        <DependedModule Id="Native" DependentVersion="$gameversion$" />
+        <DependedModule Id="SandBoxCore" DependentVersion="$gameversion$" />
+        <DependedModule Id="Sandbox" DependentVersion="$gameversion$" />
+        <DependedModule Id="StoryMode" DependentVersion="$gameversion$" />
+    </DependedModules>
+    <DependedModuleMetadatas>
+        <DependedModuleMetadata id="Native" order="LoadBeforeThis" version="$gameversion$.*" />
+        <DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" version="$gameversion$.*" />
+        <DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" version="$gameversion$.*" />
+        <DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" version="$gameversion$.*" />
+        <DependedModuleMetadata id="CustomBattle" order="LoadBeforeThis" version="$gameversion$.*" optional="true" />
+        <DependedModuleMetadata id="BirthAndDeath" order="LoadBeforeThis" version="$gameversion$.*" optional="true" />
+    </DependedModuleMetadatas>
+    <SubModules>
+        <SubModule>
+			<Name value="$modulename$" />
+			<DLLName value="$modulename$.dll" />
+			<SubModuleClassType value="$modulename$.SubModule" />
+			<Tags />
+		</SubModule>
+    </SubModules>
+	<Xmls>
+		<XmlNode>
+			<XmlName id="GameText" path="swsc_equipment_strings"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Items" path="items/"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="CraftingPieces" path="swsc_crafting_pieces"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="WeaponDescriptions" path="swsc_weapon_descriptions"/>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="CraftingTemplates" path="swsc_crafting_templates"/>
+		</XmlNode>
+	</Xmls>
+</Module>

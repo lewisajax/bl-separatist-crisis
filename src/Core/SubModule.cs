@@ -30,7 +30,7 @@ namespace SeparatistCrisis
     {
         public static readonly string Version = $"v{typeof(SubModule).Assembly.GetName().Version!.ToString(3)}";
         public static readonly string Name = typeof(SubModule).Namespace!;
-        public static readonly string DisplayName = new TextObject($"{{=MYz8nKqq}}{Name}").ToString();
+        public static readonly string DisplayName = new TextObject($"{{=MYz8nKqq}}{Name}.Core").ToString();
         public static readonly string MainHarmonyDomain = "bannerlord." + Name.ToLower(System.Globalization.CultureInfo.CurrentCulture);
         public static readonly string CampaignHarmonyDomain = MainHarmonyDomain + ".campaign";
         public static readonly string WidgetHarmonyDomain = MainHarmonyDomain + ".widgets";
