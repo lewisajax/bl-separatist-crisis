@@ -17,7 +17,7 @@ namespace SeparatistCrisis.ViewModels
     {
         private EquipmentActionItemVM _lastSelectedItem;
         private Action<EquipmentIndex> _toggleItem;
-        private TextObject _dropTextObject = new TextObject("{=d1tCz15N}Hold to Drop", null);
+        private TextObject _dropTextObject = new TextObject("{=d1tCz15N}Hold to Equip", null);
         private MBBindingList<ControllerEquippedItemVM> _equipActions;
         private bool _isActive;
         private string _holdToDropText;

@@ -1,4 +1,5 @@
 ﻿using SeparatistCrisis.ViewModels;
+using SeparatistCrisis.Views.Placeholders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,20 +8,22 @@ using System.Threading.Tasks;
 using TaleWorlds.Engine.GauntletUI;
 using TaleWorlds.InputSystem;
 using TaleWorlds.MountAndBlade;
+using TaleWorlds.MountAndBlade.View;
 using TaleWorlds.MountAndBlade.View.MissionViews;
 
 namespace SeparatistCrisis.Views
 {
-    public class BlasterMissileView : MissionView
+    [OverrideView(typeof(MissionBlasterMissileView))]
+    public class MissionGauntletBlasterMissileView : MissionView
     {
         private BlasterMissileVM? _dataSource;
         private GauntletLayer? _gauntletLayer;
 
-        public BlasterMissileView()
+        public MissionGauntletBlasterMissileView()
         {
-            this.ViewOrderPriority = 20;
-            this._dataSource = new BlasterMissileVM();
-            this._gauntletLayer = new GauntletLayer(this.ViewOrderPriority, "GauntletLayer", false);
+            // this.ViewOrderPriority = 20;
+            // this._dataSource = new BlasterMissileVM();
+            // this._gauntletLayer = new GauntletLayer(this.ViewOrderPriority, "GauntletLayer", false);
             // this._gauntletLayer.LoadMovie("XMLFileName", this._dataSource);
         }
 

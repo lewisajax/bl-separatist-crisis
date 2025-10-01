@@ -1,4 +1,7 @@
-﻿using System;
+﻿using NetworkMessages.FromClient;
+using SeparatistCrisis.ViewModels;
+using SeparatistCrisis.Views.Placeholders;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -6,20 +9,23 @@ using System.Text;
 using System.Threading.Tasks;
 using TaleWorlds.Core;
 using TaleWorlds.Engine.GauntletUI;
-using TaleWorlds.MountAndBlade;
-using TaleWorlds.MountAndBlade.View.MissionViews;
-using TaleWorlds.MountAndBlade.ViewModelCollection.HUD;
-using TaleWorlds.MountAndBlade.ViewModelCollection;
-using TaleWorlds.MountAndBlade.View.Screens;
-using NetworkMessages.FromClient;
 using TaleWorlds.InputSystem;
 using TaleWorlds.Library;
-using SeparatistCrisis.ViewModels;
+using TaleWorlds.MountAndBlade;
+using TaleWorlds.MountAndBlade.View;
+using TaleWorlds.MountAndBlade.View.MissionViews;
+using TaleWorlds.MountAndBlade.View.Screens;
+using TaleWorlds.MountAndBlade.ViewModelCollection;
+using TaleWorlds.MountAndBlade.ViewModelCollection.HUD;
 using TaleWorlds.MountAndBlade.ViewModelCollection.Input;
 
+// I think that since we're overriding our own placeholder view, we need to use ViewCreatorManager.CreateMissionView ourselves
+
+// MissionGauntletMainAgentEquipDropView
 namespace SeparatistCrisis.Views
 {
-    public class MainAgentAbilityEquipView : MissionView
+    [OverrideView(typeof(MissionMainAgentAbilityEquipView))]
+    public class MissionGauntletMainAgentAbilityEquipView : MissionView
     {
         private const int _missionTimeSpeedRequestID = 624;
         private const float _slowDownAmountWhileRadialIsOpen = 0.25f;
@@ -64,7 +70,7 @@ namespace SeparatistCrisis.Views
             }
         }
 
-        public MainAgentAbilityEquipView()
+        public MissionGauntletMainAgentAbilityEquipView()
         {
             this._missionScreenAsInterface = base.MissionScreen;
             this.HoldHandled = false;
