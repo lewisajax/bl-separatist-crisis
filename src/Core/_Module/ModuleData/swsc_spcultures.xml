@@ -15,15 +15,15 @@
 		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
 		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
 		can_have_settlement="true"
-		town_edge_number="16"
 		villager_party_template="PartyTemplate.villager_empire_template"
 		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
-		caravan_party_template="PartyTemplate.caravan_template_empire"
-		elite_caravan_party_template="PartyTemplate.elite_caravan_template_empire"
 		militia_party_template="PartyTemplate.militia_empire_template"
 		rebels_party_template="PartyTemplate.rebels_empire_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
 		prosperity_bonus="1"
+		settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+		settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+		settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
 		encounter_background_mesh="encounter_empire"
 		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
@@ -69,15 +69,28 @@
 		beggar="NPCCharacter.beggar_empire"
 		female_beggar="NPCCharacter.female_beggar_empire"
 		female_dancer="NPCCharacter.female_dancer_empire"
-		gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
 		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
 		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
 		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
 		gear_dummy="NPCCharacter.gear_dummy_empire"
 		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
 		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
 		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
-		board_game_type="Tablut">
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
 		<vassal_reward_items>
 			<item id="Item.justicier_2hsword" />
 		</vassal_reward_items>
@@ -132,7 +145,7 @@
 			<icon id="102" />
 			<icon id="103" />
 		</possible_clan_banner_icon_ids>
-		<notable_and_wanderer_templates>
+		<notable_templates>
 			<template name="NPCCharacter.spc_wanderer_empire_0" />
 			<template name="NPCCharacter.spc_wanderer_empire_1" />
 			<template name="NPCCharacter.spc_wanderer_empire_2" />
@@ -171,7 +184,7 @@
 			<template name="NPCCharacter.spc_empire_headman_1" />
 			<template name="NPCCharacter.spc_empire_headman_2" />
 			<template name="NPCCharacter.spc_empire_headman_3" />
-		</notable_and_wanderer_templates>
+		</notable_templates>
 		<lord_templates>
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
@@ -240,15 +253,15 @@
 		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
 		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
 		can_have_settlement="true"
-		town_edge_number="16"
 		villager_party_template="PartyTemplate.villager_empire_template"
 		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
-		caravan_party_template="PartyTemplate.caravan_template_empire"
-		elite_caravan_party_template="PartyTemplate.elite_caravan_template_empire"
 		militia_party_template="PartyTemplate.militia_empire_template"
 		rebels_party_template="PartyTemplate.rebels_empire_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
 		prosperity_bonus="1"
+		settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+		settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+		settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
 		encounter_background_mesh="encounter_empire"
 		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
@@ -294,15 +307,28 @@
 		beggar="NPCCharacter.beggar_empire"
 		female_beggar="NPCCharacter.female_beggar_empire"
 		female_dancer="NPCCharacter.female_dancer_empire"
-		gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
 		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
 		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
 		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
 		gear_dummy="NPCCharacter.gear_dummy_empire"
 		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
 		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
 		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
-		board_game_type="Tablut">
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
 		<vassal_reward_items>
 			<item id="Item.justicier_2hsword" />
 		</vassal_reward_items>
@@ -357,7 +383,7 @@
 			<icon id="102" />
 			<icon id="103" />
 		</possible_clan_banner_icon_ids>
-		<notable_and_wanderer_templates>
+		<notable_templates>
 			<template name="NPCCharacter.spc_wanderer_empire_0" />
 			<template name="NPCCharacter.spc_wanderer_empire_1" />
 			<template name="NPCCharacter.spc_wanderer_empire_2" />
@@ -396,7 +422,7 @@
 			<template name="NPCCharacter.spc_empire_headman_1" />
 			<template name="NPCCharacter.spc_empire_headman_2" />
 			<template name="NPCCharacter.spc_empire_headman_3" />
-		</notable_and_wanderer_templates>
+		</notable_templates>
 		<lord_templates>
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
@@ -465,15 +491,15 @@
 		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
 		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
 		can_have_settlement="true"
-		town_edge_number="16"
 		villager_party_template="PartyTemplate.villager_empire_template"
 		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
-		caravan_party_template="PartyTemplate.caravan_template_empire"
-		elite_caravan_party_template="PartyTemplate.elite_caravan_template_empire"
 		militia_party_template="PartyTemplate.militia_empire_template"
 		rebels_party_template="PartyTemplate.rebels_empire_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
 		prosperity_bonus="1"
+		settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+		settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+		settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
 		encounter_background_mesh="encounter_empire"
 		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
@@ -519,15 +545,28 @@
 		beggar="NPCCharacter.beggar_empire"
 		female_beggar="NPCCharacter.female_beggar_empire"
 		female_dancer="NPCCharacter.female_dancer_empire"
-		gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
 		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
 		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
 		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
 		gear_dummy="NPCCharacter.gear_dummy_empire"
 		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
 		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
 		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
-		board_game_type="Tablut">
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
 		<vassal_reward_items>
 			<item id="Item.justicier_2hsword" />
 		</vassal_reward_items>
@@ -582,7 +621,7 @@
 			<icon id="102" />
 			<icon id="103" />
 		</possible_clan_banner_icon_ids>
-		<notable_and_wanderer_templates>
+		<notable_templates>
 			<template name="NPCCharacter.spc_wanderer_empire_0" />
 			<template name="NPCCharacter.spc_wanderer_empire_1" />
 			<template name="NPCCharacter.spc_wanderer_empire_2" />
@@ -621,7 +660,7 @@
 			<template name="NPCCharacter.spc_empire_headman_1" />
 			<template name="NPCCharacter.spc_empire_headman_2" />
 			<template name="NPCCharacter.spc_empire_headman_3" />
-		</notable_and_wanderer_templates>
+		</notable_templates>
 		<lord_templates>
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
@@ -690,15 +729,15 @@
 		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
 		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
 		can_have_settlement="true"
-		town_edge_number="16"
 		villager_party_template="PartyTemplate.villager_empire_template"
 		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
-		caravan_party_template="PartyTemplate.caravan_template_empire"
-		elite_caravan_party_template="PartyTemplate.elite_caravan_template_empire"
 		militia_party_template="PartyTemplate.militia_empire_template"
 		rebels_party_template="PartyTemplate.rebels_empire_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
 		prosperity_bonus="1"
+		settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+		settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+		settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
 		encounter_background_mesh="encounter_empire"
 		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
@@ -744,15 +783,28 @@
 		beggar="NPCCharacter.beggar_empire"
 		female_beggar="NPCCharacter.female_beggar_empire"
 		female_dancer="NPCCharacter.female_dancer_empire"
-		gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
 		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
 		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
 		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
 		gear_dummy="NPCCharacter.gear_dummy_empire"
 		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
 		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
 		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
-		board_game_type="Tablut">
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
 		<vassal_reward_items>
 			<item id="Item.justicier_2hsword" />
 		</vassal_reward_items>
@@ -807,7 +859,7 @@
 			<icon id="102" />
 			<icon id="103" />
 		</possible_clan_banner_icon_ids>
-		<notable_and_wanderer_templates>
+		<notable_templates>
 			<template name="NPCCharacter.spc_wanderer_empire_0" />
 			<template name="NPCCharacter.spc_wanderer_empire_1" />
 			<template name="NPCCharacter.spc_wanderer_empire_2" />
@@ -846,7 +898,7 @@
 			<template name="NPCCharacter.spc_empire_headman_1" />
 			<template name="NPCCharacter.spc_empire_headman_2" />
 			<template name="NPCCharacter.spc_empire_headman_3" />
-		</notable_and_wanderer_templates>
+		</notable_templates>
 		<lord_templates>
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
@@ -915,15 +967,15 @@
 		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
 		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
 		can_have_settlement="true"
-		town_edge_number="16"
 		villager_party_template="PartyTemplate.villager_empire_template"
 		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
-		caravan_party_template="PartyTemplate.caravan_template_empire"
-		elite_caravan_party_template="PartyTemplate.elite_caravan_template_empire"
 		militia_party_template="PartyTemplate.militia_empire_template"
 		rebels_party_template="PartyTemplate.rebels_empire_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
-		prosperity_bonus="1"
+	prosperity_bonus="1"
+	settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+	settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+	settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
 		encounter_background_mesh="encounter_empire"
 		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
@@ -969,15 +1021,28 @@
 		beggar="NPCCharacter.beggar_empire"
 		female_beggar="NPCCharacter.female_beggar_empire"
 		female_dancer="NPCCharacter.female_dancer_empire"
-		gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
 		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
 		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
 		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
 		gear_dummy="NPCCharacter.gear_dummy_empire"
 		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
 		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
 		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
-		board_game_type="Tablut">
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
 		<vassal_reward_items>
 			<item id="Item.justicier_2hsword" />
 		</vassal_reward_items>
@@ -1032,7 +1097,7 @@
 			<icon id="102" />
 			<icon id="103" />
 		</possible_clan_banner_icon_ids>
-		<notable_and_wanderer_templates>
+		<notable_templates>
 			<template name="NPCCharacter.spc_wanderer_empire_0" />
 			<template name="NPCCharacter.spc_wanderer_empire_1" />
 			<template name="NPCCharacter.spc_wanderer_empire_2" />
@@ -1071,7 +1136,7 @@
 			<template name="NPCCharacter.spc_empire_headman_1" />
 			<template name="NPCCharacter.spc_empire_headman_2" />
 			<template name="NPCCharacter.spc_empire_headman_3" />
-		</notable_and_wanderer_templates>
+		</notable_templates>
 		<lord_templates>
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
@@ -1140,15 +1205,15 @@
 		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
 		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
 		can_have_settlement="true"
-		town_edge_number="16"
 		villager_party_template="PartyTemplate.villager_empire_template"
 		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
-		caravan_party_template="PartyTemplate.caravan_template_empire"
-		elite_caravan_party_template="PartyTemplate.elite_caravan_template_empire"
 		militia_party_template="PartyTemplate.militia_empire_template"
 		rebels_party_template="PartyTemplate.rebels_empire_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
-		prosperity_bonus="1"
+	prosperity_bonus="1"
+	settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+	settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+	settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
 		encounter_background_mesh="encounter_empire"
 		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
@@ -1194,15 +1259,28 @@
 		beggar="NPCCharacter.beggar_empire"
 		female_beggar="NPCCharacter.female_beggar_empire"
 		female_dancer="NPCCharacter.female_dancer_empire"
-		gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
 		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
 		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
 		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
 		gear_dummy="NPCCharacter.gear_dummy_empire"
 		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
 		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
 		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
-		board_game_type="Tablut">
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
 		<vassal_reward_items>
 			<item id="Item.justicier_2hsword" />
 		</vassal_reward_items>
@@ -1257,7 +1335,7 @@
 			<icon id="102" />
 			<icon id="103" />
 		</possible_clan_banner_icon_ids>
-		<notable_and_wanderer_templates>
+		<notable_templates>
 			<template name="NPCCharacter.spc_wanderer_empire_0" />
 			<template name="NPCCharacter.spc_wanderer_empire_1" />
 			<template name="NPCCharacter.spc_wanderer_empire_2" />
@@ -1296,7 +1374,7 @@
 			<template name="NPCCharacter.spc_empire_headman_1" />
 			<template name="NPCCharacter.spc_empire_headman_2" />
 			<template name="NPCCharacter.spc_empire_headman_3" />
-		</notable_and_wanderer_templates>
+		</notable_templates>
 		<lord_templates>
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
@@ -1365,15 +1443,15 @@
 		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
 		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
 		can_have_settlement="true"
-		town_edge_number="16"
 		villager_party_template="PartyTemplate.villager_empire_template"
 		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
-		caravan_party_template="PartyTemplate.caravan_template_empire"
-		elite_caravan_party_template="PartyTemplate.elite_caravan_template_empire"
 		militia_party_template="PartyTemplate.militia_empire_template"
 		rebels_party_template="PartyTemplate.rebels_empire_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
-		prosperity_bonus="1"
+	prosperity_bonus="1"
+	settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+	settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+	settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
 		encounter_background_mesh="encounter_empire"
 		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
@@ -1419,15 +1497,28 @@
 		beggar="NPCCharacter.beggar_empire"
 		female_beggar="NPCCharacter.female_beggar_empire"
 		female_dancer="NPCCharacter.female_dancer_empire"
-		gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
 		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
 		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
 		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
 		gear_dummy="NPCCharacter.gear_dummy_empire"
 		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
 		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
 		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
-		board_game_type="Tablut">
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
 		<vassal_reward_items>
 			<item id="Item.justicier_2hsword" />
 		</vassal_reward_items>
@@ -1482,7 +1573,7 @@
 			<icon id="102" />
 			<icon id="103" />
 		</possible_clan_banner_icon_ids>
-		<notable_and_wanderer_templates>
+		<notable_templates>
 			<template name="NPCCharacter.spc_wanderer_empire_0" />
 			<template name="NPCCharacter.spc_wanderer_empire_1" />
 			<template name="NPCCharacter.spc_wanderer_empire_2" />
@@ -1521,7 +1612,7 @@
 			<template name="NPCCharacter.spc_empire_headman_1" />
 			<template name="NPCCharacter.spc_empire_headman_2" />
 			<template name="NPCCharacter.spc_empire_headman_3" />
-		</notable_and_wanderer_templates>
+		</notable_templates>
 		<lord_templates>
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
@@ -1590,15 +1681,15 @@
 		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
 		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
 		can_have_settlement="true"
-		town_edge_number="16"
 		villager_party_template="PartyTemplate.villager_empire_template"
 		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
-		caravan_party_template="PartyTemplate.caravan_template_empire"
-		elite_caravan_party_template="PartyTemplate.elite_caravan_template_empire"
 		militia_party_template="PartyTemplate.militia_empire_template"
 		rebels_party_template="PartyTemplate.rebels_empire_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
-		prosperity_bonus="1"
+	prosperity_bonus="1"
+	settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+	settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+	settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
 		encounter_background_mesh="encounter_empire"
 		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
@@ -1644,15 +1735,28 @@
 		beggar="NPCCharacter.beggar_empire"
 		female_beggar="NPCCharacter.female_beggar_empire"
 		female_dancer="NPCCharacter.female_dancer_empire"
-		gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
 		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
 		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
 		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
 		gear_dummy="NPCCharacter.gear_dummy_empire"
 		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
 		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
 		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
-		board_game_type="Tablut">
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
 		<vassal_reward_items>
 			<item id="Item.justicier_2hsword" />
 		</vassal_reward_items>
@@ -1707,7 +1811,7 @@
 			<icon id="102" />
 			<icon id="103" />
 		</possible_clan_banner_icon_ids>
-		<notable_and_wanderer_templates>
+		<notable_templates>
 			<template name="NPCCharacter.spc_wanderer_empire_0" />
 			<template name="NPCCharacter.spc_wanderer_empire_1" />
 			<template name="NPCCharacter.spc_wanderer_empire_2" />
@@ -1746,7 +1850,7 @@
 			<template name="NPCCharacter.spc_empire_headman_1" />
 			<template name="NPCCharacter.spc_empire_headman_2" />
 			<template name="NPCCharacter.spc_empire_headman_3" />
-		</notable_and_wanderer_templates>
+		</notable_templates>
 		<lord_templates>
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
@@ -1815,15 +1919,15 @@
 		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
 		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
 		can_have_settlement="true"
-		town_edge_number="16"
 		villager_party_template="PartyTemplate.villager_empire_template"
 		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
-		caravan_party_template="PartyTemplate.caravan_template_empire"
-		elite_caravan_party_template="PartyTemplate.elite_caravan_template_empire"
 		militia_party_template="PartyTemplate.militia_empire_template"
 		rebels_party_template="PartyTemplate.rebels_empire_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
-		prosperity_bonus="1"
+	prosperity_bonus="1"
+	settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+	settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+	settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
 		encounter_background_mesh="encounter_empire"
 		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
@@ -1869,15 +1973,28 @@
 		beggar="NPCCharacter.beggar_empire"
 		female_beggar="NPCCharacter.female_beggar_empire"
 		female_dancer="NPCCharacter.female_dancer_empire"
-		gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
 		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
 		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
 		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
 		gear_dummy="NPCCharacter.gear_dummy_empire"
 		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
 		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
 		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
-		board_game_type="Tablut">
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
 		<vassal_reward_items>
 			<item id="Item.justicier_2hsword" />
 		</vassal_reward_items>
@@ -1932,7 +2049,7 @@
 			<icon id="102" />
 			<icon id="103" />
 		</possible_clan_banner_icon_ids>
-		<notable_and_wanderer_templates>
+		<notable_templates>
 			<template name="NPCCharacter.spc_wanderer_empire_0" />
 			<template name="NPCCharacter.spc_wanderer_empire_1" />
 			<template name="NPCCharacter.spc_wanderer_empire_2" />
@@ -1971,7 +2088,7 @@
 			<template name="NPCCharacter.spc_empire_headman_1" />
 			<template name="NPCCharacter.spc_empire_headman_2" />
 			<template name="NPCCharacter.spc_empire_headman_3" />
-		</notable_and_wanderer_templates>
+		</notable_templates>
 		<lord_templates>
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
@@ -2040,15 +2157,15 @@
 		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
 		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
 		can_have_settlement="true"
-		town_edge_number="16"
 		villager_party_template="PartyTemplate.villager_empire_template"
 		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
-		caravan_party_template="PartyTemplate.caravan_template_empire"
-		elite_caravan_party_template="PartyTemplate.elite_caravan_template_empire"
 		militia_party_template="PartyTemplate.militia_empire_template"
 		rebels_party_template="PartyTemplate.rebels_empire_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
-		prosperity_bonus="1"
+	prosperity_bonus="1"
+	settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+	settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+	settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
 		encounter_background_mesh="encounter_empire"
 		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
@@ -2094,15 +2211,28 @@
 		beggar="NPCCharacter.beggar_empire"
 		female_beggar="NPCCharacter.female_beggar_empire"
 		female_dancer="NPCCharacter.female_dancer_empire"
-		gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
 		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
 		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
 		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
 		gear_dummy="NPCCharacter.gear_dummy_empire"
 		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
 		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
 		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
-		board_game_type="Tablut">
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
 		<vassal_reward_items>
 			<item id="Item.justicier_2hsword" />
 		</vassal_reward_items>
@@ -2157,7 +2287,7 @@
 			<icon id="102" />
 			<icon id="103" />
 		</possible_clan_banner_icon_ids>
-		<notable_and_wanderer_templates>
+		<notable_templates>
 			<template name="NPCCharacter.spc_wanderer_empire_0" />
 			<template name="NPCCharacter.spc_wanderer_empire_1" />
 			<template name="NPCCharacter.spc_wanderer_empire_2" />
@@ -2196,7 +2326,7 @@
 			<template name="NPCCharacter.spc_empire_headman_1" />
 			<template name="NPCCharacter.spc_empire_headman_2" />
 			<template name="NPCCharacter.spc_empire_headman_3" />
-		</notable_and_wanderer_templates>
+		</notable_templates>
 		<lord_templates>
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
@@ -2265,15 +2395,15 @@
 		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
 		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
 		can_have_settlement="true"
-		town_edge_number="16"
 		villager_party_template="PartyTemplate.villager_empire_template"
 		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
-		caravan_party_template="PartyTemplate.caravan_template_empire"
-		elite_caravan_party_template="PartyTemplate.elite_caravan_template_empire"
 		militia_party_template="PartyTemplate.militia_empire_template"
 		rebels_party_template="PartyTemplate.rebels_empire_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
-		prosperity_bonus="1"
+	prosperity_bonus="1"
+	settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+	settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+	settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
 		encounter_background_mesh="encounter_empire"
 		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
@@ -2319,15 +2449,28 @@
 		beggar="NPCCharacter.beggar_empire"
 		female_beggar="NPCCharacter.female_beggar_empire"
 		female_dancer="NPCCharacter.female_dancer_empire"
-		gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
 		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
 		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
 		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
 		gear_dummy="NPCCharacter.gear_dummy_empire"
 		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
 		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
 		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
-		board_game_type="Tablut">
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
 		<vassal_reward_items>
 			<item id="Item.justicier_2hsword" />
 		</vassal_reward_items>
@@ -2382,7 +2525,7 @@
 			<icon id="102" />
 			<icon id="103" />
 		</possible_clan_banner_icon_ids>
-		<notable_and_wanderer_templates>
+		<notable_templates>
 			<template name="NPCCharacter.spc_wanderer_empire_0" />
 			<template name="NPCCharacter.spc_wanderer_empire_1" />
 			<template name="NPCCharacter.spc_wanderer_empire_2" />
@@ -2421,7 +2564,7 @@
 			<template name="NPCCharacter.spc_empire_headman_1" />
 			<template name="NPCCharacter.spc_empire_headman_2" />
 			<template name="NPCCharacter.spc_empire_headman_3" />
-		</notable_and_wanderer_templates>
+		</notable_templates>
 		<lord_templates>
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
@@ -2490,15 +2633,15 @@
 		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
 		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
 		can_have_settlement="true"
-		town_edge_number="16"
 		villager_party_template="PartyTemplate.villager_empire_template"
 		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
-		caravan_party_template="PartyTemplate.caravan_template_empire"
-		elite_caravan_party_template="PartyTemplate.elite_caravan_template_empire"
 		militia_party_template="PartyTemplate.militia_empire_template"
 		rebels_party_template="PartyTemplate.rebels_empire_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
-		prosperity_bonus="1"
+	prosperity_bonus="1"
+	settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+	settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+	settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
 		encounter_background_mesh="encounter_empire"
 		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
@@ -2544,15 +2687,28 @@
 		beggar="NPCCharacter.beggar_empire"
 		female_beggar="NPCCharacter.female_beggar_empire"
 		female_dancer="NPCCharacter.female_dancer_empire"
-		gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
 		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
 		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
 		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
 		gear_dummy="NPCCharacter.gear_dummy_empire"
 		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
 		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
 		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
-		board_game_type="Tablut">
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
 		<vassal_reward_items>
 			<item id="Item.justicier_2hsword" />
 		</vassal_reward_items>
@@ -2607,7 +2763,7 @@
 			<icon id="102" />
 			<icon id="103" />
 		</possible_clan_banner_icon_ids>
-		<notable_and_wanderer_templates>
+		<notable_templates>
 			<template name="NPCCharacter.spc_wanderer_empire_0" />
 			<template name="NPCCharacter.spc_wanderer_empire_1" />
 			<template name="NPCCharacter.spc_wanderer_empire_2" />
@@ -2646,7 +2802,7 @@
 			<template name="NPCCharacter.spc_empire_headman_1" />
 			<template name="NPCCharacter.spc_empire_headman_2" />
 			<template name="NPCCharacter.spc_empire_headman_3" />
-		</notable_and_wanderer_templates>
+		</notable_templates>
 		<lord_templates>
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
@@ -2715,15 +2871,15 @@
 		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
 		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
 		can_have_settlement="true"
-		town_edge_number="16"
 		villager_party_template="PartyTemplate.villager_empire_template"
 		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
-		caravan_party_template="PartyTemplate.caravan_template_empire"
-		elite_caravan_party_template="PartyTemplate.elite_caravan_template_empire"
 		militia_party_template="PartyTemplate.militia_empire_template"
 		rebels_party_template="PartyTemplate.rebels_empire_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
-		prosperity_bonus="1"
+	prosperity_bonus="1"
+	settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+	settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+	settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
 		encounter_background_mesh="encounter_empire"
 		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
@@ -2769,15 +2925,28 @@
 		beggar="NPCCharacter.beggar_empire"
 		female_beggar="NPCCharacter.female_beggar_empire"
 		female_dancer="NPCCharacter.female_dancer_empire"
-		gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
 		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
 		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
 		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
 		gear_dummy="NPCCharacter.gear_dummy_empire"
 		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
 		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
 		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
-		board_game_type="Tablut">
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
 		<vassal_reward_items>
 			<item id="Item.justicier_2hsword" />
 		</vassal_reward_items>
@@ -2832,7 +3001,7 @@
 			<icon id="102" />
 			<icon id="103" />
 		</possible_clan_banner_icon_ids>
-		<notable_and_wanderer_templates>
+		<notable_templates>
 			<template name="NPCCharacter.spc_wanderer_empire_0" />
 			<template name="NPCCharacter.spc_wanderer_empire_1" />
 			<template name="NPCCharacter.spc_wanderer_empire_2" />
@@ -2871,7 +3040,7 @@
 			<template name="NPCCharacter.spc_empire_headman_1" />
 			<template name="NPCCharacter.spc_empire_headman_2" />
 			<template name="NPCCharacter.spc_empire_headman_3" />
-		</notable_and_wanderer_templates>
+		</notable_templates>
 		<lord_templates>
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
@@ -2942,15 +3111,15 @@
 		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
 		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
 		can_have_settlement="true"
-		town_edge_number="16"
 		villager_party_template="PartyTemplate.villager_empire_template"
 		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
-		caravan_party_template="PartyTemplate.caravan_template_empire"
-		elite_caravan_party_template="PartyTemplate.elite_caravan_template_empire"
 		militia_party_template="PartyTemplate.militia_empire_template"
 		rebels_party_template="PartyTemplate.rebels_empire_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
-		prosperity_bonus="1"
+	prosperity_bonus="1"
+	settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+	settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+	settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
 		encounter_background_mesh="encounter_empire"
 		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
@@ -2996,15 +3165,28 @@
 		beggar="NPCCharacter.beggar_empire"
 		female_beggar="NPCCharacter.female_beggar_empire"
 		female_dancer="NPCCharacter.female_dancer_empire"
-		gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
 		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
 		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
 		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
 		gear_dummy="NPCCharacter.gear_dummy_empire"
 		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
 		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
 		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
-		board_game_type="Tablut">
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
 		<vassal_reward_items>
 			<item id="Item.justicier_2hsword" />
 		</vassal_reward_items>
@@ -3059,7 +3241,7 @@
 			<icon id="102" />
 			<icon id="103" />
 		</possible_clan_banner_icon_ids>
-		<notable_and_wanderer_templates>
+		<notable_templates>
 			<template name="NPCCharacter.spc_wanderer_empire_0" />
 			<template name="NPCCharacter.spc_wanderer_empire_1" />
 			<template name="NPCCharacter.spc_wanderer_empire_2" />
@@ -3098,7 +3280,7 @@
 			<template name="NPCCharacter.spc_empire_headman_1" />
 			<template name="NPCCharacter.spc_empire_headman_2" />
 			<template name="NPCCharacter.spc_empire_headman_3" />
-		</notable_and_wanderer_templates>
+		</notable_templates>
 		<lord_templates>
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
@@ -3167,15 +3349,15 @@
 		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
 		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
 		can_have_settlement="true"
-		town_edge_number="16"
 		villager_party_template="PartyTemplate.villager_empire_template"
 		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
-		caravan_party_template="PartyTemplate.caravan_template_empire"
-		elite_caravan_party_template="PartyTemplate.elite_caravan_template_empire"
 		militia_party_template="PartyTemplate.militia_empire_template"
 		rebels_party_template="PartyTemplate.rebels_empire_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
-		prosperity_bonus="1"
+	prosperity_bonus="1"
+	settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+	settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+	settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
 		encounter_background_mesh="encounter_empire"
 		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
@@ -3221,15 +3403,28 @@
 		beggar="NPCCharacter.beggar_empire"
 		female_beggar="NPCCharacter.female_beggar_empire"
 		female_dancer="NPCCharacter.female_dancer_empire"
-		gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
 		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
 		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
 		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
 		gear_dummy="NPCCharacter.gear_dummy_empire"
 		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
 		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
 		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
-		board_game_type="Tablut">
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
 		<vassal_reward_items>
 			<item id="Item.justicier_2hsword" />
 		</vassal_reward_items>
@@ -3284,7 +3479,7 @@
 			<icon id="102" />
 			<icon id="103" />
 		</possible_clan_banner_icon_ids>
-		<notable_and_wanderer_templates>
+		<notable_templates>
 			<template name="NPCCharacter.spc_wanderer_empire_0" />
 			<template name="NPCCharacter.spc_wanderer_empire_1" />
 			<template name="NPCCharacter.spc_wanderer_empire_2" />
@@ -3323,7 +3518,7 @@
 			<template name="NPCCharacter.spc_empire_headman_1" />
 			<template name="NPCCharacter.spc_empire_headman_2" />
 			<template name="NPCCharacter.spc_empire_headman_3" />
-		</notable_and_wanderer_templates>
+		</notable_templates>
 		<lord_templates>
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
@@ -3392,15 +3587,15 @@
 		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
 		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
 		can_have_settlement="true"
-		town_edge_number="16"
 		villager_party_template="PartyTemplate.villager_empire_template"
 		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
-		caravan_party_template="PartyTemplate.caravan_template_empire"
-		elite_caravan_party_template="PartyTemplate.elite_caravan_template_empire"
 		militia_party_template="PartyTemplate.militia_empire_template"
 		rebels_party_template="PartyTemplate.rebels_empire_template"
 		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
-		prosperity_bonus="1"
+	prosperity_bonus="1"
+	settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+	settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+	settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
 		encounter_background_mesh="encounter_empire"
 		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
 		default_face_key="000fa92e90004202aced5d976886573d5d679585a376fdd605877a7764b8987c00000000000007520000037f0000000f00000037049140010000000000000000"
@@ -3446,15 +3641,28 @@
 		beggar="NPCCharacter.beggar_empire"
 		female_beggar="NPCCharacter.female_beggar_empire"
 		female_dancer="NPCCharacter.female_dancer_empire"
-		gear_practice_dummy="NPCCharacter.gear_practice_dummy_empire"
 		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
 		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
 		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
 		gear_dummy="NPCCharacter.gear_dummy_empire"
 		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
 		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
 		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
-		board_game_type="Tablut">
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
 		<vassal_reward_items>
 			<item id="Item.justicier_2hsword" />
 		</vassal_reward_items>
@@ -3509,7 +3717,7 @@
 			<icon id="102" />
 			<icon id="103" />
 		</possible_clan_banner_icon_ids>
-		<notable_and_wanderer_templates>
+		<notable_templates>
 			<template name="NPCCharacter.spc_wanderer_empire_0" />
 			<template name="NPCCharacter.spc_wanderer_empire_1" />
 			<template name="NPCCharacter.spc_wanderer_empire_2" />
@@ -3548,7 +3756,7 @@
 			<template name="NPCCharacter.spc_empire_headman_1" />
 			<template name="NPCCharacter.spc_empire_headman_2" />
 			<template name="NPCCharacter.spc_empire_headman_3" />
-		</notable_and_wanderer_templates>
+		</notable_templates>
 		<lord_templates>
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
 			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />

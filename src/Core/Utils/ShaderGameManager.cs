@@ -21,7 +21,7 @@ namespace SeparatistCrisis.Utils
         private void LoadScene()
         {
             CustomBattleData data = new CustomBattleData();
-            data.GameType = CustomBattleGameType.Battle;
+            data.GameTypeStringId = "Battle";
             data.SceneId = "battle_terrain_a";
             data.PlayerCharacter = SelectPlayer();
             data.PlayerParty = GetPlayerParty(data.PlayerCharacter);

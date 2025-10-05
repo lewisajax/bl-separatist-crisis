@@ -44,6 +44,18 @@
 		name="Sheev Palpatine"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -60,7 +72,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -77,6 +89,18 @@
 		name="Bail Organa"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -93,7 +117,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -110,6 +134,18 @@
 		name="Breha Organa"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -126,7 +162,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -143,6 +179,18 @@
 		name="Mas Amedda"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -159,7 +207,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -176,6 +224,18 @@
 		name="Jar Jar Binks"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -192,7 +252,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -209,6 +269,18 @@
 		name="Halle Burtoni"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -225,7 +297,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -242,6 +314,18 @@
 		name="Christo"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -258,7 +342,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -275,6 +359,18 @@
 		name="Riyo Chuchi"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -291,7 +387,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -308,6 +404,18 @@
 		name="Padme Amidala"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -324,7 +432,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -341,6 +449,18 @@
 		name="Mon Mothma"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -357,7 +477,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -374,6 +494,18 @@
 		name="Perrin Fertha"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -390,7 +522,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -407,6 +539,18 @@
 		name="Orn Free Taa"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -423,7 +567,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -440,6 +584,18 @@
 		name="Hego Damask II"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -456,7 +612,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -473,6 +629,18 @@
 		name="Nak-il Tano"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -489,7 +657,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -506,6 +674,18 @@
 		name="Pav-ti Tano"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -522,7 +702,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -541,6 +721,18 @@
 		name="Yoda"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -557,7 +749,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -574,6 +766,18 @@
 		name="Cin Drallig"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -590,7 +794,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -607,6 +811,18 @@
 		name="Kit Fisto"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -623,7 +839,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -640,6 +856,18 @@
 		name="Bardan Jusik"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -656,7 +884,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -673,6 +901,18 @@
 		name="Arligan Zey"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -689,7 +929,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -706,6 +946,18 @@
 		name="Rahm Kota"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -722,7 +974,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -739,6 +991,18 @@
 		name="Eeth Koth"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -755,7 +1019,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -772,6 +1036,18 @@
 		name="Pong Krell"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -788,7 +1064,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -805,6 +1081,18 @@
 		name="Taron Malicos"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -821,7 +1109,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -838,6 +1126,18 @@
 		name="Even Piell"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -854,7 +1154,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -871,6 +1171,18 @@
 		name="Bolla Ropal"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -887,7 +1199,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -904,6 +1216,18 @@
 		name="Roan Shryne"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -920,7 +1244,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -937,6 +1261,18 @@
 		name="Baylan Skoll"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -953,7 +1289,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -970,6 +1306,18 @@
 		name="Saesee Tiin"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -986,7 +1334,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1003,6 +1351,18 @@
 		name="Tiplar"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1019,7 +1379,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1036,6 +1396,18 @@
 		name="Tiplee"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1052,7 +1424,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1069,6 +1441,18 @@
 		name="Etain Tur-Mukan"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1085,7 +1469,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1102,6 +1486,18 @@
 		name="Tholme"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1118,7 +1514,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1135,6 +1531,18 @@
 		name="Quinlan Vos"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1151,7 +1559,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1168,6 +1576,18 @@
 		name="Qui-Gon Jinn"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1184,7 +1604,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1201,6 +1621,18 @@
 		name="Tyvokka"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1217,7 +1649,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1234,6 +1666,18 @@
 		name="Gungi"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1250,7 +1694,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1269,6 +1713,18 @@
 		name="Obi-Wan Kenobi"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1285,7 +1741,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1302,6 +1758,18 @@
 		name="CC-2224 Cody"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1318,7 +1786,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1335,6 +1803,18 @@
 		name="Mekedrix"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1351,7 +1831,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1368,6 +1848,18 @@
 		name="CC-5576-39 Gregor"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1384,7 +1876,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1401,6 +1893,18 @@
 		name="CT-4887 Waxer"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1417,7 +1921,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1434,6 +1938,18 @@
 		name="CT-9147 Boil"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1450,7 +1966,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1467,6 +1983,18 @@
 		name="CT-1143 Gearshift"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1483,7 +2011,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1500,6 +2028,18 @@
 		name="CT-4008 Longshot"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1516,7 +2056,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1533,6 +2073,18 @@
 		name="CT-6307 Trapper"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1549,7 +2101,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1566,6 +2118,18 @@
 		name="CT-9991 Wooley"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1582,7 +2146,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1601,6 +2165,18 @@
 		name="Plo Koon"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1617,7 +2193,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1634,6 +2210,18 @@
 		name="CC-3636 Wolffe"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1650,7 +2238,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1667,6 +2255,18 @@
 		name="CT-4860 Boost"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1683,7 +2283,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1700,6 +2300,18 @@
 		name="CT-8585 Comet"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1716,7 +2328,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1733,6 +2345,18 @@
 		name="CT-0036 Corvis"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1749,7 +2373,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1766,6 +2390,18 @@
 		name="CT-1057 Mortar"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1782,7 +2418,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1799,6 +2435,18 @@
 		name="CT-9736 Scope"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1815,7 +2463,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1832,6 +2480,18 @@
 		name="CT-8949 Sinker"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1848,7 +2508,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1865,6 +2525,18 @@
 		name="CT-1123 Sprint"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1881,7 +2553,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1898,6 +2570,18 @@
 		name="CT-0872 Umbra"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1914,7 +2598,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1931,6 +2615,18 @@
 		name="CT-7741 Warthog"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1947,7 +2643,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1964,6 +2660,18 @@
 		name="CT-1701 Wildfire"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -1980,7 +2688,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -1999,6 +2707,18 @@
 		name="Anakin Skywalker"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2015,7 +2735,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2032,6 +2752,18 @@
 		name="CC-7567 Rex"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2048,7 +2780,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2065,6 +2797,18 @@
 		name="Ahsoka Tano"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2081,7 +2825,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2098,6 +2842,18 @@
 		name="CT-7716 Denal"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2114,7 +2870,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2131,6 +2887,18 @@
 		name="CT-6922 Dogma"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2147,7 +2915,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2164,6 +2932,18 @@
 		name="CT-1704 Cameron"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2180,7 +2960,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2197,6 +2977,18 @@
 		name="CT-8009 Charger"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2213,7 +3005,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2230,6 +3022,18 @@
 		name="ARC-1409 Echo"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2246,7 +3050,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2263,6 +3067,18 @@
 		name="ARC-5555 Fives"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2279,7 +3095,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2296,6 +3112,18 @@
 		name="CT-6446 Hardcase"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2312,7 +3140,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2329,6 +3157,18 @@
 		name="CT-1217 Hawk"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2345,7 +3185,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2362,6 +3202,18 @@
 		name="CT-5597 Jesse"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2378,7 +3230,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2395,6 +3247,18 @@
 		name="CT-6116 Kix"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2411,7 +3275,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2428,6 +3292,18 @@
 		name="CT-6116 Kix"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2444,7 +3320,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2461,6 +3337,18 @@
 		name="CT-7777 Lucky"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2477,7 +3365,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2494,6 +3382,18 @@
 		name="CT-5334 Sterling"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2510,7 +3410,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2527,6 +3427,18 @@
 		name="CT-5385 Tup"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2543,7 +3455,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2562,6 +3474,18 @@
 		name="Aayla Secura"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2578,7 +3502,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2595,6 +3519,18 @@
 		name="CC-5052 Bly"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2611,7 +3547,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2628,6 +3564,18 @@
 		name="CT-0301 Barr"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2644,7 +3592,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2661,6 +3609,18 @@
 		name="CT-0145 Flash"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2677,7 +3637,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2694,6 +3654,18 @@
 		name="CL-1010 Flash"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2710,7 +3682,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2727,6 +3699,18 @@
 		name="CL-4062 Inc"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2743,7 +3727,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2760,6 +3744,18 @@
 		name="CT-1212 Twelve"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2776,7 +3772,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2793,6 +3789,18 @@
 		name="CT-9204 Tyto"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2809,7 +3817,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2828,6 +3836,18 @@
 		name="Ki-Adi-Mundi"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2844,7 +3864,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2861,6 +3881,18 @@
 		name="CC-1138 Bacara"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2877,7 +3909,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2894,6 +3926,18 @@
 		name="CC-2042 Keller"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2910,7 +3954,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2927,6 +3971,18 @@
 		name="CT-1209 Rothax"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2943,7 +3999,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2960,6 +4016,18 @@
 		name="CT-4106 Toola"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -2976,7 +4044,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -2995,6 +4063,18 @@
 		name="Luminara Unduli"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3011,7 +4091,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3028,6 +4108,18 @@
 		name="Barriss Offee"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3044,7 +4136,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3061,6 +4153,18 @@
 		name="Depa Billaba"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3077,7 +4181,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3094,6 +4198,18 @@
 		name="Caleb Dume"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3110,7 +4226,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3127,6 +4243,18 @@
 		name="CC-1004 Gree"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3143,7 +4271,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3160,6 +4288,18 @@
 		name="CT-2116 Buzz"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3176,7 +4316,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3193,6 +4333,18 @@
 		name="CT-5112 Draa"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3209,7 +4361,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3226,6 +4378,18 @@
 		name="CT-4207 Kaylon"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3242,7 +4406,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3259,6 +4423,18 @@
 		name="CT-9631 Mixx"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3275,7 +4451,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3292,6 +4468,18 @@
 		name="CT-4718 Remo"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3308,7 +4496,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3325,6 +4513,18 @@
 		name="CT-8416 Soot"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3341,7 +4541,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3358,6 +4558,18 @@
 		name="CT-1157 Stance"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3374,7 +4586,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3391,6 +4603,18 @@
 		name="CC-1286 Styles"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3407,7 +4631,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3424,6 +4648,18 @@
 		name="CT-1010 Tenn"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3440,7 +4676,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3457,6 +4693,18 @@
 		name="CT-5603 Jek"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3473,7 +4721,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3492,6 +4740,18 @@
 		name="Mace Windu"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3508,7 +4768,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3525,6 +4785,18 @@
 		name="Adi Gallia"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3541,7 +4813,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3558,6 +4830,18 @@
 		name="Stass Allie"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3574,7 +4858,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3591,6 +4875,18 @@
 		name="CC-8826 Neyo"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3607,7 +4903,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3624,6 +4920,18 @@
 		name="CT-0587 Heater"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3640,7 +4948,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3657,6 +4965,18 @@
 		name="CT-3112 Pax"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3673,7 +4993,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3690,6 +5010,18 @@
 		name="CC-411 Ponds"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3706,7 +5038,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3723,6 +5055,18 @@
 		name="CT-6910 Razor"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3739,7 +5083,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3756,6 +5100,18 @@
 		name="CT-1617 Stak"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3772,7 +5128,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3791,6 +5147,18 @@
 		name="Lama Su"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3807,7 +5175,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3824,6 +5192,18 @@
 		name="Nala Se"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3840,7 +5220,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3857,6 +5237,18 @@
 		name="Nala Se"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3873,7 +5265,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3890,6 +5282,18 @@
 		name="Taun We"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3906,7 +5310,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3923,6 +5327,18 @@
 		name="Ko Sai"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3939,7 +5355,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3956,6 +5372,18 @@
 		name="Kal Skirata"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -3972,7 +5400,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -3989,6 +5417,18 @@
 		name="Munin Skirata"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4005,7 +5445,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4022,6 +5462,18 @@
 		name="RC-1309"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4038,7 +5490,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4055,6 +5507,18 @@
 		name="RC-3222 Atin"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4071,7 +5535,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4088,6 +5552,18 @@
 		name="RC-8015 Fi"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4104,7 +5580,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4121,6 +5597,18 @@
 		name="Parja Bralor"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4137,7 +5625,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4154,6 +5642,18 @@
 		name="RC-1136 Darman"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4170,7 +5670,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4187,6 +5687,18 @@
 		name="N-12 A'den"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4203,7 +5715,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4220,6 +5732,18 @@
 		name="RC-5108 Corr"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4236,7 +5760,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4253,6 +5777,18 @@
 		name="N-10 Jaing"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4269,7 +5805,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4286,6 +5822,18 @@
 		name="N-6 Kom'rk"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4302,7 +5850,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4319,6 +5867,18 @@
 		name="N-7 Mereel"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4335,7 +5895,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4352,6 +5912,18 @@
 		name="N-11 Ordo"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4368,7 +5940,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4385,6 +5957,18 @@
 		name="N-5 Prudii"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4401,7 +5985,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4418,6 +6002,18 @@
 		name="Walon Vau"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4434,7 +6030,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4451,6 +6047,18 @@
 		name="RC-1138 Boss"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4467,7 +6075,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4484,6 +6092,18 @@
 		name="RC-1207 Sev"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4500,7 +6120,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4517,6 +6137,18 @@
 		name="RC-1140 Fixer"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4533,7 +6165,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4550,6 +6182,18 @@
 		name="RC-1262 Scorch"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4566,7 +6210,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4583,6 +6227,18 @@
 		name="ARC-6412 Blitz"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4599,7 +6255,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4616,6 +6272,18 @@
 		name="ARC-1911 Colt"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4632,7 +6300,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4649,6 +6317,18 @@
 		name="ARC-1742 Havoc"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4665,7 +6345,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4682,6 +6362,18 @@
 		name="Jango Fett"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4698,7 +6390,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4715,6 +6407,18 @@
 		name="B'arin Ampa"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4731,7 +6435,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4748,6 +6452,18 @@
 		name="Mij Gilamar"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4764,7 +6480,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4781,6 +6497,18 @@
 		name="Dred Priest"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4797,7 +6525,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4814,6 +6542,18 @@
 		name="Wad'e Tay'haai"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4830,7 +6570,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4847,6 +6587,18 @@
 		name="Llats Ward"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4863,7 +6615,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4881,6 +6633,18 @@
 		name="Jamillia Jamillia"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4897,7 +6661,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4914,6 +6678,18 @@
 		name="Jamillia Jamillia"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4930,7 +6706,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4947,6 +6723,18 @@
 		name="Ryoo Naberrie"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4963,7 +6751,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -4980,6 +6768,18 @@
 		name="Cosinga Palpatine"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -4996,7 +6796,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5013,6 +6813,18 @@
 		name="Otoh Binks"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5029,7 +6841,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5046,6 +6858,18 @@
 		name="George R Binks"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5062,7 +6886,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5079,6 +6903,18 @@
 		name="Ruwee Naberrie"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5095,7 +6931,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5112,6 +6948,18 @@
 		name="Jobal Naberrie"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5128,7 +6976,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5145,6 +6993,18 @@
 		name="Sola Naberrie"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5161,7 +7021,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5178,6 +7038,18 @@
 		name="Darred Naberrie"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5194,7 +7066,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5211,6 +7083,18 @@
 		name="Sio Bibble"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5227,7 +7111,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5244,6 +7128,18 @@
 		name="Hela Brandes"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5260,7 +7156,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5277,6 +7173,18 @@
 		name="Hugo Eckener"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5293,7 +7201,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5310,6 +7218,18 @@
 		name="Lialla Tane"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5326,7 +7246,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5343,6 +7263,18 @@
 		name="Lucos Dannt"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5359,7 +7291,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5376,6 +7308,18 @@
 		name="Mett Habble"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5392,7 +7336,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5409,6 +7353,18 @@
 		name="Quarsh Panaka"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5425,7 +7381,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5442,6 +7398,18 @@
 		name="Mariek Panaka"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5458,7 +7426,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5475,6 +7443,18 @@
 		name="Lufta Shif"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5491,7 +7471,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5508,6 +7488,18 @@
 		name="Gregar Typho"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5524,7 +7516,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5541,6 +7533,18 @@
 		name="Horace Vancil"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5557,7 +7561,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5576,6 +7580,18 @@
 		name="Grakchawwaa"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5592,7 +7608,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5609,6 +7625,18 @@
 		name="Attimun"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5625,7 +7653,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5642,6 +7670,18 @@
 		name="Chewbacca"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5658,7 +7698,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5675,6 +7715,18 @@
 		name="Attichitcuk"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5691,7 +7743,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5708,6 +7760,18 @@
 		name="Mallatobuck"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5724,7 +7788,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5741,6 +7805,18 @@
 		name="Eugroothwa"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5757,7 +7833,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5774,6 +7850,18 @@
 		name="Grabow"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5790,7 +7878,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5807,6 +7895,18 @@
 		name="Alrrark"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5823,7 +7923,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5840,6 +7940,18 @@
 		name="Guania"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5856,7 +7968,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5873,6 +7985,18 @@
 		name="Guanta"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5889,7 +8013,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5906,6 +8030,18 @@
 		name="Gumbaeki"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5922,7 +8058,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5939,6 +8075,18 @@
 		name="Lachichuk"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5955,7 +8103,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -5972,6 +8120,18 @@
 		name="Tarfful"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -5988,7 +8148,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -6005,6 +8165,18 @@
 		name="Merumeru"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -6021,7 +8193,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -6038,6 +8210,18 @@
 		name="Clausito"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -6054,7 +8238,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -6073,6 +8257,18 @@
 		name="Mitth'ras'safis"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -6089,7 +8285,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -6106,6 +8302,18 @@
 		name="Mitth'raw'nuruodo"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -6122,7 +8330,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -6139,6 +8347,18 @@
 		name="Mitth'oor'akiord"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -6155,7 +8375,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -6172,6 +8392,18 @@
 		name="Cohbo'rik'ardok"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -6188,7 +8420,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -6205,6 +8437,18 @@
 		name="Irizi'ar'alani"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -6221,7 +8465,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -6238,6 +8482,18 @@
 		name="Dy'lothe"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -6254,7 +8510,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -6271,6 +8527,18 @@
 		name="Tumaz'mor'diamir"
 		face_mesh_cache="true">
 		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
 			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
 		</face>
 		<skills></skills>
@@ -6287,7 +8555,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>

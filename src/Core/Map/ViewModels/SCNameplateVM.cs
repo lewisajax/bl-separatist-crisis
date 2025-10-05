@@ -1,16 +1,18 @@
-﻿using SandBox.ViewModelCollection.Nameplate;
+﻿using Helpers;
+using SandBox.ViewModelCollection.Nameplate;
+using SeparatistCrisis.ObjectTypes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Core;
+using TaleWorlds.Core.ViewModelCollection.ImageIdentifiers;
 using TaleWorlds.Engine;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
-using SeparatistCrisis.ObjectTypes;
 using MathF = TaleWorlds.Library.MathF;
 
 namespace SeparatistCrisis.ViewModels
@@ -19,7 +21,7 @@ namespace SeparatistCrisis.ViewModels
     {
         private Camera _mapCamera;
 
-        protected readonly Action<Vec2> _fastMoveCameraToPosition;
+        protected readonly Action<CampaignVec2> _fastMoveCameraToPosition;
 
         private object _lockObject = new object();
 
@@ -59,7 +61,7 @@ namespace SeparatistCrisis.ViewModels
 
         protected bool _bindIsTracked;
 
-        protected ImageIdentifierVM _bindBanner;
+        protected BannerImageIdentifierVM _bindBanner;
 
         protected int _bindRelation;
 
@@ -106,7 +108,7 @@ namespace SeparatistCrisis.ViewModels
 
         public GameEntity? Entity { get; set; }
 
-        public SCNameplateVM(Settlement settlement, GameEntity? entity, Camera mapCamera, Action<Vec2> fastMoveCameraToPosition, bool isGroup = false) : base(settlement, entity, mapCamera, fastMoveCameraToPosition)
+        public SCNameplateVM(Settlement settlement, GameEntity? entity, Camera mapCamera, Action<CampaignVec2> fastMoveCameraToPosition, bool isGroup = false) : base(settlement, entity, mapCamera, fastMoveCameraToPosition)
         {
             this._mapCamera = mapCamera;
             this._fastMoveCameraToPosition = fastMoveCameraToPosition;
@@ -117,7 +119,7 @@ namespace SeparatistCrisis.ViewModels
             }
             else
             {
-                this._worldPos = this.Settlement.GetLogicalPosition();
+                this._worldPos = this.Settlement.GetPositionAsVec3();
             }
 
             this._isGroup = isGroup;
@@ -244,7 +246,7 @@ namespace SeparatistCrisis.ViewModels
                 bool isCameraInGroup = this.SettlementGroup.Nameplate?.DistanceToCamera - 60f <= this.SettlementGroup.Radius;
 
                 // Check if player is inside system
-                bool isPlayerInGroup = Campaign.Current.MainParty.Position2D.Distance(this.SettlementGroup.Position2D) <= this.SettlementGroup.Radius;
+                bool isPlayerInGroup = Campaign.Current.MainParty.Position.ToVec2().Distance(this.SettlementGroup.Position2D) <= this.SettlementGroup.Radius;
 
                 // If camera height is above 600, hide all bound entities except for the group's primary node
                 if (cameraPosition.z > 600)
@@ -289,7 +291,7 @@ namespace SeparatistCrisis.ViewModels
                 isCameraInGroup = this.SettlementGroup.Nameplate?.DistanceToCamera - 60f <= this.SettlementGroup.Radius;
 
                 // Check if player is inside system
-                isPlayerInGroup = Campaign.Current.MainParty.Position2D.Distance(this.SettlementGroup.Position2D) <= this.SettlementGroup.Radius;
+                isPlayerInGroup = Campaign.Current.MainParty.Position.ToVec2().Distance(this.SettlementGroup.Position2D) <= this.SettlementGroup.Radius;
             }
 
 
@@ -331,7 +333,7 @@ namespace SeparatistCrisis.ViewModels
 
         public new void ExecuteSetCameraPosition()
         {
-            this._fastMoveCameraToPosition(this.Settlement.Position2D);
+            this._fastMoveCameraToPosition(this.Settlement.Position);
         }
 
         public new void RefreshBindValues()
@@ -385,7 +387,7 @@ namespace SeparatistCrisis.ViewModels
                 int num = (banner != null) ? banner.GetVersionNo() : 0;
                 if ((this._latestBanner != banner && !this._latestBanner.IsContentsSameWith(banner)) || this._latestBannerVersionNo != num)
                 {
-                    this._bindBanner = ((banner != null) ? new ImageIdentifierVM(BannerCode.CreateFrom(banner), true) : new ImageIdentifierVM(ImageIdentifierType.Null));
+                    this._bindBanner = ((banner != null) ? new BannerImageIdentifierVM(banner, true) : new BannerImageIdentifierVM(null, false));
                     this._latestBannerVersionNo = num;
                     this._latestBanner = banner;
                 }
@@ -411,7 +413,7 @@ namespace SeparatistCrisis.ViewModels
                     this._bindRelation = 2;
                     return;
                 }
-                if (FactionManager.IsAlliedWithFaction(this.Settlement.MapFaction, Hero.MainHero.MapFaction))
+                if (DiplomacyHelper.IsSameFactionAndNotEliminated(this.Settlement.MapFaction, Hero.MainHero.MapFaction))
                 {
                     this._bindRelation = 1;
                 }

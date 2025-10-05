@@ -13,8 +13,111 @@ namespace SeparatistCrisis.Widgets
 {
     public class SCNameplateItemWidget: Widget
     {
-        public SCNameplateItemWidget(UIContext context) : base(context)
+        private bool _hoverBegan;
+        private Widget _inspectedIconWidget;
+        private Widget _portIconWidget;
+        private MapEventVisualBrushWidget _mapEventVisualWidget;
+        private MaskedTextureWidget _settlementBannerWidget;
+        private TextWidget _settlementNameTextWidget;
+        private GridWidget _settlementPartiesGridWidget;
+        private Widget _widgetToShow;
+        private Widget _parleyIconWidget;
+
+        public Widget InspectedIconWidget
         {
+            get => this._inspectedIconWidget;
+            set
+            {
+                if (this._inspectedIconWidget == value)
+                    return;
+                this._inspectedIconWidget = value;
+                this.OnPropertyChanged<Widget>(value, nameof(InspectedIconWidget));
+            }
+        }
+
+        public Widget PortIconWidget
+        {
+            get => this._portIconWidget;
+            set
+            {
+                if (this._portIconWidget == value)
+                    return;
+                this._portIconWidget = value;
+                this.OnPropertyChanged<Widget>(value, nameof(PortIconWidget));
+            }
+        }
+
+        public GridWidget SettlementPartiesGridWidget
+        {
+            get => this._settlementPartiesGridWidget;
+            set
+            {
+                if (this._settlementPartiesGridWidget == value)
+                    return;
+                this._settlementPartiesGridWidget = value;
+                this.OnPropertyChanged<GridWidget>(value, nameof(SettlementPartiesGridWidget));
+            }
+        }
+
+        public MapEventVisualBrushWidget MapEventVisualWidget
+        {
+            get => this._mapEventVisualWidget;
+            set
+            {
+                if (this._mapEventVisualWidget == value)
+                    return;
+                this._mapEventVisualWidget = value;
+                this.OnPropertyChanged<MapEventVisualBrushWidget>(value, nameof(MapEventVisualWidget));
+            }
+        }
+
+        [Editor(false)]
+        public Widget WidgetToShow
+        {
+            get => this._widgetToShow;
+            set
+            {
+                if (this._widgetToShow == value)
+                    return;
+                this._widgetToShow = value;
+                this.OnPropertyChanged<Widget>(value, nameof(WidgetToShow));
+            }
+        }
+
+        public MaskedTextureWidget SettlementBannerWidget
+        {
+            get => this._settlementBannerWidget;
+            set
+            {
+                if (this._settlementBannerWidget == value)
+                    return;
+                this._settlementBannerWidget = value;
+                this.OnPropertyChanged<MaskedTextureWidget>(value, nameof(SettlementBannerWidget));
+            }
+        }
+
+        public TextWidget SettlementNameTextWidget
+        {
+            get => this._settlementNameTextWidget;
+            set
+            {
+                if (this._settlementNameTextWidget == value)
+                    return;
+                this._settlementNameTextWidget = value;
+                this.OnPropertyChanged<TextWidget>(value, nameof(SettlementNameTextWidget));
+            }
+        }
+
+        public Widget ParleyIconWidget
+        {
+            get => this._parleyIconWidget;
+            set
+            {
+                if (this._parleyIconWidget == value)
+                    return;
+                this._parleyIconWidget = value;
+                this.OnPropertyChanged<Widget>(value, nameof(ParleyIconWidget));
+            }
         }
 
         public bool IsOverWidget { get; private set; }
@@ -23,16 +126,17 @@ namespace SeparatistCrisis.Widgets
 
         public int IssueType { get; set; }
 
-        public void ParallelUpdate(float dt)
+        public SCNameplateItemWidget(UIContext context) : base(context)
+        {
+        }
+
+        public new void ParallelUpdate(float dt)
         {
             Widget widgetToShow = this._widgetToShow;
-            Widget parentWidget = base.ParentWidget;
+            Widget parentWidget = this.ParentWidget;
             if (widgetToShow == null)
-            {
-                Debug.FailedAssert("widgetToShow is null during ParallelUpdate!", "C:\\Develop\\MB3\\Source\\Bannerlord\\TaleWorlds.MountAndBlade.GauntletUI.Widgets\\Nameplate\\GrimNameplateItemWidget.cs", "ParallelUpdate", 24);
-                return;
-            }
-            if (parentWidget != null && parentWidget.IsEnabled)
+                Debug.FailedAssert("widgetToShow is null during ParallelUpdate!", "C:\\BuildAgent\\work\\mb3\\Source\\Bannerlord\\TaleWorlds.MountAndBlade.GauntletUI.Widgets\\Nameplate\\SCNameplateItemWidget.cs", nameof(ParallelUpdate), 24);
+            else if (parentWidget != null && parentWidget.IsEnabled)
             {
                 this.IsOverWidget = this.IsMouseOverWidget();
                 if (this.IsOverWidget && !this._hoverBegan)
@@ -45,156 +149,17 @@ namespace SeparatistCrisis.Widgets
                     this._hoverBegan = false;
                     widgetToShow.IsVisible = false;
                 }
-                if (!this.IsOverWidget && widgetToShow.IsVisible)
-                {
-                    widgetToShow.IsVisible = false;
+                if (this.IsOverWidget || !widgetToShow.IsVisible)
                     return;
-                }
-            }
-            else
-            {
                 widgetToShow.IsVisible = false;
             }
+            else
+                widgetToShow.IsVisible = false;
         }
 
         private bool IsMouseOverWidget()
         {
-            Vector2 globalPosition = base.GlobalPosition;
-            return this.IsBetween(base.EventManager.MousePosition.X, globalPosition.X, globalPosition.X + base.Size.X) && this.IsBetween(base.EventManager.MousePosition.Y, globalPosition.Y, globalPosition.Y + base.Size.Y);
+            return this.EventManager.IsPointInsideUsableArea(this.EventManager.MousePosition) && this.AreaRect.IsPointInside(this.EventManager.MousePosition);
         }
-
-        private bool IsBetween(float number, float min, float max)
-        {
-            return number >= min && number <= max;
-        }
-
-        public Widget SettlementNameplateCapsuleWidget
-        {
-            get
-            {
-                return this._settlementNameplateCapsuleWidget;
-            }
-            set
-            {
-                if (this._settlementNameplateCapsuleWidget != value)
-                {
-                    this._settlementNameplateCapsuleWidget = value;
-                    base.OnPropertyChanged<Widget>(value, "SettlementNameplateCapsuleWidget");
-                }
-            }
-        }
-
-        public GridWidget SettlementPartiesGridWidget
-        {
-            get
-            {
-                return this._settlementPartiesGridWidget;
-            }
-            set
-            {
-                if (this._settlementPartiesGridWidget != value)
-                {
-                    this._settlementPartiesGridWidget = value;
-                    base.OnPropertyChanged<GridWidget>(value, "SettlementPartiesGridWidget");
-                }
-            }
-        }
-
-        public MapEventVisualBrushWidget MapEventVisualWidget
-        {
-            get
-            {
-                return this._mapEventVisualWidget;
-            }
-            set
-            {
-                if (this._mapEventVisualWidget != value)
-                {
-                    this._mapEventVisualWidget = value;
-                    base.OnPropertyChanged<MapEventVisualBrushWidget>(value, "MapEventVisualWidget");
-                }
-            }
-        }
-
-        [Editor(false)]
-        public Widget WidgetToShow
-        {
-            get
-            {
-                return this._widgetToShow;
-            }
-            set
-            {
-                if (this._widgetToShow != value)
-                {
-                    this._widgetToShow = value;
-                    base.OnPropertyChanged<Widget>(value, "WidgetToShow");
-                }
-            }
-        }
-
-        public Widget SettlementNameplateInspectedWidget
-        {
-            get
-            {
-                return this._settlementNameplateInspectedWidget;
-            }
-            set
-            {
-                if (this._settlementNameplateInspectedWidget != value)
-                {
-                    this._settlementNameplateInspectedWidget = value;
-                    base.OnPropertyChanged<Widget>(value, "SettlementNameplateInspectedWidget");
-                }
-            }
-        }
-
-        public MaskedTextureWidget SettlementBannerWidget
-        {
-            get
-            {
-                return this._settlementBannerWidget;
-            }
-            set
-            {
-                if (this._settlementBannerWidget != value)
-                {
-                    this._settlementBannerWidget = value;
-                    base.OnPropertyChanged<MaskedTextureWidget>(value, "SettlementBannerWidget");
-                }
-            }
-        }
-
-        public TextWidget SettlementNameTextWidget
-        {
-            get
-            {
-                return this._settlementNameTextWidget;
-            }
-            set
-            {
-                if (this._settlementNameTextWidget != value)
-                {
-                    this._settlementNameTextWidget = value;
-                    base.OnPropertyChanged<TextWidget>(value, "SettlementNameTextWidget");
-                }
-            }
-        }
-
-        private bool _hoverBegan;
-
-        private Widget _settlementNameplateCapsuleWidget;
-
-        private Widget _settlementNameplateInspectedWidget;
-
-        private MapEventVisualBrushWidget _mapEventVisualWidget;
-
-        private MaskedTextureWidget _settlementBannerWidget;
-
-        private TextWidget _settlementNameTextWidget;
-
-        private GridWidget _settlementPartiesGridWidget;
-
-        private Widget _widgetToShow;
     }
 }

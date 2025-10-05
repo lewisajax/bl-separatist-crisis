@@ -1,107 +1,90 @@
 ﻿using SandBox.GauntletUI.Map;
 using SandBox.View.Map;
+using SandBox.View.Map.Managers;
 using SandBox.ViewModelCollection.Nameplate;
+using SeparatistCrisis.ObjectTypes;
+using SeparatistCrisis.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.MapEvents;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Settlements;
-using TaleWorlds.CampaignSystem;
-using TaleWorlds.Engine.GauntletUI;
 using TaleWorlds.Engine;
+using TaleWorlds.Engine.GauntletUI;
 using TaleWorlds.GauntletUI.Data;
 using TaleWorlds.Library;
-using TaleWorlds.MountAndBlade.View;
+using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
-using SeparatistCrisis.ViewModels;
-using SeparatistCrisis.ObjectTypes;
+using TaleWorlds.MountAndBlade.View;
+using TaleWorlds.ScreenSystem;
 
 namespace SeparatistCrisis.Views
 {
     [OverrideView(typeof(MapSettlementNameplateView))]
     public class SCNameplateView : MapView, IGauntletMapEventVisualHandler
     {
+        private GauntletLayer _layerAsGauntletLayer;
+        private GauntletMovieIdentifier _movie;
+        private SCNameplatesVM _dataSource;
+
         protected override void CreateLayout()
         {
-            _dataSource = new SCNameplatesVM(MapScreen._mapCameraView.Camera, new Action<Vec2>(MapScreen.FastMoveCameraToPosition));
-            GauntletMapBasicView mapView = MapScreen.GetMapView<GauntletMapBasicView>();
-            Layer = mapView.GauntletNameplateLayer;
-            _layerAsGauntletLayer = (GauntletLayer)Layer;
-            _movie = _layerAsGauntletLayer.LoadMovie("SCNameplate", _dataSource);
-            List<Tuple<Settlement, GameEntity?>> settlements = new List<Tuple<Settlement, GameEntity?>>();
-            
-            foreach (Settlement settlement in Settlement.All)
+            base.CreateLayout();
+            this._dataSource = new SCNameplatesVM(this.MapScreen.MapCameraView.Camera, new Action<CampaignVec2>(this.MapScreen.FastMoveCameraToPosition));
+            this.Layer = (ScreenLayer)this.MapScreen.GetMapView<GauntletMapBasicView>().GauntletNameplateLayer;
+            this._layerAsGauntletLayer = this.Layer as GauntletLayer;
+            this._movie = this._layerAsGauntletLayer.LoadMovie("SCNameplate", (ViewModel)this._dataSource);
+
+            List<Tuple<Settlement, GameEntity>> settlements = new List<Tuple<Settlement, GameEntity>>();
+            foreach (Settlement settlement in (List<Settlement>)Settlement.All)
             {
-                GameEntity? strategicEntity = PartyVisualManager.Current.GetVisualOfParty(settlement.Party)?.StrategicEntity;
-                Tuple<Settlement, GameEntity?> item = new Tuple<Settlement, GameEntity?>(settlement, strategicEntity);
-                settlements.Add(item);
+                GameEntity strategicEntity = SettlementVisualManager.Current.GetSettlementVisual(settlement).StrategicEntity;
+                Tuple<Settlement, GameEntity> tuple = new Tuple<Settlement, GameEntity>(settlement, strategicEntity);
+                settlements.Add(tuple);
             }
 
-            CampaignEvents.OnHideoutSpottedEvent.AddNonSerializedListener(this, new Action<PartyBase, PartyBase>(OnHideoutSpotted));
-            _dataSource.Initialize(settlements);
-            GauntletMapEventVisualCreator gauntletMapEventVisualCreator;
+            CampaignEvents.OnHideoutSpottedEvent.AddNonSerializedListener((object)this, new Action<PartyBase, PartyBase>(this.OnHideoutSpotted));
+            this._dataSource.Initialize((IEnumerable<Tuple<Settlement, GameEntity>>)settlements);
 
-            if ((gauntletMapEventVisualCreator = (GauntletMapEventVisualCreator)Campaign.Current.VisualCreator.MapEventVisualCreator) != null)
-            {
-                gauntletMapEventVisualCreator.Handlers.Add(this);
+            if (!(Campaign.Current.VisualCreator.MapEventVisualCreator is GauntletMapEventVisualCreator eventVisualCreator))
+                return;
 
-                foreach (GauntletMapEventVisual gauntletMapEventVisual in gauntletMapEventVisualCreator.GetCurrentEvents())
-                {
-                    SettlementNameplateVM nameplateOfMapEvent = GetNameplateOfMapEvent(gauntletMapEventVisual);
-
-                    if (nameplateOfMapEvent != null)
-                    {
-                        nameplateOfMapEvent.OnMapEventStartedOnSettlement(gauntletMapEventVisual.MapEvent);
-                    }
-                }
-            }
+            eventVisualCreator.Handlers.Add((IGauntletMapEventVisualHandler)this);
+            foreach (GauntletMapEventVisual currentEvent in eventVisualCreator.GetCurrentEvents())
+                this.GetNameplateOfMapEvent(currentEvent)?.OnMapEventStartedOnSettlement(currentEvent.MapEvent);
         }
 
         protected override void OnResume()
         {
             base.OnResume();
-            if (DataSource != null)
-            {
-                foreach (SettlementNameplateVM settlementNameplateVM in DataSource.Nameplates)
-                {
-                    settlementNameplateVM.RefreshDynamicProperties(true);
-                }
-            }
+            foreach (NameplateVM nameplate in (Collection<SCNameplateVM>)this._dataSource.Nameplates)
+                nameplate.RefreshDynamicProperties(true);
         }
 
         protected override void OnMapScreenUpdate(float dt)
         {
             base.OnMapScreenUpdate(dt);
-
-            // It took me DAYS to figure out why the nameplates weren't showing up
-            // And it's all because I checked for null?? wtf
-            // I ended up hard copying a lot of files that I didn't need, trying to source the problem
-            _dataSource?.Update();
-            // (this.DataSource != null) this.DataSource.Update();
+            this._dataSource.Update();
+            foreach (SCNameplateVM nameplate in (Collection<SCNameplateVM>)this._dataSource.Nameplates)
+                nameplate.CanParley = this.MapScreen.SceneLayer.Input.IsGameKeyDown(5) && Campaign.Current.Models.EncounterModel.CanMainHeroDoParleyWithParty(nameplate.Settlement.Party, out TextObject _);
         }
 
         protected override void OnFinalize()
         {
-            GauntletMapEventVisualCreator gauntletMapEventVisualCreator;
-            if ((gauntletMapEventVisualCreator = (GauntletMapEventVisualCreator)Campaign.Current.VisualCreator.MapEventVisualCreator) != null)
-            {
-                gauntletMapEventVisualCreator.Handlers.Remove(this);
-            }
-            CampaignEvents.OnHideoutSpottedEvent.ClearListeners(this);
-
-            if (LayerAsGauntletLayer != null && DataSource != null)
-            {
-                LayerAsGauntletLayer.ReleaseMovie(_movie);
-                DataSource.OnFinalize();
-            }
-
-            LayerAsGauntletLayer = null;
-            Layer = null;
-            _movie = null;
-            _dataSource = null;
+            if (Campaign.Current.VisualCreator.MapEventVisualCreator is GauntletMapEventVisualCreator eventVisualCreator)
+                eventVisualCreator.Handlers.Remove((IGauntletMapEventVisualHandler)this);
+            CampaignEvents.OnHideoutSpottedEvent.ClearListeners((object)this);
+            this._layerAsGauntletLayer.ReleaseMovie(this._movie);
+            this._dataSource.OnFinalize();
+            this._layerAsGauntletLayer = (GauntletLayer)null;
+            this.Layer = (ScreenLayer)null;
+            this._movie = (GauntletMovieIdentifier)null;
+            this._dataSource = (SCNameplatesVM)null;
             base.OnFinalize();
         }
 
@@ -110,118 +93,74 @@ namespace SeparatistCrisis.Views
             MBSoundEvent.PlaySound(SoundEvent.GetEventIdFromString("event:/ui/notification/hideout_found"), hideoutParty.Settlement.GetPosition());
         }
 
-        private SettlementNameplateVM GetNameplateOfMapEvent(GauntletMapEventVisual mapEvent)
+        private SCNameplateVM GetNameplateOfMapEvent(GauntletMapEventVisual mapEvent)
         {
-            bool flag;
+            int num1;
             if (mapEvent.MapEvent.EventType == MapEvent.BattleTypes.Raid)
             {
                 Settlement mapEventSettlement = mapEvent.MapEvent.MapEventSettlement;
-                if (mapEventSettlement == null || !mapEventSettlement.IsUnderRaid)
+                if ((mapEventSettlement != null ? (mapEventSettlement.IsUnderRaid ? 1 : 0) : 0) == 0)
                 {
-                    GauntletMapEventVisual mapEvent2 = mapEvent;
-                    flag = mapEvent2 != null && mapEvent2.MapEvent.IsFinished;
+                    GauntletMapEventVisual gauntletMapEventVisual = mapEvent;
+                    num1 = gauntletMapEventVisual != null ? (gauntletMapEventVisual.MapEvent.IsFinalized ? 1 : 0) : 0;
                 }
                 else
-                {
-                    flag = true;
-                }
+                    num1 = 1;
             }
             else
-            {
-                flag = false;
-            }
-            bool flag2 = flag;
-            bool flag3;
+                num1 = 0;
+            bool flag1 = num1 != 0;
+            int num2;
             if (mapEvent.MapEvent.EventType == MapEvent.BattleTypes.Siege)
             {
-                Settlement mapEventSettlement2 = mapEvent.MapEvent.MapEventSettlement;
-                if (mapEventSettlement2 == null || !mapEventSettlement2.IsUnderSiege)
+                Settlement mapEventSettlement = mapEvent.MapEvent.MapEventSettlement;
+                if ((mapEventSettlement != null ? (mapEventSettlement.IsUnderSiege ? 1 : 0) : 0) == 0)
                 {
-                    GauntletMapEventVisual mapEvent3 = mapEvent;
-                    flag3 = mapEvent3 != null && mapEvent3.MapEvent.IsFinished;
+                    GauntletMapEventVisual gauntletMapEventVisual = mapEvent;
+                    num2 = gauntletMapEventVisual != null ? (gauntletMapEventVisual.MapEvent.IsFinalized ? 1 : 0) : 0;
                 }
                 else
-                {
-                    flag3 = true;
-                }
+                    num2 = 1;
             }
             else
+                num2 = 0;
+            bool flag2 = num2 != 0;
+            int num3;
+            if (mapEvent.MapEvent.EventType == MapEvent.BattleTypes.SallyOut || mapEvent.MapEvent.EventType == MapEvent.BattleTypes.BlockadeSallyOutBattle)
             {
-                flag3 = false;
-            }
-            bool flag4 = flag3;
-            bool flag5;
-            if (mapEvent.MapEvent.EventType == MapEvent.BattleTypes.SallyOut)
-            {
-                Settlement mapEventSettlement3 = mapEvent.MapEvent.MapEventSettlement;
-                if (mapEventSettlement3 == null || !mapEventSettlement3.IsUnderSiege)
+                Settlement mapEventSettlement = mapEvent.MapEvent.MapEventSettlement;
+                if ((mapEventSettlement != null ? (mapEventSettlement.IsUnderSiege ? 1 : 0) : 0) == 0)
                 {
-                    GauntletMapEventVisual mapEvent4 = mapEvent;
-                    flag5 = mapEvent4 != null && mapEvent4.MapEvent.IsFinished;
+                    GauntletMapEventVisual gauntletMapEventVisual = mapEvent;
+                    num3 = gauntletMapEventVisual != null ? (gauntletMapEventVisual.MapEvent.IsFinalized ? 1 : 0) : 0;
                 }
                 else
-                {
-                    flag5 = true;
-                }
+                    num3 = 1;
             }
             else
-            {
-                flag5 = false;
-            }
-            bool flag6 = flag5;
-            if (mapEvent.MapEvent.MapEventSettlement != null && (flag4 || flag2 || flag6))
-            {
-                if (DataSource != null)
-                    return DataSource.Nameplates.FirstOrDefault((SettlementNameplateVM n) => n.Settlement == mapEvent.MapEvent.MapEventSettlement);
-            }
-
-            return null;
+                num3 = 0;
+            bool flag3 = num3 != 0;
+            return mapEvent.MapEvent.MapEventSettlement != null && flag2 | flag1 | flag3 ? this._dataSource.Nameplates.FirstOrDefault<SCNameplateVM>((Func<SCNameplateVM, bool>)(n => n.Settlement == mapEvent.MapEvent.MapEventSettlement)) : (SCNameplateVM)null;
         }
 
         void IGauntletMapEventVisualHandler.OnNewEventStarted(GauntletMapEventVisual newEvent)
         {
-            SettlementNameplateVM nameplateOfMapEvent = GetNameplateOfMapEvent(newEvent);
-            if (nameplateOfMapEvent == null)
-            {
-                return;
-            }
-            nameplateOfMapEvent.OnMapEventStartedOnSettlement(newEvent.MapEvent);
+            this.GetNameplateOfMapEvent(newEvent)?.OnMapEventStartedOnSettlement(newEvent.MapEvent);
         }
 
         void IGauntletMapEventVisualHandler.OnInitialized(GauntletMapEventVisual newEvent)
         {
-            SettlementNameplateVM nameplateOfMapEvent = GetNameplateOfMapEvent(newEvent);
-            if (nameplateOfMapEvent == null)
-            {
-                return;
-            }
-            nameplateOfMapEvent.OnMapEventStartedOnSettlement(newEvent.MapEvent);
+            this.GetNameplateOfMapEvent(newEvent)?.OnMapEventStartedOnSettlement(newEvent.MapEvent);
         }
 
         void IGauntletMapEventVisualHandler.OnEventEnded(GauntletMapEventVisual newEvent)
         {
-            SettlementNameplateVM nameplateOfMapEvent = GetNameplateOfMapEvent(newEvent);
-            if (nameplateOfMapEvent == null)
-            {
-                return;
-            }
-            nameplateOfMapEvent.OnMapEventEndedOnSettlement();
+            this.GetNameplateOfMapEvent(newEvent)?.OnMapEventEndedOnSettlement();
         }
 
-        void IGauntletMapEventVisualHandler.OnEventVisibilityChanged(GauntletMapEventVisual visibilityChangedEvent)
+        void IGauntletMapEventVisualHandler.OnEventVisibilityChanged(
+          GauntletMapEventVisual visibilityChangedEvent)
         {
         }
-
-        protected GauntletLayer? LayerAsGauntletLayer { get; private set; }
-
-        private GauntletLayer? _layerAsGauntletLayer;
-
-        protected IGauntletMovie? Movie { get; private set; }
-
-        private IGauntletMovie? _movie;
-
-        protected SCNameplatesVM? DataSource { get; private set; }
-
-        private SCNameplatesVM? _dataSource;
     }
 }

@@ -239,7 +239,8 @@ namespace SeparatistCrisis.ObjectTypes
         public Vec3 GetLogicalPosition()
         {
             float z = 0f;
-            Campaign.Current.MapSceneWrapper.GetHeightAtPoint(this.Position2D, ref z);
+            CampaignVec2 campaignVec = new CampaignVec2(this.Position2D, true);
+            Campaign.Current.MapSceneWrapper.GetHeightAtPoint(campaignVec, ref z);
             return new Vec3(this.Position2D.x, this.Position2D.y, z, -1f);
         }
 
@@ -251,7 +252,7 @@ namespace SeparatistCrisis.ObjectTypes
             this.Name = new TextObject(node.Attributes["name"].Value, null);
             this.Position2D = new Vec2((float)Convert.ToDouble(node.Attributes["posX"].Value), (float)Convert.ToDouble(node.Attributes["posY"].Value));
             this.Radius = (float)Convert.ToDouble(node.Attributes["radius"].Value);
-            this.EncyclopediaText = ((node.Attributes["text"] != null) ? new TextObject(node.Attributes["text"].Value, null) : TextObject.Empty);
+            this.EncyclopediaText = ((node.Attributes["text"] != null) ? new TextObject(node.Attributes["text"].Value, null) : TextObject.GetEmpty());
 
             XmlAttribute primaryNode = node.Attributes["primaryNode"];
             if (primaryNode != null)

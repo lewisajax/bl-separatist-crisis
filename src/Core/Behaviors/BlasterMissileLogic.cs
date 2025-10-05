@@ -22,9 +22,7 @@ namespace SeparatistCrisis.Behaviors
 {
     /// <summary>
     ///   This is where we handle the different firing modes logic.
-    ///   Many thanks to Reznov from the 40k mod and shokuho for helping out. 
-    ///   If anyone's looking at this in the future and the class has dependencies shooting out of it's arse.
-    ///   You can go back however many commits and you'll find that the class is self contained and can be used for native ranged weapons.
+    ///   Many thanks to Reznov from the 40k mod
     /// </summary>
     public class BlasterMissileLogic: MissionLogic
     {
@@ -94,7 +92,7 @@ namespace SeparatistCrisis.Behaviors
                     // Checks and balances baby!
                     if (missileAgent.CanFire && agent.GetCurrentActionType(1) == Agent.ActionCodeType.ReadyRanged && agent.GetCurrentActionStage(1) == Agent.ActionStage.AttackReady &&
                         agent.GetActionChannelCurrentActionWeight(1) >= 1f && Mission.Current.CurrentTime - missileAgent.LastShot > missileAgent.ShootInterval &&
-                        !agent.WieldedWeapon.IsEmpty && agent.Equipment.GetAmmoAmount(agent.GetWieldedItemIndex(Agent.HandIndex.MainHand)) > 0)
+                        !agent.WieldedWeapon.IsEmpty && agent.Equipment.GetAmmoAmount(agent.GetPrimaryWieldedItemIndex()) > 0)
                     {
                         // There is a hard crash with no exception happening that only happens every now and again
                         // I think its a race condition issue since if we run it without any breakpoints, then 25% of the time it hard crashes.
@@ -127,7 +125,7 @@ namespace SeparatistCrisis.Behaviors
 
             missileAgent.CanFire = false;
             MissionWeapon weapon = agent.WieldedWeapon;
-            EquipmentIndex equipIndex = agent.GetWieldedItemIndex(Agent.HandIndex.MainHand); // This uses a loop
+            EquipmentIndex equipIndex = agent.GetPrimaryWieldedItemIndex(); // This uses a loop
 
             if (equipIndex == EquipmentIndex.None)
                 return;
@@ -175,7 +173,7 @@ namespace SeparatistCrisis.Behaviors
 
             missileAgent.CanFire = false;
             MissionWeapon weapon = agent.WieldedWeapon;
-            EquipmentIndex equipIndex = agent.GetWieldedItemIndex(Agent.HandIndex.MainHand); // This uses a loop
+            EquipmentIndex equipIndex = agent.GetPrimaryWieldedItemIndex(); // This uses a loop
 
             if (equipIndex == EquipmentIndex.None)
                 return;

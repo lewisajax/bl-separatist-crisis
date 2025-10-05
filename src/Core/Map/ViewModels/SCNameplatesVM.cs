@@ -1,370 +1,276 @@
-﻿using System;
+﻿using SandBox.ViewModelCollection.Nameplate;
+using SeparatistCrisis.Components;
+using SeparatistCrisis.ObjectTypes;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
 using TaleWorlds.CampaignSystem.MapEvents;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.CampaignSystem.Siege;
-using TaleWorlds.CampaignSystem;
 using TaleWorlds.Engine;
 using TaleWorlds.Library;
-using SeparatistCrisis.ObjectTypes;
-using SeparatistCrisis.Components;
 
 namespace SeparatistCrisis.ViewModels
 {
-    public class SCNameplatesVM: ViewModel
+    public class SCNameplatesVM : ViewModel
     {
         private readonly Camera _mapCamera;
-
         private Vec3 _cachedCameraPosition;
-
         private readonly TWParallel.ParallelForAuxPredicate UpdateNameplateAuxMTPredicate;
-
-        private readonly Action<Vec2> _fastMoveCameraToPosition;
-
+        private readonly Action<CampaignVec2> _fastMoveCameraToPosition;
         private IEnumerable<Tuple<Settlement, GameEntity>> _allHideouts;
-
         private IEnumerable<Tuple<Settlement, GameEntity>> _allRetreats;
-
+        private IEnumerable<Tuple<Settlement, GameEntity>> _allRegularSettlements;
         private IEnumerable<Tuple<Settlement, GameEntity?>> _allGroups;
-
         private MBBindingList<SCNameplateVM> _nameplates;
 
         [DataSourceProperty]
         public MBBindingList<SCNameplateVM> Nameplates
         {
-            get
-            {
-                return this._nameplates;
-            }
+            get => this._nameplates;
             set
             {
-                if (this._nameplates != value)
-                {
-                    this._nameplates = value;
-                    base.OnPropertyChangedWithValue<MBBindingList<SCNameplateVM>>(value, "Nameplates");
-                }
+                if (this._nameplates == value)
+                    return;
+                this._nameplates = value;
+                this.OnPropertyChangedWithValue<MBBindingList<SCNameplateVM>>(value, nameof(Nameplates));
             }
         }
 
-        public SCNameplatesVM(Camera mapCamera, Action<Vec2> fastMoveCameraToPosition)
+        public SCNameplatesVM(Camera mapCamera, Action<CampaignVec2> fastMoveCameraToPosition)
         {
             this.Nameplates = new MBBindingList<SCNameplateVM>();
             this._mapCamera = mapCamera;
             this._fastMoveCameraToPosition = fastMoveCameraToPosition;
-            CampaignEvents.PartyVisibilityChangedEvent.AddNonSerializedListener(this, new Action<PartyBase>(this.OnPartyBaseVisibilityChange));
-            CampaignEvents.WarDeclared.AddNonSerializedListener(this, new Action<IFaction, IFaction, DeclareWarAction.DeclareWarDetail>(this.OnWarDeclared));
-            CampaignEvents.MakePeace.AddNonSerializedListener(this, new Action<IFaction, IFaction, MakePeaceAction.MakePeaceDetail>(this.OnPeaceDeclared));
-            CampaignEvents.OnClanChangedKingdomEvent.AddNonSerializedListener(this, new Action<Clan, Kingdom, Kingdom, ChangeKingdomAction.ChangeKingdomActionDetail, bool>(this.OnClanChangeKingdom));
-            CampaignEvents.OnSettlementOwnerChangedEvent.AddNonSerializedListener(this, new Action<Settlement, bool, Hero, Hero, Hero, ChangeOwnerOfSettlementAction.ChangeOwnerOfSettlementDetail>(this.OnSettlementOwnerChanged));
-            CampaignEvents.OnSiegeEventStartedEvent.AddNonSerializedListener(this, new Action<SiegeEvent>(this.OnSiegeEventStartedOnSettlement));
-            CampaignEvents.OnSiegeEventEndedEvent.AddNonSerializedListener(this, new Action<SiegeEvent>(this.OnSiegeEventEndedOnSettlement));
-            CampaignEvents.RebelliousClanDisbandedAtSettlement.AddNonSerializedListener(this, new Action<Settlement, Clan>(this.OnRebelliousClanDisbandedAtSettlement));
+            CampaignEvents.PartyVisibilityChangedEvent.AddNonSerializedListener((object)this, new Action<PartyBase>(this.OnPartyBaseVisibilityChange));
+            CampaignEvents.WarDeclared.AddNonSerializedListener((object)this, new Action<IFaction, IFaction, DeclareWarAction.DeclareWarDetail>(this.OnWarDeclared));
+            CampaignEvents.MakePeace.AddNonSerializedListener((object)this, new Action<IFaction, IFaction, MakePeaceAction.MakePeaceDetail>(this.OnPeaceDeclared));
+            CampaignEvents.OnClanChangedKingdomEvent.AddNonSerializedListener((object)this, new Action<Clan, Kingdom, Kingdom, ChangeKingdomAction.ChangeKingdomActionDetail, bool>(this.OnClanChangeKingdom));
+            CampaignEvents.OnSettlementOwnerChangedEvent.AddNonSerializedListener((object)this, new Action<Settlement, bool, Hero, Hero, Hero, ChangeOwnerOfSettlementAction.ChangeOwnerOfSettlementDetail>(this.OnSettlementOwnerChanged));
+            CampaignEvents.OnSiegeEventStartedEvent.AddNonSerializedListener((object)this, new Action<SiegeEvent>(this.OnSiegeEventStartedOnSettlement));
+            CampaignEvents.OnSiegeEventEndedEvent.AddNonSerializedListener((object)this, new Action<SiegeEvent>(this.OnSiegeEventEndedOnSettlement));
+            CampaignEvents.RebelliousClanDisbandedAtSettlement.AddNonSerializedListener((object)this, new Action<Settlement, Clan>(this.OnRebelliousClanDisbandedAtSettlement));
             this.UpdateNameplateAuxMTPredicate = new TWParallel.ParallelForAuxPredicate(this.UpdateNameplateAuxMT);
         }
 
         public override void RefreshValues()
         {
             base.RefreshValues();
-            this.Nameplates.ApplyActionOnAllItems(delegate (SCNameplateVM x)
-            {
-                x.RefreshValues();
-            });
+            this.Nameplates.ApplyActionOnAllItems((Action<SCNameplateVM>)(x => x.RefreshValues()));
         }
 
-        public void Initialize(IEnumerable<Tuple<Settlement, GameEntity?>> settlements)
+        public void Initialize(
+          IEnumerable<Tuple<Settlement, GameEntity>> settlements)
         {
-            IEnumerable<Tuple<Settlement, GameEntity>> enumerable = from x in settlements
-                                                                    where !x.Item1.IsHideout &&
-                                                                    !(x.Item1.SettlementComponent is RetirementSettlementComponent) &&
-                                                                    !(x.Item1.SettlementComponent is SettlementGroupComponent)
-                                                                    select x;
-            this._allHideouts = from x in settlements
-                                where x.Item1.IsHideout && !(x.Item1.SettlementComponent is RetirementSettlementComponent)
-                                select x;
-            this._allRetreats = from x in settlements
-                                where !x.Item1.IsHideout && x.Item1.SettlementComponent is RetirementSettlementComponent
-                                select x;
+            this._allRegularSettlements = settlements.Where<Tuple<Settlement, GameEntity>>((Func<Tuple<Settlement, GameEntity>, bool>)(x => !x.Item1.IsHideout && !(x.Item1.SettlementComponent is RetirementSettlementComponent)));
+            this._allHideouts = settlements.Where<Tuple<Settlement, GameEntity>>((Func<Tuple<Settlement, GameEntity>, bool>)(x => x.Item1.IsHideout && !(x.Item1.SettlementComponent is RetirementSettlementComponent)));
+            this._allRetreats = settlements.Where<Tuple<Settlement, GameEntity>>((Func<Tuple<Settlement, GameEntity>, bool>)(x => !x.Item1.IsHideout && x.Item1.SettlementComponent is RetirementSettlementComponent));
+            this._allGroups = settlements.Where<Tuple<Settlement, GameEntity>>((Func<Tuple<Settlement, GameEntity>, bool>)(x => !x.Item1.IsHideout && x.Item1.SettlementComponent is SettlementGroupComponent));
 
-            this._allGroups = from x in settlements where x.Item1.SettlementComponent is SettlementGroupComponent select x;
-
-            foreach (Tuple<Settlement, GameEntity> tuple in enumerable)
+            // Normal Settlements
+            foreach (Tuple<Settlement, GameEntity> settlement in this._allRegularSettlements)
             {
-                SCNameplateVM item = new SCNameplateVM(tuple.Item1, tuple.Item2, this._mapCamera, this._fastMoveCameraToPosition);
-                this.Nameplates.Add(item);
+                if (settlement.Item1.IsVisible)
+                    this.Nameplates.Add(new SCNameplateVM(settlement.Item1, settlement.Item2, this._mapCamera, this._fastMoveCameraToPosition));
             }
 
-            foreach (Tuple<Settlement, GameEntity?> tuple in this._allGroups)
+            // Groups
+            foreach (Tuple<Settlement, GameEntity> group in this._allGroups)
             {
-                SettlementGroupComponent groupSettlementComponent;
-                if ((groupSettlementComponent = (SettlementGroupComponent)tuple.Item1.SettlementComponent) != null)
+                if (group.Item1.SettlementComponent is SettlementGroupComponent settlementComponent)
                 {
-                    if (groupSettlementComponent.IsSpotted)
-                    {
-                        bool isSystem = true;
-                        SCNameplateVM item = new SCNameplateVM(tuple.Item1, tuple.Item2, this._mapCamera, this._fastMoveCameraToPosition, isSystem);
-                        this.Nameplates.Add(item);
-                    }
-                }
-            }
-
-            foreach (Tuple<Settlement, GameEntity> tuple2 in this._allHideouts)
-            {
-                if (tuple2.Item1.Hideout.IsSpotted)
-                {
-                    SCNameplateVM item2 = new SCNameplateVM(tuple2.Item1, tuple2.Item2, this._mapCamera, this._fastMoveCameraToPosition);
-                    this.Nameplates.Add(item2);
-                }
-            }
-
-            foreach (Tuple<Settlement, GameEntity> tuple3 in this._allRetreats)
-            {
-                RetirementSettlementComponent retirementSettlementComponent;
-                if ((retirementSettlementComponent = (tuple3.Item1.SettlementComponent as RetirementSettlementComponent)) != null)
-                {
-                    if (retirementSettlementComponent.IsSpotted)
-                    {
-                        SCNameplateVM item3 = new SCNameplateVM(tuple3.Item1, tuple3.Item2, this._mapCamera, this._fastMoveCameraToPosition);
-                        this.Nameplates.Add(item3);
-                    }
+                    if (settlementComponent.IsSpotted)
+                        this.Nameplates.Add(new SCNameplateVM(group.Item1, group.Item2, this._mapCamera, this._fastMoveCameraToPosition, true));
                 }
                 else
+                    Debug.FailedAssert("A group settlement is not comparing to SettlementGroupComponent", "C:\\BuildAgent\\work\\mb3\\Source\\Bannerlord\\SandBox.ViewModelCollection\\Nameplate\\SCNameplatesVM.cs", nameof(Initialize), 87);
+            }
+
+            // Hideouts
+            foreach (Tuple<Settlement, GameEntity> hideout in this._allHideouts)
+            {
+                if (hideout.Item1.Hideout.IsSpotted)
+                    this.Nameplates.Add(new SCNameplateVM(hideout.Item1, hideout.Item2, this._mapCamera, this._fastMoveCameraToPosition));
+            }
+
+            // Retreat
+            foreach (Tuple<Settlement, GameEntity> retreat in this._allRetreats)
+            {
+                if (retreat.Item1.SettlementComponent is RetirementSettlementComponent settlementComponent)
                 {
-                    Debug.FailedAssert("A settlement which is IsRetreat doesn't have a retirement component.", "C:\\Develop\\MB3\\Source\\Bannerlord\\SandBox.ViewModelCollection\\Nameplate\\SettlementNameplatesVM.cs", "Initialize", 83);
+                    if (settlementComponent.IsSpotted)
+                        this.Nameplates.Add(new SCNameplateVM(retreat.Item1, retreat.Item2, this._mapCamera, this._fastMoveCameraToPosition));
+                }
+                else
+                    Debug.FailedAssert("A seetlement which is IsRetreat doesn't have a retirement component.", "C:\\BuildAgent\\work\\mb3\\Source\\Bannerlord\\SandBox.ViewModelCollection\\Nameplate\\SCNameplatesVM.cs", nameof(Initialize), 87);
+            }
+
+            foreach (SCNameplateVM nameplate in (Collection<SCNameplateVM>)this.Nameplates)
+            {
+                if (nameplate.Settlement?.SiegeEvent != null)
+                    nameplate.OnSiegeEventStartedOnSettlement(nameplate.Settlement?.SiegeEvent);
+                else if (nameplate.Settlement.IsTown || nameplate.Settlement.IsCastle)
+                {
+                    Clan ownerClan = nameplate.Settlement.OwnerClan;
+                    if ((ownerClan != null ? (ownerClan.IsRebelClan ? 1 : 0) : 0) != 0)
+                        nameplate.OnRebelliousClanFormed(nameplate.Settlement.OwnerClan);
                 }
             }
 
-            foreach (SCNameplateVM settlementNameplateVM in this.Nameplates)
-            {
-                Settlement settlement = settlementNameplateVM.Settlement;
-                if (((settlement != null) ? settlement.SiegeEvent : null) != null)
-                {
-                    SCNameplateVM settlementNameplateVM2 = settlementNameplateVM;
-                    Settlement settlement2 = settlementNameplateVM.Settlement;
-                    settlementNameplateVM2.OnSiegeEventStartedOnSettlement((settlement2 != null) ? settlement2.SiegeEvent : null);
-                }
-                else if (settlementNameplateVM.Settlement.IsTown || settlementNameplateVM.Settlement.IsCastle)
-                {
-                    Clan ownerClan = settlementNameplateVM.Settlement.OwnerClan;
-                    if (ownerClan != null && ownerClan.IsRebelClan)
-                    {
-                        settlementNameplateVM.OnRebelliousClanFormed(settlementNameplateVM.Settlement.OwnerClan);
-                    }
-                }
-            }
             this.RefreshRelationsOfNameplates();
         }
 
         private void UpdateNameplateAuxMT(int startInclusive, int endExclusive)
         {
-            for (int i = startInclusive; i < endExclusive; i++)
-            {
-                this.Nameplates[i].UpdateNameplateMT(this._cachedCameraPosition);
-            }
+            for (int index = startInclusive; index < endExclusive; ++index)
+                this.Nameplates[index].UpdateNameplateMT(this._cachedCameraPosition);
         }
 
         public void Update()
         {
             this._cachedCameraPosition = this._mapCamera.Position;
-            TWParallel.For(0, this.Nameplates.Count, this.UpdateNameplateAuxMTPredicate, 16);
-            for (int i = 0; i < this.Nameplates.Count; i++)
-            {
-
-                this.Nameplates[i].RefreshBindValues();
-            }
+            TWParallel.For(0, this.Nameplates.Count, this.UpdateNameplateAuxMTPredicate);
+            for (int index = 0; index < this.Nameplates.Count; ++index)
+                this.Nameplates[index].RefreshBindValues();
         }
 
         private void OnSiegeEventStartedOnSettlement(SiegeEvent siegeEvent)
         {
-            SCNameplateVM? settlementNameplateVM = this.Nameplates.FirstOrDefault((SCNameplateVM n) => n.Settlement == siegeEvent.BesiegedSettlement);
-            if (settlementNameplateVM == null)
-            {
-                return;
-            }
-            settlementNameplateVM.OnSiegeEventStartedOnSettlement(siegeEvent);
+            this.Nameplates.FirstOrDefault<SCNameplateVM>((Func<SCNameplateVM, bool>)(n => n.Settlement == siegeEvent.BesiegedSettlement))?.OnSiegeEventStartedOnSettlement(siegeEvent);
         }
 
         private void OnSiegeEventEndedOnSettlement(SiegeEvent siegeEvent)
         {
-            SCNameplateVM? settlementNameplateVM = this.Nameplates.FirstOrDefault((SCNameplateVM n) => n.Settlement == siegeEvent.BesiegedSettlement);
-            if (settlementNameplateVM == null)
-            {
-                return;
-            }
-            settlementNameplateVM.OnSiegeEventEndedOnSettlement(siegeEvent);
+            this.Nameplates.FirstOrDefault<SCNameplateVM>((Func<SCNameplateVM, bool>)(n => n.Settlement == siegeEvent.BesiegedSettlement))?.OnSiegeEventEndedOnSettlement(siegeEvent);
         }
 
-        private void OnMapEventStartedOnSettlement(MapEvent mapEvent, PartyBase attackerParty, PartyBase defenderParty)
+        private void OnMapEventStartedOnSettlement(
+          MapEvent mapEvent,
+          PartyBase attackerParty,
+          PartyBase defenderParty)
         {
-            SCNameplateVM? settlementNameplateVM = this.Nameplates.FirstOrDefault((SCNameplateVM n) => n.Settlement == mapEvent.MapEventSettlement);
-            if (settlementNameplateVM == null)
-            {
-                return;
-            }
-            settlementNameplateVM.OnMapEventStartedOnSettlement(mapEvent);
+            this.Nameplates.FirstOrDefault<SCNameplateVM>((Func<SCNameplateVM, bool>)(n => n.Settlement == mapEvent.MapEventSettlement))?.OnMapEventStartedOnSettlement(mapEvent);
         }
 
         private void OnMapEventEndedOnSettlement(MapEvent mapEvent)
         {
-            SCNameplateVM? settlementNameplateVM = this.Nameplates.FirstOrDefault((SCNameplateVM n) => n.Settlement == mapEvent.MapEventSettlement);
-            if (settlementNameplateVM == null)
-            {
-                return;
-            }
-            settlementNameplateVM.OnMapEventEndedOnSettlement();
+            this.Nameplates.FirstOrDefault<SCNameplateVM>((Func<SCNameplateVM, bool>)(n => n.Settlement == mapEvent.MapEventSettlement))?.OnMapEventEndedOnSettlement();
         }
 
         private void OnPartyBaseVisibilityChange(PartyBase party)
         {
-            if (party.IsSettlement)
+            if (!party.IsSettlement)
+                return;
+            Tuple<Settlement, GameEntity> desiredSettlementTuple = (Tuple<Settlement, GameEntity>)null;
+            desiredSettlementTuple = !party.Settlement.IsHideout ? (!(party.Settlement.SettlementComponent is RetirementSettlementComponent) ? this._allRegularSettlements.SingleOrDefault<Tuple<Settlement, GameEntity>>((Func<Tuple<Settlement, GameEntity>, bool>)(h => h.Item1 == party.Settlement)) : this._allRetreats.SingleOrDefault<Tuple<Settlement, GameEntity>>((Func<Tuple<Settlement, GameEntity>, bool>)(h => h.Item1.SettlementComponent as RetirementSettlementComponent == party.Settlement.SettlementComponent as RetirementSettlementComponent))) : this._allHideouts.SingleOrDefault<Tuple<Settlement, GameEntity>>((Func<Tuple<Settlement, GameEntity>, bool>)(h => h.Item1.Hideout == party.Settlement.Hideout));
+            if (desiredSettlementTuple == null)
+                return;
+            SCNameplateVM settlementNameplateVm1 = this.Nameplates.SingleOrDefault<SCNameplateVM>((Func<SCNameplateVM, bool>)(n => n.Settlement == desiredSettlementTuple.Item1));
+            if (party.IsVisible && settlementNameplateVm1 == null)
             {
-                Tuple<Settlement, GameEntity>? desiredSettlementTuple = null;
-                if (party.Settlement.IsHideout)
-                {
-                    desiredSettlementTuple = this._allHideouts.SingleOrDefault((Tuple<Settlement, GameEntity> h) => h.Item1.Hideout == party.Settlement.Hideout);
-                }
-                else if (party.Settlement.SettlementComponent is RetirementSettlementComponent)
-                {
-                    desiredSettlementTuple = this._allRetreats.SingleOrDefault((Tuple<Settlement, GameEntity> h) => h.Item1.SettlementComponent as RetirementSettlementComponent == party.Settlement.SettlementComponent as RetirementSettlementComponent);
-                }
-                else
-                {
-                    Debug.FailedAssert("We don't support hiding non retreat or non hideout settlements.", "C:\\Develop\\MB3\\Source\\Bannerlord\\SandBox.ViewModelCollection\\Nameplate\\SettlementNameplatesVM.cs", "OnPartyBaseVisibilityChange", 176);
-                }
-                if (desiredSettlementTuple != null)
-                {
-                    SCNameplateVM? settlementNameplateVM = this.Nameplates.SingleOrDefault((SCNameplateVM n) => n.Settlement == desiredSettlementTuple.Item1);
-                    if (party.IsVisible && settlementNameplateVM == null)
-                    {
-                        SCNameplateVM settlementNameplateVM2 = new SCNameplateVM(desiredSettlementTuple.Item1, desiredSettlementTuple.Item2, this._mapCamera, this._fastMoveCameraToPosition);
-                        this.Nameplates.Add(settlementNameplateVM2);
-                        settlementNameplateVM2.RefreshRelationStatus();
-                        return;
-                    }
-                    if (!party.IsVisible && settlementNameplateVM != null)
-                    {
-                        this.Nameplates.Remove(settlementNameplateVM);
-                    }
-                }
+                SCNameplateVM settlementNameplateVm2 = new SCNameplateVM(desiredSettlementTuple.Item1, desiredSettlementTuple.Item2, this._mapCamera, this._fastMoveCameraToPosition);
+                this.Nameplates.Add(settlementNameplateVm2);
+                settlementNameplateVm2.RefreshRelationStatus();
+            }
+            else
+            {
+                if (party.IsVisible || settlementNameplateVm1 == null)
+                    return;
+                this.Nameplates.Remove(settlementNameplateVm1);
             }
         }
 
-        private void OnPeaceDeclared(IFaction faction1, IFaction faction2, MakePeaceAction.MakePeaceDetail detail)
+        private void OnPeaceDeclared(
+          IFaction faction1,
+          IFaction faction2,
+          MakePeaceAction.MakePeaceDetail detail)
         {
             this.OnPeaceOrWarDeclared(faction1, faction2);
         }
 
-        private void OnWarDeclared(IFaction faction1, IFaction faction2, DeclareWarAction.DeclareWarDetail arg3)
+        private void OnWarDeclared(
+          IFaction faction1,
+          IFaction faction2,
+          DeclareWarAction.DeclareWarDetail arg3)
         {
             this.OnPeaceOrWarDeclared(faction1, faction2);
         }
 
         private void OnPeaceOrWarDeclared(IFaction faction1, IFaction faction2)
         {
-            if (faction1 == Hero.MainHero.MapFaction || faction1 == Hero.MainHero.Clan || faction2 == Hero.MainHero.MapFaction || faction2 == Hero.MainHero.Clan)
-            {
-                this.RefreshRelationsOfNameplates();
-            }
+            if (faction1 != Hero.MainHero.MapFaction && faction1 != Hero.MainHero.Clan && faction2 != Hero.MainHero.MapFaction && faction2 != Hero.MainHero.Clan)
+                return;
+            this.RefreshRelationsOfNameplates();
         }
 
-        private void OnClanChangeKingdom(Clan clan, Kingdom oldKingdom, Kingdom newKingdom, ChangeKingdomAction.ChangeKingdomActionDetail detail, bool showNotification)
+        private void OnClanChangeKingdom(
+          Clan clan,
+          Kingdom oldKingdom,
+          Kingdom newKingdom,
+          ChangeKingdomAction.ChangeKingdomActionDetail detail,
+          bool showNotification)
         {
             this.RefreshRelationsOfNameplates();
         }
 
-        private void OnSettlementOwnerChanged(Settlement settlement, bool openToClaim, Hero newOwner, Hero previousOwner, Hero capturerHero, ChangeOwnerOfSettlementAction.ChangeOwnerOfSettlementDetail detail)
+        private void OnSettlementOwnerChanged(
+          Settlement settlement,
+          bool openToClaim,
+          Hero newOwner,
+          Hero previousOwner,
+          Hero capturerHero,
+          ChangeOwnerOfSettlementAction.ChangeOwnerOfSettlementDetail detail)
         {
-            SCNameplateVM? settlementNameplateVM = this.Nameplates.SingleOrDefault((SCNameplateVM n) => n.Settlement == settlement);
-            if (settlementNameplateVM != null)
+            SCNameplateVM settlementNameplateVm1 = this.Nameplates.SingleOrDefault<SCNameplateVM>((Func<SCNameplateVM, bool>)(n => n.Settlement == settlement));
+            settlementNameplateVm1?.RefreshDynamicProperties(true);
+            settlementNameplateVm1?.RefreshRelationStatus();
+            foreach (Village boundVillage in (List<Village>)settlement.BoundVillages)
             {
-                settlementNameplateVM.RefreshDynamicProperties(true);
+                Village village = boundVillage;
+                SCNameplateVM settlementNameplateVm2 = this.Nameplates.SingleOrDefault<SCNameplateVM>((Func<SCNameplateVM, bool>)(n => n.Settlement.IsVillage && n.Settlement.Village == village));
+                settlementNameplateVm2?.RefreshDynamicProperties(true);
+                settlementNameplateVm2?.RefreshRelationStatus();
             }
-            if (settlementNameplateVM != null)
+            if (detail == ChangeOwnerOfSettlementAction.ChangeOwnerOfSettlementDetail.ByRebellion)
             {
-                settlementNameplateVM.RefreshRelationStatus();
+                this.Nameplates.FirstOrDefault<SCNameplateVM>((Func<SCNameplateVM, bool>)(n => n.Settlement == settlement))?.OnRebelliousClanFormed(newOwner.Clan);
             }
-            using (List<Village>.Enumerator enumerator = settlement.BoundVillages.GetEnumerator())
+            else
             {
-                while (enumerator.MoveNext())
-                {
-                    Village village = enumerator.Current;
-                    SCNameplateVM? settlementNameplateVM2 = this.Nameplates.SingleOrDefault((SCNameplateVM n) => n.Settlement.IsVillage && n.Settlement.Village == village);
-                    if (settlementNameplateVM2 != null)
-                    {
-                        settlementNameplateVM2.RefreshDynamicProperties(true);
-                    }
-                    if (settlementNameplateVM2 != null)
-                    {
-                        settlementNameplateVM2.RefreshRelationStatus();
-                    }
-                }
+                if (previousOwner == null || !previousOwner.IsRebel)
+                    return;
+                this.Nameplates.FirstOrDefault<SCNameplateVM>((Func<SCNameplateVM, bool>)(n => n.Settlement == settlement))?.OnRebelliousClanDisbanded(previousOwner.Clan);
             }
-            if (detail != ChangeOwnerOfSettlementAction.ChangeOwnerOfSettlementDetail.ByRebellion)
-            {
-                if (previousOwner != null && previousOwner.IsRebel)
-                {
-                    SCNameplateVM? settlementNameplateVM3 = this.Nameplates.FirstOrDefault((SCNameplateVM n) => n.Settlement == settlement);
-                    if (settlementNameplateVM3 == null)
-                    {
-                        return;
-                    }
-                    settlementNameplateVM3.OnRebelliousClanDisbanded(previousOwner.Clan);
-                }
-                return;
-            }
-            SCNameplateVM? settlementNameplateVM4 = this.Nameplates.FirstOrDefault((SCNameplateVM n) => n.Settlement == settlement);
-            if (settlementNameplateVM4 == null)
-            {
-                return;
-            }
-            settlementNameplateVM4.OnRebelliousClanFormed(newOwner.Clan);
         }
 
         private void OnRebelliousClanDisbandedAtSettlement(Settlement settlement, Clan clan)
         {
-            SCNameplateVM? settlementNameplateVM = this.Nameplates.FirstOrDefault((SCNameplateVM n) => n.Settlement == settlement);
-            if (settlementNameplateVM == null)
-            {
-                return;
-            }
-            settlementNameplateVM.OnRebelliousClanDisbanded(clan);
+            this.Nameplates.FirstOrDefault<SCNameplateVM>((Func<SCNameplateVM, bool>)(n => n.Settlement == settlement))?.OnRebelliousClanDisbanded(clan);
         }
 
         private void RefreshRelationsOfNameplates()
         {
-            foreach (SCNameplateVM settlementNameplateVM in this.Nameplates)
-            {
-                settlementNameplateVM.RefreshRelationStatus();
-            }
+            foreach (NameplateVM nameplate in (Collection<SCNameplateVM>)this.Nameplates)
+                nameplate.RefreshRelationStatus();
         }
 
         private void RefreshDynamicPropertiesOfNameplates()
         {
-            foreach (SCNameplateVM settlementNameplateVM in this.Nameplates)
-            {
-                settlementNameplateVM.RefreshDynamicProperties(false);
-            }
+            foreach (NameplateVM nameplate in (Collection<SCNameplateVM>)this.Nameplates)
+                nameplate.RefreshDynamicProperties(false);
         }
 
         public override void OnFinalize()
         {
             base.OnFinalize();
-            CampaignEvents.PartyVisibilityChangedEvent.ClearListeners(this);
-            CampaignEvents.WarDeclared.ClearListeners(this);
-            CampaignEvents.MakePeace.ClearListeners(this);
-            CampaignEvents.OnClanChangedKingdomEvent.ClearListeners(this);
-            CampaignEvents.OnSettlementOwnerChangedEvent.ClearListeners(this);
-            CampaignEvents.OnSiegeEventStartedEvent.ClearListeners(this);
-            CampaignEvents.OnSiegeEventEndedEvent.ClearListeners(this);
-            CampaignEvents.RebelliousClanDisbandedAtSettlement.ClearListeners(this);
-            this.Nameplates.ApplyActionOnAllItems(delegate (SCNameplateVM n)
-            {
-                n.OnFinalize();
-            });
+            CampaignEventDispatcher.Instance.RemoveListeners((object)this);
+            this.Nameplates.ApplyActionOnAllItems((Action<SCNameplateVM>)(n => n.OnFinalize()));
         }
     }
 }

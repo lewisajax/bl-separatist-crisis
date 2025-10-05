@@ -54,10 +54,11 @@ namespace SeparatistCrisis.Missions
                 new MissionPreloadView(),
                 new MissionCampaignBattleSpectatorView(),
                 ViewCreator.CreatePhotoModeView(),
-                new MissionEntitySelectionUIHandler(new Action<GameEntity>(((ISiegeDeploymentView)missionView).OnEntitySelection), new Action<GameEntity>(((ISiegeDeploymentView)missionView).OnEntityHover)),
+                new MissionEntitySelectionUIHandler(new Action<WeakGameEntity>(((ISiegeDeploymentView)missionView).OnEntitySelection), new Action<WeakGameEntity>(((ISiegeDeploymentView)missionView).OnEntityHover)),
                 ViewCreator.CreateMissionOrderOfBattleUIHandler(mission, new SPOrderOfBattleVM()),
                 new BlasterMissileView(), // Custom
             };
         }
+      
     }
 }

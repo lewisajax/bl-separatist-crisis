@@ -11,7 +11,43 @@
 				background_mesh="menu_empire_seaside_1"
 				wait_mesh="wait_empire_town"
 				gate_rotation="0.408"
-				prosperity="2800" />
+				prosperity="2800">
+				<Buildings>
+					<Building
+						id="building_castle_fortifications"
+						level="1" />
+					<Building
+						id="building_castle_barracks"
+						level="0" />
+					<Building
+						id="building_castle_training_fields"
+						level="1" />
+					<Building
+						id="building_castle_guard_house"
+						level="1" />
+					<Building
+						id="building_castle_siege_workshop"
+						level="0" />
+					<Building
+						id="building_castle_castallans_office"
+						level="2" />
+					<Building
+						id="building_castle_granary"
+						level="1" />
+					<Building
+						id="building_castle_craftmans_quarters"
+						level="0" />
+					<Building
+						id="building_castle_farmlands"
+						level="1" />
+					<Building
+						id="building_castle_mason"
+						level="0" />
+					<Building
+						id="building_castle_roads_and_paths"
+						level="0" />
+				</Buildings>
+			</Town>
 		</Components>
 		<Locations
 			complex_template="LocationComplexTemplate.town_complex">
@@ -34,7 +70,7 @@
 				scene_name_3="empire_castle_keep_a_l3_interior" />
 			<Location
 				id="prison"
-				scene_name="empire_dungeon_a" />
+scene_name="empire_dungeon_stealth" />
 			<Location
 				id="house_1"
 				scene_name="empire_house_d_interior_house" />
@@ -164,7 +200,43 @@
 				background_mesh="menu_empire_seaside_2"
 				wait_mesh="wait_empire_town"
 				gate_rotation="0.908"
-				prosperity="5600" />
+				prosperity="5600">
+				<Buildings>
+					<Building
+						id="building_castle_fortifications"
+						level="1" />
+					<Building
+						id="building_castle_barracks"
+						level="0" />
+					<Building
+						id="building_castle_training_fields"
+						level="1" />
+					<Building
+						id="building_castle_guard_house"
+						level="1" />
+					<Building
+						id="building_castle_siege_workshop"
+						level="0" />
+					<Building
+						id="building_castle_castallans_office"
+						level="2" />
+					<Building
+						id="building_castle_granary"
+						level="1" />
+					<Building
+						id="building_castle_craftmans_quarters"
+						level="0" />
+					<Building
+						id="building_castle_farmlands"
+						level="1" />
+					<Building
+						id="building_castle_mason"
+						level="0" />
+					<Building
+						id="building_castle_roads_and_paths"
+						level="0" />
+				</Buildings>
+			</Town>
 		</Components>
 		<Locations
 			complex_template="LocationComplexTemplate.town_complex">
@@ -187,7 +259,7 @@
 				scene_name_3="empire_castle_keep_a_l3_interior" />
 			<Location
 				id="prison"
-				scene_name="empire_dungeon_a" />
+scene_name="empire_dungeon_stealth" />
 			<Location
 				id="house_1"
 				scene_name="empire_house_d_interior_house" />
@@ -315,7 +387,43 @@
 				background_mesh="menu_aserai_1"
 				wait_mesh="wait_aserai_town"
 				gate_rotation="0.208"
-				prosperity="4500" />
+				prosperity="4500">
+				<Buildings>
+					<Building
+						id="building_castle_fortifications"
+						level="1" />
+					<Building
+						id="building_castle_barracks"
+						level="0" />
+					<Building
+						id="building_castle_training_fields"
+						level="1" />
+					<Building
+						id="building_castle_guard_house"
+						level="1" />
+					<Building
+						id="building_castle_siege_workshop"
+						level="0" />
+					<Building
+						id="building_castle_castallans_office"
+						level="2" />
+					<Building
+						id="building_castle_granary"
+						level="1" />
+					<Building
+						id="building_castle_craftmans_quarters"
+						level="0" />
+					<Building
+						id="building_castle_farmlands"
+						level="1" />
+					<Building
+						id="building_castle_mason"
+						level="0" />
+					<Building
+						id="building_castle_roads_and_paths"
+						level="0" />
+				</Buildings>
+			</Town>
 		</Components>
 		<Locations
 			complex_template="LocationComplexTemplate.town_complex">
@@ -338,7 +446,7 @@
 				scene_name_3="aserai_castle_keep_a_l3_interior" />
 			<Location
 				id="prison"
-				scene_name="aserai_dungeon_a" />
+scene_name="empire_dungeon_stealth" />
 			<Location
 				id="house_1"
 				scene_name="arabian_house_new_a_interior_a_house" />
@@ -435,7 +543,43 @@
 				background_mesh="menu_aserai_1"
 				wait_mesh="wait_aserai_town"
 				gate_rotation="0.208"
-				prosperity="4500" />
+				prosperity="4500">
+				<Buildings>
+					<Building
+						id="building_castle_fortifications"
+						level="1" />
+					<Building
+						id="building_castle_barracks"
+						level="0" />
+					<Building
+						id="building_castle_training_fields"
+						level="1" />
+					<Building
+						id="building_castle_guard_house"
+						level="1" />
+					<Building
+						id="building_castle_siege_workshop"
+						level="0" />
+					<Building
+						id="building_castle_castallans_office"
+						level="2" />
+					<Building
+						id="building_castle_granary"
+						level="1" />
+					<Building
+						id="building_castle_craftmans_quarters"
+						level="0" />
+					<Building
+						id="building_castle_farmlands"
+						level="1" />
+					<Building
+						id="building_castle_mason"
+						level="0" />
+					<Building
+						id="building_castle_roads_and_paths"
+						level="0" />
+				</Buildings>
+			</Town>
 		</Components>
 		<Locations
 			complex_template="LocationComplexTemplate.town_complex">
@@ -458,7 +602,7 @@
 				scene_name_3="aserai_castle_keep_a_l3_interior" />
 			<Location
 				id="prison"
-				scene_name="aserai_dungeon_a" />
+scene_name="empire_dungeon_stealth" />
 			<Location
 				id="house_1"
 				scene_name="arabian_house_new_a_interior_a_house" />
@@ -557,7 +701,43 @@
 				background_mesh="gui_bg_town_vlanda"
 				wait_mesh="wait_vlandia_town"
 				gate_rotation="0.408"
-				prosperity="1900" />
+				prosperity="1900">
+				<Buildings>
+					<Building
+						id="building_castle_fortifications"
+						level="1" />
+					<Building
+						id="building_castle_barracks"
+						level="0" />
+					<Building
+						id="building_castle_training_fields"
+						level="1" />
+					<Building
+						id="building_castle_guard_house"
+						level="1" />
+					<Building
+						id="building_castle_siege_workshop"
+						level="0" />
+					<Building
+						id="building_castle_castallans_office"
+						level="2" />
+					<Building
+						id="building_castle_granary"
+						level="1" />
+					<Building
+						id="building_castle_craftmans_quarters"
+						level="0" />
+					<Building
+						id="building_castle_farmlands"
+						level="1" />
+					<Building
+						id="building_castle_mason"
+						level="0" />
+					<Building
+						id="building_castle_roads_and_paths"
+						level="0" />
+				</Buildings>
+			</Town>
 		</Components>
 		<Locations
 			complex_template="LocationComplexTemplate.town_complex">
@@ -580,7 +760,7 @@
 				scene_name_3="european_castle_keep_a_l3_interior" />
 			<Location
 				id="prison"
-				scene_name="vlandia_dungeon_a" />
+scene_name="empire_dungeon_stealth" />
 			<Location
 				id="house_1"
 				scene_name="vlandia_city_house_a_interior_house" />
@@ -706,7 +886,43 @@
 				background_mesh="gui_bg_town_vlanda"
 				wait_mesh="wait_vlandia_town"
 				gate_rotation="0.408"
-				prosperity="1900" />
+				prosperity="1900">
+				<Buildings>
+					<Building
+						id="building_castle_fortifications"
+						level="1" />
+					<Building
+						id="building_castle_barracks"
+						level="0" />
+					<Building
+						id="building_castle_training_fields"
+						level="1" />
+					<Building
+						id="building_castle_guard_house"
+						level="1" />
+					<Building
+						id="building_castle_siege_workshop"
+						level="0" />
+					<Building
+						id="building_castle_castallans_office"
+						level="2" />
+					<Building
+						id="building_castle_granary"
+						level="1" />
+					<Building
+						id="building_castle_craftmans_quarters"
+						level="0" />
+					<Building
+						id="building_castle_farmlands"
+						level="1" />
+					<Building
+						id="building_castle_mason"
+						level="0" />
+					<Building
+						id="building_castle_roads_and_paths"
+						level="0" />
+				</Buildings>
+			</Town>
 		</Components>
 		<Locations
 			complex_template="LocationComplexTemplate.town_complex">
@@ -729,7 +945,7 @@
 				scene_name_3="european_castle_keep_a_l3_interior" />
 			<Location
 				id="prison"
-				scene_name="vlandia_dungeon_a" />
+scene_name="empire_dungeon_stealth" />
 			<Location
 				id="house_1"
 				scene_name="vlandia_city_house_a_interior_house" />
@@ -828,7 +1044,43 @@
 				background_mesh="menu_empire_5"
 				wait_mesh="wait_empire_town"
 				gate_rotation="0.908"
-				prosperity="4400" />
+				prosperity="4400">
+				<Buildings>
+					<Building
+						id="building_castle_fortifications"
+						level="1" />
+					<Building
+						id="building_castle_barracks"
+						level="0" />
+					<Building
+						id="building_castle_training_fields"
+						level="1" />
+					<Building
+						id="building_castle_guard_house"
+						level="1" />
+					<Building
+						id="building_castle_siege_workshop"
+						level="0" />
+					<Building
+						id="building_castle_castallans_office"
+						level="2" />
+					<Building
+						id="building_castle_granary"
+						level="1" />
+					<Building
+						id="building_castle_craftmans_quarters"
+						level="0" />
+					<Building
+						id="building_castle_farmlands"
+						level="1" />
+					<Building
+						id="building_castle_mason"
+						level="0" />
+					<Building
+						id="building_castle_roads_and_paths"
+						level="0" />
+				</Buildings>
+			</Town>
 		</Components>
 		<Locations
 			complex_template="LocationComplexTemplate.town_complex">
@@ -851,7 +1103,7 @@
 				scene_name_3="empire_castle_keep_a_l3_interior" />
 			<Location
 				id="prison"
-				scene_name="empire_dungeon_a" />
+scene_name="empire_dungeon_stealth" />
 			<Location
 				id="house_1"
 				scene_name="empire_house_d_interior_house" />
@@ -938,10 +1190,17 @@
 	</Settlement>
 
 	<!-- Retirement Settlement -->
-	<Settlement id="retirement_retreat" name="{=8dDNWHR4}The Retreat" posX="360.21" posY="405.52" culture="Culture.empire" text="{=!}This is the retirement retreat location.">
+	<Settlement
+		id="retirement_retreat"
+		name="{=8dDNWHR4}The Retreat"
+		posX="360.21"
+		posY="405.52"
+		culture="Culture.empire"
+		text="{=E3rYg96K}This is the retirement retreat location.">
 		<Components>
-			<RetirementSettlementComponent
+			<CustomSettlementComponent
 				id="retirement_component"
+				component_name="RetirementSettlementComponent"
 				map_icon="bandit_hideout_b"
 				background_crop_position="0.0"
 				background_mesh="gui_bg_village_battania"

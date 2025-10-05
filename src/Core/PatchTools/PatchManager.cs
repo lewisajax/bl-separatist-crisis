@@ -77,7 +77,7 @@ namespace SeparatistCrisis.PatchTools
             new OnNewGameCreatedPatch(),
             new OnNewGameCreatedPartialFollowUpPatch(),
             new InitializeSandboxXMLsPatch(),
-            new OpenCustomBattleMissionPatch(),
+            // new OpenCustomBattleMissionPatch(),
             new GetGameKeyCategoriesListPatch()
         };
 

@@ -5,32 +5,36 @@ using System.Text;
 using System.Threading.Tasks;
 using TaleWorlds.GauntletUI;
 using TaleWorlds.GauntletUI.BaseTypes;
+using TaleWorlds.MountAndBlade.GauntletUI.Widgets.Nameplate;
 using TaleWorlds.TwoDimension;
 
 namespace SeparatistCrisis.Widgets
 {
     public class SCNameplateManagerWidget: Widget
     {
+        private readonly List<SCNameplateWidget> _visibleNameplates = new List<SCNameplateWidget>();
+        private List<SCNameplateWidget> _allChildrenNameplates = new List<SCNameplateWidget>();
+
         public SCNameplateManagerWidget(UIContext context) : base(context)
         {
         }
 
-        protected override void OnRender(TwoDimensionContext twoDimensionContext, TwoDimensionDrawContext drawContext)
+        protected override void OnRender(
+          TwoDimensionContext twoDimensionContext,
+          TwoDimensionDrawContext drawContext)
         {
             this._visibleNameplates.Clear();
-            foreach (SCNameplateWidget settlementNameplateWidget in this._allChildrenNameplates)
+            foreach (SCNameplateWidget childrenNameplate in this._allChildrenNameplates)
             {
-                if (settlementNameplateWidget != null && settlementNameplateWidget.IsVisibleOnMap)
-                {
-                    this._visibleNameplates.Add(settlementNameplateWidget);
-                }
+                if (childrenNameplate != null && childrenNameplate.IsVisibleOnMap)
+                    this._visibleNameplates.Add(childrenNameplate);
             }
             // this._visibleNameplates.Sort();
-            foreach (SCNameplateWidget settlementNameplateWidget2 in this._visibleNameplates)
+            foreach (SCNameplateWidget visibleNameplate in this._visibleNameplates)
             {
-                settlementNameplateWidget2.DisableRender = false;
-                settlementNameplateWidget2.Render(twoDimensionContext, drawContext);
-                settlementNameplateWidget2.DisableRender = true;
+                visibleNameplate.DisableRender = false;
+                visibleNameplate.Render(twoDimensionContext, drawContext);
+                visibleNameplate.DisableRender = true;
             }
         }
 
@@ -41,9 +45,9 @@ namespace SeparatistCrisis.Widgets
             this._allChildrenNameplates.Add(child as SCNameplateWidget);
         }
 
-        protected override void OnChildRemoved(Widget child)
+        protected override void OnBeforeChildRemoved(Widget child)
         {
-            base.OnChildRemoved(child);
+            base.OnBeforeChildRemoved(child);
             this._allChildrenNameplates.Remove(child as SCNameplateWidget);
         }
 
@@ -51,11 +55,7 @@ namespace SeparatistCrisis.Widgets
         {
             base.OnDisconnectedFromRoot();
             this._allChildrenNameplates.Clear();
-            this._allChildrenNameplates = null;
+            this._allChildrenNameplates = (List<SCNameplateWidget>)null;
         }
-
-        private readonly List<SCNameplateWidget> _visibleNameplates = new List<SCNameplateWidget>();
-
-        private List<SCNameplateWidget> _allChildrenNameplates = new List<SCNameplateWidget>();
     }
 }

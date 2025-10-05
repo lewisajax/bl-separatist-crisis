@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
+﻿using System.Xml;
+using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Core;
 using TaleWorlds.ObjectSystem;
@@ -27,6 +23,8 @@ namespace SeparatistCrisis.Components
                 this._isSpotted = value;
             }
         }
+
+        public override IFaction MapFaction => null;
 
         public override void Deserialize(MBObjectManager objectManager, XmlNode node)
         {

@@ -1,31 +1,17 @@
 ﻿using SeparatistCrisis.PatchTools;
-
 using Bannerlord.UIExtenderEx;
-
 using System.Linq;
-
 using TaleWorlds.CampaignSystem;
-using TaleWorlds.CampaignSystem.ComponentInterfaces;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
-using SeparatistCrisis.Missions;
-using SeparatistCrisis.Behaviors;
-using SandBox;
-using SeparatistCrisis.Extensions;
 using SeparatistCrisis.ObjectTypes;
 using TaleWorlds.ObjectSystem;
 using System.Collections.Generic;
-using TaleWorlds.Engine.InputSystem;
 using TaleWorlds.InputSystem;
-using TaleWorlds.MountAndBlade.GameKeyCategory;
 using SeparatistCrisis.InputSystem;
 using SeparatistCrisis.MissionManagers;
-using SeparatistCrisis.ObjectTypes;
-using TaleWorlds.ObjectSystem;
-using SandBox.Objects;
-using SandBox;
 using SeparatistCrisis.Components;
 
 namespace SeparatistCrisis
@@ -67,8 +53,8 @@ namespace SeparatistCrisis
         {
             base.OnMissionBehaviorInitialize(mission);
 
-            if (mission != null)
-                mission.AddMissionBehavior(new ForceAtmosphereLogic());
+            //if (mission != null)
+            //    mission.AddMissionBehavior(new ForceAtmosphereLogic());
         }
 
         protected override void OnBeforeInitialModuleScreenSetAsRoot()

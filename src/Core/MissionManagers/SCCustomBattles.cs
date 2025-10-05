@@ -22,7 +22,7 @@ namespace SeparatistCrisis.MissionManagers
         public static void StartGame(CustomBattleData data)
         {
             Game.Current.PlayerTroop = data.PlayerCharacter;
-            if (data.GameType == CustomBattleGameType.Siege)
+            if (data.GameTypeStringId == "Siege")
             {
                 SCCustomBattles.OpenSiegeMissionWithDeployment(data.SceneId, data.PlayerCharacter, data.PlayerParty, data.EnemyParty, data.IsPlayerGeneral, data.WallHitpointPercentages, data.HasAnySiegeTower, data.AttackerMachines, data.DefenderMachines, data.IsPlayerAttacker, data.SceneUpgradeLevel, data.SeasonId, data.IsSallyOut, data.IsReliefAttack, data.TimeOfDay);
                 return;
@@ -121,7 +121,6 @@ namespace SeparatistCrisis.MissionManagers
                 PlayingInCampaignMode = false,
                 AtmosphereOnCampaign = SCCustomBattles.CreateAtmosphereInfoForMission(seasonString, (int)timeOfDay),
                 SceneLevels = sceneLevels,
-                TimeOfDay = timeOfDay,
                 DecalAtlasGroup = 2
             }, (Mission missionController) => new MissionBehavior[]
             {
@@ -141,7 +140,7 @@ namespace SeparatistCrisis.MissionManagers
             new BlasterMissileLogic(),
             new BattleMissionAgentInteractionLogic(),
             new AgentMoraleInteractionLogic(),
-            new AssignPlayerRoleInTeamMissionController(isPlayerGeneral, isPlayerSergeant, false, isPlayerSergeant ? Enumerable.Repeat<string>(playerCharacter.StringId, 1).ToList<string>() : new List<string>(), FormationClass.NumberOfRegularFormations),
+            new AssignPlayerRoleInTeamMissionController(isPlayerGeneral, isPlayerSergeant, false, isPlayerSergeant ? Enumerable.Repeat<string>(playerCharacter.StringId, 1).ToList<string>() : new List<string>()),
             new GeneralsAndCaptainsAssignmentLogic((isPlayerAttacker & isPlayerGeneral) ? playerCharacter.GetName() : ((isPlayerAttacker & isPlayerSergeant) ? playerSideGeneralCharacter.GetName() : null), (!isPlayerAttacker & isPlayerGeneral) ? playerCharacter.GetName() : ((!isPlayerAttacker & isPlayerSergeant) ? playerSideGeneralCharacter.GetName() : null), null, null, true),
             new EquipmentControllerLeaveLogic(),
             new MissionHardBorderPlacer(),
@@ -149,7 +148,7 @@ namespace SeparatistCrisis.MissionManagers
             new MissionBoundaryCrossingHandler(),
             new HighlightsController(),
             new BattleHighlightsController(),
-            new DeploymentMissionController(isPlayerAttacker),
+            new BattleDeploymentMissionController(isPlayerAttacker),
             new BattleDeploymentHandler(isPlayerAttacker)
             }, true, true);
         }
@@ -171,7 +170,6 @@ namespace SeparatistCrisis.MissionManagers
                 PlayingInCampaignMode = false,
                 AtmosphereOnCampaign = SCCustomBattles.CreateAtmosphereInfoForMission(seasonString, (int)timeOfDay),
                 SceneLevels = text,
-                TimeOfDay = timeOfDay
             }, delegate (Mission mission)
             {
                 List<MissionBehavior> list = new List<MissionBehavior>();
@@ -208,7 +206,7 @@ namespace SeparatistCrisis.MissionManagers
                 }));
                 }
                 list.Add(new AgentVictoryLogic());
-                list.Add(new AssignPlayerRoleInTeamMissionController(isPlayerGeneral, isPlayerSergeant, false, null, FormationClass.NumberOfRegularFormations));
+                list.Add(new AssignPlayerRoleInTeamMissionController(isPlayerGeneral, isPlayerSergeant, false, null));
                 list.Add(new GeneralsAndCaptainsAssignmentLogic((isPlayerAttacker & isPlayerGeneral) ? playerCharacter.GetName() : null, null, null, null, false));
                 list.Add(new MissionAgentPanicHandler());
                 list.Add(new MissionBoundaryPlacer());
@@ -261,8 +259,7 @@ namespace SeparatistCrisis.MissionManagers
             {
                 DoNotUseLoadingScreen = false,
                 PlayingInCampaignMode = false,
-                SceneLevels = "siege",
-                TimeOfDay = timeOfDay
+                SceneLevels = "siege"
             }, (Mission missionController) => new MissionBehavior[]
             {
             new MissionOptionsComponent(),

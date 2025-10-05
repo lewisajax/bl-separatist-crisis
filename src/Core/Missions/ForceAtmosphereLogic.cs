@@ -4,7 +4,7 @@ using TaleWorlds.MountAndBlade;
 
 namespace SeparatistCrisis.Behaviors
 {
-    public class ForceAtmosphereLogic : MissionLogic
+    /*public class ForceAtmosphereLogic : MissionLogic
     {
         private readonly string forceAtmosphereSuffix = "geonosis";
         private readonly string defaultAtmosphere = "geonosis";
@@ -22,5 +22,5 @@ namespace SeparatistCrisis.Behaviors
                 Mission.Scene.SetAtmosphereWithName(defaultAtmosphere);
             }
         }
-    }
+    }*/
 }

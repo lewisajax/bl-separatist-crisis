@@ -69,7 +69,7 @@ namespace SeparatistCrisis.Missions
                     new MissionAgentPanicHandler(),
                     new BattleMissionAgentInteractionLogic(),
                     new AgentMoraleInteractionLogic(),
-                    new AssignPlayerRoleInTeamMissionController(!isPlayerSergeant, isPlayerSergeant, isPlayerInArmy, heroesOnPlayerSideByPriority, FormationClass.NumberOfRegularFormations),
+                    new AssignPlayerRoleInTeamMissionController(!isPlayerSergeant, isPlayerSergeant, isPlayerInArmy, heroesOnPlayerSideByPriority),
                     new SandboxGeneralsAndCaptainsAssignmentLogic(attackerGeneralName, (leaderHero2 != null) ? leaderHero2.Name : null, null, null, true),
                     new EquipmentControllerLeaveLogic(),
                     new MissionHardBorderPlacer(),
@@ -77,7 +77,7 @@ namespace SeparatistCrisis.Missions
                     new MissionBoundaryCrossingHandler(),
                     new HighlightsController(),
                     new BattleHighlightsController(),
-                    new DeploymentMissionController(isPlayerAttacker),
+                    new BattleDeploymentMissionController(isPlayerAttacker),
                     new BattleDeploymentHandler(isPlayerAttacker)
                 };
             }, true, true);
@@ -87,8 +87,8 @@ namespace SeparatistCrisis.Missions
         {
             return new MissionAgentSpawnLogic(new IMissionTroopSupplier[]
             {
-                new PartyGroupTroopSupplier(MapEvent.PlayerMapEvent, BattleSideEnum.Defender, priorTroopsForDefenders, null),
-                new PartyGroupTroopSupplier(MapEvent.PlayerMapEvent, BattleSideEnum.Attacker, priorTroopsForAttackers, null)
+                new PartyGroupTroopSupplier(MapEvent.PlayerMapEvent, BattleSideEnum.Defender, priorTroopsForDefenders),
+                new PartyGroupTroopSupplier(MapEvent.PlayerMapEvent, BattleSideEnum.Attacker, priorTroopsForAttackers)
             }, PartyBase.MainParty.Side, battleSizeType);
         }
     }
