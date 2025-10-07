@@ -273,6 +273,9 @@ dotnet_diagnostic.CA1862.severity = silent
 dotnet_diagnostic.CA1034.severity = suggestion
 csharp_prefer_system_threading_lock = true:suggestion
 
+# CA1819: Properties should not return arrays
+dotnet_diagnostic.CA1819.severity = suggestion
+
 [*.{cs,vb}]
 dotnet_style_operator_placement_when_wrapping = beginning_of_line
 tab_width = 4

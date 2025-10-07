@@ -17,6 +17,7 @@ using MathF = TaleWorlds.Library.MathF;
 
 namespace SeparatistCrisis.ViewModels
 {
+    // Something, something ImageIdentifierWidget changing ImageTypeCode to ImageTextureProvider
     public class SCNameplateVM : SettlementNameplateVM
     {
         private Camera _mapCamera;

@@ -1,5 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+	
   <PropertyGroup>
       <TargetFrameworks>net472;net6</TargetFrameworks>
       <LangVersion>9</LangVersion>
@@ -38,32 +38,32 @@
 
   <!-- NuGet Packages -->
   <ItemGroup>
-    <PackageReference Include="Bannerlord.BuildResources" Version="$(BuildResourcesVersion)">
+	<PackageReference Include="Bannerlord.BuildResources" Version="$(BuildResourcesVersion)" GeneratePathProperty="true">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-      <PackageReference Include="Lib.Harmony" Version="$(HarmonyVersion)" IncludeAssets="compile" />
+    <PackageReference Include="Lib.Harmony" Version="$(HarmonyVersion)" IncludeAssets="compile" />
+    
+	<!-- Microsoft.CSharp is used for its source-only 'dynamic' implementation. -->
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
 
-      <!-- Microsoft.CSharp is used for its source-only 'dynamic' implementation. -->
-      <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <!-- An old version of JSON.NET is distributed with the game and/or BUTTERLIB, so no point in including the assembly,
+    and we need to reference that old version instead of the latest. -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" IncludeAssets="compile" />
 
-      <!-- An old version of JSON.NET is distributed with the game and/or BUTTERLIB, so no point in including the assembly,
-       and we need to reference that old version instead of the latest. -->
-      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" IncludeAssets="compile" />
-
-      <!-- Enable NET5 Features on NET472 -->
-      <PackageReference Include="IsExternalInit" Version="1.0.3">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
-      <PackageReference Include="Nullable" Version="1.3.1">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
-      <PackageReference Include="Harmony.Extensions" Version="$(HarmonyExtensionsVersion)">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
+    <!-- Enable NET5 Features on NET472 -->
+    <PackageReference Include="IsExternalInit" Version="1.0.3">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Nullable" Version="1.3.1">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Harmony.Extensions" Version="$(HarmonyExtensionsVersion)">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -106,4 +106,26 @@
 		    <Private>False</Private>
 	    </Reference>
 	</ItemGroup>
+
+	<!-- We use a task from Bannerlord.BuildResources, this is just so I can see the file -->
+	<ItemGroup>
+		<None Include="$(PkgBannerlord_BuildResources)\build\Basic.targets" Visible="true" />
+	</ItemGroup>
+
+	<!-- Watches for any changes in the xml files for core and copies the _Module folder. Not all that efficient, especially when there's gonna be a lot of xml files but it works for the time being. -->
+	<!-- This is mainly because of the hot reloading system included with ui.debug in the game and we want to sync xml changes between the output folder and the working dir, without needing to build the dlls etc with it -->
+	<!-- Use "ui.set_debug 1" before going into the screen for hot reloading to work -->
+	<ItemGroup>
+		<Watch Include="**/*.xml;" />
+	</ItemGroup>
+
+	<!-- For some unknown reason, ProjectDir and OutDir get assigned an empty string. I don't know how, must be to do with the Dir.Build files and the import order -->
+	<PropertyGroup>
+		<ProjectDir Condition=" '$(ProjectDir)' == '' ">$([MSBuild]::EnsureTrailingSlash($(MSBuildProjectDirectory)))</ProjectDir>
+	</PropertyGroup>
+
+	<!-- Use "dotnet watch msbuild /t:CopyModulesOnWatch" in the core dir, might want to open a 2nd terminal -->
+	<Target Name="CopyModulesOnWatch">
+		<CallTarget Targets="CopyModule" />
+	</Target>
 </Project>
