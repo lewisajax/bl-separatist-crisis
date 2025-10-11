@@ -78,7 +78,8 @@ namespace SeparatistCrisis.PatchTools
             new OnNewGameCreatedPartialFollowUpPatch(),
             new InitializeSandboxXMLsPatch(),
             // new OpenCustomBattleMissionPatch(),
-            new GetGameKeyCategoriesListPatch()
+            new GetGameKeyCategoriesListPatch(),
+            new MapScreenPartyVisualPatches()
         };
 
         // REGISTER ALL ACTIVE HARMONY PATCH CLASSES TO USE OnGameStart HERE:
