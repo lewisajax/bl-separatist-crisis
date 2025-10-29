@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Individual NPC Ships -->
+<!-- Assigned ships for individual lords/characters. Will override the clan, kingdom and culture defaults -->
+<AssignedSpaceShips>
+	<AssignedSpaceShip id="asp_main_hero" character="main_hero" ship="SpaceShip.v_wing" />
+	<AssignedSpaceShip id="asp_palpatine" character="palpatine" ship="SpaceShip.v_wing" />
+
+	<!-- Culture Ship Templates -->
+	<!-- Could be used to have default ships for the lords or patrols etc -->
+	<CultureSpaceShips>
+		<CultureSpaceShip culture="empire" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="sturgia" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="aserai" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="khuzait" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="battania" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="vlandia" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="galactic_republic" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="separatist" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="new_mandalorians" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="death_watch" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="crime_syndicates" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+	</CultureSpaceShips>
+
+	<!-- Kingdom Ship Templates -->
+	<!-- For specific kingdoms with a shared culture. If there's no kingdom template, we fall back to the culture defaults  -->
+	<KingdomSpaceShips>
+		<KingdomSpaceShip kingdom="galactic_republic" lord_default="SpaceShip.v_wing" />
+	</KingdomSpaceShips>
+
+	<!-- Clan Ship Templates -->
+	<!-- If there's no clan template, we fall back to the kingdom template -->
+	<ClanSpaceShips>
+		<ClanSpaceShip clan="galactic_senate" lord_default="SpaceShip.v_wing" />
+	</ClanSpaceShips>
+</AssignedSpaceShips>

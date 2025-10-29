@@ -2,6 +2,7 @@
 using SandBox.View.Map;
 using SandBox.View.Map.Managers;
 using SandBox.View.Map.Visuals;
+using SeparatistCrisis.ObjectTypes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -545,7 +546,7 @@ namespace SeparatistCrisis.PartyVisuals
                 ActionIndexCache mountAction = ActionIndexCache.act_none;
                 MapEvent mapEvent = party.MobileParty.Army == null || !party.MobileParty.Army.DoesLeaderPartyAndAttachedPartiesContain(party.MobileParty) ? party.MapEvent : party.MobileParty.Army.LeaderParty.MapEvent;
 
-                this.AddShipToPartyIcon();
+                this.AddShipToPartyIcon(party);
 
                 //int wieldedItemIndex;
                 //this.GetMeleeWeaponToWield(party, out wieldedItemIndex);
@@ -573,14 +574,21 @@ namespace SeparatistCrisis.PartyVisuals
             }
         }
 
-        private void AddShipToPartyIcon()
+        private void AddShipToPartyIcon(PartyBase party)
         {
-            MetaMesh shipMesh = MetaMesh.GetMultiMesh("v_wing");
+
+            SpaceShip? spaceShip = party.LeaderHero != null ?
+                AssignedSpaceShip.GetShip(party.LeaderHero.CharacterObject) :
+                AssignedSpaceShip.GetShip(party);
+            string shipName = "v_wing"; // Default ship. We'll probably handle this better later on. Maybe
+            if (spaceShip != null)
+                shipName = spaceShip.Mesh;
+            MetaMesh shipMesh = MetaMesh.GetMultiMesh(shipName);
             // shipMesh.Frame.Scale(new Vec3(.5f, .5f, .5f));
             this.ShipVisuals = GameEntity.CreateEmptyDynamic(this.MapScene);
             this.ShipVisuals.AddMultiMesh(shipMesh);
             MatrixFrame m = this.ShipVisuals.GetFrame();
-            m.rotation.ApplyScaleLocal(this.ShipVisuals.GetLocalScale() * .5f);
+            m.rotation.ApplyScaleLocal(this.ShipVisuals.GetLocalScale() * (spaceShip?.ScaleMultiplier != null ? spaceShip.ScaleMultiplier : 1f));
             m = this.StrategicEntity.GetFrame().TransformToParent(in m);
             this.ShipVisuals.SetFrame(ref m);
         }

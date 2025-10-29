@@ -19,10 +19,7 @@ initial_home_settlement="Settlement.town_EN2"
 		settlement_banner_mesh="encounter_flag_f"
 		text="This band of prodominatly Weequay pirates calls the outer rim planet of Florrum their home. Under the leadership of the charismatic Captain Hondo Ohnaka, they have amassed a fortune by raiding civilian starships that pass through their turf. To supplement their earnings, they have been known to make risk moves, such as kidnapping and ransoming two Jedi Knights and Count Dooku.">
 		<minor_faction_character_templates>
-			<template id="NPCCharacter.spc_embers_of_flame_leader_0" />
-			<template id="NPCCharacter.spc_embers_of_flame_leader_1" />
-			<template id="NPCCharacter.spc_embers_of_flame_leader_2" />
-			<template id="NPCCharacter.spc_embers_of_flame_leader_3" />
+			<template id="NPCCharacter.spc_ohnaka_pirate_0" />
 		</minor_faction_character_templates>
 	</Faction>
 
@@ -45,10 +42,7 @@ initial_home_settlement="Settlement.town_EN2"
 		settlement_banner_mesh="encounter_flag_f"
 		text="A generally misunderstood people, the Tusken Raiders believe themselves to be the rightful inhabitants of the desert world Tatooine. These nomadic people travel the surface of Tatooine in search of vital sources of water and any other supplies required to survive in their harsh environment.">
 		<minor_faction_character_templates>
-			<template id="NPCCharacter.spc_embers_of_flame_leader_0" />
-			<template id="NPCCharacter.spc_embers_of_flame_leader_1" />
-			<template id="NPCCharacter.spc_embers_of_flame_leader_2" />
-			<template id="NPCCharacter.spc_embers_of_flame_leader_3" />
+			<template id="NPCCharacter.spc_ohnaka_pirate_0" />
 		</minor_faction_character_templates>
 	</Faction>
 
@@ -70,10 +64,7 @@ initial_home_settlement="Settlement.town_EN2"
 		settlement_banner_mesh="encounter_flag_f"
 		text="Many force sensitives from across the galaxy were not taken as children by the Jedi. Instead through the veil of death and sorrow surrounding the Clone Wars, they heard something through the force that called them to the Sith homeworld of Korriban. It was here that a Sith not of Darth Bane's line instructed them in the most basic Sith teachings. They were largely unknown until they came under attack by a clone detachment under the Jedi Master Eeth Koth.">
 		<minor_faction_character_templates>
-			<template id="NPCCharacter.spc_embers_of_flame_leader_0" />
-			<template id="NPCCharacter.spc_embers_of_flame_leader_1" />
-			<template id="NPCCharacter.spc_embers_of_flame_leader_2" />
-			<template id="NPCCharacter.spc_embers_of_flame_leader_3" />
+			<template id="NPCCharacter.spc_ohnaka_pirate_0" />
 		</minor_faction_character_templates>
 	</Faction>
 
@@ -95,10 +86,7 @@ initial_home_settlement="Settlement.town_EN2"
 		settlement_banner_mesh="encounter_flag_f"
 		text="In stark contrast to the relative harmony most Coruscanti on the planet's surface, the Underworld is a bleak place where only the strong survive. With very little law enforcement oversight, many of the galaxy's most dangerous criminals thrive in the Underworld, preying on those foolish enough or too weak to dwell in it's near-endless depths.">
 		<minor_faction_character_templates>
-			<template id="NPCCharacter.spc_embers_of_flame_leader_0" />
-			<template id="NPCCharacter.spc_embers_of_flame_leader_1" />
-			<template id="NPCCharacter.spc_embers_of_flame_leader_2" />
-			<template id="NPCCharacter.spc_embers_of_flame_leader_3" />
+			<template id="NPCCharacter.spc_ohnaka_pirate_0" />
 		</minor_faction_character_templates>
 	</Faction>
 
@@ -120,10 +108,7 @@ initial_home_settlement="Settlement.town_EN2"
 		settlement_banner_mesh="encounter_flag_f"
 		text="The Pirates are not just one group of criminals, but rather a hodgepodge of scum, with naught but profit in mind. Typically found along trade routes and realspace, these marauders prey on freight vessels without the proper means of defending their cargo. With the Republic's attention being focused on the Clone Wars, these roving gangs have thrived, causing more and more criminals to swell their ranks in search of ill gotten gains.">
 		<minor_faction_character_templates>
-			<template id="NPCCharacter.spc_embers_of_flame_leader_0" />
-			<template id="NPCCharacter.spc_embers_of_flame_leader_1" />
-			<template id="NPCCharacter.spc_embers_of_flame_leader_2" />
-			<template id="NPCCharacter.spc_embers_of_flame_leader_3" />
+			<template id="NPCCharacter.spc_ohnaka_pirate_0" />
 		</minor_faction_character_templates>
 	</Faction>
 

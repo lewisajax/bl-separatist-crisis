@@ -94,13 +94,17 @@ namespace SeparatistCrisis
 
         private void OnRegisterTypes()
         {
-            MBObjectManager.Instance.RegisterType<SettlementGroup>("SettlementGroup", "SettlementGroups", 100U, true);
-            MBObjectManager.Instance.RegisterType<SettlementGroupComponent>("SettlementGroupComponent", "SettlementGroupComponents", 101U, true);
+            MBObjectManager.Instance.RegisterType<SettlementGroup>("SettlementGroup", "SettlementGroups", 100U);
+            MBObjectManager.Instance.RegisterType<SettlementGroupComponent>("SettlementGroupComponent", "SettlementGroupComponents", 101U);
+            MBObjectManager.Instance.RegisterType<SpaceShip>("SpaceShip", "SpaceShips", 102U);
+            MBObjectManager.Instance.RegisterType<AssignedSpaceShip>("AssignedSpaceShip", "AssignedSpaceShips", 103U);
         }
 
         public override void RegisterSubModuleObjects(bool isSavedCampaign)
         {
             MBObjectManager.Instance.LoadXML("SettlementGroups", false);
+            MBObjectManager.Instance.LoadXML("SpaceShips", false);
+            MBObjectManager.Instance.LoadXML("AssignedSpaceShips", false);
         }
 
         public override void BeginGameStart(Game game)

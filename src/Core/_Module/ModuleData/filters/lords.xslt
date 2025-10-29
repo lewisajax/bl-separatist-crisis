@@ -12,5 +12,6 @@
         <xsl:copy-of select="." />
     </xsl:template>
 
-    <xsl:template match="NPCCharacter[@occupation='Lord' and @id!='main_hero' and is_template!='true']" />
+	<!-- and is_template!='true' - is_template was removed and I can't remember why we needed to do this -->
+    <xsl:template match="NPCCharacter[@occupation='Lord' and @id!='main_hero']" />
 </xsl:stylesheet>
