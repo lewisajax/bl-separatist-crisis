@@ -20,6 +20,7 @@ using TaleWorlds.Engine;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.MountAndBlade.View;
+using TaleWorlds.MountAndBlade.View.Tableaus.Thumbnails;
 
 namespace SeparatistCrisis.PartyVisuals
 {
@@ -757,14 +758,14 @@ namespace SeparatistCrisis.PartyVisuals
 
         public static MetaMesh GetBannerOfCharacter(Banner banner, string bannerMeshName)
         {
-            MetaMesh copy = MetaMesh.GetCopy(bannerMeshName);
-            for (int meshIndex = 0; meshIndex < copy.MeshCount; ++meshIndex)
+            MetaMesh copy = MetaMesh.GetCopy(bannerMeshName, true, false);
+            for (int i = 0; i < copy.MeshCount; i++)
             {
-                Mesh meshAtIndex = copy.GetMeshAtIndex(meshIndex);
+                Mesh meshAtIndex = copy.GetMeshAtIndex(i);
                 if (!meshAtIndex.HasTag("dont_use_tableau"))
                 {
                     Material material = meshAtIndex.GetMaterial();
-                    Material tableauMaterial = (Material)null;
+                    Material tableauMaterial = null;
                     Tuple<Material, Banner> key = new Tuple<Material, Banner>(material, banner);
                     if (MapScreen.Instance.CharacterBannerMaterialCache.ContainsKey(key))
                     {
@@ -773,13 +774,15 @@ namespace SeparatistCrisis.PartyVisuals
                     else
                     {
                         tableauMaterial = material.CreateCopy();
-                        Action<Texture> setAction = (Action<Texture>)(tex =>
+                        Action<Texture> setAction = delegate (Texture tex)
                         {
                             tableauMaterial.SetTexture(Material.MBTextureType.DiffuseMap2, tex);
-                            uint materialShaderFlagMask = (uint)tableauMaterial.GetShader().GetMaterialShaderFlagMask("use_tableau_blending");
-                            tableauMaterial.SetShaderFlags(tableauMaterial.GetShaderFlags() | (ulong)materialShaderFlagMask);
-                        });
-                        banner.GetTableauTextureLarge(setAction);
+                            uint num = (uint)tableauMaterial.GetShader().GetMaterialShaderFlagMask("use_tableau_blending", true);
+                            ulong shaderFlags = tableauMaterial.GetShaderFlags();
+                            tableauMaterial.SetShaderFlags(shaderFlags | (ulong)num);
+                        };
+                        BannerDebugInfo bannerDebugInfo = BannerDebugInfo.CreateManual("MobilePartyVisual");
+                        banner.GetTableauTextureLarge(bannerDebugInfo, setAction);
                         MapScreen.Instance.CharacterBannerMaterialCache[key] = tableauMaterial;
                     }
                     meshAtIndex.SetMaterial(tableauMaterial);
