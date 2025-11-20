@@ -41,6 +41,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Pre Vizsla"
 		face_mesh_cache="true">
 		<face>
@@ -60,7 +61,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -86,6 +95,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Paz Vizsla"
 		face_mesh_cache="true">
 		<face>
@@ -105,7 +115,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -131,6 +149,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Eeguun Dukust"
 		face_mesh_cache="true">
 		<face>
@@ -150,7 +169,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -176,6 +203,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Zhan Dulbu"
 		face_mesh_cache="true">
 		<face>
@@ -195,7 +223,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -221,6 +257,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Jaro Quijirt"
 		face_mesh_cache="true">
 		<face>
@@ -240,7 +277,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -266,6 +311,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Drak Brart"
 		face_mesh_cache="true">
 		<face>
@@ -285,7 +331,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -311,6 +365,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Tarre Vizsla"
 		face_mesh_cache="true">
 		<face>
@@ -330,7 +385,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -356,6 +419,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Tor Vizsla"
 		face_mesh_cache="true">
 		<face>
@@ -375,7 +439,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -403,6 +475,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Bo-Katan Kryze"
 		face_mesh_cache="true">
 		<face>
@@ -422,7 +495,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -448,6 +529,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Korkie Kryze"
 		face_mesh_cache="true">
 		<face>
@@ -467,7 +549,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -493,6 +583,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Koska Reeves"
 		face_mesh_cache="true">
 		<face>
@@ -512,7 +603,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -538,6 +637,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Axe Woves"
 		face_mesh_cache="true">
 		<face>
@@ -557,7 +657,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -585,6 +693,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Ursa Wren"
 		face_mesh_cache="true">
 		<face>
@@ -604,7 +713,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -630,6 +747,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Alrich Wren"
 		face_mesh_cache="true">
 		<face>
@@ -649,7 +767,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -675,6 +801,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Sabine Wren"
 		face_mesh_cache="true">
 		<face>
@@ -694,7 +821,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -720,6 +855,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Tristan Wren"
 		face_mesh_cache="true">
 		<face>
@@ -739,7 +875,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -767,6 +911,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Boba Fett"
 		face_mesh_cache="true">
 		<face>
@@ -786,7 +931,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -812,6 +965,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Sintas Vel"
 		face_mesh_cache="true">
 		<face>
@@ -831,7 +985,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -857,6 +1019,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Jorad Croorr"
 		face_mesh_cache="true">
 		<face>
@@ -876,7 +1039,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -902,6 +1073,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Adonai Cherr"
 		face_mesh_cache="true">
 		<face>
@@ -921,7 +1093,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -947,6 +1127,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Cassus Fett"
 		face_mesh_cache="true">
 		<face>
@@ -966,7 +1147,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -992,6 +1181,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Jaster Mereel"
 		face_mesh_cache="true">
 		<face>
@@ -1011,7 +1201,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1037,6 +1235,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Arla Fett"
 		face_mesh_cache="true">
 		<face>
@@ -1056,7 +1255,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1084,6 +1291,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Rook Kast"
 		face_mesh_cache="true">
 		<face>
@@ -1103,7 +1311,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1129,6 +1345,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Veraslayn Kast"
 		face_mesh_cache="true">
 		<face>
@@ -1148,7 +1365,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1174,6 +1399,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Rhal Ytug"
 		face_mesh_cache="true">
 		<face>
@@ -1193,7 +1419,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1219,6 +1453,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Tome Pinel"
 		face_mesh_cache="true">
 		<face>
@@ -1238,7 +1473,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1264,6 +1507,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Videk Toukug"
 		face_mesh_cache="true">
 		<face>
@@ -1283,7 +1527,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1309,6 +1561,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Troch Pode"
 		face_mesh_cache="true">
 		<face>
@@ -1328,7 +1581,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1356,6 +1617,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Gar Saxon"
 		face_mesh_cache="true">
 		<face>
@@ -1375,7 +1637,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1401,6 +1671,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Tiber Saxon"
 		face_mesh_cache="true">
 		<face>
@@ -1420,7 +1691,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1446,6 +1725,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Jag Herki"
 		face_mesh_cache="true">
 		<face>
@@ -1465,7 +1745,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1491,6 +1779,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Nakil Sturrar"
 		face_mesh_cache="true">
 		<face>
@@ -1510,7 +1799,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1536,6 +1833,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Iviin Tryrd"
 		face_mesh_cache="true">
 		<face>
@@ -1555,7 +1853,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1581,6 +1887,7 @@
 		is_hero="true"
 		culture="Culture.death_watch"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Resol Rusac"
 		face_mesh_cache="true">
 		<face>
@@ -1600,7 +1907,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>

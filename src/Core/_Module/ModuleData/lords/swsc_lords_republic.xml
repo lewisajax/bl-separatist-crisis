@@ -41,6 +41,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Sheev Palpatine"
 		face_mesh_cache="true">
 		<face>
@@ -60,7 +61,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -86,6 +95,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Bail Organa"
 		face_mesh_cache="true">
 		<face>
@@ -105,7 +115,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -131,6 +149,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Breha Organa"
 		face_mesh_cache="true">
 		<face>
@@ -150,7 +169,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -176,6 +203,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Mas Amedda"
 		face_mesh_cache="true">
 		<face>
@@ -195,7 +223,44 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
+		</Traits>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="7" />
+			<Trait
+				id="Commander"
+				value="14" />
+			<Trait
+				id="Politician"
+				value="18" />
+			<Trait
+				id="Manager"
+				value="12" />
+			<Trait
+				id="Mercy"
+				value="-1" />
+			<Trait
+				id="Honor"
+				value="-1" />
+			<Trait
+				id="Calculating"
+				value="1" />
+			<Trait
+				id="Generosity"
+				value="1" />
+			<Trait
+				id="Authoritarian"
+				value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -221,6 +286,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Jar Jar Binks"
 		face_mesh_cache="true">
 		<face>
@@ -240,7 +306,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -266,6 +340,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Halle Burtoni"
 		face_mesh_cache="true">
 		<face>
@@ -285,7 +360,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -311,6 +394,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Christo"
 		face_mesh_cache="true">
 		<face>
@@ -330,7 +414,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -356,6 +448,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Riyo Chuchi"
 		face_mesh_cache="true">
 		<face>
@@ -375,7 +468,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -401,6 +502,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Padme Amidala"
 		face_mesh_cache="true">
 		<face>
@@ -420,7 +522,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -446,6 +556,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Mon Mothma"
 		face_mesh_cache="true">
 		<face>
@@ -465,7 +576,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -491,6 +610,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Perrin Fertha"
 		face_mesh_cache="true">
 		<face>
@@ -510,7 +630,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -536,6 +664,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Orn Free Taa"
 		face_mesh_cache="true">
 		<face>
@@ -555,7 +684,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -581,6 +718,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Hego Damask II"
 		face_mesh_cache="true">
 		<face>
@@ -600,7 +738,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -626,6 +772,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Nak-il Tano"
 		face_mesh_cache="true">
 		<face>
@@ -645,7 +792,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -671,6 +826,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Pav-ti Tano"
 		face_mesh_cache="true">
 		<face>
@@ -690,7 +846,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -718,6 +882,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Yoda"
 		face_mesh_cache="true">
 		<face>
@@ -737,7 +902,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -763,6 +936,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Cin Drallig"
 		face_mesh_cache="true">
 		<face>
@@ -782,7 +956,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -808,6 +990,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Kit Fisto"
 		face_mesh_cache="true">
 		<face>
@@ -827,7 +1010,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -853,6 +1044,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Bardan Jusik"
 		face_mesh_cache="true">
 		<face>
@@ -872,7 +1064,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -898,6 +1098,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Arligan Zey"
 		face_mesh_cache="true">
 		<face>
@@ -917,7 +1118,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -943,6 +1152,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Rahm Kota"
 		face_mesh_cache="true">
 		<face>
@@ -962,7 +1172,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -988,6 +1206,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Eeth Koth"
 		face_mesh_cache="true">
 		<face>
@@ -1007,7 +1226,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1033,6 +1260,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Pong Krell"
 		face_mesh_cache="true">
 		<face>
@@ -1052,7 +1280,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1078,6 +1314,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Taron Malicos"
 		face_mesh_cache="true">
 		<face>
@@ -1097,7 +1334,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1123,6 +1368,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Even Piell"
 		face_mesh_cache="true">
 		<face>
@@ -1142,7 +1388,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1168,6 +1422,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Bolla Ropal"
 		face_mesh_cache="true">
 		<face>
@@ -1187,7 +1442,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1213,6 +1476,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Roan Shryne"
 		face_mesh_cache="true">
 		<face>
@@ -1232,7 +1496,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1258,6 +1530,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Baylan Skoll"
 		face_mesh_cache="true">
 		<face>
@@ -1277,7 +1550,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1303,6 +1584,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Saesee Tiin"
 		face_mesh_cache="true">
 		<face>
@@ -1322,7 +1604,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1348,6 +1638,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Tiplar"
 		face_mesh_cache="true">
 		<face>
@@ -1367,7 +1658,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1393,6 +1692,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Tiplee"
 		face_mesh_cache="true">
 		<face>
@@ -1412,7 +1712,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1438,6 +1746,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Etain Tur-Mukan"
 		face_mesh_cache="true">
 		<face>
@@ -1457,7 +1766,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1483,6 +1800,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Tholme"
 		face_mesh_cache="true">
 		<face>
@@ -1502,7 +1820,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1528,6 +1854,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Quinlan Vos"
 		face_mesh_cache="true">
 		<face>
@@ -1547,7 +1874,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1573,6 +1908,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Qui-Gon Jinn"
 		face_mesh_cache="true">
 		<face>
@@ -1592,7 +1928,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1618,6 +1962,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Tyvokka"
 		face_mesh_cache="true">
 		<face>
@@ -1637,7 +1982,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1663,6 +2016,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Gungi"
 		face_mesh_cache="true">
 		<face>
@@ -1682,7 +2036,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1710,6 +2072,7 @@
 		is_hero="true"
 		culture="Culture.212_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Obi-Wan Kenobi"
 		face_mesh_cache="true">
 		<face>
@@ -1729,7 +2092,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1755,6 +2126,7 @@
 		is_hero="true"
 		culture="Culture.212_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CC-2224 Cody"
 		face_mesh_cache="true">
 		<face>
@@ -1774,7 +2146,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1800,6 +2180,7 @@
 		is_hero="true"
 		culture="Culture.212_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Mekedrix"
 		face_mesh_cache="true">
 		<face>
@@ -1819,7 +2200,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1845,6 +2234,7 @@
 		is_hero="true"
 		culture="Culture.212_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CC-5576-39 Gregor"
 		face_mesh_cache="true">
 		<face>
@@ -1864,7 +2254,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1890,6 +2288,7 @@
 		is_hero="true"
 		culture="Culture.212_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-4887 Waxer"
 		face_mesh_cache="true">
 		<face>
@@ -1909,7 +2308,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1935,6 +2342,7 @@
 		is_hero="true"
 		culture="Culture.212_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-9147 Boil"
 		face_mesh_cache="true">
 		<face>
@@ -1954,7 +2362,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -1980,6 +2396,7 @@
 		is_hero="true"
 		culture="Culture.212_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-1143 Gearshift"
 		face_mesh_cache="true">
 		<face>
@@ -1999,7 +2416,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2025,6 +2450,7 @@
 		is_hero="true"
 		culture="Culture.212_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-4008 Longshot"
 		face_mesh_cache="true">
 		<face>
@@ -2044,7 +2470,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2070,6 +2504,7 @@
 		is_hero="true"
 		culture="Culture.212_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-6307 Trapper"
 		face_mesh_cache="true">
 		<face>
@@ -2089,7 +2524,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2115,6 +2558,7 @@
 		is_hero="true"
 		culture="Culture.212_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-9991 Wooley"
 		face_mesh_cache="true">
 		<face>
@@ -2134,7 +2578,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2162,6 +2614,7 @@
 		is_hero="true"
 		culture="Culture.104_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Plo Koon"
 		face_mesh_cache="true">
 		<face>
@@ -2181,7 +2634,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2207,6 +2668,7 @@
 		is_hero="true"
 		culture="Culture.104_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CC-3636 Wolffe"
 		face_mesh_cache="true">
 		<face>
@@ -2226,7 +2688,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2252,6 +2722,7 @@
 		is_hero="true"
 		culture="Culture.104_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-4860 Boost"
 		face_mesh_cache="true">
 		<face>
@@ -2271,7 +2742,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2297,6 +2776,7 @@
 		is_hero="true"
 		culture="Culture.104_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-8585 Comet"
 		face_mesh_cache="true">
 		<face>
@@ -2316,7 +2796,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2342,6 +2830,7 @@
 		is_hero="true"
 		culture="Culture.104_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-0036 Corvis"
 		face_mesh_cache="true">
 		<face>
@@ -2361,7 +2850,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2387,6 +2884,7 @@
 		is_hero="true"
 		culture="Culture.104_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-1057 Mortar"
 		face_mesh_cache="true">
 		<face>
@@ -2406,7 +2904,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2432,6 +2938,7 @@
 		is_hero="true"
 		culture="Culture.104_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-9736 Scope"
 		face_mesh_cache="true">
 		<face>
@@ -2451,7 +2958,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2477,6 +2992,7 @@
 		is_hero="true"
 		culture="Culture.104_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-8949 Sinker"
 		face_mesh_cache="true">
 		<face>
@@ -2496,7 +3012,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2522,6 +3046,7 @@
 		is_hero="true"
 		culture="Culture.104_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-1123 Sprint"
 		face_mesh_cache="true">
 		<face>
@@ -2541,7 +3066,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2567,6 +3100,7 @@
 		is_hero="true"
 		culture="Culture.104_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-0872 Umbra"
 		face_mesh_cache="true">
 		<face>
@@ -2586,7 +3120,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2612,6 +3154,7 @@
 		is_hero="true"
 		culture="Culture.104_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-7741 Warthog"
 		face_mesh_cache="true">
 		<face>
@@ -2631,7 +3174,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2657,6 +3208,7 @@
 		is_hero="true"
 		culture="Culture.104_battalion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-1701 Wildfire"
 		face_mesh_cache="true">
 		<face>
@@ -2676,7 +3228,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2704,6 +3264,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Anakin Skywalker"
 		face_mesh_cache="true">
 		<face>
@@ -2723,7 +3284,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2749,6 +3318,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CC-7567 Rex"
 		face_mesh_cache="true">
 		<face>
@@ -2768,7 +3338,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2794,6 +3372,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Ahsoka Tano"
 		face_mesh_cache="true">
 		<face>
@@ -2813,7 +3392,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2839,6 +3426,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-7716 Denal"
 		face_mesh_cache="true">
 		<face>
@@ -2858,7 +3446,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2884,6 +3480,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-6922 Dogma"
 		face_mesh_cache="true">
 		<face>
@@ -2903,7 +3500,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2929,6 +3534,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-1704 Cameron"
 		face_mesh_cache="true">
 		<face>
@@ -2948,7 +3554,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -2974,6 +3588,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-8009 Charger"
 		face_mesh_cache="true">
 		<face>
@@ -2993,7 +3608,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3019,6 +3642,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="ARC-1409 Echo"
 		face_mesh_cache="true">
 		<face>
@@ -3038,7 +3662,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3064,6 +3696,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="ARC-5555 Fives"
 		face_mesh_cache="true">
 		<face>
@@ -3083,7 +3716,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3109,6 +3750,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-6446 Hardcase"
 		face_mesh_cache="true">
 		<face>
@@ -3128,7 +3770,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3154,6 +3804,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-1217 Hawk"
 		face_mesh_cache="true">
 		<face>
@@ -3173,7 +3824,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3199,6 +3858,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-5597 Jesse"
 		face_mesh_cache="true">
 		<face>
@@ -3218,7 +3878,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3244,6 +3912,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-6116 Kix"
 		face_mesh_cache="true">
 		<face>
@@ -3263,7 +3932,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3289,6 +3966,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-6116 Kix"
 		face_mesh_cache="true">
 		<face>
@@ -3308,7 +3986,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3334,6 +4020,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-7777 Lucky"
 		face_mesh_cache="true">
 		<face>
@@ -3353,7 +4040,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3379,6 +4074,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-5334 Sterling"
 		face_mesh_cache="true">
 		<face>
@@ -3398,7 +4094,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3424,6 +4128,7 @@
 		is_hero="true"
 		culture="Culture.501_legion"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-5385 Tup"
 		face_mesh_cache="true">
 		<face>
@@ -3443,7 +4148,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3471,6 +4184,7 @@
 		is_hero="true"
 		culture="Culture.327_star"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Aayla Secura"
 		face_mesh_cache="true">
 		<face>
@@ -3490,7 +4204,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3516,6 +4238,7 @@
 		is_hero="true"
 		culture="Culture.327_star"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CC-5052 Bly"
 		face_mesh_cache="true">
 		<face>
@@ -3535,7 +4258,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3561,6 +4292,7 @@
 		is_hero="true"
 		culture="Culture.327_star"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-0301 Barr"
 		face_mesh_cache="true">
 		<face>
@@ -3580,7 +4312,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3606,6 +4346,7 @@
 		is_hero="true"
 		culture="Culture.327_star"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-0145 Flash"
 		face_mesh_cache="true">
 		<face>
@@ -3625,7 +4366,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3651,6 +4400,7 @@
 		is_hero="true"
 		culture="Culture.327_star"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CL-1010 Flash"
 		face_mesh_cache="true">
 		<face>
@@ -3670,7 +4420,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3696,6 +4454,7 @@
 		is_hero="true"
 		culture="Culture.327_star"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CL-4062 Inc"
 		face_mesh_cache="true">
 		<face>
@@ -3715,7 +4474,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3741,6 +4508,7 @@
 		is_hero="true"
 		culture="Culture.327_star"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-1212 Twelve"
 		face_mesh_cache="true">
 		<face>
@@ -3760,7 +4528,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3786,6 +4562,7 @@
 		is_hero="true"
 		culture="Culture.327_star"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-9204 Tyto"
 		face_mesh_cache="true">
 		<face>
@@ -3805,7 +4582,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3833,6 +4618,7 @@
 		is_hero="true"
 		culture="Culture.21_nova"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Ki-Adi-Mundi"
 		face_mesh_cache="true">
 		<face>
@@ -3852,7 +4638,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3878,6 +4672,7 @@
 		is_hero="true"
 		culture="Culture.21_nova"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CC-1138 Bacara"
 		face_mesh_cache="true">
 		<face>
@@ -3897,7 +4692,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3923,6 +4726,7 @@
 		is_hero="true"
 		culture="Culture.21_nova"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CC-2042 Keller"
 		face_mesh_cache="true">
 		<face>
@@ -3942,7 +4746,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -3968,6 +4780,7 @@
 		is_hero="true"
 		culture="Culture.21_nova"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-1209 Rothax"
 		face_mesh_cache="true">
 		<face>
@@ -3987,7 +4800,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4013,6 +4834,7 @@
 		is_hero="true"
 		culture="Culture.21_nova"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-4106 Toola"
 		face_mesh_cache="true">
 		<face>
@@ -4032,7 +4854,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4060,6 +4890,7 @@
 		is_hero="true"
 		culture="Culture.9_assault"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Luminara Unduli"
 		face_mesh_cache="true">
 		<face>
@@ -4079,7 +4910,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4105,6 +4944,7 @@
 		is_hero="true"
 		culture="Culture.9_assault"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Barriss Offee"
 		face_mesh_cache="true">
 		<face>
@@ -4124,7 +4964,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4150,6 +4998,7 @@
 		is_hero="true"
 		culture="Culture.9_assault"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Depa Billaba"
 		face_mesh_cache="true">
 		<face>
@@ -4169,7 +5018,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4195,6 +5052,7 @@
 		is_hero="true"
 		culture="Culture.9_assault"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Caleb Dume"
 		face_mesh_cache="true">
 		<face>
@@ -4214,7 +5072,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4240,6 +5106,7 @@
 		is_hero="true"
 		culture="Culture.9_assault"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CC-1004 Gree"
 		face_mesh_cache="true">
 		<face>
@@ -4259,7 +5126,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4285,6 +5160,7 @@
 		is_hero="true"
 		culture="Culture.9_assault"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-2116 Buzz"
 		face_mesh_cache="true">
 		<face>
@@ -4304,7 +5180,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4330,6 +5214,7 @@
 		is_hero="true"
 		culture="Culture.9_assault"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-5112 Draa"
 		face_mesh_cache="true">
 		<face>
@@ -4349,7 +5234,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4375,6 +5268,7 @@
 		is_hero="true"
 		culture="Culture.9_assault"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-4207 Kaylon"
 		face_mesh_cache="true">
 		<face>
@@ -4394,7 +5288,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4420,6 +5322,7 @@
 		is_hero="true"
 		culture="Culture.9_assault"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-9631 Mixx"
 		face_mesh_cache="true">
 		<face>
@@ -4439,7 +5342,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4465,6 +5376,7 @@
 		is_hero="true"
 		culture="Culture.9_assault"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-4718 Remo"
 		face_mesh_cache="true">
 		<face>
@@ -4484,7 +5396,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4510,6 +5430,7 @@
 		is_hero="true"
 		culture="Culture.9_assault"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-8416 Soot"
 		face_mesh_cache="true">
 		<face>
@@ -4529,7 +5450,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4555,6 +5484,7 @@
 		is_hero="true"
 		culture="Culture.9_assault"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-1157 Stance"
 		face_mesh_cache="true">
 		<face>
@@ -4574,7 +5504,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4600,6 +5538,7 @@
 		is_hero="true"
 		culture="Culture.9_assault"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CC-1286 Styles"
 		face_mesh_cache="true">
 		<face>
@@ -4619,7 +5558,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4645,6 +5592,7 @@
 		is_hero="true"
 		culture="Culture.9_assault"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-1010 Tenn"
 		face_mesh_cache="true">
 		<face>
@@ -4664,7 +5612,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4690,6 +5646,7 @@
 		is_hero="true"
 		culture="Culture.9_assault"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-5603 Jek"
 		face_mesh_cache="true">
 		<face>
@@ -4709,7 +5666,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4737,6 +5702,7 @@
 		is_hero="true"
 		culture="Culture.91_recon"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Mace Windu"
 		face_mesh_cache="true">
 		<face>
@@ -4756,7 +5722,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4782,6 +5756,7 @@
 		is_hero="true"
 		culture="Culture.91_recon"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Adi Gallia"
 		face_mesh_cache="true">
 		<face>
@@ -4801,7 +5776,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4827,6 +5810,7 @@
 		is_hero="true"
 		culture="Culture.91_recon"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Stass Allie"
 		face_mesh_cache="true">
 		<face>
@@ -4846,7 +5830,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4872,6 +5864,7 @@
 		is_hero="true"
 		culture="Culture.91_recon"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CC-8826 Neyo"
 		face_mesh_cache="true">
 		<face>
@@ -4891,7 +5884,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4917,6 +5918,7 @@
 		is_hero="true"
 		culture="Culture.91_recon"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-0587 Heater"
 		face_mesh_cache="true">
 		<face>
@@ -4936,7 +5938,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -4962,6 +5972,7 @@
 		is_hero="true"
 		culture="Culture.91_recon"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-3112 Pax"
 		face_mesh_cache="true">
 		<face>
@@ -4981,7 +5992,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5007,6 +6026,7 @@
 		is_hero="true"
 		culture="Culture.91_recon"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CC-411 Ponds"
 		face_mesh_cache="true">
 		<face>
@@ -5026,7 +6046,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5052,6 +6080,7 @@
 		is_hero="true"
 		culture="Culture.91_recon"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-6910 Razor"
 		face_mesh_cache="true">
 		<face>
@@ -5071,7 +6100,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5097,6 +6134,7 @@
 		is_hero="true"
 		culture="Culture.91_recon"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="CT-1617 Stak"
 		face_mesh_cache="true">
 		<face>
@@ -5116,7 +6154,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5144,6 +6190,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Lama Su"
 		face_mesh_cache="true">
 		<face>
@@ -5163,7 +6210,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5189,6 +6244,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Nala Se"
 		face_mesh_cache="true">
 		<face>
@@ -5208,7 +6264,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5234,6 +6298,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Nala Se"
 		face_mesh_cache="true">
 		<face>
@@ -5253,7 +6318,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5279,6 +6352,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Taun We"
 		face_mesh_cache="true">
 		<face>
@@ -5298,7 +6372,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5324,6 +6406,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Ko Sai"
 		face_mesh_cache="true">
 		<face>
@@ -5343,7 +6426,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5369,6 +6460,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Kal Skirata"
 		face_mesh_cache="true">
 		<face>
@@ -5388,7 +6480,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5414,6 +6514,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Munin Skirata"
 		face_mesh_cache="true">
 		<face>
@@ -5433,7 +6534,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5459,6 +6568,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="RC-1309"
 		face_mesh_cache="true">
 		<face>
@@ -5478,7 +6588,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5504,6 +6622,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="RC-3222 Atin"
 		face_mesh_cache="true">
 		<face>
@@ -5523,7 +6642,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5549,6 +6676,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="RC-8015 Fi"
 		face_mesh_cache="true">
 		<face>
@@ -5568,7 +6696,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5594,6 +6730,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Parja Bralor"
 		face_mesh_cache="true">
 		<face>
@@ -5613,7 +6750,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5639,6 +6784,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="RC-1136 Darman"
 		face_mesh_cache="true">
 		<face>
@@ -5658,7 +6804,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5684,6 +6838,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="N-12 A'den"
 		face_mesh_cache="true">
 		<face>
@@ -5703,7 +6858,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5729,6 +6892,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="RC-5108 Corr"
 		face_mesh_cache="true">
 		<face>
@@ -5748,7 +6912,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5774,6 +6946,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="N-10 Jaing"
 		face_mesh_cache="true">
 		<face>
@@ -5793,7 +6966,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5819,6 +7000,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="N-6 Kom'rk"
 		face_mesh_cache="true">
 		<face>
@@ -5838,7 +7020,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5864,6 +7054,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="N-7 Mereel"
 		face_mesh_cache="true">
 		<face>
@@ -5883,7 +7074,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5909,6 +7108,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="N-11 Ordo"
 		face_mesh_cache="true">
 		<face>
@@ -5928,7 +7128,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5954,6 +7162,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="N-5 Prudii"
 		face_mesh_cache="true">
 		<face>
@@ -5973,7 +7182,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -5999,6 +7216,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Walon Vau"
 		face_mesh_cache="true">
 		<face>
@@ -6018,7 +7236,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6044,6 +7270,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="RC-1138 Boss"
 		face_mesh_cache="true">
 		<face>
@@ -6063,7 +7290,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6089,6 +7324,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="RC-1207 Sev"
 		face_mesh_cache="true">
 		<face>
@@ -6108,7 +7344,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6134,6 +7378,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="RC-1140 Fixer"
 		face_mesh_cache="true">
 		<face>
@@ -6153,7 +7398,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6179,6 +7432,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="RC-1262 Scorch"
 		face_mesh_cache="true">
 		<face>
@@ -6198,7 +7452,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6224,6 +7486,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="ARC-6412 Blitz"
 		face_mesh_cache="true">
 		<face>
@@ -6243,7 +7506,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6269,6 +7540,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="ARC-1911 Colt"
 		face_mesh_cache="true">
 		<face>
@@ -6288,7 +7560,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6314,6 +7594,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="ARC-1742 Havoc"
 		face_mesh_cache="true">
 		<face>
@@ -6333,7 +7614,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6359,6 +7648,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Jango Fett"
 		face_mesh_cache="true">
 		<face>
@@ -6378,7 +7668,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6404,6 +7702,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="B'arin Ampa"
 		face_mesh_cache="true">
 		<face>
@@ -6423,7 +7722,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6449,6 +7756,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Mij Gilamar"
 		face_mesh_cache="true">
 		<face>
@@ -6468,7 +7776,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6494,6 +7810,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Dred Priest"
 		face_mesh_cache="true">
 		<face>
@@ -6513,7 +7830,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6539,6 +7864,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Wad'e Tay'haai"
 		face_mesh_cache="true">
 		<face>
@@ -6558,7 +7884,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6584,6 +7918,7 @@
 		is_hero="true"
 		culture="Culture.kamino"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Llats Ward"
 		face_mesh_cache="true">
 		<face>
@@ -6603,7 +7938,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6630,6 +7973,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Jamillia Jamillia"
 		face_mesh_cache="true">
 		<face>
@@ -6649,7 +7993,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6675,6 +8027,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Jamillia Jamillia"
 		face_mesh_cache="true">
 		<face>
@@ -6694,7 +8047,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6720,6 +8081,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Ryoo Naberrie"
 		face_mesh_cache="true">
 		<face>
@@ -6739,7 +8101,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6765,6 +8135,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Cosinga Palpatine"
 		face_mesh_cache="true">
 		<face>
@@ -6784,7 +8155,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6810,6 +8189,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Otoh Binks"
 		face_mesh_cache="true">
 		<face>
@@ -6829,7 +8209,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6855,6 +8243,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="George R Binks"
 		face_mesh_cache="true">
 		<face>
@@ -6874,7 +8263,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6900,6 +8297,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Ruwee Naberrie"
 		face_mesh_cache="true">
 		<face>
@@ -6919,7 +8317,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6945,6 +8351,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Jobal Naberrie"
 		face_mesh_cache="true">
 		<face>
@@ -6964,7 +8371,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -6990,6 +8405,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Sola Naberrie"
 		face_mesh_cache="true">
 		<face>
@@ -7009,7 +8425,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7035,6 +8459,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Darred Naberrie"
 		face_mesh_cache="true">
 		<face>
@@ -7054,7 +8479,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7080,6 +8513,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Sio Bibble"
 		face_mesh_cache="true">
 		<face>
@@ -7099,7 +8533,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7125,6 +8567,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Hela Brandes"
 		face_mesh_cache="true">
 		<face>
@@ -7144,7 +8587,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7170,6 +8621,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Hugo Eckener"
 		face_mesh_cache="true">
 		<face>
@@ -7189,7 +8641,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7215,6 +8675,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Lialla Tane"
 		face_mesh_cache="true">
 		<face>
@@ -7234,7 +8695,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7260,6 +8729,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Lucos Dannt"
 		face_mesh_cache="true">
 		<face>
@@ -7279,7 +8749,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7305,6 +8783,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Mett Habble"
 		face_mesh_cache="true">
 		<face>
@@ -7324,7 +8803,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7350,6 +8837,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Quarsh Panaka"
 		face_mesh_cache="true">
 		<face>
@@ -7369,7 +8857,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7395,6 +8891,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Mariek Panaka"
 		face_mesh_cache="true">
 		<face>
@@ -7414,7 +8911,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7440,6 +8945,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Lufta Shif"
 		face_mesh_cache="true">
 		<face>
@@ -7459,7 +8965,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7485,6 +8999,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Gregar Typho"
 		face_mesh_cache="true">
 		<face>
@@ -7504,7 +9019,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7530,6 +9053,7 @@
 		is_hero="true"
 		culture="Culture.naboo"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Horace Vancil"
 		face_mesh_cache="true">
 		<face>
@@ -7549,7 +9073,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7577,6 +9109,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Grakchawwaa"
 		face_mesh_cache="true">
 		<face>
@@ -7596,7 +9129,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7622,6 +9163,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Attimun"
 		face_mesh_cache="true">
 		<face>
@@ -7641,7 +9183,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7667,6 +9217,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Chewbacca"
 		face_mesh_cache="true">
 		<face>
@@ -7686,7 +9237,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7712,6 +9271,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Attichitcuk"
 		face_mesh_cache="true">
 		<face>
@@ -7731,7 +9291,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7757,6 +9325,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Mallatobuck"
 		face_mesh_cache="true">
 		<face>
@@ -7776,7 +9345,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7802,6 +9379,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Eugroothwa"
 		face_mesh_cache="true">
 		<face>
@@ -7821,7 +9399,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7847,6 +9433,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Grabow"
 		face_mesh_cache="true">
 		<face>
@@ -7866,7 +9453,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7892,6 +9487,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Alrrark"
 		face_mesh_cache="true">
 		<face>
@@ -7911,7 +9507,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7937,6 +9541,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Guania"
 		face_mesh_cache="true">
 		<face>
@@ -7956,7 +9561,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -7982,6 +9595,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Guanta"
 		face_mesh_cache="true">
 		<face>
@@ -8001,7 +9615,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -8027,6 +9649,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Gumbaeki"
 		face_mesh_cache="true">
 		<face>
@@ -8046,7 +9669,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -8072,6 +9703,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Lachichuk"
 		face_mesh_cache="true">
 		<face>
@@ -8091,7 +9723,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -8117,6 +9757,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Tarfful"
 		face_mesh_cache="true">
 		<face>
@@ -8136,7 +9777,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -8162,6 +9811,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Merumeru"
 		face_mesh_cache="true">
 		<face>
@@ -8181,7 +9831,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -8207,6 +9865,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Clausito"
 		face_mesh_cache="true">
 		<face>
@@ -8226,7 +9885,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -8254,6 +9921,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Mitth'ras'safis"
 		face_mesh_cache="true">
 		<face>
@@ -8273,7 +9941,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -8299,6 +9975,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Mitth'raw'nuruodo"
 		face_mesh_cache="true">
 		<face>
@@ -8318,7 +9995,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -8344,6 +10029,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Mitth'oor'akiord"
 		face_mesh_cache="true">
 		<face>
@@ -8363,7 +10049,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -8389,6 +10083,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Cohbo'rik'ardok"
 		face_mesh_cache="true">
 		<face>
@@ -8408,7 +10103,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -8434,6 +10137,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Irizi'ar'alani"
 		face_mesh_cache="true">
 		<face>
@@ -8453,7 +10157,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -8479,6 +10191,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Dy'lothe"
 		face_mesh_cache="true">
 		<face>
@@ -8498,7 +10211,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
@@ -8524,6 +10245,7 @@
 		is_hero="true"
 		culture="Culture.galactic_republic"
 		occupation="Lord"
+		skill_template="SkillSet.spc_tactician_skills"
 		name="Tumaz'mor'diamir"
 		face_mesh_cache="true">
 		<face>
@@ -8543,7 +10265,15 @@
 		</face>
 		<skills></skills>
 		<Traits>
-			<Trait id="Commander" value="6" />
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
