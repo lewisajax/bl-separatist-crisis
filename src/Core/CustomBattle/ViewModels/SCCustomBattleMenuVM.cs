@@ -1,22 +1,25 @@
 ﻿using SandBox.ViewModelCollection.Input;
-using SeparatistCrisis.Missions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TaleWorlds.Core;
+using TaleWorlds.Core.ViewModelCollection.Information;
 using TaleWorlds.InputSystem;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.MountAndBlade.CustomBattle;
 using TaleWorlds.MountAndBlade.CustomBattle.CustomBattle;
+using TaleWorlds.MountAndBlade.View.CustomBattle;
 
 namespace SeparatistCrisis.CustomBattle
 {
     public class SCCustomBattleMenuVM : ViewModel
     {
+        private readonly ICustomBattleProvider _nextCustomBattleProvider;
+
         private CustomBattleState _customBattleState;
 
         private SCTroopSelectionPopUpVM _troopTypeSelectionPopUp = null!;
@@ -40,6 +43,12 @@ namespace SeparatistCrisis.CustomBattle
         private string _startButtonText = null!;
 
         private string _titleText = null!;
+
+        private string _switchButtonText;
+
+        private bool _CanSwitchMode;
+
+        private HintViewModel _switchHint;
 
         private MBBindingList<CustomBattleSiegeMachineVM> _attackerMeleeMachines = null!;
 
@@ -116,6 +125,45 @@ namespace SeparatistCrisis.CustomBattle
                     _randomizeInputKey = value;
                     OnPropertyChangedWithValue(value, "RandomizeInputKey");
                 }
+            }
+        }
+
+        [DataSourceProperty]
+        public string SwitchButtonText
+        {
+            get => this._switchButtonText;
+            set
+            {
+                if (!(value != this._switchButtonText))
+                    return;
+                this._switchButtonText = value;
+                this.OnPropertyChangedWithValue<string>(value, nameof(SwitchButtonText));
+            }
+        }
+
+        [DataSourceProperty]
+        public bool CanSwitchMode
+        {
+            get => this._CanSwitchMode;
+            set
+            {
+                if (value == this._CanSwitchMode)
+                    return;
+                this._CanSwitchMode = value;
+                this.OnPropertyChangedWithValue(value, nameof(CanSwitchMode));
+            }
+        }
+
+        [DataSourceProperty]
+        public HintViewModel SwitchHint
+        {
+            get => this._switchHint;
+            set
+            {
+                if (value == this._switchHint)
+                    return;
+                this._switchHint = value;
+                this.OnPropertyChangedWithValue<HintViewModel>(value, nameof(SwitchHint));
             }
         }
 
@@ -367,7 +415,7 @@ namespace SeparatistCrisis.CustomBattle
             PlayerSide.OppositeSide = EnemySide;
             EnemySide.OppositeSide = PlayerSide;
             MapSelectionGroup = new MapSelectionGroupVM();
-            GameTypeSelectionGroup = new GameTypeSelectionGroupVM(new Action<CustomBattlePlayerType>(OnPlayerTypeChange), new Action<CustomBattleGameType>(OnGameTypeChange));
+            GameTypeSelectionGroup = new GameTypeSelectionGroupVM(new Action<CustomBattlePlayerType>(OnPlayerTypeChange), new Action<string>(OnGameTypeChange));
 
             AttackerMeleeMachines = new MBBindingList<CustomBattleSiegeMachineVM>();
             for (int i = 0; i < 3; i++)
@@ -385,6 +433,13 @@ namespace SeparatistCrisis.CustomBattle
             for (int k = 0; k < 4; k++)
             {
                 DefenderMachines.Add(new CustomBattleSiegeMachineVM(null, new Action<CustomBattleSiegeMachineVM>(OnDefenderRangedMachineSelection), new Action<CustomBattleSiegeMachineVM>(OnResetMachineSelection)));
+            }
+
+            this.CanSwitchMode = CustomBattleFactory.GetProviderCount() > 1;
+            if (this.CanSwitchMode)
+            {
+                this._nextCustomBattleProvider = CustomBattleFactory.CollectNextProvider(typeof(CustomBattleProvider));
+                this.SwitchHint = new HintViewModel(new TextObject("{=Jfe53wbr}Switch to {PROVIDER_NAME}").SetTextVariable("PROVIDER_NAME", this._nextCustomBattleProvider.GetName()));
             }
 
             RefreshValues();
@@ -457,9 +512,9 @@ namespace SeparatistCrisis.CustomBattle
             PlayerSide.OnPlayerTypeChange(playerType);
         }
 
-        private void OnGameTypeChange(CustomBattleGameType gameType)
+        private void OnGameTypeChange(string gameTypeStringId)
         {
-            MapSelectionGroup.OnGameTypeChange(gameType);
+            MapSelectionGroup.OnGameTypeChange(gameTypeStringId);
         }
 
         public override void RefreshValues()
@@ -468,6 +523,7 @@ namespace SeparatistCrisis.CustomBattle
             RandomizeButtonText = GameTexts.FindText("str_randomize", null).ToString();
             StartButtonText = GameTexts.FindText("str_start", null).ToString();
             BackButtonText = GameTexts.FindText("str_back", null).ToString();
+            this.SwitchButtonText = GameTexts.FindText("str_switch").ToString();
             TitleText = GameTexts.FindText("str_custom_battle", null).ToString();
             EnemySide.RefreshValues();
             PlayerSide.RefreshValues();
@@ -505,7 +561,7 @@ namespace SeparatistCrisis.CustomBattle
             {
                 list.Add(new InquiryElement(siegeEngineType, siegeEngineType.Name.ToString(), null));
             }
-            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData(new TextObject("{=MVOWsP48}Select a Melee Machine", null).ToString(), string.Empty, list, false, 1, 1, GameTexts.FindText("str_done", null).ToString(), "", delegate (List<InquiryElement> selectedElements)
+            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData(new TextObject("{=MVOWsP48}Select a Melee Machine", null).ToString(), string.Empty, list, true, 1, 1, GameTexts.FindText("str_done", null).ToString(), "", delegate (List<InquiryElement> selectedElements)
             {
                 CustomBattleSiegeMachineVM selectedSlot2 = selectedSlot;
                 InquiryElement? inquiryElement = selectedElements.FirstOrDefault();
@@ -521,7 +577,7 @@ namespace SeparatistCrisis.CustomBattle
             {
                 list.Add(new InquiryElement(siegeEngineType, siegeEngineType.Name.ToString(), null));
             }
-            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData(new TextObject("{=SLZzfNPr}Select a Ranged Machine", null).ToString(), string.Empty, list, false, 1, 1, GameTexts.FindText("str_done", null).ToString(), "", delegate (List<InquiryElement> selectedElements)
+            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData(new TextObject("{=SLZzfNPr}Select a Ranged Machine", null).ToString(), string.Empty, list, true, 1, 1, GameTexts.FindText("str_done", null).ToString(), "", delegate (List<InquiryElement> selectedElements)
             {
                 CustomBattleSiegeMachineVM selectedSlot2 = selectedSlot;
                 InquiryElement? inquiryElement = selectedElements.FirstOrDefault();
@@ -537,7 +593,7 @@ namespace SeparatistCrisis.CustomBattle
             {
                 list.Add(new InquiryElement(siegeEngineType, siegeEngineType.Name.ToString(), null));
             }
-            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData(new TextObject("{=SLZzfNPr}Select a Ranged Machine", null).ToString(), string.Empty, list, false, 1, 1, GameTexts.FindText("str_done", null).ToString(), "", delegate (List<InquiryElement> selectedElements)
+            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData(new TextObject("{=SLZzfNPr}Select a Ranged Machine", null).ToString(), string.Empty, list, true, 1, 1, GameTexts.FindText("str_done", null).ToString(), "", delegate (List<InquiryElement> selectedElements)
             {
                 CustomBattleSiegeMachineVM selectedSlot2 = selectedSlot;
                 InquiryElement? inquiryElement = selectedElements.FirstOrDefault();
@@ -576,8 +632,8 @@ namespace SeparatistCrisis.CustomBattle
 
         public void ExecuteBack()
         {
-            Debug.Print("EXECUTE BACK - PRESSED", 0, Debug.DebugColor.Green, 17592186044416UL);
-            Game.Current.GameStateManager.PopState(0);
+            Debug.Print("EXECUTE BACK - PRESSED", color: Debug.DebugColor.Green);
+            Game.Current.GameStateManager.PopState();
         }
 
         private CustomBattleData PrepareBattleData()
@@ -614,7 +670,7 @@ namespace SeparatistCrisis.CustomBattle
             List<MissionSiegeWeapon>? list2 = null;
             float[]? wallHitPointsPercentages = null;
 
-            if (GameTypeSelectionGroup.SelectedGameType == CustomBattleGameType.Siege)
+            if (this.GameTypeSelectionGroup.SelectedGameTypeString == "Siege")
             {
                 list = new List<MissionSiegeWeapon>();
                 list2 = new List<MissionSiegeWeapon>();
@@ -626,7 +682,7 @@ namespace SeparatistCrisis.CustomBattle
 
             return CustomBattleHelper.PrepareBattleData(selectedCharacter, playerSideGeneralCharacter, 
                 customBattleParties[0], customBattleParties[1], GameTypeSelectionGroup.SelectedPlayerSide, 
-                GameTypeSelectionGroup.SelectedPlayerType, GameTypeSelectionGroup.SelectedGameType, 
+                GameTypeSelectionGroup.SelectedPlayerType, this.GameTypeSelectionGroup.SelectedGameTypeString, 
                 MapSelectionGroup.SelectedMap.MapId, MapSelectionGroup.SelectedSeasonId, 
                 MapSelectionGroup.SelectedTimeOfDay, list, list2, wallHitPointsPercentages, 
                 MapSelectionGroup.SelectedSceneLevel, MapSelectionGroup.IsSallyOutSelected);
@@ -634,7 +690,7 @@ namespace SeparatistCrisis.CustomBattle
 
         public void ExecuteStart()
         {
-            SCCustomBattles.StartGame(PrepareBattleData());
+            CustomBattleHelper.StartGame(PrepareBattleData());
             Debug.Print("EXECUTE START - PRESSED", 0, Debug.DebugColor.Green, 17592186044416UL);
         }
 
@@ -672,6 +728,15 @@ namespace SeparatistCrisis.CustomBattle
                 return;
             }
             troopTypeSelectionPopUp.OnFinalize();
+        }
+
+        public void ExecuteSwitchToNextCustomBattle()
+        {
+            if (!this.CanSwitchMode)
+                return;
+            this.ExecuteBack();
+            GameStateManager.Current = Module.CurrentModule.GlobalGameStateManager;
+            this._nextCustomBattleProvider.StartCustomBattle();
         }
 
         public void SetStartInputKey(HotKey hotkey)

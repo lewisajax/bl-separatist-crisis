@@ -3,6 +3,7 @@
     <Parameter Name="SliderImage" DefaultValue="General\compass\HorseArcher_Light" />
     <Parameter Name="CompositionDataSource" DefaultValue=""/>
     <Parameter Name="InvalidHintDataSource" DefaultValue=""/>
+	<Parameter Name="ShowLock" DefaultValue="true"/>
   </Parameters>
   <Variables>
   </Variables>
@@ -43,11 +44,14 @@
 
             <CustomBattleSliderLockButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" MarginLeft="0" SuggestedHeight="40" Brush="CustomBattle.Slider.Lock.Opened" ButtonType="Toggle" ToggleIndicator="ToggleIndicator" IsVisible="true" IsSelected="@IsLocked" IsEnabled="@IsValid" UpdateChildrenStates="true" LockOpenedBrush="CustomBattle.Slider.Lock.Opened" LockClosedBrush="CustomBattle.Slider.Lock.Closed" GamepadNavigationIndex="1"/>
 
-            <IntegerInputTextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="70" SuggestedHeight="30" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="CustomBattle.SliderValue.Text" IntText="@CompositionValue" MaxInt="100" MinInt="0" EnableClamp="true" ClipContents="false" IsDisabled="@IsLocked" UpdateChildrenStates="true" DoNotPassEventsToChildren="true" MaxLength="4" GamepadNavigationIndex="2">
+			<!--Padding When Lock Is Invisible-->
+			<Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="21" SuggestedHeight="40" IsHidden="*ShowLock"/>
+
+			<IntegerInputPercentageTextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="70" SuggestedHeight="30" HorizontalAlignment="Right" VerticalAlignment="Center" MarginBottom="8" Brush="CustomBattle.SliderValue.Text" IntText="@CompositionValue" PercentageText="@CompositionValuePercentageText" MaxInt="100" MinInt="0" EnableClamp="true" ClipContents="false" IsDisabled="@IsLocked" UpdateChildrenStates="true" DoNotPassEventsToChildren="true" MaxLength="4" GamepadNavigationIndex="2">
               <Children>
                 <BrushWidget  WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="CustomBattle.SliderValue.Input" ClipContents="false"/>
               </Children>
-            </IntegerInputTextWidget>
+            </IntegerInputPercentageTextWidget>
 
           </Children>
         </ListPanel>
@@ -67,7 +71,7 @@
                         <!--Troop Card-->
                         <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="24" IsVisible="@IsSelected">
                           <Children>
-                            <ImageIdentifierWidget DataSource="{Visual}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" />
+                            <ImageIdentifierWidget DataSource="{Visual}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AdditionalArgs="@AdditionalArgs" ImageId="@Id" TextureProviderName="@TextureProviderName" />
                             <HintWidget DataSource="{NameHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
                           </Children>
                         </Widget>

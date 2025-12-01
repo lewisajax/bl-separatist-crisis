@@ -395,7 +395,7 @@ namespace SeparatistCrisis.CustomBattle
 
         public void ExecuteRandomize()
         {
-            this.ArmySize = MBRandom.RandomInt(this.MaxArmySize);
+            this.ArmySize = MBRandom.RandomInt(this.MinArmySize, this.MaxArmySize);
             int num = MBRandom.RandomInt(100);
             int num2 = MBRandom.RandomInt(100);
             int num3 = MBRandom.RandomInt(100);
@@ -413,9 +413,8 @@ namespace SeparatistCrisis.CustomBattle
 
         public void OnPlayerTypeChange(CustomBattlePlayerType playerType)
         {
-            bool flag = this.ArmySize == this.MinArmySize;
             this.MinArmySize = ((playerType == CustomBattlePlayerType.Commander) ? 1 : 2);
-            this.ArmySize = (flag ? this.MinArmySize : this._armySize);
+            this.ArmySize = (int)TaleWorlds.Library.MathF.Clamp((float)this.ArmySize, (float)this.MinArmySize, (float)this.MaxArmySize);
         }
     }
 }

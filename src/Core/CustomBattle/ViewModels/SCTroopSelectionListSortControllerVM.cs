@@ -17,7 +17,7 @@ namespace SeparatistCrisis.CustomBattle
 {
     public class SCTroopSelectionListSortControllerVM : ViewModel
     {
-        private TextObject _sortedValueLabel = TextObject.Empty;
+        private TextObject _sortedValueLabel = TextObject.GetEmpty();
 
         private MBBindingList<SCTroopSelectionListItemVM> _items;
 

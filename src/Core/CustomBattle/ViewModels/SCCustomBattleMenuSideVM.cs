@@ -342,7 +342,7 @@ namespace SeparatistCrisis.CustomBattle
             {
                 CurrentSelectedCharacter.ArmorColor1 = faction.Color;
                 CurrentSelectedCharacter.ArmorColor2 = faction.Color2;
-                CurrentSelectedCharacter.BannerCodeText = faction.BannerKey;
+                CurrentSelectedCharacter.BannerCodeText = faction.Banner.BannerCode;
             }
 
             if (faction != null)
@@ -401,13 +401,16 @@ namespace SeparatistCrisis.CustomBattle
         public void UpdateCharacterVisual()
         {
             CurrentSelectedCharacter = new CharacterViewModel(CharacterViewModel.StanceTypes.EmphasizeFace);
-            CurrentSelectedCharacter.FillFrom(SelectedCharacter, -1);
-            SelectorVM<SCFactionItemVM> factionSelectionGroup = FactionSelectionGroup;
+            this.CurrentSelectedCharacter.FillFrom(this.SelectedCharacter, bannerCode: this.FactionSelectionGroup?.SelectedItem?.Faction.Banner.BannerCode);
+            SelectorVM<SCFactionItemVM>? factionSelectionGroup = FactionSelectionGroup;
             if ((factionSelectionGroup != null ? factionSelectionGroup.SelectedItem : null) != null)
             {
-                CurrentSelectedCharacter.ArmorColor1 = FactionSelectionGroup.SelectedItem.Faction.Color;
-                CurrentSelectedCharacter.ArmorColor2 = FactionSelectionGroup.SelectedItem.Faction.Color2;
-                CurrentSelectedCharacter.BannerCodeText = FactionSelectionGroup.SelectedItem.Faction.BannerKey;
+                if (this.FactionSelectionGroup != null)
+                {
+                    CurrentSelectedCharacter.ArmorColor1 = this.FactionSelectionGroup.SelectedItem.Faction.Color;
+                    CurrentSelectedCharacter.ArmorColor2 = this.FactionSelectionGroup.SelectedItem.Faction.Color2;
+                    CurrentSelectedCharacter.BannerCodeText = this.FactionSelectionGroup.SelectedItem.Faction.Banner.BannerCode;
+                }
             }
             ArmorsList.Clear();
             ArmorsList.Add(new CharacterEquipmentItemVM(SelectedCharacter.Equipment[EquipmentIndex.NumAllWeaponSlots].Item));

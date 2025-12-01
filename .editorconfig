@@ -276,9 +276,6 @@ csharp_prefer_system_threading_lock = true:suggestion
 # CA1819: Properties should not return arrays
 dotnet_diagnostic.CA1819.severity = suggestion
 
-# CA1864: Prefer the 'IDictionary.TryAdd(TKey, TValue)' method
-dotnet_diagnostic.CA1864.severity = silent
-
 [*.{cs,vb}]
 dotnet_style_operator_placement_when_wrapping = beginning_of_line
 tab_width = 4

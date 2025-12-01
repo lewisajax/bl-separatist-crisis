@@ -25,7 +25,7 @@ namespace SeparatistCrisis.CustomBattle
 
         private GauntletLayer? _gauntletLayer;
 
-        private IGauntletMovie? _gauntletMovie;
+        private GauntletMovieIdentifier? _gauntletMovie;
 
         private SCCustomBattleMenuVM? _dataSource;
 
@@ -73,9 +73,9 @@ namespace SeparatistCrisis.CustomBattle
 
             SpriteData spriteData = UIResourceManager.SpriteData;
             SpriteCategory spriteCategory = spriteData.SpriteCategories["ui_encyclopedia"];
-            spriteCategory.Load(UIResourceManager.ResourceContext, UIResourceManager.UIResourceDepot);
+            spriteCategory.Load(UIResourceManager.ResourceContext, UIResourceManager.ResourceDepot);
 
-            _gauntletLayer = new GauntletLayer(1, "GauntletLayer", true);
+            this._gauntletLayer = new GauntletLayer(1, shouldClear: true);
             _gauntletLayer.Input.RegisterHotKeyCategory(HotKeyManager.GetCategory("GenericPanelGameKeyCategory"));
             _gauntletLayer.Input.RegisterHotKeyCategory(HotKeyManager.GetCategory("GenericCampaignPanelsGameKeyCategory"));
 
@@ -84,65 +84,62 @@ namespace SeparatistCrisis.CustomBattle
             _gauntletLayer.InputRestrictions.SetInputRestrictions(true, InputUsageMask.All);
             _dataSource.SetActiveState(true);
             AddLayer(_gauntletLayer);
+            InformationManager.HideAllMessages();
         }
 
         protected override void OnFrameTick(float dt)
         {
             base.OnFrameTick(dt);
-            if (_isFirstFrameCounter >= 0)
+            if (this._isFirstFrameCounter >= 0)
             {
-                if (_isFirstFrameCounter == 0)
+                if (this._isFirstFrameCounter == 0)
                 {
                     LoadingWindow.DisableGlobalLoadingWindow();
                 }
-                else
-                {
-                    _shouldTickLayersThisFrame = false;
-                }
-                _isFirstFrameCounter--;
+                this._isFirstFrameCounter--;
             }
-            if (_gauntletLayer != null && _dataSource != null && !_gauntletLayer.IsFocusedOnInput())
+            if (!this._gauntletLayer.IsFocusedOnInput())
             {
                 SCTroopSelectionPopUpVM troopTypeSelectionPopUp = _dataSource.TroopTypeSelectionPopUp;
                 if (troopTypeSelectionPopUp != null && troopTypeSelectionPopUp.IsOpen)
                 {
-                    if (_gauntletLayer.Input.IsHotKeyDownAndReleased("Exit"))
+                    if (this._gauntletLayer.Input.IsHotKeyReleased("Exit"))
                     {
                         UISoundsHelper.PlayUISound("event:/ui/default");
-                        _dataSource.TroopTypeSelectionPopUp.ExecuteCancel();
+                        this._dataSource.TroopTypeSelectionPopUp.ExecuteCancel();
                         return;
                     }
-                    if (_gauntletLayer.Input.IsHotKeyDownAndReleased("Confirm"))
+                    if (this._gauntletLayer.Input.IsHotKeyReleased("Confirm"))
                     {
                         UISoundsHelper.PlayUISound("event:/ui/default");
-                        _dataSource.TroopTypeSelectionPopUp.ExecuteDone();
+                        this._dataSource.TroopTypeSelectionPopUp.ExecuteDone();
                         return;
                     }
-                    if (_gauntletLayer.Input.IsHotKeyDownAndReleased("Reset"))
+                    if (this._gauntletLayer.Input.IsHotKeyReleased("Reset"))
                     {
                         UISoundsHelper.PlayUISound("event:/ui/default");
-                        _dataSource.TroopTypeSelectionPopUp.ExecuteReset();
+                        this._dataSource.TroopTypeSelectionPopUp.ExecuteReset();
                         return;
                     }
                 }
                 else
                 {
-                    if (_gauntletLayer.Input.IsHotKeyDownAndReleased("Exit"))
+                    if (this._gauntletLayer.Input.IsHotKeyReleased("Exit"))
                     {
                         UISoundsHelper.PlayUISound("event:/ui/default");
-                        _dataSource.ExecuteBack();
+                        this._dataSource.ExecuteBack();
                         return;
                     }
-                    if (_gauntletLayer.Input.IsHotKeyDownAndReleased("Randomize"))
+                    if (this._gauntletLayer.Input.IsHotKeyReleased("Randomize"))
                     {
                         UISoundsHelper.PlayUISound("event:/ui/default");
-                        _dataSource.ExecuteRandomize();
+                        this._dataSource.ExecuteRandomize();
                         return;
                     }
-                    if (_gauntletLayer.Input.IsHotKeyDownAndReleased("Confirm"))
+                    if (this._gauntletLayer.Input.IsHotKeyReleased("Confirm"))
                     {
                         UISoundsHelper.PlayUISound("event:/ui/default");
-                        _dataSource.ExecuteStart();
+                        this._dataSource.ExecuteStart();
                     }
                 }
             }

@@ -18,7 +18,7 @@ namespace SeparatistCrisis.CustomBattle
 
         private string _selectedFactionName = null!;
 
-        public FactionItemVM SelectedItem { get; set; }
+        private FactionItemVM? _selectedItem;
 
         [DataSourceProperty]
         public MBBindingList<FactionItemVM> Factions
@@ -54,6 +54,24 @@ namespace SeparatistCrisis.CustomBattle
             }
         }
 
+        [DataSourceProperty]
+        public FactionItemVM? SelectedItem
+        {
+            get => this._selectedItem;
+            set
+            {
+                if (value == this._selectedItem)
+                    return;
+                if (this._selectedItem != null)
+                    this._selectedItem.IsSelected = false;
+                this._selectedItem = value;
+                this.OnPropertyChangedWithValue<FactionItemVM?>(value, nameof(SelectedItem));
+                if (this._selectedItem == null)
+                    return;
+                this._selectedItem.IsSelected = true;
+            }
+        }
+
         public SCCustomBattleFactionSelectionVM(Action<BasicCultureObject> onSelectionChanged)
         {
             _onSelectionChanged = onSelectionChanged;
@@ -64,28 +82,29 @@ namespace SeparatistCrisis.CustomBattle
             }
             SelectedItem = Factions[0];
             SelectFaction(0);
-            Factions.ApplyActionOnAllItems(delegate (FactionItemVM x)
-            {
-                x.RefreshValues();
-            });
+            this.RefreshValues();
         }
 
         public override void RefreshValues()
         {
             base.RefreshValues();
-            FactionItemVM selectedItem = SelectedItem;
+            FactionItemVM? selectedItem = SelectedItem;
 
             if (selectedItem != null)
                 SelectedFactionName = selectedItem.Faction.Name.ToString();
             else
                 SelectedFactionName = string.Empty;
+
+            this.Factions.ApplyActionOnAllItems((Action<FactionItemVM>)(x => x.RefreshValues()));
         }
 
         public void SelectFaction(int index)
         {
             if (index >= 0 && index < Factions.Count)
             {
-                SelectedItem.IsSelected = false;
+                if (this.SelectedItem != null)
+                    SelectedItem.IsSelected = false;
+
                 SelectedItem = Factions[index];
                 SelectedItem.IsSelected = true;
             }

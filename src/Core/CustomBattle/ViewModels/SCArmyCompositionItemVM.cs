@@ -49,6 +49,8 @@ namespace SeparatistCrisis.CustomBattle
 
         private bool _isValid;
 
+        private string _compositionValuePercentageText;
+
         public Action? OnDone { get; set; }
 
         public SCTroopSelectionItemListVM? ItemListVM { get; private set; }
@@ -155,6 +157,19 @@ namespace SeparatistCrisis.CustomBattle
             }
         }
 
+        [DataSourceProperty]
+        public string CompositionValuePercentageText
+        {
+            get => this._compositionValuePercentageText;
+            set
+            {
+                if (!(value != this._compositionValuePercentageText))
+                    return;
+                this._compositionValuePercentageText = value;
+                this.OnPropertyChangedWithValue<string>(value, nameof(CompositionValuePercentageText));
+            }
+        }
+
         public SCArmyCompositionItemVM(CompositionType type, List<BasicCharacterObject> allCharacterObjects, MBReadOnlyList<SkillObject> allSkills, Action<int, int> onCompositionValueChanged, Action onPopUpDone, SCTroopSelectionPopUpVM troopTypeSelectionPopUp, SCTroopSelectionItemListVM? itemList, int[] compositionValues)
         {
             _allCharacterObjects = allCharacterObjects;
@@ -165,8 +180,9 @@ namespace SeparatistCrisis.CustomBattle
             _compositionValues = compositionValues;
             _typeIconData = GetTroopTypeIconData(type, false);
             TroopTypes = new MBBindingList<CustomBattleTroopTypeVM>();
-            InvalidHint = new HintViewModel(new TextObject("{=iSQTtNUD}This faction doesn't have this troop type.", null), null);
-            AddTroopTypeHint = new HintViewModel(new TextObject("{=eMbuGGus}Select troops to spawn in formation.", null), null);
+            this.InvalidHint = new HintViewModel(new TextObject("{=iSQTtNUD}This faction doesn't have this troop type."));
+            this.AddTroopTypeHint = new HintViewModel(new TextObject("{=eMbuGGus}Select troops to spawn in formation."));
+            this.UpdatePercentageText(this._compositionValues[(int)this._type]);
             ItemListVM = itemList;
             OnDone = onPopUpDone;
         }
@@ -252,7 +268,14 @@ namespace SeparatistCrisis.CustomBattle
 
         public void RefreshCompositionValue()
         {
-            OnPropertyChanged("CompositionValue");
+            this.OnPropertyChanged("CompositionValue");
+            this.UpdatePercentageText(this._compositionValues[(int)this._type]);
+        }
+
+        private void UpdatePercentageText(int percentage)
+        {
+            int variable = (int)TaleWorlds.Library.MathF.Clamp((float)percentage, 0.0f, 100f);
+            this.CompositionValuePercentageText = GameTexts.FindText("str_NUMBER_percent").SetTextVariable("NUMBER", variable).ToString();
         }
 
         private void OnValidityChanged(bool value)
@@ -336,7 +359,7 @@ namespace SeparatistCrisis.CustomBattle
 
         public static StringItemWithHintVM GetTroopTypeIconData(CompositionType type, bool isBig = false)
         {
-            TextObject textObject = TextObject.Empty;
+            TextObject textObject = TextObject.GetEmpty();
             string str;
             switch (type)
             {
@@ -357,7 +380,7 @@ namespace SeparatistCrisis.CustomBattle
                     textObject = GameTexts.FindText("str_troop_type_name", "HorseArcher");
                     break;
                 default:
-                    return new StringItemWithHintVM("", TextObject.Empty);
+                    return new StringItemWithHintVM("", TextObject.GetEmpty());
             }
             return new StringItemWithHintVM("General\\TroopTypeIcons\\icon_troop_type_" + str, new TextObject("{=!}" + textObject.ToString(), null));
         }
