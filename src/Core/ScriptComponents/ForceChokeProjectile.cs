@@ -190,7 +190,7 @@ namespace SeparatistCrisis.ScriptComponents
 
             rectangle.SetMaterial(Material.GetFromResource("editor_gizmo"));
 
-            GameEntity entity = GameEntity.CreateEmptyDynamic(Mission.Current.Scene);
+            GameEntity entity = TaleWorlds.Engine.GameEntity.CreateEmptyDynamic(Mission.Current.Scene);
             PhysicsShape body = PhysicsShape.GetFromResource("bo_editor_cube");
             entity.SetBodyShape(body);
             entity.AddPhysics(1, entity.CenterOfMass, entity.GetBodyShape(), Vec3.Zero, Vec3.Zero, PhysicsMaterial.GetFromName("boulder_stone"), true, 1);

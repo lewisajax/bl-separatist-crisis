@@ -107,11 +107,15 @@ namespace SeparatistCrisis.ViewModels
         public void InitializeMainAgentPropterties()
         {
             Mission.Current.OnMainAgentChanged += this.OnMainAgentChanged;
-            this.OnMainAgentChanged(null, null);
+            this.OnMainAgentChanged(null);
         }
 
-        private void OnMainAgentChanged(object sender, PropertyChangedEventArgs e)
+        private void OnMainAgentChanged(Agent oldAgent)
         {
+            if (oldAgent != null)
+            {
+                oldAgent.OnMainAgentWieldedItemChange = (Agent.OnMainAgentWieldedItemChangeDelegate)Delegate.Remove(oldAgent.OnMainAgentWieldedItemChange, new Agent.OnMainAgentWieldedItemChangeDelegate(this.OnMainAgentWeaponChange));
+            }
             if (Agent.Main != null)
             {
                 Agent main = Agent.Main;
@@ -183,7 +187,7 @@ namespace SeparatistCrisis.ViewModels
 
         private bool IsWieldedWeaponAtIndex(EquipmentIndex index)
         {
-            return index == Agent.Main.GetWieldedItemIndex(Agent.HandIndex.MainHand) || index == Agent.Main.GetWieldedItemIndex(Agent.HandIndex.OffHand);
+            return index == Agent.Main.GetPrimaryWieldedItemIndex() || index == Agent.Main.GetOffhandWieldedItemIndex();
         }
 
         public void OnWeaponEquippedAtIndex(int equippedWeaponIndex)

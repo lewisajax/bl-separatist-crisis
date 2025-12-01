@@ -12,12 +12,14 @@ using TaleWorlds.Engine.GauntletUI;
 using TaleWorlds.InputSystem;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
+using TaleWorlds.MountAndBlade.GauntletUI.Mission;
 using TaleWorlds.MountAndBlade.View;
 using TaleWorlds.MountAndBlade.View.MissionViews;
 using TaleWorlds.MountAndBlade.View.Screens;
 using TaleWorlds.MountAndBlade.ViewModelCollection;
 using TaleWorlds.MountAndBlade.ViewModelCollection.HUD;
 using TaleWorlds.MountAndBlade.ViewModelCollection.Input;
+using TaleWorlds.ScreenSystem;
 
 // I think that since we're overriding our own placeholder view, we need to use ViewCreatorManager.CreateMissionView ourselves
 
@@ -61,12 +63,6 @@ namespace SeparatistCrisis.Views
             set
             {
                 this._holdHandled = value;
-                MissionScreen missionScreen = base.MissionScreen;
-                if (missionScreen == null)
-                {
-                    return;
-                }
-                missionScreen.SetRadialMenuActiveState(value);
             }
         }
 
@@ -79,7 +75,7 @@ namespace SeparatistCrisis.Views
         public override void EarlyStart()
         {
             base.EarlyStart();
-            this._gauntletLayer = new GauntletLayer(3, "GauntletLayer", false);
+            this._gauntletLayer = new GauntletLayer("MissionEquipDrop", this.ViewOrderPriority, false);
             this._dataSource = new MainAgentAbilityEquipVM(new Action<EquipmentIndex>(this.OnToggleItem));
             this._missionMainAgentController = base.Mission.GetMissionBehavior<MissionMainAgentController>();
             this._missionControllerLeaveLogic = base.Mission.GetMissionBehavior<EquipmentControllerLeaveLogic>();
@@ -123,7 +119,7 @@ namespace SeparatistCrisis.Views
             }
         }
 
-        private void OnMainAgentChanged(object sender, PropertyChangedEventArgs e)
+        private void OnMainAgentChanged(Agent oldAgent)
         {
             if (base.Mission.MainAgent == null)
             {
@@ -220,7 +216,7 @@ namespace SeparatistCrisis.Views
             {
                 dataSource.OnToggle(true);
             }
-            base.MissionScreen.SetRadialMenuActiveState(true);
+            base.MissionScreen.RegisterRadialMenuObject<MissionGauntletMainAgentAbilityEquipView>(this);
             EquipmentControllerLeaveLogic missionControllerLeaveLogic = this._missionControllerLeaveLogic;
             if (missionControllerLeaveLogic != null)
             {
@@ -231,6 +227,8 @@ namespace SeparatistCrisis.Views
                 base.Mission.AddTimeSpeedRequest(new Mission.TimeSpeedRequest(0.25f, 624));
                 this._isSlowDownApplied = true;
             }
+            this._gauntletLayer.IsFocusLayer = true;
+            ScreenManager.TrySetFocus(this._gauntletLayer);
         }
 
         private void HandleClosingHold()
@@ -240,7 +238,7 @@ namespace SeparatistCrisis.Views
             {
                 dataSource.OnToggle(false);
             }
-            base.MissionScreen.SetRadialMenuActiveState(false);
+            base.MissionScreen.UnregisterRadialMenuObject(this);
             EquipmentControllerLeaveLogic missionControllerLeaveLogic = this._missionControllerLeaveLogic;
             if (missionControllerLeaveLogic != null)
             {
@@ -251,6 +249,8 @@ namespace SeparatistCrisis.Views
                 base.Mission.RemoveTimeSpeedRequest(624);
                 this._isSlowDownApplied = false;
             }
+            this._gauntletLayer.IsFocusLayer = false;
+            ScreenManager.TryLoseFocus(this._gauntletLayer);
         }
 
         private void HandleQuickRelease()
@@ -261,7 +261,7 @@ namespace SeparatistCrisis.Views
             {
                 dataSource.OnToggle(false);
             }
-            base.MissionScreen.SetRadialMenuActiveState(false);
+            base.MissionScreen.UnregisterRadialMenuObject(this);
             EquipmentControllerLeaveLogic missionControllerLeaveLogic = this._missionControllerLeaveLogic;
             if (missionControllerLeaveLogic == null)
             {
@@ -272,8 +272,8 @@ namespace SeparatistCrisis.Views
 
         private void OnToggleItem(EquipmentIndex indexToToggle)
         {
-            bool flag = indexToToggle == Agent.Main.GetWieldedItemIndex(Agent.HandIndex.MainHand);
-            bool flag2 = indexToToggle == Agent.Main.GetWieldedItemIndex(Agent.HandIndex.OffHand);
+            bool flag = indexToToggle == Agent.Main.GetPrimaryWieldedItemIndex();
+            bool flag2 = indexToToggle == Agent.Main.GetOffhandWieldedItemIndex();
             if (flag || flag2)
             {
                 Agent.Main.TryToSheathWeaponInHand(flag ? Agent.HandIndex.MainHand : Agent.HandIndex.OffHand, Agent.WeaponWieldActionType.WithAnimation);
@@ -297,7 +297,12 @@ namespace SeparatistCrisis.Views
         private bool IsMainAgentAvailable()
         {
             Agent main = Agent.Main;
-            return main != null && main.IsActive();
+            if (main != null && main.IsActive())
+            {
+                Agent main2 = Agent.Main;
+                return (main2 != null && !main2.Mission.IsNavalBattle) || !Agent.Main.IsUsingGameObject;
+            }
+            return false;
         }
 
         public override void OnPhotoModeActivated()

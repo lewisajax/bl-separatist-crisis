@@ -135,9 +135,9 @@ namespace SeparatistCrisis.Abilities
                     entity.SetFrameChanged();
                     entity.RecomputeBoundingBox();
 
-                    entity.CreateAndAddScriptComponent(ForceChokeProjectile.Name);
+                    entity.CreateAndAddScriptComponent(ForceChokeProjectile.Name, false);
                     entity.GetFirstScriptOfType<ForceChokeProjectile>().AbilityAgent = this.AbilityAgent;
-                    entity.CallScriptCallbacks();
+                    entity.CallScriptCallbacks(true);
 
                     /*GameEntity entity2 = GameEntity.CreateEmptyDynamic(Mission.Current.Scene);
                     Mesh cube2 = Mesh.GetFromResource("editor_cube").CreateCopy();

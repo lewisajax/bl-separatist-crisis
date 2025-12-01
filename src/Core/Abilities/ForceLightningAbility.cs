@@ -176,9 +176,9 @@ namespace SeparatistCrisis.Abilities
 
                     entity.AddChild(prtEntity);
 
-                    entity.CreateAndAddScriptComponent(ForceLightningProjectile.Name);
+                    entity.CreateAndAddScriptComponent(ForceLightningProjectile.Name, false);
                     entity.GetFirstScriptOfType<ForceLightningProjectile>().AbilityAgent = this.AbilityAgent;
-                    entity.CallScriptCallbacks();
+                    entity.CallScriptCallbacks(true);
 
                     /*GameEntity entity2 = GameEntity.CreateEmptyDynamic(Mission.Current.Scene);
                     Mesh cube2 = Mesh.GetFromResource("editor_cube").CreateCopy();

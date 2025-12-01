@@ -75,7 +75,7 @@ namespace SeparatistCrisis.CustomBattle
             SpriteCategory spriteCategory = spriteData.SpriteCategories["ui_encyclopedia"];
             spriteCategory.Load(UIResourceManager.ResourceContext, UIResourceManager.ResourceDepot);
 
-            this._gauntletLayer = new GauntletLayer(1, shouldClear: true);
+            this._gauntletLayer = new GauntletLayer("SCCustomBattle", 1, true);
             _gauntletLayer.Input.RegisterHotKeyCategory(HotKeyManager.GetCategory("GenericPanelGameKeyCategory"));
             _gauntletLayer.Input.RegisterHotKeyCategory(HotKeyManager.GetCategory("GenericCampaignPanelsGameKeyCategory"));
 
