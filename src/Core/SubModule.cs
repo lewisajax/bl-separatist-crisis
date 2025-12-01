@@ -63,8 +63,8 @@ namespace SeparatistCrisis
         {
             base.OnMissionBehaviorInitialize(mission);
 
-            if (mission != null)
-                mission.AddMissionBehavior(new ForceAtmosphereLogic());
+            //if (mission != null)
+            //    mission.AddMissionBehavior(new ForceAtmosphereLogic());
         }
 
         protected override void OnBeforeInitialModuleScreenSetAsRoot()

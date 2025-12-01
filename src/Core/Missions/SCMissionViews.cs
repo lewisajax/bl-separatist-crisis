@@ -34,7 +34,7 @@ namespace SeparatistCrisis.Missions
                 ViewCreator.CreateOptionsUIHandler(),
                 ViewCreator.CreateMissionMainAgentEquipDropView(mission),
                 missionView,
-                new OrderTroopPlacer(),
+                new OrderTroopPlacer(null),
                 new MissionSingleplayerViewHandler(),
                 ViewCreator.CreateMissionAgentStatusUIHandler(mission),
                 ViewCreator.CreateMissionMainAgentEquipmentController(mission),
@@ -42,7 +42,7 @@ namespace SeparatistCrisis.Missions
                 ViewCreator.CreateMissionAgentLockVisualizerView(mission),
                 new MusicBattleMissionView(false),
                 new DeploymentMissionView(),
-                new MissionDeploymentBoundaryMarker(new BorderFlagEntityFactory("swallowtail_banner"), 2f),
+                new MissionDeploymentBoundaryMarker("swallowtail_banner", 2f),
                 ViewCreator.CreateMissionBoundaryCrossingView(),
                 new MissionBoundaryWallView(),
                 ViewCreator.CreateMissionFormationMarkerUIHandler(mission),
@@ -54,8 +54,7 @@ namespace SeparatistCrisis.Missions
                 new MissionPreloadView(),
                 new MissionCampaignBattleSpectatorView(),
                 ViewCreator.CreatePhotoModeView(),
-                new MissionEntitySelectionUIHandler(new Action<GameEntity>(((ISiegeDeploymentView)missionView).OnEntitySelection), new Action<GameEntity>(((ISiegeDeploymentView)missionView).OnEntityHover)),
-                ViewCreator.CreateMissionOrderOfBattleUIHandler(mission, new SPOrderOfBattleVM()),
+                new MissionEntitySelectionUIHandler(new Action<WeakGameEntity>(((ISiegeDeploymentView)missionView).OnEntitySelection), new Action<WeakGameEntity>(((ISiegeDeploymentView)missionView).OnEntityHover)),ViewCreator.CreateMissionOrderOfBattleUIHandler(mission, new SPOrderOfBattleVM()),
                 new MissionGauntletBlasterMissileView(), // Custom
             };
         }

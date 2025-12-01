@@ -10,6 +10,7 @@ using TaleWorlds.CampaignSystem.Conversation;
 using TaleWorlds.CampaignSystem.Roster;
 using TaleWorlds.CampaignSystem.Settlements.Locations;
 using TaleWorlds.Core;
+using TaleWorlds.Library;
 
 namespace SeparatistCrisis.MissionManagers
 {
@@ -85,9 +86,9 @@ namespace SeparatistCrisis.MissionManagers
             return SandBoxMissions.OpenIndoorMission(scene, upgradeLevel, location, talkToChar);
         }
 
-        IMission CampaignMission.ICampaignMissionManager.OpenPrisonBreakMission(string scene, Location location, CharacterObject prisonerCharacter, CharacterObject companionCharacter)
+        IMission CampaignMission.ICampaignMissionManager.OpenPrisonBreakMission(string scene, Location location, CharacterObject prisonerCharacter)
         {
-            return SandBoxMissions.OpenPrisonBreakMission(scene, location, prisonerCharacter, companionCharacter);
+            return SandBoxMissions.OpenPrisonBreakMission(scene, location, prisonerCharacter);
         }
 
         IMission CampaignMission.ICampaignMissionManager.OpenArenaStartMission(string scene, Location location, CharacterObject talkToChar)
@@ -100,9 +101,9 @@ namespace SeparatistCrisis.MissionManagers
             return SandBoxMissions.OpenArenaDuelMission(scene, location, duelCharacter, requireCivilianEquipment, spawnBOthSidesWithHorse, onDuelEndAction, customAgentHealth, "");
         }
 
-        IMission CampaignMission.ICampaignMissionManager.OpenConversationMission(ConversationCharacterData playerCharacterData, ConversationCharacterData conversationPartnerData, string specialScene, string sceneLevels)
+        IMission CampaignMission.ICampaignMissionManager.OpenConversationMission(ConversationCharacterData playerCharacterData, ConversationCharacterData conversationPartnerData, string specialScene, string sceneLevels, bool isMultiAgentConversation)
         {
-            return SandBoxMissions.OpenConversationMission(playerCharacterData, conversationPartnerData, specialScene, sceneLevels);
+            return SandBoxMissions.OpenConversationMission(playerCharacterData, conversationPartnerData, specialScene, sceneLevels, isMultiAgentConversation);
         }
 
         IMission CampaignMission.ICampaignMissionManager.OpenMeetingMission(string scene, CharacterObject character)
@@ -110,9 +111,26 @@ namespace SeparatistCrisis.MissionManagers
             return SandBoxMissions.OpenMeetingMission(scene, character);
         }
 
-        IMission CampaignMission.ICampaignMissionManager.OpenRetirementMission(string scene, Location location, CharacterObject talkToChar, string sceneLevels)
+        IMission CampaignMission.ICampaignMissionManager.OpenRetirementMission(string scene, Location location, CharacterObject talkToChar, string sceneLevels, string unconsciousMenuId)
         {
             return SandBoxMissions.OpenRetirementMission(scene, location, talkToChar, sceneLevels);
+        }
+
+        IMission CampaignMission.ICampaignMissionManager.OpenHideoutAmbushMission(string sceneName, FlattenedTroopRoster playerTroops, Location location)
+        {
+            return (IMission)SandBoxMissions.OpenHideoutAmbushMission(sceneName, playerTroops, location);
+        }
+
+        public IMission OpenDisguiseMission(string scene, bool willSetUpContact, string sceneLevels, Location fromLocation)
+        {
+            return (IMission)SandBoxMissions.OpenDisguiseMission(scene, willSetUpContact, fromLocation, sceneLevels);
+        }
+
+        public IMission OpenNavalBattleMission(MissionInitializerRecord rec) => null;
+
+        public IMission OpenNavalSetPieceBattleMission(MissionInitializerRecord rec, MBList<IShipOrigin> playerShips, MBList<IShipOrigin> playerAllyShips, MBList<IShipOrigin> enemyShips)
+        {
+            return null;
         }
     }
 }
