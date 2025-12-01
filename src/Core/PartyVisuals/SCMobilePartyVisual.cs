@@ -307,6 +307,7 @@ namespace SeparatistCrisis.PartyVisuals
             }
             this._bearingRotation = this.MapEntity.MobileParty.Bearing.RotationInRadians;
             this.StrategicEntity.SetVisibilityExcludeParents(this.MapEntity.IsVisible);
+            this.ShipVisuals?.SetVisibilityExcludeParents(this.MapEntity.IsVisible);
             this.HumanAgentVisuals?.GetEntity()?.SetVisibilityExcludeParents(this.MapEntity.IsVisible);
             this.MountAgentVisuals?.GetEntity()?.SetVisibilityExcludeParents(this.MapEntity.IsVisible);
             this.CaravanMountAgentVisuals?.GetEntity()?.SetVisibilityExcludeParents(this.MapEntity.IsVisible);
@@ -547,19 +548,23 @@ namespace SeparatistCrisis.PartyVisuals
                 ActionIndexCache mountAction = ActionIndexCache.act_none;
                 MapEvent mapEvent = party.MobileParty.Army == null || !party.MobileParty.Army.DoesLeaderPartyAndAttachedPartiesContain(party.MobileParty) ? party.MapEvent : party.MobileParty.Army.LeaderParty.MapEvent;
 
-                this.AddShipToPartyIcon(party);
+                // this.AddShipToPartyIcon(party);
 
-                //int wieldedItemIndex;
-                //this.GetMeleeWeaponToWield(party, out wieldedItemIndex);
+                /* COMMENT THIS */
+                int wieldedItemIndex;
+                this.GetMeleeWeaponToWield(party, out wieldedItemIndex);
 
-                //if (mapEvent != null && (mapEvent.EventType == MapEvent.BattleTypes.FieldBattle || mapEvent.EventType == MapEvent.BattleTypes.Raid || mapEvent.EventType == MapEvent.BattleTypes.SiegeOutside || mapEvent.EventType == MapEvent.BattleTypes.SallyOut))
-                //    SCMobilePartyVisual.GetPartyBattleAnimation(party, wieldedItemIndex, out leaderAction, out mountAction);
-                
+                if (mapEvent != null && (mapEvent.EventType == MapEvent.BattleTypes.FieldBattle || mapEvent.EventType == MapEvent.BattleTypes.Raid || mapEvent.EventType == MapEvent.BattleTypes.SiegeOutside || mapEvent.EventType == MapEvent.BattleTypes.SallyOut))
+                    SCMobilePartyVisual.GetPartyBattleAnimation(party, wieldedItemIndex, out leaderAction, out mountAction);
+                /* END HERE */
+
                 IFaction mapFaction1 = party.MapFaction;
                 uint teamColor1 = mapFaction1 != null ? mapFaction1.Color : 4291609515U;
                 IFaction mapFaction2 = party.MapFaction;
                 uint teamColor2 = mapFaction2 != null ? mapFaction2.Color2 : 4291609515U;
-                // this.AddCharacterToPartyIcon(party, PartyBaseHelper.GetVisualPartyLeader(party), contourColor, bannerKey, wieldedItemIndex, teamColor1, teamColor2, in leaderAction, in mountAction, MBRandom.NondeterministicRandomFloat * 0.7f, ref clearBannerEntityCache);
+
+                // Comment this as well
+                this.AddCharacterToPartyIcon(party, PartyBaseHelper.GetVisualPartyLeader(party), contourColor, bannerKey, wieldedItemIndex, teamColor1, teamColor2, in leaderAction, in mountAction, MBRandom.NondeterministicRandomFloat * 0.7f, ref clearBannerEntityCache);
                 
                 if (!party.IsMobile)
                     return;

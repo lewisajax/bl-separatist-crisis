@@ -19,6 +19,20 @@
 		<CultureSpaceShip culture="new_mandalorians" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
 		<CultureSpaceShip culture="death_watch" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
 		<CultureSpaceShip culture="crime_syndicates" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+
+		<!-- Most of these will be deleted -->
+		<CultureSpaceShip culture="212_battalion" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="104_battalion" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="501_legion" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="327_star" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="21_nova" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="9_assault" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="91_recon" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="kamino" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="naboo" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="geonosis" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="zygerria" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		
 	</CultureSpaceShips>
 
 	<!-- Kingdom Ship Templates -->

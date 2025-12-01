@@ -40,7 +40,8 @@ namespace SeparatistCrisis.PartyVisuals
                     if (cultureDefaults.Children.TryGetValue(clan.Kingdom, out IFactionAssignment? kingdomDefaults))
                         kinDefaults = kingdomDefaults as KingdomDefaults;
 
-                return kinDefaults != null ? kinDefaults[clan] : null;
+                if (kinDefaults != null && kinDefaults.Children.TryGetValue(clan, out ClanDefaults? clanDefaults))
+                    return clanDefaults;
             }
             else
             {
@@ -49,16 +50,21 @@ namespace SeparatistCrisis.PartyVisuals
 
                 if (this.ShipDefaults.TryGetValue(clan.Culture, out CultureDefaults? cultureDefaults))
                     if (cultureDefaults.Children.TryGetValue(clan, out IFactionAssignment? clanDefaults))
-                        return (ClanDefaults)cultureDefaults[clan];
-
-                return null;
+                        return (ClanDefaults?)clanDefaults;
             }
+
+            return null;
         }
 
         public AssignedSpaceShip? GetAssignment(CharacterObject character)
         {
             if (character != null && character.HeroObject.Clan != null)
-                return GetAssignment(character.HeroObject.Clan)?[character];
+            {
+                ClanDefaults? clanDefaults = this.GetAssignment(character.HeroObject.Clan);
+                if (clanDefaults != null && clanDefaults.Children.TryGetValue(character, out AssignedSpaceShip? assignment))
+                    return assignment;
+
+            }
 
             return null;
         }
