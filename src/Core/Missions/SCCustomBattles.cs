@@ -115,7 +115,7 @@ namespace SeparatistCrisis.Missions
             CustomBattleTroopSupplier customBattleTroopSupplier2 = new CustomBattleTroopSupplier(enemyParty, false, false, false, null);
             troopSuppliers[(int)enemyParty.Side] = customBattleTroopSupplier2;
             bool isPlayerSergeant = !isPlayerGeneral;
-            return MissionState.OpenNew("CustomBattle", new MissionInitializerRecord(scene)
+            return MissionState.OpenNew("SCCustomBattle", new MissionInitializerRecord(scene)
             {
                 DoNotUseLoadingScreen = false,
                 PlayingInCampaignMode = false,
@@ -124,34 +124,37 @@ namespace SeparatistCrisis.Missions
                 DecalAtlasGroup = 2
             }, (missionController) => new MissionBehavior[]
             {
-            new MissionAgentSpawnLogic(troopSuppliers, playerSide, Mission.BattleSizeType.Battle),
-            new BattlePowerCalculationLogic(),
-            new CustomBattleAgentLogic(),
-            new BannerBearerLogic(),
-            new CustomBattleMissionSpawnHandler(!isPlayerAttacker ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty),
-            new MissionOptionsComponent(),
-            new BattleEndLogic(),
-            new BattleReinforcementsSpawnController(),
-            new MissionCombatantsLogic(null, playerParty, !isPlayerAttacker ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty, Mission.MissionTeamAITypeEnum.FieldBattle, isPlayerSergeant),
-            new BattleObserverMissionLogic(),
-            new AgentHumanAILogic(),
-            new AgentVictoryLogic(),
-            new MissionAgentPanicHandler(),
+                new MissionAgentSpawnLogic(troopSuppliers, playerSide, Mission.BattleSizeType.Battle),
+                new BattlePowerCalculationLogic(),
+                new CustomBattleAgentLogic(),
+                new BannerBearerLogic(),
+                new CustomBattleMissionSpawnHandler(!isPlayerAttacker ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty),
+                new MissionOptionsComponent(),
+                new BattleEndLogic(),
+                new BattleReinforcementsSpawnController(),
+                new MissionCombatantsLogic(null, playerParty, !isPlayerAttacker ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty, Mission.MissionTeamAITypeEnum.FieldBattle, isPlayerSergeant),
+                new BattleObserverMissionLogic(),
+                new AgentHumanAILogic(),
+                new AgentVictoryLogic(),
+                new MissionAgentPanicHandler(),
 
-            new BlasterMissileLogic(),
-            new AbilitiesLogic(),
+                new BlasterMissileLogic(),
+                new AbilitiesLogic(),
 
-            new BattleMissionAgentInteractionLogic(),
-            new AgentMoraleInteractionLogic(),
-            new AssignPlayerRoleInTeamMissionController(isPlayerGeneral, isPlayerSergeant, false, isPlayerSergeant ? Enumerable.Repeat<string>(playerCharacter.StringId, 1).ToList<string>() : new List<string>()),new GeneralsAndCaptainsAssignmentLogic(isPlayerAttacker & isPlayerGeneral ? playerCharacter.GetName() : isPlayerAttacker & isPlayerSergeant ? playerSideGeneralCharacter.GetName() : null, !isPlayerAttacker & isPlayerGeneral ? playerCharacter.GetName() : !isPlayerAttacker & isPlayerSergeant ? playerSideGeneralCharacter.GetName() : null, null, null, true),
-            new EquipmentControllerLeaveLogic(),
-            new MissionHardBorderPlacer(),
-            new MissionBoundaryPlacer(),
-            new MissionBoundaryCrossingHandler(),
-            new HighlightsController(),
-            new BattleHighlightsController(),
-            new BattleDeploymentMissionController(isPlayerAttacker),
-            new BattleDeploymentHandler(isPlayerAttacker)
+                new BattleMissionAgentInteractionLogic(),
+                new AgentMoraleInteractionLogic(),
+                new AssignPlayerRoleInTeamMissionController(isPlayerGeneral, isPlayerSergeant, false, isPlayerSergeant ? Enumerable.Repeat<string>(playerCharacter.StringId, 1).ToList<string>() : new List<string>()),new GeneralsAndCaptainsAssignmentLogic(isPlayerAttacker & isPlayerGeneral ? playerCharacter.GetName() : isPlayerAttacker & isPlayerSergeant ? playerSideGeneralCharacter.GetName() : null, !isPlayerAttacker & isPlayerGeneral ? playerCharacter.GetName() : !isPlayerAttacker & isPlayerSergeant ? playerSideGeneralCharacter.GetName() : null, null, null, true),
+                new EquipmentControllerLeaveLogic(),
+
+                new AbilityControllerLeaveLogic(),
+
+                new MissionHardBorderPlacer(),
+                new MissionBoundaryPlacer(),
+                new MissionBoundaryCrossingHandler(),
+                new HighlightsController(),
+                new BattleHighlightsController(),
+                new BattleDeploymentMissionController(isPlayerAttacker),
+                new BattleDeploymentHandler(isPlayerAttacker)
             }, true, true);
         }
 
@@ -217,6 +220,9 @@ namespace SeparatistCrisis.Missions
                 list.Add(new HighlightsController());
                 list.Add(new BattleHighlightsController());
                 list.Add(new EquipmentControllerLeaveLogic());
+
+                list.Add(new AbilityControllerLeaveLogic());
+
                 if (isSallyOut)
                 {
                     list.Add(new MissionSiegeEnginesLogic(new List<MissionSiegeWeapon>(), siegeWeaponsOfAttackers));

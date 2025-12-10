@@ -104,7 +104,7 @@ namespace SeparatistCrisis.ViewModels
             this.PressToEquipText = new TextObject("{=HEEZhL90}Press to Equip", null).ToString();
         }
 
-        public void InitializeMainAgentPropterties()
+        public void InitializeMainAgentProperties()
         {
             Mission.Current.OnMainAgentChanged += this.OnMainAgentChanged;
             this.OnMainAgentChanged(null);
@@ -286,11 +286,11 @@ namespace SeparatistCrisis.ViewModels
             {
                 if (totalNumOfWeapons == 1)
                 {
-                    return HotKeyManager.GetCategory("CombatHotKeyCategory").GetHotKey("ControllerEquipDropWeapon4");
+                    return HotKeyManager.GetCategory("CombatHotKeyCategory").GetHotKey("ControllerEquipAbility4");
                 }
                 if (totalNumOfWeapons > 1)
                 {
-                    return HotKeyManager.GetCategory("CombatHotKeyCategory").GetHotKey("ControllerEquipDropWeapon1");
+                    return HotKeyManager.GetCategory("CombatHotKeyCategory").GetHotKey("ControllerEquipAbility1");
                 }
                 Debug.FailedAssert("Wrong number of total weapons!", "C:\\Develop\\MB3\\Source\\Bannerlord\\TaleWorlds.MountAndBlade.ViewModelCollection\\HUD\\MissionMainAgentControllerEquipDropVM.cs", "GetWeaponHotKey", 182);
             }
@@ -298,22 +298,22 @@ namespace SeparatistCrisis.ViewModels
             {
                 if (totalNumOfWeapons == 2)
                 {
-                    return HotKeyManager.GetCategory("CombatHotKeyCategory").GetHotKey("ControllerEquipDropWeapon3");
+                    return HotKeyManager.GetCategory("CombatHotKeyCategory").GetHotKey("ControllerEquipAbility3");
                 }
                 if (totalNumOfWeapons > 2)
                 {
-                    return HotKeyManager.GetCategory("CombatHotKeyCategory").GetHotKey("ControllerEquipDropWeapon4");
+                    return HotKeyManager.GetCategory("CombatHotKeyCategory").GetHotKey("ControllerEquipAbility4");
                 }
             }
             else
             {
                 if (currentIndexOfWeapon == 2)
                 {
-                    return HotKeyManager.GetCategory("CombatHotKeyCategory").GetHotKey("ControllerEquipDropWeapon3");
+                    return HotKeyManager.GetCategory("CombatHotKeyCategory").GetHotKey("ControllerEquipAbility3");
                 }
                 if (currentIndexOfWeapon == 3)
                 {
-                    return HotKeyManager.GetCategory("CombatHotKeyCategory").GetHotKey("ControllerEquipDropWeapon2");
+                    return HotKeyManager.GetCategory("CombatHotKeyCategory").GetHotKey("ControllerEquipAbility2");
                 }
                 Debug.FailedAssert("Wrong index of current weapon. Cannot be higher than 3", "C:\\Develop\\MB3\\Source\\Bannerlord\\TaleWorlds.MountAndBlade.ViewModelCollection\\HUD\\MissionMainAgentControllerEquipDropVM.cs", "GetWeaponHotKey", 206);
             }

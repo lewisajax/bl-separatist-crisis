@@ -1,4 +1,5 @@
 ﻿using NetworkMessages.FromClient;
+using SeparatistCrisis.Missions;
 using SeparatistCrisis.ViewModels;
 using SeparatistCrisis.Views.Placeholders;
 using System;
@@ -35,7 +36,7 @@ namespace SeparatistCrisis.Views
         private GauntletLayer _gauntletLayer;
         private MainAgentAbilityEquipVM _dataSource;
         private MissionMainAgentController _missionMainAgentController;
-        private EquipmentControllerLeaveLogic _missionControllerLeaveLogic;
+        private AbilityControllerLeaveLogic _missionControllerLeaveLogic;
         private const float _minOpenHoldTime = 0.3f;
         private const float _minDropHoldTime = 0.5f;
         private readonly IMissionScreen _missionScreenAsInterface;
@@ -75,11 +76,11 @@ namespace SeparatistCrisis.Views
         public override void EarlyStart()
         {
             base.EarlyStart();
-            this._gauntletLayer = new GauntletLayer("MissionEquipDrop", this.ViewOrderPriority, false);
+            this._gauntletLayer = new GauntletLayer("MissionAbilityEquip", this.ViewOrderPriority, false);
             this._dataSource = new MainAgentAbilityEquipVM(new Action<EquipmentIndex>(this.OnToggleItem));
             this._missionMainAgentController = base.Mission.GetMissionBehavior<MissionMainAgentController>();
-            this._missionControllerLeaveLogic = base.Mission.GetMissionBehavior<EquipmentControllerLeaveLogic>();
-            this._gauntletLayer.Input.RegisterHotKeyCategory(HotKeyManager.GetCategory("CombatHotKeyCategory"));
+            this._missionControllerLeaveLogic = base.Mission.GetMissionBehavior<AbilityControllerLeaveLogic>();
+            this._gauntletLayer.Input.RegisterHotKeyCategory(HotKeyManager.GetCategory("SCCombatHotKeyCategory"));
             this._gauntletLayer.InputRestrictions.SetInputRestrictions(false, InputUsageMask.Invalid);
             this._gauntletLayer.LoadMovie("MainAgentAbilityEquip", this._dataSource);
             base.MissionScreen.AddLayer(this._gauntletLayer);
@@ -90,7 +91,7 @@ namespace SeparatistCrisis.Views
         public override void AfterStart()
         {
             base.AfterStart();
-            this._dataSource.InitializeMainAgentPropterties();
+            this._dataSource.InitializeMainAgentProperties();
         }
 
         public override void OnMissionScreenFinalize()
@@ -113,6 +114,8 @@ namespace SeparatistCrisis.Views
             {
                 this.HandleClosingHold();
             }
+
+            // This is the issue. For some reason IsActive gets set to false every now and again.
             if (this.IsMainAgentAvailable() && (!base.MissionScreen.IsRadialMenuActive || this._dataSource.IsActive))
             {
                 this.TickControls(dt);
@@ -142,17 +145,25 @@ namespace SeparatistCrisis.Views
 
         private void TickControls(float dt)
         {
-            if (base.MissionScreen.SceneLayer.Input.IsGameKeyDown(34) && !this.IsDisplayingADialog && this.IsMainAgentAvailable() && base.Mission.Mode != MissionMode.Deployment && base.Mission.Mode != MissionMode.CutScene && !base.MissionScreen.IsRadialMenuActive)
+            // 36:B, 42:J
+            // base.MissionScreen.SceneLayer.Input.IsGameKeyDown(37); // C
+            // base.MissionScreen.SceneLayer.Input.IsKeyDown(InputKey.C); // C is 42 in the enum
+            bool isKeyDown = (base.MissionScreen.SceneLayer.Input.IsGameKeyDown(37));
+            if (!isKeyDown && this._gauntletLayer != null)
+                isKeyDown = this._gauntletLayer.Input.IsGameKeyDown(37);
+
+            if (isKeyDown && !this.IsDisplayingADialog && this.IsMainAgentAvailable() && base.Mission.Mode != MissionMode.Deployment && base.Mission.Mode != MissionMode.CutScene && !base.MissionScreen.IsRadialMenuActive)
             {
                 if (this._toggleHoldTime > 0.3f && !this.HoldHandled)
                 {
                     this.HandleOpeningHold();
                     this.HoldHandled = true;
                 }
+
                 this._toggleHoldTime += dt;
                 this._prevKeyDown = true;
             }
-            else if (this._prevKeyDown && !base.MissionScreen.SceneLayer.Input.IsGameKeyDown(34))
+            else if (this._prevKeyDown && !isKeyDown)
             {
                 if (this._toggleHoldTime < 0.3f)
                 {
@@ -162,12 +173,14 @@ namespace SeparatistCrisis.Views
                 {
                     this.HandleClosingHold();
                 }
+
                 this.HoldHandled = false;
                 this._toggleHoldTime = 0f;
                 this._weaponDropHoldTime = 0f;
                 this._prevKeyDown = false;
                 this._weaponDropHandled = false;
             }
+
             if (this.HoldHandled)
             {
                 int keyWeaponIndex = this.GetKeyWeaponIndex(false);
@@ -217,10 +230,10 @@ namespace SeparatistCrisis.Views
                 dataSource.OnToggle(true);
             }
             base.MissionScreen.RegisterRadialMenuObject<MissionGauntletMainAgentAbilityEquipView>(this);
-            EquipmentControllerLeaveLogic missionControllerLeaveLogic = this._missionControllerLeaveLogic;
+            AbilityControllerLeaveLogic missionControllerLeaveLogic = this._missionControllerLeaveLogic;
             if (missionControllerLeaveLogic != null)
             {
-                missionControllerLeaveLogic.SetIsEquipmentSelectionActive(true);
+                missionControllerLeaveLogic.SetIsAbilitySelectionActive(true);
             }
             if (!GameNetwork.IsMultiplayer && !this._isSlowDownApplied)
             {
@@ -239,10 +252,10 @@ namespace SeparatistCrisis.Views
                 dataSource.OnToggle(false);
             }
             base.MissionScreen.UnregisterRadialMenuObject(this);
-            EquipmentControllerLeaveLogic missionControllerLeaveLogic = this._missionControllerLeaveLogic;
+            AbilityControllerLeaveLogic missionControllerLeaveLogic = this._missionControllerLeaveLogic;
             if (missionControllerLeaveLogic != null)
             {
-                missionControllerLeaveLogic.SetIsEquipmentSelectionActive(false);
+                missionControllerLeaveLogic.SetIsAbilitySelectionActive(false);
             }
             if (!GameNetwork.IsMultiplayer && this._isSlowDownApplied)
             {
@@ -262,12 +275,12 @@ namespace SeparatistCrisis.Views
                 dataSource.OnToggle(false);
             }
             base.MissionScreen.UnregisterRadialMenuObject(this);
-            EquipmentControllerLeaveLogic missionControllerLeaveLogic = this._missionControllerLeaveLogic;
+            AbilityControllerLeaveLogic missionControllerLeaveLogic = this._missionControllerLeaveLogic;
             if (missionControllerLeaveLogic == null)
             {
                 return;
             }
-            missionControllerLeaveLogic.SetIsEquipmentSelectionActive(false);
+            missionControllerLeaveLogic.SetIsAbilitySelectionActive(false);
         }
 
         private void OnToggleItem(EquipmentIndex indexToToggle)
@@ -337,21 +350,21 @@ namespace SeparatistCrisis.Views
                 func2 = new Func<string, bool>(this._gauntletLayer.Input.IsHotKeyDown);
             }
             string text = string.Empty;
-            if (func("ControllerEquipDropWeapon1") || func2("ControllerEquipDropWeapon1"))
+            if (func("ControllerEquipAbility1") || func2("ControllerEquipAbility1"))
             {
-                text = "ControllerEquipDropWeapon1";
+                text = "ControllerEquipAbility1";
             }
-            else if (func("ControllerEquipDropWeapon2") || func2("ControllerEquipDropWeapon2"))
+            else if (func("ControllerEquipAbility2") || func2("ControllerEquipAbility2"))
             {
-                text = "ControllerEquipDropWeapon2";
+                text = "ControllerEquipAbility2";
             }
-            else if (func("ControllerEquipDropWeapon3") || func2("ControllerEquipDropWeapon3"))
+            else if (func("ControllerEquipAbility3") || func2("ControllerEquipAbility3"))
             {
-                text = "ControllerEquipDropWeapon3";
+                text = "ControllerEquipAbility3";
             }
-            else if (func("ControllerEquipDropWeapon4") || func2("ControllerEquipDropWeapon4"))
+            else if (func("ControllerEquipAbility4") || func2("ControllerEquipAbility4"))
             {
-                text = "ControllerEquipDropWeapon4";
+                text = "ControllerEquipAbility4";
             }
             if (!string.IsNullOrEmpty(text))
             {

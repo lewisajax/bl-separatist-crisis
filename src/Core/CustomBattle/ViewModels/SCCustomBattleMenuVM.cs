@@ -1,4 +1,5 @@
 ﻿using SandBox.ViewModelCollection.Input;
+using SeparatistCrisis.Missions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -690,7 +691,7 @@ namespace SeparatistCrisis.CustomBattle
 
         public void ExecuteStart()
         {
-            CustomBattleHelper.StartGame(PrepareBattleData());
+            SCCustomBattles.StartGame(PrepareBattleData());
             Debug.Print("EXECUTE START - PRESSED", 0, Debug.DebugColor.Green, 17592186044416UL);
         }
 

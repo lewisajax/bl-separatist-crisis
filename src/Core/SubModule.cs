@@ -79,16 +79,6 @@ namespace SeparatistCrisis
             }
         }
 
-        public override void OnGameInitializationFinished(Game game)
-        {
-            // We override SandBoxSubModule's CampaignMissionManager assignment since our mod loads after SandBox
-            Campaign campaign = game.GameType as Campaign;
-            if (campaign != null)
-            {
-                campaign.CampaignMissionManager = new SCCampaignMissionManager();
-            }
-        }
-
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
         {
             base.OnGameStart(game, gameStarterObject);
@@ -115,6 +105,25 @@ namespace SeparatistCrisis
             }
         }
 
+        public override void OnGameInitializationFinished(Game game)
+        {
+            if (game?.ObjectManager != null)
+            {
+                // CustomGame loads the NPCCharacters near the end of the pipeline. We need to go after it for BasicCharacterObjects
+                if (game.GameType.GetType() == typeof(CustomGame) || game.GameType.GetType() == typeof(Campaign))
+                {
+                    game.ObjectManager.RegisterType<AbilityHero>("AbilityHero", "AbilityHeroes", 102U, true);
+                    MBObjectManager.Instance.LoadXML("AbilityHeroes", false);
+                }
+
+                // We override SandBoxSubModule's CampaignMissionManager assignment since our mod loads after SandBox
+                if (game.GameType.GetType() == typeof(Campaign))
+                {
+                    ((Campaign)game.GameType).CampaignMissionManager = new SCCampaignMissionManager();
+                }
+            }
+        }
+
         private T? GetGameModel<T>(IGameStarter gameStarterObject) where T : GameModel
         {
             var models = gameStarterObject.Models.ToArray();
@@ -133,6 +142,7 @@ namespace SeparatistCrisis
             List<GameKeyContext> newContexts = prevContexts.ToList();
 
             newContexts.Add(new SCGameKeyContext());
+            newContexts.Add(new SCCombatHotKeyCategory());
 
             HotKeyManager.RegisterInitialContexts(newContexts, loadKeys);
         }

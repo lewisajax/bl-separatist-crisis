@@ -12,6 +12,7 @@ using TaleWorlds.MountAndBlade;
 
 namespace SeparatistCrisis.Abilities
 {
+    [AbilityAttribute("abi_force_lightning")]
     public class ForceLightningAbility : IAbility
     {
         private Ability _options;

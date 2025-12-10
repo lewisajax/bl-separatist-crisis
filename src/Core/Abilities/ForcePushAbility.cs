@@ -12,6 +12,7 @@ using TaleWorlds.MountAndBlade;
 
 namespace SeparatistCrisis.Abilities
 {
+    [AbilityAttribute("abi_force_push")]
     public class ForcePushAbility : IAbility
     {
         private Ability _options;

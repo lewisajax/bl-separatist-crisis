@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AbilityHeroes>
+	<AbilityHero id="ah_palpatine" character_id="palpatine">
+		<AbilitySlot action="Ability.abi_force_push" />
+		<AbilitySlot action="Ability.abi_force_choke" />
+	</AbilityHero>
+</AbilityHeroes>

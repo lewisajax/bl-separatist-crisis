@@ -12,6 +12,7 @@ using TaleWorlds.MountAndBlade;
 
 namespace SeparatistCrisis.Abilities
 {
+    [AbilityAttribute("abi_force_choke")]
     public class ForceChokeAbility : IAbility
     {
         private Ability _options;

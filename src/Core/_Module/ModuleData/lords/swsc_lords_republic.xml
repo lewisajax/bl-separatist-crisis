@@ -52,13 +52,13 @@
 		</Traits>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.vlandia_sword_2_t3" />
-				<equipment slot="Item1" id="Item.fortified_kite_shield" />
-				<equipment slot="Head" id="Item.pointed_skullcap_over_cloth_headwrap" />
-				<equipment slot="Body" id="Item.imperial_lamellar_over_leather" />
-				<equipment slot="Cape" id="Item.wrapped_scarf" />
-				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
-				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
+				<equipment slot="Item0" id="Item.dc_15a_rifle" />
+				<equipment slot="Item1" id="Item.blaster_bolt_long_blue" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" />
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" />
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" />
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" />
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" />
 			</EquipmentRoster>
 			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />

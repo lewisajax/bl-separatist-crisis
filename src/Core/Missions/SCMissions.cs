@@ -73,7 +73,10 @@ namespace SeparatistCrisis.Missions
                     new BattleMissionAgentInteractionLogic(),
                     new AgentMoraleInteractionLogic(),
                     new AssignPlayerRoleInTeamMissionController(!isPlayerSergeant, isPlayerSergeant, isPlayerInArmy, heroesOnPlayerSideByPriority),new SandboxGeneralsAndCaptainsAssignmentLogic(attackerGeneralName, (leaderHero2 != null) ? leaderHero2.Name : null, null, null, true),
+
+                    new AbilityControllerLeaveLogic(),
                     new EquipmentControllerLeaveLogic(),
+
                     new MissionHardBorderPlacer(),
                     new MissionBoundaryPlacer(),
                     new MissionBoundaryCrossingHandler(),
