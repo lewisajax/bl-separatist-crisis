@@ -40,7 +40,7 @@
 						<!--Background-->
 						<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="459" SuggestedHeight="459" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="General\RadialMenu\radial_menu_bg" Color="#00000077"/>
 
-						<CircleActionSelectorWidget DataSource="{EquippedWeapons}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Bottom" AbilityActionContainer="AbilityActionContainer" DistanceFromCenterModifier="160" DirectionWidget="..\DirectionWidget">
+						<CircleActionSelectorWidget DataSource="{EquippedAbilities}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Bottom" ActionContainer="AbilityActionContainer" DistanceFromCenterModifier="160" DirectionWidget="..\DirectionWidget">
 							<ItemTemplate>
 								<ButtonWidget VisualDefinition="CircleGlow" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="117" SuggestedHeight="115" HorizontalAlignment="Center" VerticalAlignment="Center" Command.Click="ExecuteAction" IsSelected="@IsSelected" UpdateChildrenStates="true" Brush="Mission.Radial.Item.Glow">
 									<Children>

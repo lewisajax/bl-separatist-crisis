@@ -13,10 +13,8 @@ using TaleWorlds.MountAndBlade;
 namespace SeparatistCrisis.Abilities
 {
     [AbilityAttribute("abi_force_push")]
-    public class ForcePushAbility : IAbility
+    public class ForcePushAbility : BaseAbility
     {
-        private Ability _options;
-        private AbilityAgent _abilityAgent;
         private float _boxLength;
         private float _boxSize;
 
@@ -34,30 +32,10 @@ namespace SeparatistCrisis.Abilities
 
         public float LastCheck { get; set; }
 
-        public Ability Options 
-        { 
-            get
-            {
-                return this._options;
-            }
-        }
-
-        public AbilityAgent AbilityAgent 
-        { 
-            get
-            {
-                return this._abilityAgent;
-            }
-        }
-
-        public bool IsActive { get; set; }
-
         public GameEntity? ActiveEntity { get; set; }
 
-        public ForcePushAbility(AbilityAgent abilityAgent, Ability options)
+        public ForcePushAbility(AbilityAgent abilityAgent, Ability options) : base(abilityAgent, options)
         {
-            this._abilityAgent = abilityAgent;
-            this._options = options;
             this._boxLength = 5f;
             this._boxSize = 3f;
             this.LastCheck = Mission.Current.CurrentTime;
@@ -117,12 +95,13 @@ namespace SeparatistCrisis.Abilities
             return cube;
         }
 
-        public void OnTick(float dt)
+        public override void OnTick(float dt)
         {
             if (Mission.Current.InputManager.IsKeyReleased(TaleWorlds.InputSystem.InputKey.B))
             {
                 if (Mission.Current.CurrentTime > ((this.LastCheck + dt) + 4f))
                 {
+                    InformationManager.DisplayMessage(new InformationMessage("Force Push"));
                     this.IsActive = false;
                     Agent agent = this.AbilityAgent.Agent;
 
@@ -164,6 +143,13 @@ namespace SeparatistCrisis.Abilities
                     this.LastCheck = Mission.Current.CurrentTime;
                 }
             }
+        }
+
+        public override void Dispose()
+        {
+            base.Dispose();
+            this.ActiveEntity?.ClearEntityComponents(true, true, true);
+            this.ActiveEntity = null;
         }
     }
 }

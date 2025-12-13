@@ -13,10 +13,8 @@ using TaleWorlds.MountAndBlade;
 namespace SeparatistCrisis.Abilities
 {
     [AbilityAttribute("abi_force_lightning")]
-    public class ForceLightningAbility : IAbility
+    public class ForceLightningAbility : BaseAbility
     {
-        private Ability _options;
-        private AbilityAgent _abilityAgent;
         private float _boxLength;
         private float _boxSize;
 
@@ -34,30 +32,10 @@ namespace SeparatistCrisis.Abilities
 
         public float LastCheck { get; set; }
 
-        public Ability Options
-        {
-            get
-            {
-                return this._options;
-            }
-        }
-
-        public AbilityAgent AbilityAgent
-        {
-            get
-            {
-                return this._abilityAgent;
-            }
-        }
-
-        public bool IsActive { get; set; }
-
         public GameEntity? ActiveEntity { get; set; }
 
-        public ForceLightningAbility(AbilityAgent abilityAgent, Ability options)
+        public ForceLightningAbility(AbilityAgent abilityAgent, Ability options) : base(abilityAgent, options)
         {
-            this._abilityAgent = abilityAgent;
-            this._options = options;
             this._boxLength = 8f;
             this._boxSize = 2f;
             this.LastCheck = Mission.Current.CurrentTime;
@@ -104,7 +82,7 @@ namespace SeparatistCrisis.Abilities
         musician_idle_stand_active
         musician_idle_stand_cheerful*/
 
-        public void OnTick(float dt)
+        public override void OnTick(float dt)
         {
             if (Mission.Current.InputManager.IsKeyReleased(TaleWorlds.InputSystem.InputKey.B))
             {
@@ -200,6 +178,13 @@ namespace SeparatistCrisis.Abilities
                     }
                 }
             }
+        }
+
+        public override void Dispose()
+        {
+            base.Dispose();
+            this.ActiveEntity?.ClearEntityComponents(true, true, true);
+            this.ActiveEntity = null;
         }
     }
 }

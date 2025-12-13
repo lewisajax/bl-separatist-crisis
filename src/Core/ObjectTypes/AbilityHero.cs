@@ -100,6 +100,11 @@ namespace SeparatistCrisis.ObjectTypes
             return MBObjectManager.Instance.GetObject<AbilityHero>(idString);
         }
 
+        public static AbilityHero Find(BasicCharacterObject charObj)
+        {
+            return MBObjectManager.Instance.GetObject<AbilityHero>((x) => x.Character == charObj);
+        }
+
         public static AbilityHero FindFirst(Func<AbilityHero, bool> predicate)
         {
             return AbilityHero.All.FirstOrDefault(predicate);

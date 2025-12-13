@@ -23,7 +23,9 @@ namespace SeparatistCrisis.ObjectTypes
     {
         private static Dictionary<string, Type>? _abilityTypes;
 
-        public IAbility? Action { get; private set; }
+        public string Name { get; private set; } = null!;
+
+        public Type? Action { get; private set; }
 
         public override void Deserialize(MBObjectManager objectManager, XmlNode node)
         {
@@ -38,9 +40,17 @@ namespace SeparatistCrisis.ObjectTypes
             if (node == null)
                 return;
 
-            if (Ability._abilityTypes.TryGetValue(this.StringId, out Type value))
+            if (node.Attributes == null || node.Attributes["name"] == null)
+                throw new ArgumentNullException("node");
+
+            this.Name = node.Attributes["name"].Value;
+
+            if (Ability._abilityTypes.TryGetValue(this.StringId, out Type? value))
             {
-                this.Action = value as IAbility;
+                if (value != null)
+                {
+                    this.Action = value;
+                }
             }
         }
 
@@ -77,15 +87,19 @@ namespace SeparatistCrisis.ObjectTypes
             {
                 foreach (Type type in assemblies[i].GetTypesSafe(null))
                 {
+                    if (!typeof(BaseAbility).IsAssignableFrom(type))
+                        continue;
+
                     object[] customAttributesSafe = type.GetCustomAttributesSafe(typeof(AbilityAttribute), false);
 
-                    if (customAttributesSafe != null && customAttributesSafe.Length == 1)
+                    if (customAttributesSafe != null && customAttributesSafe.Length == 1 && customAttributesSafe[0] is AbilityAttribute)
                     {
-                        AbilityAttribute abiAttr = customAttributesSafe[0] as AbilityAttribute;
+                        AbilityAttribute? abiAttr = customAttributesSafe[0] as AbilityAttribute;
 
                         if (abiAttr != null)
                         {
-                            types[abiAttr.StringId] = type;
+                            if (type != null)
+                                types[abiAttr.StringId] = type;
                         }
                     }
                 }

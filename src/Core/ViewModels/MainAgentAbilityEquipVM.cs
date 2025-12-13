@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SeparatistCrisis.ObjectTypes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -16,15 +17,18 @@ namespace SeparatistCrisis.ViewModels
     public class MainAgentAbilityEquipVM: ViewModel
     {
         private EquipmentActionItemVM _lastSelectedItem;
-        private Action<EquipmentIndex> _toggleItem;
+        private Action<int> _toggleItem;
         private TextObject _dropTextObject = new TextObject("{=d1tCz15N}Hold to Equip", null);
         private MBBindingList<ControllerEquippedItemVM> _equipActions;
         private bool _isActive;
         private string _holdToDropText;
         private string _pressToEquipText;
 
+        public AbilityHero? AbilityHero { get; private set; }
+        public int WieldedIndex { get; set; } = -1; // We will store this someplace as so that we don't have to reference this behaviour
+
         [DataSourceProperty]
-        public MBBindingList<ControllerEquippedItemVM> EquippedWeapons
+        public MBBindingList<ControllerEquippedItemVM> EquippedAbilities
         {
             get
             {
@@ -35,7 +39,7 @@ namespace SeparatistCrisis.ViewModels
                 if (value != this._equipActions)
                 {
                     this._equipActions = value;
-                    base.OnPropertyChangedWithValue<MBBindingList<ControllerEquippedItemVM>>(value, "EquippedWeapons");
+                    base.OnPropertyChangedWithValue<MBBindingList<ControllerEquippedItemVM>>(value, "EquippedAbilities");
                 }
             }
         }
@@ -49,7 +53,8 @@ namespace SeparatistCrisis.ViewModels
             }
             set
             {
-                if (value != this._holdToDropText)
+                bool flag = value != this._holdToDropText;
+                if (flag)
                 {
                     this._holdToDropText = value;
                     base.OnPropertyChangedWithValue<string>(value, "HoldToDropText");
@@ -91,10 +96,10 @@ namespace SeparatistCrisis.ViewModels
             }
         }
 
-        public MainAgentAbilityEquipVM(Action<EquipmentIndex> toggleItem)
+        public MainAgentAbilityEquipVM(Action<int> toggleItem)
         {
             this._toggleItem = toggleItem;
-            this.EquippedWeapons = new MBBindingList<ControllerEquippedItemVM>();
+            this.EquippedAbilities = new MBBindingList<ControllerEquippedItemVM>();
             this.RefreshValues();
         }
 
@@ -114,15 +119,14 @@ namespace SeparatistCrisis.ViewModels
         {
             if (oldAgent != null)
             {
-                oldAgent.OnMainAgentWieldedItemChange = (Agent.OnMainAgentWieldedItemChangeDelegate)Delegate.Remove(oldAgent.OnMainAgentWieldedItemChange, new Agent.OnMainAgentWieldedItemChangeDelegate(this.OnMainAgentWeaponChange));
+                this.EquippedAbilities.Clear();
             }
+
             if (Agent.Main != null)
-            {
-                Agent main = Agent.Main;
-                main.OnMainAgentWieldedItemChange = (Agent.OnMainAgentWieldedItemChangeDelegate)Delegate.Combine(main.OnMainAgentWieldedItemChange, new Agent.OnMainAgentWieldedItemChangeDelegate(this.OnMainAgentWeaponChange));
-            }
+                this.AbilityHero = AbilityHero.Find(Agent.Main.Character);
         }
 
+        // If we have the option to change abilities outside of the radial menu, then we'll need to set up an event or something
         private void OnMainAgentWeaponChange()
         {
             this.UpdateItemsWieldStatus();
@@ -130,39 +134,45 @@ namespace SeparatistCrisis.ViewModels
 
         public void OnToggle(bool isEnabled)
         {
-            this.EquippedWeapons.ApplyActionOnAllItems(delegate (ControllerEquippedItemVM o)
+            if (this.AbilityHero == null)
+                return;
+
+            if (this.AbilityHero.Abilities.Count <= 0)
+                return;
+
+            this.EquippedAbilities.ApplyActionOnAllItems(delegate (ControllerEquippedItemVM o)
             {
                 o.OnFinalize();
             });
-            this.EquippedWeapons.Clear();
+            this.EquippedAbilities.Clear();
             if (isEnabled)
             {
-                this.EquippedWeapons.Add(new ControllerEquippedItemVM(GameTexts.FindText("str_cancel", null).ToString(), null, "None", null, new Action<EquipmentActionItemVM>(this.OnItemSelected)));
-                int num = 0;
-                int totalNumberOfWeaponsOnMainAgent = this.GetTotalNumberOfWeaponsOnMainAgent();
-                for (EquipmentIndex equipmentIndex = EquipmentIndex.WeaponItemBeginSlot; equipmentIndex < EquipmentIndex.ExtraWeaponSlot; equipmentIndex++)
+                this.EquippedAbilities.Add(new ControllerEquippedItemVM(GameTexts.FindText("str_cancel", null).ToString(), null, -1, null, new Action<EquipmentActionItemVM>(this.OnItemSelected)));
+
+                int numAbilities = this.AbilityHero.Abilities.Count;
+                for (int x = 0; x < numAbilities; x++)
                 {
-                    MissionWeapon weapon = Agent.Main.Equipment[equipmentIndex];
-                    if (!weapon.IsEmpty)
-                    {
-                        string itemTypeAsString = MissionMainAgentEquipmentControllerVM.GetItemTypeAsString(weapon.Item);
-                        string weaponName = this.GetWeaponName(weapon);
-                        this.EquippedWeapons.Add(new ControllerEquippedItemVM(weaponName, itemTypeAsString, equipmentIndex, MainAgentAbilityEquipVM.GetWeaponHotKey(num, totalNumberOfWeaponsOnMainAgent), new Action<EquipmentActionItemVM>(this.OnItemSelected)));
-                        num++;
-                    }
+                    string itemTypeAsString = "Shield"; // Will need to look at adding our own icon(s)
+                    string abilityName = this.AbilityHero.Abilities[x].Name;
+                    this.EquippedAbilities.Add(new ControllerEquippedItemVM(abilityName, itemTypeAsString, x, 
+                        MainAgentAbilityEquipVM.GetWeaponHotKey(x, numAbilities), 
+                        new Action<EquipmentActionItemVM>(this.OnItemSelected)
+                        )
+                    );
                 }
+
                 this.UpdateItemsWieldStatus();
             }
             else
             {
-                if (this._lastSelectedItem != null && this._lastSelectedItem.Identifier is EquipmentIndex)
+                if (this._lastSelectedItem != null)
                 {
-                    Action<EquipmentIndex> toggleItem = this._toggleItem;
+                    Action<int> toggleItem = this._toggleItem;
+
                     if (toggleItem != null)
-                    {
-                        toggleItem((EquipmentIndex)this._lastSelectedItem.Identifier);
-                    }
+                        toggleItem((int)this._lastSelectedItem.Identifier);
                 }
+
                 this._lastSelectedItem = null;
             }
             this.IsActive = isEnabled;
@@ -180,28 +190,28 @@ namespace SeparatistCrisis.ViewModels
         {
         }
 
-        public void OnWeaponDroppedAtIndex(int droppedWeaponIndex)
+        /*public void OnWeaponDroppedAtIndex(int droppedWeaponIndex)
         {
             this.OnToggle(true);
-        }
+        }*/
 
-        private bool IsWieldedWeaponAtIndex(EquipmentIndex index)
+        private bool IsWieldedWeaponAtIndex(int index)
         {
-            return index == Agent.Main.GetPrimaryWieldedItemIndex() || index == Agent.Main.GetOffhandWieldedItemIndex();
+            return index == this.WieldedIndex;
         }
 
-        public void OnWeaponEquippedAtIndex(int equippedWeaponIndex)
+        public void OnAbilityEquippedAtIndex(int equippedWeaponIndex)
         {
             this.UpdateItemsWieldStatus();
         }
 
-        public void SetDropProgressForIndex(EquipmentIndex eqIndex, float progress)
+        /*public void SetDropProgressForIndex(EquipmentIndex eqIndex, float progress)
         {
             int i = 0;
-            while (i < this.EquippedWeapons.Count)
+            while (i < this.EquippedAbilities.Count)
             {
                 object identifier;
-                if (!((identifier = this.EquippedWeapons[i].Identifier) is EquipmentIndex))
+                if (!((identifier = this.EquippedAbilities[i].Identifier) is EquipmentIndex))
                 {
                     goto IL_31;
                 }
@@ -213,29 +223,24 @@ namespace SeparatistCrisis.ViewModels
                 float num = progress;
             IL_39:
                 float dropProgress = num;
-                this.EquippedWeapons[i].DropProgress = dropProgress;
+                this.EquippedAbilities[i].DropProgress = dropProgress;
                 i++;
                 continue;
             IL_31:
                 num = 0f;
                 goto IL_39;
             }
-        }
+        }*/
 
         private void UpdateItemsWieldStatus()
         {
-            for (int i = 0; i < this.EquippedWeapons.Count; i++)
+            for (int i = 0; i < this.EquippedAbilities.Count; i++)
             {
-                object identifier;
-                if ((identifier = this.EquippedWeapons[i].Identifier) is EquipmentIndex)
-                {
-                    EquipmentIndex index = (EquipmentIndex)identifier;
-                    this.EquippedWeapons[i].IsWielded = this.IsWieldedWeaponAtIndex(index);
-                }
+                this.EquippedAbilities[i].IsWielded = this.IsWieldedWeaponAtIndex(i);
             }
         }
 
-        private string GetWeaponName(MissionWeapon weapon)
+        private string GetAbilityName(MissionWeapon weapon)
         {
             string text = weapon.Item.Name.ToString();
             WeaponComponentData currentUsageItem = weapon.CurrentUsageItem;
@@ -273,13 +278,14 @@ namespace SeparatistCrisis.ViewModels
         public override void OnFinalize()
         {
             base.OnFinalize();
-            this.EquippedWeapons.ApplyActionOnAllItems(delegate (ControllerEquippedItemVM o)
+            this.EquippedAbilities.ApplyActionOnAllItems(delegate (ControllerEquippedItemVM o)
             {
                 o.OnFinalize();
             });
-            this.EquippedWeapons.Clear();
+            this.EquippedAbilities.Clear();
         }
 
+        // Do we want more than 4 abilities on the radial menu?
         private static HotKey GetWeaponHotKey(int currentIndexOfWeapon, int totalNumOfWeapons)
         {
             if (currentIndexOfWeapon == 0)
@@ -323,19 +329,6 @@ namespace SeparatistCrisis.ViewModels
         public void OnGamepadActiveChanged(bool isActive)
         {
             this.HoldToDropText = (isActive ? this._dropTextObject.ToString() : string.Empty);
-        }
-
-        private int GetTotalNumberOfWeaponsOnMainAgent()
-        {
-            int num = 0;
-            for (EquipmentIndex equipmentIndex = EquipmentIndex.WeaponItemBeginSlot; equipmentIndex < EquipmentIndex.ExtraWeaponSlot; equipmentIndex++)
-            {
-                if (!Agent.Main.Equipment[equipmentIndex].IsEmpty)
-                {
-                    num++;
-                }
-            }
-            return num;
         }
     }
 }

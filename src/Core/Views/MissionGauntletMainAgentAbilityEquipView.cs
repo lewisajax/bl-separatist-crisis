@@ -46,6 +46,8 @@ namespace SeparatistCrisis.Views
         private bool _prevKeyDown;
         private bool _weaponDropHandled;
 
+        public int? WieldedIndex { get => this._dataSource?.WieldedIndex; }
+
         private bool IsDisplayingADialog
         {
             get
@@ -77,7 +79,7 @@ namespace SeparatistCrisis.Views
         {
             base.EarlyStart();
             this._gauntletLayer = new GauntletLayer("MissionAbilityEquip", this.ViewOrderPriority, false);
-            this._dataSource = new MainAgentAbilityEquipVM(new Action<EquipmentIndex>(this.OnToggleItem));
+            this._dataSource = new MainAgentAbilityEquipVM(new Action<int>(this.OnToggleItem));
             this._missionMainAgentController = base.Mission.GetMissionBehavior<MissionMainAgentController>();
             this._missionControllerLeaveLogic = base.Mission.GetMissionBehavior<AbilityControllerLeaveLogic>();
             this._gauntletLayer.Input.RegisterHotKeyCategory(HotKeyManager.GetCategory("SCCombatHotKeyCategory"));
@@ -185,8 +187,10 @@ namespace SeparatistCrisis.Views
             {
                 int keyWeaponIndex = this.GetKeyWeaponIndex(false);
                 int keyWeaponIndex2 = this.GetKeyWeaponIndex(true);
-                this._dataSource.SetDropProgressForIndex(EquipmentIndex.None, this._weaponDropHoldTime / 0.5f);
-                if (keyWeaponIndex != -1)
+
+                // The drop functionality doesn't even work in vanilla
+                // this._dataSource.SetDropProgressForIndex(EquipmentIndex.None, this._weaponDropHoldTime / 0.5f);
+                /*if (keyWeaponIndex != -1)
                 {
                     if (!this._weaponDropHandled)
                     {
@@ -197,11 +201,12 @@ namespace SeparatistCrisis.Views
                             this._dataSource.OnWeaponDroppedAtIndex(keyWeaponIndex);
                             this._weaponDropHandled = true;
                         }
-                        this._dataSource.SetDropProgressForIndex((EquipmentIndex)num, this._weaponDropHoldTime / 0.5f);
+                        this._dataSource.SetDropProgressForIndex(num, this._weaponDropHoldTime / 0.5f);
                     }
                     this._weaponDropHoldTime += dt;
                     return;
-                }
+                }*/
+
                 if (keyWeaponIndex2 != -1)
                 {
                     if (!this._weaponDropHandled)
@@ -209,8 +214,8 @@ namespace SeparatistCrisis.Views
                         int num2 = keyWeaponIndex2;
                         if (!Agent.Main.Equipment[num2].IsEmpty)
                         {
-                            this.OnToggleItem((EquipmentIndex)num2);
-                            this._dataSource.OnWeaponEquippedAtIndex(keyWeaponIndex2);
+                            this.OnToggleItem(num2);
+                            this._dataSource.OnAbilityEquippedAtIndex(keyWeaponIndex2);
                             this._weaponDropHandled = true;
                         }
                     }
@@ -225,9 +230,19 @@ namespace SeparatistCrisis.Views
         private void HandleOpeningHold()
         {
             MainAgentAbilityEquipVM dataSource = this._dataSource;
+            if (dataSource.AbilityHero == null)
+                return;
+
             if (dataSource != null)
             {
-                dataSource.OnToggle(true);
+                if (dataSource.AbilityHero.Abilities.Count <= 0)
+                {
+                    dataSource.OnToggle(false);
+                }
+                else
+                {
+                    dataSource.OnToggle(true);
+                }
             }
             base.MissionScreen.RegisterRadialMenuObject<MissionGauntletMainAgentAbilityEquipView>(this);
             AbilityControllerLeaveLogic missionControllerLeaveLogic = this._missionControllerLeaveLogic;
@@ -283,16 +298,15 @@ namespace SeparatistCrisis.Views
             missionControllerLeaveLogic.SetIsAbilitySelectionActive(false);
         }
 
-        private void OnToggleItem(EquipmentIndex indexToToggle)
+        private void OnToggleItem(int indexToToggle)
         {
-            bool flag = indexToToggle == Agent.Main.GetPrimaryWieldedItemIndex();
-            bool flag2 = indexToToggle == Agent.Main.GetOffhandWieldedItemIndex();
-            if (flag || flag2)
+            // We will handle the wieldedWeapon state somewhere else, this will do for now though.
+            this._dataSource.WieldedIndex = indexToToggle;
+            if (indexToToggle >= 0 && this._dataSource.AbilityHero != null)
             {
-                Agent.Main.TryToSheathWeaponInHand(flag ? Agent.HandIndex.MainHand : Agent.HandIndex.OffHand, Agent.WeaponWieldActionType.WithAnimation);
-                return;
+                InformationManager.DisplayMessage(new InformationMessage($"{this._dataSource.AbilityHero.Abilities[indexToToggle].StringId}"));
             }
-            Agent.Main.TryToWieldWeaponInSlot(indexToToggle, Agent.WeaponWieldActionType.WithAnimation, false);
+
         }
 
         private void OnDropEquipment(EquipmentIndex indexToDrop)
@@ -368,12 +382,12 @@ namespace SeparatistCrisis.Views
             }
             if (!string.IsNullOrEmpty(text))
             {
-                for (int i = 0; i < this._dataSource.EquippedWeapons.Count; i++)
+                for (int i = 0; i < this._dataSource.EquippedAbilities.Count; i++)
                 {
-                    InputKeyItemVM shortcutKey = this._dataSource.EquippedWeapons[i].ShortcutKey;
+                    InputKeyItemVM shortcutKey = this._dataSource.EquippedAbilities[i].ShortcutKey;
                     if (((shortcutKey != null) ? shortcutKey.HotKey.Id : null) == text)
                     {
-                        return (int)this._dataSource.EquippedWeapons[i].Identifier;
+                        return (int)this._dataSource.EquippedAbilities[i].Identifier;
                     }
                 }
             }
