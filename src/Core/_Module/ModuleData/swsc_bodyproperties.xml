@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BodyProperties>
+    <BodyProperty id="clone_base">
+		<BodyPropertiesMin version="4" age="21.29" weight="0.162" build="0.3657"
+			key="00000007800000000160000000113151100171100000100021111101800101000050600305111101000000000000000000000000000000000000000000A00000" />
+		<BodyPropertiesMax version="4" age="40" weight="0.733" build="0.5651"
+			key="0010C80E40003A5CEF8EFCBC985EBED9E9EE8EE8EEB6FEEDEDFFEEEE8DCA8F6D0388803508EFEEEF000000000000000000000000000000000000000067009005" />
+		<hair_tags>
+			<hair_tag name="LongAndBushy" />
+			<hair_tag name="SlickedLong" />
+			<hair_tag name="SlickedLong" />
+			<hair_tag name="PartedAndCombedBack" />
+			<hair_tag name="PartedAndCombedBack" />
+			<hair_tag name="Tousled" />
+			<hair_tag name="Tousled" />
+			<hair_tag name="Short" />
+			<hair_tag name="Short" />
+			<hair_tag name="PageBoy" />
+			<hair_tag name="PageBoy" />
+			<hair_tag name="PageBoy" />
+			<hair_tag name="Bowl" />
+			<hair_tag name="Bowl" />
+			<hair_tag name="ShortAndThin" />
+			<hair_tag name="SlickedShort" />
+			<hair_tag name="ShortWavy" />
+			<hair_tag name="Bandit Hair 1" />
+			<hair_tag name="Afro Hair 5" />
+			<hair_tag name="Viking Hair" />
+			<hair_tag name="Monk Hair" />
+			<hair_tag name="Monk Hair" />
+		</hair_tags>
+		<beard_tags>
+			<beard_tag name="Cleanshaven" />
+			<beard_tag name="MustacheAndPatch" />
+			<beard_tag name="MediumMustache" />
+			<beard_tag name="WaxedMustache" />
+			<beard_tag name="WaxedMustache" />
+			<beard_tag name="DroopyMustache" />
+			<beard_tag name="LightGoatee" />
+			<beard_tag name="LightGoatee" />
+			<beard_tag name="BushyGoatee" />
+			<beard_tag name="BushyGoatee" />
+			<beard_tag name="WaxedBeardWithShavedCheeks" />
+			<beard_tag name="WaxedBeardWithShavedCheeks" />
+			<beard_tag name="BeardWithShavedCheeks" />
+			<beard_tag name="BeardWithShavedCheeks" />
+			<beard_tag name="TrimmedDutch" />
+			<beard_tag name="TrimmedDutch" />
+			<beard_tag name="TrimmedDutch" />
+			<beard_tag name="Sideburns" />
+			<beard_tag name="Sideburns" />
+			<beard_tag name="Sideburns" />
+			<beard_tag name="MediumDutch" />
+			<beard_tag name="MediumDutch" />
+			<beard_tag name="Stubble" />
+			<beard_tag name="CircleBeard" />
+			<beard_tag name="LampshedeMustache" />
+			<beard_tag name="VanDykeBeard" />
+		</beard_tags>
+		<tattoo_tags>
+			<tattoo_tag name="Cleanface" />
+			<tattoo_tag name="Cleanface" />
+			<tattoo_tag name="Cleanface" />
+			<tattoo_tag name="Scar2" />
+			<tattoo_tag name="Cleanface" />
+			<tattoo_tag name="Scar4" />
+			<tattoo_tag name="Scar5" />
+			<tattoo_tag name="Scar7" />
+			<tattoo_tag name="Scar10" />
+			<tattoo_tag name="Scar11" />
+			<tattoo_tag name="Cleanface" />
+			<tattoo_tag name="Cleanface" />
+			<tattoo_tag name="Cleanface" />
+			<tattoo_tag name="Cleanface" />
+			<tattoo_tag name="Scar15" />
+			<tattoo_tag name="Scar15" />
+		</tattoo_tags>
+	</BodyProperty>
+	<BodyProperty id="human_male_base">
+		<BodyPropertiesMin version="4" age="21.29" weight="0.162" build="0.3657"
+			key="00000007800000000160000000113151100171100000100021111101800101000050600305111101000000000000000000000000000000000000000000A00000" />
+		<BodyPropertiesMax version="4" age="40" weight="0.733" build="0.5651"
+			key="0010C80E40003A5CEF8EFCBC985EBED9E9EE8EE8EEB6FEEDEDFFEEEE8DCA8F6D0388803508EFEEEF000000000000000000000000000000000000000067009005" />
+		<hair_tags>
+			<hair_tag name="LongAndBushy" />
+			<hair_tag name="SlickedLong" />
+			<hair_tag name="SlickedLong" />
+			<hair_tag name="PartedAndCombedBack" />
+			<hair_tag name="PartedAndCombedBack" />
+			<hair_tag name="Tousled" />
+			<hair_tag name="Tousled" />
+			<hair_tag name="Short" />
+			<hair_tag name="Short" />
+			<hair_tag name="PageBoy" />
+			<hair_tag name="PageBoy" />
+			<hair_tag name="PageBoy" />
+			<hair_tag name="Bowl" />
+			<hair_tag name="Bowl" />
+			<hair_tag name="ShortAndThin" />
+			<hair_tag name="SlickedShort" />
+			<hair_tag name="ShortWavy" />
+			<hair_tag name="Bandit Hair 1" />
+			<hair_tag name="Afro Hair 5" />
+			<hair_tag name="Viking Hair" />
+			<hair_tag name="Monk Hair" />
+			<hair_tag name="Monk Hair" />
+		</hair_tags>
+		<beard_tags>
+			<beard_tag name="Cleanshaven" />
+			<beard_tag name="MustacheAndPatch" />
+			<beard_tag name="MediumMustache" />
+			<beard_tag name="WaxedMustache" />
+			<beard_tag name="WaxedMustache" />
+			<beard_tag name="DroopyMustache" />
+			<beard_tag name="LightGoatee" />
+			<beard_tag name="LightGoatee" />
+			<beard_tag name="BushyGoatee" />
+			<beard_tag name="BushyGoatee" />
+			<beard_tag name="WaxedBeardWithShavedCheeks" />
+			<beard_tag name="WaxedBeardWithShavedCheeks" />
+			<beard_tag name="BeardWithShavedCheeks" />
+			<beard_tag name="BeardWithShavedCheeks" />
+			<beard_tag name="TrimmedDutch" />
+			<beard_tag name="TrimmedDutch" />
+			<beard_tag name="TrimmedDutch" />
+			<beard_tag name="Sideburns" />
+			<beard_tag name="Sideburns" />
+			<beard_tag name="Sideburns" />
+			<beard_tag name="MediumDutch" />
+			<beard_tag name="MediumDutch" />
+			<beard_tag name="Stubble" />
+			<beard_tag name="CircleBeard" />
+			<beard_tag name="LampshedeMustache" />
+			<beard_tag name="VanDykeBeard" />
+		</beard_tags>
+		<tattoo_tags>
+			<tattoo_tag name="Cleanface" />
+			<tattoo_tag name="Cleanface" />
+			<tattoo_tag name="Cleanface" />
+			<tattoo_tag name="Scar2" />
+			<tattoo_tag name="Cleanface" />
+			<tattoo_tag name="Scar4" />
+			<tattoo_tag name="Scar5" />
+			<tattoo_tag name="Scar7" />
+			<tattoo_tag name="Scar10" />
+			<tattoo_tag name="Scar11" />
+			<tattoo_tag name="Cleanface" />
+			<tattoo_tag name="Cleanface" />
+			<tattoo_tag name="Cleanface" />
+			<tattoo_tag name="Cleanface" />
+			<tattoo_tag name="Scar15" />
+			<tattoo_tag name="Scar15" />
+		</tattoo_tags>
+	</BodyProperty>
+</BodyProperties>

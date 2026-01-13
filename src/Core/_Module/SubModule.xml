@@ -39,14 +39,24 @@
 		</SubModule>
     </SubModules>
 	<Xmls>
-		<XmlNode>
-			<XmlName id="SPCultures" path="swsc_spcultures"/>
+		<XmlNode>                
+			<XmlName id="EquipmentRosters" path="equipmentsets/" />
 			<IncludedGameTypes>
-				<GameType value="Campaign"/>
-				<GameType value="CampaignStoryMode"/>
-				<GameType value="CustomGame"/>
+				<GameType value="Campaign" />
+				<GameType value="CampaignStoryMode" />
+				<GameType value="CustomGame" />
+				<GameType value="EditorGame" />
 			</IncludedGameTypes>
-		</XmlNode>
+		</XmlNode> 
+		<XmlNode>                
+			<XmlName id="BodyProperties" path="swsc_bodyproperties" />
+			<IncludedGameTypes>
+				<GameType value="Campaign" />
+				<GameType value="CampaignStoryMode" />
+				<GameType value="CustomGame" />
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode> 
 		<XmlNode>
 			<XmlName id="NPCCharacters" path="npccharacters/"/>
 			<IncludedGameTypes>
@@ -56,7 +66,7 @@
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
-			<XmlName id="partyTemplates" path="party_templates/"/>
+			<XmlName id="partyTemplates" path="partytemplates/"/>
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
@@ -72,6 +82,14 @@
 		</XmlNode>
 		<XmlNode>
 			<XmlName id="Heroes" path="heroes/"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="SPCultures" path="swsc_spcultures"/>
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>

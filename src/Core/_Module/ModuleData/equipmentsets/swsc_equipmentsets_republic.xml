@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EquipmentRosters>
+    <EquipmentRoster id="republic_clone_civilian_template_t1" culture="Culture.republic">
+		<EquipmentSet civilian="true">
+			<Equipment slot="Item0" id="Item.dc_15a_rifle" />
+			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+			<Equipment slot="Head" id="Item.p1_clone_helmet_trooper" />
+			<Equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" />
+			<Equipment slot="Body" id="Item.p1_clone_armor_trooper" />
+			<Equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" />
+			<Equipment slot="Leg" id="Item.p1_clone_boots_trooper" />
+		</EquipmentSet>
+	</EquipmentRoster>
+    <EquipmentRoster id="republic_clone_arc_civilian_template_t1" culture="Culture.republic">
+		<EquipmentSet civilian="true">
+			<Equipment slot="Item0" id="Item.dc_15s_carbine" />
+			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+			<Equipment slot="Head" id="Item.p1_clone_helmet_arc_trooper" />
+			<Equipment slot="Cape" id="Item.p1_clone_pauldrons_arc_trooper" />
+			<Equipment slot="Body" id="Item.p1_clone_armor_arc_trooper" />
+			<Equipment slot="Gloves" id="Item.p1_clone_gauntlets_arc_trooper" />
+			<Equipment slot="Leg" id="Item.p1_clone_boots_arc_trooper" />
+		</EquipmentSet>
+	</EquipmentRoster>
+	<!-- We could do with a arc sergeant armour set -->
+    <EquipmentRoster id="republic_clone_arc_civilian_template_t2" culture="Culture.republic">
+		<EquipmentSet civilian="true">
+			<Equipment slot="Item0" id="Item.dc_15s_carbine" /> <!-- westar_m5_rifle-->
+			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+			<Equipment slot="Head" id="Item.p1_clone_helmet_arc_lieutenant" />
+			<Equipment slot="Cape" id="Item.p1_clone_pauldrons_arc_lieutenant" />
+			<Equipment slot="Body" id="Item.p1_clone_armor_arc_lieutenant" />
+			<Equipment slot="Gloves" id="Item.p1_clone_gauntlets_arc_lieutenant" />
+			<Equipment slot="Leg" id="Item.p1_clone_boots_arc_lieutenant" />
+		</EquipmentSet>
+	</EquipmentRoster>
+    <EquipmentRoster id="republic_clone_arc_civilian_template_t3" culture="Culture.republic">
+		<EquipmentSet civilian="true">
+			<Equipment slot="Item0" id="Item.dc_15s_carbine" /> <!-- dual_westar_35_pistols-->
+			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+			<Equipment slot="Head" id="Item.p1_clone_helmet_arc_captain" />
+			<Equipment slot="Cape" id="Item.p1_clone_pauldrons_arc_captain" />
+			<Equipment slot="Body" id="Item.p1_clone_armor_arc_captain" />
+			<Equipment slot="Gloves" id="Item.p1_clone_gauntlets_arc_captain" />
+			<Equipment slot="Leg" id="Item.p1_clone_boots_arc_captain" />
+		</EquipmentSet>
+	</EquipmentRoster>
+	<EquipmentRoster id="republic_officer_civilian_template_t1" culture="Culture.republic">
+		<EquipmentSet civilian="true">
+			<Equipment slot="Item0" id="Item.mandalorian_pistol" /> <!-- Need dc_17_hand_blaster -->
+			<Equipment slot="Item1" id="Item.blaster_bolt_short_blue" />
+			<Equipment slot="Head" id="Item.republic_officer_hat" />
+			<Equipment slot="Body" id="Item.republic_officer_second_lt" /> <!-- We probably shouldnt have 5 different uniforms just to change the insignia -->
+			<!-- <Equipment slot="Gloves" id="Item.republic_officer_gloves" /> --> <!-- Need the gloves -->
+			<!-- <Equipment slot="Leg" id="Item.republic_officer_boots" /> --> <!-- Need the boots -->
+		</EquipmentSet>
+	</EquipmentRoster>
+	<EquipmentRoster id="republic_senate_commando_civilian_template_t1" culture="Culture.republic">
+		<EquipmentSet civilian="true">
+			<Equipment slot="Item0" id="Item.dc_15a_rifle" />
+			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+			<Equipment slot="Item2" id="Item.bothan_stun_stick" />
+			<Equipment slot="Head" id="Item.senate_commando_helmet" />
+			<Equipment slot="Cape" id="Item.senate_commando_pauldrons" /> 
+			<Equipment slot="Body" id="Item.senate_commando_armor" /> 
+			<Equipment slot="Gloves" id="Item.senate_commando_gauntlets" /> 
+			<Equipment slot="Leg" id="Item.senate_commando_boots" /> 
+		</EquipmentSet>
+	</EquipmentRoster>
+	<EquipmentRoster id="republic_senate_commando_civilian_template_t2" culture="Culture.republic">
+		<EquipmentSet civilian="true">
+			<Equipment slot="Item0" id="Item.dc_15a_rifle" />
+			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+			<Equipment slot="Item2" id="Item.bothan_stun_stick" />
+			<Equipment slot="Head" id="Item.senate_commando_helmet_captain" />
+			<Equipment slot="Cape" id="Item.senate_commando_pauldrons_captain" /> 
+			<Equipment slot="Body" id="Item.senate_commando_armor_captain" /> 
+			<Equipment slot="Gloves" id="Item.senate_commando_gauntlets_captain" /> 
+			<Equipment slot="Leg" id="Item.senate_commando_boots_captain" /> 
+		</EquipmentSet>
+	</EquipmentRoster>
+	<EquipmentRoster id="212_clone_airborne_civilian_template_t1" culture="Culture.republic">
+		<EquipmentSet civilian="true">
+			<Equipment slot="Item0" id="Item.dc_15s_carbine" />
+			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+			<Equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- p1_clone_airborne_helmet -->
+			<Equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- p1_clone_winged_jetpack -->
+			<Equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- p1_clone_airborne_armor -->
+			<Equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" />
+			<Equipment slot="Leg" id="Item.p1_clone_boots_trooper" />
+		</EquipmentSet>
+	</EquipmentRoster>
+	<EquipmentRoster id="104_clone_flame_trooper_civilian_template_t1" culture="Culture.republic">
+		<EquipmentSet civilian="true">
+			<Equipment slot="Item0" id="Item.dc_15s_carbine" />
+			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+			<Equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- p1_clone_flame_trooper_helmet -->
+			<Equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- p1_clone_flame_trooper_pauldrons -->
+			<Equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- p1_clone_flame_trooper_armor -->
+			<Equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_flame_trooper_gauntlets -->
+			<Equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_flame_trooper_boots -->
+		</EquipmentSet>
+	</EquipmentRoster>
+	<EquipmentRoster id="327_clone_barc_civilian_template_t1" culture="Culture.republic">
+		<EquipmentSet civilian="true">
+			<Equipment slot="Item0" id="Item.dc_15s_carbine" />
+			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+			<Equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- p1_clone_barc_helmet -->
+			<Equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- p1_clone_barc_pauldrons -->
+			<Equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- p1_clone_barc_armor -->
+			<Equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- 327 skin -->
+			<Equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- 327 skin -->
+		</EquipmentSet>
+	</EquipmentRoster>
+	<EquipmentRoster id="21_galactic_marine_civilian_template_t1" culture="Culture.republic">
+		<EquipmentSet civilian="true">
+			<Equipment slot="Item0" id="Item.dc_15s_carbine" />
+			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+			<Equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- p1_clone_galactic_marine_helmet -->
+			<Equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- p1_clone_galactic_marine_pauldrons -->
+			<Equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- p1_clone_galactic_marine_armor -->
+			<Equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_galactic_marine_gauntlets -->
+			<Equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_galactic_marine_boots -->
+		</EquipmentSet>
+	</EquipmentRoster>
+</EquipmentRosters>

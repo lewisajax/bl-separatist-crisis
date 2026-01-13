@@ -3,8 +3,8 @@
 
 	<!--Primary Cultures-->
 
-	<Culture id="galactic_republic"
-		name="Coruscanti"
+	<Culture id="republic"
+		name="Republic"
 		is_main_culture="true"
 		color="0xff793191"
 		color2="0xffFCDE90"
