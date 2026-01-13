@@ -61,9 +61,9 @@ namespace SeparatistCrisis.MissionManagers
             return SandBoxMissions.OpenBattleMissionWhileEnteringSettlement(scene, upgradeLevel, numberOfMaxTroopToBeSpawnedForPlayer, numberOfMaxTroopToBeSpawnedForOpponent);
         }
 
-        IMission CampaignMission.ICampaignMissionManager.OpenHideoutBattleMission(string scene, FlattenedTroopRoster playerTroops)
+        IMission CampaignMission.ICampaignMissionManager.OpenHideoutBattleMission(string scene, FlattenedTroopRoster playerTroops, bool isTutorial)
         {
-            return SandBoxMissions.OpenHideoutBattleMission(scene, playerTroops);
+            return SandBoxMissions.OpenHideoutBattleMission(scene, playerTroops, isTutorial);
         }
 
         IMission CampaignMission.ICampaignMissionManager.OpenTownCenterMission(string scene, int townUpgradeLevel, Location location, CharacterObject talkToChar, string playerSpawnTag)
@@ -123,7 +123,7 @@ namespace SeparatistCrisis.MissionManagers
 
         public IMission OpenDisguiseMission(string scene, bool willSetUpContact, string sceneLevels, Location fromLocation)
         {
-            return (IMission)SandBoxMissions.OpenDisguiseMission(scene, willSetUpContact, fromLocation, sceneLevels);
+            return SandBoxMissions.OpenDisguiseMission(scene, willSetUpContact, fromLocation, sceneLevels);
         }
 
         public IMission OpenNavalBattleMission(MissionInitializerRecord rec) => null;

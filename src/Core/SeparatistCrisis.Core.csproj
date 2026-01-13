@@ -102,6 +102,7 @@
 	<!-- We use a task from Bannerlord.BuildResources, this is just so I can see the file -->
 	<ItemGroup>
 		<None Include="$(PkgBannerlord_BuildResources)\build\Basic.targets" Visible="true" />
+		<None Include="_Module\ModuleData\project.mbproj" />
 	</ItemGroup>
 
 	<!-- Watches for any changes in the xml files for core and copies the _Module folder. Not all that efficient, especially when there's gonna be a lot of xml files but it works for the time being. -->
