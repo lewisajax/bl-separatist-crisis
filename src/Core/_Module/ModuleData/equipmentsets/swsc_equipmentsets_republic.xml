@@ -123,4 +123,26 @@
 			<Equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_galactic_marine_boots -->
 		</EquipmentSet>
 	</EquipmentRoster>
+	<EquipmentRoster id="9_clone_arf_civilian_template_t1" culture="Culture.republic">
+		<EquipmentSet civilian="true">
+			<Equipment slot="Item0" id="Item.dc_15s_carbine" />
+			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+			<Equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- p1_clone_arf_helmet -->
+			<Equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- p1_clone_arf_pauldrons -->
+			<Equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- p1_clone_arf_armor -->
+			<Equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_arf_gauntlets -->
+			<Equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_arf_boots -->
+		</EquipmentSet>
+	</EquipmentRoster>
+	<EquipmentRoster id="republic_clone_commando_civilian_template_t1" culture="Culture.republic">
+		<EquipmentSet civilian="true">
+			<Equipment slot="Item0" id="Item.dc_15s_carbine" /> <!-- DC-17M Rifle Config -->
+			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+			<Equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- clone_commando_helmet -->
+			<Equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- clone_commando_backpack -->
+			<Equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- clone_commando_armor -->
+			<Equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
+			<Equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
+		</EquipmentSet>
+	</EquipmentRoster>
 </EquipmentRosters>

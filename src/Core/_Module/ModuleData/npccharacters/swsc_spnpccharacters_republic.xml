@@ -1076,6 +1076,365 @@
 			<EquipmentSet id="republic_clone_arc_civilian_template_t2" civilian="true" />
 		</Equipments>
 	</NPCCharacter>
+	<!-- Republic Commando Line - We don't reference these via the culture so they would have to be generated from code -->
+	<NPCCharacter id="republic_clone_commando_recruit"
+		default_group="Ranged"
+		level="11"
+		name="Clone Commando Recruit"
+		occupation="Soldier"
+		culture="Culture.republic">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="40" />
+			<skill id="Riding" value="15" />
+			<skill id="OneHanded" value="40" />
+			<skill id="TwoHanded" value="20" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="40" />
+			<skill id="Throwing" value="15" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.republic_clone_commando" />
+			<upgrade_target id="NPCCharacter.republic_clone_commando_anti_armor" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15s_carbine" /> <!-- DC-17 Hand Blaster -->
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" /> <!-- Short bolts -->
+				<equipment slot="Item2" id="Item.kal_dagger_durasteel" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- clone_commando_helmet -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- clone_commando_backpack -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- clone_commando_armor -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
+			</EquipmentRoster>
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="republic_clone_commando"
+		default_group="Ranged"
+		level="16"
+		name="Clone Commando"
+		occupation="Soldier"
+		culture="Culture.republic">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="40" />
+			<skill id="OneHanded" value="70" />
+			<skill id="TwoHanded" value="30" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="70" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.republic_clone_commando_corporal" />
+			<upgrade_target id="NPCCharacter.republic_clone_commando_sniper" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" /> <!-- DC-17M Rifle Config -->
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.kal_dagger_durasteel" /> <!-- Clone Knuckle Blade -->
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- clone_commando_helmet -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- clone_commando_backpack -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- clone_commando_armor -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
+			</EquipmentRoster>
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="republic_clone_commando_corporal"
+		default_group="Ranged"
+		level="21"
+		name="Clone Commando Corporal"
+		occupation="Soldier"
+		culture="Culture.republic">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="100" />
+			<skill id="Riding" value="60" />
+			<skill id="OneHanded" value="100" />
+			<skill id="TwoHanded" value="45" />
+			<skill id="Polearm" value="45" />
+			<skill id="Bow" value="15" />
+			<skill id="Crossbow" value="100" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.republic_clone_commando_sergeant" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" /> <!-- DC-17M Rifle Config -->
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.kal_dagger_durasteel" /> <!-- Clone Knuckle Blade -->
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- clone_commando_helmet -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- clone_commando_backpack -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- clone_commando_armor -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
+			</EquipmentRoster>
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="republic_clone_commando_sergeant"
+		default_group="Ranged"
+		level="26"
+		name="Clone Commando Sergeant"
+		occupation="Soldier"
+		culture="Culture.republic">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="130" />
+			<skill id="Riding" value="80" />
+			<skill id="OneHanded" value="130" />
+			<skill id="TwoHanded" value="60" />
+			<skill id="Polearm" value="80" />
+			<skill id="Bow" value="20" />
+			<skill id="Crossbow" value="130" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.republic_clone_commando_veteran" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" /> <!-- DC-17M Rifle Config -->
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.kal_dagger_durasteel" /> <!-- Clone Knuckle Blade -->
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- clone_commando_helmet -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- clone_commando_backpack -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- clone_commando_armor -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
+			</EquipmentRoster>
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="republic_clone_commando_veteran"
+		default_group="Ranged"
+		level="31"
+		name="Clone Commando Veteran"
+		occupation="Soldier"
+		culture="Culture.republic">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="170" />
+			<skill id="Riding" value="60" />
+			<skill id="OneHanded" value="140" />
+			<skill id="TwoHanded" value="220" />
+			<skill id="Polearm" value="50" />
+			<skill id="Bow" value="220" />
+			<skill id="Crossbow" value="220" />
+			<skill id="Throwing" value="40" />
+		</skills>
+		<upgrade_targets></upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" /> <!-- DC-17M Rifle Config -->
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.kal_dagger_durasteel" /> <!-- Clone Knuckle Blade -->
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- clone_commando_helmet -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- clone_commando_backpack -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- clone_commando_armor -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
+			</EquipmentRoster>
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="republic_clone_commando_sniper"
+		default_group="Ranged"
+		level="21"
+		name="Clone Commando Sniper"
+		occupation="Soldier"
+		culture="Culture.republic">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="100" />
+			<skill id="Riding" value="60" />
+			<skill id="OneHanded" value="100" />
+			<skill id="TwoHanded" value="45" />
+			<skill id="Polearm" value="45" />
+			<skill id="Bow" value="15" />
+			<skill id="Crossbow" value="100" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.republic_clone_commando_sniper_sergeant" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" /> <!-- DC-17M Sniper Config -->
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" /> <!-- Long bolts -->
+				<equipment slot="Item2" id="Item.kal_dagger_durasteel" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- clone_commando_helmet -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- clone_commando_backpack -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- clone_commando_armor -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
+			</EquipmentRoster>
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="republic_clone_commando_sniper_veteran"
+		default_group="Ranged"
+		level="26"
+		name="Clone Commando Veteran Sniper"
+		occupation="Soldier"
+		culture="Culture.republic">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="130" />
+			<skill id="Riding" value="80" />
+			<skill id="OneHanded" value="130" />
+			<skill id="TwoHanded" value="60" />
+			<skill id="Polearm" value="80" />
+			<skill id="Bow" value="20" />
+			<skill id="Crossbow" value="160" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" /> <!-- DC-17M Sniper Config -->
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" /> <!-- Long bolts -->
+				<equipment slot="Item2" id="Item.kal_dagger_durasteel" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- clone_commando_helmet -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- clone_commando_backpack -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- clone_commando_armor -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
+			</EquipmentRoster>
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="republic_clone_commando_anti_armor"
+		default_group="Ranged"
+		level="16"
+		name="Clone Commando Anti-armor"
+		occupation="Soldier"
+		culture="Culture.republic">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="40" />
+			<skill id="OneHanded" value="70" />
+			<skill id="TwoHanded" value="30" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="70" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.republic_clone_commando_anti_armor_sergeant" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" /> <!-- DC-17M Anti-armor Config -->
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" /> <!-- DC-17M Grenades -->
+				<equipment slot="Item2" id="Item.kal_dagger_durasteel" /> <!-- DC-15SA Pistol with short bolts -->
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- clone_commando_helmet -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- clone_commando_backpack -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- clone_commando_armor -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
+			</EquipmentRoster>
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="republic_clone_commando_anti_armor_sergeant"
+		default_group="Ranged"
+		level="21"
+		name="Clone Commando Anti-armor Sergeant"
+		occupation="Soldier"
+		culture="Culture.republic">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="100" />
+			<skill id="Riding" value="60" />
+			<skill id="OneHanded" value="100" />
+			<skill id="TwoHanded" value="45" />
+			<skill id="Polearm" value="45" />
+			<skill id="Bow" value="15" />
+			<skill id="Crossbow" value="100" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.republic_clone_commando_anti_armor_veteran" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" /> <!-- DC-17M Anti-armor Config -->
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" /> <!-- DC-17M Grenades -->
+				<equipment slot="Item2" id="Item.kal_dagger_durasteel" /> <!-- DC-15SA Pistol with short bolts -->
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- clone_commando_helmet -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- clone_commando_backpack -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- clone_commando_armor -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
+			</EquipmentRoster>
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="republic_clone_commando_anti_armor_veteran"
+		default_group="Ranged"
+		level="26"
+		name="Clone Commando Anti-armor Veteran"
+		occupation="Soldier"
+		culture="Culture.republic">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="130" />
+			<skill id="Riding" value="80" />
+			<skill id="OneHanded" value="130" />
+			<skill id="TwoHanded" value="60" />
+			<skill id="Polearm" value="80" />
+			<skill id="Bow" value="20" />
+			<skill id="Crossbow" value="130" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" /> <!-- DC-17M Anti-armor Config -->
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" /> <!-- DC-17M Grenades -->
+				<equipment slot="Item2" id="Item.kal_dagger_durasteel" /> <!-- DC-15SA Pistol with short bolts -->
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- clone_commando_helmet -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- clone_commando_backpack -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- clone_commando_armor -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
+			</EquipmentRoster>
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
 	<!-- 212th (Airpower) -->
 	<NPCCharacter id="212_clone_airborne_recruit"
 		default_group="Ranged"
@@ -2316,6 +2675,328 @@
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_galactic_marine_boots -->
 			</EquipmentRoster>
 			<EquipmentSet id="21_galactic_marine_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<!-- 9th (Stealth) -->
+	<NPCCharacter id="9_clone_arf_recruit"
+		default_group="Ranged"
+		level="6"
+		name="9th Clone ARF Recruit"
+		occupation="Soldier"
+		is_basic_troop="true"
+		culture="Culture.9_assault">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="20" />
+			<skill id="Riding" value="5" />
+			<skill id="OneHanded" value="20" />
+			<skill id="TwoHanded" value="10" />
+			<skill id="Polearm" value="20" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="20" />
+			<skill id="Throwing" value="5" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.9_clone_arf_trooper" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15s_carbine" />
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.swept_vibrodagger" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- 9th skin -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- 9th skin -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- 9th skin -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- 9th skin -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- 9th skin -->
+			</EquipmentRoster>
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="9_clone_arf_trooper"
+		default_group="Ranged"
+		level="11"
+		name="9th Clone ARF Trooper"
+		occupation="Soldier"
+		culture="Culture.9_assault">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="40" />
+			<skill id="Riding" value="15" />
+			<skill id="OneHanded" value="40" />
+			<skill id="TwoHanded" value="20" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="40" />
+			<skill id="Throwing" value="15" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.9_clone_arf_corporal" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" />
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.swept_vibrodagger" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- 9th skin -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- 9th skin -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- 9th skin -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- 9th skin -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- 9th skin -->
+			</EquipmentRoster>
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="9_clone_arf_corporal"
+		default_group="Ranged"
+		level="16"
+		name="9th Clone ARF Corporal"
+		occupation="Soldier"
+		culture="Culture.9_assault">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="40" />
+			<skill id="OneHanded" value="70" />
+			<skill id="TwoHanded" value="30" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="70" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.9_clone_arf_walker_sergeant" />
+			<upgrade_target id="NPCCharacter.9_clone_assassin" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" />
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.swept_vibrodagger" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- p1_clone_arf_helmet -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- p1_clone_arf_backpack -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- p1_clone_arf_armor -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_arf_gauntlets -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_arf_boots -->
+			</EquipmentRoster>
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+     <NPCCharacter id="9_clone_arf_walker_sergeant"
+		default_group="Cavalry"
+		level="21"
+		name="9th Clone ARF Walker Sergeant"
+		occupation="Soldier"
+		culture="Culture.9_assault">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="100" />
+			<skill id="Riding" value="100" />
+			<skill id="OneHanded" value="100" />
+			<skill id="TwoHanded" value="45" />
+			<skill id="Polearm" value="45" />
+			<skill id="Bow" value="15" />
+			<skill id="Crossbow" value="100" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.9_clone_arf_walker_veteran" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item1" id="Item.dc_15s_carbine" />
+				<equipment slot="Item2" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item3" id="Item.swept_vibrodagger" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- p1_clone_arf_helmet -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- p1_clone_arf_backpack -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- p1_clone_arf_armor -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_arf_gauntlets -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_arf_boots -->
+			</EquipmentRoster>
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+			<!-- <equipment slot="Horse" id="Item.at_rt_walker" /> -->
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="9_clone_arf_veteran"
+		default_group="Cavalry"
+		level="26"
+		name="9th Clone ARF Walker Veteran"
+		occupation="Soldier"
+		culture="Culture.9_assault">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="130" />
+			<skill id="Riding" value="130" />
+			<skill id="OneHanded" value="130" />
+			<skill id="TwoHanded" value="60" />
+			<skill id="Polearm" value="80" />
+			<skill id="Bow" value="20" />
+			<skill id="Crossbow" value="130" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item1" id="Item.dc_15s_carbine" />
+				<equipment slot="Item2" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item3" id="Item.swept_vibrodagger" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- p1_clone_arf_helmet -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- p1_clone_arf_backpack -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- p1_clone_arf_armor -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_arf_gauntlets -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_arf_boots -->
+			</EquipmentRoster>
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+			<!-- <equipment slot="Horse" id="Item.at_rt_walker" /> -->
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="9_clone_assassin"
+		default_group="Infantry"
+		level="21"
+		name="9th Clone Assassin"
+		occupation="Soldier"
+		culture="Culture.9_assault">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="100" />
+			<skill id="Riding" value="45" />
+			<skill id="OneHanded" value="100" />
+			<skill id="TwoHanded" value="60" />
+			<skill id="Polearm" value="100" />
+			<skill id="Bow" value="15" />
+			<skill id="Crossbow" value="45" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.9_clone_assassin_veteran" />
+			<upgrade_target id="NPCCharacter.9_clone_shadow_trooper" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.clone_riot_baton" /> <!-- clone_dual_vibro_blades -->
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- p1_clone_assassin_helmet -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- p1_clone_assassin_backpack -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- p1_clone_assassin_armor -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_assassin_gauntlets -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_assassin_boots -->
+			</EquipmentRoster>
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="9_clone_assassin_veteran"
+		default_group="Infantry"
+		level="26"
+		name="9th Clone Assassin Veteran"
+		occupation="Soldier"
+		culture="Culture.9_assault">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="130" />
+			<skill id="Riding" value="80" />
+			<skill id="OneHanded" value="130" />
+			<skill id="TwoHanded" value="60" />
+			<skill id="Polearm" value="130" />
+			<skill id="Bow" value="20" />
+			<skill id="Crossbow" value="60" />
+			<skill id="Throwing" value="80" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.clone_riot_baton" /> <!-- clone_dual_vibro_blades -->
+				<equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- p1_clone_assassin_helmet -->
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_trooper" /> <!-- p1_clone_assassin_backpack -->
+				<equipment slot="Body" id="Item.p1_clone_armor_trooper" /> <!-- p1_clone_assassin_armor -->
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_assassin_gauntlets -->
+				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_assassin_boots -->
+			</EquipmentRoster>
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="9_clone_shadow_trooper"
+		default_group="Ranged"
+		level="26"
+		name="9th Clone Shadow Trooper"
+		occupation="Soldier"
+		culture="Culture.9_assault">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="130" />
+			<skill id="Riding" value="80" />
+			<skill id="OneHanded" value="130" />
+			<skill id="TwoHanded" value="60" />
+			<skill id="Polearm" value="80" />
+			<skill id="Bow" value="20" />
+			<skill id="Crossbow" value="160" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.9_clone_shadow_trooper_veteran" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" /> <!-- DC-19 Carbine -->
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.bothan_stun_stick" /> <!-- Vibrosword -->
+				<equipment slot="Head" id="Item.p1_clone_helmet_shadow_trooper" /> 
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_shadow_trooper" /> 
+				<equipment slot="Body" id="Item.p1_clone_armor_shadow_trooper" /> 
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_shadow_trooper" /> 
+				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" /> 
+			</EquipmentRoster>
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="9_clone_shadow_trooper_veteran"
+		default_group="Ranged"
+		level="31"
+		name="9th Clone Shadow Trooper"
+		occupation="Soldier"
+		culture="Culture.9_assault">
+		<face>
+			<face_key_template value="BodyProperty.clone_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="170" />
+			<skill id="Riding" value="60" />
+			<skill id="OneHanded" value="140" />
+			<skill id="TwoHanded" value="220" />
+			<skill id="Polearm" value="50" />
+			<skill id="Bow" value="220" />
+			<skill id="Crossbow" value="220" />
+			<skill id="Throwing" value="40" />
+		</skills>
+		<upgrade_targets></upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" /> <!-- DC-19 Carbine -->
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.bothan_stun_stick" /> <!-- Vibrosword -->
+				<equipment slot="Head" id="Item.p1_clone_helmet_shadow_trooper" /> 
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_shadow_trooper" /> 
+				<equipment slot="Body" id="Item.p1_clone_armor_shadow_trooper" /> 
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_shadow_trooper" /> 
+				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" /> 
+			</EquipmentRoster>
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
 		</Equipments>
 	</NPCCharacter>
 </NPCCharacters>
