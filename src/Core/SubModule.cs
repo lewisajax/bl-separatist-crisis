@@ -23,6 +23,8 @@ using TaleWorlds.MountAndBlade.GameKeyCategory;
 using SeparatistCrisis.InputSystem;
 using SeparatistCrisis.MissionManagers;
 using TaleWorlds.MountAndBlade.CustomBattle;
+using System;
+using Newtonsoft.Json.Serialization;
 
 namespace SeparatistCrisis
 {
@@ -44,6 +46,9 @@ namespace SeparatistCrisis
         protected override void OnSubModuleLoad()
         {
             base.OnSubModuleLoad();
+
+            AppDomain.CurrentDomain.UnhandledException += SubModule.OnError;
+
             SubModule.Instance = this;
             PatchManager.ApplyMainPatches(MainHarmonyDomain);
 
@@ -155,6 +160,13 @@ namespace SeparatistCrisis
             {
                 //PatchManager.RemoveCampaignPatches();// Not sure we should do this...
             }
+        }
+
+        public static void OnError(object sender, UnhandledExceptionEventArgs args)
+        {
+            Exception e = (Exception)args.ExceptionObject;
+            Console.WriteLine("MyHandler caught : " + e.Message);
+            Console.WriteLine("Runtime terminating: {0}", args.IsTerminating);
         }
     }
 }

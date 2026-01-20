@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Blasters>
-	<Blaster id="rwo_dc_15a_rifle" weapon_id="dc_15a_rifle" firing_mode_flags="0x03" shoot_intervals="0.3, 0.8"/>
+	<Blaster id="rwo_dc_15a_rifle" weapon_id="dc_15a_rifle" firing_mode_flags="0x03" shoot_intervals="0.4, 0.8"/>
 	<Blaster id="rwo_ee_3_carbine" weapon_id="ee_3_carbine" firing_mode_flags="0x02" shoot_intervals="0.8"/>
+	<Blaster id="rwo_e_5_rifle" weapon_id="e_5_rifle" firing_mode_flags="0x01" shoot_intervals="0.4"/>
 </Blasters>

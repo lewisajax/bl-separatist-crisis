@@ -661,7 +661,7 @@
 					accuracy="100"
 					thrust_damage="105"
 					thrust_damage_type="Pierce"
-					item_usage="blaster"
+					item_usage="crossbow_fast"
 					physics_material="wood_weapon"
 					center_of_mass="0,0,0.1"
 					position="0, 0, 0.2"
