@@ -37,7 +37,7 @@
 		is_hero="true"
 		culture="Culture.crime_syndicates"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"		
+		skill_template="SkillSet.spc_sc_tactician_skills"		
 		name="Jabba Desilijic Tiure"
 		face_mesh_cache="true">
 		<face>
@@ -77,7 +77,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -91,7 +91,7 @@
 		is_hero="true"
 		culture="Culture.crime_syndicates"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Xomit Grunseit"
 		face_mesh_cache="true">
 		<face>
@@ -131,7 +131,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -145,7 +145,7 @@
 		is_hero="true"
 		culture="Culture.crime_syndicates"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Lom Pyke"
 		face_mesh_cache="true">
 		<face>
@@ -185,7 +185,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>

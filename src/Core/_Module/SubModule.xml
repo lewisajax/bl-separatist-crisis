@@ -40,14 +40,23 @@
     </SubModules>
 	<Xmls>
 		<XmlNode>                
-			<XmlName id="EquipmentRosters" path="equipmentsets/" />
+			<XmlName id="EquipmentRosters" path="EquipmentSets/" />
 			<IncludedGameTypes>
 				<GameType value="Campaign" />
 				<GameType value="CampaignStoryMode" />
 				<GameType value="CustomGame" />
 				<GameType value="EditorGame" />
 			</IncludedGameTypes>
-		</XmlNode> 
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="SkillSets" path="swsc_skill_sets" />
+			<IncludedGameTypes>
+				<GameType value="Campaign" />
+				<GameType value="CampaignStoryMode" />
+				<GameType value="CustomGame" />
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
 		<XmlNode>                
 			<XmlName id="BodyProperties" path="swsc_bodyproperties" />
 			<IncludedGameTypes>
@@ -58,7 +67,7 @@
 			</IncludedGameTypes>
 		</XmlNode> 
 		<XmlNode>
-			<XmlName id="NPCCharacters" path="npccharacters/"/>
+			<XmlName id="NPCCharacters" path="NPCCharacters/"/>
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
@@ -66,14 +75,14 @@
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
-			<XmlName id="partyTemplates" path="partytemplates/"/>
+			<XmlName id="partyTemplates" path="PartyTemplates/"/>
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
-			<XmlName id="NPCCharacters" path="lords/"/>
+			<XmlName id="NPCCharacters" path="Lords/"/>
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
@@ -81,7 +90,7 @@
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
-			<XmlName id="Heroes" path="heroes/"/>
+			<XmlName id="Heroes" path="Heroes/"/>
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
@@ -97,7 +106,7 @@
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
-			<XmlName id="Factions" path="spclans/"/>
+			<XmlName id="Factions" path="SPClans/"/>
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
@@ -113,7 +122,7 @@
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
-			<XmlName id="Blasters" path="additional/swsc_blaster_types"/>
+			<XmlName id="Blasters" path="Additional/swsc_blaster_types"/>
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
@@ -121,7 +130,7 @@
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
-			<XmlName id="Abilities" path="additional/swsc_ability_types"/>
+			<XmlName id="Abilities" path="Additional/swsc_ability_types"/>
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
@@ -129,7 +138,7 @@
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
-			<XmlName id="AbilityHeroes" path="additional/swsc_hero_abilities"/>
+			<XmlName id="AbilityHeroes" path="Additional/swsc_hero_abilities"/>
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>

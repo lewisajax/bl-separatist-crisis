@@ -559,12 +559,6 @@
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="dw_armor_t5" name="Death Watch Tier 5 Armor" mesh="dw_armor_t5" culture="Culture.mandalorians" weight="15" appearance="1" Type="BodyArmor">
-		<ItemComponent>
-			<Armor body_armor="30" leg_armor="15" arm_armor="12" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>
-		</ItemComponent>
-		<Flags Civilian="true"></Flags>
-	</Item>
 	<Item id="dw_armor_t6" name="Death Watch Tier 6 Armor" mesh="dw_armor_t6" culture="Culture.mandalorians" weight="16" appearance="1" Type="BodyArmor">
 		<ItemComponent>
 			<Armor body_armor="32" leg_armor="17" arm_armor="14" covers_body="true" covers_hands="false" covers_legs="false"  modifier_group="plate" material_type="Plate"></Armor>

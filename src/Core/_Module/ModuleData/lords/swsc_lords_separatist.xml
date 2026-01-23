@@ -8,7 +8,7 @@
 		is_hero="true"
 		culture="Culture.separatist"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Count Dooku"
 		face_mesh_cache="true">
 		<face>
@@ -48,7 +48,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false"  id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet  id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -61,7 +61,7 @@
 		is_hero="true"
 		culture="Culture.separatist"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Po Nudo"
 		face_mesh_cache="true">
 		<face>
@@ -101,7 +101,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -114,7 +114,7 @@
 		is_hero="true"
 		culture="Culture.separatist"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Tikkes"
 		face_mesh_cache="true">
 		<face>
@@ -154,7 +154,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -168,7 +168,7 @@
 		is_hero="true"
 		culture="Culture.separatist"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Bec Lawise"
 		face_mesh_cache="true">
 		<face>
@@ -208,7 +208,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -221,7 +221,7 @@
 		is_hero="true"
 		culture="Culture.separatist"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Mina Bonteri"
 		face_mesh_cache="true">
 		<face>
@@ -261,7 +261,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -275,7 +275,7 @@
 		is_hero="true"
 		culture="Culture.separatist"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Supreme Commander Grievous"
 		face_mesh_cache="true">
 		<face>
@@ -315,7 +315,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -328,7 +328,7 @@
 		is_hero="true"
 		culture="Culture.separatist"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Admiral Trench"
 		face_mesh_cache="true">
 		<face>
@@ -368,7 +368,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -381,7 +381,7 @@
 		is_hero="true"
 		culture="Culture.separatist"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Kalani"
 		face_mesh_cache="true">
 		<face>
@@ -421,7 +421,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -434,7 +434,7 @@
 		is_hero="true"
 		culture="Culture.separatist"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Asajj Ventress"
 		face_mesh_cache="true">
 		<face>
@@ -474,7 +474,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -488,7 +488,7 @@
 		is_hero="true"
 		culture="Culture.separatist"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Wat Tambor"
 		face_mesh_cache="true">
 		<face>
@@ -528,7 +528,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -542,7 +542,7 @@
 		is_hero="true"
 		culture="Culture.separatist"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Nute Gunray"
 		face_mesh_cache="true">
 		<face>
@@ -582,7 +582,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -595,7 +595,7 @@
 		is_hero="true"
 		culture="Culture.separatist"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Lott Dod"
 		face_mesh_cache="true">
 		<face>
@@ -635,7 +635,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -649,7 +649,7 @@
 		is_hero="true"
 		culture="Culture.separatist"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Shu Mai"
 		face_mesh_cache="true">
 		<face>
@@ -689,7 +689,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -703,7 +703,7 @@
 		is_hero="true"
 		culture="Culture.separatist"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Oro Dassyne"
 		face_mesh_cache="true">
 		<face>
@@ -743,7 +743,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -757,7 +757,7 @@
 		is_hero="true"
 		culture="Culture.geonosis"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Poggle the Lesser"
 		face_mesh_cache="true">
 		<face>
@@ -797,7 +797,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -811,7 +811,7 @@
 		is_hero="true"
 		culture="Culture.zygerria"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Miraj Scintel"
 		face_mesh_cache="true">
 		<face>
@@ -851,7 +851,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>
@@ -865,7 +865,7 @@
 		is_hero="true"
 		culture="Culture.zygerria"
 		occupation="Lord"
-		skill_template="SkillSet.spc_tactician_skills"
+		skill_template="SkillSet.spc_sc_tactician_skills"
 		name="Mee Deechi"
 		face_mesh_cache="true">
 		<face>
@@ -905,7 +905,7 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
 			</EquipmentRoster>
-			<EquipmentSet stealth="false" id="bat_civ_template_default" civilian="true" />
+			<EquipmentSet id="bat_civ_template_default" civilian="true" />
 			<equipment  slot="Horse" id="Item.noble_horse" />
 			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
 		</Equipments>

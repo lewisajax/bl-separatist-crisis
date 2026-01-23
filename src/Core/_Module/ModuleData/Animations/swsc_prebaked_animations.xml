@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+While generating the run time data caches (.rdc files) for animations we are baking entitial transforms of these bones into a cache
+to reduce run-time allocations and memory fragmentations.
+
+usefull console commands
+memory.dump_animation_cache_memory
+mission_cpp.debug_print_animation_entitial_data_details
+
+-->

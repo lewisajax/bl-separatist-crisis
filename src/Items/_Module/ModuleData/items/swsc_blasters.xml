@@ -687,13 +687,13 @@
 	weight="3.3"
 	appearance="0.8"
 	difficulty="0"
-	Type="Pistol"
+	Type="Crossbow"
 	AmmoOffset="0.0, 0.02131, 0.22975"
 	item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
 	holster_position_shift="0, 0.05, -0.1">
 		<!--left/right,forward/backward,up/down -->
 		<ItemComponent>
-			<Weapon weapon_class="Pistol"
+			<Weapon weapon_class="Crossbow"
 				    ammo_class="Bolt"
 					ammo_limit="1"
 					thrust_speed="75"
@@ -903,7 +903,7 @@
 	holster_position_shift="0, 0.05, -0.4">
 		<!--left/right,forward/backward,up/down -->
 		<ItemComponent>
-			<Weapon weapon_class="Bow"
+			<Weapon weapon_class="Crossbow"
 				    ammo_class="Arrow"
 					ammo_limit="1"
 					thrust_speed="75"

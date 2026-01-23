@@ -1,30 +1,29 @@
-﻿using SeparatistCrisis.PatchTools;
-
-using Bannerlord.UIExtenderEx;
-
+﻿using Bannerlord.UIExtenderEx;
+using Newtonsoft.Json.Serialization;
+using SandBox;
+using SeparatistCrisis.Behaviors;
+using SeparatistCrisis.Extensions;
+using SeparatistCrisis.InputSystem;
+using SeparatistCrisis.MissionManagers;
+using SeparatistCrisis.Missions;
+using SeparatistCrisis.ObjectTypes;
+using SeparatistCrisis.PatchTools;
+using System;
+using System.Collections.Generic;
 using System.Linq;
-
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.ComponentInterfaces;
 using TaleWorlds.Core;
+using TaleWorlds.Engine.InputSystem;
+using TaleWorlds.Engine.Options;
+using TaleWorlds.InputSystem;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
-using SeparatistCrisis.Missions;
-using SeparatistCrisis.Behaviors;
-using SandBox;
-using SeparatistCrisis.Extensions;
-using SeparatistCrisis.ObjectTypes;
-using TaleWorlds.ObjectSystem;
-using System.Collections.Generic;
-using TaleWorlds.Engine.InputSystem;
-using TaleWorlds.InputSystem;
-using TaleWorlds.MountAndBlade.GameKeyCategory;
-using SeparatistCrisis.InputSystem;
-using SeparatistCrisis.MissionManagers;
 using TaleWorlds.MountAndBlade.CustomBattle;
-using System;
-using Newtonsoft.Json.Serialization;
+using TaleWorlds.MountAndBlade.GameKeyCategory;
+using TaleWorlds.ObjectSystem;
+using TaleWorlds.ScreenSystem;
 
 namespace SeparatistCrisis
 {
@@ -57,6 +56,11 @@ namespace SeparatistCrisis
             extender.Enable();
 
             this.InitializeHotKeyManager(true);
+
+            // Using the launcher.exe will reinitialize the hotkeys a 2nd time, overwriting our first init, where as using bannerlord.exe will only initialize it once during the startup screen.
+            // This might cause async issues, if so opt for patching the methods in ViewSubModule
+            Input.OnControllerTypeChanged = (Action<Input.ControllerTypes>)Delegate.Combine(Input.OnControllerTypeChanged, new Action<Input.ControllerTypes>(this.OnControllerTypeChanged));
+            NativeOptions.OnNativeOptionChanged = (NativeOptions.OnNativeOptionChangedDelegate)Delegate.Combine(NativeOptions.OnNativeOptionChanged, new NativeOptions.OnNativeOptionChangedDelegate(this.OnNativeOptionChanged));
         }
 
         protected override void OnSubModuleUnloaded()
@@ -141,6 +145,19 @@ namespace SeparatistCrisis
             return default;
         }
 
+        private void OnControllerTypeChanged(Input.ControllerTypes newType)
+        {
+            this.ReInitializeHotKeyManager();
+        }
+
+        private void OnNativeOptionChanged(NativeOptions.NativeOptionsType changedNativeOptionsType)
+        {
+            if (changedNativeOptionsType == NativeOptions.NativeOptionsType.EnableTouchpadMouse)
+            {
+                this.ReInitializeHotKeyManager();
+            }
+        }
+
         private void InitializeHotKeyManager(bool loadKeys)
         {
             Dictionary<string, GameKeyContext>.ValueCollection prevContexts = HotKeyManager.GetAllCategories();
@@ -150,6 +167,11 @@ namespace SeparatistCrisis
             newContexts.Add(new SCCombatHotKeyCategory());
 
             HotKeyManager.RegisterInitialContexts(newContexts, loadKeys);
+        }
+
+        private void ReInitializeHotKeyManager()
+        {
+            this.InitializeHotKeyManager(true);
         }
 
         public override void OnGameEnd(Game game)

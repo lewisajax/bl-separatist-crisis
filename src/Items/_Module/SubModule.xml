@@ -41,7 +41,7 @@
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
-			<XmlName id="Items" path="items/"/>
+			<XmlName id="Items" path="Items/"/>
 			<IncludedGameTypes>
 				<GameType value="Campaign"/>
 				<GameType value="CampaignStoryMode"/>
@@ -59,9 +59,21 @@
 		</XmlNode>
 		<XmlNode>
 			<XmlName id="WeaponDescriptions" path="swsc_weapon_descriptions"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame"/>
+			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
 			<XmlName id="CraftingTemplates" path="swsc_crafting_templates"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame"/>
+			</IncludedGameTypes>
 		</XmlNode>
 	</Xmls>
 </Module>
