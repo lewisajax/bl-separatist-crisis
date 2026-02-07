@@ -19,6 +19,7 @@ using TaleWorlds.MountAndBlade.Source.Missions;
 using TaleWorlds.CampaignSystem.Roster;
 using TaleWorlds.CampaignSystem.TroopSuppliers;
 using SeparatistCrisis.Behaviors;
+using SeparatistCrisis.SetOverride;
 
 namespace SeparatistCrisis.Missions
 {
@@ -49,6 +50,7 @@ namespace SeparatistCrisis.Missions
 
                 return new MissionBehavior[]
                 {
+                    new EquipmentSetOverrideLogic(MapEvent.PlayerMapEvent.GetMapEventSide(BattleSideEnum.Attacker), MapEvent.PlayerMapEvent.GetMapEventSide(BattleSideEnum.Defender)),
                     SCMissions.CreateCampaignMissionAgentSpawnLogic(Mission.BattleSizeType.Battle, null, null),
                     new BattlePowerCalculationLogic(),
                     new BattleSpawnLogic("battle_set"),

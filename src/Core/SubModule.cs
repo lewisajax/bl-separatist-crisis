@@ -122,7 +122,9 @@ namespace SeparatistCrisis
                 if (game.GameType.GetType() == typeof(CustomGame) || game.GameType.GetType() == typeof(Campaign))
                 {
                     game.ObjectManager.RegisterType<AbilityHero>("AbilityHero", "AbilityHeroes", 102U, true);
+                    game.ObjectManager.RegisterType<AssignedSet>("AssignedSet", "AssignedSets", 103U, true);
                     MBObjectManager.Instance.LoadXML("AbilityHeroes", false);
+                    MBObjectManager.Instance.LoadXML("AssignedSets", false);
                 }
 
                 // We override SandBoxSubModule's CampaignMissionManager assignment since our mod loads after SandBox

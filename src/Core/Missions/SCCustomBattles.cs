@@ -1,4 +1,5 @@
 ﻿using SeparatistCrisis.Behaviors;
+using SeparatistCrisis.SetOverride;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -125,6 +126,7 @@ namespace SeparatistCrisis.Missions
             }, (missionController) => new MissionBehavior[]
             {
                 new MissionAgentSpawnLogic(troopSuppliers, playerSide, Mission.BattleSizeType.Battle),
+                new EquipmentSetOverrideLogic(isPlayerAttacker ? playerParty : enemyParty, !isPlayerAttacker ? playerParty : enemyParty),
                 new BattlePowerCalculationLogic(),
                 new CustomBattleAgentLogic(),
                 new BannerBearerLogic(),
@@ -185,6 +187,7 @@ namespace SeparatistCrisis.Missions
                 list.Add(new MissionCombatantsLogic(null, playerParty, !isPlayerAttacker ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty, !isSallyOut ? Mission.MissionTeamAITypeEnum.Siege : Mission.MissionTeamAITypeEnum.SallyOut, isPlayerSergeant));
                 list.Add(new SiegeMissionPreparationHandler(isSallyOut, isReliefForceAttack, wallHitPointPercentages, hasAnySiegeTower));
                 Mission.BattleSizeType battleSizeType = isSallyOut ? Mission.BattleSizeType.SallyOut : Mission.BattleSizeType.Siege;
+                list.Add(new EquipmentSetOverrideLogic(playerSide == BattleSideEnum.Attacker ? playerParty : enemyParty, playerSide == BattleSideEnum.Defender ? playerParty : enemyParty));
                 list.Add(new MissionAgentSpawnLogic(troopSuppliers, playerSide, battleSizeType));
                 list.Add(new BattlePowerCalculationLogic());
                 if (isSallyOut)

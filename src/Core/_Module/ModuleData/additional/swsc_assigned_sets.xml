@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AssignedSets>
+	<!-- If a troop uses different equipment sets as a fixed assignment instead of random pooling, then we add them here. -->
+	<AssignedSet id="ats_clone_recruit" character_id="republic_clone_recruit" />
+
+	<!-- If a lord/hero has their own skins -->
+	<!-- We use the npccharacter instead of hero so that we can use this in custom game as well -->
+	<AssignedHeroSets>
+		<!-- We can assign different set indices per culture of the troop -->
+		<AssignedHeroSet character_id="kenobi">
+			<Set index="1" culture="republic" />
+		</AssignedHeroSet>
+		<AssignedHeroSet character_id="palpatine">
+			<Set index="1" culture="republic" />
+		</AssignedHeroSet>
+	</AssignedHeroSets>
+
+	<!-- If a clan has their own skins. Any custom lord/hero skin will override their clan's skin -->
+	<!-- We can skip registering the clan sets if we're not in the campaign/sandbox -->
+	<AssignedClanSets>
+		<!-- We can assign different set indices per culture of the troop -->
+		<AssignedClanSet clan_id="212_battalion">
+			<Set index="2" culture="republic" />
+		</AssignedClanSet>
+	</AssignedClanSets>
+
+	<!-- We don't need to go up to the kingdom layer as kingdoms are governed by the culture already -->
+</AssignedSets>

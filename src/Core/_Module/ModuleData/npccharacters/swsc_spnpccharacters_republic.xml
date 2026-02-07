@@ -35,6 +35,18 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" />
 			</EquipmentRoster>
+			<!-- Start Temp Roster -->
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" />
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.bothan_stun_stick" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_shadow_trooper" />
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_shadow_trooper" />
+				<equipment slot="Body" id="Item.p1_clone_armor_shadow_trooper" />
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_shadow_trooper" />
+				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
+			</EquipmentRoster>
+			<!-- End Temp Roster -->
 			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
 		</Equipments>
 	</NPCCharacter>
@@ -72,6 +84,18 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" />
 			</EquipmentRoster>
+			<!-- Start Temp Roster -->
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" />
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.bothan_stun_stick" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_shadow_trooper" />
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_shadow_trooper" />
+				<equipment slot="Body" id="Item.p1_clone_armor_shadow_trooper" />
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_shadow_trooper" />
+				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
+			</EquipmentRoster>
+			<!-- End Temp Roster -->
 			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
 		</Equipments>
 	</NPCCharacter>
@@ -109,6 +133,18 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" />
 			</EquipmentRoster>
+			<!-- Start Temp Roster -->
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" />
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.bothan_stun_stick" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_shadow_trooper" />
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_shadow_trooper" />
+				<equipment slot="Body" id="Item.p1_clone_armor_shadow_trooper" />
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_shadow_trooper" />
+				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
+			</EquipmentRoster>
+			<!-- End Temp Roster -->
 			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
 		</Equipments>
 	</NPCCharacter>
@@ -145,6 +181,18 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" />
 			</EquipmentRoster>
+			<!-- Start Temp Roster -->
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" />
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.bothan_stun_stick" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_shadow_trooper" />
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_shadow_trooper" />
+				<equipment slot="Body" id="Item.p1_clone_armor_shadow_trooper" />
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_shadow_trooper" />
+				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
+			</EquipmentRoster>
+			<!-- End Temp Roster -->
 			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
 		</Equipments>
 	</NPCCharacter>
@@ -180,6 +228,18 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" />
 			</EquipmentRoster>
+			<!-- Start Temp Roster -->
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" />
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.bothan_stun_stick" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_shadow_trooper" />
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_shadow_trooper" />
+				<equipment slot="Body" id="Item.p1_clone_armor_shadow_trooper" />
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_shadow_trooper" />
+				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
+			</EquipmentRoster>
+			<!-- End Temp Roster -->
 			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
 		</Equipments>
 	</NPCCharacter>
@@ -215,6 +275,18 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" />
 			</EquipmentRoster>
+			<!-- Start Temp Roster -->
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" />
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.bothan_stun_stick" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_shadow_trooper" />
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_shadow_trooper" />
+				<equipment slot="Body" id="Item.p1_clone_armor_shadow_trooper" />
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_shadow_trooper" />
+				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
+			</EquipmentRoster>
+			<!-- End Temp Roster -->
 			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
 		</Equipments>
 	</NPCCharacter>
@@ -250,6 +322,18 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" />
 			</EquipmentRoster>
+			<!-- Start Temp Roster -->
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" />
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.bothan_stun_stick" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_shadow_trooper" />
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_shadow_trooper" />
+				<equipment slot="Body" id="Item.p1_clone_armor_shadow_trooper" />
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_shadow_trooper" />
+				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
+			</EquipmentRoster>
+			<!-- End Temp Roster -->
 			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
 		</Equipments>
 	</NPCCharacter>
@@ -284,6 +368,18 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" />
 			</EquipmentRoster>
+			<!-- Start Temp Roster -->
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" />
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.bothan_stun_stick" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_shadow_trooper" />
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_shadow_trooper" />
+				<equipment slot="Body" id="Item.p1_clone_armor_shadow_trooper" />
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_shadow_trooper" />
+				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
+			</EquipmentRoster>
+			<!-- End Temp Roster -->
 			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
 		</Equipments>
 	</NPCCharacter>
@@ -320,6 +416,18 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" />
 			</EquipmentRoster>
+			<!-- Start Temp Roster -->
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" />
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.bothan_stun_stick" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_shadow_trooper" />
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_shadow_trooper" />
+				<equipment slot="Body" id="Item.p1_clone_armor_shadow_trooper" />
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_shadow_trooper" />
+				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
+			</EquipmentRoster>
+			<!-- End Temp Roster -->
 			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
 			<equipment slot="Horse" id="Item.t3_vlandia_horse" />
 			<equipment slot="HorseHarness" id="Item.chain_barding" />
@@ -357,6 +465,18 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" />
 			</EquipmentRoster>
+			<!-- Start Temp Roster -->
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.dc_15a_rifle" />
+				<equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
+				<equipment slot="Item2" id="Item.bothan_stun_stick" />
+				<equipment slot="Head" id="Item.p1_clone_helmet_shadow_trooper" />
+				<equipment slot="Cape" id="Item.p1_clone_pauldrons_shadow_trooper" />
+				<equipment slot="Body" id="Item.p1_clone_armor_shadow_trooper" />
+				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_shadow_trooper" />
+				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
+			</EquipmentRoster>
+			<!-- End Temp Roster -->
 			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
 			<equipment slot="Horse" id="Item.t3_vlandia_horse" />
 			<equipment slot="HorseHarness" id="Item.chain_barding" />
