@@ -186,5 +186,12 @@ namespace SeparatistCrisis.SetOverride
                 }
             }
         }
+
+        public void Dispose()
+        {
+            this.Lords.Clear();
+            this.Clans.Clear();
+            this.HasDeserializedAssignments = false;
+        }
     }
 }

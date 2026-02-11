@@ -8,6 +8,7 @@ using SeparatistCrisis.MissionManagers;
 using SeparatistCrisis.Missions;
 using SeparatistCrisis.ObjectTypes;
 using SeparatistCrisis.PatchTools;
+using SeparatistCrisis.SetOverride;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -184,6 +185,9 @@ namespace SeparatistCrisis
             {
                 //PatchManager.RemoveCampaignPatches();// Not sure we should do this...
             }
+
+            // We could send out an event so the submodule doesn't need to know about the singletons
+            SetAssignments.Instance.Dispose();
         }
 
         public static void OnError(object sender, UnhandledExceptionEventArgs args)

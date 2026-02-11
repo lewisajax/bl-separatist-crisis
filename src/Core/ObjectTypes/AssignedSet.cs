@@ -61,5 +61,23 @@ namespace SeparatistCrisis.ObjectTypes
                 this._character = character;
             }
         }
+
+        public static MBReadOnlyList<AssignedSet> All
+        {
+            get
+            {
+                return MBObjectManager.Instance.GetObjectTypeList<AssignedSet>();
+            }
+        }
+
+        public static AssignedSet? Find(string idString)
+        {
+            return MBObjectManager.Instance.GetObject<AssignedSet>(idString);
+        }
+
+        public static AssignedSet? Find(BasicCharacterObject charObj)
+        {
+            return MBObjectManager.Instance.GetObject<AssignedSet>((x) => x.Character == charObj);
+        }
     }
 }

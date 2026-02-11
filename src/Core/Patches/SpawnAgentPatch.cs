@@ -26,66 +26,26 @@ namespace SeparatistCrisis.Patches
 
         protected override IEnumerable<Patch> Prepare() => new Patch[]
         {
-            new Prefix(nameof(SpawnAgentPrefix), "SpawnAgent"),
+            new Transpiler(nameof(SpawnAgentTranspiler), "SpawnAgent"),
         };
 
-        //private static IEnumerable<CodeInstruction> SpawnAgentTranspiler(IEnumerable<CodeInstruction> instructions)
-        //{
-        //    // Need to get the AgentBuildData param
-        //    // ldarg.1 should be the agentBuildData param
-        //    // Use a yield return inside a foreach to insert instructions before the current one
-
-        //    List<CodeInstruction> list = instructions.ToList();
-
-        //    foreach (CodeInstruction instruction in list)
-        //    {
-        //        if (instruction.IsLdarg())
-        //        {
-        //            Console.WriteLine("Is Ldarg");
-        //        }
-        //    }
-
-        //    //int index = list.FindIndex(code => code.Calls(SpawnAgentPatch.CreateAgentOperand));
-        //    //if (index > 0 && index < instructions.Count())
-        //    //{
-        //    //    var localVar = list[index + 1].Clone();
-        //    //    if (localVar.IsLdloc())
-        //    //        list.InsertRange(index + 1, new[]
-        //    //        {
-        //    //                localVar,
-        //    //                CodeInstruction.Call(() => DrawZombielandDifficultySettings(default))
-        //    //            });
-        //    //}
-        //    return list.AsEnumerable<CodeInstruction>();
-        //}
-
-        private static bool SpawnAgentPrefix(ref AgentBuildData agentBuildData, bool spawnFromAgentVisuals = false)
+        private static IEnumerable<CodeInstruction> SpawnAgentTranspiler(IEnumerable<CodeInstruction> instructions)
         {
-            // Use a transpiler for better performance
-            // Set up a static method or something that we can call to handle all this
+            // Need to get the AgentBuildData param
+            // ldarg.1 should be the agentBuildData param
+            // Use a yield return inside a foreach to insert instructions before the current one
 
-            // This is just for CustomGame
-            // IAgentOriginBase origin = agentBuildData.AgentOrigin;
-            //BasicCultureObject culture = origin.BattleCombatant.BasicCulture;
-            //BasicCharacterObject? leader = origin.BattleCombatant.General;
+            // .Insert inserts the list of instructions before the current position
+            CodeMatcher matcher = new CodeMatcher(instructions);
+            matcher.MatchStartForward(
+                    CodeMatch.IsLdarg(1)
+                ).ThrowIfInvalid("Ldarg.1 could not be found")
+                .Insert(new CodeInstruction[] {
+                    CodeInstruction.LoadArgument(1),
+                    CodeInstruction.Call(() => EquipmentSetOverride.AssignEquipment(default))
+                });
 
-            CustomBattleAgentOrigin origin = (CustomBattleAgentOrigin)agentBuildData.AgentOrigin;
-            BasicCultureObject culture = origin.CustomBattleCombatant.BasicCulture;
-            BasicCharacterObject? leader = origin.CustomBattleCombatant.General;
-            if (leader == null && agentBuildData.AgentTeam.Leader != null) leader = agentBuildData.AgentTeam.Leader.Character;
-
-            if (culture != null && leader != null)
-            {
-                int setIndex = SetAssignments.Instance.GetSetIndex(leader, culture);
-                MBReadOnlyList<Equipment> allEquipment = (MBReadOnlyList<Equipment>)SpawnAgentPatch.AllEquipments.Invoke(agentBuildData.AgentCharacter, new object[]{});
-                Equipment? equipmentSet = allEquipment?.Count >= setIndex ? allEquipment[setIndex].Clone() : null;
-                if (equipmentSet != null)
-                {
-                    agentBuildData.Equipment(equipmentSet);
-                }
-            }
-
-            return true;
+            return matcher.Instructions();
         }
     }
 }
