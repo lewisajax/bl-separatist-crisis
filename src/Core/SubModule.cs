@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Serialization;
 using SandBox;
 using SeparatistCrisis.Behaviors;
+using SeparatistCrisis.CustomSandBox;
 using SeparatistCrisis.Extensions;
 using SeparatistCrisis.InputSystem;
 using SeparatistCrisis.MissionManagers;
@@ -57,6 +58,11 @@ namespace SeparatistCrisis
             extender.Enable();
 
             this.InitializeHotKeyManager(true);
+
+            Module.CurrentModule.AddInitialStateOption(new InitialStateOption("CustomSandBox", new TextObject("Custom SandBox"), 4, delegate ()
+            {
+                MBGameManager.StartNewGame(new CustomSandBoxGameManager(() => new Campaign(CampaignGameMode.Campaign)));
+            }, () => this.IsSandboxDisabled()));
 
             // Using the launcher.exe will reinitialize the hotkeys a 2nd time, overwriting our first init, where as using bannerlord.exe will only initialize it once during the startup screen.
             // This might cause async issues, if so opt for patching the methods in ViewSubModule
@@ -195,6 +201,15 @@ namespace SeparatistCrisis
             Exception e = (Exception)args.ExceptionObject;
             Console.WriteLine("MyHandler caught : " + e.Message);
             Console.WriteLine("Runtime terminating: {0}", args.IsTerminating);
+        }
+
+        private ValueTuple<bool, TextObject> IsSandboxDisabled()
+        {
+            if (Module.CurrentModule.IsOnlyCoreContentEnabled)
+            {
+                return new ValueTuple<bool, TextObject>(true, new TextObject("{=V8BXjyYq}Disabled during installation.", null));
+            }
+            return new ValueTuple<bool, TextObject>(false, null);
         }
     }
 }

@@ -1,0 +1,805 @@
+﻿using HarmonyLib;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.CharacterDevelopment;
+using TaleWorlds.CampaignSystem.Conversation;
+using TaleWorlds.CampaignSystem.Encyclopedia;
+using TaleWorlds.CampaignSystem.GameMenus;
+using TaleWorlds.CampaignSystem.GameState;
+using TaleWorlds.CampaignSystem.Handlers;
+using TaleWorlds.CampaignSystem.Issues;
+using TaleWorlds.CampaignSystem.LogEntries;
+using TaleWorlds.CampaignSystem.Map;
+using TaleWorlds.CampaignSystem.Naval;
+using TaleWorlds.CampaignSystem.Party;
+using TaleWorlds.CampaignSystem.Settlements;
+using TaleWorlds.CampaignSystem.Settlements.Buildings;
+using TaleWorlds.CampaignSystem.Settlements.Workshops;
+using TaleWorlds.CampaignSystem.Siege;
+using TaleWorlds.CampaignSystem.TournamentGames;
+using TaleWorlds.Core;
+using TaleWorlds.Library;
+using TaleWorlds.Localization;
+using TaleWorlds.ObjectSystem;
+using TaleWorlds.SaveSystem;
+
+// We don't want our own GameType since everything uses static props on the Campaign class
+// It's best to just patch the stuff we need
+
+namespace SeparatistCrisis.CustomSandBox
+{
+    public class CustomSandBoxGameType : GameType
+    {
+        public const float ConfigTimeMultiplier = 0.25f;
+
+        private EntitySystem<CampaignEntityComponent> _campaignEntitySystem;
+
+        public static int PlayerRegionSwitchCostFromLandToSea;
+
+        public static int PathFindingMaxCostLimit;
+
+        public ITask CampaignLateAITickTask;
+
+        // [SaveableField(210)]
+        private CampaignPeriodicEventManager _campaignPeriodicEventManager;
+
+        private Dictionary<MobileParty.NavigationType, float> _averageDistanceBetweenClosestTwoTowns;
+
+        // [SaveableField(53)]
+        private bool _isMainPartyWaiting;
+
+        // [SaveableField(344)]
+        private string _newGameVersion;
+
+        // [SaveableField(78)]
+        private MBList<string> _previouslyUsedModules;
+
+        // [SaveableField(85)]
+        private uint _campaignMapSceneXmlCrc;
+
+        // [SaveableField(86)]
+        private uint _campaignMapSceneNavigationMeshCrc;
+
+        // [SaveableField(81)]
+        private MBList<string> _usedGameVersions;
+
+        // [SaveableField(7)]
+        private ICampaignBehaviorManager _campaignBehaviorManager;
+
+        private CampaignTickCacheDataStore _tickData;
+
+        // [SaveableField(2)]
+        public readonly CampaignOptions Options;
+
+        public MBReadOnlyDictionary<CharacterObject, FormationClass> PlayerFormationPreferences;
+
+        // [SaveableField(13)]
+        public ITournamentManager TournamentManager;
+
+        public float MinSettlementX;
+
+        public float MaxSettlementX;
+
+        public float MinSettlementY;
+
+        public float MaxSettlementY;
+
+        // [SaveableField(27)]
+        public bool IsSinglePlayerReferencesInitialized;
+
+        private LocatorGrid<MobileParty> _mobilePartyLocator;
+
+        private LocatorGrid<Settlement> _settlementLocator;
+
+        private GameModels _gameModels;
+
+        // [SaveableField(31)]
+        public CampaignTimeControlMode LastTimeControlMode = CampaignTimeControlMode.UnstoppablePlay;
+
+        private IMapScene _mapSceneWrapper;
+
+        public bool GameStarted;
+
+        private Campaign.GameLoadingType _gameLoadingType;
+
+        public ConversationContext CurrentConversationContext;
+
+        [CachedData]
+        private float _dt;
+
+        private CampaignTimeControlMode _timeControlMode;
+
+        public int CurrentTickCount;
+
+        // [SaveableField(30)]
+        public int MainHeroIllDays = -1;
+
+        // [SaveableField(42)]
+        private List<ICustomSystemManager> _customManagers = new List<ICustomSystemManager>();
+
+        private MBCampaignEvent _dailyTickEvent;
+
+        private MBCampaignEvent _hourlyTickEvent;
+
+        private MBCampaignEvent _QuarterHourlyTickEvent;
+
+        [CachedData]
+        private int _lastNonZeroDtFrame;
+
+        public int DefaultWeatherNodeDimension;
+
+        // [SaveableField(333)]
+        public List<Figurehead> UnlockedFigureheadsByMainHero = new List<Figurehead>();
+
+        private MBList<Town> _towns;
+
+        private MBList<Town> _castles;
+
+        private MBList<Village> _villages;
+
+        private MBList<Hideout> _hideouts;
+
+        private MBReadOnlyList<CharacterObject> _characters;
+
+        private MBReadOnlyList<WorkshopType> _workshops;
+
+        private MBReadOnlyList<ItemModifier> _itemModifiers;
+
+        private MBReadOnlyList<Concept> _concepts;
+
+        private MBReadOnlyList<ItemModifierGroup> _itemModifierGroups;
+
+        // [SaveableField(79)]
+        private int _lastPartyIndex;
+
+        // [SaveableField(61)]
+        private PartyBase _cameraFollowParty;
+
+        // [SaveableField(64)]
+        private readonly LogEntryHistory _logEntryHistory = new LogEntryHistory();
+
+        // [SaveableField(65)]
+        public KingdomManager KingdomManager;
+
+        // [SaveableField(77)]
+        private Dictionary<CharacterObject, FormationClass> _playerFormationPreferences;
+
+        public static float MapDiagonal { get; private set; }
+
+        public static float MapDiagonalSquared { get; private set; }
+
+        public static Vec2 MapMinimumPosition { get; private set; }
+
+        public static Vec2 MapMaximumPosition { get; private set; }
+
+        public static float MapMaximumHeight { get; private set; }
+
+        public float GetAverageDistanceBetweenClosestTwoTownsWithNavigationType(MobileParty.NavigationType navigationType)
+        {
+            return this._averageDistanceBetweenClosestTwoTowns[navigationType];
+        }
+
+        [CachedData]
+        public float AverageWage { get; private set; }
+
+        public string NewGameVersion
+        {
+            get
+            {
+                return this._newGameVersion;
+            }
+        }
+
+        public MBReadOnlyList<string> PreviouslyUsedModules
+        {
+            get
+            {
+                return this._previouslyUsedModules;
+            }
+        }
+
+        public MBReadOnlyList<string> UsedGameVersions
+        {
+            get
+            {
+                return this._usedGameVersions;
+            }
+        }
+
+        // [SaveableProperty(83)]
+        public bool EnabledCheatsBefore { get; set; }
+
+        // [SaveableProperty(82)]
+        public string PlatformID { get; private set; }
+
+        public CampaignEventDispatcher CampaignEventDispatcher { get; private set; }
+
+        // [SaveableProperty(80)]
+        public string UniqueGameId { get; private set; }
+
+        public SaveHandler SaveHandler { get; private set; }
+
+        public override bool SupportsSaving
+        {
+            get
+            {
+                return this.GameMode == CampaignGameMode.Campaign;
+            }
+        }
+
+        // [SaveableProperty(211)]
+        public CampaignObjectManager CampaignObjectManager { get; private set; }
+
+        public override bool IsDevelopment
+        {
+            get
+            {
+                return this.GameMode == CampaignGameMode.Tutorial;
+            }
+        }
+
+        // [SaveableProperty(3)]
+        public bool IsCraftingEnabled { get; set; } = true;
+
+        // [SaveableProperty(4)]
+        public bool IsBannerEditorEnabled { get; set; } = true;
+
+        // [SaveableProperty(5)]
+        public bool IsFaceGenEnabled { get; set; } = true;
+
+        public ICampaignBehaviorManager CampaignBehaviorManager
+        {
+            get
+            {
+                return this._campaignBehaviorManager;
+            }
+        }
+
+        // [SaveableProperty(8)]
+        public QuestManager QuestManager { get; private set; }
+
+        // [SaveableProperty(9)]
+        public IssueManager IssueManager { get; private set; }
+
+        // [SaveableProperty(11)]
+        public FactionManager FactionManager { get; private set; }
+
+        // [SaveableProperty(12)]
+        public CharacterRelationManager CharacterRelationManager { get; private set; }
+
+        // [SaveableProperty(14)]
+        public Romance Romance { get; private set; }
+
+        // [SaveableProperty(16)]
+        public PlayerCaptivity PlayerCaptivity { get; private set; }
+
+        // [SaveableProperty(17)]
+        public Clan PlayerDefaultFaction { get; set; }
+
+        public CampaignMission.ICampaignMissionManager CampaignMissionManager { get; set; }
+
+        public ISkillLevelingManager SkillLevelingManager { get; set; }
+
+        public IMapSceneCreator MapSceneCreator { get; set; }
+
+        public override bool IsInventoryAccessibleAtMission
+        {
+            get
+            {
+                return this.GameMode == CampaignGameMode.Tutorial;
+            }
+        }
+
+        public GameMenuCallbackManager GameMenuCallbackManager { get; private set; }
+
+        public VisualCreator VisualCreator { get; set; }
+
+        // [SaveableProperty(28)]
+        public MapStateData MapStateData { get; private set; }
+
+        public DefaultPerks DefaultPerks { get; private set; }
+
+        public DefaultTraits DefaultTraits { get; private set; }
+
+        public DefaultPolicies DefaultPolicies { get; private set; }
+
+        public DefaultBuildingTypes DefaultBuildingTypes { get; private set; }
+
+        public DefaultIssueEffects DefaultIssueEffects { get; private set; }
+
+        public DefaultItems DefaultItems { get; private set; }
+
+        public DefaultFigureheads DefaultFigureheads { get; private set; }
+
+        public DefaultSiegeStrategies DefaultSiegeStrategies { get; private set; }
+
+        public MBReadOnlyList<PerkObject> AllPerks { get; private set; }
+
+        public DefaultSkillEffects DefaultSkillEffects { get; private set; }
+
+        public DefaultVillageTypes DefaultVillageTypes { get; private set; }
+
+        public MBReadOnlyList<TraitObject> AllTraits { get; private set; }
+
+        public MBReadOnlyList<MBEquipmentRoster> AllEquipmentRosters { get; private set; }
+
+        public DefaultCulturalFeats DefaultFeats { get; private set; }
+
+        public MBReadOnlyList<PolicyObject> AllPolicies { get; private set; }
+
+        public MBReadOnlyList<BuildingType> AllBuildingTypes { get; private set; }
+
+        public MBReadOnlyList<IssueEffect> AllIssueEffects { get; private set; }
+
+        public MBReadOnlyList<SiegeStrategy> AllSiegeStrategies { get; private set; }
+
+        public MBReadOnlyList<VillageType> AllVillageTypes { get; private set; }
+
+        public MBReadOnlyList<SkillEffect> AllSkillEffects { get; private set; }
+
+        public MBReadOnlyList<FeatObject> AllFeats { get; private set; }
+
+        public MBReadOnlyList<SkillObject> AllSkills { get; private set; }
+
+        public MBReadOnlyList<SiegeEngineType> AllSiegeEngineTypes { get; private set; }
+
+        public MBReadOnlyList<ItemCategory> AllItemCategories { get; private set; }
+
+        public MBReadOnlyList<CharacterAttribute> AllCharacterAttributes { get; private set; }
+
+        public MBReadOnlyList<ItemObject> AllItems { get; private set; }
+
+        public float EstimatedMaximumLordPartySpeedExceptPlayer { get; set; }
+
+        public float EstimatedAverageLordPartySpeed { get; set; }
+
+        public float EstimatedAverageCaravanPartySpeed { get; set; }
+
+        public float EstimatedAverageVillagerPartySpeed { get; set; }
+
+        public float EstimatedAverageBanditPartySpeed { get; set; }
+
+        public float EstimatedAverageLordPartyNavalSpeed { get; set; }
+
+        public float EstimatedAverageCaravanPartyNavalSpeed { get; set; }
+
+        public float EstimatedAverageVillagerPartyNavalSpeed { get; set; }
+
+        public float EstimatedAverageBanditPartyNavalSpeed { get; set; }
+
+        // [SaveableProperty(100)]
+        public MapTimeTracker MapTimeTracker { get; private set; }
+
+        public bool TimeControlModeLock { get; private set; }
+
+        public CampaignTimeControlMode TimeControlMode
+        {
+            get
+            {
+                return this._timeControlMode;
+            }
+            set
+            {
+                if (!this.TimeControlModeLock && value != this._timeControlMode)
+                {
+                    this._timeControlMode = value;
+                }
+            }
+        }
+
+        public bool IsMapTooltipLongForm { get; set; }
+
+        public float SpeedUpMultiplier { get; set; } = 4f;
+
+        public float CampaignDt
+        {
+            get
+            {
+                return this._dt;
+            }
+        }
+
+        public bool TrueSight { get; set; }
+
+        public static Campaign Current { get; private set; }
+
+        // [SaveableProperty(37)]
+        public CampaignGameMode GameMode { get; private set; }
+
+        // [SaveableProperty(38)]
+        public float PlayerProgress { get; private set; }
+
+        public GameMenuManager GameMenuManager { get; private set; }
+
+        public GameModels Models
+        {
+            get
+            {
+                return this._gameModels;
+            }
+        }
+
+        public SandBoxManager SandBoxManager { get; private set; }
+
+        public Campaign.GameLoadingType CampaignGameLoadingType
+        {
+            get
+            {
+                return this._gameLoadingType;
+            }
+        }
+
+        public MBReadOnlyList<Hero> AliveHeroes
+        {
+            get
+            {
+                return this.CampaignObjectManager.AliveHeroes;
+            }
+        }
+
+        public MBReadOnlyList<Hero> DeadOrDisabledHeroes
+        {
+            get
+            {
+                return this.CampaignObjectManager.DeadOrDisabledHeroes;
+            }
+        }
+
+        public MBReadOnlyList<MobileParty> MobileParties
+        {
+            get
+            {
+                return this.CampaignObjectManager.MobileParties;
+            }
+        }
+
+        public MBReadOnlyList<MobileParty> CaravanParties
+        {
+            get
+            {
+                return this.CampaignObjectManager.CaravanParties;
+            }
+        }
+
+        public MBReadOnlyList<MobileParty> PatrolParties
+        {
+            get
+            {
+                return this.CampaignObjectManager.PatrolParties;
+            }
+        }
+
+        public MBReadOnlyList<MobileParty> VillagerParties
+        {
+            get
+            {
+                return this.CampaignObjectManager.VillagerParties;
+            }
+        }
+
+        public MBReadOnlyList<MobileParty> MilitiaParties
+        {
+            get
+            {
+                return this.CampaignObjectManager.MilitiaParties;
+            }
+        }
+
+        public MBReadOnlyList<MobileParty> GarrisonParties
+        {
+            get
+            {
+                return this.CampaignObjectManager.GarrisonParties;
+            }
+        }
+
+        public MBReadOnlyList<MobileParty> CustomParties
+        {
+            get
+            {
+                return this.CampaignObjectManager.CustomParties;
+            }
+        }
+
+        public MBReadOnlyList<MobileParty> LordParties
+        {
+            get
+            {
+                return this.CampaignObjectManager.LordParties;
+            }
+        }
+
+        public MBReadOnlyList<MobileParty> BanditParties
+        {
+            get
+            {
+                return this.CampaignObjectManager.BanditParties;
+            }
+        }
+
+        public MBReadOnlyList<MobileParty> PartiesWithoutPartyComponent
+        {
+            get
+            {
+                return this.CampaignObjectManager.PartiesWithoutPartyComponent;
+            }
+        }
+
+        public MBReadOnlyList<Settlement> Settlements
+        {
+            get
+            {
+                return this.CampaignObjectManager.Settlements;
+            }
+        }
+
+        public IEnumerable<IFaction> Factions
+        {
+            get
+            {
+                return this.CampaignObjectManager.Factions;
+            }
+        }
+
+        public MBReadOnlyList<Kingdom> Kingdoms
+        {
+            get
+            {
+                return this.CampaignObjectManager.Kingdoms;
+            }
+        }
+
+        public MBReadOnlyList<Clan> Clans
+        {
+            get
+            {
+                return this.CampaignObjectManager.Clans;
+            }
+        }
+
+        public MBReadOnlyList<CharacterObject> Characters
+        {
+            get
+            {
+                return this._characters;
+            }
+        }
+
+        public MBReadOnlyList<WorkshopType> Workshops
+        {
+            get
+            {
+                return this._workshops;
+            }
+        }
+
+        public MBReadOnlyList<ItemModifier> ItemModifiers
+        {
+            get
+            {
+                return this._itemModifiers;
+            }
+        }
+
+        public MBReadOnlyList<ItemModifierGroup> ItemModifierGroups
+        {
+            get
+            {
+                return this._itemModifierGroups;
+            }
+        }
+
+        public MBReadOnlyList<Concept> Concepts
+        {
+            get
+            {
+                return this._concepts;
+            }
+        }
+
+        // [SaveableProperty(60)]
+        public MobileParty MainParty { get; private set; }
+
+        public PartyBase CameraFollowParty
+        {
+            get
+            {
+                return this._cameraFollowParty;
+            }
+            set
+            {
+                this._cameraFollowParty = value;
+            }
+        }
+
+        // [SaveableProperty(62)]
+        public CampaignInformationManager CampaignInformationManager { get; set; }
+
+        // [SaveableProperty(63)]
+        public VisualTrackerManager VisualTrackerManager { get; set; }
+
+        public LogEntryHistory LogEntryHistory
+        {
+            get
+            {
+                return this._logEntryHistory;
+            }
+        }
+
+        public EncyclopediaManager EncyclopediaManager { get; private set; }
+
+        public ConversationManager ConversationManager { get; private set; }
+
+        public bool IsDay
+        {
+            get
+            {
+                return !this.IsNight;
+            }
+        }
+
+        public bool IsNight
+        {
+            get
+            {
+                return CampaignTime.Now.IsNightTime;
+            }
+        }
+
+        public override void OnDestroy()
+        {
+            this.WaitAsyncTasks();
+            GameTexts.ClearInstance();
+            IMapScene mapSceneWrapper = this._mapSceneWrapper;
+            if (mapSceneWrapper != null)
+            {
+                mapSceneWrapper.Destroy();
+            }
+            ConversationManager.Clear();
+            MBTextManager.ClearAll();
+
+            // GameSceneDataManager.Destroy();
+            // Invoke ignores the first arg for static methods
+            AccessTools.Method(typeof(GameSceneDataManager), "Destroy").Invoke(null, null);
+
+            // this.CampaignInformationManager.DeRegisterEvents();
+            AccessTools.Method(typeof(CampaignInformationManager), "DeRegisterEvents").Invoke(this.CampaignInformationManager, null);
+            ICampaignBehaviorManager campaignBehaviorManager = this._campaignBehaviorManager;
+            if (campaignBehaviorManager != null)
+            {
+                campaignBehaviorManager.ClearBehaviors();
+            }
+            MBSaveLoad.OnGameDestroy();
+            CustomSandBoxGameType.Current = null;
+        }
+
+        public override void OnStateChanged(GameState oldState)
+        {
+        }
+
+        protected override void BeforeRegisterTypes(MBObjectManager objectManager)
+        {
+            objectManager.RegisterType<FeatObject>("feat", "Feats", 0U);
+        }
+
+        protected override void DoLoadingForGameType(GameTypeLoadingStates gameTypeLoadingState, out GameTypeLoadingStates nextState)
+        {
+            nextState = GameTypeLoadingStates.None;
+            switch (gameTypeLoadingState)
+            {
+                case GameTypeLoadingStates.InitializeFirstStep:
+                    base.CurrentGame.Initialize();
+                    nextState = GameTypeLoadingStates.WaitSecondStep;
+                    return;
+                case GameTypeLoadingStates.WaitSecondStep:
+                    nextState = GameTypeLoadingStates.LoadVisualsThirdState;
+                    return;
+                case GameTypeLoadingStates.LoadVisualsThirdState:
+                    if (this.GameMode == CampaignGameMode.Campaign)
+                    {
+                        this.LoadMapScene();
+                    }
+                    nextState = GameTypeLoadingStates.PostInitializeFourthState;
+                    return;
+                case GameTypeLoadingStates.PostInitializeFourthState:
+                    {
+                        CampaignGameStarter gameStarter = this.SandBoxManager.GameStarter;
+                        if (this._gameLoadingType == Campaign.GameLoadingType.SavedCampaign)
+                        {
+                            this.CheckMapUpdate();
+                            this.OnDataLoadFinished(gameStarter);
+                            this.CalculateCachedValues();
+                            this.CalculateCachedStatsOnLoad();
+                            base.GameManager.OnAfterGameLoaded(base.CurrentGame);
+                            this.OnGameLoaded(gameStarter);
+                            this.OnSessionStart(gameStarter);
+                            foreach (Hero hero in Hero.AllAliveHeroes)
+                            {
+                                hero.CheckInvalidEquipmentsAndReplaceIfNeeded();
+                            }
+                            using (List<Hero>.Enumerator enumerator = Hero.DeadOrDisabledHeroes.GetEnumerator())
+                            {
+                                while (enumerator.MoveNext())
+                                {
+                                    Hero hero2 = enumerator.Current;
+                                    hero2.CheckInvalidEquipmentsAndReplaceIfNeeded();
+                                }
+                                goto IL_19D;
+                            }
+                        }
+                        if (this._gameLoadingType == Campaign.GameLoadingType.NewCampaign)
+                        {
+                            this._campaignMapSceneXmlCrc = this.MapSceneWrapper.GetSceneXmlCrc();
+                            this._campaignMapSceneNavigationMeshCrc = this.MapSceneWrapper.GetSceneNavigationMeshCrc();
+                            this.OnDataLoadFinished(gameStarter);
+                            this.CalculateCachedValues();
+                            MBSaveLoad.OnNewGame();
+                            this.InitializeMainParty();
+                            foreach (Settlement settlement in Settlement.All)
+                            {
+                                settlement.OnGameCreated();
+                            }
+                            MBObjectManager.Instance.RemoveTemporaryTypes();
+                            this.OnNewGameCreated(gameStarter);
+                            this.OnSessionStart(gameStarter);
+                            Debug.Print("Finished starting a new game.", 0, Debug.DebugColor.White, 17592186044416UL);
+                        }
+                    IL_19D:
+                        base.GameManager.OnAfterGameInitializationFinished(base.CurrentGame, gameStarter);
+                        return;
+                    }
+                default:
+                    return;
+            }
+        }
+
+        protected override void OnInitialize()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void OnRegisterTypes(MBObjectManager objectManager)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void WaitAsyncTasks()
+        {
+            if (this.CampaignLateAITickTask != null)
+            {
+                this.CampaignLateAITickTask.Wait();
+            }
+        }
+
+        private void LoadMapScene()
+        {
+            this._mapSceneWrapper = this.MapSceneCreator.CreateMapScene();
+            this._mapSceneWrapper.SetSceneLevels(new List<string>
+            {
+                "level_1",
+                "level_2",
+                "level_3",
+                "siege",
+                "raid",
+                "burned"
+            });
+            this._mapSceneWrapper.Load();
+            Vec2 mapMinimumPosition;
+            Vec2 mapMaximumPosition;
+            float mapMaximumHeight;
+            this._mapSceneWrapper.GetMapBorders(out mapMinimumPosition, out mapMaximumPosition, out mapMaximumHeight);
+            CustomSandBoxGameType.MapMinimumPosition = mapMinimumPosition;
+            CustomSandBoxGameType.MapMaximumPosition = mapMaximumPosition;
+            CustomSandBoxGameType.MapMaximumHeight = mapMaximumHeight;
+            CustomSandBoxGameType.MapDiagonal = Campaign.MapMinimumPosition.Distance(Campaign.MapMaximumPosition);
+            CustomSandBoxGameType.MapDiagonalSquared = Campaign.MapDiagonal * Campaign.MapDiagonal;
+            CustomSandBoxGameType.PlayerRegionSwitchCostFromLandToSea = (int)(Campaign.MapDiagonal * (float)this.Models.MapDistanceModel.RegionSwitchCostFromLandToSea * 0.2f);
+            CustomSandBoxGameType.PathFindingMaxCostLimit = Math.Max(Campaign.PlayerRegionSwitchCostFromLandToSea * 100, (int)(Campaign.MapDiagonal * 500f));
+            this._mapSceneWrapper.AfterLoad();
+        }
+    }
+}

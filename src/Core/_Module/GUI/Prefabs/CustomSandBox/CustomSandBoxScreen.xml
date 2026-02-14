@@ -1,0 +1,58 @@
+<Prefab>
+  <Constants>
+    <Constant Name="Search.Popup.MarginLeft" Value="221" />
+    <Constant Name="Search.Popup.MarginRight" Value="221" />
+    <Constant Name="Search.Popup.MarginBottom" Value="83" />
+    <Constant Name="Search.Popup.MarginTop" Value="33" />
+    <!--Sycned with other Encyclopedia Pages-->
+
+    <Constant Name="SearchResult.Popup.MarginRight" Additive="-5" Value="!Search.Popup.MarginRight" />
+
+    <Constant Name="Search.TextField.Height" Value="40" />
+    <Constant Name="Search.TextField.MarginTop" Additive="!Search.TextField.Height" Value="!Search.Popup.MarginTop" />
+
+    <Constant Name="Encyclopedia.Frame.Width" BrushLayer="Default" BrushName="Encyclopedia.Frame" BrushValueType="Width" />
+    <Constant Name="Encyclopedia.Frame.Height" BrushLayer="Default" BrushName="Encyclopedia.Frame" BrushValueType="Height" />
+
+    <Constant Name="DoneButton.Margin.Top" Additive="-10" Value="!Encyclopedia.Frame.Height" />
+
+    <Constant Name="Popup.CloseButton.Width" BrushLayer="Default" BrushName="Popup.CloseButton" BrushValueType="Width" />
+    <Constant Name="Popup.CloseButton.Height" BrushLayer="Default" BrushName="Popup.CloseButton" BrushValueType="Height" />
+
+    <Constant Name="InnerPanel.LeftRight.Padding" Value="80" />
+
+    <Constant Name="SpectateButton.Width" BrushLayer="Default" BrushName="WideButton.Flat" BrushValueType="Width" />
+    <Constant Name="SpectateButton.Height" BrushLayer="Default" BrushName="WideButton.Flat" BrushValueType="Height" />
+
+    <Constant Name="RefreshButton.Width" Value="68" />
+    <Constant Name="RefreshButton.Height" Value="70" />
+
+    <Constant Name="CloseButton.Width" Value="68"/>
+    <Constant Name="CloseButton.Height" Value="70"/>
+
+    <Constant Name="SiegeMachines.HorizontalPadding" Value="3"/>
+    <Constant Name="SiegeMachines.VerticalPadding" Value="5"/>
+    <Constant Name="SiegeMachines.MarginRight" Value="65"/>
+
+  </Constants>
+  <Variables>
+  </Variables>
+  <VisualDefinitions>
+    <VisualDefinition Name="LeftMenu" EaseIn="true" TransitionDuration="0.45">
+      <VisualState PositionXOffset="0" State="Default" />
+    </VisualDefinition>
+    <VisualDefinition Name="RightMenu" EaseIn="true" TransitionDuration="0.45">
+      <VisualState PositionXOffset="0" State="Default" />
+    </VisualDefinition>
+    <VisualDefinition Name="CenterMenu" EaseIn="true" TransitionDuration="0.45">
+      <VisualState PositionYOffset="0" State="Default" />
+    </VisualDefinition>
+  </VisualDefinitions>
+  <Window>
+	  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+		  <Children>
+			  <Standard.Background />
+		  </Children>
+	  </Widget>
+  </Window>
+</Prefab>

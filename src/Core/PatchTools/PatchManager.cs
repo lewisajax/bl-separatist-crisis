@@ -21,6 +21,7 @@ namespace SeparatistCrisis.PatchTools
     {
         public static PatchManager? MainInstance { get; private set; }
         public static PatchManager? CampaignInstance { get; private set; }
+        public static PatchManager? CustomInstance { get; private set; } // Not just for CustomGame but 'custom' as in used by anything
 
         public static IReadOnlyList<PatchClass> MainPatchClasses => _mainPatchClasses;
         public static IReadOnlyList<PatchClass> CampaignPatchClasses => _campaignPatchClasses;
@@ -34,12 +35,20 @@ namespace SeparatistCrisis.PatchTools
             if (MainInstance is not null)
                 throw new InvalidOperationException($"Cannot call {nameof(PatchManager)}.{nameof(ApplyMainPatches)} more than once!");
 
-            MainInstance = new PatchManager(harmonyId);
+            if (PatchManager.MainPatchClasses == null)
+                throw new InvalidOperationException("MainPatchClasses is null");
+
+            MainInstance = new PatchManager(harmonyId, PatchManager.MainPatchClasses);
         }
 
         public static void ApplyCampaignPatches(string harmonyId)
         {
-            CampaignInstance ??= new PatchManager(harmonyId, false);
+            CampaignInstance ??= new PatchManager(harmonyId, PatchManager.CampaignPatchClasses);
+        }
+
+        public static void ApplyCustomPatches(string harmonyId, IReadOnlyList<PatchClass> patches)
+        {
+            CustomInstance ??= new PatchManager(harmonyId, patches);
         }
 
         public static void RemoveCampaignPatches()
@@ -56,11 +65,24 @@ namespace SeparatistCrisis.PatchTools
             CampaignInstance = null;
         }
 
-        private PatchManager(string harmonyId, bool useMainPatches = true)
+        public static void RemoveCustomPatches()
+        {
+            if (CustomInstance is null)
+                throw new InvalidOperationException($"Cannot call {nameof(PatchManager)}.{nameof(RemoveCustomPatches)} before calling {nameof(PatchManager)}.{nameof(ApplyCustomPatches)}!");
+
+            // Removing unannotated Harmony patches
+            foreach (var patch in CustomInstance.Patches)
+            {
+                patch.Remove(CustomInstance.Harmony);
+            }
+
+            CampaignInstance = null;
+        }
+
+        private PatchManager(string harmonyId, IReadOnlyList<PatchClass> patchClasses)
         {
             this.Harmony = new(harmonyId);
-            var sourcePatches = useMainPatches ? _mainPatchClasses : _campaignPatchClasses;
-            _patches = sourcePatches.SelectMany(pc => pc.Patches).ToArray();
+            _patches = patchClasses.SelectMany(pc => pc.Patches).ToArray();
 
             // Applying unannotated Harmony patches
             foreach (var patch in _patches)

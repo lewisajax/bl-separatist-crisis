@@ -466,7 +466,7 @@
 		</CommonAreas>
 	</Settlement>
   	<!-- Republic -->
-  	<Settlement id="town_EN4" name="{=Settlements.Settlement.name.town_EN4}Argoron" owner="Faction.galactic_senate" posX="534.622" posY="495.804" culture="Culture.galactic_republic" gate_posX="532.5618" gate_posY="494.7299" text="{=LqPJY4s9}The city of Argoron sits where the cold, slow moving Nevys River meets Lake Laconis. This was once the land of the Laconians, who saw the Empire as a protector against the more warlike Palaic peoples. They welcomed and intermarried with imperial settlers and their chiefs joined the Senate, and their old language and customs faded away.">
+  	<Settlement id="town_EN4" name="{=Settlements.Settlement.name.town_EN4}Argoron" owner="Faction.galactic_senate" posX="534.622" posY="495.804" culture="Culture.republic" gate_posX="532.5618" gate_posY="494.7299" text="{=LqPJY4s9}The city of Argoron sits where the cold, slow moving Nevys River meets Lake Laconis. This was once the land of the Laconians, who saw the Empire as a protector against the more warlike Palaic peoples. They welcomed and intermarried with imperial settlers and their chiefs joined the Senate, and their old language and customs faded away.">
 		<Components>
 			<Town
 				id="town_comp_EN4"
@@ -524,7 +524,7 @@
 				name="{=Rr1cy5Sk}Waterfront" />
 		</CommonAreas>
 	</Settlement>
-  	<Settlement id="village_EN4_2" name="{=Settlements.Settlement.name.village_EN4_2}Alatys" posX="523.468" posY="506.288" culture="Culture.galactic_republic" text="{=Settlements.Settlement.text.village_EN4_2}Alatys lies on the flat southern end of Lake Laconis, on delta lowlands formed by the River Nevys. The waters of the lake, which are very shallow and muddy here, are well-stocked with flounder and crayfish, while trout can be fished in the Nevys upstream.">
+  	<Settlement id="village_EN4_2" name="{=Settlements.Settlement.name.village_EN4_2}Alatys" posX="523.468" posY="506.288" culture="Culture.republic" text="{=Settlements.Settlement.text.village_EN4_2}Alatys lies on the flat southern end of Lake Laconis, on delta lowlands formed by the River Nevys. The waters of the lake, which are very shallow and muddy here, are well-stocked with flounder and crayfish, while trout can be fished in the Nevys upstream.">
 		<Components>
 			<Village
 				id="village_comp_EN4_2"
@@ -555,7 +555,7 @@
 				name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_EN4_4" name="{=Settlements.Settlement.name.village_EN4_4}Hetania" posX="561.817" posY="487.846" culture="Culture.galactic_republic" text="{=Settlements.Settlement.text.village_EN4_4}Hetania sits beneath a spur on the far northeastern bend of the Dryatic mountains. As in many villages around here, the foresters of this region still speak the Palaic languages of the tribes who lived here before the Empire came.">
+	<Settlement id="village_EN4_4" name="{=Settlements.Settlement.name.village_EN4_4}Hetania" posX="561.817" posY="487.846" culture="Culture.republic" text="{=Settlements.Settlement.text.village_EN4_4}Hetania sits beneath a spur on the far northeastern bend of the Dryatic mountains. As in many villages around here, the foresters of this region still speak the Palaic languages of the tribes who lived here before the Empire came.">
 		<Components>
 			<Village
 				id="village_comp_EN4_4"
@@ -586,7 +586,7 @@
 				name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_EN8" name="{=Settlements.Settlement.name.castle_EN8}Syratos Castle" owner="Faction.galactic_senate" posX="663.562" posY="477.951" culture="Culture.galactic_republic" gate_posX="661.5169" gate_posY="475.827">
+	<Settlement id="castle_EN8" name="{=Settlements.Settlement.name.castle_EN8}Syratos Castle" owner="Faction.galactic_senate" posX="663.562" posY="477.951" culture="Culture.republic" gate_posX="661.5169" gate_posY="475.827">
 		<Components>
 			<Town
 				id="castle_comp_EN8"
@@ -616,7 +616,7 @@
 				scene_name="empire_dungeon_a" />
 		</Locations>
 	</Settlement>
-	<Settlement id="castle_village_EN8_1" name="{=Settlements.Settlement.name.castle_village_EN8_1}Syratos" posX="653.055" posY="472.717" culture="Culture.galactic_republic" text="{=Settlements.Settlement.text.castle_village_EN8_1}Syratos at the base of an escarpment just north of Lake Tanaesis. Villagers mine the hills above them, where cold winters crack the stone to reveal fine seams of iron ore.">
+	<Settlement id="castle_village_EN8_1" name="{=Settlements.Settlement.name.castle_village_EN8_1}Syratos" posX="653.055" posY="472.717" culture="Culture.republic" text="{=Settlements.Settlement.text.castle_village_EN8_1}Syratos at the base of an escarpment just north of Lake Tanaesis. Villagers mine the hills above them, where cold winters crack the stone to reveal fine seams of iron ore.">
 		<Components>
 			<Village
 				id="castle_village_comp_EN8_1"
@@ -646,7 +646,7 @@
 				name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_village_EN8_2" name="{=Settlements.Settlement.name.castle_village_EN8_2}Tememos" posX="647.501" posY="463.876" culture="Culture.galactic_republic" text="{=Settlements.Settlement.text.castle_village_EN8_2}Tememos lies in heavily wooded hill country at the northern end of Lake Tanaesis. Many of the villagers work as foresters, harvesting oak, beech and pine for the sale to the lake cities.">
+	<Settlement id="castle_village_EN8_2" name="{=Settlements.Settlement.name.castle_village_EN8_2}Tememos" posX="647.501" posY="463.876" culture="Culture.republic" text="{=Settlements.Settlement.text.castle_village_EN8_2}Tememos lies in heavily wooded hill country at the northern end of Lake Tanaesis. Many of the villagers work as foresters, harvesting oak, beech and pine for the sale to the lake cities.">
 		<Components>
 			<Village
 				id="castle_village_comp_EN8_2"
