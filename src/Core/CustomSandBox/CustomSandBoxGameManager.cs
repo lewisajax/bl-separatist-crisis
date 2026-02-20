@@ -32,7 +32,8 @@ namespace SeparatistCrisis.CustomSandBox
         {
             new CampaignPatches(),
             new NavigationHelperPatches(),
-            new DefaultMapDistanceModelPatches()
+            new DefaultMapDistanceModelPatches(),
+            new PlayerEncountersPatches(),
         };
 
         private SandBoxGameManager.CampaignCreatorDelegate _campaignCreator;

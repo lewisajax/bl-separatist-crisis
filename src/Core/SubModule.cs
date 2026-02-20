@@ -137,7 +137,15 @@ namespace SeparatistCrisis
                 // We override SandBoxSubModule's CampaignMissionManager assignment since our mod loads after SandBox
                 if (game.GameType.GetType() == typeof(Campaign))
                 {
-                    ((Campaign)game.GameType).CampaignMissionManager = new SCCampaignMissionManager();
+                    if (game.GameManager.GetType() == typeof(CustomSandBoxGameManager))
+                    {
+                        // It would be too much work to have our own GameType for Custom SandBox, so we use a couple of patches and keep the Campaign game type.
+                        ((Campaign)game.GameType).CampaignMissionManager = new SCCustomSandBoxMissionManager();
+                    }
+                    else
+                    {
+                        ((Campaign)game.GameType).CampaignMissionManager = new SCCampaignMissionManager();
+                    }
                 }
             }
         }

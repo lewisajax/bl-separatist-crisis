@@ -52,6 +52,30 @@
 	  <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
 		  <Children>
 			  <Standard.Background />
+			  <NavigationScopeTargeter ScopeID="CenterControlsScope" ScopeParent="..\CenterControls" ScopeMovements="Horizontal" />
+			  <ListPanel Id="CenterControls" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginBottom="10" VerticalAlignment="Bottom">
+				  <Children>
+
+					  <ButtonWidget DoNotPassEventsToChildren="true" SuggestedWidth="!SpectateButton.Width" SuggestedHeight="!SpectateButton.Height" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="WideButton.Flat" Command.Click="ExecuteStart" UpdateChildrenStates="true" GamepadNavigationIndex="1">
+						  <Children>
+							  <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center">
+								  <Children>
+									  <InputKeyVisualWidget DataSource="{StartInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="60" HorizontalAlignment="Center" VerticalAlignment="Center" KeyID="@KeyID" IsVisible="true"/>
+									  <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" MarginTop="10" MarginBottom="10" HorizontalAlignment="Center" VerticalAlignment="Center" MaxWidth="300" Brush="MPTeamSelection.SpectateButton.Text" Text="@StartButtonText" />
+								  </Children>
+							  </ListPanel>
+						  </Children>
+					  </ButtonWidget>
+
+					  <ButtonWidget DoNotPassEventsToChildren="true" Command.Click="ExecuteBack" SuggestedWidth = "!CloseButton.Width" SuggestedHeight = "!CloseButton.Height" HorizontalAlignment = "Right" VerticalAlignment = "Bottom" MarginLeft="40" Brush="CustomBattle.Leave.Button" UpdateChildrenStates="true" GamepadNavigationIndex="2">
+						  <Children>
+							  <InputKeyVisualWidget DataSource="{CancelInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="60" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="-45" KeyID="@KeyID" IsVisible="true"/>
+							  <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="35" VerticalAlignment="Top" PositionYOffset="-30" HorizontalAlignment="Center" Brush="MPLobby.Matchmaking.CircleButtonText" Text="@BackButtonText" />
+						  </Children>
+					  </ButtonWidget>
+
+				  </Children>
+			  </ListPanel>
 		  </Children>
 	  </Widget>
   </Window>

@@ -25,6 +25,7 @@ namespace SeparatistCrisis.CustomSandBox
         {
             new Prefix(nameof(FindReachablePointAroundPosition), new Utils.Reflect.Method(typeof(NavigationHelper), "FindReachablePointAroundPosition", new Type[] { typeof(CampaignVec2), typeof(MobileParty.NavigationType), typeof(float), typeof(float), typeof(bool) })),
             new Prefix(nameof(GetFaceIndex), new Utils.Reflect.Method(typeof(MapScene), "GetFaceIndex", new Type[] { typeof(CampaignVec2).MakeByRefType() })),
+            new Prefix(nameof(GetHeightAtPoint), new Utils.Reflect.Method(typeof(MapScene), "GetHeightAtPoint", new Type[] { typeof(CampaignVec2).MakeByRefType(), typeof(float).MakeByRefType() })),
         };
 
         private static bool FindReachablePointAroundPosition(CampaignVec2 __result, CampaignVec2 center, MobileParty.NavigationType navigationCapability, float maxDistance, float minDistance = 0f, bool useUniformDistribution = false)
@@ -36,6 +37,12 @@ namespace SeparatistCrisis.CustomSandBox
         private static bool GetFaceIndex(PathFaceRecord __result, in CampaignVec2 vec2)
         {
             __result = new PathFaceRecord(-1, -1, -1);
+            return false;
+        }
+
+        private static bool GetHeightAtPoint(in CampaignVec2 point, ref float height)
+        {
+            height = 1f;
             return false;
         }
     }

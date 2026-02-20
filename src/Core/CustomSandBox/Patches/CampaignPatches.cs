@@ -34,6 +34,7 @@ namespace SeparatistCrisis.CustomSandBox
             new Prefix(nameof(LoadMapScene), new Utils.Reflect.Method(typeof(Campaign), "LoadMapScene")),
             new Prefix(nameof(DoLoadingForGameType), new Utils.Reflect.Method(typeof(Campaign), "DoLoadingForGameType", new Type[] { typeof(GameTypeLoadingStates), typeof(GameTypeLoadingStates).MakeByRefType() })),
 
+            new Prefix(nameof(InitializeAtmosphereGrid), new Utils.Reflect.Method(typeof(AtmosphereGrid), "Initialize")),
             new Prefix(nameof(UpdateCurrentStrength), new Utils.Reflect.Method(typeof(Clan), "UpdateCurrentStrength")),
             new Prefix(nameof(OnSessionStart), new Utils.Reflect.Method(typeof(Town), "OnSessionStart")),
             new Prefix(nameof(OnSessionLaunchedEvent), new Utils.Reflect.Method(typeof(MapWeatherCampaignBehavior), "OnSessionLaunchedEvent", new Type[] { typeof(CampaignGameStarter) })),
@@ -42,6 +43,13 @@ namespace SeparatistCrisis.CustomSandBox
             new Prefix(nameof(GetBestSettlementToSpawnAround), new Utils.Reflect.Method(typeof(SettlementHelper), "GetBestSettlementToSpawnAround", new Type[] { typeof(Hero) })),
             new Prefix(nameof(GetSpawnPositionAroundSettlement), new Utils.Reflect.Method(typeof(BanditSpawnCampaignBehavior), "GetSpawnPositionAroundSettlement", new Type[] { typeof(Clan), typeof(Settlement) })),
         };
+
+        private static bool InitializeAtmosphereGrid(AtmosphereGrid __instance)
+        {
+            FieldInfo states = AccessTools.Field(typeof(AtmosphereGrid), "states");
+            states.SetValue(__instance, new List<AtmosphereState>());
+            return false;
+        }
 
         private static bool GetBestSettlementToSpawnAround(Settlement __result, Hero hero)
         {
