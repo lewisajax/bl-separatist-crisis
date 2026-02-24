@@ -9,6 +9,7 @@ using SeparatistCrisis.Missions;
 using SeparatistCrisis.ObjectTypes;
 using SeparatistCrisis.PatchTools;
 using SeparatistCrisis.SetOverride;
+using SeparatistCrisis.Tactics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,8 @@ using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.MountAndBlade.CustomBattle;
 using TaleWorlds.MountAndBlade.GameKeyCategory;
+using TaleWorlds.MountAndBlade.View.VisualOrders;
+using TaleWorlds.MountAndBlade.ViewModelCollection.Order.Visual;
 using TaleWorlds.ObjectSystem;
 using TaleWorlds.ScreenSystem;
 
@@ -42,6 +45,7 @@ namespace SeparatistCrisis
         internal static SubModule Instance { get; set; } = default!;
 
         private bool _hasLoaded;
+        private VisualOrderProvider _visualOrderProvider = null!;
 
         protected override void OnSubModuleLoad()
         {
@@ -55,6 +59,9 @@ namespace SeparatistCrisis
             var extender = UIExtender.Create(Name);
             extender.Register(typeof(SubModule).Assembly);
             extender.Enable();
+
+            this._visualOrderProvider = new SCVisualOrderProvider();
+            VisualOrderFactory.RegisterProvider(this._visualOrderProvider);
 
             this.InitializeHotKeyManager(true);
 
@@ -188,6 +195,7 @@ namespace SeparatistCrisis
 
             // We could send out an event so the submodule doesn't need to know about the singletons
             SetAssignments.Instance.Dispose();
+            ((SCVisualOrderProvider)this._visualOrderProvider).Dispose();
         }
 
         public static void OnError(object sender, UnhandledExceptionEventArgs args)

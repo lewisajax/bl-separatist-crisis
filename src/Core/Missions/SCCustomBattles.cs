@@ -1,5 +1,6 @@
 ﻿using SeparatistCrisis.Behaviors;
 using SeparatistCrisis.SetOverride;
+using SeparatistCrisis.Tactics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -133,7 +134,10 @@ namespace SeparatistCrisis.Missions
                 new MissionOptionsComponent(),
                 new BattleEndLogic(),
                 new BattleReinforcementsSpawnController(),
-                new MissionCombatantsLogic(null, playerParty, !isPlayerAttacker ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty, Mission.MissionTeamAITypeEnum.FieldBattle, isPlayerSergeant),
+
+                // Inherits from and replaces MissonCombatantsLogic
+                new SCMissionCombatantsLogic(null, playerParty, !isPlayerAttacker ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty, Mission.MissionTeamAITypeEnum.FieldBattle, isPlayerSergeant),
+                
                 new BattleObserverMissionLogic(),
                 new AgentHumanAILogic(),
                 new AgentVictoryLogic(),

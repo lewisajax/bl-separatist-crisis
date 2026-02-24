@@ -1,0 +1,139 @@
+﻿using SeparatistCrisis.Tactics.BehaviorComponents;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using TaleWorlds.Core;
+using TaleWorlds.Library;
+using TaleWorlds.MountAndBlade;
+
+namespace SeparatistCrisis.Tactics.TeamComponents
+{
+    public class SCTeamAIGeneral: TeamAIComponent
+    {
+        private int _numberOfEnemiesInShootRange;
+        private int _numberOfEnemiesCloseToAttack;
+
+        public int NumberOfEnemiesInShootRange
+        {
+            get { return this._numberOfEnemiesInShootRange; }
+            protected set { this._numberOfEnemiesInShootRange = value; }
+        }
+
+        public int NumberOfEnemiesCloseToAttack
+        {
+            get { return this._numberOfEnemiesCloseToAttack; }
+            protected set { this._numberOfEnemiesCloseToAttack = value; }
+        }
+
+        public SCTeamAIGeneral(Mission currentMission, Team currentTeam, float thinkTimerTime = 10f, float applyTimerTime = 1f) : 
+            base(currentMission, currentTeam, thinkTimerTime, applyTimerTime)
+        {
+        }
+
+        public override void OnUnitAddedToFormationForTheFirstTime(Formation formation)
+        {
+            if (GameNetwork.IsServer)
+            {
+                formation.ForceCalculateCaches();
+                if (formation.AI.GetBehavior<BehaviorCharge>() == null)
+                {
+                    if (formation.FormationIndex == FormationClass.NumberOfRegularFormations)
+                    {
+                        formation.AI.AddAiBehavior(new BehaviorGeneral(formation));
+                    }
+                    else if (formation.FormationIndex == FormationClass.Bodyguard)
+                    {
+                        formation.AI.AddAiBehavior(new BehaviorProtectGeneral(formation));
+                    }
+                    formation.AI.AddAiBehavior(new BehaviorCharge(formation));
+
+                    formation.AI.AddAiBehavior(new BehaviorUseCover(formation));
+
+                    formation.AI.AddAiBehavior(new BehaviorPullBack(formation));
+                    formation.AI.AddAiBehavior(new BehaviorRegroup(formation));
+                    formation.AI.AddAiBehavior(new BehaviorReserve(formation));
+                    formation.AI.AddAiBehavior(new BehaviorRetreat(formation));
+                    formation.AI.AddAiBehavior(new BehaviorStop(formation));
+                    formation.AI.AddAiBehavior(new BehaviorTacticalCharge(formation));
+                    formation.AI.AddAiBehavior(new BehaviorSergeantMPInfantry(formation));
+                    formation.AI.AddAiBehavior(new BehaviorSergeantMPLastFlagLastStand(formation));
+                    formation.AI.AddAiBehavior(new BehaviorSergeantMPMounted(formation));
+                    formation.AI.AddAiBehavior(new BehaviorSergeantMPMountedRanged(formation));
+                    formation.AI.AddAiBehavior(new BehaviorSergeantMPRanged(formation));
+                    return;
+                }
+            }
+            else if (!GameNetwork.IsClientOrReplay)
+            {
+                formation.ForceCalculateCaches();
+                if (formation.AI.GetBehavior<BehaviorCharge>() == null)
+                {
+                    if (formation.FormationIndex == FormationClass.NumberOfRegularFormations)
+                    {
+                        formation.AI.AddAiBehavior(new BehaviorGeneral(formation));
+                    }
+                    else if (formation.FormationIndex == FormationClass.Bodyguard)
+                    {
+                        formation.AI.AddAiBehavior(new BehaviorProtectGeneral(formation));
+                    }
+                    formation.AI.AddAiBehavior(new BehaviorCharge(formation));
+
+                    formation.AI.AddAiBehavior(new BehaviorUseCover(formation));
+
+                    formation.AI.AddAiBehavior(new BehaviorPullBack(formation));
+                    formation.AI.AddAiBehavior(new BehaviorRegroup(formation));
+                    formation.AI.AddAiBehavior(new BehaviorReserve(formation));
+                    formation.AI.AddAiBehavior(new BehaviorRetreat(formation));
+                    formation.AI.AddAiBehavior(new BehaviorStop(formation));
+                    formation.AI.AddAiBehavior(new BehaviorTacticalCharge(formation));
+                    formation.AI.AddAiBehavior(new BehaviorAdvance(formation));
+                    formation.AI.AddAiBehavior(new BehaviorCautiousAdvance(formation));
+                    formation.AI.AddAiBehavior(new BehaviorCavalryScreen(formation));
+                    formation.AI.AddAiBehavior(new BehaviorDefend(formation));
+                    formation.AI.AddAiBehavior(new BehaviorDefensiveRing(formation));
+                    formation.AI.AddAiBehavior(new BehaviorFireFromInfantryCover(formation));
+                    formation.AI.AddAiBehavior(new BehaviorFlank(formation));
+                    formation.AI.AddAiBehavior(new BehaviorHoldHighGround(formation));
+                    formation.AI.AddAiBehavior(new BehaviorHorseArcherSkirmish(formation));
+                    formation.AI.AddAiBehavior(new BehaviorMountedSkirmish(formation));
+                    formation.AI.AddAiBehavior(new BehaviorProtectFlank(formation));
+                    formation.AI.AddAiBehavior(new BehaviorScreenedSkirmish(formation));
+                    formation.AI.AddAiBehavior(new BehaviorSkirmish(formation));
+                    formation.AI.AddAiBehavior(new BehaviorSkirmishBehindFormation(formation));
+                    formation.AI.AddAiBehavior(new BehaviorSkirmishLine(formation));
+                    formation.AI.AddAiBehavior(new BehaviorVanguard(formation));
+                    formation.AI.AddAiBehavior(new BehaviorShootFromCliff(formation));
+                }
+            }
+        }
+
+        private void UpdateVariables()
+        {
+            TeamQuerySystem querySystem = this.Team.QuerySystem;
+            this.NumberOfEnemiesInShootRange = 0;
+            this.NumberOfEnemiesCloseToAttack = 0;
+            Vec2 averagePosition = querySystem.AveragePosition;
+            foreach (Agent agent in this.Mission.Agents)
+            {
+                if (!agent.IsMount && agent.Team.IsValid && agent.Team.IsEnemyOf(this.Team))
+                {
+                    float num = agent.Position.DistanceSquared(new Vec3(averagePosition.x, averagePosition.y, 0f, -1f));
+                    if (num < 40000f)
+                    {
+                        this.NumberOfEnemiesInShootRange++;
+                    }
+                    if (num < 1600f)
+                    {
+                        this.NumberOfEnemiesCloseToAttack++;
+                    }
+                }
+            }
+        }
+
+        protected override void DebugTick(float dt)
+        {
+        }
+    }
+}
