@@ -15,6 +15,9 @@ namespace SeparatistCrisis.Tactics.TeamComponents
         private int _numberOfEnemiesInShootRange;
         private int _numberOfEnemiesCloseToAttack;
 
+        private List<SCFormation> _formationDecorators;
+        private SCFormation? _cachedFormationDecorator;
+
         public int NumberOfEnemiesInShootRange
         {
             get { return this._numberOfEnemiesInShootRange; }
@@ -27,13 +30,27 @@ namespace SeparatistCrisis.Tactics.TeamComponents
             protected set { this._numberOfEnemiesCloseToAttack = value; }
         }
 
-        public SCTeamAIGeneral(Mission currentMission, Team currentTeam, float thinkTimerTime = 10f, float applyTimerTime = 1f) : 
+        public SCTeamAIGeneral(List<SCFormation> formations, Mission currentMission, Team currentTeam, float thinkTimerTime = 10f, float applyTimerTime = 1f) : 
             base(currentMission, currentTeam, thinkTimerTime, applyTimerTime)
         {
+            this._formationDecorators = formations;
         }
 
         public override void OnUnitAddedToFormationForTheFirstTime(Formation formation)
         {
+            // I've got this wrong, OnUnitAdded doesn't mean each troop, it's each group/unit. We don't need to cache this as it doesn't reach it
+            // We have a big list of formations from all the teams. It's probably best that we cache each value for when the there's ~50+ troops in each formation
+            SCFormation? decorator = null;
+            if (this._cachedFormationDecorator == null || this._cachedFormationDecorator.Formation != formation)
+            {
+                SCFormation? res = this._formationDecorators.Find((x => x.Formation == formation));
+                if (res != null)
+                    decorator = res;
+            } else
+            {
+                decorator = this._cachedFormationDecorator;
+            }
+
             if (GameNetwork.IsServer)
             {
                 formation.ForceCalculateCaches();
@@ -49,7 +66,7 @@ namespace SeparatistCrisis.Tactics.TeamComponents
                     }
                     formation.AI.AddAiBehavior(new BehaviorCharge(formation));
 
-                    formation.AI.AddAiBehavior(new BehaviorUseCover(formation));
+                    formation.AI.AddAiBehavior(new BehaviorUseCover(formation, decorator));
 
                     formation.AI.AddAiBehavior(new BehaviorPullBack(formation));
                     formation.AI.AddAiBehavior(new BehaviorRegroup(formation));
@@ -80,7 +97,7 @@ namespace SeparatistCrisis.Tactics.TeamComponents
                     }
                     formation.AI.AddAiBehavior(new BehaviorCharge(formation));
 
-                    formation.AI.AddAiBehavior(new BehaviorUseCover(formation));
+                    formation.AI.AddAiBehavior(new BehaviorUseCover(formation, decorator));
 
                     formation.AI.AddAiBehavior(new BehaviorPullBack(formation));
                     formation.AI.AddAiBehavior(new BehaviorRegroup(formation));

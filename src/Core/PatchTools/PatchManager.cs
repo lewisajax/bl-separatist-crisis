@@ -6,6 +6,7 @@ using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using SeparatistCrisis.Tactics.Patches;
 
 namespace SeparatistCrisis.PatchTools
 {
@@ -78,6 +79,7 @@ namespace SeparatistCrisis.PatchTools
             new OnNewGameCreatedPartialFollowUpPatch(),
             new GetGameKeyCategoriesListPatch(),
             new SpawnAgentPatch(),
+            new TacticsTeamPatches(),
             // new OpenCustomBattleMissionPatch(),
         };
 

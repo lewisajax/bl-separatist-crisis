@@ -1,4 +1,5 @@
-﻿using SeparatistCrisis.Tactics.TeamComponents;
+﻿using SeparatistCrisis.Tactics.TacticComponents;
+using SeparatistCrisis.Tactics.TeamComponents;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,22 @@ namespace SeparatistCrisis.Tactics
 {
     public class SCMissionCombatantsLogic: MissionCombatantsLogic
     {
+        private List<SCFormation> _formationDecorators;
+
+        public List<SCFormation> FormationDecorators
+        {
+            get { return _formationDecorators; }
+            protected set
+            {
+                if (value != null)
+                    this._formationDecorators = value;
+            }
+        }
+
         public SCMissionCombatantsLogic(IEnumerable<IBattleCombatant> battleCombatants, IBattleCombatant playerBattleCombatant, IBattleCombatant defenderLeaderBattleCombatant, IBattleCombatant attackerLeaderBattleCombatant, Mission.MissionTeamAITypeEnum teamAIType, bool isPlayerSergeant) : 
             base(battleCombatants, playerBattleCombatant, defenderLeaderBattleCombatant, attackerLeaderBattleCombatant, teamAIType, isPlayerSergeant)
         {
+            this._formationDecorators = new List<SCFormation>();
         }
 
         public override void EarlyStart()
@@ -72,6 +86,19 @@ namespace SeparatistCrisis.Tactics
             }
         }
 
+        public override void AfterAddTeam(Team team)
+        {
+            base.AfterAddTeam(team);
+
+            if (team?.FormationsIncludingEmpty == null)
+                return;
+
+            for (int i = 0; i < team.FormationsIncludingEmpty.Count; i++)
+            {
+                this.FormationDecorators.Add(new SCFormation(team.FormationsIncludingEmpty[i]));
+            }
+        }
+
         private void AddFieldBattleTeamComponent()
         {
             using (List<Team>.Enumerator enumerator = Mission.Current.Teams.GetEnumerator())
@@ -80,7 +107,7 @@ namespace SeparatistCrisis.Tactics
                 {
                     Team team = enumerator.Current;
                     // team.AddTeamAI(new TeamAIGeneral(base.Mission, team, 10f, 1f), false);
-                    team.AddTeamAI(new SCTeamAIGeneral(base.Mission, team, 10f, 1f), false);
+                    team.AddTeamAI(new SCTeamAIGeneral(this.FormationDecorators, base.Mission, team, 10f, 1f), false);
 
                 }
             }
@@ -101,6 +128,7 @@ namespace SeparatistCrisis.Tactics
                                    select bc).Max((IBattleCombatant bcs) => bcs.GetTacticsSkillAmount());
 
                         team.AddTacticOption(new TacticCharge(team));
+                        team.AddTacticOption(new TacticUseCover(team));
 
                         if ((float)num >= 20f)
                         {

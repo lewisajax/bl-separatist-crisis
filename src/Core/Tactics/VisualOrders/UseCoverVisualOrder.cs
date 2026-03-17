@@ -22,12 +22,13 @@ namespace SeparatistCrisis.Tactics.VisualOrders
 
         public override void ExecuteOrder(OrderController orderController, VisualOrderExecutionParameters executionParameters)
         {
-            if (executionParameters.HasFormation)
-            {
-                orderController.SetOrderWithFormation(OrderType.Charge, executionParameters.Formation);
-                return;
-            }
-            orderController.SetOrder(OrderType.Charge);
+            //if (executionParameters.HasFormation)
+            //{
+            //    // orderController.SetOrderWithFormation(OrderType.Charge, executionParameters.Formation);
+            //    orderController.SetOrderWithFormation(OrderType.None, executionParameters.Formation);
+            //    return;
+            //}
+            ((SCOrderController)orderController).SetOrder(SCOrderType.UseCover);
         }
 
         public override bool IsTargeted()
