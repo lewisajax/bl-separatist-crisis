@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="module_sound">
+	<module_sounds>
+		<!--
+  sound_categories are:
+	mission_ambient_bed 			persistent		General scene ambient 
+	mission_ambient_3d_big			persistent		Loud ambient sounds e.g. barn fire
+	mission_ambient_3d_medium		persistent		Common ambient sounds e.g. fireplace
+	mission_ambient_3d_small		persistent		Quiet ambient sounds e.g. torch
+	mission_material_impact			max 4 sec. 		Weapon clash kind of sounds
+	mission_combat_trivial			max 2 sec.		Damage extra foley like armor layer
+	mission_combat					max 8 sec.		Damage or bow release sounds
+	mission_foley					max 4 sec.		Other kind of motion fillers
+	mission_voice_shout				max 8 sec.		War cries, shouted orders, horse whinnies etc.
+	mission_voice					max 4 sec.		Grunts, exertions etc.
+	mission_voice_trivial			max 4 sec.		Small exertions like jumping
+	mission_siege_loud				max 8 sec.		Big explosions, destructions
+	mission_footstep				max 1 sec.		Human footsteps, foley
+	mission_footstep_run			max 1 sec.		Human running (contributes to BASS)
+	mission_horse_gallop			max 2 sec.		Loud mount gallop footsteps (contributes to BASS)
+	mission_horse_walk				max 1 sec.		Quiet mount footsteps, walk
+	ui								max 4 sec.		All UI sounds
+	alert							max 10 sec.		Pseudo-3D in-mission alerts like warning bells
+	campaign_node					persistent		Campaign map point sound like rivers etc.
+	campaign_bed					persistent		Campaign amboent bed
+	
+	- Sounds that dont have valid categories wont be played!
+	
+	example:
+		int soundIndex = SoundEvent.GetEventIdFromString("example/voice/charge");//to avoid string operations in runtime soundIndex can be cached.
+		if (playOneshot)
+		{
+			MakeSound(soundIndex, MainAgent.Position, false, true, -1, -1);//plays oneshot sound at position with given parameters.
+		}
+		else
+		{
+			SoundEvent eventRef = SoundEvent.CreateEvent(soundIndex, Scene);//get a reference to sound and update parameters later.
+			eventRef.SetPosition(MainAgent.Position);
+			eventRef.Play();
+		}
+  -->
+
+		<module_sound name="sabersounds/ltsaberon01"  sound_category="mission_combat_trivial" path="ltsaberon01.wav" />
+		<module_sound name="sabersounds/ltsaberoff01"  sound_category="mission_combat_trivial" path="ltsaberoff01.wav" />
+
+
+		<module_sound name="sabersounds/ltsaberswing04"  sound_category="mission_foley" path="ltsaberswing04.wav" />
+
+		<module_sound name="sabersounds/ltsaberswing01"  sound_category="mission_foley" path="ltsaberswing01.wav" />
+		<module_sound name="sabersounds/ltsaberswing02"  sound_category="mission_foley" path="ltsaberswing02.wav" />
+		<module_sound name="sabersounds/ltsaberswing03"  sound_category="mission_foley" path="ltsaberswing03.wav" />
+		<module_sound name="sabersounds/ltsaberswing05"  sound_category="mission_foley" path="ltsaberswing05.wav" />
+		<module_sound name="sabersounds/ltsaberswing06"  sound_category="mission_foley" path="ltsaberswing06.wav" />
+		<module_sound name="sabersounds/ltsaberswing07"  sound_category="mission_foley" path="ltsaberswing07.wav" />
+		<module_sound name="sabersounds/ltsaberswing08"  sound_category="mission_foley" path="ltsaberswing08.wav" />
+		<module_sound name="sabersounds/ltsaberswingdbl01"  sound_category="mission_foley" path="ltsaberswingdbl01.wav" />
+
+
+		<module_sound name="sabersounds/ltsaberhit02"  sound_category="mission_combat" path="ltsaberhit02.wav" />
+		<module_sound name="sabersounds/ltsaberhit03"  sound_category="mission_combat" path="ltsaberhit03.wav" />
+		<module_sound name="sabersounds/ltsaberhit07"  sound_category="mission_combat" path="ltsaberhit07.wav" />
+		<module_sound name="sabersounds/ltsaberhit15"  sound_category="mission_combat" path="ltsaberhit15.wav" />
+		<module_sound name="sabersounds/ltsaberbodyhit01"  sound_category="mission_combat" path="ltsaberbodyhit01.wav" />
+
+		<module_sound name="sabersounds/lightsaberpulse"  sound_category="mission_ambient_3d_small" path="lightsaberpulse.wav" />
+
+
+		<module_sound name="sabersounds/ltsaberdeflect01"  sound_category="mission_combat_trivial" path="ltsaberdeflect01.wav" />
+		<module_sound name="sabersounds/ltsaberdeflect02"  sound_category="mission_combat_trivial" path="ltsaberdeflect02.wav" />
+		<module_sound name="sabersounds/ltsaberdeflect03"  sound_category="mission_combat_trivial" path="ltsaberdeflect03.wav" />
+		<module_sound name="sabersounds/ltsaberdeflect04"  sound_category="mission_combat_trivial" path="ltsaberdeflect04.wav" />
+		<module_sound name="sabersounds/ltsaberdeflect05"  sound_category="mission_combat_trivial" path="ltsaberdeflect05.wav" />
+		<module_sound name="sabersounds/ltsaberdeflect06"  sound_category="mission_combat_trivial" path="ltsaberdeflect06.wav" />
+		<module_sound name="sabersounds/ltsaberdeflect07"  sound_category="mission_combat_trivial" path="ltsaberdeflect07.wav" />
+		<module_sound name="sabersounds/ltsaberdeflect08"  sound_category="mission_combat_trivial" path="ltsaberdeflect08.wav" />
+		<module_sound name="sabersounds/ltsaberdeflect09"  sound_category="mission_combat_trivial" path="ltsaberdeflect09.wav" />
+		<module_sound name="sabersounds/ltsaberdeflect10"  sound_category="mission_combat_trivial" path="ltsaberdeflect10.wav" />
+
+		<module_sound name="sabersounds/ltsaberhum01"  sound_category="mission_ambient_3d_small" path="ltsaberhum01.wav" />
+
+
+
+	</module_sounds>
+
+
+
+
+</base>
