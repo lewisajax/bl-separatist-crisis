@@ -141,6 +141,7 @@ namespace SeparatistCrisis.Missions
 
                 new BlasterMissileLogic(),
                 new AbilitiesLogic(),
+                new LightsaberBehavior(),
 
                 new BattleMissionAgentInteractionLogic(),
                 new AgentMoraleInteractionLogic(),
@@ -148,6 +149,9 @@ namespace SeparatistCrisis.Missions
                 new EquipmentControllerLeaveLogic(),
 
                 new AbilityControllerLeaveLogic(),
+
+
+                
 
                 new MissionHardBorderPlacer(),
                 new MissionBoundaryPlacer(),

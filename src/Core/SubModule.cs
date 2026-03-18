@@ -1,4 +1,5 @@
 ﻿using Bannerlord.UIExtenderEx;
+using HarmonyLib;
 using Newtonsoft.Json.Serialization;
 using SandBox;
 using SeparatistCrisis.Behaviors;
@@ -37,6 +38,8 @@ namespace SeparatistCrisis
         public static readonly string CampaignHarmonyDomain = MainHarmonyDomain + ".campaign";
         public static readonly string WidgetHarmonyDomain = MainHarmonyDomain + ".widgets";
 
+        public static readonly string SaberHarmonyDomain = MainHarmonyDomain + ".behaviors"; //Temporarily added to load Harmony Domain for LightsaberBehaviors.cs
+
         internal static readonly Color StdTextColor = Color.FromUint(0x00F16D26); // Orange
 
         internal static SubModule Instance { get; set; } = default!;
@@ -51,6 +54,13 @@ namespace SeparatistCrisis
 
             SubModule.Instance = this;
             PatchManager.ApplyMainPatches(MainHarmonyDomain);
+
+            //Temporarily added to load Harmony Domain for LightsaberBehaviors.cs 
+            Harmony swHarmony = new Harmony(SaberHarmonyDomain);
+            swHarmony.UnpatchAll(swHarmony.Id);
+            swHarmony.PatchAll();
+            //-----------------------------------------------------------------
+
 
             var extender = UIExtender.Create(Name);
             extender.Register(typeof(SubModule).Assembly);
@@ -72,6 +82,7 @@ namespace SeparatistCrisis
         public override void OnMissionBehaviorInitialize(Mission mission)
         {
             base.OnMissionBehaviorInitialize(mission);
+            mission.AddMissionBehavior(new LightsaberBehavior());   //Temporarily added to load Harmony Domain for LightsaberBehaviors.cs
 
             //if (mission != null)
             //    mission.AddMissionBehavior(new ForceAtmosphereLogic());

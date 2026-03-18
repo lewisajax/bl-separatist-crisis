@@ -69,6 +69,8 @@ namespace SeparatistCrisis.Missions
 
                     new BlasterMissileLogic(),
                     new AbilitiesLogic(),
+                    new LightsaberBehavior(),
+
 
                     new MissionAgentPanicHandler(),
                     new BattleMissionAgentInteractionLogic(),
