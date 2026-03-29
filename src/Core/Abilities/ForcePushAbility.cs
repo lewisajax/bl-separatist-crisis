@@ -50,7 +50,7 @@ namespace SeparatistCrisis.Abilities
         {
             // Mesh cube = MeshBuilder.CreateUnitMesh(); // It's a 2d unit mesh not 3d
             Mesh cube = Mesh.GetFromResource("editor_cube").CreateCopy();
-            cube.SetMaterial(Material.GetFromResource("editor_gizmo"));
+            cube.SetMaterial(Material.GetFromResource("editor_gizmo")); // Makes it invisible
 
             UIntPtr uintPtr = cube.LockEditDataWrite();
             ManagedMeshEditOperations edit = ManagedMeshEditOperations.Create(cube);
@@ -130,13 +130,34 @@ namespace SeparatistCrisis.Abilities
                     entity.SetPhysicsState(true, true);
                     entity.EnableDynamicBody();
 
+                    entity.AddParticleSystemComponent("psys_sc_force_push_a");
+                    // entity.AddParticleSystemComponent("psys_game_boulder_stone_coll");
+
+                    // MatrixFrame entityLocalFrame = entity.GetLocalFrame();
+                    // ParticleSystem.CreateParticleSystemAttachedToEntity("psys_sc_force_push_a", entity, ref entityLocalFrame);
+
                     // https://discord.com/channels/411286129317249035/677511186295685150/1201805648988475394
                     // UsableMachine
                     // ScriptComponentBehavior
 
+                    // TW are supposedly phasing out ModuleSounds in favour of Sounds/Soundtracks/Music, not sure on the exact folders
+
+                    int soundIndex = SoundEvent.GetEventIdFromString("abilities/force_push_a");
+                    // SoundEvent eventRef = SoundEvent.CreateEvent(soundIndex, Mission.Current.Scene);
+                    // eventRef.SetPosition(agent.Position);
+                    // eventRef.Play();
+
+                    // MakeSound is better for performance if it's used for quick/combat events
+                    // Mission.Current.MakeSound(soundIndex, agent.Position, false, true, -1, -1);
+
+                    MBSoundEvent.PlaySound(soundIndex, agent.Position);
+
                     entity.CreateAndAddScriptComponent(ForcePushProjectile.Name, false);
                     entity.GetFirstScriptOfType<ForcePushProjectile>().AbilityAgent = this.AbilityAgent;
                     entity.CallScriptCallbacks(true);
+
+                    entity.BurstEntityParticle(true);
+                    // entity.ResumeParticleSystem(true);
 
                     this.ActiveEntity = entity;
                     this.IsActive = true;
@@ -149,6 +170,7 @@ namespace SeparatistCrisis.Abilities
         {
             base.Dispose();
             this.ActiveEntity?.ClearEntityComponents(true, true, true);
+            this.ActiveEntity?.RemoveAllParticleSystems();
             this.ActiveEntity = null;
         }
     }
