@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="solution">
+  <outputDirectory>..\MBModule\MBModule\</outputDirectory>
+  <XMLDirectory>..\WOTS\Modules\SeparatistCrisis.Items\</XMLDirectory>
+  <ModuleAssemblyDirectory>..\WOTS\bin\</ModuleAssemblyDirectory>
+  <file id="soln_module_sound" name="ModuleData/module_sounds.xml" type="module_sound" />
+  <!-- <file id="soln_sound_files" name="ModuleData/soundfiles.xml" type="sound_files" /> -->
+  <!-- <file id="soln_sound_event_data" name="ModuleData/sound_event_data.gen.xml" type="sound_event_data" /> -->
+</base>

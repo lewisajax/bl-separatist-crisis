@@ -140,17 +140,34 @@ namespace SeparatistCrisis.Abilities
                     // UsableMachine
                     // ScriptComponentBehavior
 
+                    // I think for us to use FMOD and it's bank files, we need TW's FMOD project so that we can build our banks in there
+                    // We need the bus definitions inside our banks for them to load.
+                    // We might also need a master.strings.bank, so I think we'd need to control Native's sounds as well.
+                    // If we don't have a .strings.bank, we would have to reference our events by their guids as the game won't know about the paths.
+                    // We'll learn more when they release the documentation on how to set it up.
                     // TW are supposedly phasing out ModuleSounds in favour of Sounds/Soundtracks/Music, not sure on the exact folders
 
+                    // int soundIndex = SoundEvent.GetEventIdFromString("abilities/force_push_a");
+                    // int soundIndex = SoundManager.GetEventGlobalIndex("event:/mission/combat/abilities/force_push_a");
+
                     int soundIndex = SoundEvent.GetEventIdFromString("abilities/force_push_a");
-                    // SoundEvent eventRef = SoundEvent.CreateEvent(soundIndex, Mission.Current.Scene);
-                    // eventRef.SetPosition(agent.Position);
-                    // eventRef.Play();
+
+                    //SoundEvent eventRef = SoundEvent.CreateEvent(soundIndex, Mission.Current.Scene);
+                    //eventRef.SetPosition(agent.Position);
+                    //eventRef.Play();
 
                     // MakeSound is better for performance if it's used for quick/combat events
                     // Mission.Current.MakeSound(soundIndex, agent.Position, false, true, -1, -1);
 
                     MBSoundEvent.PlaySound(soundIndex, agent.Position);
+
+                    // SoundManager.StartOneShotEventWithIndex(soundIndex, agent.Position);
+
+                    // int pushEventId = SoundEvent.GetEventIdFromString("{09be44f7-0c73-4489-bc5a-5f6b997cf67f}");
+                    // int pushEventId = SoundEvent.GetEventIdFromString("event:/abilities/force/force_push_a");
+                    // int pushEventId = SoundEvent.GetEventIdFromString("event:/mission/combat/abilities/force_push_a");
+                    // SoundEvent pushEvent = SoundEvent.CreateEvent(pushEventId, Mission.Current.Scene);
+                    // pushEvent.Play();
 
                     entity.CreateAndAddScriptComponent(ForcePushProjectile.Name, false);
                     entity.GetFirstScriptOfType<ForcePushProjectile>().AbilityAgent = this.AbilityAgent;

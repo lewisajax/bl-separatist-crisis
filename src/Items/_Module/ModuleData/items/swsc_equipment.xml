@@ -2,7 +2,7 @@
 <Items>
 
 	<!--Head Armor Slot-->
-
+	
 	<Item id="clone_cadet_helmet" name="Clone Cadet Helmet" mesh="clone_cadet_helmet" culture="Culture.galactic_republic" weight="0.4" appearance="1" Type="HeadArmor">
 		<ItemComponent>
 			<Armor head_armor="8" covers_head = "false" hair_cover_type ="all" beard_cover_type ="all" modifier_group="plate" material_type="Plate"></Armor>
