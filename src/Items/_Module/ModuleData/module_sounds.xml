@@ -41,5 +41,6 @@
   -->
 
 		<module_sound name="abilities/force_push_a" sound_category="mission_combat" path="abilities/force_push_a.wav" />
+		<module_sound name="abilities/force_lightning_a" sound_category="mission_ambient_3d_big" path="abilities/force_lightning_a.wav" />
 	</module_sounds>
 </base>

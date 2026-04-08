@@ -17,6 +17,7 @@ namespace SeparatistCrisis.Abilities
     {
         private float _boxLength;
         private float _boxSize;
+        private SoundEvent? _eventRef;
 
         public float BoxLength
         {
@@ -86,6 +87,14 @@ namespace SeparatistCrisis.Abilities
         {
             if (Mission.Current.InputManager.IsKeyReleased(TaleWorlds.InputSystem.InputKey.B))
             {
+                if (this._eventRef != null)
+                {
+                    this._eventRef.Stop();
+                    this._eventRef = null;
+                }
+
+                this.ActiveEntity?.PauseParticleSystem(true);
+                this.ActiveEntity?.RemoveAllParticleSystems();
                 this.ActiveEntity?.Remove(0);
                 this.ActiveEntity = null;
                 this.LastCheck = Mission.Current.CurrentTime;
@@ -98,6 +107,13 @@ namespace SeparatistCrisis.Abilities
             {
                 if (!this.IsActive && Mission.Current.CurrentTime > ((this.LastCheck + dt) + 4f))
                 {
+                    // This should be handled before we reactivate the ability but just in case.
+                    if (this._eventRef != null)
+                    {
+                        this._eventRef.Stop();
+                        this._eventRef = null;
+                    }
+
                     Agent agent = this.AbilityAgent.Agent;
 
                     Mesh cube = this.CreateMesh();
@@ -130,6 +146,8 @@ namespace SeparatistCrisis.Abilities
                     // entity.SetPhysicsState(true, true);
                     // entity.EnableDynamicBody();
 
+                    entity.AddParticleSystemComponent("psys_sc_force_lightning_a");
+
                     entity.AddMesh(cube);
 
                     MatrixFrame globalFrame = agent.AgentVisuals.GetGlobalFrame();
@@ -142,7 +160,6 @@ namespace SeparatistCrisis.Abilities
                     entity.RecomputeBoundingBox();
 
                     GameEntity prtEntity = GameEntity.CreateEmptyDynamic(Mission.Current.Scene);
-                    prtEntity.AddParticleSystemComponent("prt_basic_fire_smoke");
 
                     MatrixFrame prtTransform = new MatrixFrame(
                         this.BoxSize, 0f, 0f, 0f,
@@ -154,6 +171,12 @@ namespace SeparatistCrisis.Abilities
                     prtEntity.SetFrame(ref prtTransform);
 
                     entity.AddChild(prtEntity);
+
+                    // This loops because of the sound category in Items/module_sounds
+                    int soundIndex = SoundEvent.GetEventIdFromString("abilities/force_lightning_a");
+                    this._eventRef = SoundEvent.CreateEvent(soundIndex, Mission.Current.Scene);
+                    this._eventRef.SetPosition(agent.Position);
+                    this._eventRef.Play();
 
                     entity.CreateAndAddScriptComponent(ForceLightningProjectile.Name, false);
                     entity.GetFirstScriptOfType<ForceLightningProjectile>().AbilityAgent = this.AbilityAgent;

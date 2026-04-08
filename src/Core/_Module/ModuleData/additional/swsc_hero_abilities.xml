@@ -3,5 +3,6 @@
 	<AbilityHero id="ah_palpatine" character_id="palpatine">
 		<AbilitySlot action="Ability.abi_force_push" />
 		<AbilitySlot action="Ability.abi_force_choke" />
+		<AbilitySlot action="Ability.abi_force_lightning" />
 	</AbilityHero>
 </AbilityHeroes>
