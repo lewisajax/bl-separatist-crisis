@@ -1,4 +1,499 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--You can add new or override old npc characters by adding nodes to this xml. For examples please refer to: SandBoxCore/ModuleData/spnpccharacters.xml, SandBox/ModuleData/lords.xml-->
-<NPCCharacters/>
-
+<NPCCharacters>
+    <!-- Separatist Base Line -->
+    <NPCCharacter id="separatist_b1_battle_droid"
+		default_group="Ranged"
+		level="6"
+		name="B1 Battle Droid"
+		occupation="Soldier"
+		is_basic_troop="true"
+		culture="Culture.separatist">
+		<face>
+			<face_key_template value="BodyProperty.b1_droid_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="20" />
+			<skill id="Riding" value="5" />
+			<skill id="OneHanded" value="20" />
+			<skill id="TwoHanded" value="10" />
+			<skill id="Polearm" value="20" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="20" />
+			<skill id="Throwing" value="5" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.separatist_b1_battle_droid_veteran" />
+			<upgrade_target id="NPCCharacter.separatist_b1_battle_droid_enforcer" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.e_5_rifle" />
+                <equipment slot="Item1" id="Item.blaster_bolt_medium_red" />
+                <equipment slot="Head" id="Item.b1_droid_head_factory_new" />
+                <equipment slot="Cape" id="Item.b1_droid_backpack_factory_new" />
+                <equipment slot="Body" id="Item.b1_droid_body_factory_new" />
+                <equipment slot="Gloves" id="Item.b1_droid_hands_factory_new" />
+                <equipment slot="Leg" id="Item.b1_droid_feet_factory_new" />
+			</EquipmentRoster>
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="separatist_b1_battle_droid_veteran"
+		default_group="Ranged"
+		level="11"
+		name="B1 Battle Droid Veteran"
+		occupation="Soldier"
+		culture="Culture.separatist">
+		<face>
+			<face_key_template value="BodyProperty.b1_droid_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="40" />
+			<skill id="Riding" value="15" />
+			<skill id="OneHanded" value="40" />
+			<skill id="TwoHanded" value="20" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="40" />
+			<skill id="Throwing" value="15" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.separatist_b1_security_droid" />
+			<upgrade_target id="NPCCharacter.separatist_b1_heavy_battle_droid" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.e_5_rifle" />
+                <equipment slot="Item1" id="Item.blaster_bolt_medium_red" />
+                <equipment slot="Item2" id="Item.thermal_detonator" />
+                <equipment slot="Head" id="Item.b1_droid_head_new" />
+                <equipment slot="Cape" id="Item.b1_droid_backpack_new" />
+                <equipment slot="Body" id="Item.b1_droid_body_new" />
+                <equipment slot="Gloves" id="Item.b1_droid_hands_new" />
+                <equipment slot="Leg" id="Item.b1_droid_feet_new" />
+			</EquipmentRoster>
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="separatist_b1_security_droid"
+		default_group="Ranged"
+		level="16"
+		name="B1 Security Droid"
+		occupation="Soldier"
+		culture="Culture.separatist">
+		<face>
+			<face_key_template value="BodyProperty.b1_droid_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="40" />
+			<skill id="OneHanded" value="70" />
+			<skill id="TwoHanded" value="30" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="70" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.separatist_b1_security_droid_veteran" />
+			<upgrade_target id="NPCCharacter.separatist_b1_marksman_droid" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.e_5_rifle" />
+                <equipment slot="Item1" id="Item.blaster_bolt_medium_red" />
+                <equipment slot="Item2" id="Item.thermal_detonator" /> <!-- Electropole -->
+                <equipment slot="Head" id="Item.b1_droid_head_new" /> <!-- b1_droid_head_security -->
+                <equipment slot="Cape" id="Item.b1_droid_backpack_new" /> <!-- b1_droid_backpack_security -->
+                <equipment slot="Body" id="Item.b1_droid_body_new" /> <!-- b1_droid_body_security -->
+                <equipment slot="Gloves" id="Item.b1_droid_hands_new" /> <!-- b1_droid_hands_security -->
+                <equipment slot="Leg" id="Item.b1_droid_feet_new" /> <!-- b1_droid_feet_security -->
+			</EquipmentRoster>
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="separatist_b1_security_droid_veteran"
+		default_group="Ranged"
+		level="21"
+		name="B1 Security Droid Veteran"
+		occupation="Soldier"
+		culture="Culture.separatist">
+		<face>
+			<face_key_template value="BodyProperty.b1_droid_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="100" />
+			<skill id="Riding" value="60" />
+			<skill id="OneHanded" value="100" />
+			<skill id="TwoHanded" value="45" />
+			<skill id="Polearm" value="45" />
+			<skill id="Bow" value="15" />
+			<skill id="Crossbow" value="100" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.separatist_b1_droid_commander" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.e_5_rifle" />
+                <equipment slot="Item1" id="Item.blaster_bolt_medium_red" />
+                <equipment slot="Head" id="Item.b1_droid_head_new" /> <!-- b1_droid_head_security -->
+                <equipment slot="Cape" id="Item.b1_droid_backpack_new" /> <!-- b1_droid_backpack_security -->
+                <equipment slot="Body" id="Item.b1_droid_body_new" /> <!-- b1_droid_body_security -->
+                <equipment slot="Gloves" id="Item.b1_droid_hands_new" /> <!-- b1_droid_hands_security -->
+                <equipment slot="Leg" id="Item.b1_droid_feet_new" /> <!-- b1_droid_feet_security -->
+			</EquipmentRoster>
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="separatist_b1_droid_commander"
+		default_group="Ranged"
+		level="26"
+		name="B1 Droid Commander"
+		occupation="Soldier"
+		culture="Culture.separatist">
+		<face>
+			<face_key_template value="BodyProperty.b1_droid_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="130" />
+			<skill id="Riding" value="80" />
+			<skill id="OneHanded" value="130" />
+			<skill id="TwoHanded" value="60" />
+			<skill id="Polearm" value="80" />
+			<skill id="Bow" value="20" />
+			<skill id="Crossbow" value="130" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.e_5_rifle" />
+                <equipment slot="Item1" id="Item.blaster_bolt_medium_red" />
+                <equipment slot="Head" id="Item.b1_droid_head_new" /> <!-- b1_droid_head_security -->
+                <equipment slot="Cape" id="Item.b1_droid_backpack_new" /> <!-- b1_droid_backpack_security -->
+                <equipment slot="Body" id="Item.b1_droid_body_new" /> <!-- b1_droid_body_security -->
+                <equipment slot="Gloves" id="Item.b1_droid_hands_new" /> <!-- b1_droid_hands_security -->
+                <equipment slot="Leg" id="Item.b1_droid_feet_new" /> <!-- b1_droid_feet_security -->
+			</EquipmentRoster>
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="separatist_b1_marksman_droid"
+		default_group="Ranged"
+		level="21"
+		name="B1 Marksman Droid"
+		occupation="Soldier"
+		culture="Culture.separatist">
+		<face>
+			<face_key_template value="BodyProperty.b1_droid_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="100" />
+			<skill id="Riding" value="60" />
+			<skill id="OneHanded" value="100" />
+			<skill id="TwoHanded" value="45" />
+			<skill id="Polearm" value="45" />
+			<skill id="Bow" value="15" />
+			<skill id="Crossbow" value="100" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.separatist_b1_marksman_droid_veteran" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.e_5_rifle" /> <!-- E-5S Sniper Rifle -->
+                <equipment slot="Item1" id="Item.blaster_bolt_medium_red" /> <!-- Long bolts -->
+                <equipment slot="Head" id="Item.b1_droid_head_new" /> <!-- b1_droid_head_marksman -->
+                <equipment slot="Cape" id="Item.b1_droid_backpack_new" /> <!-- b1_droid_backpack_security -->
+                <equipment slot="Body" id="Item.b1_droid_body_new" /> <!-- b1_droid_body_security -->
+                <equipment slot="Gloves" id="Item.b1_droid_hands_new" /> <!-- b1_droid_hands_security -->
+                <equipment slot="Leg" id="Item.b1_droid_feet_new" /> <!-- b1_droid_feet_security -->
+			</EquipmentRoster>
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="separatist_b1_marksman_droid_veteran"
+		default_group="Ranged"
+		level="26"
+		name="B1 Marksman Droid Veteran"
+		occupation="Soldier"
+		culture="Culture.separatist">
+		<face>
+			<face_key_template value="BodyProperty.b1_droid_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="130" />
+			<skill id="Riding" value="80" />
+			<skill id="OneHanded" value="130" />
+			<skill id="TwoHanded" value="60" />
+			<skill id="Polearm" value="80" />
+			<skill id="Bow" value="20" />
+			<skill id="Crossbow" value="130" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.e_5_rifle" /> <!-- E-5S Sniper Rifle -->
+                <equipment slot="Item1" id="Item.blaster_bolt_medium_red" /> <!-- Long bolts -->
+                <equipment slot="Head" id="Item.b1_droid_head_new" /> <!-- b1_droid_head_marksman -->
+                <equipment slot="Cape" id="Item.b1_droid_backpack_new" /> <!-- b1_droid_backpack_security -->
+                <equipment slot="Body" id="Item.b1_droid_body_new" /> <!-- b1_droid_body_security -->
+                <equipment slot="Gloves" id="Item.b1_droid_hands_new" /> <!-- b1_droid_hands_security -->
+                <equipment slot="Leg" id="Item.b1_droid_feet_new" /> <!-- b1_droid_feet_security -->
+			</EquipmentRoster>
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="separatist_b1_heavy_battle_droid"
+		default_group="Ranged"
+		level="16"
+		name="B1 Heavy Battle Droid"
+		occupation="Soldier"
+		culture="Culture.separatist">
+		<face>
+			<face_key_template value="BodyProperty.b1_droid_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="40" />
+			<skill id="OneHanded" value="70" />
+			<skill id="TwoHanded" value="30" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="70" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.separatist_b1_heavy_battle_droid_aa" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.e_5_rifle" /> <!-- E-5C Heavy Blaster Rifle -->
+                <equipment slot="Item1" id="Item.blaster_bolt_medium_red" />
+                <equipment slot="Item2" id="Item.thermal_detonator" />
+                <equipment slot="Head" id="Item.b1_droid_head_new" />
+                <equipment slot="Cape" id="Item.b1_droid_backpack_new" />
+                <equipment slot="Body" id="Item.b1_droid_body_new" />
+                <equipment slot="Gloves" id="Item.b1_droid_hands_new" />
+                <equipment slot="Leg" id="Item.b1_droid_feet_new" />
+			</EquipmentRoster>
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="separatist_b1_heavy_battle_droid_aa"
+		default_group="Ranged"
+		level="21"
+		name="B1 Heavy Anti-armor Battle Droid "
+		occupation="Soldier"
+		culture="Culture.separatist">
+		<face>
+			<face_key_template value="BodyProperty.b1_droid_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="100" />
+			<skill id="Riding" value="60" />
+			<skill id="OneHanded" value="100" />
+			<skill id="TwoHanded" value="45" />
+			<skill id="Polearm" value="45" />
+			<skill id="Bow" value="15" />
+			<skill id="Crossbow" value="100" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.separatist_b1_heavy_battle_droid_veteran" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.e_5_rifle" /> <!-- RPS-6 Rocket Launcher -->
+                <equipment slot="Item1" id="Item.blaster_bolt_medium_red" /> <!-- Missiles -->
+                <equipment slot="Item2" id="Item.thermal_detonator" />
+                <equipment slot="Head" id="Item.b1_droid_head_new" />
+                <equipment slot="Cape" id="Item.b1_droid_backpack_new" />
+                <equipment slot="Body" id="Item.b1_droid_body_new" />
+                <equipment slot="Gloves" id="Item.b1_droid_hands_new" />
+                <equipment slot="Leg" id="Item.b1_droid_feet_new" />
+			</EquipmentRoster>
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="separatist_b1_heavy_battle_droid_veteran"
+		default_group="Ranged"
+		level="26"
+		name="B1 Heavy Battle Droid Veteran"
+		occupation="Soldier"
+		culture="Culture.separatist">
+		<face>
+			<face_key_template value="BodyProperty.b1_droid_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="130" />
+			<skill id="Riding" value="80" />
+			<skill id="OneHanded" value="130" />
+			<skill id="TwoHanded" value="60" />
+			<skill id="Polearm" value="80" />
+			<skill id="Bow" value="20" />
+			<skill id="Crossbow" value="130" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.e_5_rifle" /> <!-- Z-6 Rotary Cannon -->
+                <equipment slot="Item1" id="Item.blaster_bolt_medium_red" />
+                <equipment slot="Item2" id="Item.thermal_detonator" />
+                <equipment slot="Head" id="Item.b1_droid_head_new" />
+                <equipment slot="Cape" id="Item.b1_droid_backpack_new" />
+                <equipment slot="Body" id="Item.b1_droid_body_new" />
+                <equipment slot="Gloves" id="Item.b1_droid_hands_new" />
+                <equipment slot="Leg" id="Item.b1_droid_feet_new" />
+			</EquipmentRoster>
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="separatist_b1_battle_droid_enforcer"
+		default_group="Infantry"
+		level="11"
+		name="B1 Battle Droid Enforcer"
+		occupation="Soldier"
+		culture="Culture.separatist">
+		<face>
+			<face_key_template value="BodyProperty.b1_droid_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="40" />
+			<skill id="Riding" value="15" />
+			<skill id="OneHanded" value="40" />
+			<skill id="TwoHanded" value="15" />
+			<skill id="Polearm" value="20" />
+			<skill id="Bow" value="20" />
+			<skill id="Crossbow" value="5" />
+			<skill id="Throwing" value="40" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.separatist_b1_grapple_droid" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.clone_riot_baton" /> <!-- Electropole -->
+				<equipment slot="Item1" id="Item.clone_riot_shield" />
+				<equipment slot="Head" id="Item.b1_droid_head_new" />
+                <equipment slot="Cape" id="Item.b1_droid_backpack_new" />
+                <equipment slot="Body" id="Item.b1_droid_body_new" />
+                <equipment slot="Gloves" id="Item.b1_droid_hands_new" />
+                <equipment slot="Leg" id="Item.b1_droid_feet_new" />
+			</EquipmentRoster>
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="separatist_b1_grapple_droid"
+		default_group="Infantry"
+		level="16"
+		name="B1 Grapple Droid"
+		occupation="Soldier"
+		culture="Culture.separatist">
+		<face>
+			<face_key_template value="BodyProperty.b1_droid_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="40" />
+			<skill id="OneHanded" value="70" />
+			<skill id="TwoHanded" value="40" />
+			<skill id="Polearm" value="70" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="30" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.separatist_b1a_air_battle_droid" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.clone_riot_baton" /> <!-- Grapple Claws with nothing else-->
+				<equipment slot="Item1" id="Item.clone_riot_shield" />
+				<equipment slot="Head" id="Item.b1_droid_head_new" /> <!-- b1_grapple_droid_head -->
+                <equipment slot="Cape" id="Item.b1_droid_backpack_new" /> <!-- b1_grapple_droid_backpack -->
+                <equipment slot="Body" id="Item.b1_droid_body_new" /> <!-- b1_grapple_droid_body -->
+                <equipment slot="Gloves" id="Item.b1_droid_hands_new" /> <!-- b1_grapple_droid_hands -->
+                <equipment slot="Leg" id="Item.b1_droid_feet_new" /> <!-- b1_grapple_droid_feet -->
+			</EquipmentRoster>
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="separatist_b1a_air_battle_droid"
+		default_group="Infantry"
+		level="21"
+		name="B1-A Air Battle Droid"
+		occupation="Soldier"
+		culture="Culture.separatist">
+		<face>
+			<face_key_template value="BodyProperty.b1_droid_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="100" />
+			<skill id="Riding" value="45" />
+			<skill id="OneHanded" value="100" />
+			<skill id="TwoHanded" value="60" />
+			<skill id="Polearm" value="100" />
+			<skill id="Bow" value="15" />
+			<skill id="Crossbow" value="45" />
+			<skill id="Throwing" value="60" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.separatist_b1a_air_battle_droid_veteran" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.clone_riot_baton" /> <!-- Wrist-mounted blasters with medium red bolts -->
+				<equipment slot="Item1" id="Item.clone_riot_shield" /> <!-- Wrist-mounted blades -->
+				<equipment slot="Head" id="Item.b1_droid_head_new" /> <!-- b1a_air_battle_droid_head -->
+                <equipment slot="Cape" id="Item.b1_droid_backpack_new" /> <!-- b1a_air_battle_droid_repulsor_pack -->
+                <equipment slot="Body" id="Item.b1_droid_body_new" /> <!-- b1a_air_battle_droid_body -->
+                <equipment slot="Gloves" id="Item.b1_droid_hands_new" /> <!-- b1a_air_battle_droid_hands -->
+                <equipment slot="Leg" id="Item.b1_droid_feet_new" /> <!-- b1a_air_battle_droid_feet -->
+			</EquipmentRoster>
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+    <NPCCharacter id="separatist_b1a_air_battle_droid_veteran"
+		default_group="Infantry"
+		level="26"
+		name="B1-A Air Battle Droid Veteran"
+		occupation="Soldier"
+		culture="Culture.separatist">
+		<face>
+			<face_key_template value="BodyProperty.b1_droid_base" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="130" />
+			<skill id="Riding" value="80" />
+			<skill id="OneHanded" value="130" />
+			<skill id="TwoHanded" value="60" />
+			<skill id="Polearm" value="130" />
+			<skill id="Bow" value="20" />
+			<skill id="Crossbow" value="60" />
+			<skill id="Throwing" value="80" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.clone_riot_baton" /> <!-- Wrist-mounted blasters with medium red bolts -->
+				<equipment slot="Item1" id="Item.clone_riot_shield" /> <!-- Wrist-mounted blades -->
+				<equipment slot="Head" id="Item.b1_droid_head_new" /> <!-- b1a_air_battle_droid_head -->
+                <equipment slot="Cape" id="Item.b1_droid_backpack_new" /> <!-- b1a_air_battle_droid_repulsor_pack -->
+                <equipment slot="Body" id="Item.b1_droid_body_new" /> <!-- b1a_air_battle_droid_body -->
+                <equipment slot="Gloves" id="Item.b1_droid_hands_new" /> <!-- b1a_air_battle_droid_hands -->
+                <equipment slot="Leg" id="Item.b1_droid_feet_new" /> <!-- b1a_air_battle_droid_feet -->
+			</EquipmentRoster>
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+</NPCCharacters>

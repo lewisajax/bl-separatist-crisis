@@ -8,6 +8,12 @@ using TaleWorlds.MountAndBlade;
 
 namespace SeparatistCrisis.InputSystem
 {
+    // Butterlib has a nice input wrapper which has events that we can listen for instead of polling the default input manager 
+    // However, having butterlib as a dependency will force us to use hard versions for certain packages
+    // Will we ever need to use said packages, who knows
+    // Might just copy the input system from it, seeing as we only need the 1 feature
+    // If we need to use the other features it adds, then we'll just add butterlib as a dependency
+    // We'll most likely end up doing so in the future regardless
     public sealed class SCGameKeyContext: GameKeyContext
     {
         public static SCGameKeyContext Current { get; private set; } = null!;

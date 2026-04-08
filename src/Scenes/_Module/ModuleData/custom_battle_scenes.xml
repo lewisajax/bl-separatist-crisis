@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomBattleScenes>
+	<Scene
+		id="scn_battle_jedi_archives"
+		name="{=tBZ507q1}Jedi Archives"
+		terrain="Plain"></Scene>
+	<Scene
+		id="geonosis_battlemap_18"
+		name="{=tBZ507q1}Geonosis Canyon"
+		terrain="Plain"></Scene>
+	<Scene
+		id="scn_cover_terrain_1"
+		name="{=tBZ507q1}Cover Test 1"
+		terrain="Plain"></Scene>
+</CustomBattleScenes>

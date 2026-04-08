@@ -14,7 +14,7 @@ namespace SeparatistCrisis.Utils
         /// <param name="numVerts">How many vertices. More verts result in a more round circle.</param>
         /// <param name="deltaTime">How long it last until it gets deleted. Best to use engine tick time since then the
         /// circle gets redrawn every frame and can be updated if any changes are made</param>
-        public static void RenderCircle(Vec3 pos, float radius, int numVerts, float deltaTime)
+        /*public static void RenderCircle(Vec3 pos, float radius, int numVerts, float deltaTime)
         {
             float delta = 2f * TaleWorlds.Library.MathF.PI / numVerts;
             Vec3 oldPoint = pos;
@@ -36,6 +36,6 @@ namespace SeparatistCrisis.Utils
                 
                 oldPoint = point;
             }
-        }
+        }*/
     }
 }

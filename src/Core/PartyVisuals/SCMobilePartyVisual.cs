@@ -123,7 +123,7 @@ namespace SeparatistCrisis.PartyVisuals
             else
             {
                 MobileParty.NavigationType navigationType;
-                if (this.MapEntity.MobileParty.IsCurrentlyAtSea == MobileParty.MainParty.IsCurrentlyAtSea && NavigationHelper.CanPlayerNavigateToPosition(this.MapEntity.MobileParty.Position, out navigationType, out float _))
+                if (this.MapEntity.MobileParty.IsCurrentlyAtSea == MobileParty.MainParty.IsCurrentlyAtSea && NavigationHelper.CanPlayerNavigateToPosition(this.MapEntity.MobileParty.Position, out navigationType))
                 {
                     if (followModifierUsed)
                         MobileParty.MainParty.SetMoveEscortParty(this.MapEntity.MobileParty, navigationType, false);

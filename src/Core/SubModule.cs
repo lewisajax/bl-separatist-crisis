@@ -1,11 +1,28 @@
 ﻿using SeparatistCrisis.PatchTools;
 using Bannerlord.UIExtenderEx;
+using Newtonsoft.Json.Serialization;
+using SandBox;
+using SeparatistCrisis.Behaviors;
+using SeparatistCrisis.Extensions;
+using SeparatistCrisis.InputSystem;
+using SeparatistCrisis.MissionManagers;
+using SeparatistCrisis.Missions;
+using SeparatistCrisis.ObjectTypes;
+using SeparatistCrisis.PatchTools;
+using SeparatistCrisis.SetOverride;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
+using TaleWorlds.Engine.InputSystem;
+using TaleWorlds.Engine.Options;
+using TaleWorlds.InputSystem;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
+using TaleWorlds.MountAndBlade.CustomBattle;
+using TaleWorlds.MountAndBlade.GameKeyCategory;
 using SeparatistCrisis.ObjectTypes;
 using TaleWorlds.ObjectSystem;
 using System.Collections.Generic;
@@ -13,6 +30,7 @@ using TaleWorlds.InputSystem;
 using SeparatistCrisis.InputSystem;
 using SeparatistCrisis.MissionManagers;
 using SeparatistCrisis.Components;
+using TaleWorlds.ScreenSystem;
 
 namespace SeparatistCrisis
 {
@@ -34,6 +52,9 @@ namespace SeparatistCrisis
         protected override void OnSubModuleLoad()
         {
             base.OnSubModuleLoad();
+
+            AppDomain.CurrentDomain.UnhandledException += SubModule.OnError;
+
             SubModule.Instance = this;
             PatchManager.ApplyMainPatches(MainHarmonyDomain);
 
@@ -42,6 +63,11 @@ namespace SeparatistCrisis
             extender.Enable();
 
             this.InitializeHotKeyManager(true);
+
+            // Using the launcher.exe will reinitialize the hotkeys a 2nd time, overwriting our first init, where as using bannerlord.exe will only initialize it once during the startup screen.
+            // This might cause async issues, if so opt for patching the methods in ViewSubModule
+            Input.OnControllerTypeChanged = (Action<Input.ControllerTypes>)Delegate.Combine(Input.OnControllerTypeChanged, new Action<Input.ControllerTypes>(this.OnControllerTypeChanged));
+            NativeOptions.OnNativeOptionChanged = (NativeOptions.OnNativeOptionChangedDelegate)Delegate.Combine(NativeOptions.OnNativeOptionChanged, new NativeOptions.OnNativeOptionChangedDelegate(this.OnNativeOptionChanged));
         }
 
         protected override void OnSubModuleUnloaded()
@@ -66,16 +92,6 @@ namespace SeparatistCrisis
                 _hasLoaded = true;
 
                 InformationManager.DisplayMessage(new InformationMessage(new TextObject($"{{=hPERH3u4}}Loaded {{NAME}}").SetTextVariable("NAME", DisplayName).ToString(), StdTextColor));
-            }
-        }
-
-        public override void OnGameInitializationFinished(Game game)
-        {
-            // We override SandBoxSubModule's CampaignMissionManager assignment since our mod loads after SandBox
-            Campaign campaign = game.GameType as Campaign;
-            if (campaign != null)
-            {
-                campaign.CampaignMissionManager = new SCCampaignMissionManager();
             }
         }
 
@@ -109,12 +125,35 @@ namespace SeparatistCrisis
 
         public override void BeginGameStart(Game game)
         {
-            if (game.GameType.GetType() == typeof(Campaign))
+            if (game?.ObjectManager != null) 
             {
-                if (game.ObjectManager != null)
+                if (game.GameType.GetType() == typeof(CustomGame) || game.GameType.GetType() == typeof(Campaign))
                 {
-                    game.ObjectManager.RegisterType<RangedWeaponOptions>("RangedWeaponOptions", "RangedWeaponOptionSets", 100U, true);
-                    MBObjectManager.Instance.LoadXML("RangedWeaponOptionSets", false);
+                    game.ObjectManager.RegisterType<Blaster>("Blaster", "Blasters", 100U, true);
+                    game.ObjectManager.RegisterType<Ability>("Ability", "Abilities", 101U, true);
+                    MBObjectManager.Instance.LoadXML("Blasters", false);
+                    MBObjectManager.Instance.LoadXML("Abilities", false);
+                }
+            }
+        }
+
+        public override void OnGameInitializationFinished(Game game)
+        {
+            if (game?.ObjectManager != null)
+            {
+                // CustomGame loads the NPCCharacters near the end of the pipeline. We need to go after it for BasicCharacterObjects
+                if (game.GameType.GetType() == typeof(CustomGame) || game.GameType.GetType() == typeof(Campaign))
+                {
+                    game.ObjectManager.RegisterType<AbilityHero>("AbilityHero", "AbilityHeroes", 102U, true);
+                    game.ObjectManager.RegisterType<AssignedSet>("AssignedSet", "AssignedSets", 103U, true);
+                    MBObjectManager.Instance.LoadXML("AbilityHeroes", false);
+                    MBObjectManager.Instance.LoadXML("AssignedSets", false);
+                }
+
+                // We override SandBoxSubModule's CampaignMissionManager assignment since our mod loads after SandBox
+                if (game.GameType.GetType() == typeof(Campaign))
+                {
+                    ((Campaign)game.GameType).CampaignMissionManager = new SCCampaignMissionManager();
                 }
             }
         }
@@ -131,14 +170,33 @@ namespace SeparatistCrisis
             return default;
         }
 
+        private void OnControllerTypeChanged(Input.ControllerTypes newType)
+        {
+            this.ReInitializeHotKeyManager();
+        }
+
+        private void OnNativeOptionChanged(NativeOptions.NativeOptionsType changedNativeOptionsType)
+        {
+            if (changedNativeOptionsType == NativeOptions.NativeOptionsType.EnableTouchpadMouse)
+            {
+                this.ReInitializeHotKeyManager();
+            }
+        }
+
         private void InitializeHotKeyManager(bool loadKeys)
         {
             Dictionary<string, GameKeyContext>.ValueCollection prevContexts = HotKeyManager.GetAllCategories();
             List<GameKeyContext> newContexts = prevContexts.ToList();
 
             newContexts.Add(new SCGameKeyContext());
+            newContexts.Add(new SCCombatHotKeyCategory());
 
             HotKeyManager.RegisterInitialContexts(newContexts, loadKeys);
+        }
+
+        private void ReInitializeHotKeyManager()
+        {
+            this.InitializeHotKeyManager(true);
         }
 
         public override void OnGameEnd(Game game)
@@ -149,6 +207,16 @@ namespace SeparatistCrisis
             {
                 //PatchManager.RemoveCampaignPatches();// Not sure we should do this...
             }
+
+            // We could send out an event so the submodule doesn't need to know about the singletons
+            SetAssignments.Instance.Dispose();
+        }
+
+        public static void OnError(object sender, UnhandledExceptionEventArgs args)
+        {
+            Exception e = (Exception)args.ExceptionObject;
+            Console.WriteLine("MyHandler caught : " + e.Message);
+            Console.WriteLine("Runtime terminating: {0}", args.IsTerminating);
         }
     }
 }

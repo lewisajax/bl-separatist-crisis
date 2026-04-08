@@ -61,9 +61,9 @@ namespace SeparatistCrisis.MissionManagers
             return SandBoxMissions.OpenBattleMissionWhileEnteringSettlement(scene, upgradeLevel, numberOfMaxTroopToBeSpawnedForPlayer, numberOfMaxTroopToBeSpawnedForOpponent);
         }
 
-        IMission CampaignMission.ICampaignMissionManager.OpenHideoutBattleMission(string scene, FlattenedTroopRoster playerTroops)
+        IMission CampaignMission.ICampaignMissionManager.OpenHideoutBattleMission(string scene, FlattenedTroopRoster playerTroops, bool isTutorial)
         {
-            return SandBoxMissions.OpenHideoutBattleMission(scene, playerTroops);
+            return SandBoxMissions.OpenHideoutBattleMission(scene, playerTroops, isTutorial);
         }
 
         IMission CampaignMission.ICampaignMissionManager.OpenTownCenterMission(string scene, int townUpgradeLevel, Location location, CharacterObject talkToChar, string playerSpawnTag)
@@ -88,7 +88,7 @@ namespace SeparatistCrisis.MissionManagers
 
         IMission CampaignMission.ICampaignMissionManager.OpenPrisonBreakMission(string scene, Location location, CharacterObject prisonerCharacter)
         {
-            return (IMission)SandBoxMissions.OpenPrisonBreakMission(scene, location, prisonerCharacter);
+            return SandBoxMissions.OpenPrisonBreakMission(scene, location, prisonerCharacter);
         }
 
         IMission CampaignMission.ICampaignMissionManager.OpenArenaStartMission(string scene, Location location, CharacterObject talkToChar)
@@ -113,7 +113,7 @@ namespace SeparatistCrisis.MissionManagers
 
         IMission CampaignMission.ICampaignMissionManager.OpenRetirementMission(string scene, Location location, CharacterObject talkToChar, string sceneLevels, string unconsciousMenuId)
         {
-            return (IMission)SandBoxMissions.OpenRetirementMission(scene, location, talkToChar, sceneLevels, unconsciousMenuId);
+            throw new NotImplementedException();
         }
 
         IMission CampaignMission.ICampaignMissionManager.OpenHideoutAmbushMission(string sceneName, FlattenedTroopRoster playerTroops, Location location)
@@ -123,7 +123,7 @@ namespace SeparatistCrisis.MissionManagers
 
         public IMission OpenDisguiseMission(string scene, bool willSetUpContact, string sceneLevels, Location fromLocation)
         {
-            return (IMission)SandBoxMissions.OpenDisguiseMission(scene, willSetUpContact, fromLocation, sceneLevels);
+            return SandBoxMissions.OpenDisguiseMission(scene, willSetUpContact, fromLocation, sceneLevels);
         }
 
         public IMission OpenNavalBattleMission(MissionInitializerRecord rec) => null;
@@ -131,11 +131,6 @@ namespace SeparatistCrisis.MissionManagers
         public IMission OpenNavalSetPieceBattleMission(MissionInitializerRecord rec, MBList<IShipOrigin> playerShips, MBList<IShipOrigin> playerAllyShips, MBList<IShipOrigin> enemyShips)
         {
             return null;
-        }
-
-        public IMission OpenConversationMission(ConversationCharacterData playerCharacterData, ConversationCharacterData conversationPartnerData, string specialScene = "", string sceneLevels = "", bool isMultiAgentConversation = false)
-        {
-            throw new NotImplementedException();
         }
     }
 }

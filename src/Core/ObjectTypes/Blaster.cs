@@ -32,7 +32,8 @@ namespace SeparatistCrisis.ObjectTypes
         // SNIPER = 0x10,
     }
 
-    public class RangedWeaponOptions : MBObjectBase
+    // Could just call it BlasterOptions, most of the ranged weapons will probably shoot lasers
+    public class Blaster : MBObjectBase
     {
         public string WeaponId { get; private set; } = null!;
 
@@ -40,9 +41,9 @@ namespace SeparatistCrisis.ObjectTypes
 
         public List<float> ShootIntervals { get; private set; } = new List<float>();
 
-        public RangedWeaponOptions(): this(string.Empty, new List<FiringMode>(), new List<float> { }) {}
+        public Blaster(): this(string.Empty, new List<FiringMode>(), new List<float> { }) {}
 
-        public RangedWeaponOptions(string weaponId, List<FiringMode> firingModeFlags, List<float> shootIntervals)
+        public Blaster(string weaponId, List<FiringMode> firingModeFlags, List<float> shootIntervals)
         {
             this.WeaponId = weaponId;
             this.FiringModeFlags = firingModeFlags;
@@ -106,27 +107,27 @@ namespace SeparatistCrisis.ObjectTypes
 
         }
 
-        public static MBReadOnlyList<RangedWeaponOptions> All
+        public static MBReadOnlyList<Blaster> All
         {
             get
             {
-                return MBObjectManager.Instance.GetObjectTypeList<RangedWeaponOptions>();
+                return MBObjectManager.Instance.GetObjectTypeList<Blaster>();
             }
         }
 
-        public static RangedWeaponOptions Find(string idString)
+        public static Blaster Find(string idString)
         {
-            return MBObjectManager.Instance.GetObject<RangedWeaponOptions>(idString);
+            return MBObjectManager.Instance.GetObject<Blaster>(idString);
         }
 
-        public static RangedWeaponOptions FindFirst(Func<RangedWeaponOptions, bool> predicate)
+        public static Blaster FindFirst(Func<Blaster, bool> predicate)
         {
-            return RangedWeaponOptions.All.FirstOrDefault(predicate);
+            return Blaster.All.FirstOrDefault(predicate);
         }
 
-        public static IEnumerable<RangedWeaponOptions> FindAll(Func<RangedWeaponOptions, bool> predicate)
+        public static IEnumerable<Blaster> FindAll(Func<Blaster, bool> predicate)
         {
-            return RangedWeaponOptions.All.Where(predicate);
+            return Blaster.All.Where(predicate);
         }
     }
 }

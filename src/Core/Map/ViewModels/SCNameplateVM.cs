@@ -450,10 +450,10 @@ namespace SeparatistCrisis.ViewModels
             return base.GetHashCode();
         }
 
-        public override void Initialize(GameEntity strategicEntity)
-        {
-            base.Initialize(strategicEntity);
-        }
+        //public override void Initialize(GameEntity strategicEntity)
+        //{
+        //    base.Initialize(strategicEntity);
+        //}
 
         public override void OnFinalize()
         {

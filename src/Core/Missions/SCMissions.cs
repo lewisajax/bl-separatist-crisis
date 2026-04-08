@@ -19,6 +19,7 @@ using TaleWorlds.MountAndBlade.Source.Missions;
 using TaleWorlds.CampaignSystem.Roster;
 using TaleWorlds.CampaignSystem.TroopSuppliers;
 using SeparatistCrisis.Behaviors;
+using SeparatistCrisis.SetOverride;
 
 namespace SeparatistCrisis.Missions
 {
@@ -65,13 +66,18 @@ namespace SeparatistCrisis.Missions
                     new AgentHumanAILogic(),
                     new AgentVictoryLogic(),
                     new BattleSurgeonLogic(),
-                    new BlasterMissileLogic(), // Custom
+
+                    new BlasterMissileLogic(),
+                    new AbilitiesLogic(),
+
                     new MissionAgentPanicHandler(),
                     new BattleMissionAgentInteractionLogic(),
                     new AgentMoraleInteractionLogic(),
-                    new AssignPlayerRoleInTeamMissionController(!isPlayerSergeant, isPlayerSergeant, isPlayerInArmy, heroesOnPlayerSideByPriority),
-                    new SandboxGeneralsAndCaptainsAssignmentLogic(attackerGeneralName, (leaderHero2 != null) ? leaderHero2.Name : null, null, null, true),
+                    new AssignPlayerRoleInTeamMissionController(!isPlayerSergeant, isPlayerSergeant, isPlayerInArmy, heroesOnPlayerSideByPriority),new SandboxGeneralsAndCaptainsAssignmentLogic(attackerGeneralName, (leaderHero2 != null) ? leaderHero2.Name : null, null, null, true),
+
+                    new AbilityControllerLeaveLogic(),
                     new EquipmentControllerLeaveLogic(),
+
                     new MissionHardBorderPlacer(),
                     new MissionBoundaryPlacer(),
                     new MissionBoundaryCrossingHandler(),

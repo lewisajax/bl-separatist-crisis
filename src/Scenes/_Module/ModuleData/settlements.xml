@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Settlements>
 	<!-- Republic -->
-	<Settlement id="town_GR1" name="{=Settlements.Settlement.name.town_GR1}Argoron" owner="Faction.galactic_senate" posX="872.65" posY="1158.67" culture="Culture.galactic_republic" gate_posX="871.804" gate_posY="1158.67" text="{=LqPJY4s9}The city of Argoron sits where the cold, slow moving Nevys River meets Lake Laconis. This was once the land of the Laconians, who saw the Empire as a protector against the more warlike Palaic peoples. They welcomed and intermarried with imperial settlers and their chiefs joined the Senate, and their old language and customs faded away.">
+	<Settlement id="town_GR1" name="{=Settlements.Settlement.name.town_GR1}Argoron" owner="Faction.galactic_senate" posX="872.65" posY="1158.67" culture="Culture.republic" gate_posX="871.804" gate_posY="1158.67" text="{=LqPJY4s9}The city of Argoron sits where the cold, slow moving Nevys River meets Lake Laconis. This was once the land of the Laconians, who saw the Empire as a protector against the more warlike Palaic peoples. They welcomed and intermarried with imperial settlers and their chiefs joined the Senate, and their old language and customs faded away.">
 		<Components>
 			<Town id="town_comp_GR1" is_castle="false" level="2" background_crop_position="0.0" background_mesh="menu_empire_seaside_1" wait_mesh="wait_empire_town" gate_rotation="0.408" prosperity="2800">
 				<Buildings>
@@ -36,7 +36,7 @@
 			<Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_GR1_1" name="{=Settlements.Settlement.name.town_GR1_1}Alatys" posX="876.09" posY="1129.28" culture="Culture.galactic_republic" text="{=Settlements.Settlement.text.town_GR1_1}Alatys lies on the flat southern end of Lake Laconis, on delta lowlands formed by the River Nevys. The waters of the lake, which are very shallow and muddy here, are well-stocked with flounder and crayfish, while trout can be fished in the Nevys upstream.">
+	<Settlement id="village_GR1_1" name="{=Settlements.Settlement.name.town_GR1_1}Alatys" posX="876.09" posY="1129.28" culture="Culture.republic" text="{=Settlements.Settlement.text.town_GR1_1}Alatys lies on the flat southern end of Lake Laconis, on delta lowlands formed by the River Nevys. The waters of the lake, which are very shallow and muddy here, are well-stocked with flounder and crayfish, while trout can be fished in the Nevys upstream.">
 		<Components>
 			<Village id="village_comp_GR1_1" village_type="VillageType.fisherman" hearth="646" gate_rotation="0.008" bound="Settlement.town_GR1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
 		</Components>
@@ -49,7 +49,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_GR1_2" name="{=Settlements.Settlement.name.town_GR1_2}Hetania" posX="888.28" posY="1169.28" culture="Culture.galactic_republic" text="{=Settlements.Settlement.text.town_GR1_2}Hetania sits beneath a spur on the far northeastern bend of the Dryatic mountains. As in many villages around here, the foresters of this region still speak the Palaic languages of the tribes who lived here before the Empire came.">
+	<Settlement id="village_GR1_2" name="{=Settlements.Settlement.name.town_GR1_2}Hetania" posX="888.28" posY="1169.28" culture="Culture.republic" text="{=Settlements.Settlement.text.town_GR1_2}Hetania sits beneath a spur on the far northeastern bend of the Dryatic mountains. As in many villages around here, the foresters of this region still speak the Palaic languages of the tribes who lived here before the Empire came.">
 		<Components>
 			<Village id="village_comp_GR1_2" village_type="VillageType.lumberjack" hearth="346" gate_rotation="0.008" bound="Settlement.town_GR1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
 		</Components>
@@ -62,7 +62,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_GR1_3" name="{=Settlements.Settlement.name.town_GR1_3}Hetania" posX="834.53" posY="1140.22" culture="Culture.galactic_republic" text="{=Settlements.Settlement.text.town_GR1_3}Hetania sits beneath a spur on the far northeastern bend of the Dryatic mountains. As in many villages around here, the foresters of this region still speak the Palaic languages of the tribes who lived here before the Empire came.">
+	<Settlement id="village_GR1_3" name="{=Settlements.Settlement.name.town_GR1_3}Hetania" posX="834.53" posY="1140.22" culture="Culture.republic" text="{=Settlements.Settlement.text.town_GR1_3}Hetania sits beneath a spur on the far northeastern bend of the Dryatic mountains. As in many villages around here, the foresters of this region still speak the Palaic languages of the tribes who lived here before the Empire came.">
 		<Components>
 			<Village id="village_comp_GR1_3" village_type="VillageType.lumberjack" hearth="346" gate_rotation="0.008" bound="Settlement.town_GR1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
 		</Components>

@@ -1,0 +1,397 @@
+﻿using NetworkMessages.FromClient;
+using SeparatistCrisis.Missions;
+using SeparatistCrisis.ViewModels;
+using SeparatistCrisis.Views.Placeholders;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using TaleWorlds.Core;
+using TaleWorlds.Engine.GauntletUI;
+using TaleWorlds.InputSystem;
+using TaleWorlds.Library;
+using TaleWorlds.MountAndBlade;
+using TaleWorlds.MountAndBlade.GauntletUI.Mission;
+using TaleWorlds.MountAndBlade.View;
+using TaleWorlds.MountAndBlade.View.MissionViews;
+using TaleWorlds.MountAndBlade.View.Screens;
+using TaleWorlds.MountAndBlade.ViewModelCollection;
+using TaleWorlds.MountAndBlade.ViewModelCollection.HUD;
+using TaleWorlds.MountAndBlade.ViewModelCollection.Input;
+using TaleWorlds.ScreenSystem;
+
+// I think that since we're overriding our own placeholder view, we need to use ViewCreatorManager.CreateMissionView ourselves
+
+// MissionGauntletMainAgentEquipDropView
+namespace SeparatistCrisis.Views
+{
+    [OverrideView(typeof(MissionMainAgentAbilityEquipView))]
+    public class MissionGauntletMainAgentAbilityEquipView : MissionView
+    {
+        private const int _missionTimeSpeedRequestID = 624;
+        private const float _slowDownAmountWhileRadialIsOpen = 0.25f;
+        private bool _isSlowDownApplied;
+        private GauntletLayer _gauntletLayer;
+        private MainAgentAbilityEquipVM _dataSource;
+        private MissionMainAgentController _missionMainAgentController;
+        private AbilityControllerLeaveLogic _missionControllerLeaveLogic;
+        private const float _minOpenHoldTime = 0.3f;
+        private const float _minDropHoldTime = 0.5f;
+        private readonly IMissionScreen _missionScreenAsInterface;
+        private bool _holdHandled;
+        private float _toggleHoldTime;
+        private float _weaponDropHoldTime;
+        private bool _prevKeyDown;
+        private bool _weaponDropHandled;
+
+        public int? WieldedIndex { get => this._dataSource?.WieldedIndex; }
+
+        private bool IsDisplayingADialog
+        {
+            get
+            {
+                IMissionScreen missionScreenAsInterface = this._missionScreenAsInterface;
+                return (missionScreenAsInterface != null && missionScreenAsInterface.GetDisplayDialog()) || base.MissionScreen.IsRadialMenuActive || base.Mission.IsOrderMenuOpen;
+            }
+        }
+
+        private bool HoldHandled
+        {
+            get
+            {
+                return this._holdHandled;
+            }
+            set
+            {
+                this._holdHandled = value;
+            }
+        }
+
+        public MissionGauntletMainAgentAbilityEquipView()
+        {
+            this._missionScreenAsInterface = base.MissionScreen;
+            this.HoldHandled = false;
+        }
+
+        public override void EarlyStart()
+        {
+            base.EarlyStart();
+            this._gauntletLayer = new GauntletLayer("MissionAbilityEquip", this.ViewOrderPriority, false);
+            this._dataSource = new MainAgentAbilityEquipVM(new Action<int>(this.OnToggleItem));
+            this._missionMainAgentController = base.Mission.GetMissionBehavior<MissionMainAgentController>();
+            this._missionControllerLeaveLogic = base.Mission.GetMissionBehavior<AbilityControllerLeaveLogic>();
+            this._gauntletLayer.Input.RegisterHotKeyCategory(HotKeyManager.GetCategory("SCCombatHotKeyCategory"));
+            this._gauntletLayer.InputRestrictions.SetInputRestrictions(false, InputUsageMask.Invalid);
+            this._gauntletLayer.LoadMovie("MainAgentAbilityEquip", this._dataSource);
+            base.MissionScreen.AddLayer(this._gauntletLayer);
+            base.Mission.OnMainAgentChanged += this.OnMainAgentChanged;
+            TaleWorlds.InputSystem.Input.OnGamepadActiveStateChanged = (Action)Delegate.Combine(TaleWorlds.InputSystem.Input.OnGamepadActiveStateChanged, new Action(this.OnGamepadActiveChanged));
+        }
+
+        public override void AfterStart()
+        {
+            base.AfterStart();
+            this._dataSource.InitializeMainAgentProperties();
+        }
+
+        public override void OnMissionScreenFinalize()
+        {
+            base.OnMissionScreenFinalize();
+            TaleWorlds.InputSystem.Input.OnGamepadActiveStateChanged = (Action)Delegate.Remove(TaleWorlds.InputSystem.Input.OnGamepadActiveStateChanged, new Action(this.OnGamepadActiveChanged));
+            base.Mission.OnMainAgentChanged -= this.OnMainAgentChanged;
+            base.MissionScreen.RemoveLayer(this._gauntletLayer);
+            this._gauntletLayer = null;
+            this._dataSource.OnFinalize();
+            this._dataSource = null;
+            this._missionMainAgentController = null;
+            this._missionControllerLeaveLogic = null;
+        }
+
+        public override void OnMissionScreenTick(float dt)
+        {
+            base.OnMissionScreenTick(dt);
+            if (this._dataSource.IsActive && !this.IsMainAgentAvailable())
+            {
+                this.HandleClosingHold();
+            }
+
+            // This is the issue. For some reason IsActive gets set to false every now and again.
+            if (this.IsMainAgentAvailable() && (!base.MissionScreen.IsRadialMenuActive || this._dataSource.IsActive))
+            {
+                this.TickControls(dt);
+            }
+        }
+
+        private void OnMainAgentChanged(Agent oldAgent)
+        {
+            if (base.Mission.MainAgent == null)
+            {
+                if (this.HoldHandled)
+                {
+                    this.HoldHandled = false;
+                }
+                this._toggleHoldTime = 0f;
+                this._dataSource.OnCancelHoldController();
+            }
+        }
+
+        public override void OnAgentRemoved(Agent affectedAgent, Agent affectorAgent, AgentState agentState, KillingBlow blow)
+        {
+            if (affectedAgent == Agent.Main)
+            {
+                this.HandleClosingHold();
+            }
+        }
+
+        private void TickControls(float dt)
+        {
+            // 36:B, 42:J
+            // base.MissionScreen.SceneLayer.Input.IsGameKeyDown(37); // C
+            // base.MissionScreen.SceneLayer.Input.IsKeyDown(InputKey.C); // C is 42 in the enum
+            bool isKeyDown = (base.MissionScreen.SceneLayer.Input.IsGameKeyDown(37));
+            if (!isKeyDown && this._gauntletLayer != null)
+                isKeyDown = this._gauntletLayer.Input.IsGameKeyDown(37);
+
+            if (isKeyDown && !this.IsDisplayingADialog && this.IsMainAgentAvailable() && base.Mission.Mode != MissionMode.Deployment && base.Mission.Mode != MissionMode.CutScene && !base.MissionScreen.IsRadialMenuActive)
+            {
+                if (this._toggleHoldTime > 0.3f && !this.HoldHandled)
+                {
+                    this.HandleOpeningHold();
+                    this.HoldHandled = true;
+                }
+
+                this._toggleHoldTime += dt;
+                this._prevKeyDown = true;
+            }
+            else if (this._prevKeyDown && !isKeyDown)
+            {
+                if (this._toggleHoldTime < 0.3f)
+                {
+                    this.HandleQuickRelease();
+                }
+                else
+                {
+                    this.HandleClosingHold();
+                }
+
+                this.HoldHandled = false;
+                this._toggleHoldTime = 0f;
+                this._weaponDropHoldTime = 0f;
+                this._prevKeyDown = false;
+                this._weaponDropHandled = false;
+            }
+
+            if (this.HoldHandled)
+            {
+                int keyWeaponIndex = this.GetKeyWeaponIndex(false);
+                int keyWeaponIndex2 = this.GetKeyWeaponIndex(true);
+
+                // The drop functionality doesn't even work in vanilla
+                // this._dataSource.SetDropProgressForIndex(EquipmentIndex.None, this._weaponDropHoldTime / 0.5f);
+                /*if (keyWeaponIndex != -1)
+                {
+                    if (!this._weaponDropHandled)
+                    {
+                        int num = keyWeaponIndex;
+                        if (this._weaponDropHoldTime > 0.5f && !Agent.Main.Equipment[num].IsEmpty)
+                        {
+                            this.OnDropEquipment((EquipmentIndex)num);
+                            this._dataSource.OnWeaponDroppedAtIndex(keyWeaponIndex);
+                            this._weaponDropHandled = true;
+                        }
+                        this._dataSource.SetDropProgressForIndex(num, this._weaponDropHoldTime / 0.5f);
+                    }
+                    this._weaponDropHoldTime += dt;
+                    return;
+                }*/
+
+                if (keyWeaponIndex2 != -1)
+                {
+                    if (!this._weaponDropHandled)
+                    {
+                        int num2 = keyWeaponIndex2;
+                        if (!Agent.Main.Equipment[num2].IsEmpty)
+                        {
+                            this.OnToggleItem(num2);
+                            this._dataSource.OnAbilityEquippedAtIndex(keyWeaponIndex2);
+                            this._weaponDropHandled = true;
+                        }
+                    }
+                    this._weaponDropHoldTime = 0f;
+                    return;
+                }
+                this._weaponDropHoldTime = 0f;
+                this._weaponDropHandled = false;
+            }
+        }
+
+        private void HandleOpeningHold()
+        {
+            MainAgentAbilityEquipVM dataSource = this._dataSource;
+            if (dataSource.AbilityHero == null)
+                return;
+
+            if (dataSource != null)
+            {
+                if (dataSource.AbilityHero.Abilities.Count <= 0)
+                {
+                    dataSource.OnToggle(false);
+                }
+                else
+                {
+                    dataSource.OnToggle(true);
+                }
+            }
+            base.MissionScreen.RegisterRadialMenuObject<MissionGauntletMainAgentAbilityEquipView>(this);
+            AbilityControllerLeaveLogic missionControllerLeaveLogic = this._missionControllerLeaveLogic;
+            if (missionControllerLeaveLogic != null)
+            {
+                missionControllerLeaveLogic.SetIsAbilitySelectionActive(true);
+            }
+            if (!GameNetwork.IsMultiplayer && !this._isSlowDownApplied)
+            {
+                base.Mission.AddTimeSpeedRequest(new Mission.TimeSpeedRequest(0.25f, 624));
+                this._isSlowDownApplied = true;
+            }
+            this._gauntletLayer.IsFocusLayer = true;
+            ScreenManager.TrySetFocus(this._gauntletLayer);
+        }
+
+        private void HandleClosingHold()
+        {
+            MainAgentAbilityEquipVM dataSource = this._dataSource;
+            if (dataSource != null)
+            {
+                dataSource.OnToggle(false);
+            }
+            base.MissionScreen.UnregisterRadialMenuObject(this);
+            AbilityControllerLeaveLogic missionControllerLeaveLogic = this._missionControllerLeaveLogic;
+            if (missionControllerLeaveLogic != null)
+            {
+                missionControllerLeaveLogic.SetIsAbilitySelectionActive(false);
+            }
+            if (!GameNetwork.IsMultiplayer && this._isSlowDownApplied)
+            {
+                base.Mission.RemoveTimeSpeedRequest(624);
+                this._isSlowDownApplied = false;
+            }
+            this._gauntletLayer.IsFocusLayer = false;
+            ScreenManager.TryLoseFocus(this._gauntletLayer);
+        }
+
+        private void HandleQuickRelease()
+        {
+            this._missionMainAgentController.OnWeaponUsageToggleRequested();
+            MainAgentAbilityEquipVM dataSource = this._dataSource;
+            if (dataSource != null)
+            {
+                dataSource.OnToggle(false);
+            }
+            base.MissionScreen.UnregisterRadialMenuObject(this);
+            AbilityControllerLeaveLogic missionControllerLeaveLogic = this._missionControllerLeaveLogic;
+            if (missionControllerLeaveLogic == null)
+            {
+                return;
+            }
+            missionControllerLeaveLogic.SetIsAbilitySelectionActive(false);
+        }
+
+        private void OnToggleItem(int indexToToggle)
+        {
+            // We will handle the wieldedWeapon state somewhere else, this will do for now though.
+            this._dataSource.WieldedIndex = indexToToggle;
+            if (indexToToggle >= 0 && this._dataSource.AbilityHero != null)
+            {
+                InformationManager.DisplayMessage(new InformationMessage($"{this._dataSource.AbilityHero.Abilities[indexToToggle].StringId}"));
+            }
+
+        }
+
+        private void OnDropEquipment(EquipmentIndex indexToDrop)
+        {
+            if (GameNetwork.IsClient)
+            {
+                GameNetwork.BeginModuleEventAsClient();
+                GameNetwork.WriteMessage(new DropWeapon(base.Input.IsGameKeyDown(10), indexToDrop));
+                GameNetwork.EndModuleEventAsClient();
+                return;
+            }
+            Agent.Main.HandleDropWeapon(base.Input.IsGameKeyDown(10), indexToDrop);
+        }
+
+        private bool IsMainAgentAvailable()
+        {
+            Agent main = Agent.Main;
+            if (main != null && main.IsActive())
+            {
+                Agent main2 = Agent.Main;
+                return (main2 != null && !main2.Mission.IsNavalBattle) || !Agent.Main.IsUsingGameObject;
+            }
+            return false;
+        }
+
+        public override void OnPhotoModeActivated()
+        {
+            base.OnPhotoModeActivated();
+            this._gauntletLayer.UIContext.ContextAlpha = 0f;
+        }
+
+        public override void OnPhotoModeDeactivated()
+        {
+            base.OnPhotoModeDeactivated();
+            this._gauntletLayer.UIContext.ContextAlpha = 1f;
+        }
+
+        private void OnGamepadActiveChanged()
+        {
+            this._dataSource.OnGamepadActiveChanged(TaleWorlds.InputSystem.Input.IsGamepadActive);
+        }
+
+        private int GetKeyWeaponIndex(bool isReleased)
+        {
+            Func<string, bool> func;
+            Func<string, bool> func2;
+            if (isReleased)
+            {
+                func = new Func<string, bool>(base.MissionScreen.SceneLayer.Input.IsHotKeyReleased);
+                func2 = new Func<string, bool>(this._gauntletLayer.Input.IsHotKeyReleased);
+            }
+            else
+            {
+                func = new Func<string, bool>(base.MissionScreen.SceneLayer.Input.IsHotKeyDown);
+                func2 = new Func<string, bool>(this._gauntletLayer.Input.IsHotKeyDown);
+            }
+            string text = string.Empty;
+            if (func("ControllerEquipAbility1") || func2("ControllerEquipAbility1"))
+            {
+                text = "ControllerEquipAbility1";
+            }
+            else if (func("ControllerEquipAbility2") || func2("ControllerEquipAbility2"))
+            {
+                text = "ControllerEquipAbility2";
+            }
+            else if (func("ControllerEquipAbility3") || func2("ControllerEquipAbility3"))
+            {
+                text = "ControllerEquipAbility3";
+            }
+            else if (func("ControllerEquipAbility4") || func2("ControllerEquipAbility4"))
+            {
+                text = "ControllerEquipAbility4";
+            }
+            if (!string.IsNullOrEmpty(text))
+            {
+                for (int i = 0; i < this._dataSource.EquippedAbilities.Count; i++)
+                {
+                    InputKeyItemVM shortcutKey = this._dataSource.EquippedAbilities[i].ShortcutKey;
+                    if (((shortcutKey != null) ? shortcutKey.HotKey.Id : null) == text)
+                    {
+                        return (int)this._dataSource.EquippedAbilities[i].Identifier;
+                    }
+                }
+            }
+            return -1;
+        }
+    }
+}

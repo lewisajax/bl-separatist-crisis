@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<RangedWeaponOptionSets>
-	<RangedWeaponOptions id="rwo_dc_15a_rifle" weapon_id="dc_15a_rifle" firing_mode_flags="0x03" shoot_intervals="0.3, 0.8"/>
-	<RangedWeaponOptions id="rwo_ee_3_carbine" weapon_id="ee_3_carbine" firing_mode_flags="0x02" shoot_intervals="0.8"/>
-</RangedWeaponOptionSets>

@@ -7,10 +7,10 @@ using TaleWorlds.Library;
 
 namespace SeparatistCrisis.ScripComponents
 {
-    //public class PartyTeleportation : ScriptComponentBehavior
-    //{
-    //    private Vec3 _targetPosition = Vec3.Zero;
-    //    private Vec3 _position;
+    /*public class PartyTeleportation : ScriptComponentBehavior
+    {
+        private Vec3 _targetPosition = Vec3.Zero;
+        private Vec3 _position;
 
     //    public float Radius { get; set; } = 1f;
     //    public bool ShowDebugInfo { get; set; } = true;
@@ -75,7 +75,7 @@ namespace SeparatistCrisis.ScripComponents
     //        float distY = party.GetPosition2D.y - this._position.y;
     //        float distance = (distX * distX) + (distY * distY);
             
-    //        return distance <= this.Radius * this.Radius;
-    //    }
-    //}
+            return distance <= this.Radius * this.Radius;
+        }
+    }*/
 }

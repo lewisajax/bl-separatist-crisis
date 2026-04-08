@@ -50,40 +50,34 @@ namespace SeparatistCrisis.PartyVisuals
             base.OnVisualTick(screen, realDt, dt);
         }
 
-        public override void OnVisualIntersected(
-          Ray mouseRay,
-          UIntPtr[] intersectedEntityIDs,
-          Intersection[] intersectionInfos,
-          int entityCount,
-          Vec3 worldMouseNear,
-          Vec3 worldMouseFar,
-          Vec3 terrainIntersectionPoint,
-          float closestDistanceSquared,
-          ref MapEntityVisual hoveredVisual,
+        public override bool OnVisualIntersected(
+          Ray mouseRay, 
+          UIntPtr[] intersectedEntityIDs, 
+          Intersection[] intersectionInfos, 
+          int entityCount, 
+          Vec3 worldMouseNear, 
+          Vec3 worldMouseFar, 
+          Vec3 terrainIntersectionPoint, 
+          ref MapEntityVisual hoveredVisual, 
           ref MapEntityVisual selectedVisual)
         {
-            float num1 = TaleWorlds.Library.MathF.Sqrt(closestDistanceSquared) + 1f;
-            float num2 = num1;
-            for (int index = entityCount - 1; index >= 0; --index)
+            for (int i = entityCount - 1; i >= 0; i--)
             {
-                UIntPtr intersectedEntityId = intersectedEntityIDs[index];
+                UIntPtr uintPtr = intersectedEntityIDs[i];
                 MapEntityVisual mapEntityVisual;
-                if (intersectedEntityId != UIntPtr.Zero && MapScreen.VisualsOfEntities.TryGetValue(intersectedEntityId, out mapEntityVisual) && mapEntityVisual is SCMobilePartyVisual SCMobilePartyVisual && mapEntityVisual.IsVisibleOrFadingOut() && (!SCMobilePartyVisual.MapEntity.IsMobile || SCMobilePartyVisual.MapEntity.MobileParty.IsMainParty || !SCMobilePartyVisual.MapEntity.MobileParty.IsInRaftState))
+                SCMobilePartyVisual mobilePartyVisual;
+                if (uintPtr != UIntPtr.Zero && MapScreen.VisualsOfEntities.TryGetValue(uintPtr, out mapEntityVisual) && 
+                    (mobilePartyVisual = (mapEntityVisual as SCMobilePartyVisual)) != null && mapEntityVisual.IsVisibleOrFadingOut() && 
+                    (!mobilePartyVisual.MapEntity.IsMobile || mobilePartyVisual.MapEntity.MobileParty.IsMainParty || !mobilePartyVisual.MapEntity.MobileParty.IsInRaftState))
                 {
-                    Intersection intersectionInfo = intersectionInfos[index];
-                    float num3 = (worldMouseNear - intersectionInfo.IntersectionPoint).Length - 1.5f;
-                    if ((double)num3 < (double)num2)
+                    hoveredVisual = (mapEntityVisual.AttachedTo ?? mapEntityVisual);
+                    if (!mapEntityVisual.IsMainEntity && (mapEntityVisual.AttachedTo == null || !mapEntityVisual.AttachedTo.IsMainEntity))
                     {
-                        num2 = num3;
-                        hoveredVisual = mapEntityVisual.AttachedTo != null ? mapEntityVisual.AttachedTo : mapEntityVisual;
-                    }
-                    if ((double)num3 < (double)num1 && !mapEntityVisual.IsMainEntity && (mapEntityVisual.AttachedTo == null || !mapEntityVisual.AttachedTo.IsMainEntity))
-                    {
-                        num1 = num3;
-                        selectedVisual = mapEntityVisual.AttachedTo == null ? mapEntityVisual : mapEntityVisual.AttachedTo;
+                        selectedVisual = (mapEntityVisual.AttachedTo ?? mapEntityVisual);
                     }
                 }
             }
+            return selectedVisual != null;
         }
 
         public override MapEntityVisual<PartyBase> GetVisualOfEntity(PartyBase partyBase)

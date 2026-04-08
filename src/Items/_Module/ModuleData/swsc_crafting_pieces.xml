@@ -420,14 +420,6 @@
 		</Materials>
 	</CraftingPiece>
 
-	<CraftingPiece id="mace_windu_lightsaber_emitter" name="Mace Windu's Emitter" tier="5" piece_type="Guard" mesh="mace_windu_lightsaber_emitter" culture="Culture.neutral_culture" length="2.791" weight="0.01" is_default="true">
-		<BuildData next_piece_offset="1" />
-		<StatContributions armor_bonus="2" />
-		<Materials>
-			<Material id="Iron2" count="1" />
-		</Materials>
-	</CraftingPiece>
-
 	<CraftingPiece id="darth_revan_lightsaber_emitter" name="Darth Revan's Emitter" tier="5" piece_type="Guard" mesh="darth_revan_lightsaber_emitter" culture="Culture.neutral_culture" length="2.756" weight="0.01" is_default="true">
 		<BuildData next_piece_offset="1" />
 		<StatContributions armor_bonus="2" />

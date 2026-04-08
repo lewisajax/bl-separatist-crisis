@@ -1,4 +1,5 @@
 ﻿using SeparatistCrisis.Behaviors;
+using SeparatistCrisis.SetOverride;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ using TaleWorlds.MountAndBlade.Source.Missions;
 using TaleWorlds.MountAndBlade.Source.Missions.Handlers;
 using TaleWorlds.MountAndBlade.Source.Missions.Handlers.Logic;
 
-namespace SeparatistCrisis.MissionManagers
+namespace SeparatistCrisis.Missions
 {
     [MissionManager]
     public static class SCCustomBattles
@@ -24,10 +25,10 @@ namespace SeparatistCrisis.MissionManagers
             Game.Current.PlayerTroop = data.PlayerCharacter;
             if (data.GameTypeStringId == "Siege")
             {
-                SCCustomBattles.OpenSiegeMissionWithDeployment(data.SceneId, data.PlayerCharacter, data.PlayerParty, data.EnemyParty, data.IsPlayerGeneral, data.WallHitpointPercentages, data.HasAnySiegeTower, data.AttackerMachines, data.DefenderMachines, data.IsPlayerAttacker, data.SceneUpgradeLevel, data.SeasonId, data.IsSallyOut, data.IsReliefAttack, data.TimeOfDay);
+                OpenSiegeMissionWithDeployment(data.SceneId, data.PlayerCharacter, data.PlayerParty, data.EnemyParty, data.IsPlayerGeneral, data.WallHitpointPercentages, data.HasAnySiegeTower, data.AttackerMachines, data.DefenderMachines, data.IsPlayerAttacker, data.SceneUpgradeLevel, data.SeasonId, data.IsSallyOut, data.IsReliefAttack, data.TimeOfDay);
                 return;
             }
-            SCCustomBattles.OpenCustomBattleMission(data.SceneId, data.PlayerCharacter, data.PlayerParty, data.EnemyParty, data.IsPlayerGeneral, data.PlayerSideGeneralCharacter, data.SceneLevel, data.SeasonId, data.TimeOfDay);
+            OpenCustomBattleMission(data.SceneId, data.PlayerCharacter, data.PlayerParty, data.EnemyParty, data.IsPlayerGeneral, data.PlayerSideGeneralCharacter, data.SceneLevel, data.SeasonId, data.TimeOfDay);
         }
 
         private static Type GetSiegeWeaponType(SiegeEngineType siegeWeaponType)
@@ -72,7 +73,7 @@ namespace SeparatistCrisis.MissionManagers
             Dictionary<Type, int> dictionary = new Dictionary<Type, int>();
             foreach (KeyValuePair<SiegeEngineType, int> keyValuePair in values)
             {
-                dictionary.Add(SCCustomBattles.GetSiegeWeaponType(keyValuePair.Key), keyValuePair.Value);
+                dictionary.Add(GetSiegeWeaponType(keyValuePair.Key), keyValuePair.Value);
             }
             return dictionary;
         }
@@ -115,48 +116,53 @@ namespace SeparatistCrisis.MissionManagers
             CustomBattleTroopSupplier customBattleTroopSupplier2 = new CustomBattleTroopSupplier(enemyParty, false, false, false, null);
             troopSuppliers[(int)enemyParty.Side] = customBattleTroopSupplier2;
             bool isPlayerSergeant = !isPlayerGeneral;
-            return MissionState.OpenNew("CustomBattle", new MissionInitializerRecord(scene)
+            return MissionState.OpenNew("SCCustomBattle", new MissionInitializerRecord(scene)
             {
                 DoNotUseLoadingScreen = false,
                 PlayingInCampaignMode = false,
-                AtmosphereOnCampaign = SCCustomBattles.CreateAtmosphereInfoForMission(seasonString, (int)timeOfDay),
+                AtmosphereOnCampaign = CreateAtmosphereInfoForMission(seasonString, (int)timeOfDay),
                 SceneLevels = sceneLevels,
                 DecalAtlasGroup = 2
-            }, (Mission missionController) => new MissionBehavior[]
+            }, (missionController) => new MissionBehavior[]
             {
-            new MissionAgentSpawnLogic(troopSuppliers, playerSide, Mission.BattleSizeType.Battle),
-            new BattlePowerCalculationLogic(),
-            new CustomBattleAgentLogic(),
-            new BannerBearerLogic(),
-            new CustomBattleMissionSpawnHandler((!isPlayerAttacker) ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty),
-            new MissionOptionsComponent(),
-            new BattleEndLogic(),
-            new BattleReinforcementsSpawnController(),
-            new MissionCombatantsLogic(null, playerParty, (!isPlayerAttacker) ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty, Mission.MissionTeamAITypeEnum.FieldBattle, isPlayerSergeant),
-            new BattleObserverMissionLogic(),
-            new AgentHumanAILogic(),
-            new AgentVictoryLogic(),
-            new MissionAgentPanicHandler(),
-            new BlasterMissileLogic(),
-            new BattleMissionAgentInteractionLogic(),
-            new AgentMoraleInteractionLogic(),
-            new AssignPlayerRoleInTeamMissionController(isPlayerGeneral, isPlayerSergeant, false, isPlayerSergeant ? Enumerable.Repeat<string>(playerCharacter.StringId, 1).ToList<string>() : new List<string>()),
-            new GeneralsAndCaptainsAssignmentLogic((isPlayerAttacker & isPlayerGeneral) ? playerCharacter.GetName() : ((isPlayerAttacker & isPlayerSergeant) ? playerSideGeneralCharacter.GetName() : null), (!isPlayerAttacker & isPlayerGeneral) ? playerCharacter.GetName() : ((!isPlayerAttacker & isPlayerSergeant) ? playerSideGeneralCharacter.GetName() : null), null, null, true),
-            new EquipmentControllerLeaveLogic(),
-            new MissionHardBorderPlacer(),
-            new MissionBoundaryPlacer(),
-            new MissionBoundaryCrossingHandler(),
-            new HighlightsController(),
-            new BattleHighlightsController(),
-            new BattleDeploymentMissionController(isPlayerAttacker),
-            new BattleDeploymentHandler(isPlayerAttacker)
+                new MissionAgentSpawnLogic(troopSuppliers, playerSide, Mission.BattleSizeType.Battle),
+                new BattlePowerCalculationLogic(),
+                new CustomBattleAgentLogic(),
+                new BannerBearerLogic(),
+                new CustomBattleMissionSpawnHandler(!isPlayerAttacker ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty),
+                new MissionOptionsComponent(),
+                new BattleEndLogic(),
+                new BattleReinforcementsSpawnController(),
+                new MissionCombatantsLogic(null, playerParty, !isPlayerAttacker ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty, Mission.MissionTeamAITypeEnum.FieldBattle, isPlayerSergeant),
+                new BattleObserverMissionLogic(),
+                new AgentHumanAILogic(),
+                new AgentVictoryLogic(),
+                new MissionAgentPanicHandler(),
+
+                new BlasterMissileLogic(),
+                new AbilitiesLogic(),
+
+                new BattleMissionAgentInteractionLogic(),
+                new AgentMoraleInteractionLogic(),
+                new AssignPlayerRoleInTeamMissionController(isPlayerGeneral, isPlayerSergeant, false, isPlayerSergeant ? Enumerable.Repeat<string>(playerCharacter.StringId, 1).ToList<string>() : new List<string>()),new GeneralsAndCaptainsAssignmentLogic(isPlayerAttacker & isPlayerGeneral ? playerCharacter.GetName() : isPlayerAttacker & isPlayerSergeant ? playerSideGeneralCharacter.GetName() : null, !isPlayerAttacker & isPlayerGeneral ? playerCharacter.GetName() : !isPlayerAttacker & isPlayerSergeant ? playerSideGeneralCharacter.GetName() : null, null, null, true),
+                new EquipmentControllerLeaveLogic(),
+
+                new AbilityControllerLeaveLogic(),
+
+                new MissionHardBorderPlacer(),
+                new MissionBoundaryPlacer(),
+                new MissionBoundaryCrossingHandler(),
+                new HighlightsController(),
+                new BattleHighlightsController(),
+                new BattleDeploymentMissionController(isPlayerAttacker),
+                new BattleDeploymentHandler(isPlayerAttacker)
             }, true, true);
         }
 
         [MissionMethod]
         public static Mission OpenSiegeMissionWithDeployment(string scene, BasicCharacterObject playerCharacter, CustomBattleCombatant playerParty, CustomBattleCombatant enemyParty, bool isPlayerGeneral, float[] wallHitPointPercentages, bool hasAnySiegeTower, List<MissionSiegeWeapon> siegeWeaponsOfAttackers, List<MissionSiegeWeapon> siegeWeaponsOfDefenders, bool isPlayerAttacker, int sceneUpgradeLevel = 0, string seasonString = "", bool isSallyOut = false, bool isReliefForceAttack = false, float timeOfDay = 6f)
         {
-            string text = (sceneUpgradeLevel == 1) ? "level_1" : ((sceneUpgradeLevel == 2) ? "level_2" : "level_3");
+            string text = sceneUpgradeLevel == 1 ? "level_1" : sceneUpgradeLevel == 2 ? "level_2" : "level_3";
             text += " siege";
             BattleSideEnum playerSide = playerParty.Side;
             IMissionTroopSupplier[] troopSuppliers = new IMissionTroopSupplier[2];
@@ -168,31 +174,31 @@ namespace SeparatistCrisis.MissionManagers
             return MissionState.OpenNew("CustomSiegeBattle", new MissionInitializerRecord(scene)
             {
                 PlayingInCampaignMode = false,
-                AtmosphereOnCampaign = SCCustomBattles.CreateAtmosphereInfoForMission(seasonString, (int)timeOfDay),
+                AtmosphereOnCampaign = CreateAtmosphereInfoForMission(seasonString, (int)timeOfDay),
                 SceneLevels = text,
             }, delegate (Mission mission)
             {
                 List<MissionBehavior> list = new List<MissionBehavior>();
-                list.Add(new BattleSpawnLogic(isSallyOut ? "sally_out_set" : (isReliefForceAttack ? "relief_force_attack_set" : "battle_set")));
+                list.Add(new BattleSpawnLogic(isSallyOut ? "sally_out_set" : isReliefForceAttack ? "relief_force_attack_set" : "battle_set"));
                 list.Add(new MissionOptionsComponent());
                 list.Add(new BattleEndLogic());
                 list.Add(new BattleReinforcementsSpawnController());
-                list.Add(new MissionCombatantsLogic(null, playerParty, (!isPlayerAttacker) ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty, (!isSallyOut) ? Mission.MissionTeamAITypeEnum.Siege : Mission.MissionTeamAITypeEnum.SallyOut, isPlayerSergeant));
+                list.Add(new MissionCombatantsLogic(null, playerParty, !isPlayerAttacker ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty, !isSallyOut ? Mission.MissionTeamAITypeEnum.Siege : Mission.MissionTeamAITypeEnum.SallyOut, isPlayerSergeant));
                 list.Add(new SiegeMissionPreparationHandler(isSallyOut, isReliefForceAttack, wallHitPointPercentages, hasAnySiegeTower));
                 Mission.BattleSizeType battleSizeType = isSallyOut ? Mission.BattleSizeType.SallyOut : Mission.BattleSizeType.Siege;
                 list.Add(new MissionAgentSpawnLogic(troopSuppliers, playerSide, battleSizeType));
                 list.Add(new BattlePowerCalculationLogic());
                 if (isSallyOut)
                 {
-                    list.Add(new CustomSallyOutMissionController((!isPlayerAttacker) ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty));
+                    list.Add(new CustomSallyOutMissionController(!isPlayerAttacker ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty));
                 }
                 else if (isReliefForceAttack)
                 {
-                    list.Add(new CustomSallyOutMissionController((!isPlayerAttacker) ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty));
+                    list.Add(new CustomSallyOutMissionController(!isPlayerAttacker ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty));
                 }
                 else
                 {
-                    list.Add(new CustomSiegeMissionSpawnHandler((!isPlayerAttacker) ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty, false));
+                    list.Add(new CustomSiegeMissionSpawnHandler(!isPlayerAttacker ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty, false));
                 }
                 list.Add(new BattleObserverMissionLogic());
                 list.Add(new CustomBattleAgentLogic());
@@ -207,7 +213,7 @@ namespace SeparatistCrisis.MissionManagers
                 }
                 list.Add(new AgentVictoryLogic());
                 list.Add(new AssignPlayerRoleInTeamMissionController(isPlayerGeneral, isPlayerSergeant, false, null));
-                list.Add(new GeneralsAndCaptainsAssignmentLogic((isPlayerAttacker & isPlayerGeneral) ? playerCharacter.GetName() : null, null, null, null, false));
+                list.Add(new GeneralsAndCaptainsAssignmentLogic(isPlayerAttacker & isPlayerGeneral ? playerCharacter.GetName() : null, null, null, null, false));
                 list.Add(new MissionAgentPanicHandler());
                 list.Add(new MissionBoundaryPlacer());
                 list.Add(new MissionBoundaryCrossingHandler());
@@ -215,6 +221,9 @@ namespace SeparatistCrisis.MissionManagers
                 list.Add(new HighlightsController());
                 list.Add(new BattleHighlightsController());
                 list.Add(new EquipmentControllerLeaveLogic());
+
+                list.Add(new AbilityControllerLeaveLogic());
+
                 if (isSallyOut)
                 {
                     list.Add(new MissionSiegeEnginesLogic(new List<MissionSiegeWeapon>(), siegeWeaponsOfAttackers));
@@ -259,12 +268,12 @@ namespace SeparatistCrisis.MissionManagers
             {
                 DoNotUseLoadingScreen = false,
                 PlayingInCampaignMode = false,
-                SceneLevels = "siege"
-            }, (Mission missionController) => new MissionBehavior[]
+                SceneLevels = "siege",
+            }, (missionController) => new MissionBehavior[]
             {
             new MissionOptionsComponent(),
             new BattleEndLogic(),
-            new MissionCombatantsLogic(null, playerParty, (!isPlayerAttacker) ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty, Mission.MissionTeamAITypeEnum.NoTeamAI, false),
+            new MissionCombatantsLogic(null, playerParty, !isPlayerAttacker ? playerParty : enemyParty, isPlayerAttacker ? playerParty : enemyParty, Mission.MissionTeamAITypeEnum.NoTeamAI, false),
             new BattleMissionStarterLogic(),
             new AgentHumanAILogic(),
             new LordsHallFightMissionController(troopSuppliers, 3f, 0.7f, 19, 27, playerSide),

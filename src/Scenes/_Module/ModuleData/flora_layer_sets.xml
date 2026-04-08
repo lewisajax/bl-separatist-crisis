@@ -1,0 +1,17 @@
+<layer_flora_sets>
+	<layer_flora_set name="desert_rock_multi">
+		<layer_flora>
+			<mesh name=""
+				index="0"
+				density="35.000"
+				seed_index="0"
+				colony_radius="0.000"
+				colony_threshold="0.000"
+				size_min="1.050, 1.050, 1.050"
+				size_max="1.250, 1.250, 1.250"
+				albedo_multiplier="0.592, 0.805, 0.530"
+				weight_offset="0.500"/>
+		</layer_flora>
+	</layer_flora_set>
+</layer_flora_sets>
+
