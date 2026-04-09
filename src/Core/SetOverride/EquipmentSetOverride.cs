@@ -21,9 +21,19 @@ namespace SeparatistCrisis.SetOverride
 
         public static void AssignEquipment(AgentBuildData agentBuildData)
         {
-            CustomBattleAgentOrigin origin = (CustomBattleAgentOrigin)agentBuildData.AgentOrigin;
-            BasicCultureObject culture = origin.CustomBattleCombatant.BasicCulture;
-            BasicCharacterObject? leader = origin.CustomBattleCombatant.General;
+            if (agentBuildData == null) 
+                return;
+
+            IAgentOriginBase origin = agentBuildData.AgentOrigin;
+
+            // Unrecruited companions etc don't have a BattleCombatant object.
+            // We can assume that an agent without a bc obj shouldn't be affected by the set overrides as no one owns them
+            // Will guards in a lord's town be affected by the sets? We will need them to be.
+            if (origin.BattleCombatant == null)
+                return;
+
+            BasicCultureObject culture = origin.BattleCombatant.BasicCulture;
+            BasicCharacterObject? leader = origin.BattleCombatant.General;
             if (leader == null && agentBuildData.AgentTeam.Leader != null) leader = agentBuildData.AgentTeam.Leader.Character;
 
             // If a troop does not allow for fixed sets

@@ -3,13 +3,13 @@
 <NPCCharacters>
 	<NPCCharacter
 		id="spc_ohnaka_pirate_0"
-		name="{=7hrmlfxh}"
+		name="{=7hrmlfxh}Ohnaka Pirate"
 		voice="curt"
 		is_template="true"
 		default_group="Infantry"
 		is_hero="false"
-		culture="Culture.empire"
-		skill_template="SkillSet.spc_legion_of_the_betrayed_leader_0"
+		culture="Culture.looters"
+		skill_template="SkillSet.spc_ohnaka_gang_leader_0_skills"
 		occupation="Lord">
 		<face>
 			<face_key_template
@@ -38,9 +38,9 @@
 		</Traits>
 		<Equipments>
 			<EquipmentSet
-				id="spc_legion_of_the_betrayed_leader_0" />
+				id="spc_ohnaka_gang_leader_0" />
 			<EquipmentSet
-				id="spc_legion_of_the_betrayed_leader_0"
+				id="spc_ohnaka_gang_leader_0"
 				civilian="true" />
 		</Equipments>
 	</NPCCharacter>

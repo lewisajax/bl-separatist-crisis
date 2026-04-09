@@ -548,14 +548,14 @@ namespace SeparatistCrisis.PartyVisuals
                 ActionIndexCache mountAction = ActionIndexCache.act_none;
                 MapEvent mapEvent = party.MobileParty.Army == null || !party.MobileParty.Army.DoesLeaderPartyAndAttachedPartiesContain(party.MobileParty) ? party.MapEvent : party.MobileParty.Army.LeaderParty.MapEvent;
 
-                // this.AddShipToPartyIcon(party);
+                this.AddShipToPartyIcon(party);
 
                 /* COMMENT THIS */
-                int wieldedItemIndex;
-                this.GetMeleeWeaponToWield(party, out wieldedItemIndex);
+                //int wieldedItemIndex;
+                //this.GetMeleeWeaponToWield(party, out wieldedItemIndex);
 
-                if (mapEvent != null && (mapEvent.EventType == MapEvent.BattleTypes.FieldBattle || mapEvent.EventType == MapEvent.BattleTypes.Raid || mapEvent.EventType == MapEvent.BattleTypes.SiegeOutside || mapEvent.EventType == MapEvent.BattleTypes.SallyOut))
-                    SCMobilePartyVisual.GetPartyBattleAnimation(party, wieldedItemIndex, out leaderAction, out mountAction);
+                //if (mapEvent != null && (mapEvent.EventType == MapEvent.BattleTypes.FieldBattle || mapEvent.EventType == MapEvent.BattleTypes.Raid || mapEvent.EventType == MapEvent.BattleTypes.SiegeOutside || mapEvent.EventType == MapEvent.BattleTypes.SallyOut))
+                //    SCMobilePartyVisual.GetPartyBattleAnimation(party, wieldedItemIndex, out leaderAction, out mountAction);
                 /* END HERE */
 
                 IFaction mapFaction1 = party.MapFaction;
@@ -564,7 +564,7 @@ namespace SeparatistCrisis.PartyVisuals
                 uint teamColor2 = mapFaction2 != null ? mapFaction2.Color2 : 4291609515U;
 
                 // Comment this as well
-                this.AddCharacterToPartyIcon(party, PartyBaseHelper.GetVisualPartyLeader(party), contourColor, bannerKey, wieldedItemIndex, teamColor1, teamColor2, in leaderAction, in mountAction, MBRandom.NondeterministicRandomFloat * 0.7f, ref clearBannerEntityCache);
+                //this.AddCharacterToPartyIcon(party, PartyBaseHelper.GetVisualPartyLeader(party), contourColor, bannerKey, wieldedItemIndex, teamColor1, teamColor2, in leaderAction, in mountAction, MBRandom.NondeterministicRandomFloat * 0.7f, ref clearBannerEntityCache);
                 
                 if (!party.IsMobile)
                     return;
@@ -1002,6 +1002,7 @@ namespace SeparatistCrisis.PartyVisuals
         {
             if (this.ShipVisuals != null)
             {
+                this.ShipVisuals.Remove(0);
                 this.ShipVisuals = null;
             }
             if (this.HumanAgentVisuals != null)

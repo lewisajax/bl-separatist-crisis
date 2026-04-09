@@ -58,4 +58,61 @@
 			id="Engineering"
 			value="150" />
 	</SkillSet>
+	<SkillSet
+		id="spc_ohnaka_gang_leader_0_skills">
+		<skill
+			id="OneHanded"
+			value="80" />
+		<skill
+			id="TwoHanded"
+			value="80" />
+		<skill
+			id="Polearm"
+			value="150" />
+		<skill
+			id="Bow"
+			value="5" />
+		<skill
+			id="Crossbow"
+			value="5" />
+		<skill
+			id="Throwing"
+			value="5" />
+		<skill
+			id="Riding"
+			value="5" />
+		<skill
+			id="Athletics"
+			value="105" />
+		<skill
+			id="Crafting"
+			value="5" />
+		<skill
+			id="Scouting"
+			value="5" />
+		<skill
+			id="Tactics"
+			value="120" />
+		<skill
+			id="Roguery"
+			value="5" />
+		<skill
+			id="Charm"
+			value="90" />
+		<skill
+			id="Leadership"
+			value="140" />
+		<skill
+			id="Trade"
+			value="5" />
+		<skill
+			id="Steward"
+			value="100" />
+		<skill
+			id="Medicine"
+			value="5" />
+		<skill
+			id="Engineering"
+			value="5" />
+	</SkillSet>
 </SkillSets>

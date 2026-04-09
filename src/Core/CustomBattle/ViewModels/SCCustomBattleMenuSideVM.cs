@@ -12,6 +12,7 @@ using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade.CustomBattle;
 using TaleWorlds.MountAndBlade.CustomBattle.CustomBattle;
 using TaleWorlds.MountAndBlade.CustomBattle.CustomBattle.SelectionItem;
+using TaleWorlds.ObjectSystem;
 
 namespace SeparatistCrisis.CustomBattle
 {
@@ -282,10 +283,16 @@ namespace SeparatistCrisis.CustomBattle
             }
 
             CharacterSelectionGroup.ItemList.Clear();
-            foreach (BasicCharacterObject character in CustomBattleData.Characters)
+            /*foreach (BasicCharacterObject character in CustomBattleData.Characters)
             {
                 CharacterSelectionGroup.AddItem(new CharacterItemVM(character));
-            }
+            }*/
+            BasicCharacterObject charKenobi = MBObjectManager.Instance.GetObject<BasicCharacterObject>("kenobi");
+            BasicCharacterObject charDooku = MBObjectManager.Instance.GetObject<BasicCharacterObject>("dooku");
+            CharacterSelectionGroup.AddItem(new CharacterItemVM(charKenobi));
+            CharacterSelectionGroup.AddItem(new CharacterItemVM(charDooku));
+
+            // Will need to set this up to work with the popup window for character selection as we have different groups of characters when changing between factions
             CharacterSelectionGroup.SelectedIndex = _isPlayerSide ? 0 : 1;
 
             FactionSelectionGroup.ItemList.Clear();

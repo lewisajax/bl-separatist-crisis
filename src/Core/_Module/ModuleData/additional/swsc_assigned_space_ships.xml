@@ -14,7 +14,7 @@
 		<CultureSpaceShip culture="khuzait" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
 		<CultureSpaceShip culture="battania" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
 		<CultureSpaceShip culture="vlandia" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
-		<CultureSpaceShip culture="galactic_republic" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
+		<CultureSpaceShip culture="republic" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
 		<CultureSpaceShip culture="separatist" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
 		<CultureSpaceShip culture="new_mandalorians" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
 		<CultureSpaceShip culture="death_watch" lord_default="SpaceShip.v_wing" patrol_default="SpaceShip.v_wing" />
