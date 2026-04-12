@@ -4,6 +4,7 @@ using SandBox.View.Map;
 using SandBox.View.Map.Managers;
 using SandBox.View.Map.Visuals;
 using SandBox.ViewModelCollection.Nameplate;
+using SeparatistCrisis.Map;
 using SeparatistCrisis.PartyVisuals;
 using SeparatistCrisis.PatchTools;
 using System;
@@ -24,7 +25,7 @@ using TaleWorlds.ObjectSystem;
 
 namespace SeparatistCrisis.Patches
 {
-    public class MapScreenPartyVisualPatches : PatchClass<MapScreenPartyVisualPatches, MapScreen>
+    public class MapScreenPatches : PatchClass<MapScreenPatches, MapScreen>
     {
         protected override IEnumerable<Patch> Prepare() => new Patch[]
         {
@@ -34,14 +35,22 @@ namespace SeparatistCrisis.Patches
 
         private static IEnumerable<CodeInstruction> InitializeVisualsTranspiler(IEnumerable<CodeInstruction> instructions)
         {
-            MethodInfo addEntityOperand = AccessTools.Method(typeof(SandBoxViewVisualManager), "AddEntityComponent", null, new Type[] { typeof(MobilePartyVisualManager) });
-            MethodInfo updatedOperand = AccessTools.Method(typeof(SandBoxViewVisualManager), "AddEntityComponent", null, new Type[] { typeof(SCMobilePartyVisualManager) });
+            MethodInfo addPartyOperand = AccessTools.Method(typeof(SandBoxViewVisualManager), "AddEntityComponent", null, new Type[] { typeof(MobilePartyVisualManager) });
+            MethodInfo updatedPartyOperand = AccessTools.Method(typeof(SandBoxViewVisualManager), "AddEntityComponent", null, new Type[] { typeof(SCMobilePartyVisualManager) });
+
+            MethodInfo addSettlementOperand = AccessTools.Method(typeof(SandBoxViewVisualManager), "AddEntityComponent", null, new Type[] { typeof(SettlementVisualManager) });
+            MethodInfo updatedSettlementOperand = AccessTools.Method(typeof(SandBoxViewVisualManager), "AddEntityComponent", null, new Type[] { typeof(SCSettlementVisualManager) });
 
             foreach (CodeInstruction code in instructions)
             {
-                if (code.opcode == OpCodes.Callvirt && (MethodInfo)code.operand == addEntityOperand)
+                if (code.opcode == OpCodes.Callvirt && (MethodInfo)code.operand == addPartyOperand)
                 {
-                    code.operand = updatedOperand;
+                    code.operand = updatedPartyOperand;
+                }
+
+                if (code.opcode == OpCodes.Callvirt && (MethodInfo)code.operand == addSettlementOperand)
+                {
+                    code.operand = updatedSettlementOperand;
                 }
             }
             return instructions;

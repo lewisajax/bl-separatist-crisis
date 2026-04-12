@@ -1,35 +1,37 @@
-﻿using SeparatistCrisis.PatchTools;
-using Bannerlord.UIExtenderEx;
+﻿using Bannerlord.UIExtenderEx;
 using Newtonsoft.Json.Serialization;
 using SandBox;
 using SeparatistCrisis.Behaviors;
+using SeparatistCrisis.Components;
 using SeparatistCrisis.Extensions;
 using SeparatistCrisis.InputSystem;
+using SeparatistCrisis.InputSystem;
+using SeparatistCrisis.MissionManagers;
 using SeparatistCrisis.MissionManagers;
 using SeparatistCrisis.Missions;
 using SeparatistCrisis.ObjectTypes;
+using SeparatistCrisis.ObjectTypes;
+using SeparatistCrisis.PatchTools;
 using SeparatistCrisis.PatchTools;
 using SeparatistCrisis.SetOverride;
 using System;
 using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.ComponentInterfaces;
 using TaleWorlds.Core;
 using TaleWorlds.Engine.InputSystem;
 using TaleWorlds.Engine.Options;
 using TaleWorlds.InputSystem;
+using TaleWorlds.InputSystem;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
+using TaleWorlds.MountAndBlade.ComponentInterfaces;
 using TaleWorlds.MountAndBlade.CustomBattle;
 using TaleWorlds.MountAndBlade.GameKeyCategory;
-using SeparatistCrisis.ObjectTypes;
 using TaleWorlds.ObjectSystem;
-using System.Collections.Generic;
-using TaleWorlds.InputSystem;
-using SeparatistCrisis.InputSystem;
-using SeparatistCrisis.MissionManagers;
-using SeparatistCrisis.Components;
 using TaleWorlds.ScreenSystem;
 
 namespace SeparatistCrisis
@@ -105,6 +107,7 @@ namespace SeparatistCrisis
 
                 var gameStarter = (CampaignGameStarter) gameStarterObject;
                 this.OnRegisterTypes();
+
             }
         }
 
@@ -134,6 +137,17 @@ namespace SeparatistCrisis
                     MBObjectManager.Instance.LoadXML("Blasters", false);
                     MBObjectManager.Instance.LoadXML("Abilities", false);
                 }
+            }
+        }
+
+        protected override void InitializeGameStarter(Game game, IGameStarter gameStarterObject)
+        {
+            if (game.GameType is Campaign)
+            {
+                CampaignGameStarter campaignGameStarter = gameStarterObject as CampaignGameStarter;
+                this.AddBehaviors(campaignGameStarter, game);
+                this.AddModels(campaignGameStarter);
+                return;
             }
         }
 
@@ -197,6 +211,15 @@ namespace SeparatistCrisis
         private void ReInitializeHotKeyManager()
         {
             this.InitializeHotKeyManager(true);
+        }
+
+        private void AddBehaviors(CampaignGameStarter gameStarter, Game game)
+        {
+            gameStarter.AddBehavior(new InitCampaignBehavior());
+        }
+
+        private void AddModels(CampaignGameStarter campaignGameStarter)
+        {
         }
 
         public override void OnGameEnd(Game game)
