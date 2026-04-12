@@ -2,6 +2,7 @@
 using SandBox.View.Map;
 using SandBox.View.Map.Managers;
 using SandBox.View.Map.Visuals;
+using SeparatistCrisis.Map;
 using SeparatistCrisis.ObjectTypes;
 using System;
 using System.Collections.Generic;
@@ -449,7 +450,11 @@ namespace SeparatistCrisis.PartyVisuals
                     if (!string.IsNullOrEmpty(bannerCode))
                     {
                         MatrixFrame matrixFrame = MatrixFrame.Identity;
-                        Vec3 positionForParty = SettlementVisualManager.Current.GetSettlementVisual(this.MapEntity.MobileParty.CurrentSettlement).GetBannerPositionForParty(this.MapEntity.MobileParty);
+
+                        // Every SettlementVisual should be SCSettlementVisual, if it's not then something has gone wrong and we should crash.
+                        SCSettlementVisual settVis = (SCSettlementVisual)SettlementVisualManager.Current.GetSettlementVisual(this.MapEntity.MobileParty.CurrentSettlement);
+                        Vec3 positionForParty = settVis.SCGetBannerPositionForParty(this.MapEntity.MobileParty);
+
                         if (positionForParty.IsValid)
                         {
                             matrixFrame.origin = positionForParty;
