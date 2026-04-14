@@ -34,8 +34,13 @@ namespace SeparatistCrisis.Map.Views
             GauntletMapBasicView mapView = base.MapScreen.GetMapView<GauntletMapBasicView>();
             base.Layer = mapView.GauntletNameplateLayer;
             this._layerAsGauntletLayer = (base.Layer as GauntletLayer);
-            SettlementVisual settlementVisual = SettlementVisualManager.Current.GetSettlementVisual(PlayerSiege.PlayerSiegeEvent.BesiegedSettlement);
-            this._dataSource = new SCMapSiegeVM(base.MapScreen.MapCameraView.Camera, settlementVisual.GetAttackerBatteringRamSiegeEngineFrames(), settlementVisual.GetAttackerRangedSiegeEngineFrames(), settlementVisual.GetAttackerTowerSiegeEngineFrames(), settlementVisual.GetDefenderRangedSiegeEngineFrames(), settlementVisual.GetBreachableWallFrames());
+            SCSettlementVisual settlementVisual = (SCSettlementVisual)SettlementVisualManager.Current.GetSettlementVisual(PlayerSiege.PlayerSiegeEvent.BesiegedSettlement);
+            this._dataSource = new SCMapSiegeVM(base.MapScreen.MapCameraView.Camera, 
+                settlementVisual.SCGetAttackerBatteringRamSiegeEngineFrames(), 
+                settlementVisual.SCGetAttackerRangedSiegeEngineFrames(), 
+                settlementVisual.SCGetAttackerTowerSiegeEngineFrames(), 
+                settlementVisual.SCGetDefenderRangedSiegeEngineFrames(), 
+                settlementVisual.SCGetBreachableWallFrames());
             CampaignEvents.SiegeEngineBuiltEvent.AddNonSerializedListener(this, new Action<SiegeEvent, BattleSideEnum, SiegeEngineType>(this.OnSiegeEngineBuilt));
             this._movie = this._layerAsGauntletLayer.LoadMovie("MapSiegeOverlay", this._dataSource);
         }

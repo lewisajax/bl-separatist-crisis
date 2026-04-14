@@ -64,6 +64,37 @@ namespace SeparatistCrisis.Map
 
         private Scene _mapScene;
 
+        protected GameEntity[] AttackerRangedEngineSpawnEntities => this._attackerRangedEngineSpawnEntities;
+        protected GameEntity[] AttackerBatteringRamSpawnEntities => this._attackerBatteringRamSpawnEntities;
+        protected GameEntity[] DefenderBreachableWallEntitiesCacheForCurrentLevel => this._defenderBreachableWallEntitiesCacheForCurrentLevel;
+        protected GameEntity[] AttackerSiegeTowerSpawnEntities => this._attackerSiegeTowerSpawnEntities;
+        protected GameEntity[] DefenderRangedEngineSpawnEntitiesForAllLevels => this._defenderRangedEngineSpawnEntitiesForAllLevels;
+        protected GameEntity[] DefenderRangedEngineSpawnEntitiesCacheForCurrentLevel => this._defenderRangedEngineSpawnEntitiesCacheForCurrentLevel;
+        protected GameEntity[] DefenderBreachableWallEntitiesForAllLevels => this._defenderBreachableWallEntitiesForAllLevels;
+
+        public List<ValueTuple<GameEntity, BattleSideEnum, int, MatrixFrame, GameEntity>> SiegeRangedMachineEntities => this._siegeRangedMachineEntities;
+        public List<ValueTuple<GameEntity, BattleSideEnum, int, MatrixFrame, GameEntity>> SiegeMeleeMachineEntities => this._siegeMeleeMachineEntities;
+        public List<ValueTuple<GameEntity, BattleSideEnum, int>> SiegeMissileMachineEntities => this._siegeMissileEntities;
+        public Dictionary<int, List<GameEntity>> GateBannerEntitiesWithLevels => this._gateBannerEntitiesWithLevels;
+
+        public uint CurrentLevelMask
+        {
+            get => this._currentLevelMask;
+            protected set
+            {
+                this._currentLevelMask = value;
+            }
+        }
+
+        public GameEntity.UpgradeLevelMask CurrentSettlementUpgradeLevelMask
+        {
+            get => this._currentSettlementUpgradeLevelMask;
+            protected set
+            {
+                this._currentSettlementUpgradeLevelMask = value;
+            }
+        }
+
         protected List<GameEntity> TownPhysicalEntities { get; set; }
 
         protected Scene MapScene
@@ -78,10 +109,13 @@ namespace SeparatistCrisis.Map
             }
         }
 
-        public GameEntity StrategicEntity { get; protected set; }
+        public GameEntity SCStrategicEntity { get; protected set; }
 
         public SCSettlementVisual(PartyBase entity) : base(entity)
         {
+            this._siegeRangedMachineEntities = new List<ValueTuple<GameEntity, BattleSideEnum, int, MatrixFrame, GameEntity>>();
+            this._siegeMeleeMachineEntities = new List<ValueTuple<GameEntity, BattleSideEnum, int, MatrixFrame, GameEntity>>();
+            this._siegeMissileEntities = new List<ValueTuple<GameEntity, BattleSideEnum, int>>();
         }
 
         public override void ReleaseResources()
@@ -90,9 +124,9 @@ namespace SeparatistCrisis.Map
             this.ResetPartyIcon();
         }
 
-        public void Tick(float dt, ref int dirtyPartiesCount, ref SettlementVisual[] dirtyPartiesList)
+        public virtual void Tick(float dt, ref int dirtyPartiesCount, ref SCSettlementVisual[] dirtyPartiesList)
         {
-            if (this.StrategicEntity == null)
+            if (this.SCStrategicEntity == null)
             {
                 return;
             }
@@ -160,7 +194,7 @@ namespace SeparatistCrisis.Map
                             }
                             else if (flag2 && !flag3)
                             {
-                                this.StrategicEntity.Scene.CreateBurstParticle(ParticleSystemManager.GetRuntimeIdByName((siegeEngineMissile.TargetType == SiegeBombardTargets.RangedEngines) ? "psys_game_ballista_destruction" : "psys_campaign_boulder_stone_coll"), item.GetGlobalFrame());
+                                this.SCStrategicEntity.Scene.CreateBurstParticle(ParticleSystemManager.GetRuntimeIdByName((siegeEngineMissile.TargetType == SiegeBombardTargets.RangedEngines) ? "psys_game_ballista_destruction" : "psys_campaign_boulder_stone_coll"), item.GetGlobalFrame());
                                 soundCodeId = ((siegeEngineMissile.ShooterSiegeEngineType == DefaultSiegeEngineTypes.Ballista || siegeEngineMissile.ShooterSiegeEngineType == DefaultSiegeEngineTypes.FireBallista) ? MiscSoundContainer.SoundCodeAmbientNodeSiegeBallistaHit : MiscSoundContainer.SoundCodeAmbientNodeSiegeBoulderHit);
                             }
 
@@ -304,14 +338,14 @@ namespace SeparatistCrisis.Map
             }
         }
 
-        public void OnStartup()
+        public virtual void OnStartup()
         {
 
             bool flag = false;
             // GameEntity? stratEnt = (GameEntity?)CampEntWithNameMethod.Invoke(this.MapScene, new object[] { base.MapEntity.Id });
             GameEntity? stratEnt = this.MapScene.GetCampaignEntityWithName(base.MapEntity.Id);
-            this.StrategicEntity = stratEnt;
-            if (this.StrategicEntity == null)
+            this.SCStrategicEntity = stratEnt;
+            if (this.SCStrategicEntity == null)
             {
                 IMapScene mapSceneWrapper = Campaign.Current.MapSceneWrapper;
                 string stringId = base.MapEntity.Settlement.StringId;
@@ -320,22 +354,18 @@ namespace SeparatistCrisis.Map
 
                 // GameEntity stratEnt2 = (GameEntity)CampEntWithNameMethod.Invoke(this.MapScene, new object[] { base.MapEntity.Id });
                 GameEntity? stratEnt2 = this.MapScene.GetCampaignEntityWithName(base.MapEntity.Id);
-                this.StrategicEntity = stratEnt2;
+                this.SCStrategicEntity = stratEnt2;
             }
 
             bool flag2 = false;
             if (base.MapEntity.Settlement.IsFortification)
             {
                 List<GameEntity> list = new List<GameEntity>();
-                this.StrategicEntity.GetChildrenRecursive(ref list);
+                this.SCStrategicEntity.GetChildrenRecursive(ref list);
 
                 this.PopulateSiegeEngineFrameListsFromChildren(list);
                 this.UpdateDefenderSiegeEntitiesCache();
                 this.TownPhysicalEntities = list.FindAll((GameEntity x) => x.HasTag("bo_town"));
-
-                // PopulateSiegeEngineFrameListsFromChildrenMethod.Invoke(this, new object[] { list });
-                // UpdateDefenderSiegeEntitiesCacheMethod.Invoke(this, new object[] {});
-                // TownPhysicalEntitiesSetter.Invoke(this, new object[] { list.FindAll((GameEntity x) => x.HasTag("bo_town")) });
 
                 List<GameEntity> list2 = new List<GameEntity>();
                 Dictionary<int, List<GameEntity>> dictionary = new Dictionary<int, List<GameEntity>>
@@ -407,7 +437,7 @@ namespace SeparatistCrisis.Map
                 bool flag3 = false;
                 if (base.MapEntity.IsSettlement)
                 {
-                    foreach (GameEntity gameEntity3 in this.StrategicEntity.GetChildren())
+                    foreach (GameEntity gameEntity3 in this.SCStrategicEntity.GetChildren())
                     {
                         if (gameEntity3.HasTag("main_map_city_port"))
                         {
@@ -447,19 +477,19 @@ namespace SeparatistCrisis.Map
                 this.CircleLocalFrame = circleLocalFrame;
             }
 
-            this.StrategicEntity.SetVisibilityExcludeParents(base.MapEntity.IsVisible);
-            this.StrategicEntity.SetReadyToRender(true);
-            this.StrategicEntity.SetEntityEnvMapVisibility(false);
+            this.SCStrategicEntity.SetVisibilityExcludeParents(base.MapEntity.IsVisible);
+            this.SCStrategicEntity.SetReadyToRender(true);
+            this.SCStrategicEntity.SetEntityEnvMapVisibility(false);
             List<GameEntity> list5 = new List<GameEntity>();
-            this.StrategicEntity.GetChildrenRecursive(ref list5);
+            this.SCStrategicEntity.GetChildrenRecursive(ref list5);
 
             Dictionary<UIntPtr, MapEntityVisual> entVisuals = MapScreen.VisualsOfEntities;
             Dictionary<UIntPtr, Tuple<MatrixFrame, SettlementVisual>> engFramesAndVisuals = (Dictionary<UIntPtr, Tuple<MatrixFrame, SettlementVisual>>)FrameAndVisualOfEnginesGetter.Invoke(this, new object[] { });
 
 
-            if (!entVisuals.ContainsKey(this.StrategicEntity.Pointer))
+            if (!entVisuals.ContainsKey(this.SCStrategicEntity.Pointer))
             {
-                entVisuals.Add(this.StrategicEntity.Pointer, this);
+                entVisuals.Add(this.SCStrategicEntity.Pointer, this);
             }
             foreach (GameEntity gameEntity4 in list5)
             {
@@ -468,32 +498,32 @@ namespace SeparatistCrisis.Map
                     entVisuals.Add(gameEntity4.Pointer, this);
                 }
             }
-            this.StrategicEntity.SetAsPredisplayEntity();
+            this.SCStrategicEntity.SetAsPredisplayEntity();
         }
 
         protected void OnPartyRemoved()
         {
-            if (this.StrategicEntity != null)
+            if (this.SCStrategicEntity != null)
             {
-                MapScreen.VisualsOfEntities.Remove(this.StrategicEntity.Pointer);
-                foreach (GameEntity gameEntity in this.StrategicEntity.GetChildren())
+                MapScreen.VisualsOfEntities.Remove(this.SCStrategicEntity.Pointer);
+                foreach (GameEntity gameEntity in this.SCStrategicEntity.GetChildren())
                 {
                     MapScreen.VisualsOfEntities.Remove(gameEntity.Pointer);
                 }
                 this.ReleaseResources();
-                this.StrategicEntity.Remove(111);
+                this.SCStrategicEntity.Remove(111);
             }
         }
 
         protected void ResetPartyIcon()
         {
-            if (this.StrategicEntity != null)
+            if (this.SCStrategicEntity != null)
             {
-                if ((this.StrategicEntity.EntityFlags & EntityFlags.Ignore) != null)
+                if ((this.SCStrategicEntity.EntityFlags & EntityFlags.Ignore) != null)
                 {
-                    this.StrategicEntity.RemoveFromPredisplayEntity();
+                    this.SCStrategicEntity.RemoveFromPredisplayEntity();
                 }
-                this.StrategicEntity.ClearComponents();
+                this.SCStrategicEntity.ClearComponents();
             }
         }
 
@@ -502,15 +532,15 @@ namespace SeparatistCrisis.Map
             this.RefreshPartyIcon();
             if (base.MapEntity.IsVisible)
             {
-                this.StrategicEntity.SetVisibilityExcludeParents(true);
-                this.StrategicEntity.SetAlpha(1f);
-                this.StrategicEntity.EntityFlags &= ~EntityFlags.DoNotTick;
+                this.SCStrategicEntity.SetVisibilityExcludeParents(true);
+                this.SCStrategicEntity.SetAlpha(1f);
+                this.SCStrategicEntity.EntityFlags &= ~EntityFlags.DoNotTick;
                 return;
             }
 
-            this.StrategicEntity.SetAlpha(0f);
-            this.StrategicEntity.SetVisibilityExcludeParents(false);
-            this.StrategicEntity.EntityFlags |= EntityFlags.DoNotTick;
+            this.SCStrategicEntity.SetAlpha(0f);
+            this.SCStrategicEntity.SetVisibilityExcludeParents(false);
+            this.SCStrategicEntity.EntityFlags |= EntityFlags.DoNotTick;
         }
 
         public Dictionary<int, List<GameEntity>> GetGateBannerEntitiesWithLevels()
@@ -663,8 +693,8 @@ namespace SeparatistCrisis.Map
             {
                 base.MapEntity.OnVisualsUpdated();
                 this.RemoveSiege();
-                this.StrategicEntity.RemoveAllParticleSystems();
-                this.StrategicEntity.EntityFlags |= EntityFlags.DoNotTick;
+                this.SCStrategicEntity.RemoveAllParticleSystems();
+                this.SCStrategicEntity.EntityFlags |= EntityFlags.DoNotTick;
                 if (base.MapEntity.Settlement.IsFortification)
                 {
                     this.UpdateDefenderSiegeEntitiesCache();
@@ -680,30 +710,30 @@ namespace SeparatistCrisis.Map
                     MapEvent mapEvent = base.MapEntity.MapEvent;
                     if (mapEvent != null && mapEvent.IsRaid)
                     {
-                        this.StrategicEntity.EntityFlags &= ~EntityFlags.DoNotTick;
-                        this.StrategicEntity.AddParticleSystemComponent("psys_fire_smoke_env_point");
-                        if ((this.StrategicEntity.EntityFlags & EntityFlags.Ignore) != null)
+                        this.SCStrategicEntity.EntityFlags &= ~EntityFlags.DoNotTick;
+                        this.SCStrategicEntity.AddParticleSystemComponent("psys_fire_smoke_env_point");
+                        if ((this.SCStrategicEntity.EntityFlags & EntityFlags.Ignore) != null)
                         {
-                            this.StrategicEntity.RemoveFromPredisplayEntity();
+                            this.SCStrategicEntity.RemoveFromPredisplayEntity();
                         }
                         flag = true;
                     }
                     else if (base.MapEntity.Settlement.IsRaided)
                     {
-                        this.StrategicEntity.EntityFlags &= ~EntityFlags.DoNotTick;
-                        this.StrategicEntity.AddParticleSystemComponent("map_icon_village_plunder_fx");
-                        if ((this.StrategicEntity.EntityFlags & EntityFlags.Ignore) != null)
+                        this.SCStrategicEntity.EntityFlags &= ~EntityFlags.DoNotTick;
+                        this.SCStrategicEntity.AddParticleSystemComponent("map_icon_village_plunder_fx");
+                        if ((this.SCStrategicEntity.EntityFlags & EntityFlags.Ignore) != null)
                         {
-                            this.StrategicEntity.RemoveFromPredisplayEntity();
+                            this.SCStrategicEntity.RemoveFromPredisplayEntity();
                         }
                         flag = true;
                     }
                 }
-                if (!flag && (this.StrategicEntity.EntityFlags & EntityFlags.Ignore) == null)
+                if (!flag && (this.SCStrategicEntity.EntityFlags & EntityFlags.Ignore) == null)
                 {
-                    this.StrategicEntity.SetAsPredisplayEntity();
+                    this.SCStrategicEntity.SetAsPredisplayEntity();
                 }
-                this.StrategicEntity.CheckResources(true, false);
+                this.SCStrategicEntity.CheckResources(true, false);
             }
         }
 
@@ -711,15 +741,15 @@ namespace SeparatistCrisis.Map
         {
             foreach (ValueTuple<GameEntity, BattleSideEnum, int, MatrixFrame, GameEntity> valueTuple in this._siegeRangedMachineEntities)
             {
-                this.StrategicEntity.RemoveChild(valueTuple.Item1, false, false, true, 36);
+                this.SCStrategicEntity.RemoveChild(valueTuple.Item1, false, false, true, 36);
             }
             foreach (ValueTuple<GameEntity, BattleSideEnum, int> valueTuple2 in this._siegeMissileEntities)
             {
-                this.StrategicEntity.RemoveChild(valueTuple2.Item1, false, false, true, 37);
+                this.SCStrategicEntity.RemoveChild(valueTuple2.Item1, false, false, true, 37);
             }
             foreach (ValueTuple<GameEntity, BattleSideEnum, int, MatrixFrame, GameEntity> valueTuple3 in this._siegeMeleeMachineEntities)
             {
-                this.StrategicEntity.RemoveChild(valueTuple3.Item1, false, false, true, 38);
+                this.SCStrategicEntity.RemoveChild(valueTuple3.Item1, false, false, true, 38);
             }
             this._siegeRangedMachineEntities.Clear();
             this._siegeMeleeMachineEntities.Clear();
@@ -791,7 +821,7 @@ namespace SeparatistCrisis.Map
                     MBReadOnlyList<SiegeEvent.SiegeEngineMissile> siegeEngineMissiles = party.Settlement.SiegeEvent.GetSiegeEventSide(side).SiegeEngineMissiles;
                     for (int m = 0; m < siegeEngineMissiles.Count; m++)
                     {
-                        this.AddSiegeMissile(siegeEngineMissiles[m].ShooterSiegeEngineType, this.StrategicEntity.GetGlobalFrame(), side, m);
+                        this.AddSiegeMissile(siegeEngineMissiles[m].ShooterSiegeEngineType, this.SCStrategicEntity.GetGlobalFrame(), side, m);
                     }
                 }
             }
@@ -803,7 +833,7 @@ namespace SeparatistCrisis.Map
             GameEntity gameEntity = GameEntity.Instantiate(this.MapScene, siegeEngineMapPrefabName, true, true, "");
             if (gameEntity != null)
             {
-                this.StrategicEntity.AddChild(gameEntity, false);
+                this.SCStrategicEntity.AddChild(gameEntity, false);
                 MatrixFrame matrixFrame;
                 gameEntity.GetLocalFrame(out matrixFrame);
                 GameEntity gameEntity2 = gameEntity;
@@ -838,8 +868,8 @@ namespace SeparatistCrisis.Map
             if (gameEntity != null)
             {
                 this._siegeMissileEntities.Add(ValueTuple.Create<GameEntity, BattleSideEnum, int>(gameEntity, side, missileIndex));
-                this.StrategicEntity.AddChild(gameEntity, false);
-                this.StrategicEntity.EntityFlags &= ~EntityFlags.DoNotTick;
+                this.SCStrategicEntity.AddChild(gameEntity, false);
+                this.SCStrategicEntity.EntityFlags &= ~EntityFlags.DoNotTick;
                 MatrixFrame matrixFrame;
                 gameEntity.GetLocalFrame(out matrixFrame);
                 GameEntity gameEntity2 = gameEntity;
@@ -925,7 +955,7 @@ namespace SeparatistCrisis.Map
         protected void SetSettlementLevelVisibility()
         {
             List<WeakGameEntity> list = new List<WeakGameEntity>();
-            this.StrategicEntity.WeakEntity.GetChildrenRecursive(ref list);
+            this.SCStrategicEntity.WeakEntity.GetChildrenRecursive(ref list);
             foreach (WeakGameEntity weakGameEntity in list)
             {
                 GameEntity.UpgradeLevelMask currMask = (GameEntity.UpgradeLevelMask)(int)this._currentLevelMask;
@@ -1088,7 +1118,7 @@ namespace SeparatistCrisis.Map
         protected void RefreshSiegePreparations(PartyBase party)
         {
             List<WeakGameEntity> list = new List<WeakGameEntity>();
-            this.StrategicEntity.WeakEntity.GetChildrenRecursive(ref list);
+            this.SCStrategicEntity.WeakEntity.GetChildrenRecursive(ref list);
             List<WeakGameEntity> list2 = list.FindAll((WeakGameEntity x) => x.HasTag("siege_preparation"));
             bool flag = false;
             if (party.Settlement != null && party.Settlement.IsUnderSiege)

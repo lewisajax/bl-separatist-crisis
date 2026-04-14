@@ -2,6 +2,7 @@
 using SandBox.View.Map;
 using SandBox.View.Map.Managers;
 using SandBox.ViewModelCollection.Nameplate;
+using SeparatistCrisis.Map;
 using SeparatistCrisis.ObjectTypes;
 using SeparatistCrisis.ViewModels;
 using System;
@@ -43,7 +44,7 @@ namespace SeparatistCrisis.Views
             List<Tuple<Settlement, GameEntity>> settlements = new List<Tuple<Settlement, GameEntity>>();
             foreach (Settlement settlement in (List<Settlement>)Settlement.All)
             {
-                GameEntity strategicEntity = SettlementVisualManager.Current.GetSettlementVisual(settlement).StrategicEntity;
+                GameEntity strategicEntity = ((SCSettlementVisual)SettlementVisualManager.Current.GetSettlementVisual(settlement)).SCStrategicEntity;
                 Tuple<Settlement, GameEntity> tuple = new Tuple<Settlement, GameEntity>(settlement, strategicEntity);
                 settlements.Add(tuple);
             }

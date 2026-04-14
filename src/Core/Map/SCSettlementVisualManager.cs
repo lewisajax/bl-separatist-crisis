@@ -3,6 +3,7 @@ using SandBox;
 using SandBox.View.Map;
 using SandBox.View.Map.Managers;
 using SandBox.View.Map.Visuals;
+using SeparatistCrisis.Map.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +29,6 @@ namespace SeparatistCrisis.Map
     public class SCSettlementVisualManager: SettlementVisualManager
     {
         protected static FieldInfo SettlementVisualsField = AccessTools.Field(typeof(SettlementVisualManager), "_settlementVisuals");
-        protected static FieldInfo VisualsFlattenedField = AccessTools.Field(typeof(SettlementVisualManager), "_visualsFlattened");
         protected static MethodInfo FrameAndVisualOfEnginesGetter = AccessTools.PropertyGetter(typeof(MapScreen), "FrameAndVisualOfEngines");
 
         private bool _isNewDecalScaleImplementationEnabled; // Doesn't seem to be assigned a true value from anywhere
@@ -41,15 +41,53 @@ namespace SeparatistCrisis.Map
         private float _timeSinceCreation;
         private UIntPtr _hoveredSiegeEntityID;
 
+        // private readonly Dictionary<PartyBase, SettlementVisual> _settlementVisuals = new Dictionary<PartyBase, SettlementVisual>();
+        private readonly List<SCSettlementVisual> _visualsFlattened = new List<SCSettlementVisual>();
+        private int _dirtyPartyVisualCount;
+        private SCSettlementVisual[] _dirtyPartiesList = new SCSettlementVisual[2500];
+
+        protected List<SCSettlementVisual> VisualsFlattened => this._visualsFlattened;
+        protected int DirtyPartyVisualCount => _dirtyPartyVisualCount;
+        protected SCSettlementVisual[] DirtyPartiesList => _dirtyPartiesList;
+
+        public GameEntity[] DefenderMachinesCircleEntities => this._defenderMachinesCircleEntities;
+        public GameEntity[] AttackerRamMachinesCircleEntities => this._attackerRamMachinesCircleEntities;
+        public GameEntity[] AttackerTowerMachinesCircleEntities => this._attackerTowerMachinesCircleEntities;
+        public GameEntity[] AttackerRangedMachinesCircleEntities => this._attackerRangedMachinesCircleEntities;
+
+        public float TimeSinceCreation
+        {
+            get => this._timeSinceCreation;
+            protected set => this._timeSinceCreation = value;
+        }
+
+        public bool PlayerSiegeMachineSlotMeshesAdded => this._playerSiegeMachineSlotMeshesAdded;
+
+        protected MapView MapSiegeOverlayView => this._mapSiegeOverlayView;
+
+        
+        // Try changing SettVis.OnTick to SCOnTick
         public override void OnTick(float realDt, float dt)
         {
-            base.OnTick(realDt, dt);
+            this._dirtyPartyVisualCount = -1;
+            TWParallel.For(0, this._visualsFlattened.Count, delegate (int startInclusive, int endExclusive)
+            {
+                for (int j = startInclusive; j < endExclusive; j++)
+                {
+                    this._visualsFlattened[j].Tick(dt, ref this._dirtyPartyVisualCount, ref this._dirtyPartiesList);
+                }
+            }, 16);
+            for (int i = 0; i < this._dirtyPartyVisualCount + 1; i++)
+            {
+                this._dirtyPartiesList[i].ValidateIsDirty();
+            }
         }
 
         protected override void OnInitialize()
         {
+            // _settlementVisuals has a public getter that is used in a few other classes
             Dictionary<PartyBase, SettlementVisual> settVisuals = (Dictionary<PartyBase, SettlementVisual>)SettlementVisualsField.GetValue(this);
-            List<SettlementVisual> visFlattened = (List<SettlementVisual>)VisualsFlattenedField.GetValue(this);
+            List<SCSettlementVisual> visFlattened = this._visualsFlattened;
 
             foreach (Settlement settlement in Settlement.All)
             {
@@ -130,25 +168,40 @@ namespace SeparatistCrisis.Map
             base.OnFinalize();
         }
 
+        // We moved the inner block to OnIntilizadadasdad
+        //private void AddNewPartyVisualForParty(PartyBase partyBase)
+        //{
+        //    SCSettlementVisual settlementVisual = new SCSettlementVisual(partyBase);
+        //    settlementVisual.OnStartup();
+        //    this._settlementVisuals.Add(partyBase, settlementVisual);
+        //    this._visualsFlattened.Add(settlementVisual);
+        //}
+
         protected void TickSiegeMachineCircles()
         {
             SiegeEvent playerSiegeEvent = PlayerSiege.PlayerSiegeEvent;
             bool isPlayerLeader = playerSiegeEvent != null && playerSiegeEvent.IsPlayerSiegeEvent && Campaign.Current.Models.EncounterModel.GetLeaderOfSiegeEvent(playerSiegeEvent, PlayerSiege.PlayerSide) == Hero.MainHero;
             Settlement besiegedSettlement = playerSiegeEvent.BesiegedSettlement;
-            SettlementVisual settlementVisual = this.GetSettlementVisual(besiegedSettlement);
+            SCSettlementVisual settlementVisual = (SCSettlementVisual)this.GetSettlementVisual(besiegedSettlement);
             Tuple<MatrixFrame, SettlementVisual> tuple = null;
             if (this._hoveredSiegeEntityID != UIntPtr.Zero)
             {
                 Dictionary<UIntPtr, Tuple<MatrixFrame, SettlementVisual>> engFramesAndVisuals = (Dictionary<UIntPtr, Tuple<MatrixFrame, SettlementVisual>>)FrameAndVisualOfEnginesGetter.Invoke(this, new object[] { });
                 tuple = engFramesAndVisuals[this._hoveredSiegeEntityID];
             }
-            for (int i = 0; i < settlementVisual.GetDefenderRangedSiegeEngineFrames().Length; i++)
+            for (int i = 0; i < settlementVisual.SCGetDefenderRangedSiegeEngineFrames().Length; i++)
             {
                 bool isEmpty = playerSiegeEvent.GetSiegeEventSide(BattleSideEnum.Defender).SiegeEngines.DeployedRangedSiegeEngines[i] == null;
                 bool isEnemy = PlayerSiege.PlayerSide > 0;
                 string desiredMaterialName = this.GetDesiredMaterialName(true, false, false);
+
+                // Set it to an invisible material
+                // string desiredMaterialName = "editor_gizmo";
+
                 Decal decal = this._defenderMachinesCircleEntities[i].GetComponentAtIndex(0, GameEntity.ComponentType.Decal) as Decal;
                 Material material = decal.GetMaterial();
+
+                // If the current decal material is not what the same as desiredMaterialName, then we change it
                 if (((material != null) ? material.Name : null) != desiredMaterialName)
                 {
                     decal.SetMaterial(Material.GetFromResource(desiredMaterialName));
@@ -160,7 +213,7 @@ namespace SeparatistCrisis.Map
                     decal.SetFactor1(desiredDecalColor);
                 }
             }
-            for (int j = 0; j < settlementVisual.GetAttackerRangedSiegeEngineFrames().Length; j++)
+            for (int j = 0; j < settlementVisual.SCGetAttackerRangedSiegeEngineFrames().Length; j++)
             {
                 bool isEmpty2 = playerSiegeEvent.GetSiegeEventSide(BattleSideEnum.Attacker).SiegeEngines.DeployedRangedSiegeEngines[j] == null;
                 bool isEnemy2 = PlayerSiege.PlayerSide != BattleSideEnum.Attacker;
@@ -178,7 +231,7 @@ namespace SeparatistCrisis.Map
                     decal2.SetFactor1(desiredDecalColor2);
                 }
             }
-            for (int k = 0; k < settlementVisual.GetAttackerBatteringRamSiegeEngineFrames().Length; k++)
+            for (int k = 0; k < settlementVisual.SCGetAttackerBatteringRamSiegeEngineFrames().Length; k++)
             {
                 bool isEmpty3 = playerSiegeEvent.GetSiegeEventSide(BattleSideEnum.Attacker).SiegeEngines.DeployedMeleeSiegeEngines[k] == null;
                 bool isEnemy3 = PlayerSiege.PlayerSide != BattleSideEnum.Attacker;
@@ -196,9 +249,9 @@ namespace SeparatistCrisis.Map
                     decal3.SetFactor1(desiredDecalColor3);
                 }
             }
-            for (int l = 0; l < settlementVisual.GetAttackerTowerSiegeEngineFrames().Length; l++)
+            for (int l = 0; l < settlementVisual.SCGetAttackerTowerSiegeEngineFrames().Length; l++)
             {
-                bool isEmpty4 = playerSiegeEvent.GetSiegeEventSide(BattleSideEnum.Attacker).SiegeEngines.DeployedMeleeSiegeEngines[settlementVisual.GetAttackerBatteringRamSiegeEngineFrames().Length + l] == null;
+                bool isEmpty4 = playerSiegeEvent.GetSiegeEventSide(BattleSideEnum.Attacker).SiegeEngines.DeployedMeleeSiegeEngines[settlementVisual.SCGetAttackerBatteringRamSiegeEngineFrames().Length + l] == null;
                 bool isEnemy4 = PlayerSiege.PlayerSide != BattleSideEnum.Attacker;
                 string desiredMaterialName4 = this.GetDesiredMaterialName(false, true, true);
                 Decal decal4 = this._attackerTowerMachinesCircleEntities[l].GetComponentAtIndex(0, GameEntity.ComponentType.Decal) as Decal;
@@ -319,7 +372,7 @@ namespace SeparatistCrisis.Map
             }
             else if (PlayerSiege.PlayerSiegeEvent != null && this._mapSiegeOverlayView == null)
             {
-                this._mapSiegeOverlayView = MapScreen.Instance.AddMapView<MapSiegeOverlayView>(Array.Empty<object>());
+                this._mapSiegeOverlayView = MapScreen.Instance.AddMapView<SCMapSiegeOverlayView>(Array.Empty<object>());
                 if (!this._playerSiegeMachineSlotMeshesAdded)
                 {
                     this.InitializeSiegeCircleVisuals();
@@ -331,10 +384,11 @@ namespace SeparatistCrisis.Map
         protected void InitializeSiegeCircleVisuals()
         {
             Settlement besiegedSettlement = PlayerSiege.PlayerSiegeEvent.BesiegedSettlement;
-            SettlementVisual settlementVisual = this.GetSettlementVisual(besiegedSettlement);
+            SCSettlementVisual settlementVisual = (SCSettlementVisual)this.GetSettlementVisual(besiegedSettlement);
             MapScene mapScene = Campaign.Current.MapSceneWrapper as MapScene;
-            MatrixFrame[] array = settlementVisual.GetDefenderRangedSiegeEngineFrames();
+            MatrixFrame[] array = settlementVisual.SCGetDefenderRangedSiegeEngineFrames();
             this._defenderMachinesCircleEntities = new GameEntity[array.Length];
+
             for (int i = 0; i < array.Length; i++)
             {
                 MatrixFrame matrixFrame = array[i];
@@ -354,8 +408,10 @@ namespace SeparatistCrisis.Map
                 this._defenderMachinesCircleEntities[i].SetVisibilityExcludeParents(true);
                 mapScene.Scene.AddDecalInstance(decal, "editor_set", true);
             }
-            array = settlementVisual.GetAttackerBatteringRamSiegeEngineFrames();
+
+            array = settlementVisual.SCGetAttackerBatteringRamSiegeEngineFrames();
             this._attackerRamMachinesCircleEntities = new GameEntity[array.Length];
+
             for (int j = 0; j < array.Length; j++)
             {
                 MatrixFrame matrixFrame3 = array[j];
@@ -376,8 +432,10 @@ namespace SeparatistCrisis.Map
                 this._attackerRamMachinesCircleEntities[j].SetVisibilityExcludeParents(true);
                 mapScene.Scene.AddDecalInstance(decal2, "editor_set", true);
             }
-            array = settlementVisual.GetAttackerTowerSiegeEngineFrames();
+
+            array = settlementVisual.SCGetAttackerTowerSiegeEngineFrames();
             this._attackerTowerMachinesCircleEntities = new GameEntity[array.Length];
+
             for (int k = 0; k < array.Length; k++)
             {
                 MatrixFrame matrixFrame5 = array[k];
@@ -397,8 +455,10 @@ namespace SeparatistCrisis.Map
                 this._attackerTowerMachinesCircleEntities[k].SetVisibilityExcludeParents(true);
                 mapScene.Scene.AddDecalInstance(decal3, "editor_set", true);
             }
-            array = settlementVisual.GetAttackerRangedSiegeEngineFrames();
+
+            array = settlementVisual.SCGetAttackerRangedSiegeEngineFrames();
             this._attackerRangedMachinesCircleEntities = new GameEntity[array.Length];
+
             for (int l = 0; l < array.Length; l++)
             {
                 MatrixFrame matrixFrame7 = array[l];
@@ -424,10 +484,11 @@ namespace SeparatistCrisis.Map
         {
             if (this._hoveredSiegeEntityID != newID)
             {
-                Dictionary<UIntPtr, Tuple<MatrixFrame, SCSettlementVisual>> engFramesAndVisuals = (Dictionary<UIntPtr, Tuple<MatrixFrame, SCSettlementVisual>>)FrameAndVisualOfEnginesGetter.Invoke(this, new object[] { });
+                Dictionary<UIntPtr, Tuple<MatrixFrame, SettlementVisual>> engFramesAndVisuals = (Dictionary<UIntPtr, Tuple<MatrixFrame, SettlementVisual>>)FrameAndVisualOfEnginesGetter.Invoke(this, new object[] { });
                 this._hoveredSiegeEntityID = newID;
-                Tuple<MatrixFrame, SCSettlementVisual> tuple = engFramesAndVisuals[this._hoveredSiegeEntityID];
-                tuple.Item2.OnMapHoverSiegeEngine(tuple.Item1);
+                Tuple<MatrixFrame, SettlementVisual> tuple = engFramesAndVisuals[this._hoveredSiegeEntityID];
+                SCSettlementVisual setVis = (SCSettlementVisual)tuple.Item2;
+                setVis.OnMapHoverSiegeEngine(tuple.Item1);
             }
         }
 
@@ -435,8 +496,8 @@ namespace SeparatistCrisis.Map
         {
             if (this._hoveredSiegeEntityID != UIntPtr.Zero)
             {
-                Dictionary<UIntPtr, Tuple<MatrixFrame, SCSettlementVisual>> engFramesAndVisuals = (Dictionary<UIntPtr, Tuple<MatrixFrame, SCSettlementVisual>>)FrameAndVisualOfEnginesGetter.Invoke(this, new object[] { });
-                SCSettlementVisual settVis = engFramesAndVisuals[this._hoveredSiegeEntityID].Item2;
+                Dictionary<UIntPtr, Tuple<MatrixFrame, SettlementVisual>> engFramesAndVisuals = (Dictionary<UIntPtr, Tuple<MatrixFrame, SettlementVisual>>)FrameAndVisualOfEnginesGetter.Invoke(this, new object[] { });
+                SCSettlementVisual settVis = (SCSettlementVisual)engFramesAndVisuals[this._hoveredSiegeEntityID].Item2;
                 settVis.OnMapHoverSiegeEngineEnd();
                 this._hoveredSiegeEntityID = UIntPtr.Zero;
             }
