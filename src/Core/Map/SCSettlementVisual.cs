@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.Extensions;
 using TaleWorlds.CampaignSystem.Map;
 using TaleWorlds.CampaignSystem.MapEvents;
 using TaleWorlds.CampaignSystem.Party;
@@ -287,7 +288,7 @@ namespace SeparatistCrisis.Map
                             shooterGlobalFrame.rotation.f.NormalizeWithoutChangingZ();
                             shooterGlobalFrame.rotation.Orthonormalize();
                         }
-                        item5.SetGlobalFrame(in shooterGlobalFrame, true);
+                        // item5.SetGlobalFrame(in shooterGlobalFrame, true);
                         skeleton.TickAnimations(dt, MatrixFrame.Identity, false);
                         double toHours3 = rangedSiegeEngine.NextProjectileCollisionTime.ToHours;
                         if (toHours > toHours3 - (double)siegeBombardmentData2.TotalDuration)
@@ -712,7 +713,7 @@ namespace SeparatistCrisis.Map
                     {
                         this.SCStrategicEntity.EntityFlags &= ~EntityFlags.DoNotTick;
                         this.SCStrategicEntity.AddParticleSystemComponent("psys_fire_smoke_env_point");
-                        if ((this.SCStrategicEntity.EntityFlags & EntityFlags.Ignore) != null)
+                        if ((this.SCStrategicEntity.EntityFlags & EntityFlags.Ignore) != 0)
                         {
                             this.SCStrategicEntity.RemoveFromPredisplayEntity();
                         }
@@ -722,14 +723,14 @@ namespace SeparatistCrisis.Map
                     {
                         this.SCStrategicEntity.EntityFlags &= ~EntityFlags.DoNotTick;
                         this.SCStrategicEntity.AddParticleSystemComponent("map_icon_village_plunder_fx");
-                        if ((this.SCStrategicEntity.EntityFlags & EntityFlags.Ignore) != null)
+                        if ((this.SCStrategicEntity.EntityFlags & EntityFlags.Ignore) != 0)
                         {
                             this.SCStrategicEntity.RemoveFromPredisplayEntity();
                         }
                         flag = true;
                     }
                 }
-                if (!flag && (this.SCStrategicEntity.EntityFlags & EntityFlags.Ignore) == null)
+                if (!flag && (this.SCStrategicEntity.EntityFlags & EntityFlags.Ignore) == 0)
                 {
                     this.SCStrategicEntity.SetAsPredisplayEntity();
                 }
@@ -756,74 +757,72 @@ namespace SeparatistCrisis.Map
             this._siegeMissileEntities.Clear();
         }
 
-        protected void AddSiegeIconComponents(PartyBase party)
+        private void AddSiegeIconComponents(PartyBase party)
         {
-            if (party.Settlement.IsUnderSiege)
+            if (!party.Settlement.IsUnderSiege)
+                return;
+
+            int wallLevel = -1;
+            if (party.Settlement.SiegeEvent.BesiegedSettlement.IsTown || party.Settlement.SiegeEvent.BesiegedSettlement.IsCastle)
+                wallLevel = party.Settlement.SiegeEvent.BesiegedSettlement.Town.GetWallLevel();
+
+            SiegeEvent.SiegeEngineConstructionProgress[] rangedSiegeEngines1 = party.Settlement.SiegeEvent.GetSiegeEventSide(BattleSideEnum.Attacker).SiegeEngines.DeployedRangedSiegeEngines;
+            for (int slotIndex = 0; slotIndex < rangedSiegeEngines1.Length; ++slotIndex)
             {
-                int wallLevel = -1;
-                if (party.Settlement.SiegeEvent.BesiegedSettlement.IsTown || party.Settlement.SiegeEvent.BesiegedSettlement.IsCastle)
+                SiegeEvent.SiegeEngineConstructionProgress constructionProgress = rangedSiegeEngines1[slotIndex];
+                if ((constructionProgress != null ? (constructionProgress.IsActive ? 1 : 0) : 0) != 0 && slotIndex < this._attackerRangedEngineSpawnEntities.Length)
                 {
-                    wallLevel = party.Settlement.SiegeEvent.BesiegedSettlement.Town.GetWallLevel();
+                    MatrixFrame globalFrame = this._attackerRangedEngineSpawnEntities[slotIndex].GetGlobalFrame();
+                    globalFrame.rotation.MakeUnit();
+                    this.AddSiegeMachine(rangedSiegeEngines1[slotIndex].SiegeEngine, globalFrame, BattleSideEnum.Attacker, wallLevel, slotIndex);
                 }
-                SiegeEvent.SiegeEngineConstructionProgress[] deployedRangedSiegeEngines = party.Settlement.SiegeEvent.GetSiegeEventSide(BattleSideEnum.Attacker).SiegeEngines.DeployedRangedSiegeEngines;
-                for (int i = 0; i < deployedRangedSiegeEngines.Length; i++)
+            }
+
+            SiegeEvent.SiegeEngineConstructionProgress[] meleeSiegeEngines = party.Settlement.SiegeEvent.GetSiegeEventSide(BattleSideEnum.Attacker).SiegeEngines.DeployedMeleeSiegeEngines;
+            for (int slotIndex = 0; slotIndex < meleeSiegeEngines.Length; ++slotIndex)
+            {
+                SiegeEvent.SiegeEngineConstructionProgress constructionProgress = meleeSiegeEngines[slotIndex];
+                if ((constructionProgress != null ? (constructionProgress.IsActive ? 1 : 0) : 0) != 0)
                 {
-                    SiegeEvent.SiegeEngineConstructionProgress siegeEngineConstructionProgress = deployedRangedSiegeEngines[i];
-                    if (siegeEngineConstructionProgress != null && siegeEngineConstructionProgress.IsActive && i < this._attackerRangedEngineSpawnEntities.Length)
+                    if (meleeSiegeEngines[slotIndex].SiegeEngine == DefaultSiegeEngineTypes.SiegeTower)
                     {
-                        MatrixFrame globalFrame = this._attackerRangedEngineSpawnEntities[i].GetGlobalFrame();
-                        globalFrame.rotation.MakeUnit();
-                        this.AddSiegeMachine(deployedRangedSiegeEngines[i].SiegeEngine, globalFrame, BattleSideEnum.Attacker, wallLevel, i);
-                    }
-                }
-                SiegeEvent.SiegeEngineConstructionProgress[] deployedMeleeSiegeEngines = party.Settlement.SiegeEvent.GetSiegeEventSide(BattleSideEnum.Attacker).SiegeEngines.DeployedMeleeSiegeEngines;
-                for (int j = 0; j < deployedMeleeSiegeEngines.Length; j++)
-                {
-                    SiegeEvent.SiegeEngineConstructionProgress siegeEngineConstructionProgress2 = deployedMeleeSiegeEngines[j];
-                    if (siegeEngineConstructionProgress2 != null && siegeEngineConstructionProgress2.IsActive)
-                    {
-                        if (deployedMeleeSiegeEngines[j].SiegeEngine == DefaultSiegeEngineTypes.SiegeTower)
+                        int index = slotIndex - this._attackerBatteringRamSpawnEntities.Length;
+                        if (index >= 0)
                         {
-                            int num = j - this._attackerBatteringRamSpawnEntities.Length;
-                            if (num >= 0)
-                            {
-                                MatrixFrame globalFrame2 = this._attackerSiegeTowerSpawnEntities[num].GetGlobalFrame();
-                                globalFrame2.rotation.MakeUnit();
-                                this.AddSiegeMachine(deployedMeleeSiegeEngines[j].SiegeEngine, globalFrame2, BattleSideEnum.Attacker, wallLevel, j);
-                            }
+                            MatrixFrame globalFrame = this._attackerSiegeTowerSpawnEntities[index].GetGlobalFrame();
+                            globalFrame.rotation.MakeUnit();
+                            this.AddSiegeMachine(meleeSiegeEngines[slotIndex].SiegeEngine, globalFrame, BattleSideEnum.Attacker, wallLevel, slotIndex);
                         }
-                        else if (deployedMeleeSiegeEngines[j].SiegeEngine == DefaultSiegeEngineTypes.Ram || deployedMeleeSiegeEngines[j].SiegeEngine == DefaultSiegeEngineTypes.ImprovedRam)
+                    }
+                    else if (meleeSiegeEngines[slotIndex].SiegeEngine == DefaultSiegeEngineTypes.Ram || meleeSiegeEngines[slotIndex].SiegeEngine == DefaultSiegeEngineTypes.ImprovedRam)
+                    {
+                        int index = slotIndex;
+                        if (index >= 0)
                         {
-                            int num2 = j;
-                            if (num2 >= 0)
-                            {
-                                MatrixFrame globalFrame3 = this._attackerBatteringRamSpawnEntities[num2].GetGlobalFrame();
-                                globalFrame3.rotation.MakeUnit();
-                                this.AddSiegeMachine(deployedMeleeSiegeEngines[j].SiegeEngine, globalFrame3, BattleSideEnum.Attacker, wallLevel, j);
-                            }
+                            MatrixFrame globalFrame = this._attackerBatteringRamSpawnEntities[index].GetGlobalFrame();
+                            globalFrame.rotation.MakeUnit();
+                            this.AddSiegeMachine(meleeSiegeEngines[slotIndex].SiegeEngine, globalFrame, BattleSideEnum.Attacker, wallLevel, slotIndex);
                         }
                     }
                 }
-                SiegeEvent.SiegeEngineConstructionProgress[] deployedRangedSiegeEngines2 = party.Settlement.SiegeEvent.GetSiegeEventSide(BattleSideEnum.Defender).SiegeEngines.DeployedRangedSiegeEngines;
-                for (int k = 0; k < deployedRangedSiegeEngines2.Length; k++)
+            }
+            SiegeEvent.SiegeEngineConstructionProgress[] rangedSiegeEngines2 = party.Settlement.SiegeEvent.GetSiegeEventSide(BattleSideEnum.Defender).SiegeEngines.DeployedRangedSiegeEngines;
+            for (int slotIndex = 0; slotIndex < rangedSiegeEngines2.Length; ++slotIndex)
+            {
+                SiegeEvent.SiegeEngineConstructionProgress constructionProgress = rangedSiegeEngines2[slotIndex];
+                if ((constructionProgress != null ? (constructionProgress.IsActive ? 1 : 0) : 0) != 0)
                 {
-                    SiegeEvent.SiegeEngineConstructionProgress siegeEngineConstructionProgress3 = deployedRangedSiegeEngines2[k];
-                    if (siegeEngineConstructionProgress3 != null && siegeEngineConstructionProgress3.IsActive)
-                    {
-                        MatrixFrame globalFrame4 = this._defenderRangedEngineSpawnEntitiesCacheForCurrentLevel[k].GetGlobalFrame();
-                        globalFrame4.rotation.MakeUnit();
-                        this.AddSiegeMachine(deployedRangedSiegeEngines2[k].SiegeEngine, globalFrame4, BattleSideEnum.Defender, wallLevel, k);
-                    }
+                    MatrixFrame globalFrame = this._defenderRangedEngineSpawnEntitiesCacheForCurrentLevel[slotIndex].GetGlobalFrame();
+                    globalFrame.rotation.MakeUnit();
+                    this.AddSiegeMachine(rangedSiegeEngines2[slotIndex].SiegeEngine, globalFrame, BattleSideEnum.Defender, wallLevel, slotIndex);
                 }
-                for (int l = 0; l < 2; l++)
-                {
-                    BattleSideEnum side = (l == 0) ? BattleSideEnum.Attacker : BattleSideEnum.Defender;
-                    MBReadOnlyList<SiegeEvent.SiegeEngineMissile> siegeEngineMissiles = party.Settlement.SiegeEvent.GetSiegeEventSide(side).SiegeEngineMissiles;
-                    for (int m = 0; m < siegeEngineMissiles.Count; m++)
-                    {
-                        this.AddSiegeMissile(siegeEngineMissiles[m].ShooterSiegeEngineType, this.SCStrategicEntity.GetGlobalFrame(), side, m);
-                    }
-                }
+            }
+            for (int index1 = 0; index1 < 2; ++index1)
+            {
+                BattleSideEnum side = index1 == 0 ? BattleSideEnum.Attacker : BattleSideEnum.Defender;
+                MBReadOnlyList<SiegeEvent.SiegeEngineMissile> siegeEngineMissiles = party.Settlement.SiegeEvent.GetSiegeEventSide(side).SiegeEngineMissiles;
+                for (int index2 = 0; index2 < siegeEngineMissiles.Count; ++index2)
+                    this.AddSiegeMissile(siegeEngineMissiles[index2].ShooterSiegeEngineType, this.SCStrategicEntity.GetGlobalFrame(), side, index2);
             }
         }
 
@@ -854,6 +853,8 @@ namespace SeparatistCrisis.Map
                 }
                 if (type.IsRanged)
                 {
+                    InformationManager.DisplayMessage(new InformationMessage($"Ent1: {gameEntity.GetGuid()}, {gameEntity.Name}, {gameEntity.GetGlobalFrame().ToString()}"));
+                    InformationManager.DisplayMessage(new InformationMessage($"Ent2: {gameEntity2.GetGuid()}, {gameEntity2.Name}, {gameEntity2.GetGlobalFrame().ToString()}"));
                     this._siegeRangedMachineEntities.Add(ValueTuple.Create<GameEntity, BattleSideEnum, int, MatrixFrame, GameEntity>(gameEntity, side, slotIndex, globalFrame, gameEntity3));
                     return;
                 }
@@ -1195,7 +1196,7 @@ namespace SeparatistCrisis.Map
         protected void CalculateDataAndDurationsForSiegeMachine(int machineSlotIndex, SiegeEngineType machineType, BattleSideEnum side, SiegeBombardTargets targetType, int targetSlotIndex, out SCSiegeBombardmentData bombardmentData)
         {
             bombardmentData = default(SCSiegeBombardmentData);
-            MatrixFrame shooterGlobalFrame = (side == null) ? this._defenderRangedEngineSpawnEntitiesCacheForCurrentLevel[machineSlotIndex].GetGlobalFrame() : this._attackerRangedEngineSpawnEntities[machineSlotIndex].GetGlobalFrame();
+            MatrixFrame shooterGlobalFrame = (side == BattleSideEnum.Defender) ? this._defenderRangedEngineSpawnEntitiesCacheForCurrentLevel[machineSlotIndex].GetGlobalFrame() : this._attackerRangedEngineSpawnEntities[machineSlotIndex].GetGlobalFrame();
             shooterGlobalFrame.rotation.MakeUnit();
             bombardmentData.ShooterGlobalFrame = shooterGlobalFrame;
             string siegeEngineMapFireAnimationName = Campaign.Current.Models.SiegeEventModel.GetSiegeEngineMapFireAnimationName(machineType, side);
