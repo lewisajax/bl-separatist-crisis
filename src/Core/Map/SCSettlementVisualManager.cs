@@ -406,7 +406,9 @@ namespace SeparatistCrisis.Map
                 }
                 this._defenderMachinesCircleEntities[i].SetGlobalFrame(in matrixFrame2, true);
                 this._defenderMachinesCircleEntities[i].SetVisibilityExcludeParents(true);
-                mapScene.Scene.AddDecalInstance(decal, "editor_set", true);
+
+                // Don't add any defender placament decals since everything is at the centre of the planet
+                // mapScene.Scene.AddDecalInstance(decal, "editor_set", true);
             }
 
             array = settlementVisual.SCGetAttackerBatteringRamSiegeEngineFrames();
@@ -430,7 +432,9 @@ namespace SeparatistCrisis.Map
                 }
                 this._attackerRamMachinesCircleEntities[j].SetGlobalFrame(in matrixFrame4, true);
                 this._attackerRamMachinesCircleEntities[j].SetVisibilityExcludeParents(true);
-                mapScene.Scene.AddDecalInstance(decal2, "editor_set", true);
+                
+                // Don't add any siege decals for the battering ram
+                // mapScene.Scene.AddDecalInstance(decal2, "editor_set", true);
             }
 
             array = settlementVisual.SCGetAttackerTowerSiegeEngineFrames();
@@ -453,7 +457,9 @@ namespace SeparatistCrisis.Map
                 }
                 this._attackerTowerMachinesCircleEntities[k].SetGlobalFrame(in matrixFrame6, true);
                 this._attackerTowerMachinesCircleEntities[k].SetVisibilityExcludeParents(true);
-                mapScene.Scene.AddDecalInstance(decal3, "editor_set", true);
+
+                // Don't add any siege decals for the siege towers
+                // mapScene.Scene.AddDecalInstance(decal3, "editor_set", true);
             }
 
             array = settlementVisual.SCGetAttackerRangedSiegeEngineFrames();
@@ -462,22 +468,62 @@ namespace SeparatistCrisis.Map
             for (int l = 0; l < array.Length; l++)
             {
                 MatrixFrame matrixFrame7 = array[l];
-                this._attackerRangedMachinesCircleEntities[l] = GameEntity.CreateEmpty(mapScene.Scene, true, true, true);
+                GameEntity circleEntity = GameEntity.CreateEmpty(mapScene.Scene, true, true, true);
+                Mesh plane = MeshBuilder.CreateUnitMesh();
+                // plane.SetMaterial(Material.GetDefaultMaterial());
+
+                // Can't get the decal override working so we'll use a material for now. Would rather the decal though. 
+                Material decalMat = Material.GetFromResource("sc_mat_siege_ranged").CreateCopy();
+                plane.SetMaterial(decalMat);
+
+                circleEntity.AddMesh(plane);
+
+                this._attackerRangedMachinesCircleEntities[l] = circleEntity;
                 this._attackerRangedMachinesCircleEntities[l].Name = "aRangedMachineCircle_" + l;
+
+                // A copy of the native decal with render_on_terrain turned off and render_on_object enabled
                 Decal decal4 = Decal.CreateDecal(null);
                 decal4.SetMaterial(Material.GetFromResource("decal_siege_ranged"));
                 decal4.SetFactor1Linear(4287064638U);
                 this._attackerRangedMachinesCircleEntities[l].AddComponent(decal4);
+
                 MatrixFrame matrixFrame8 = matrixFrame7;
                 if (this._isNewDecalScaleImplementationEnabled)
                 {
                     Vec3 vec = new Vec3(0.38f, 0.38f, 0.38f, -1f);
                     matrixFrame8.Scale(in vec);
                 }
+
                 this._attackerRangedMachinesCircleEntities[l].SetGlobalFrame(in matrixFrame8, true);
                 this._attackerRangedMachinesCircleEntities[l].SetVisibilityExcludeParents(true);
-                mapScene.Scene.AddDecalInstance(decal4, "editor_set", true);
+                // mapScene.Scene.AddDecalInstance(decal4, "editor_set", true);
             }
+
+            // We need to move this into a class that actually handles the siege engines
+            this.InitMeleeSiegeEngines();
+        }
+
+        protected void InitMeleeSiegeEngines()
+        {
+            Settlement besiegedSettlement = PlayerSiege.PlayerSiegeEvent.BesiegedSettlement;
+            SCSettlementVisual settlementVisual = (SCSettlementVisual)this.GetSettlementVisual(besiegedSettlement);
+            SiegeEvent siegeEvent = settlementVisual.MapEntity.Settlement.SiegeEvent;
+
+            // Ram
+            // Need to test if the ram is always placed on the 0 index
+            float batteringRamHitPoints = Campaign.Current.Models.SiegeEventModel.GetSiegeEngineHitPoints(siegeEvent, DefaultSiegeEngineTypes.Ram, siegeEvent.BesiegerCamp.BattleSide);
+            SiegeEvent.SiegeEngineConstructionProgress batteringRam = new SiegeEvent.SiegeEngineConstructionProgress(DefaultSiegeEngineTypes.Ram, 1f, batteringRamHitPoints);
+            siegeEvent.BesiegerCamp.SiegeEngines.DeploySiegeEngineAtIndex(batteringRam, 0);
+
+            // 2 Towers
+            // Can an attacker have less/more than 2 siege tower placements?
+            float towerHitPoints = Campaign.Current.Models.SiegeEventModel.GetSiegeEngineHitPoints(siegeEvent, DefaultSiegeEngineTypes.SiegeTower, siegeEvent.BesiegerCamp.BattleSide);
+            SiegeEvent.SiegeEngineConstructionProgress siegeTowerOne = new SiegeEvent.SiegeEngineConstructionProgress(DefaultSiegeEngineTypes.SiegeTower, 1f, towerHitPoints);
+            SiegeEvent.SiegeEngineConstructionProgress siegeTowerTwo = new SiegeEvent.SiegeEngineConstructionProgress(DefaultSiegeEngineTypes.SiegeTower, 1f, towerHitPoints);
+            siegeEvent.BesiegerCamp.SiegeEngines.DeploySiegeEngineAtIndex(siegeTowerOne, 1);
+            siegeEvent.BesiegerCamp.SiegeEngines.DeploySiegeEngineAtIndex(siegeTowerTwo, 2);
+
+            siegeEvent.BesiegedSettlement.Party.SetVisualAsDirty();
         }
 
         protected void HandleSiegeEngineHover(UIntPtr newID)

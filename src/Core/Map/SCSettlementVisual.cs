@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.ComponentInterfaces;
 using TaleWorlds.CampaignSystem.Extensions;
 using TaleWorlds.CampaignSystem.Map;
 using TaleWorlds.CampaignSystem.MapEvents;
@@ -23,6 +24,7 @@ using TaleWorlds.Core.ViewModelCollection.Information;
 using TaleWorlds.Engine;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
+using static TaleWorlds.CampaignSystem.Siege.SiegeEvent;
 
 namespace SeparatistCrisis.Map
 {
@@ -148,6 +150,16 @@ namespace SeparatistCrisis.Map
                     if (siegeEventSide.SiegeEngineMissiles.Count > item2)
                     {
                         SiegeEvent.SiegeEngineMissile siegeEngineMissile = siegeEventSide.SiegeEngineMissiles[item2];
+
+                        // If the attacking siege engine wants to shoot at a wall but there are no walls to be had
+                        if (siegeEngineMissile.TargetType == SiegeBombardTargets.Wall && this._defenderBreachableWallEntitiesCacheForCurrentLevel.Length <= 0)
+                        {
+                            // This does cause the problem of the siege engine not shooting anything and just waiting until it's next target, which could be another wall
+                            // We need to do something with the siegeEvent to change the target
+                            item.SetVisibilityExcludeParents(flag);
+                            continue;
+                        }
+
                         double toHours2 = siegeEngineMissile.CollisionTime.ToHours;
                         SCSiegeBombardmentData siegeBombardmentData;
                         this.CalculateDataAndDurationsForSiegeMachine(siegeEngineMissile.ShooterSlotIndex, siegeEngineMissile.ShooterSiegeEngineType, siegeEventSide.BattleSide, siegeEngineMissile.TargetType, siegeEngineMissile.TargetSlotIndex, out siegeBombardmentData);
@@ -230,6 +242,7 @@ namespace SeparatistCrisis.Map
                                         goto IL_66E;
                                     }
                                 }
+
                                 if (toHours < toHours2 - (double)(siegeBombardmentData.TotalDuration - siegeBombardmentData.RotationDuration - siegeBombardmentData.ReloadDuration - siegeBombardmentData.AimingDuration - siegeBombardmentData.FireDuration) && !flag3 && siegeEventSide.SiegeEngines.DeployedRangedSiegeEngines[siegeEngineMissile.ShooterSlotIndex] != null && siegeEventSide.SiegeEngines.DeployedRangedSiegeEngines[siegeEngineMissile.ShooterSlotIndex].SiegeEngine == siegeEngineMissile.ShooterSiegeEngineType)
                                 {
                                     foreach (ValueTuple<GameEntity, BattleSideEnum, int, MatrixFrame, GameEntity> valueTuple3 in this._siegeRangedMachineEntities)
@@ -269,6 +282,13 @@ namespace SeparatistCrisis.Map
                         string siegeEngineMapFireAnimationName = Campaign.Current.Models.SiegeEventModel.GetSiegeEngineMapFireAnimationName(siegeEngine, item6);
                         string siegeEngineMapReloadAnimationName = Campaign.Current.Models.SiegeEventModel.GetSiegeEngineMapReloadAnimationName(siegeEngine, item6);
                         SiegeEvent.RangedSiegeEngine rangedSiegeEngine = base.MapEntity.Settlement.SiegeEvent.GetSiegeEventSide(item6).SiegeEngines.DeployedRangedSiegeEngines[item7].RangedSiegeEngine;
+
+                        // Same as above. If the attacking siege engine wants to shoot at a wall but there are no walls to be had
+                        if (rangedSiegeEngine.CurrentTargetType == SiegeBombardTargets.Wall && this._defenderBreachableWallEntitiesCacheForCurrentLevel.Length <= 0)
+                        {
+                            continue;
+                        }
+
                         SCSiegeBombardmentData siegeBombardmentData2;
                         this.CalculateDataAndDurationsForSiegeMachine(item7, siegeEngine, item6, rangedSiegeEngine.CurrentTargetType, rangedSiegeEngine.CurrentTargetIndex, out siegeBombardmentData2);
                         MatrixFrame shooterGlobalFrame = siegeBombardmentData2.ShooterGlobalFrame;
@@ -277,6 +297,10 @@ namespace SeparatistCrisis.Map
                             Vec3 vec6;
                             if (rangedSiegeEngine.PreviousDamagedTargetType == SiegeBombardTargets.Wall)
                             {
+                                // It can still reach here
+                                if (this._defenderBreachableWallEntitiesCacheForCurrentLevel.Length <= 0)
+                                    continue;
+
                                 vec6 = this._defenderBreachableWallEntitiesCacheForCurrentLevel[rangedSiegeEngine.PreviousTargetIndex].GlobalPosition;
                             }
                             else
@@ -606,38 +630,44 @@ namespace SeparatistCrisis.Map
             {
                 return;
             }
-            for (int i = 0; i < this._attackerBatteringRamSpawnEntities.Length; i++)
-            {
-                MatrixFrame globalFrame = this._attackerBatteringRamSpawnEntities[i].GetGlobalFrame();
-                if (globalFrame.NearlyEquals(engineFrame, 1E-05f))
-                {
-                    if (this._hoveredSiegeEntityFrame != globalFrame)
-                    {
-                        SiegeEvent.SiegeEngineConstructionProgress engineInProgress = PlayerSiege.PlayerSiegeEvent.GetSiegeEventSide(BattleSideEnum.Attacker).SiegeEngines.DeployedMeleeSiegeEngines[i];
-                        InformationManager.ShowTooltip(typeof(List<TooltipProperty>), new object[]
-                        {
-                            SandBoxUIHelper.GetSiegeEngineInProgressTooltip(engineInProgress)
-                        });
-                    }
-                    return;
-                }
-            }
-            for (int j = 0; j < this._attackerSiegeTowerSpawnEntities.Length; j++)
-            {
-                MatrixFrame globalFrame2 = this._attackerSiegeTowerSpawnEntities[j].GetGlobalFrame();
-                if (globalFrame2.NearlyEquals(engineFrame, 1E-05f))
-                {
-                    if (this._hoveredSiegeEntityFrame != globalFrame2)
-                    {
-                        SiegeEvent.SiegeEngineConstructionProgress engineInProgress2 = PlayerSiege.PlayerSiegeEvent.GetSiegeEventSide(BattleSideEnum.Attacker).SiegeEngines.DeployedMeleeSiegeEngines[this._attackerBatteringRamSpawnEntities.Length + j];
-                        InformationManager.ShowTooltip(typeof(List<TooltipProperty>), new object[]
-                        {
-                            SandBoxUIHelper.GetSiegeEngineInProgressTooltip(engineInProgress2)
-                        });
-                    }
-                    return;
-                }
-            }
+
+            // Hides the information popup when hovering over a battering ram or siege tower
+            // We disable the click for the production menu in SCMapSiegeVM
+            // We'll most likely add these back in when we implement whatever our siege feature is gonna be
+            //for (int i = 0; i < this._attackerBatteringRamSpawnEntities.Length; i++)
+            //{
+            //    MatrixFrame globalFrame = this._attackerBatteringRamSpawnEntities[i].GetGlobalFrame();
+            //    if (globalFrame.NearlyEquals(engineFrame, 1E-05f))
+            //    {
+            //        if (this._hoveredSiegeEntityFrame != globalFrame)
+            //        {
+            //            SiegeEvent.SiegeEngineConstructionProgress engineInProgress = PlayerSiege.PlayerSiegeEvent.GetSiegeEventSide(BattleSideEnum.Attacker).SiegeEngines.DeployedMeleeSiegeEngines[i];
+            //            InformationManager.ShowTooltip(typeof(List<TooltipProperty>), new object[]
+            //            {
+            //                SandBoxUIHelper.GetSiegeEngineInProgressTooltip(engineInProgress)
+            //            });
+            //        }
+            //        return;
+            //    }
+            //}
+
+            //for (int j = 0; j < this._attackerSiegeTowerSpawnEntities.Length; j++)
+            //{
+            //    MatrixFrame globalFrame2 = this._attackerSiegeTowerSpawnEntities[j].GetGlobalFrame();
+            //    if (globalFrame2.NearlyEquals(engineFrame, 1E-05f))
+            //    {
+            //        if (this._hoveredSiegeEntityFrame != globalFrame2)
+            //        {
+            //            SiegeEvent.SiegeEngineConstructionProgress engineInProgress2 = PlayerSiege.PlayerSiegeEvent.GetSiegeEventSide(BattleSideEnum.Attacker).SiegeEngines.DeployedMeleeSiegeEngines[this._attackerBatteringRamSpawnEntities.Length + j];
+            //            InformationManager.ShowTooltip(typeof(List<TooltipProperty>), new object[]
+            //            {
+            //                SandBoxUIHelper.GetSiegeEngineInProgressTooltip(engineInProgress2)
+            //            });
+            //        }
+            //        return;
+            //    }
+            //}
+
             for (int k = 0; k < this._attackerRangedEngineSpawnEntities.Length; k++)
             {
                 MatrixFrame globalFrame3 = this._attackerRangedEngineSpawnEntities[k].GetGlobalFrame();
@@ -830,6 +860,7 @@ namespace SeparatistCrisis.Map
         {
             string siegeEngineMapPrefabName = Campaign.Current.Models.SiegeEventModel.GetSiegeEngineMapPrefabName(type, wallLevel, side);
             GameEntity gameEntity = GameEntity.Instantiate(this.MapScene, siegeEngineMapPrefabName, true, true, "");
+
             if (gameEntity != null)
             {
                 this.SCStrategicEntity.AddChild(gameEntity, false);
@@ -840,6 +871,7 @@ namespace SeparatistCrisis.Map
                 gameEntity2.SetGlobalFrame(in matrixFrame2, true);
                 List<WeakGameEntity> list = new List<WeakGameEntity>();
                 gameEntity.WeakEntity.GetChildrenRecursive(ref list);
+
                 GameEntity gameEntity3 = null;
                 if (list.Any((WeakGameEntity entity) => entity.HasTag("siege_machine_mapicon_skeleton")))
                 {
@@ -851,13 +883,58 @@ namespace SeparatistCrisis.Map
                         gameEntity3.Skeleton.SetAnimationAtChannel(siegeEngineMapFireAnimationName, 0, 1f, 0f, 1f);
                     }
                 }
-                if (type.IsRanged)
+
+                if (type != null && type.IsRanged)
                 {
-                    InformationManager.DisplayMessage(new InformationMessage($"Ent1: {gameEntity.GetGuid()}, {gameEntity.Name}, {gameEntity.GetGlobalFrame().ToString()}"));
-                    InformationManager.DisplayMessage(new InformationMessage($"Ent2: {gameEntity2.GetGuid()}, {gameEntity2.Name}, {gameEntity2.GetGlobalFrame().ToString()}"));
+                    if (side == BattleSideEnum.Defender)
+                    {
+                        // Turns it invisible
+                        // gameEntity.SetMaterialForAllMeshes(Material.GetFromResource("editor_gizmo").CreateCopy());
+                        gameEntity3?.SetMaterialForAllMeshes(Material.GetFromResource("editor_gizmo").CreateCopy());
+                    }
+
+                    // TEMPORARY. We need to override the DefaultSiegeEventModel either way so we'll add this in there when we get to it
+                    // Changes the attacker's front row meshes to be the venator ship.
+                    // What is it? It's temporary
+                    if (side == BattleSideEnum.Attacker)
+                    {
+                        // We'll make the normal siege engine invisible
+                        // We let the animations run instead of having to go into the other methods to change stuff for it
+                        gameEntity3?.SetMaterialForAllMeshes(Material.GetFromResource("editor_gizmo").CreateCopy());
+
+                        // Then we just add our ship to it. This will be visible
+                        string venatorMetaName = "egnine";
+                        Mesh venatorMesh = Mesh.GetFromResource(venatorMetaName).CreateCopy();
+
+                        // We rotate the mesh instead of the gameentity, as the OnTick rotates the entity to aim at targets
+                        MatrixFrame m = venatorMesh.GetLocalFrame();
+                        m.rotation.ApplyScaleLocal(venatorMesh.GetLocalFrame().GetScale() * .05f);
+                        m.rotation.RotateAboutUp(-45f);
+                        venatorMesh.SetLocalFrame(m);
+
+                        GameEntity venatorEntity = GameEntity.CreateEmpty(this.MapScene, false, false, false);
+
+                        //MatrixFrame m = venatorEntity.GetFrame();
+                        //m.rotation.ApplyScaleLocal(venatorEntity.GetLocalScale() * .05f);
+                        //m.rotation.RotateAboutSide(90f);
+                        //venatorEntity.SetFrame(ref m);
+
+                        venatorEntity.AddMesh(venatorMesh);
+                        gameEntity.AddChild(venatorEntity);
+                    }
+
                     this._siegeRangedMachineEntities.Add(ValueTuple.Create<GameEntity, BattleSideEnum, int, MatrixFrame, GameEntity>(gameEntity, side, slotIndex, globalFrame, gameEntity3));
                     return;
                 }
+
+                // Turn the siege tower and ram invisible.
+                // This doesn't affect it but we'll leave this here anyways
+                gameEntity.SetMaterialForAllMeshes(Material.GetFromResource("editor_gizmo").CreateCopy());
+
+                // It seems that SetMaterialForAllMeshes doesn't affect any child entities
+                // It's the same structure for both the ram and the tower
+                gameEntity.GetChild(0).GetChild(0)?.SetMaterialForAllMeshes(Material.GetFromResource("editor_gizmo").CreateCopy());
+
                 this._siegeMeleeMachineEntities.Add(ValueTuple.Create<GameEntity, BattleSideEnum, int, MatrixFrame, GameEntity>(gameEntity, side, slotIndex, globalFrame, gameEntity3));
             }
         }

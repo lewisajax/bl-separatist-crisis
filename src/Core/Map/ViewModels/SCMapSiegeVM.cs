@@ -29,18 +29,21 @@ namespace SeparatistCrisis.Map.ViewModels
             this._mapCamera = mapCamera;
             this.PointsOfInterest = new MBBindingList<MapSiegePOIVM>();
             this._poiDistanceComparer = new MapSiegeVM.SiegePOIDistanceComparer();
-            for (int i = 0; i < batteringRamFrames.Length; i++)
-            {
-                this.PointsOfInterest.Add(new MapSiegePOIVM(MapSiegePOIVM.POIType.AttackerRamSiegeMachine, batteringRamFrames[i], this._mapCamera, i, new Action<MapSiegePOIVM>(this.OnPOISelection)));
-            }
+            
+            // Omit the battering ram and siege POIs so that we can't click where the invisible siege decal is to open the production popup
+            
+            //for (int i = 0; i < batteringRamFrames.Length; i++)
+            //{
+            //    this.PointsOfInterest.Add(new MapSiegePOIVM(MapSiegePOIVM.POIType.AttackerRamSiegeMachine, batteringRamFrames[i], this._mapCamera, i, new Action<MapSiegePOIVM>(this.OnPOISelection)));
+            //}
             for (int j = 0; j < rangedSiegeEngineFrames.Length; j++)
             {
                 this.PointsOfInterest.Add(new MapSiegePOIVM(MapSiegePOIVM.POIType.AttackerRangedSiegeMachine, rangedSiegeEngineFrames[j], this._mapCamera, j, new Action<MapSiegePOIVM>(this.OnPOISelection)));
             }
-            for (int k = 0; k < towerSiegeEngineFrames.Length; k++)
-            {
-                this.PointsOfInterest.Add(new MapSiegePOIVM(MapSiegePOIVM.POIType.AttackerTowerSiegeMachine, towerSiegeEngineFrames[k], this._mapCamera, batteringRamFrames.Length + k, new Action<MapSiegePOIVM>(this.OnPOISelection)));
-            }
+            //for (int k = 0; k < towerSiegeEngineFrames.Length; k++)
+            //{
+            //    this.PointsOfInterest.Add(new MapSiegePOIVM(MapSiegePOIVM.POIType.AttackerTowerSiegeMachine, towerSiegeEngineFrames[k], this._mapCamera, batteringRamFrames.Length + k, new Action<MapSiegePOIVM>(this.OnPOISelection)));
+            //}
             for (int l = 0; l < defenderSiegeEngineFrames.Length; l++)
             {
                 this.PointsOfInterest.Add(new MapSiegePOIVM(MapSiegePOIVM.POIType.DefenderSiegeMachine, defenderSiegeEngineFrames[l], this._mapCamera, l, new Action<MapSiegePOIVM>(this.OnPOISelection)));
