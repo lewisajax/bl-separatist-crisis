@@ -1,46 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SettlementGroups>
-	<SettlementGroup id="group_9" name="Group9" primaryNode="town_GR1" radius="50" posX="858.46" posY="1189.54" text="Group9">
+	<SettlementGroup id="group_GR1_1" name="GroupGR1_1" primaryNode="town_GR1" radius="85" posX="872.66" posY="1158.66" text="Coruscant">
 		<Children>
 			<Node id="town_GR1" />
 			<Node id="village_GR1_1" />
 			<Node id="village_GR1_2" />
 			<Node id="village_GR1_3" />
+			<Node id="village_GR1_4" />
+			<Node id="village_GR1_5" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_10" name="Group10" primaryNode="town_NS1" radius="55" posX="1202.29" posY="1472.72" text="Group10">
+	<SettlementGroup id="group_GR1_2" name="GroupGR1_2" primaryNode="town_GR1" radius="60" posX="829.715" posY="1208.998" text="Coruscant">
+		<Children>
+			<Node id="town_GR1" />
+			<Node id="village_GR1_1" />
+			<Node id="village_GR1_2" />
+			<Node id="village_GR1_3" />
+			<Node id="village_GR1_4" />
+			<Node id="village_GR1_5" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_NS1" name="GroupNS1" primaryNode="town_NS1" radius="75" posX="1225.33" posY="1392" text="Mandalore">
 		<Children>
 			<Node id="town_NS1" />
 			<Node id="village_NS1_1" />
 			<Node id="village_NS1_2" />
-			<Node id="village_NS1_3" />
+			<Node id="castle_DW1" />
+			<Node id="castle_village_DW1_1" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_11" name="Group11" primaryNode="town_CS1" radius="80" posX="1585.91" posY="978.10" text="Group11">
+	<SettlementGroup id="group_HC1" name="GroupHC1" primaryNode="town_HC1" radius="175" posX="1557.33" posY="927.33" text="Nal Hutta">
 		<Children>
-			<Node id="town_CS1" />
-			<Node id="village_CS1_1" />
-			<Node id="village_CS1_2" />
-			<Node id="town_CS2" />
-			<Node id="village_CS2_1" />
-			<Node id="village_CS2_2" />
+			<Node id="town_HC1" />
+			<Node id="village_HC1_1" />
+			<Node id="village_HC1_2" />
+			<Node id="village_HC1_3" />
+			<Node id="town_HC2" />
+			<Node id="village_HC2_1" />
+			<Node id="village_HC2_2" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_12" name="Group12" primaryNode="town_DW1" radius="40" posX="1216.00" posY="1316.84" text="Group12">
+	<SettlementGroup id="group_SA_GN1" name="GroupSA_GN1" primaryNode="town_SA_GN1" radius="100" posX="1496.67" posY="468" text="Geonosis">
 		<Children>
-			<Node id="town_DW1" />
-			<Node id="village_DW1_1" />
-			<Node id="village_DW1_2" />
-		</Children>
-	</SettlementGroup>
-	<SettlementGroup id="group_13" name="Group13" primaryNode="town_SA1" radius="70" posX="1485.52" posY="503.81" text="Group13">
-		<Children>
-			<Node id="town_SA1" />
-			<Node id="village_SA1_1" />
-			<Node id="village_SA1_2" />
-			<Node id="town_SA2" />
-			<Node id="village_SA2_1" />
-			<Node id="village_SA2_2" />
+			<Node id="town_SA_GN1" />
+			<Node id="village_SA_GN1_1" />
+			<Node id="village_SA_GN1_2" />
+			<Node id="village_SA_GN1_3" />
 		</Children>
 	</SettlementGroup>
 </SettlementGroups>

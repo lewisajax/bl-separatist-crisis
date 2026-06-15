@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Settlements>
 	<!-- Republic -->
-	<Settlement id="town_GR1" name="{=Settlements.Settlement.name.town_GR1}Argoron" owner="Faction.galactic_senate" posX="872.65" posY="1158.67" culture="Culture.republic" gate_posX="871.804" gate_posY="1158.67" text="{=LqPJY4s9}The city of Argoron sits where the cold, slow moving Nevys River meets Lake Laconis. This was once the land of the Laconians, who saw the Empire as a protector against the more warlike Palaic peoples. They welcomed and intermarried with imperial settlers and their chiefs joined the Senate, and their old language and customs faded away.">
+	<Settlement id="town_GR1" name="{=Settlements.Settlement.name.town_GR1}Argoron" owner="Faction.galactic_senate" posX="872.67" posY="1158.67" culture="Culture.republic" gate_posX="871.692" gate_posY="1158.672" text="{=LqPJY4s9}The city of Argoron sits where the cold, slow moving Nevys River meets Lake Laconis. This was once the land of the Laconians, who saw the Empire as a protector against the more warlike Palaic peoples. They welcomed and intermarried with imperial settlers and their chiefs joined the Senate, and their old language and customs faded away.">
 		<Components>
 			<Town id="town_comp_GR1" is_castle="false" level="2" background_crop_position="0.0" background_mesh="menu_empire_seaside_1" wait_mesh="wait_empire_town" gate_rotation="0.408" prosperity="2800">
 				<Buildings>
@@ -36,7 +36,7 @@
 			<Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_GR1_1" name="{=Settlements.Settlement.name.town_GR1_1}Alatys" posX="876.09" posY="1129.28" culture="Culture.republic" text="{=Settlements.Settlement.text.town_GR1_1}Alatys lies on the flat southern end of Lake Laconis, on delta lowlands formed by the River Nevys. The waters of the lake, which are very shallow and muddy here, are well-stocked with flounder and crayfish, while trout can be fished in the Nevys upstream.">
+	<Settlement id="village_GR1_1" name="{=Settlements.Settlement.name.town_GR1_1}Alatys" posX="875" posY="1125.67" culture="Culture.republic" text="{=Settlements.Settlement.text.town_GR1_1}Alatys lies on the flat southern end of Lake Laconis, on delta lowlands formed by the River Nevys. The waters of the lake, which are very shallow and muddy here, are well-stocked with flounder and crayfish, while trout can be fished in the Nevys upstream.">
 		<Components>
 			<Village id="village_comp_GR1_1" village_type="VillageType.fisherman" hearth="646" gate_rotation="0.008" bound="Settlement.town_GR1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
 		</Components>
@@ -49,7 +49,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_GR1_2" name="{=Settlements.Settlement.name.town_GR1_2}Hetania" posX="888.28" posY="1169.28" culture="Culture.republic" text="{=Settlements.Settlement.text.town_GR1_2}Hetania sits beneath a spur on the far northeastern bend of the Dryatic mountains. As in many villages around here, the foresters of this region still speak the Palaic languages of the tribes who lived here before the Empire came.">
+	<Settlement id="village_GR1_2" name="{=Settlements.Settlement.name.town_GR1_2}Hetania" posX="839" posY="1200.33" culture="Culture.republic" text="{=Settlements.Settlement.text.town_GR1_2}Hetania sits beneath a spur on the far northeastern bend of the Dryatic mountains. As in many villages around here, the foresters of this region still speak the Palaic languages of the tribes who lived here before the Empire came.">
 		<Components>
 			<Village id="village_comp_GR1_2" village_type="VillageType.lumberjack" hearth="346" gate_rotation="0.008" bound="Settlement.town_GR1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
 		</Components>
@@ -62,7 +62,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_GR1_3" name="{=Settlements.Settlement.name.town_GR1_3}Hetania" posX="834.53" posY="1140.22" culture="Culture.republic" text="{=Settlements.Settlement.text.town_GR1_3}Hetania sits beneath a spur on the far northeastern bend of the Dryatic mountains. As in many villages around here, the foresters of this region still speak the Palaic languages of the tribes who lived here before the Empire came.">
+	<Settlement id="village_GR1_3" name="{=Settlements.Settlement.name.town_GR1_3}Hetania" posX="837" posY="1139.67" culture="Culture.republic" text="{=Settlements.Settlement.text.town_GR1_3}Hetania sits beneath a spur on the far northeastern bend of the Dryatic mountains. As in many villages around here, the foresters of this region still speak the Palaic languages of the tribes who lived here before the Empire came.">
 		<Components>
 			<Village id="village_comp_GR1_3" village_type="VillageType.lumberjack" hearth="346" gate_rotation="0.008" bound="Settlement.town_GR1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
 		</Components>
@@ -75,8 +75,34 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
+	<Settlement id="village_GR1_4" name="{=Settlements.Settlement.name.town_GR1_4}Hetania" posX="835.33" posY="1218.33" culture="Culture.republic" text="{=Settlements.Settlement.text.town_GR1_3}Hetania sits beneath a spur on the far northeastern bend of the Dryatic mountains. As in many villages around here, the foresters of this region still speak the Palaic languages of the tribes who lived here before the Empire came.">
+		<Components>
+			<Village id="village_comp_GR1_4" village_type="VillageType.lumberjack" hearth="346" gate_rotation="0.008" bound="Settlement.town_GR1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_f" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="village_GR1_5" name="{=Settlements.Settlement.name.town_GR1_5}Hetania" posX="815.33" posY="1210" culture="Culture.republic" text="{=Settlements.Settlement.text.town_GR1_3}Hetania sits beneath a spur on the far northeastern bend of the Dryatic mountains. As in many villages around here, the foresters of this region still speak the Palaic languages of the tribes who lived here before the Empire came.">
+		<Components>
+			<Village id="village_comp_GR1_5" village_type="VillageType.lumberjack" hearth="346" gate_rotation="0.008" bound="Settlement.town_GR1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_f" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
 	<!-- Neutral Systems -->
-	<Settlement id="town_NS1" name="{=Settlements.Settlement.name.town_NS1}Ortysia" owner="Faction.new_mandalorians" posX="1221.87" posY="1460.62" culture="Culture.new_mandalorians" gate_posX="1221.162" gate_posY="1460.622" text="{=JhBSnWAe}Ortysia, named for the quails who inhabit the nearby coastal marshes, was the first Calradian colony on the shores of the Perassic Sea. In its early centuries, it fell under the authority of the Kannic city-state of Quyaz, but the empire's expansion soon united the colony with its mother republic. For centuries, sailors coming from the pirate-infested islands of the Bay of Charas gave thanks when they saw its towers looming through the haze of the western Perassic, signalling a return to safe imperial-patrolled waters.">
+	<Settlement id="town_NS1" name="{=Settlements.Settlement.name.town_NS1}Ortysia" owner="Faction.new_mandalorians" posX="1225.43" posY="1392" culture="Culture.new_mandalorians" gate_posX="1223.613" gate_posY="1392.002" text="{=JhBSnWAe}Ortysia, named for the quails who inhabit the nearby coastal marshes, was the first Calradian colony on the shores of the Perassic Sea. In its early centuries, it fell under the authority of the Kannic city-state of Quyaz, but the empire's expansion soon united the colony with its mother republic. For centuries, sailors coming from the pirate-infested islands of the Bay of Charas gave thanks when they saw its towers looming through the haze of the western Perassic, signalling a return to safe imperial-patrolled waters.">
 		<Components>
 			<Town id="town_comp_NS1" is_castle="false" level="2" background_crop_position="0.45" background_mesh="menu_empire_seaside_2" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="5600">
 				<Buildings>
@@ -111,7 +137,7 @@
 			<Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_NS1_1" name="{=Settlements.Settlement.name.village_NS1_1}Arpotis" posX="1187.18" posY="1477.5" culture="Culture.new_mandalorians" text="{=Settlements.Settlement.text.village_NS1_1}Arpotis sits on a high bluff overlooking the confluences of the Aminys, Gavys and Zeos rivers. The sides of the hills are terraced to grow wheat, with cisterns to catch the rain blowing up from the sea.">
+	<Settlement id="village_NS1_1" name="{=Settlements.Settlement.name.village_NS1_1}Arpotis" posX="1178.67" posY="1384.67" culture="Culture.new_mandalorians" text="{=Settlements.Settlement.text.village_NS1_1}Arpotis sits on a high bluff overlooking the confluences of the Aminys, Gavys and Zeos rivers. The sides of the hills are terraced to grow wheat, with cisterns to catch the rain blowing up from the sea.">
 		<Components>
 			<Village id="village_comp_NS1_1" village_type="VillageType.wheat_farm" hearth="825" gate_rotation="0.408" bound="Settlement.town_NS1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
 		</Components>
@@ -124,7 +150,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_NS1_2" name="{=Settlements.Settlement.name.village_NS1_2}Vinela" posX="1179.06" posY="1509.68" culture="Culture.new_mandalorians" text="{=Settlements.Settlement.text.village_NS1_2}Vinela sits beneath the waterfalls where the Aminys river rushes down to join the Perassic Sea. Villagers collect salt from the sea in the shadow of coastal cliffs.">
+	<Settlement id="village_NS1_2" name="{=Settlements.Settlement.name.village_NS1_2}Vinela" posX="1224" posY="1375.33" culture="Culture.new_mandalorians" text="{=Settlements.Settlement.text.village_NS1_2}Vinela sits beneath the waterfalls where the Aminys river rushes down to join the Perassic Sea. Villagers collect salt from the sea in the shadow of coastal cliffs.">
 		<Components>
 			<Village id="village_comp_NS1_2" village_type="VillageType.salt_mine" hearth="655" bound="Settlement.town_NS1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
 		</Components>
@@ -137,23 +163,10 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_NS1_3" name="{=Settlements.Settlement.name.village_NS1_3}Vinela" posX="1171.56" posY="1451.56" culture="Culture.new_mandalorians" text="{=Settlements.Settlement.text.village_NS1_3}Vinela sits beneath the waterfalls where the Aminys river rushes down to join the Perassic Sea. Villagers collect salt from the sea in the shadow of coastal cliffs.">
-		<Components>
-			<Village id="village_comp_NS1_3" village_type="VillageType.salt_mine" hearth="655" bound="Settlement.town_NS1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
-		</Components>
-		<Locations complex_template="LocationComplexTemplate.village_complex">
-			<Location id="village_center" scene_name="empire_village_x" />
-		</Locations>
-		<CommonAreas>
-			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
-			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
-			<Area type="Bog" name="{=iXA5SttU}Bog" />
-		</CommonAreas>
-	</Settlement>
 	<!-- Separatists -->
-	<Settlement id="town_SA1" name="{=Settlements.Settlement.name.town_SA1}Razih" owner="Faction.separatist_council" posX="1489.06" posY="535.31" culture="Culture.separatist" gate_posX="1488.352" gate_posY="535.312" text="{=jXBnf2hQ}Razih is said to be the base from which Kannic explorers set forth to colonize the shores of the Perassic Sea in the centuries before the coming of the empire, the prows of their ships decorated with the intertwined vine leaves of the Kannic goddess of wealth, wine, love and war. Today, the Kannic tongue has been replaced by Nahasawi dialects and their religion is all but forgotten, but the symbol lives on, said to protect those who risk all for the sake of gain or glory.">
+	<Settlement id="town_SA_GN1" name="{=Settlements.Settlement.name.town_SA_GN1}Geonosis" owner="Faction.separatist_council" posX="1496.67" posY="468" culture="Culture.separatist" gate_posX="1495.692" gate_posY="468.002" text="{=jXBnf2hQ}Razih is said to be the base from which Kannic explorers set forth to colonize the shores of the Perassic Sea in the centuries before the coming of the empire, the prows of their ships decorated with the intertwined vine leaves of the Kannic goddess of wealth, wine, love and war. Today, the Kannic tongue has been replaced by Nahasawi dialects and their religion is all but forgotten, but the symbol lives on, said to protect those who risk all for the sake of gain or glory.">
 		<Components>
-			<Town id="town_comp_SA1" is_castle="false" level="1" background_crop_position="0.241" background_mesh="menu_aserai_1" wait_mesh="wait_aserai_town" gate_rotation="0.208" prosperity="4500">
+			<Town id="town_comp_SA_GN1" is_castle="false" level="1" background_crop_position="0.241" background_mesh="menu_aserai_1" wait_mesh="wait_aserai_town" gate_rotation="0.208" prosperity="4500">
 				<Buildings>
 					<Building id="building_castle_fortifications" level="1" />
 					<Building id="building_castle_barracks" level="0" />
@@ -186,9 +199,9 @@
 			<Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_SA1_1" name="{=Settlements.Settlement.name.village_SA1_1}Qablab" posX="1519.06" posY="504.06" culture="Culture.separatist" text="{=Settlements.Settlement.text.village_SA1_1}Qablab sits near a broad bay on the southern coast of the Perassic Sea. The low-lying coastline is well-suited to the construction of salt pans.">
+	<Settlement id="village_SA_GN1_1" name="{=Settlements.Settlement.name.village_SA_GN1_1}Qablab" posX="1464.67" posY="438.67" culture="Culture.separatist" text="{=Settlements.Settlement.text.village_SA1_1}Qablab sits near a broad bay on the southern coast of the Perassic Sea. The low-lying coastline is well-suited to the construction of salt pans.">
 		<Components>
-			<Village id="village_comp_SA1_1" village_type="VillageType.salt_mine" hearth="502" gate_rotation="0.208" bound="Settlement.town_SA1" background_crop_position="0.308" background_mesh="menu_aserai_village_3" wait_mesh="wait_aserai_village" castle_background_mesh="gui_bg_castle_aserai" />
+			<Village id="village_comp_SA_GN1_1" village_type="VillageType.salt_mine" hearth="502" gate_rotation="0.208" bound="Settlement.town_SA_GN1" background_crop_position="0.308" background_mesh="menu_aserai_village_3" wait_mesh="wait_aserai_village" castle_background_mesh="gui_bg_castle_aserai" />
 		</Components>
 		<Locations complex_template="LocationComplexTemplate.village_complex">
 			<Location id="village_center" scene_name="aserai_village_l" />
@@ -199,57 +212,9 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_SA1_2" name="{=Settlements.Settlement.name.village_SA1_2}Mussum" posX="1456.25" posY="472.81" culture="Culture.separatist" text="{=Settlements.Settlement.text.village_SA1_2}Mussum sits near the eastern coast of the Bahr al-Yeshm sea, where the Aserai deserts give way to desert-steppe with scattered acacia and scrub. The villagers here sink wells to water their groves of date palms.">
+	<Settlement id="village_SA_GN1_2" name="{=Settlements.Settlement.name.village_SA_GN1_2}Qablab" posX="1576" posY="505.33" culture="Culture.separatist" text="{=Settlements.Settlement.text.village_SA1_1}Qablab sits near a broad bay on the southern coast of the Perassic Sea. The low-lying coastline is well-suited to the construction of salt pans.">
 		<Components>
-			<Village id="village_comp_SA1_2" village_type="VillageType.date_farm" hearth="454" gate_rotation="0.108" bound="Settlement.town_SA1" background_crop_position="0.214" background_mesh="menu_aserai_village_1" wait_mesh="wait_aserai_village" castle_background_mesh="gui_bg_castle_aserai" />
-		</Components>
-		<Locations complex_template="LocationComplexTemplate.village_complex">
-			<Location id="village_center" scene_name="aserai_village_e" />
-		</Locations>
-		<CommonAreas>
-			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
-			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
-			<Area type="Bog" name="{=iXA5SttU}Bog" />
-		</CommonAreas>
-	</Settlement>
-	<Settlement id="town_SA2" name="{=Settlements.Settlement.name.town_SA2}Razih" owner="Faction.separatist_council" posX="1497" posY="527.86" culture="Culture.separatist" gate_posX="1496.292" gate_posY="527.862" text="{=jXBnf2hQ}Razih is said to be the base from which Kannic explorers set forth to colonize the shores of the Perassic Sea in the centuries before the coming of the empire, the prows of their ships decorated with the intertwined vine leaves of the Kannic goddess of wealth, wine, love and war. Today, the Kannic tongue has been replaced by Nahasawi dialects and their religion is all but forgotten, but the symbol lives on, said to protect those who risk all for the sake of gain or glory.">
-		<Components>
-			<Town id="town_comp_SA2" is_castle="false" level="1" background_crop_position="0.241" background_mesh="menu_aserai_1" wait_mesh="wait_aserai_town" gate_rotation="0.208" prosperity="4500">
-				<Buildings>
-					<Building id="building_castle_fortifications" level="1" />
-					<Building id="building_castle_barracks" level="0" />
-					<Building id="building_castle_training_fields" level="1" />
-					<Building id="building_castle_guard_house" level="1" />
-					<Building id="building_castle_siege_workshop" level="0" />
-					<Building id="building_castle_castallans_office" level="2" />
-					<Building id="building_castle_granary" level="1" />
-					<Building id="building_castle_craftmans_quarters" level="0" />
-					<Building id="building_castle_farmlands" level="1" />
-					<Building id="building_castle_mason" level="0" />
-					<Building id="building_castle_roads_and_paths" level="0" />
-				</Buildings>
-			</Town>
-		</Components>
-		<Locations complex_template="LocationComplexTemplate.town_complex">
-			<Location id="center" scene_name="aserai_town_f" scene_name_1="aserai_town_f" scene_name_2="aserai_town_f" scene_name_3="aserai_town_f" />
-			<Location id="arena" scene_name="arena_aserai_a" />
-			<Location id="tavern" scene_name="aserai_tavern_interior" />
-			<Location id="lordshall" scene_name_1="aserai_castle_keep_a_l1_interior" scene_name_2="aserai_castle_keep_a_l2_interior" scene_name_3="aserai_castle_keep_a_l3_interior" />
-			<Location id="prison" scene_name="empire_dungeon_stealth" />
-			<Location id="house_1" scene_name="arabian_house_new_a_interior_a_house" />
-			<Location id="house_2" scene_name="arabian_house_new_a_interior_a_house" />
-			<Location id="house_3" scene_name="arabian_house_new_a_interior_a_house" />
-			<Location id="alley" />
-		</Locations>
-		<CommonAreas>
-			<Area type="Backstreet" name="{=a0MVffcN}Backstreet" />
-			<Area type="Clearing" name="{=LWHIVshb}Clearing" />
-			<Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
-		</CommonAreas>
-	</Settlement>
-	<Settlement id="village_SA2_1" name="{=Settlements.Settlement.name.village_SA2_1}Qablab" posX="1545.624" posY="509.996" culture="Culture.separatist" text="{=Settlements.Settlement.text.village_SA2_1}Qablab sits near a broad bay on the southern coast of the Perassic Sea. The low-lying coastline is well-suited to the construction of salt pans.">
-		<Components>
-			<Village id="village_comp_SA2_1" village_type="VillageType.salt_mine" hearth="502" gate_rotation="0.208" bound="Settlement.town_SA2" background_crop_position="0.308" background_mesh="menu_aserai_village_3" wait_mesh="wait_aserai_village" castle_background_mesh="gui_bg_castle_aserai" />
+			<Village id="village_comp_SA_GN1_1" village_type="VillageType.salt_mine" hearth="502" gate_rotation="0.208" bound="Settlement.town_SA_GN1" background_crop_position="0.308" background_mesh="menu_aserai_village_3" wait_mesh="wait_aserai_village" castle_background_mesh="gui_bg_castle_aserai" />
 		</Components>
 		<Locations complex_template="LocationComplexTemplate.village_complex">
 			<Location id="village_center" scene_name="aserai_village_l" />
@@ -260,12 +225,12 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_SA2_2" name="{=Settlements.Settlement.name.village_SA2_2}Mussum" posX="1448.754" posY="505.616" culture="Culture.separatist" text="{=Settlements.Settlement.text.village_SA2_2}Mussum sits near the eastern coast of the Bahr al-Yeshm sea, where the Aserai deserts give way to desert-steppe with scattered acacia and scrub. The villagers here sink wells to water their groves of date palms.">
+	<Settlement id="village_SA_GN1_3" name="{=Settlements.Settlement.name.village_SA_GN1_3}Qablab" posX="1487" posY="463.33" culture="Culture.separatist" text="{=Settlements.Settlement.text.village_SA1_1}Qablab sits near a broad bay on the southern coast of the Perassic Sea. The low-lying coastline is well-suited to the construction of salt pans.">
 		<Components>
-			<Village id="village_comp_SA2_2" village_type="VillageType.date_farm" hearth="454" gate_rotation="0.108" bound="Settlement.town_SA2" background_crop_position="0.214" background_mesh="menu_aserai_village_1" wait_mesh="wait_aserai_village" castle_background_mesh="gui_bg_castle_aserai" />
+			<Village id="village_comp_SA_GN1_1" village_type="VillageType.salt_mine" hearth="502" gate_rotation="0.208" bound="Settlement.town_SA_GN1" background_crop_position="0.308" background_mesh="menu_aserai_village_3" wait_mesh="wait_aserai_village" castle_background_mesh="gui_bg_castle_aserai" />
 		</Components>
 		<Locations complex_template="LocationComplexTemplate.village_complex">
-			<Location id="village_center" scene_name="aserai_village_e" />
+			<Location id="village_center" scene_name="aserai_village_l" />
 		</Locations>
 		<CommonAreas>
 			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
@@ -273,10 +238,10 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<!-- Crime Syndicate -->
-	<Settlement id="town_CS1" name="{=Settlements.Settlement.name.town_CS1}Galend" owner="Faction.hutt_cartel" posX="1556.87" posY="993.75" culture="Culture.crime_syndicates" gate_posX="1556.162" gate_posY="993.752" text="{=79R6gi4l}Galend overlooks the wave-beaten Biscan coast. It takes in the catch from the Biscan's intrepid fishermen who venture out far into the western ocean, as well as the wool of sheep from the green fog-covered hills. The current line of Vlandian kings comes from the clans who settled in this region during Osric Iron-Arm's invasion.">
+	<!-- Crime Syndicates -->
+	<Settlement id="town_HC1" name="{=Settlements.Settlement.name.town_HC1}Galend" owner="Faction.hutt_cartel" posX="1557.33" posY="927.33" culture="Culture.crime_syndicates" gate_posX="1555.033" gate_posY="927.332" text="{=79R6gi4l}Galend overlooks the wave-beaten Biscan coast. It takes in the catch from the Biscan's intrepid fishermen who venture out far into the western ocean, as well as the wool of sheep from the green fog-covered hills. The current line of Vlandian kings comes from the clans who settled in this region during Osric Iron-Arm's invasion.">
 		<Components>
-			<Town id="town_comp_CS1" is_castle="false" level="3" background_crop_position="0.0" background_mesh="gui_bg_town_vlanda" wait_mesh="wait_vlandia_town" gate_rotation="0.408" prosperity="1900">
+			<Town id="town_comp_HC1" is_castle="false" level="3" background_crop_position="0.0" background_mesh="gui_bg_town_vlanda" wait_mesh="wait_vlandia_town" gate_rotation="0.408" prosperity="1900">
 				<Buildings>
 					<Building id="building_castle_fortifications" level="1" />
 					<Building id="building_castle_barracks" level="0" />
@@ -309,9 +274,9 @@
 			<Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_CS1_1" name="{=Settlements.Settlement.name.village_CS1_1}Furbec" posX="1560.93" posY="959.68" culture="Culture.crime_syndicates" text="{=Settlements.Settlement.text.village_CS1_1}Furbec sits on a shelf overlooking the rocky Biscan coast of central Vlandia. The climate is warm most of the year, and grapes do well on the slopes of the Biscan hills.">
+	<Settlement id="village_HC1_1" name="{=Settlements.Settlement.name.village_HC1_1}Furbec" posX="1561.33" posY="894" culture="Culture.crime_syndicates" text="{=Settlements.Settlement.text.village_CS1_1}Furbec sits on a shelf overlooking the rocky Biscan coast of central Vlandia. The climate is warm most of the year, and grapes do well on the slopes of the Biscan hills.">
 		<Components>
-			<Village id="village_comp_CS1_1" village_type="VillageType.vineyard" hearth="488" gate_rotation="0.008" bound="Settlement.town_CS1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
+			<Village id="village_comp_HC1_1" village_type="VillageType.vineyard" hearth="488" gate_rotation="0.008" bound="Settlement.town_HC1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
 		<Locations complex_template="LocationComplexTemplate.village_complex">
 			<Location id="village_center" scene_name="vlandia_village_g" />
@@ -322,12 +287,12 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_CS1_2" name="{=Settlements.Settlement.name.village_CS1_2}Meroc" posX="1587.18" posY="942.81" culture="Culture.crime_syndicates" text="{=Settlements.Settlement.text.village_CS1_2}Meroc is a fishing village overlooking a cove in the Biscan Coast. The villagers sail out into the western ocean in search of mullet and bass near the shore, and tuna and sardines amid the islands to the south.">
+	<Settlement id="village_HC1_2" name="{=Settlements.Settlement.name.village_HC1_2}Furbec" posX="1589" posY="875.67" culture="Culture.crime_syndicates" text="{=Settlements.Settlement.text.village_CS1_1}Furbec sits on a shelf overlooking the rocky Biscan coast of central Vlandia. The climate is warm most of the year, and grapes do well on the slopes of the Biscan hills.">
 		<Components>
-			<Village id="village_comp_CS1_2" village_type="VillageType.fisherman" hearth="527" bound="Settlement.town_CS1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
+			<Village id="village_comp_HC1_2" village_type="VillageType.vineyard" hearth="488" gate_rotation="0.008" bound="Settlement.town_HC1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
 		<Locations complex_template="LocationComplexTemplate.village_complex">
-			<Location id="village_center" scene_name="vlandia_village_m" />
+			<Location id="village_center" scene_name="vlandia_village_g" />
 		</Locations>
 		<CommonAreas>
 			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
@@ -335,12 +300,12 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_CS1_3" name="{=Settlements.Settlement.name.village_CS1_3}Meroc" posX="1606.56" posY="935.31" culture="Culture.crime_syndicates" text="{=Settlements.Settlement.text.village_CS1_3}Meroc is a fishing village overlooking a cove in the Biscan Coast. The villagers sail out into the western ocean in search of mullet and bass near the shore, and tuna and sardines amid the islands to the south.">
+	<Settlement id="village_HC1_3" name="{=Settlements.Settlement.name.village_HC1_3}Furbec" posX="1620.67" posY="1003.33" culture="Culture.crime_syndicates" text="{=Settlements.Settlement.text.village_CS1_1}Furbec sits on a shelf overlooking the rocky Biscan coast of central Vlandia. The climate is warm most of the year, and grapes do well on the slopes of the Biscan hills.">
 		<Components>
-			<Village id="village_comp_CS1_3" village_type="VillageType.fisherman" hearth="527" bound="Settlement.town_CS1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
+			<Village id="village_comp_HC1_3" village_type="VillageType.vineyard" hearth="488" gate_rotation="0.008" bound="Settlement.town_HC1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
 		<Locations complex_template="LocationComplexTemplate.village_complex">
-			<Location id="village_center" scene_name="vlandia_village_m" />
+			<Location id="village_center" scene_name="vlandia_village_g" />
 		</Locations>
 		<CommonAreas>
 			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
@@ -348,9 +313,9 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="town_CS2" name="{=Settlements.Settlement.name.town_CS2}Galend" owner="Faction.hutt_cartel" posX="1569.54" posY="987.02" culture="Culture.crime_syndicates" gate_posX="1568.832" gate_posY="987.022" text="{=79R6gi4l}Galend overlooks the wave-beaten Biscan coast. It takes in the catch from the Biscan's intrepid fishermen who venture out far into the western ocean, as well as the wool of sheep from the green fog-covered hills. The current line of Vlandian kings comes from the clans who settled in this region during Osric Iron-Arm's invasion.">
+	<Settlement id="town_HC2" name="{=Settlements.Settlement.name.town_HC2}Galend" owner="Faction.hutt_cartel" posX="1560.363" posY="929.157" culture="Culture.crime_syndicates" gate_posX="1561.197" gate_posY="929.6687" text="{=79R6gi4l}Galend overlooks the wave-beaten Biscan coast. It takes in the catch from the Biscan's intrepid fishermen who venture out far into the western ocean, as well as the wool of sheep from the green fog-covered hills. The current line of Vlandian kings comes from the clans who settled in this region during Osric Iron-Arm's invasion.">
 		<Components>
-			<Town id="town_comp_CS2" is_castle="false" level="3" background_crop_position="0.0" background_mesh="gui_bg_town_vlanda" wait_mesh="wait_vlandia_town" gate_rotation="0.408" prosperity="1900">
+			<Town id="town_comp_HC2" is_castle="false" level="3" background_crop_position="0.0" background_mesh="gui_bg_town_vlanda" wait_mesh="wait_vlandia_town" gate_rotation="0.408" prosperity="1900">
 				<Buildings>
 					<Building id="building_castle_fortifications" level="1" />
 					<Building id="building_castle_barracks" level="0" />
@@ -383,9 +348,9 @@
 			<Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_CS2_1" name="{=Settlements.Settlement.name.village_CS2_1}Furbec" posX="1587.183" posY="973.427" culture="Culture.crime_syndicates" text="{=Settlements.Settlement.text.village_CS2_1}Furbec sits on a shelf overlooking the rocky Biscan coast of central Vlandia. The climate is warm most of the year, and grapes do well on the slopes of the Biscan hills.">
+	<Settlement id="village_HC2_1" name="{=Settlements.Settlement.name.village_HC2_1}Furbec" posX="1588" posY="906.67" culture="Culture.crime_syndicates" text="{=Settlements.Settlement.text.village_CS2_1}Furbec sits on a shelf overlooking the rocky Biscan coast of central Vlandia. The climate is warm most of the year, and grapes do well on the slopes of the Biscan hills.">
 		<Components>
-			<Village id="village_comp_CS2_1" village_type="VillageType.vineyard" hearth="488" gate_rotation="0.008" bound="Settlement.town_CS2" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
+			<Village id="village_comp_HC2_1" village_type="VillageType.vineyard" hearth="488" gate_rotation="0.008" bound="Settlement.town_HC2" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
 		<Locations complex_template="LocationComplexTemplate.village_complex">
 			<Location id="village_center" scene_name="vlandia_village_g" />
@@ -396,12 +361,12 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_CS2_2" name="{=Settlements.Settlement.name.village_CS2_2}Meroc" posX="1586.873" posY="1043.747" culture="Culture.crime_syndicates" text="{=Settlements.Settlement.text.village_CS2_2}Meroc is a fishing village overlooking a cove in the Biscan Coast. The villagers sail out into the western ocean in search of mullet and bass near the shore, and tuna and sardines amid the islands to the south.">
+	<Settlement id="village_HC2_2" name="{=Settlements.Settlement.name.village_HC2_2}Furbec" posX="1689.33" posY="920.67" culture="Culture.crime_syndicates" text="{=Settlements.Settlement.text.village_CS2_1}Furbec sits on a shelf overlooking the rocky Biscan coast of central Vlandia. The climate is warm most of the year, and grapes do well on the slopes of the Biscan hills.">
 		<Components>
-			<Village id="village_comp_CS2_2" village_type="VillageType.fisherman" hearth="527" bound="Settlement.town_CS2" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
+			<Village id="village_comp_HC2_2" village_type="VillageType.vineyard" hearth="488" gate_rotation="0.008" bound="Settlement.town_HC2" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
 		<Locations complex_template="LocationComplexTemplate.village_complex">
-			<Location id="village_center" scene_name="vlandia_village_m" />
+			<Location id="village_center" scene_name="vlandia_village_g" />
 		</Locations>
 		<CommonAreas>
 			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
@@ -410,60 +375,36 @@
 		</CommonAreas>
 	</Settlement>
 	<!-- Death Watch -->
-	<Settlement id="town_DW1" name="{=Settlements.Settlement.name.town_DW1}Amitatys" owner="Faction.house_vizsla" posX="1213.75" posY="1305.62" culture="Culture.death_watch" gate_posX="1213.042" gate_posY="1305.622" text="{=rX8oGVvV}The Palaic chieftain of Amitatys had a particularly grim reputation, a tyrant who slaughtered innocents to appease the gods of the underworld in the hope they would grant him immortality. Inevitably, he fell into conflict with the Empire, and during the siege an earthquake crumbled his walls and allowed imperial troops into the city. More died in the ensuing sack than the tyrant had ever killed, but it was war, and the outcome - attributed to the wrath of Heaven - was a staple of imperial propaganda as they expanded their foothold in the region.">
+	<Settlement id="castle_DW1" name="{=Settlements.Settlement.name.castle_DW1}Concordia" owner="Faction.house_vizsla" posX="1227.671" posY="1390.171" culture="Culture.death_watch" gate_posX="1227.906" gate_posY="1389.745">
 		<Components>
-			<Town id="town_comp_DW1" is_castle="false" level="3" background_crop_position="0.0" background_mesh="menu_empire_5" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="4400">
+			<Town id="castle_comp_DW1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
 				<Buildings>
-					<Building id="building_castle_fortifications" level="1" />
-					<Building id="building_castle_barracks" level="0" />
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
 					<Building id="building_castle_training_fields" level="1" />
-					<Building id="building_castle_guard_house" level="1" />
-					<Building id="building_castle_siege_workshop" level="0" />
-					<Building id="building_castle_castallans_office" level="2" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
 					<Building id="building_castle_granary" level="1" />
-					<Building id="building_castle_craftmans_quarters" level="0" />
-					<Building id="building_castle_farmlands" level="1" />
-					<Building id="building_castle_mason" level="0" />
-					<Building id="building_castle_roads_and_paths" level="0" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
 				</Buildings>
 			</Town>
 		</Components>
-		<Locations complex_template="LocationComplexTemplate.town_complex">
-			<Location id="center" scene_name="empire_town_j_siege" scene_name_1="empire_town_j_siege" scene_name_2="empire_town_j_siege" scene_name_3="empire_town_j_siege" />
-			<Location id="arena" scene_name="arena_empire_a" />
-			<Location id="tavern" scene_name="empire_house_c_tavern_a" />
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
 			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
 			<Location id="prison" scene_name="empire_dungeon_stealth" />
-			<Location id="house_1" scene_name="empire_house_d_interior_house" />
-			<Location id="house_2" scene_name="empire_house_d_interior_house" />
-			<Location id="house_3" scene_name="empire_house_d_interior_house" />
-			<Location id="alley" />
 		</Locations>
-		<CommonAreas>
-			<Area type="Backstreet" name="{=a0MVffcN}Backstreet" />
-			<Area type="Clearing" name="{=LWHIVshb}Clearing" />
-			<Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
-		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_DW1_1" name="{=Settlements.Settlement.name.village_DW1_1}Elipa" posX="1235.93" posY="1333.43" gate_rotation="0.5" culture="Culture.death_watch" text="{=Settlements.Settlement.text.village_DW1_1}Elipa sits near the upper reaches of the Aris valley. These sunny, well-watered highlands are one of the breadbaskets of the Empire.">
+	<Settlement id="castle_village_DW1_1" name="{=Settlements.Settlement.name.castle_village_DW1_1}Zanbar" posX="1191.33" posY="1406.67" culture="Culture.death_watch" text="{=Settlements.Settlement.text.castle_village_EN1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
 		<Components>
-			<Village id="village_comp_DW1_1" village_type="VillageType.wheat_farm" hearth="187" bound="Settlement.town_DW1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+			<Village id="castle_village_comp_DW1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_DW1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
 		</Components>
 		<Locations complex_template="LocationComplexTemplate.village_complex">
-			<Location id="village_center" scene_name="empire_village_p" />
-		</Locations>
-		<CommonAreas>
-			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
-			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
-			<Area type="Bog" name="{=iXA5SttU}Bog" />
-		</CommonAreas>
-	</Settlement>
-	<Settlement id="village_DW1_2" name="{=Settlements.Settlement.name.village_DW1_2}Phasos" posX="1193.75" posY="1327.5" culture="Culture.death_watch" text="{=Settlements.Settlement.text.village_DW1_2}Phasos sits amid rolling chalk hills between the Temea and Aris valleys. The rich grass of the down is some of the best horse-breeding land in the Empire.">
-		<Components>
-			<Village id="village_comp_DW1_2" village_type="VillageType.europe_horse_ranch" hearth="187" bound="Settlement.town_DW1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
-		</Components>
-		<Locations complex_template="LocationComplexTemplate.village_complex">
-			<Location id="village_center" scene_name="empire_village_g" />
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
 		</Locations>
 		<CommonAreas>
 			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
@@ -481,29 +422,29 @@
 		</Locations>
 	</Settlement>
 	<!-- Groups -->
-	<Settlement id="group_9" name="Group" posX="872.66" posY="1158.66" culture="Culture.empire" text="Group">
+	<Settlement id="group_GR1_1" name="Group" posX="872.66" posY="1158.66" culture="Culture.empire" text="Coruscant">
 		<Components>
-			<SettlementGroupComponent id="group_9_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+			<SettlementGroupComponent id="group_GR1_1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
 		</Components>
 	</Settlement>
-	<Settlement id="group_10" name="Group" posX="1221.87" posY="1460.62" culture="Culture.empire" text="Group">
+	<Settlement id="group_GR1_2" name="Group" posX="829.715" posY="1208.998" culture="Culture.empire" text="Group">
 		<Components>
-			<SettlementGroupComponent id="group_10_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+			<SettlementGroupComponent id="group_GR1_2_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
 		</Components>
 	</Settlement>
-	<Settlement id="group_11" name="Group" posX="1556.87" posY="993.75" culture="Culture.empire" text="Group">
+	<Settlement id="group_NS1" name="Group" posX="1225.33" posY="1392" culture="Culture.empire" text="Group">
 		<Components>
-			<SettlementGroupComponent id="group_11_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+			<SettlementGroupComponent id="group_NS1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
 		</Components>
 	</Settlement>
-	<Settlement id="group_12" name="Group" posX="1213.75" posY="1305.62" culture="Culture.empire" text="Group">
+	<Settlement id="group_HC1" name="Group" posX="1557.33" posY="927.33" culture="Culture.empire" text="Group">
 		<Components>
-			<SettlementGroupComponent id="group_12_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+			<SettlementGroupComponent id="group_HC1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
 		</Components>
 	</Settlement>
-	<Settlement id="group_13" name="Group" posX="1489.06" posY="535.31" culture="Culture.empire" text="Group">
+	<Settlement id="group_SA_GN1" name="Group" posX="1496.67" posY="468" culture="Culture.empire" text="Group">
 		<Components>
-			<SettlementGroupComponent id="group_13_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+			<SettlementGroupComponent id="group_SA_GN1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
 		</Components>
 	</Settlement>
 </Settlements>
