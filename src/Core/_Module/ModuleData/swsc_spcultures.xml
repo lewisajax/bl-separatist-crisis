@@ -240,6 +240,243 @@
 		</basic_mercenary_troops>
 	</Culture>
 
+	<Culture id="jedi"
+		name="Jedi"
+		is_main_culture="false"
+		color="0xff793191"
+		color2="0xffFCDE90"
+		elite_basic_troop="NPCCharacter.imperial_vigla_recruit"
+		basic_troop="NPCCharacter.imperial_recruit"
+		melee_militia_troop="NPCCharacter.imperial_militia_spearman"
+		ranged_militia_troop="NPCCharacter.imperial_militia_archer"
+		melee_elite_militia_troop="NPCCharacter.imperial_militia_veteran_spearman"
+		ranged_elite_militia_troop="NPCCharacter.imperial_militia_veteran_archer"
+		can_have_settlement="true"
+		villager_party_template="PartyTemplate.villager_empire_template"
+		default_party_template="PartyTemplate.kingdom_hero_party_empire_template"
+		militia_party_template="PartyTemplate.militia_empire_template"
+		rebels_party_template="PartyTemplate.rebels_empire_template"
+		vassal_reward_party_template="PartyTemplate.vassal_reward_troops_empire"
+		prosperity_bonus="1"
+		settlement_patrol_template_level_1="PartyTemplate.patrol_party_empire_template_level_1"
+		settlement_patrol_template_level_2="PartyTemplate.patrol_party_empire_template_level_2"
+		settlement_patrol_template_level_3="PartyTemplate.patrol_party_empire_template_level_3"
+		encounter_background_mesh="encounter_empire"
+		faction_banner_key="11.4.124.4345.4345.764.764.1.0.0.163.0.5.512.512.764.764.1.0.0"
+		text="For the 212th Attack Battalion, mobility and maneuver warfare tactics are the name of the game. Boasting the largest force of Clone Paratroopers in the GAR, no target is safe from the 212th. Under the command of Jedi General Obi-Wan Kenobi and Commander Cody, the 212th can be "
+		tournament_master="NPCCharacter.tournament_master_empire"
+		villager="NPCCharacter.villager_empire"
+		caravan_master="NPCCharacter.caravan_master_empire"
+		armed_trader="NPCCharacter.armed_trader_empire"
+		caravan_guard="NPCCharacter.caravan_guard_empire"
+		veteran_caravan_guard="NPCCharacter.veteran_caravan_guard_empire"
+		prison_guard="NPCCharacter.prison_guard_empire"
+		guard="NPCCharacter.guard_empire"
+		blacksmith="NPCCharacter.blacksmith_empire"
+		weaponsmith="NPCCharacter.weaponsmith_empire"
+		townswoman="NPCCharacter.townswoman_empire"
+		townswoman_infant="NPCCharacter.townswoman_infant_empire"
+		townswoman_child="NPCCharacter.townswoman_child_empire"
+		townswoman_teenager="NPCCharacter.townswoman_teenager_empire"
+		townsman="NPCCharacter.townsman_empire"
+		townsman_infant="NPCCharacter.townsman_infant_empire"
+		townsman_child="NPCCharacter.townsman_child_empire"
+		village_woman="NPCCharacter.village_woman_empire"
+		villager_male_child="NPCCharacter.villager_child_empire"
+		villager_male_teenager="NPCCharacter.villager_teenager_empire"
+		villager_female_child="NPCCharacter.village_woman_child_empire"
+		villager_female_teenager="NPCCharacter.village_woman_teenager_empire"
+		townsman_teenager="NPCCharacter.townsman_teenager_empire"
+		ransom_broker="NPCCharacter.ransom_broker_empire"
+		gangleader_bodyguard="NPCCharacter.gangleader_bodyguard_empire"
+		merchant_notary="NPCCharacter.merchant_notary_empire"
+		artisan_notary="NPCCharacter.artisan_notary_empire"
+		preacher_notary="NPCCharacter.preacher_notary_empire"
+		rural_notable_notary="NPCCharacter.rural_notable_notary_empire"
+		shop_worker="NPCCharacter.shop_worker_empire"
+		tavernkeeper="NPCCharacter.tavernkeeper_empire"
+		taverngamehost="NPCCharacter.taverngamehost_empire"
+		musician="NPCCharacter.musician_empire"
+		tavern_wench="NPCCharacter.tavern_wench_empire"
+		armorer="NPCCharacter.armorer_empire"
+		horseMerchant="NPCCharacter.horseMerchant_empire"
+		barber="NPCCharacter.barber_empire"
+		merchant="NPCCharacter.merchant_empire"
+		beggar="NPCCharacter.beggar_empire"
+		female_beggar="NPCCharacter.female_beggar_empire"
+		female_dancer="NPCCharacter.female_dancer_empire"
+		weapon_practice_stage_1="NPCCharacter.weapon_practice_stage_1_empire"
+		weapon_practice_stage_2="NPCCharacter.weapon_practice_stage_2_empire"
+		weapon_practice_stage_3="NPCCharacter.weapon_practice_stage_3_empire"
+		gear_dummy="NPCCharacter.gear_dummy_empire"
+		default_battle_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_civilian_equipment_roster="EquipmentRoster.emp_civ_template_default"
+		default_stealth_equipment_roster="EquipmentRoster.default_stealth_equipment_roster"
+		duel_preset_equipment_roster="EquipmentRoster.emp_duel_preset_template"
+		marriage_bride_equipment_roster="EquipmentRoster.marriage_female_emp_cutscene_template"
+		board_game_type="Tablut"
+		default_character_creation_body_property="BodyProperty.default_character_creation_body_property_empire"
+		start_point_position_x="657.95"
+		start_point_position_y="279.08">
+		<caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.caravan_template_empire" />
+		</caravan_party_templates>
+		<elite_caravan_party_templates>
+			<caravan_party_template
+				id="PartyTemplate.elite_caravan_template_empire" />
+		</elite_caravan_party_templates>
+		<available_ship_hulls></available_ship_hulls>
+		<vassal_reward_items>
+			<item id="Item.justicier_2hsword" />
+		</vassal_reward_items>
+		<banner_bearer_replacement_weapons>
+			<item id="Item.iron_spatha_sword_t2" />
+			<item id="Item.empire_sword_1_t2" />
+			<item id="Item.empire_sword_2_t3" />
+			<item id="Item.empire_sword_6_t5" />
+		</banner_bearer_replacement_weapons>
+		<default_policies>
+			<policy id="policy_senate" />
+		</default_policies>
+		<male_names>
+			<name name="{=v9B50R0Q}Acarion" />
+			<name name="{=aeLgc0cU}Acthon" />
+			<name name="{=tWDyWroN}Amnon" />
+			<name name="{=uTFjknE2}Andros" />
+			<name name="{=fXgftgNv}Aphanys" />
+			<name name="{=QjJAbaoT}Apys" />
+			<name name="{=zInIqBD0}Arenicos" />
+			<name name="{=W1uwgvAQ}Arion" />
+			<name name="{=5VzWRMTn}Artimendros" />
+		</male_names>
+
+		<female_names>
+			<name name="{=h8DsXm7X}Achena" />
+			<name name="{=BNnLbOkN}Adinea" />
+			<name name="{=EGatdCLg}Alena" />
+			<name name="{=UPaP0B2L}Alchyla" />
+			<name name="{=QyXwJXIV}Andrasa" />
+			<name name="{=NM5f1Q6I}Ariada" />
+			<name name="{=3RbayfTG}Ascytala" />
+		</female_names>
+		<clan_names>
+			<name name="{=pRA9EzNv}Acapanos" />
+			<name name="{=vdOWVAoz}Altesios" />
+			<name name="{=ogq9oxDn}Angarys" />
+			<name name="{=TNI6qRbQ}Astrethides" />
+			<name name="{=NTRPMben}Atragorys" />
+			<name name="{=MgDUudOx}Balastisos" />
+			<name name="{=t36SVqzP}Bustamys" />
+			<name name="{=xyKumbJI}Calastides" />
+		</clan_names>
+		<cultural_feats>
+			<feat id="empire_decreased_garrison_wage" />
+			<feat id="empire_army_influence" />
+			<feat id="empire_slower_hearth_production" />
+		</cultural_feats>
+		<possible_clan_banner_icon_ids>
+			<icon id="100" />
+			<icon id="101" />
+			<icon id="102" />
+			<icon id="103" />
+		</possible_clan_banner_icon_ids>
+		<notable_templates>
+			<template name="NPCCharacter.spc_wanderer_empire_0" />
+			<template name="NPCCharacter.spc_wanderer_empire_1" />
+			<template name="NPCCharacter.spc_wanderer_empire_2" />
+			<template name="NPCCharacter.spc_wanderer_empire_3" />
+			<template name="NPCCharacter.spc_wanderer_empire_4" />
+			<template name="NPCCharacter.spc_wanderer_empire_5" />
+			<template name="NPCCharacter.spc_wanderer_empire_6" />
+			<template name="NPCCharacter.spc_wanderer_empire_7" />
+			<template name="NPCCharacter.spc_wanderer_empire_8" />
+			<template name="NPCCharacter.spc_wanderer_empire_9" />
+			<template name="NPCCharacter.spc_wanderer_empire_10" />
+			<template name="NPCCharacter.spc_wanderer_empire_11" />
+			<template name="NPCCharacter.spc_notable_empire_0" />
+			<template name="NPCCharacter.spc_notable_empire_0b" />
+			<template name="NPCCharacter.spc_notable_empire_1" />
+			<template name="NPCCharacter.spc_notable_empire_1b" />
+			<template name="NPCCharacter.spc_notable_empire_2" />
+			<template name="NPCCharacter.spc_notable_empire_2b" />
+			<template name="NPCCharacter.spc_notable_empire_3" />
+			<template name="NPCCharacter.spc_notable_empire_3b" />
+			<template name="NPCCharacter.spc_notable_empire_4" />
+			<template name="NPCCharacter.spc_notable_empire_4b" />
+			<template name="NPCCharacter.spc_notable_empire_5" />
+			<template name="NPCCharacter.spc_notable_empire_6" />
+			<template name="NPCCharacter.spc_notable_empire_7" />
+			<template name="NPCCharacter.spc_notable_empire_8" />
+			<template name="NPCCharacter.spc_notable_empire_9" />
+			<template name="NPCCharacter.spc_notable_empire_10" />
+			<template name="NPCCharacter.spc_notable_empire_11" />
+			<template name="NPCCharacter.spc_notable_empire_12" />
+			<template name="NPCCharacter.spc_notable_empire_13" />
+			<template name="NPCCharacter.spc_notable_empire_21" />
+			<template name="NPCCharacter.spc_notable_empire_22" />
+			<template name="NPCCharacter.spc_notable_empire_gl1" />
+			<template name="NPCCharacter.spc_notable_empire_gl4" />
+			<template name="NPCCharacter.spc_empire_headman_1" />
+			<template name="NPCCharacter.spc_empire_headman_2" />
+			<template name="NPCCharacter.spc_empire_headman_3" />
+		</notable_templates>
+		<lord_templates>
+			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
+			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
+			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_2" />
+			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_3" />
+			<template name="NPCCharacter.spc_hidden_hand_leader_0" />
+			<template name="NPCCharacter.spc_hidden_hand_leader_1" />
+			<template name="NPCCharacter.spc_hidden_hand_leader_2" />
+			<template name="NPCCharacter.spc_hidden_hand_leader_3" />
+			<template name="NPCCharacter.spc_embers_of_flame_leader_0" />
+			<template name="NPCCharacter.spc_embers_of_flame_leader_1" />
+			<template name="NPCCharacter.spc_embers_of_flame_leader_2" />
+			<template name="NPCCharacter.spc_embers_of_flame_leader_3" />
+			<template name="NPCCharacter.spc_eleftheroi_leader_0" />
+			<template name="NPCCharacter.spc_eleftheroi_leader_1" />
+			<template name="NPCCharacter.spc_eleftheroi_leader_2" />
+			<template name="NPCCharacter.spc_eleftheroi_leader_3" />
+		</lord_templates>
+		<rebellion_hero_templates>
+			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_0" />
+			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_1" />
+			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_2" />
+			<template name="NPCCharacter.spc_legion_of_the_betrayed_leader_3" />
+			<template name="NPCCharacter.spc_hidden_hand_leader_0" />
+			<template name="NPCCharacter.spc_hidden_hand_leader_1" />
+			<template name="NPCCharacter.spc_hidden_hand_leader_2" />
+			<template name="NPCCharacter.spc_hidden_hand_leader_3" />
+			<template name="NPCCharacter.spc_embers_of_flame_leader_0" />
+			<template name="NPCCharacter.spc_embers_of_flame_leader_1" />
+			<template name="NPCCharacter.spc_embers_of_flame_leader_2" />
+			<template name="NPCCharacter.spc_embers_of_flame_leader_3" />
+			<template name="NPCCharacter.spc_eleftheroi_leader_0" />
+			<template name="NPCCharacter.spc_eleftheroi_leader_1" />
+			<template name="NPCCharacter.spc_eleftheroi_leader_2" />
+			<template name="NPCCharacter.spc_eleftheroi_leader_3" />
+		</rebellion_hero_templates>
+		<tournament_team_templates_one_participant>
+			<template name="NPCCharacter.tournament_template_empire_one_participant_set_v1" />
+		</tournament_team_templates_one_participant>
+		<tournament_team_templates_two_participant>
+			<template name="NPCCharacter.tournament_template_empire_two_participant_set_v1" />
+			<template name="NPCCharacter.tournament_template_empire_two_participant_set_v2" />
+			<template name="NPCCharacter.tournament_template_empire_two_participant_set_v3" />
+		</tournament_team_templates_two_participant>
+		<tournament_team_templates_four_participant>
+			<template name="NPCCharacter.tournament_template_empire_four_participant_set_v1" />
+			<template name="NPCCharacter.tournament_template_empire_four_participant_set_v2" />
+			<template name="NPCCharacter.tournament_template_empire_four_participant_set_v3" />
+		</tournament_team_templates_four_participant>
+		<basic_mercenary_troops>
+			<template name="NPCCharacter.eastern_mercenary" />
+			<template name="NPCCharacter.western_mercenary" />
+			<template name="NPCCharacter.sword_sisters_sister_t3" />
+		</basic_mercenary_troops>
+	</Culture>
+
 	<Culture id="212_battalion"
 		name="212th Attack Battalion"
 		is_main_culture="false"

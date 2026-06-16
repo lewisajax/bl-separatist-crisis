@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SettlementGroups>
+	<!-- Republic -->
 	<SettlementGroup id="group_GR1_1" name="GroupGR1_1" primaryNode="town_GR1" radius="85" posX="872.66" posY="1158.66" text="Coruscant">
 		<Children>
 			<Node id="town_GR1" />
@@ -10,16 +11,118 @@
 			<Node id="village_GR1_5" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_GR1_2" name="GroupGR1_2" primaryNode="town_GR1" radius="60" posX="829.715" posY="1208.998" text="Coruscant">
+	<SettlementGroup id="group_GR2" name="GroupGR2" primaryNode="castle_GR2" radius="60" posX="939.67" posY="1256.33" text="Champala">
 		<Children>
-			<Node id="town_GR1" />
-			<Node id="village_GR1_1" />
-			<Node id="village_GR1_2" />
-			<Node id="village_GR1_3" />
-			<Node id="village_GR1_4" />
-			<Node id="village_GR1_5" />
+			<Node id="castle_GR2" />
+			<Node id="castle_village_GR2_1" />
+			<Node id="castle_village_GR2_2" />
 		</Children>
 	</SettlementGroup>
+	<SettlementGroup id="group_GR3" name="GroupGR3" primaryNode="castle_GR3" radius="50" posX="1189.00" posY="1015.00" text="Cona">
+		<Children>
+			<Node id="castle_GR3" />
+			<Node id="castle_village_GR3_1" />
+			<Node id="castle_village_GR3_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR4" name="GroupGR4" primaryNode="town_GR4" radius="50" posX="1090.32" posY="842.12" text="Denon">
+		<Children>
+			<Node id="town_GR4" />
+			<Node id="village_GR4_1" />
+			<Node id="village_GR4_2" />
+			<Node id="village_GR4_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR5" name="GroupGR5" primaryNode="castle_GR5" radius="40" posX="989.67" posY="804.21" text="Devaron">
+		<Children>
+			<Node id="castle_GR5" />
+			<Node id="castle_village_GR5_1" />
+			<Node id="castle_village_GR5_2" />
+			<Node id="castle_village_GR5_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR6" name="GroupGR6" primaryNode="castle_GR6" radius="40" posX="616.00" posY="401.33" text="Elphrona">
+		<Children>
+			<Node id="castle_GR6" />
+			<Node id="castle_village_GR6_1" />
+			<Node id="castle_village_GR6_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR7" name="GroupGR7" primaryNode="castle_GR7" radius="60" posX="1018.67" posY="1049.13" text="Gatalenta">
+		<Children>
+			<Node id="castle_GR7" />
+			<Node id="castle_village_GR7_1" />
+			<Node id="castle_village_GR7_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR8" name="GroupGR8" primaryNode="castle_GR8" radius="100" posX="606.89" posY="639.18" text="Genetia">
+		<Children>
+			<Node id="castle_GR8" />
+			<Node id="castle_village_GR8_1" />
+			<Node id="castle_village_GR8_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR9" name="GroupGR9" primaryNode="castle_GR9" radius="35" posX="1086.00" posY="1168.67" text="Harkrova">
+		<Children>
+			<Node id="castle_GR9" />
+			<Node id="castle_village_GR9_1" />
+			<Node id="castle_village_GR9_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR10" name="GroupGR10" primaryNode="castle_GR10" radius="50" posX="470.67" posY="1368.67" text="Ilum">
+		<Children>
+			<Node id="castle_GR10" />
+			<Node id="castle_village_GR10_1" />
+			<!-- Jedha is too far out of any castle/town's influence. Will need a feature that dynamically shows planets when the player gets near -->
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR11" name="GroupGR11" primaryNode="castle_GR11" radius="75" posX="862.36" posY="928.56" text="Khomm">
+		<Children>
+			<Node id="castle_GR11" />
+			<Node id="castle_village_GR11_1" />
+			<Node id="castle_village_GR11_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR12" name="GroupGR12" primaryNode="castle_GR12" radius="75" posX="639.62" posY="1306.11" text="Ledeve">
+		<Children>
+			<Node id="castle_GR12" />
+			<Node id="castle_village_GR12_1" />
+			<Node id="castle_village_GR12_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR13" name="GroupGR13" primaryNode="castle_GR13" radius="45" posX="1121.37" posY="1667.02" text="Lorrd">
+		<Children>
+			<Node id="castle_GR13" />
+			<Node id="castle_village_GR13_1" />
+			<Node id="castle_village_GR13_2" />
+			<Node id="castle_village_GR13_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR14" name="GroupGR14" primaryNode="castle_GR14" radius="55" posX="1235.67" posY="933.00" text="Mimban">
+		<Children>
+			<Node id="castle_GR14" />
+			<Node id="castle_village_GR14_1" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR15" name="GroupGR13" primaryNode="castle_GR15" radius="80" posX="764.47" posY="1490.77" text="Spalex">
+		<Children>
+			<Node id="castle_GR15" />
+			<Node id="castle_village_GR15_1" />
+			<Node id="castle_village_GR15_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR16" name="GroupGR16" primaryNode="town_GR16" radius="85" posX="774.55" posY="1203.69" text="Xa Fel">
+		<Children>
+			<Node id="village_GR1_2" />
+			<Node id="village_GR1_4" />
+			<Node id="village_GR1_5" />
+			<Node id="castle_GR16" />
+			<Node id="castle_village_GR16_1" />
+			<Node id="castle_village_GR16_2" />
+		</Children>
+	</SettlementGroup>
+	
+	<!-- Neutral Systems -->
 	<SettlementGroup id="group_NS1" name="GroupNS1" primaryNode="town_NS1" radius="75" posX="1225.33" posY="1392" text="Mandalore">
 		<Children>
 			<Node id="town_NS1" />
@@ -29,6 +132,7 @@
 			<Node id="castle_village_DW1_1" />
 		</Children>
 	</SettlementGroup>
+	<!-- Crime Syndicates -->
 	<SettlementGroup id="group_HC1" name="GroupHC1" primaryNode="town_HC1" radius="175" posX="1557.33" posY="927.33" text="Nal Hutta">
 		<Children>
 			<Node id="town_HC1" />
@@ -40,6 +144,7 @@
 			<Node id="village_HC2_2" />
 		</Children>
 	</SettlementGroup>
+	<!-- Separatists -->
 	<SettlementGroup id="group_SA_GN1" name="GroupSA_GN1" primaryNode="town_SA_GN1" radius="100" posX="1496.67" posY="468" text="Geonosis">
 		<Children>
 			<Node id="town_SA_GN1" />
