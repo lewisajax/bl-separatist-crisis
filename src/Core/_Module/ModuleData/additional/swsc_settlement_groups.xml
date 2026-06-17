@@ -73,7 +73,6 @@
 		<Children>
 			<Node id="castle_GR10" />
 			<Node id="castle_village_GR10_1" />
-			<!-- Jedha is too far out of any castle/town's influence. Will need a feature that dynamically shows planets when the player gets near -->
 		</Children>
 	</SettlementGroup>
 	<SettlementGroup id="group_GR11" name="GroupGR11" primaryNode="castle_GR11" radius="75" posX="862.36" posY="928.56" text="Khomm">
@@ -111,7 +110,7 @@
 			<Node id="castle_village_GR15_2" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_GR16" name="GroupGR16" primaryNode="town_GR16" radius="85" posX="774.55" posY="1203.69" text="Xa Fel">
+	<SettlementGroup id="group_GR16" name="GroupGR16" primaryNode="castle_GR16" radius="85" posX="774.55" posY="1203.69" text="Xa Fel">
 		<Children>
 			<Node id="village_GR1_2" />
 			<Node id="village_GR1_4" />

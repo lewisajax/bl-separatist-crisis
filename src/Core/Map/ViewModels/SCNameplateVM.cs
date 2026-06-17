@@ -329,6 +329,12 @@ namespace SeparatistCrisis.ViewModels
                 return this.Settlement.IsFortification;
             }
 
+            // We don't want the group nameplate to show up under 200. We might want it if we were putting the nameplate on a star or something.
+            if (this.IsGroup)
+            {
+                return false;
+            }
+
             return this._bindDistanceToCamera < cameraPosition.z + 60f;
         }
 
@@ -372,27 +378,43 @@ namespace SeparatistCrisis.ViewModels
             base.RefreshDynamicProperties(forceUpdate);
             if ((this._bindIsVisibleOnMap && this._currentFaction != this.Settlement.MapFaction) || forceUpdate)
             {
+                // We use the primary settlement as the cover faction for the group's nameplate
+                Clan? ownerClan = null;
+                IFaction? mapFaction = null;
+                if (this.IsGroup && this.SettlementGroup != null)
+                {
+                    ownerClan = this.SettlementGroup.PrimarySettlement.OwnerClan;
+                    mapFaction = this.SettlementGroup.PrimarySettlement.MapFaction;
+                }
+                else
+                {
+                    ownerClan = this.Settlement.OwnerClan;
+                    mapFaction = this.Settlement.MapFaction;
+                }
+
                 string str = "#";
-                IFaction mapFaction = this.Settlement.MapFaction;
                 this._bindFactionColor = str + Color.UIntToColorString((mapFaction != null) ? mapFaction.Color : uint.MaxValue);
-                Banner banner = null;
-                if (this.Settlement.OwnerClan != null)
+                if (mapFaction != null)
                 {
-                    banner = this.Settlement.OwnerClan.Banner;
-                    IFaction mapFaction2 = this.Settlement.MapFaction;
-                    if (mapFaction2 != null && mapFaction2.IsKingdomFaction && ((Kingdom)this.Settlement.MapFaction).RulingClan == this.Settlement.OwnerClan)
+                    Banner banner = null;
+                    if (ownerClan != null)
                     {
-                        banner = this.Settlement.OwnerClan.Kingdom.Banner;
+                        banner = ownerClan.Banner;
+                        bool isKingdomFaction = mapFaction.IsKingdomFaction;
+                        if (isKingdomFaction && ((Kingdom)mapFaction).RulingClan == ownerClan)
+                        {
+                            banner = ownerClan.Kingdom.Banner;
+                        }
                     }
+                    int num = (banner != null) ? banner.GetVersionNo() : 0;
+                    if ((this._latestBanner != banner && !this._latestBanner.IsContentsSameWith(banner)) || this._latestBannerVersionNo != num)
+                    {
+                        this._bindBanner = ((banner != null) ? new BannerImageIdentifierVM(banner, true) : new BannerImageIdentifierVM(null, false));
+                        this._latestBannerVersionNo = num;
+                        this._latestBanner = banner;
+                    }
+                    this._currentFaction = mapFaction;
                 }
-                int num = (banner != null) ? banner.GetVersionNo() : 0;
-                if ((this._latestBanner != banner && !this._latestBanner.IsContentsSameWith(banner)) || this._latestBannerVersionNo != num)
-                {
-                    this._bindBanner = ((banner != null) ? new BannerImageIdentifierVM(banner, true) : new BannerImageIdentifierVM(null, false));
-                    this._latestBannerVersionNo = num;
-                    this._latestBanner = banner;
-                }
-                this._currentFaction = this.Settlement.MapFaction;
             }
             this._bindIsTracked = Campaign.Current.VisualTrackerManager.CheckTracked(this.Settlement);
             if (this.Settlement.IsHideout)

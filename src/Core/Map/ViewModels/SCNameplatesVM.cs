@@ -1,4 +1,6 @@
-﻿using SandBox.ViewModelCollection.Nameplate;
+﻿using SandBox;
+using SandBox.View.Map;
+using SandBox.ViewModelCollection.Nameplate;
 using SeparatistCrisis.Components;
 using SeparatistCrisis.ObjectTypes;
 using System;
@@ -15,6 +17,7 @@ using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.CampaignSystem.Siege;
 using TaleWorlds.Engine;
 using TaleWorlds.Library;
+using TaleWorlds.MountAndBlade;
 
 namespace SeparatistCrisis.ViewModels
 {
@@ -68,7 +71,9 @@ namespace SeparatistCrisis.ViewModels
         public void Initialize(
           IEnumerable<Tuple<Settlement, GameEntity>> settlements)
         {
-            this._allRegularSettlements = settlements.Where<Tuple<Settlement, GameEntity>>((Func<Tuple<Settlement, GameEntity>, bool>)(x => !x.Item1.IsHideout && !(x.Item1.SettlementComponent is RetirementSettlementComponent)));
+            this._allRegularSettlements = settlements.Where<Tuple<Settlement, GameEntity>>((Func<Tuple<Settlement, GameEntity>, bool>)(x => !x.Item1.IsHideout && 
+                !(x.Item1.SettlementComponent is RetirementSettlementComponent) &&
+                !(x.Item1.SettlementComponent is SettlementGroupComponent)));
             this._allHideouts = settlements.Where<Tuple<Settlement, GameEntity>>((Func<Tuple<Settlement, GameEntity>, bool>)(x => x.Item1.IsHideout && !(x.Item1.SettlementComponent is RetirementSettlementComponent)));
             this._allRetreats = settlements.Where<Tuple<Settlement, GameEntity>>((Func<Tuple<Settlement, GameEntity>, bool>)(x => !x.Item1.IsHideout && x.Item1.SettlementComponent is RetirementSettlementComponent));
             this._allGroups = settlements.Where<Tuple<Settlement, GameEntity>>((Func<Tuple<Settlement, GameEntity>, bool>)(x => !x.Item1.IsHideout && x.Item1.SettlementComponent is SettlementGroupComponent));
@@ -134,6 +139,8 @@ namespace SeparatistCrisis.ViewModels
 
         public void Update()
         {
+            InformationManager.DisplayMessage(new InformationMessage($"CameraDistance: {MapScreen.Instance.MapCameraView.CameraDistance}"));
+            InformationManager.DisplayMessage(new InformationMessage($"CameraPosZ: {MapScreen.Instance.MapCameraView.Camera.Position.Z}"));
             this._cachedCameraPosition = this._mapCamera.Position;
             TWParallel.For(0, this.Nameplates.Count, this.UpdateNameplateAuxMTPredicate);
             for (int index = 0; index < this.Nameplates.Count; ++index)

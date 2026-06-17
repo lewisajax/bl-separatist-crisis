@@ -296,8 +296,8 @@ namespace SeparatistCrisis.Widgets
                     this.BigNameplateWidget.IsVisible = true;
                     break;
                 case 3:
-                    this._currentNameplate = this.NormalNameplateWidget;
-                    this.NormalNameplateWidget.IsVisible = true;
+                    this._currentNameplate = this.SmallNameplateWidget;
+                    this.SmallNameplateWidget.IsVisible = true;
                     break;
                 default:
                     return;
