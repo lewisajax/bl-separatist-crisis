@@ -51,16 +51,24 @@
 
 	<!--Trade Federation-->
 	<Hero id="gunray"
-		faction="Faction.trade_federation"
+		faction="Faction.trade_defence_force"
 		text="Placeholder" />
 
 	<Hero id="dod"
-		faction="Faction.trade_federation"
+		faction="Faction.neimoidian_faction"
 		text="Placeholder" />
 
 	<!--Commerce Guild-->
 	<Hero id="shu"
 		faction="Faction.commerce_guild"
+		text="Placeholder" />
+
+	<Hero id="commerce_guild_placeholder_2"
+		faction="Faction.mining_guild"
+		text="Placeholder" />
+
+	<Hero id="commerce_guild_placeholder_3"
+		faction="Faction.guild_enforcers"
 		text="Placeholder" />
 
 	<!--Corporate Alliance-->
@@ -81,5 +89,19 @@
 	<!--Umbaran Government-->
 	<Hero id="deechi"
 		faction="Faction.umbara"
+		text="Placeholder" />
+
+	<!-- Sy Myrth -->
+	<Hero id="sy_myrth_placeholder_1"
+		faction="Faction.sy_myrth"
+		text="Placeholder" />
+
+	<!-- Agamar -->
+	<Hero id="agamar_placeholder_1"
+		faction="Faction.agamar"
+		text="Placeholder" />
+	
+	<Hero id="agamar_placeholder_2"
+		faction="Faction.agamar"
 		text="Placeholder" />
 </Heroes>

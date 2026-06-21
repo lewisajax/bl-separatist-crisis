@@ -104,6 +104,80 @@
 		faction="Faction.kamino"
 		text="Placeholder" />
 
+	<!-- Chandrila -->
+	<Hero id="mon_mothma"
+		faction="Faction.chandrila"
+		text="Placeholder" />
+
+	<!-- Milagro -->
+	<Hero id="milagro_placeholder_1"
+		faction="Faction.milagro"
+		text="Placeholder" />
+
+	<!-- Kitel Phard -->
+	<Hero id="kitel_phard_placeholder_1"
+		faction="Faction.tching_kp"
+		text="Placeholder" />
+
+	<!-- Aaloth -->
+	<Hero id="aaloth_placeholder_1"
+		faction="Faction.aaloth"
+		text="Placeholder" />
+
+	<!-- Kriselist -->
+	<Hero id="kriselist_placeholder_1"
+		faction="Faction.kriselist"
+		text="Placeholder" />
+
+	<!-- Aeos -->
+	<Hero id="aeos_placeholder_1"
+		faction="Faction.aeos"
+		text="Placeholder" />
+
+	<Hero id="aeos_placeholder_2"
+		faction="Faction.gravlex_med"
+		text="Placeholder" />
+
+	<!-- Sernpidal -->
+	<Hero id="sernpidal_placeholder_1"
+		faction="Faction.sernpidal"
+		text="Placeholder" />
+
+	<!-- Alamass -->
+	<Hero id="alamass_placeholder_1"
+		faction="Faction.alamass"
+		text="Placeholder" />
+
+	<!-- Alderaan -->
+	<Hero id="bail_organa"
+		faction="Faction.alderaan"
+		text="Placeholder" />
+
+	<!-- Anaxes -->
+	<Hero id="anaxes_placeholder_1"
+		faction="Faction.anaxes"
+		text="Placeholder" />
+
+	<!-- Ithor -->
+	<Hero id="ithor_placeholder_1"
+		faction="Faction.ithor"
+		text="Placeholder" />
+
+	<!-- Ando -->
+	<Hero id="ando_placeholder_1"
+		faction="Faction.ando"
+		text="Placeholder" />
+
+	<!-- Ando -->
+	<Hero id="ansion_placeholder_1"
+		faction="Faction.ansion"
+		text="Placeholder" />
+
+	<!-- Quellor -->
+	<Hero id="quellor_placeholder_1"
+		faction="Faction.quellor"
+		text="Placeholder" />
+	
 	<!--Royal House of Naboo-->
 	<Hero id="jamillia"
 		faction="Faction.naboo"

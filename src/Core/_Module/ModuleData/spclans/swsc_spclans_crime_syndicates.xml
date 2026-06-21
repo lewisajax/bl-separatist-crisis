@@ -2,35 +2,82 @@
 <!--You can add new or override old clan entries by adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spclans.xml.-->
 <Factions>
 
+	<!-- Hutt Cartel -->
 	<Faction
- initial_home_settlement="Settlement.town_GR1"
-		id="hutt_cartel"
-		name="Hutt Cartel"
+ initial_home_settlement="Settlement.town_HC1"
+		id="hutt_kajidic"
+		name="Hutt Kajidic"
 		tier="6"
 		owner="Hero.jabba"
-		culture="Culture.crime_syndicates"
-		super_faction="Kingdom.crime_syndicates"
+		culture="Culture.hutt"
+		super_faction="Kingdom.hutt_cartel"
 		is_noble="true"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
+	<Faction
+ initial_home_settlement="Settlement.town_HC1"
+		id="council_of_elders"
+		name="Council of Elders"
+		tier="6"
+		owner="Hero.hutt_placeholder_2"
+		culture="Culture.hutt"
+		super_faction="Kingdom.hutt_cartel"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+ initial_home_settlement="Settlement.town_HC1"
+		id="gorensla_kajidic"
+		name="Gorensla Kajidic"
+		tier="6"
+		owner="Hero.hutt_placeholder_3"
+		culture="Culture.hutt"
+		super_faction="Kingdom.hutt_cartel"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+ initial_home_settlement="Settlement.town_HC1"
+		id="huun_kajidic"
+		name="H'uun Kajidic"
+		tier="6"
+		owner="Hero.hutt_placeholder_4"
+		culture="Culture.hutt"
+		super_faction="Kingdom.hutt_cartel"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+ initial_home_settlement="Settlement.town_HC1"
+		id="roolas_gang"
+		name="Roola's Gang"
+		tier="6"
+		owner="Hero.hutt_placeholder_5"
+		culture="Culture.hutt"
+		super_faction="Kingdom.hutt_cartel"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<!-- Black Sun -->
 	<Faction
  initial_home_settlement="Settlement.town_GR1"
 		id="black_sun"
 		name="Black Sun"
 		tier="5"
 		owner="Hero.grunseit"
-		culture="Culture.crime_syndicates"
-		super_faction="Kingdom.crime_syndicates"
+		culture="Culture.hutt"
+		super_faction="Kingdom.hutt_cartel"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
+	<!-- Pyke Syndicate -->
 	<Faction
- initial_home_settlement="Settlement.town_GR1"
+ initial_home_settlement="Settlement.town_CS_PK1"
 		id="pyke_syndicate"
 		name="Pyke Syndicate"
 		tier="5"
 		owner="Hero.lom"
-		culture="Culture.crime_syndicates"
-		super_faction="Kingdom.crime_syndicates"
+		culture="Culture.hutt"
+		super_faction="Kingdom.pyke_syndicate"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 
