@@ -3084,8 +3084,8 @@
 		</basic_mercenary_troops>
 	</Culture>
 
-	<Culture id="crime_syndicates"
-		name="Galactic Criminal"
+	<Culture id="hutt"
+		name="Hutt"
 		is_main_culture="true"
 		color="0xff793191"
 		color2="0xffFCDE90"

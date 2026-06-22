@@ -561,7 +561,7 @@ namespace SeparatistCrisis.PartyVisuals
 
                 //if (mapEvent != null && (mapEvent.EventType == MapEvent.BattleTypes.FieldBattle || mapEvent.EventType == MapEvent.BattleTypes.Raid || mapEvent.EventType == MapEvent.BattleTypes.SiegeOutside || mapEvent.EventType == MapEvent.BattleTypes.SallyOut))
                 //    SCMobilePartyVisual.GetPartyBattleAnimation(party, wieldedItemIndex, out leaderAction, out mountAction);
-                /* END HERE */
+                ///* END HERE */
 
                 IFaction mapFaction1 = party.MapFaction;
                 uint teamColor1 = mapFaction1 != null ? mapFaction1.Color : 4291609515U;
@@ -569,8 +569,10 @@ namespace SeparatistCrisis.PartyVisuals
                 uint teamColor2 = mapFaction2 != null ? mapFaction2.Color2 : 4291609515U;
 
                 // Comment this as well
-                //this.AddCharacterToPartyIcon(party, PartyBaseHelper.GetVisualPartyLeader(party), contourColor, bannerKey, wieldedItemIndex, teamColor1, teamColor2, in leaderAction, in mountAction, MBRandom.NondeterministicRandomFloat * 0.7f, ref clearBannerEntityCache);
-                
+                // this.AddCharacterToPartyIcon(party, PartyBaseHelper.GetVisualPartyLeader(party), contourColor, bannerKey, wieldedItemIndex, teamColor1, teamColor2, in leaderAction, in mountAction, MBRandom.NondeterministicRandomFloat * 0.7f, ref clearBannerEntityCache);
+                // End Comment
+
+
                 if (!party.IsMobile)
                     return;
 
@@ -998,8 +1000,16 @@ namespace SeparatistCrisis.PartyVisuals
 
         private void InitializePartyCollider(PartyBase party)
         {
+            //if (this.StrategicEntity != null && party.IsMobile)
+            //    this.StrategicEntity.AddSphereAsBody(new Vec3(), 0.5f, BodyFlags.Moveable | BodyFlags.OnlyCollideWithRaycast);
+
+            //if (this.ShipVisuals != null && party.IsMobile)
+            //    this.ShipVisuals.AddSphereAsBody(new Vec3(), 0.5f, BodyFlags.Moveable | BodyFlags.OnlyCollideWithRaycast);
+
+            // Original
             if (!(this.StrategicEntity != (GameEntity)null) || !party.IsMobile)
                 return;
+
             this.StrategicEntity.AddSphereAsBody(new Vec3(), 0.5f, BodyFlags.Moveable | BodyFlags.OnlyCollideWithRaycast);
         }
 

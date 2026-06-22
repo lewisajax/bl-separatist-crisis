@@ -81,7 +81,8 @@ namespace SeparatistCrisis.PatchTools
             new GetGameKeyCategoriesListPatch(),
             new SpawnAgentPatch(),
             // new OpenCustomBattleMissionPatch(),
-            new MapScreenPatches()
+            new MapScreenPatches(),
+            new TradeBoundPatch(),
         };
 
         // REGISTER ALL ACTIVE HARMONY PATCH CLASSES TO USE OnGameStart HERE:
