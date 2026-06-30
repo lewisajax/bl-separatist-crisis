@@ -7,12 +7,14 @@ using System.Text;
 using System.Threading.Tasks;
 using TaleWorlds.Core;
 using TaleWorlds.Core.ViewModelCollection.Information;
+using TaleWorlds.Engine;
 using TaleWorlds.InputSystem;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.MountAndBlade.CustomBattle;
 using TaleWorlds.MountAndBlade.CustomBattle.CustomBattle;
+using TaleWorlds.MountAndBlade.CustomBattle.CustomBattle.SelectionItem;
 using TaleWorlds.MountAndBlade.View.CustomBattle;
 
 namespace SeparatistCrisis.CustomBattle
@@ -681,12 +683,15 @@ namespace SeparatistCrisis.CustomBattle
                 wallHitPointsPercentages = CustomBattleHelper.GetWallHitpointPercentages(MapSelectionGroup.SelectedWallBreachedCount);
             }
 
+            MapItemVM selectedMap2 = this.MapSelectionGroup.SelectedMap;
+
             return CustomBattleHelper.PrepareBattleData(selectedCharacter, playerSideGeneralCharacter, 
                 customBattleParties[0], customBattleParties[1], GameTypeSelectionGroup.SelectedPlayerSide, 
                 GameTypeSelectionGroup.SelectedPlayerType, this.GameTypeSelectionGroup.SelectedGameTypeString, 
                 MapSelectionGroup.SelectedMap.MapId, MapSelectionGroup.SelectedSeasonId, 
                 MapSelectionGroup.SelectedTimeOfDay, list, list2, wallHitPointsPercentages, 
-                MapSelectionGroup.SelectedSceneLevel, MapSelectionGroup.IsSallyOutSelected);
+                MapSelectionGroup.SelectedSceneLevel, MapSelectionGroup.IsSallyOutSelected,
+                (selectedMap2 != null) ? selectedMap2.ForcedSceneLevel : null);
         }
 
         public void ExecuteStart()

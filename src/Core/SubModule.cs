@@ -64,7 +64,7 @@ namespace SeparatistCrisis
             extender.Register(typeof(SubModule).Assembly);
             extender.Enable();
 
-            this.InitializeHotKeyManager(true);
+            this.InitializeHotKeyManager();
 
             // Using the launcher.exe will reinitialize the hotkeys a 2nd time, overwriting our first init, where as using bannerlord.exe will only initialize it once during the startup screen.
             // This might cause async issues, if so opt for patching the methods in ViewSubModule
@@ -197,7 +197,7 @@ namespace SeparatistCrisis
             }
         }
 
-        private void InitializeHotKeyManager(bool loadKeys)
+        private void InitializeHotKeyManager()
         {
             Dictionary<string, GameKeyContext>.ValueCollection prevContexts = HotKeyManager.GetAllCategories();
             List<GameKeyContext> newContexts = prevContexts.ToList();
@@ -205,12 +205,12 @@ namespace SeparatistCrisis
             newContexts.Add(new SCGameKeyContext());
             newContexts.Add(new SCCombatHotKeyCategory());
 
-            HotKeyManager.RegisterInitialContexts(newContexts, loadKeys);
+            HotKeyManager.RegisterInitialContexts(newContexts);
         }
 
         private void ReInitializeHotKeyManager()
         {
-            this.InitializeHotKeyManager(true);
+            this.InitializeHotKeyManager();
         }
 
         private void AddBehaviors(CampaignGameStarter gameStarter, Game game)

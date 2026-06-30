@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Conversation;
+using TaleWorlds.CampaignSystem.Naval;
 using TaleWorlds.CampaignSystem.Roster;
 using TaleWorlds.CampaignSystem.Settlements.Locations;
 using TaleWorlds.Core;
@@ -41,9 +42,9 @@ namespace SeparatistCrisis.MissionManagers
             return SandBoxMissions.OpenCaravanBattleMission(rec, isCaravan);
         }
 
-        IMission CampaignMission.ICampaignMissionManager.OpenBattleMission(string scene, bool usesTownDecalAtlas)
+        IMission CampaignMission.ICampaignMissionManager.OpenBattleMission(string scene, bool usesTownDecalAtlas, string sceneLevels)
         {
-            return SCMissions.OpenBattleMission(scene, usesTownDecalAtlas);
+            return SCMissions.OpenBattleMission(scene, usesTownDecalAtlas, sceneLevels);
         }
 
         IMission CampaignMission.ICampaignMissionManager.OpenAlleyFightMission(string scene, int upgradeLevel, Location location, TroopRoster playerSideTroops, TroopRoster rivalSideTroops)
@@ -129,6 +130,11 @@ namespace SeparatistCrisis.MissionManagers
         public IMission OpenNavalBattleMission(MissionInitializerRecord rec) => null;
 
         public IMission OpenNavalSetPieceBattleMission(MissionInitializerRecord rec, MBList<IShipOrigin> playerShips, MBList<IShipOrigin> playerAllyShips, MBList<IShipOrigin> enemyShips)
+        {
+            return null;
+        }
+
+        public IMission OpenNavalRaidMission(TroopRoster navalRaidTroops, BattleSideEnum navalSide, List<Ship> allShips)
         {
             return null;
         }

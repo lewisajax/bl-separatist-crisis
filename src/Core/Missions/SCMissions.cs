@@ -27,9 +27,9 @@ namespace SeparatistCrisis.Missions
     public static class SCMissions
     {
         [MissionMethod]
-        public static Mission OpenBattleMission(string scene, bool usesTownDecalAtlas)
+        public static Mission OpenBattleMission(string scene, bool usesTownDecalAtlas, string sceneLevels)
         {
-            return SCMissions.OpenBattleMission(SandBoxMissions.CreateSandBoxMissionInitializerRecord(scene, "", false, usesTownDecalAtlas ? DecalAtlasGroup.Town : DecalAtlasGroup.Battle));
+            return SCMissions.OpenBattleMission(SandBoxMissions.CreateSandBoxMissionInitializerRecord(scene, sceneLevels, false, usesTownDecalAtlas ? DecalAtlasGroup.Town : DecalAtlasGroup.Battle));
         }
 
         [MissionMethod]
@@ -89,12 +89,12 @@ namespace SeparatistCrisis.Missions
             }, true, true);
         }
 
-        public static MissionAgentSpawnLogic CreateCampaignMissionAgentSpawnLogic(Mission.BattleSizeType battleSizeType, FlattenedTroopRoster priorTroopsForDefenders = null, FlattenedTroopRoster priorTroopsForAttackers = null)
+        private static DefaultBattleMissionAgentSpawnLogic CreateCampaignMissionAgentSpawnLogic(Mission.BattleSizeType battleSizeType, FlattenedTroopRoster priorTroopsForDefenders = null, FlattenedTroopRoster priorTroopsForAttackers = null)
         {
-            return new MissionAgentSpawnLogic(new IMissionTroopSupplier[]
+            return new DefaultBattleMissionAgentSpawnLogic(new IMissionTroopSupplier[]
             {
-                new PartyGroupTroopSupplier(MapEvent.PlayerMapEvent, BattleSideEnum.Defender, priorTroopsForDefenders),
-                new PartyGroupTroopSupplier(MapEvent.PlayerMapEvent, BattleSideEnum.Attacker, priorTroopsForAttackers)
+                new PartyGroupTroopSupplier(MapEvent.PlayerMapEvent, BattleSideEnum.Defender, priorTroopsForDefenders, null),
+                new PartyGroupTroopSupplier(MapEvent.PlayerMapEvent, BattleSideEnum.Attacker, priorTroopsForAttackers, null)
             }, PartyBase.MainParty.Side, battleSizeType);
         }
     }

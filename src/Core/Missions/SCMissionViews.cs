@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Engine;
 using TaleWorlds.MountAndBlade;
+using TaleWorlds.MountAndBlade.Missions.BattleScore;
 using TaleWorlds.MountAndBlade.View;
 using TaleWorlds.MountAndBlade.View.MissionViews;
 using TaleWorlds.MountAndBlade.View.MissionViews.Order;
@@ -33,7 +34,7 @@ namespace SeparatistCrisis.Missions
                 new MissionCampaignView(),
                 ViewCreator.CreateMissionSingleplayerEscapeMenu(CampaignOptions.IsIronmanMode),
                 ViewCreator.CreateMissionAgentLabelUIHandler(mission),
-                ViewCreator.CreateMissionBattleScoreUIHandler(mission, new SPScoreboardVM(null)),
+                ViewCreator.CreateMissionBattleScoreUIHandler(mission, SPScoreboardVM.CreateMission(mission)),
                 ViewCreator.CreateOptionsUIHandler(),
 
                 SCViewCreator.CreateMissionAbilityEquipView(mission),
@@ -73,7 +74,7 @@ namespace SeparatistCrisis.Missions
             List<MissionView> list = new List<MissionView>();
             list.Add(ViewCreator.CreateMissionSingleplayerEscapeMenu(false));
             list.Add(ViewCreator.CreateMissionAgentLabelUIHandler(mission));
-            list.Add(ViewCreator.CreateMissionBattleScoreUIHandler(mission, new CustomBattleScoreboardVM()));
+            list.Add(ViewCreator.CreateMissionBattleScoreUIHandler(mission, new CustomBattleScoreboardVM(new CustomBattleScoreContext(mission))));
             list.Add(ViewCreator.CreateOptionsUIHandler());
             list.Add(ViewCreator.CreateMissionMainAgentEquipDropView(mission));
             MissionView missionView = ViewCreator.CreateMissionOrderUIHandler(null);
