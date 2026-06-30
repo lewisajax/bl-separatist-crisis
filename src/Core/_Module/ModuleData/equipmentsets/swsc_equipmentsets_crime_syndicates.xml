@@ -30,7 +30,7 @@
 				id="Item.pauldron_cape_a" />
 		</EquipmentSet>
 		<EquipmentSet
-			civilian="true">
+			equipmentType="Civilian">
 			<Equipment
 				slot="Item0"
 				id="Item.empire_sword_5_t4" />
@@ -44,8 +44,5 @@
 				slot="Gloves"
 				id="Item.padded_mitten" />
 		</EquipmentSet>
-		<Flags
-			IsNobleTemplate="true"
-			IsCombatantTemplate="true" />
 	</EquipmentRoster>
 </EquipmentRosters>

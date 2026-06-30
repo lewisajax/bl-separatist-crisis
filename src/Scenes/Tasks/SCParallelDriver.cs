@@ -23,6 +23,11 @@ namespace SeparatistCrisis.Scenes.Tasks
             this._driver.For(fromInclusive, toExclusive, body, grainSize);
         }
 
+        public void ForWithoutRenderThreadDt(int fromInclusive, int toExclusive, float deltaTime, TWParallel.ParallelForWithDtAuxPredicate body, int grainSize)
+        {
+            this._driver.For(fromInclusive, toExclusive, deltaTime, body, grainSize);
+        }
+
         public void For(int fromInclusive, int toExclusive, float deltaTime, TWParallel.ParallelForWithDtAuxPredicate body, int grainSize)
         {
             this._driver.For(fromInclusive, toExclusive, deltaTime, body, grainSize);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <EquipmentRosters>
     <EquipmentRoster id="republic_clone_civilian_template_t1" culture="Culture.republic">
-		<EquipmentSet civilian="true">
+		<EquipmentSet equipmentType="Civilian">
 			<Equipment slot="Item0" id="Item.dc_15a_rifle" />
 			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
 			<Equipment slot="Head" id="Item.p1_clone_helmet_trooper" />
@@ -12,7 +12,7 @@
 		</EquipmentSet>
 	</EquipmentRoster>
     <EquipmentRoster id="republic_clone_arc_civilian_template_t1" culture="Culture.republic">
-		<EquipmentSet civilian="true">
+		<EquipmentSet equipmentType="Civilian">
 			<Equipment slot="Item0" id="Item.dc_15s_carbine" />
 			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
 			<Equipment slot="Head" id="Item.p1_clone_helmet_arc_trooper" />
@@ -24,7 +24,7 @@
 	</EquipmentRoster>
 	<!-- We could do with a arc sergeant armour set -->
     <EquipmentRoster id="republic_clone_arc_civilian_template_t2" culture="Culture.republic">
-		<EquipmentSet civilian="true">
+		<EquipmentSet equipmentType="Civilian">
 			<Equipment slot="Item0" id="Item.dc_15s_carbine" /> <!-- westar_m5_rifle-->
 			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
 			<Equipment slot="Head" id="Item.p1_clone_helmet_arc_lieutenant" />
@@ -35,7 +35,7 @@
 		</EquipmentSet>
 	</EquipmentRoster>
     <EquipmentRoster id="republic_clone_arc_civilian_template_t3" culture="Culture.republic">
-		<EquipmentSet civilian="true">
+		<EquipmentSet equipmentType="Civilian">
 			<Equipment slot="Item0" id="Item.dc_15s_carbine" /> <!-- dual_westar_35_pistols-->
 			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
 			<Equipment slot="Head" id="Item.p1_clone_helmet_arc_captain" />
@@ -46,7 +46,7 @@
 		</EquipmentSet>
 	</EquipmentRoster>
 	<EquipmentRoster id="republic_officer_civilian_template_t1" culture="Culture.republic">
-		<EquipmentSet civilian="true">
+		<EquipmentSet equipmentType="Civilian">
 			<Equipment slot="Item0" id="Item.mandalorian_pistol" /> <!-- Need dc_17_hand_blaster -->
 			<Equipment slot="Item1" id="Item.blaster_bolt_short_blue" />
 			<Equipment slot="Head" id="Item.republic_officer_hat" />
@@ -56,7 +56,7 @@
 		</EquipmentSet>
 	</EquipmentRoster>
 	<EquipmentRoster id="republic_senate_commando_civilian_template_t1" culture="Culture.republic">
-		<EquipmentSet civilian="true">
+		<EquipmentSet equipmentType="Civilian">
 			<Equipment slot="Item0" id="Item.dc_15a_rifle" />
 			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
 			<Equipment slot="Item2" id="Item.bothan_stun_stick" />
@@ -68,7 +68,7 @@
 		</EquipmentSet>
 	</EquipmentRoster>
 	<EquipmentRoster id="republic_senate_commando_civilian_template_t2" culture="Culture.republic">
-		<EquipmentSet civilian="true">
+		<EquipmentSet equipmentType="Civilian">
 			<Equipment slot="Item0" id="Item.dc_15a_rifle" />
 			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
 			<Equipment slot="Item2" id="Item.bothan_stun_stick" />
@@ -80,7 +80,7 @@
 		</EquipmentSet>
 	</EquipmentRoster>
 	<EquipmentRoster id="212_clone_airborne_civilian_template_t1" culture="Culture.republic">
-		<EquipmentSet civilian="true">
+		<EquipmentSet equipmentType="Civilian">
 			<Equipment slot="Item0" id="Item.dc_15s_carbine" />
 			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
 			<Equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- p1_clone_airborne_helmet -->
@@ -91,7 +91,7 @@
 		</EquipmentSet>
 	</EquipmentRoster>
 	<EquipmentRoster id="104_clone_flame_trooper_civilian_template_t1" culture="Culture.republic">
-		<EquipmentSet civilian="true">
+		<EquipmentSet equipmentType="Civilian">
 			<Equipment slot="Item0" id="Item.dc_15s_carbine" />
 			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
 			<Equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- p1_clone_flame_trooper_helmet -->
@@ -102,7 +102,7 @@
 		</EquipmentSet>
 	</EquipmentRoster>
 	<EquipmentRoster id="327_clone_barc_civilian_template_t1" culture="Culture.republic">
-		<EquipmentSet civilian="true">
+		<EquipmentSet equipmentType="Civilian">
 			<Equipment slot="Item0" id="Item.dc_15s_carbine" />
 			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
 			<Equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- p1_clone_barc_helmet -->
@@ -113,7 +113,7 @@
 		</EquipmentSet>
 	</EquipmentRoster>
 	<EquipmentRoster id="21_galactic_marine_civilian_template_t1" culture="Culture.republic">
-		<EquipmentSet civilian="true">
+		<EquipmentSet equipmentType="Civilian">
 			<Equipment slot="Item0" id="Item.dc_15s_carbine" />
 			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
 			<Equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- p1_clone_galactic_marine_helmet -->
@@ -124,7 +124,7 @@
 		</EquipmentSet>
 	</EquipmentRoster>
 	<EquipmentRoster id="9_clone_arf_civilian_template_t1" culture="Culture.republic">
-		<EquipmentSet civilian="true">
+		<EquipmentSet equipmentType="Civilian">
 			<Equipment slot="Item0" id="Item.dc_15s_carbine" />
 			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
 			<Equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- p1_clone_arf_helmet -->
@@ -135,7 +135,7 @@
 		</EquipmentSet>
 	</EquipmentRoster>
 	<EquipmentRoster id="republic_clone_commando_civilian_template_t1" culture="Culture.republic">
-		<EquipmentSet civilian="true">
+		<EquipmentSet equipmentType="Civilian">
 			<Equipment slot="Item0" id="Item.dc_15s_carbine" /> <!-- DC-17M Rifle Config -->
 			<Equipment slot="Item1" id="Item.blaster_bolt_medium_blue" />
 			<Equipment slot="Head" id="Item.p1_clone_helmet_trooper" /> <!-- clone_commando_helmet -->
