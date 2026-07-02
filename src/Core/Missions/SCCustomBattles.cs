@@ -120,7 +120,7 @@ namespace SeparatistCrisis.Missions
             {
                 DoNotUseLoadingScreen = false,
                 PlayingInCampaignMode = false,
-                AtmosphereOnCampaign = CreateAtmosphereInfoForMission(seasonString, (int)timeOfDay),
+                // AtmosphereOnCampaign = CreateAtmosphereInfoForMission(seasonString, (int)timeOfDay),
                 SceneLevels = sceneLevels,
                 DecalAtlasGroup = 2
             }, (missionController) => new MissionBehavior[]
