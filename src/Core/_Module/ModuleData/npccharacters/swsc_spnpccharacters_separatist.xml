@@ -35,7 +35,7 @@
                 <equipment slot="Gloves" id="Item.b1_droid_hands_factory_new" />
                 <equipment slot="Leg" id="Item.b1_droid_feet_factory_new" />
 			</EquipmentRoster>
-			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="separatist_b1_battle_droid_veteran"
@@ -72,7 +72,7 @@
                 <equipment slot="Gloves" id="Item.b1_droid_hands_new" />
                 <equipment slot="Leg" id="Item.b1_droid_feet_new" />
 			</EquipmentRoster>
-			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="separatist_b1_security_droid"
@@ -109,7 +109,7 @@
                 <equipment slot="Gloves" id="Item.b1_droid_hands_new" /> <!-- b1_droid_hands_security -->
                 <equipment slot="Leg" id="Item.b1_droid_feet_new" /> <!-- b1_droid_feet_security -->
 			</EquipmentRoster>
-			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="separatist_b1_security_droid_veteran"
@@ -144,7 +144,7 @@
                 <equipment slot="Gloves" id="Item.b1_droid_hands_new" /> <!-- b1_droid_hands_security -->
                 <equipment slot="Leg" id="Item.b1_droid_feet_new" /> <!-- b1_droid_feet_security -->
 			</EquipmentRoster>
-			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="separatist_b1_droid_commander"
@@ -178,7 +178,7 @@
                 <equipment slot="Gloves" id="Item.b1_droid_hands_new" /> <!-- b1_droid_hands_security -->
                 <equipment slot="Leg" id="Item.b1_droid_feet_new" /> <!-- b1_droid_feet_security -->
 			</EquipmentRoster>
-			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="separatist_b1_marksman_droid"
@@ -213,7 +213,7 @@
                 <equipment slot="Gloves" id="Item.b1_droid_hands_new" /> <!-- b1_droid_hands_security -->
                 <equipment slot="Leg" id="Item.b1_droid_feet_new" /> <!-- b1_droid_feet_security -->
 			</EquipmentRoster>
-			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="separatist_b1_marksman_droid_veteran"
@@ -247,7 +247,7 @@
                 <equipment slot="Gloves" id="Item.b1_droid_hands_new" /> <!-- b1_droid_hands_security -->
                 <equipment slot="Leg" id="Item.b1_droid_feet_new" /> <!-- b1_droid_feet_security -->
 			</EquipmentRoster>
-			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="separatist_b1_heavy_battle_droid"
@@ -283,7 +283,7 @@
                 <equipment slot="Gloves" id="Item.b1_droid_hands_new" />
                 <equipment slot="Leg" id="Item.b1_droid_feet_new" />
 			</EquipmentRoster>
-			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="separatist_b1_heavy_battle_droid_aa"
@@ -319,7 +319,7 @@
                 <equipment slot="Gloves" id="Item.b1_droid_hands_new" />
                 <equipment slot="Leg" id="Item.b1_droid_feet_new" />
 			</EquipmentRoster>
-			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="separatist_b1_heavy_battle_droid_veteran"
@@ -354,7 +354,7 @@
                 <equipment slot="Gloves" id="Item.b1_droid_hands_new" />
                 <equipment slot="Leg" id="Item.b1_droid_feet_new" />
 			</EquipmentRoster>
-			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="separatist_b1_battle_droid_enforcer"
@@ -389,7 +389,7 @@
                 <equipment slot="Gloves" id="Item.b1_droid_hands_new" />
                 <equipment slot="Leg" id="Item.b1_droid_feet_new" />
 			</EquipmentRoster>
-			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="separatist_b1_grapple_droid"
@@ -424,7 +424,7 @@
                 <equipment slot="Gloves" id="Item.b1_droid_hands_new" /> <!-- b1_grapple_droid_hands -->
                 <equipment slot="Leg" id="Item.b1_droid_feet_new" /> <!-- b1_grapple_droid_feet -->
 			</EquipmentRoster>
-			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="separatist_b1a_air_battle_droid"
@@ -459,7 +459,7 @@
                 <equipment slot="Gloves" id="Item.b1_droid_hands_new" /> <!-- b1a_air_battle_droid_hands -->
                 <equipment slot="Leg" id="Item.b1_droid_feet_new" /> <!-- b1a_air_battle_droid_feet -->
 			</EquipmentRoster>
-			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="separatist_b1a_air_battle_droid_veteran"
@@ -493,7 +493,7 @@
                 <equipment slot="Gloves" id="Item.b1_droid_hands_new" /> <!-- b1a_air_battle_droid_hands -->
                 <equipment slot="Leg" id="Item.b1_droid_feet_new" /> <!-- b1a_air_battle_droid_feet -->
 			</EquipmentRoster>
-			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="separatist_b1_droid_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 </NPCCharacters>

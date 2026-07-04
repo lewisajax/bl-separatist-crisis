@@ -47,7 +47,7 @@
 				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
 			</EquipmentRoster>
 			<!-- End Temp Roster -->
-			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="republic_clone_trooper"
@@ -96,7 +96,7 @@
 				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
 			</EquipmentRoster>
 			<!-- End Temp Roster -->
-			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="republic_clone_corporal"
@@ -145,7 +145,7 @@
 				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
 			</EquipmentRoster>
 			<!-- End Temp Roster -->
-			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="republic_clone_sergeant"
@@ -193,7 +193,7 @@
 				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
 			</EquipmentRoster>
 			<!-- End Temp Roster -->
-			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="republic_clone_veteran"
@@ -240,7 +240,7 @@
 				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
 			</EquipmentRoster>
 			<!-- End Temp Roster -->
-			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="republic_clone_riot_police"
@@ -287,7 +287,7 @@
 				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
 			</EquipmentRoster>
 			<!-- End Temp Roster -->
-			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="republic_clone_riot_police_sergeant"
@@ -334,7 +334,7 @@
 				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
 			</EquipmentRoster>
 			<!-- End Temp Roster -->
-			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="republic_clone_riot_police_veteran"
@@ -380,7 +380,7 @@
 				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
 			</EquipmentRoster>
 			<!-- End Temp Roster -->
-			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_speeder"
@@ -428,7 +428,7 @@
 				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
 			</EquipmentRoster>
 			<!-- End Temp Roster -->
-			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_civilian_template_t1" equipmentType="Civilian" />
 			<equipment slot="Horse" id="Item.t3_vlandia_horse" />
 			<equipment slot="HorseHarness" id="Item.chain_barding" />
 		</Equipments>
@@ -477,7 +477,7 @@
 				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" />
 			</EquipmentRoster>
 			<!-- End Temp Roster -->
-			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_civilian_template_t1" equipmentType="Civilian" />
 			<equipment slot="Horse" id="Item.t3_vlandia_horse" />
 			<equipment slot="HorseHarness" id="Item.chain_barding" />
 		</Equipments>
@@ -516,7 +516,7 @@
 				<!-- <equipment slot="Gloves" id="Item.republic_officer_gloves" /> --> <!-- Need the gloves -->
 				<!-- <equipment slot="Leg" id="Item.republic_officer_boots" /> --> <!-- Need the boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="republic_officer_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_officer_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_officer_2nd_lt"
@@ -549,7 +549,7 @@
 				<equipment slot="Head" id="Item.republic_officer_hat" />
 				<equipment slot="Body" id="Item.republic_officer_second_lt" />
 			</EquipmentRoster>
-			<EquipmentSet id="republic_officer_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_officer_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_officer_1st_lt"
@@ -583,7 +583,7 @@
 				<equipment slot="Head" id="Item.republic_officer_hat" />
 				<equipment slot="Body" id="Item.republic_officer_first_lt" />
 			</EquipmentRoster>
-			<EquipmentSet id="republic_officer_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_officer_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_officer_captain"
@@ -616,7 +616,7 @@
 				<equipment slot="Head" id="Item.republic_officer_hat" />
 				<equipment slot="Body" id="Item.republic_officer_cpt" />
 			</EquipmentRoster>
-			<EquipmentSet id="republic_officer_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_officer_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_officer_major"
@@ -648,7 +648,7 @@
 				<equipment slot="Head" id="Item.republic_officer_hat" />
 				<equipment slot="Body" id="Item.republic_officer_maj" />
 			</EquipmentRoster>
-			<EquipmentSet id="republic_officer_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_officer_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_senate_commando"
@@ -684,7 +684,7 @@
 				<equipment slot="Gloves" id="Item.senate_commando_gauntlets" /> 
 				<equipment slot="Leg" id="Item.senate_commando_boots" /> 
 			</EquipmentRoster>
-			<EquipmentSet id="republic_senate_commando_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_senate_commando_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_senate_commando_veteran"
@@ -721,7 +721,7 @@
 				<equipment slot="Gloves" id="Item.senate_commando_gauntlets" /> 
 				<equipment slot="Leg" id="Item.senate_commando_boots" /> 
 			</EquipmentRoster>
-			<EquipmentSet id="republic_senate_commando_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_senate_commando_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_senate_commando_captain"
@@ -755,7 +755,7 @@
 				<equipment slot="Gloves" id="Item.senate_commando_gauntlets_captain" /> 
 				<equipment slot="Leg" id="Item.senate_commando_boots_captain" /> 
 			</EquipmentRoster>
-			<EquipmentSet id="republic_senate_commando_civilian_template_t2" civilian="true" />
+			<EquipmentSet id="republic_senate_commando_civilian_template_t2" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_red_guard"
@@ -789,7 +789,7 @@
 				<equipment slot="Gloves" id="Item.senate_commando_gauntlets_captain" /> 
 				<equipment slot="Leg" id="Item.senate_commando_boots_captain" /> 
 			</EquipmentRoster>
-			<EquipmentSet id="republic_senate_commando_civilian_template_t2" civilian="true" />
+			<EquipmentSet id="republic_senate_commando_civilian_template_t2" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<!-- Republic ARC Line - We don't reference these via the culture so they would have to be generated from code -->
@@ -827,7 +827,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" />
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_arc_trooper"
@@ -863,7 +863,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_arc_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_arc_trooper" />
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_arc_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_arc_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_arc_corporal"
@@ -900,7 +900,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_arc_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_arc_trooper" />
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_arc_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_arc_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_arc_sergeant"
@@ -937,7 +937,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_arc_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_arc_trooper" />
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_arc_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_arc_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_arc_lieutenant"
@@ -973,7 +973,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_arc_lieutenant" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_arc_lieutenant" />
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_arc_civilian_template_t2" civilian="true" />
+			<EquipmentSet id="republic_clone_arc_civilian_template_t2" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_arc_captain"
@@ -1007,7 +1007,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_arc_captain" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_arc_captain" />
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_arc_civilian_template_t3" civilian="true" />
+			<EquipmentSet id="republic_clone_arc_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_arc_heavy_sergeant"
@@ -1045,7 +1045,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_arc_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_arc_trooper" />
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_arc_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_arc_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_arc_heavy_lieutenant"
@@ -1081,7 +1081,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_arc_lieutenant" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_arc_lieutenant" />
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_arc_civilian_template_t2" civilian="true" />
+			<EquipmentSet id="republic_clone_arc_civilian_template_t2" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_arc_infiltrator"
@@ -1118,7 +1118,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_arc_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_arc_trooper" />
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_arc_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_arc_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_arc_infiltrator_sergeant"
@@ -1156,7 +1156,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_arc_trooper" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_arc_trooper" />
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_arc_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_arc_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_arc_infiltrator_lieutenant"
@@ -1193,7 +1193,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_arc_lieutenant" />
 				<equipment slot="Leg" id="Item.p1_clone_boots_arc_lieutenant" />
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_arc_civilian_template_t2" civilian="true" />
+			<EquipmentSet id="republic_clone_arc_civilian_template_t2" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<!-- Republic Commando Line - We don't reference these via the culture so they would have to be generated from code -->
@@ -1231,7 +1231,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_commando"
@@ -1268,7 +1268,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_commando_corporal"
@@ -1304,7 +1304,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_commando_sergeant"
@@ -1340,7 +1340,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_commando_veteran"
@@ -1374,7 +1374,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_commando_sniper"
@@ -1410,7 +1410,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_commando_sniper_veteran"
@@ -1445,7 +1445,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_commando_anti_armor"
@@ -1481,7 +1481,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_commando_anti_armor_sergeant"
@@ -1517,7 +1517,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="republic_clone_commando_anti_armor_veteran"
@@ -1552,7 +1552,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- clone_commando_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- clone_commando_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="republic_clone_commando_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="republic_clone_commando_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<!-- 212th (Airpower) -->
@@ -1590,7 +1590,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- 212 skin -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- 212 skin -->
 			</EquipmentRoster>
-			<EquipmentSet id="212_clone_airborne_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="212_clone_airborne_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="212_clone_airborne_trooper"
@@ -1627,7 +1627,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- 212 skin -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- 212 skin -->
 			</EquipmentRoster>
-			<EquipmentSet id="212_clone_airborne_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="212_clone_airborne_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="212_clone_airborne_corporal"
@@ -1663,7 +1663,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- 212 skin -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- 212 skin -->
 			</EquipmentRoster>
-			<EquipmentSet id="212_clone_airborne_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="212_clone_airborne_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="212_clone_airborne_sergeant"
@@ -1700,7 +1700,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- 212 skin -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- 212 skin -->
 			</EquipmentRoster>
-			<EquipmentSet id="212_clone_airborne_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="212_clone_airborne_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="212_clone_airborne_veteran"
@@ -1736,7 +1736,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- 212 skin -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- 212 skin -->
 			</EquipmentRoster>
-			<EquipmentSet id="212_clone_airborne_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="212_clone_airborne_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="212_clone_airborne_at_corporal"
@@ -1772,7 +1772,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- 212 skin -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- 212 skin -->
 			</EquipmentRoster>
-			<EquipmentSet id="212_clone_airborne_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="212_clone_airborne_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="212_clone_airborne_at_sergeant"
@@ -1808,7 +1808,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- 212 skin -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- 212 skin -->
 			</EquipmentRoster>
-			<EquipmentSet id="212_clone_airborne_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="212_clone_airborne_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="212_clone_airborne_at_veteran"
@@ -1843,7 +1843,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- 212 skin -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- 212 skin -->
 			</EquipmentRoster>
-			<EquipmentSet id="212_clone_airborne_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="212_clone_airborne_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<!-- 104th (Firepower) -->
@@ -1881,7 +1881,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_flame_trooper_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_flame_trooper_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="104_clone_flame_trooper"
@@ -1917,7 +1917,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_flame_trooper_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_flame_trooper_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="104_clone_flame_trooper_corporal"
@@ -1954,7 +1954,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_flame_trooper_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_flame_trooper_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="104_clone_flame_trooper_sergeant"
@@ -1991,7 +1991,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_flame_trooper_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_flame_trooper_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="104_clone_flame_trooper_veteran"
@@ -2026,7 +2026,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_flame_trooper_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_flame_trooper_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="104_clone_heavy_trooper"
@@ -2063,7 +2063,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- 104 skin -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- 104 skin-->
 			</EquipmentRoster>
-			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="104_clone_heavy_trooper_veteran"
@@ -2099,7 +2099,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- 104 skin -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- 104 skin-->
 			</EquipmentRoster>
-			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="104_clone_blaze_trooper"
@@ -2135,7 +2135,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_blaze_trooper_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_blaze_trooper_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="104_clone_blaze_trooper_veteran"
@@ -2170,7 +2170,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_blaze_trooper_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_blaze_trooper_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="104_clone_flame_trooper_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<!-- 327th (Vehicles) -->
@@ -2208,7 +2208,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> 
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> 
 			</EquipmentRoster>
-			<EquipmentSet id="327_clone_barc_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="327_clone_barc_civilian_template_t1" equipmentType="Civilian" />
 			<!-- <equipment slot="Horse" id="Item.aratech_105k_speeder" /> -->
 		</Equipments>
 	</NPCCharacter>
@@ -2245,7 +2245,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> 
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> 
 			</EquipmentRoster>
-			<EquipmentSet id="327_clone_barc_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="327_clone_barc_civilian_template_t1" equipmentType="Civilian" />
 			<!-- <equipment slot="Horse" id="Item.barc_speeder" /> -->
 		</Equipments>
 	</NPCCharacter>
@@ -2283,7 +2283,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> 
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> 
 			</EquipmentRoster>
-			<EquipmentSet id="327_clone_barc_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="327_clone_barc_civilian_template_t1" equipmentType="Civilian" />
 			<!-- <equipment slot="Horse" id="Item.barc_speeder" /> -->
 		</Equipments>
 	</NPCCharacter>
@@ -2321,7 +2321,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> 
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> 
 			</EquipmentRoster>
-			<EquipmentSet id="327_clone_barc_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="327_clone_barc_civilian_template_t1" equipmentType="Civilian" />
 			<!-- <equipment slot="Horse" id="Item.barc_speeder" /> -->
 		</Equipments>
 	</NPCCharacter>
@@ -2358,7 +2358,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> 
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> 
 			</EquipmentRoster>
-			<EquipmentSet id="327_clone_barc_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="327_clone_barc_civilian_template_t1" equipmentType="Civilian" />
 			<!-- <equipment slot="Horse" id="Item.barc_speeder" /> -->
 		</Equipments>
 	</NPCCharacter>
@@ -2395,7 +2395,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> 
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> 
 			</EquipmentRoster>
-			<EquipmentSet id="327_clone_barc_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="327_clone_barc_civilian_template_t1" equipmentType="Civilian" />
 			<!-- <equipment slot="Horse" id="Item.clone_personal_walker" /> -->
 		</Equipments>
 	</NPCCharacter>
@@ -2432,7 +2432,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> 
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> 
 			</EquipmentRoster>
-			<EquipmentSet id="327_clone_barc_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="327_clone_barc_civilian_template_t1" equipmentType="Civilian" />
 			<!-- <equipment slot="Horse" id="Item.clone_personal_walker" /> -->
 		</Equipments>
 	</NPCCharacter>
@@ -2469,7 +2469,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> 
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> 
 			</EquipmentRoster>
-			<EquipmentSet id="327_clone_barc_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="327_clone_barc_civilian_template_t1" equipmentType="Civilian" />
 			<!-- <equipment slot="Horse" id="Item.clone_personal_walker" /> -->
 		</Equipments>
 	</NPCCharacter>
@@ -2505,7 +2505,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> 
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> 
 			</EquipmentRoster>
-			<EquipmentSet id="327_clone_barc_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="327_clone_barc_civilian_template_t1" equipmentType="Civilian" />
 			<!-- <equipment slot="Horse" id="Item.clone_personal_walker" /> -->
 		</Equipments>
 	</NPCCharacter>
@@ -2544,7 +2544,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- 21 skin -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- 21 skin -->
 			</EquipmentRoster>
-			<EquipmentSet id="21_galactic_marine_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="21_galactic_marine_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="21_galactic_marine_trooper"
@@ -2581,7 +2581,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_galactic_marine_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_galactic_marine_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="21_galactic_marine_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="21_galactic_marine_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="21_galactic_marine_corporal"
@@ -2617,7 +2617,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_galactic_marine_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_galactic_marine_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="21_galactic_marine_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="21_galactic_marine_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="21_galactic_marine_sergeant"
@@ -2653,7 +2653,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_galactic_marine_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_galactic_marine_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="21_galactic_marine_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="21_galactic_marine_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="21_galactic_marine_veteran"
@@ -2688,7 +2688,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_galactic_marine_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_galactic_marine_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="21_galactic_marine_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="21_galactic_marine_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="21_galactic_marine_at_corporal"
@@ -2724,7 +2724,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_galactic_marine_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_galactic_marine_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="21_galactic_marine_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="21_galactic_marine_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="21_galactic_marine_breacher_sergeant"
@@ -2760,7 +2760,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_galactic_marine_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_galactic_marine_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="21_galactic_marine_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="21_galactic_marine_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="21_galactic_marine_breacher_veteran"
@@ -2794,7 +2794,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_galactic_marine_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_galactic_marine_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="21_galactic_marine_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="21_galactic_marine_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<!-- 9th (Stealth) -->
@@ -2832,7 +2832,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- 9th skin -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- 9th skin -->
 			</EquipmentRoster>
-			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="9_clone_arf_trooper"
@@ -2868,7 +2868,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- 9th skin -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- 9th skin -->
 			</EquipmentRoster>
-			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="9_clone_arf_corporal"
@@ -2905,7 +2905,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_arf_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_arf_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
      <NPCCharacter id="9_clone_arf_walker_sergeant"
@@ -2941,7 +2941,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_arf_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_arf_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" equipmentType="Civilian" />
 			<!-- <equipment slot="Horse" id="Item.at_rt_walker" /> -->
 		</Equipments>
 	</NPCCharacter>
@@ -2977,7 +2977,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_arf_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_arf_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" equipmentType="Civilian" />
 			<!-- <equipment slot="Horse" id="Item.at_rt_walker" /> -->
 		</Equipments>
 	</NPCCharacter>
@@ -3013,7 +3013,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_assassin_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_assassin_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
     <NPCCharacter id="9_clone_assassin_veteran"
@@ -3046,7 +3046,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_trooper" /> <!-- p1_clone_assassin_gauntlets -->
 				<equipment slot="Leg" id="Item.p1_clone_boots_trooper" /> <!-- p1_clone_assassin_boots -->
 			</EquipmentRoster>
-			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="9_clone_shadow_trooper"
@@ -3082,7 +3082,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_shadow_trooper" /> 
 				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" /> 
 			</EquipmentRoster>
-			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter id="9_clone_shadow_trooper_veteran"
@@ -3116,7 +3116,7 @@
 				<equipment slot="Gloves" id="Item.p1_clone_gauntlets_shadow_trooper" /> 
 				<equipment slot="Leg" id="Item.p1_clone_boots_shadow_trooper" /> 
 			</EquipmentRoster>
-			<EquipmentSet id="9_clone_arf_civilian_template_t1" civilian="true" />
+			<EquipmentSet id="9_clone_arf_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 </NPCCharacters>

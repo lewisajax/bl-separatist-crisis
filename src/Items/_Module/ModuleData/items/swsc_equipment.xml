@@ -189,31 +189,31 @@
 		</ItemComponent>
 		<Flags Civilian="true"></Flags>
 	</Item>
-	<Item id="bodyguard_commander_helmet" name="{=iAWzr8Q0}Bodyguard Commander Helmet" mesh="bodyguard_commander_helmet" culture="Culture.neutral" weight="2.9" appearance="1" Type="HeadArmor">
+	<Item id="bodyguard_commander_helmet" name="{=iAWzr8Q0}Bodyguard Commander Helmet" mesh="bodyguard_commander_helmet" culture="Culture.neutral_culture" weight="2.9" appearance="1" Type="HeadArmor">
 		<ItemComponent>
 			<Armor head_armor="36" covers_head = "false" hair_cover_type ="all" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="bodyguard_heavy_helmet" name="{=iAWzr8Q0}Bodyguard Heavy Helmet" mesh="bodyguard_heavy_helmet" culture="Culture.neutral" weight="2.7" appearance="1" Type="HeadArmor">
+	<Item id="bodyguard_heavy_helmet" name="{=iAWzr8Q0}Bodyguard Heavy Helmet" mesh="bodyguard_heavy_helmet" culture="Culture.neutral_culture" weight="2.7" appearance="1" Type="HeadArmor">
 		<ItemComponent>
 			<Armor head_armor="27" covers_head = "false" hair_cover_type ="all" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="bodyguard_helmet" name="{=iAWzr8Q0}Bodyguard Helmet" mesh="bodyguard_helmet" culture="Culture.neutral" weight="1.6" appearance="1" Type="HeadArmor">
+	<Item id="bodyguard_helmet" name="{=iAWzr8Q0}Bodyguard Helmet" mesh="bodyguard_helmet" culture="Culture.neutral_culture" weight="1.6" appearance="1" Type="HeadArmor">
 		<ItemComponent>
 			<Armor head_armor="18" covers_head = "false" hair_cover_type ="all" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="bodyguard_pilot_helmet" name="{=iAWzr8Q0}Bodyguard Pilot Helmet" mesh="bodyguard_pilot_helmet" culture="Culture.neutral" weight="1.9" appearance="1" Type="HeadArmor">
+	<Item id="bodyguard_pilot_helmet" name="{=iAWzr8Q0}Bodyguard Pilot Helmet" mesh="bodyguard_pilot_helmet" culture="Culture.neutral_culture" weight="1.9" appearance="1" Type="HeadArmor">
 		<ItemComponent>
 			<Armor head_armor="28" covers_head = "false" hair_cover_type ="all" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>
 		<Flags Civilian="true" UseTeamColor="true"></Flags>
 	</Item>
-	<Item id="bodyguard_scout_helmet" name="{=iAWzr8Q0}Bodyguard Scout Helmet" mesh="bodyguard_scout_helmet" culture="Culture.neutral" weight="1.2" appearance="1" Type="HeadArmor">
+	<Item id="bodyguard_scout_helmet" name="{=iAWzr8Q0}Bodyguard Scout Helmet" mesh="bodyguard_scout_helmet" culture="Culture.neutral_culture" weight="1.2" appearance="1" Type="HeadArmor">
 		<ItemComponent>
 			<Armor head_armor="16" covers_head = "false" hair_cover_type ="all" modifier_group="plate" material_type="Plate"></Armor>
 		</ItemComponent>

@@ -9,6 +9,7 @@ using TaleWorlds.Core.ViewModelCollection.Selector;
 using TaleWorlds.Engine;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
+using TaleWorlds.MountAndBlade;
 using TaleWorlds.MountAndBlade.CustomBattle;
 using TaleWorlds.MountAndBlade.CustomBattle.CustomBattle;
 using TaleWorlds.MountAndBlade.CustomBattle.CustomBattle.SelectionItem;

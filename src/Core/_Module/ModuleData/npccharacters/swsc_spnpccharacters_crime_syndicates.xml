@@ -41,7 +41,7 @@
 				id="spc_ohnaka_gang_leader_0" />
 			<EquipmentSet
 				id="spc_ohnaka_gang_leader_0"
-				civilian="true" />
+				equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 </NPCCharacters>
