@@ -1,11 +1,11 @@
 ﻿<Prefab>
 	<Window>
-		<Widget HeightSizePolicy="StretchToParent" WidthSizePolicy="StretchToParent"
-				Sprite="empire_tavern">
+		<Widget HeightSizePolicy="StretchToParent" WidthSizePolicy="StretchToParent">
 			<Children>
 
 				<BrushWidget WidthSizePolicy="Fixed" SuggestedWidth="1100" HeightSizePolicy="Fixed" SuggestedHeight="800"
-							 HorizontalAlignment="Center" VerticalAlignment="Center">
+							 HorizontalAlignment="Center" VerticalAlignment="Center"
+							 Brush="Recruitment.Frame">
 					<Children>
 
 						<ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
