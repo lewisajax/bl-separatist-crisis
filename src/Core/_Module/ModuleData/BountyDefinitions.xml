@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BountyDefinitions>
+
+	<BountyDefinition id="wandering_lord_bounty" spawnType="Wandering">
+		<Name>Wanted Criminal</Name>
+		<Description>A notorious wandering Republic officer has a price on their head.</Description>
+		<ValueRange min="500" max="5000" />
+		<ExpiryDaysRange min="10" max="30" />
+		<FactionId>galactic_republic</FactionId>
+		<BountyFactionId>separatist</BountyFactionId>
+		<ExistingLordId></ExistingLordId>
+	</BountyDefinition>
+
+	<BountyDefinition id="settlement_gang_bounty" spawnType="SettlementGang">
+		<Name>Gang Leader</Name>
+		<Description>A bandit gang has entrenched itself near a Republic village.</Description>
+		<ValueRange min="500" max="5000" />
+		<ExpiryDaysRange min="10" max="30" />
+		<FactionId>galactic_republic</FactionId>
+		<HeroTemplate>
+			<CharacterTemplateId>looter</CharacterTemplateId>
+			<NameText>Gang Leader</NameText>
+			<AgeRange min="25" max="45" />
+			<Equipment>
+			</Equipment>
+		</HeroTemplate>
+	</BountyDefinition>
+
+
+	<BountyDefinition id="tavern_bounty" spawnType="TwoStageSettlement">
+		<Name>Gang Boss</Name>
+		<Description>A gang has taken over the local tavern, and its boss holds court there.</Description>
+		<ValueRange min="500" max="6000" />
+		<ExpiryDaysRange min="10" max="30" />
+		<FactionId>galactic_republic</FactionId>
+		<ThugCount>2</ThugCount>
+		<HeroTemplate>
+			<CharacterTemplateId>looter</CharacterTemplateId>
+			<NameText>Gang Boss</NameText>
+			<AgeRange min="25" max="45" />
+		</HeroTemplate>
+	</BountyDefinition>
+
+	<BountyDefinition id="stealth_fugitive_bounty" spawnType="SettlementStealth">
+		<Name>Hidden Fugitive</Name>
+		<Description>Someone is hiding among the villagers in Separatist territory, unarmed but dangerous.</Description>
+		<ValueRange min="500" max="5000" />
+		<ExpiryDaysRange min="10" max="30" />
+		<FactionId>separatist</FactionId>
+		<HeroTemplate>
+			<CharacterTemplateId>looter</CharacterTemplateId>
+			<NameText>Hidden Fugitive</NameText>
+			<AgeRange min="25" max="45" />
+			<BodyProperties version="4" age="22.12" weight="0.388" build="0.2513"
+							key="0005200D81A0055BB87CA7BE46828398C99688DB5A89995B4569949693B8724D00B466030B54798700000000000000000000000000000000000000005D6C1042" />
+			<Equipment>
+				<Slot name="Weapon0" item="sword_1_t2" />
+			</Equipment>
+		</HeroTemplate>
+	</BountyDefinition>
+
+	<BountyDefinition id="separatist_patrol" spawnType="PatrolParty">
+		<Name>Separatist Patrol</Name>
+		<Description>A Separatist patrol has been spotted in the area.</Description>
+		<FactionId>separatist</FactionId>
+		<BountyFactionId>galactic_republic</BountyFactionId>
+		<PatrolRadius>15</PatrolRadius>
+		<Troop id="aserai_recruit" count="10" />
+		<HeroTemplate>
+			<CharacterTemplateId>looter</CharacterTemplateId>
+			<NameText>Separatist Patrol Leader</NameText>
+			<AgeRange min="25" max="45" />
+		</HeroTemplate>
+	</BountyDefinition>
+
+	<BountyDefinition id="hideout_boss_bounty" spawnType="HideoutBoss">
+		<Name>Hideout Boss</Name>
+		<Description>A bandit chieftain has holed up in a nearby hideout, wanted by the Separatists.</Description>
+		<ValueRange min="500" max="5000" />
+		<ExpiryDaysRange min="10" max="30" />
+		<FactionId>separatist</FactionId>
+		<HeroTemplate>
+			<CharacterTemplateId>looter</CharacterTemplateId>
+			<NameText>Bandit Chieftain</NameText>
+			<AgeRange min="25" max="45" />
+		</HeroTemplate>
+	</BountyDefinition>
+
+</BountyDefinitions>

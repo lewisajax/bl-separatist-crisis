@@ -86,6 +86,12 @@ namespace SeparatistCrisis.PatchTools
         };
 
         // REGISTER ALL ACTIVE HARMONY PATCH CLASSES TO USE OnGameStart HERE:
-        private static readonly PatchClass[] _campaignPatchClasses = Array.Empty<PatchClass>();
+        private static readonly PatchClass[] _campaignPatchClasses = new PatchClass[]
+        {
+            new BountyHunting.Patches.AiPatrollingBehaviorSafetyPatch(),
+            new BountyHunting.Patches.CheckMissionEndedSafetyPatch(),
+            new BountyHunting.Patches.OnEndMissionRequestSafetyPatch(), 
+            new BountyHunting.Patches.DoCaptureHeroesPatch(),
+        };
     }
 }

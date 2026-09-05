@@ -105,7 +105,7 @@ namespace SeparatistCrisis
             {
                 PatchManager.ApplyCampaignPatches(CampaignHarmonyDomain);
 
-                var gameStarter = (CampaignGameStarter) gameStarterObject;
+                var gameStarter = (CampaignGameStarter)gameStarterObject;
                 this.OnRegisterTypes();
 
             }
@@ -128,7 +128,7 @@ namespace SeparatistCrisis
 
         public override void BeginGameStart(Game game)
         {
-            if (game?.ObjectManager != null) 
+            if (game?.ObjectManager != null)
             {
                 if (game.GameType.GetType() == typeof(CustomGame) || game.GameType.GetType() == typeof(Campaign))
                 {
@@ -216,6 +216,7 @@ namespace SeparatistCrisis
         private void AddBehaviors(CampaignGameStarter gameStarter, Game game)
         {
             gameStarter.AddBehavior(new InitCampaignBehavior());
+            gameStarter.AddBehavior(new BountyHunting.BountyHunterBehavior());
         }
 
         private void AddModels(CampaignGameStarter campaignGameStarter)
@@ -226,7 +227,7 @@ namespace SeparatistCrisis
         {
             base.OnGameEnd(game);
 
-            if (game != null &&  game.GameType is Campaign)
+            if (game != null && game.GameType is Campaign)
             {
                 //PatchManager.RemoveCampaignPatches();// Not sure we should do this...
             }

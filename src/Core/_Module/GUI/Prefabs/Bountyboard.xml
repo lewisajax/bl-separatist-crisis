@@ -1,0 +1,208 @@
+﻿<Prefab>
+	<Window>
+		<Widget HeightSizePolicy="StretchToParent" WidthSizePolicy="StretchToParent"
+				Sprite="empire_tavern">
+			<Children>
+
+				<BrushWidget WidthSizePolicy="Fixed" SuggestedWidth="1100" HeightSizePolicy="Fixed" SuggestedHeight="800"
+							 HorizontalAlignment="Center" VerticalAlignment="Center">
+					<Children>
+
+						<ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+								   StackLayout.LayoutMethod="VerticalTopToBottom">
+							<Children>
+
+								<!--Title-->
+								<TextWidget Text="@TitleText" HorizontalAlignment="Center"
+											WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="50"
+											MarginTop="15" MarginBottom="10" />
+
+								<!--Divider under title-->
+								<Widget WidthSizePolicy="Fixed" SuggestedWidth="700" HorizontalAlignment="Center" HeightSizePolicy="Fixed" SuggestedHeight="2"
+										Sprite="BlankWhiteSquare_9" Color="#D4AF37FF" MarginBottom="10" />
+
+								<!--Two-column body-->
+								<ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+										   StackLayout.LayoutMethod="HorizontalLeftToRight" MarginBottom="10">
+									<Children>
+
+										<!--LEFT: name list-->
+										<ScrollablePanel WidthSizePolicy="Fixed" SuggestedWidth="320" HeightSizePolicy="StretchToParent"
+														 MarginLeft="15"
+														 AutoHideScrollBars="true" ClipRect="NameClipRect"
+														 InnerPanel="NameClipRect\NameListPanel"
+														 VerticalScrollbar="..\NameScrollbarContainer\NameScrollbar">
+											<Children>
+												<Widget Id="NameClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+													<Children>
+														<ListPanel Id="NameListPanel" DataSource="{Bounties}"
+																   WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren"
+																   StackLayout.LayoutMethod="VerticalTopToBottom">
+															<ItemTemplate>
+																<ButtonWidget ButtonType="Toggle" IsSelected="@IsSelected"
+																			  DoNotPassEventsToChildren="true" UpdateChildrenStates="true"
+																			  WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="45"
+																			  MarginBottom="5"
+																			  Brush="Popup.Done.Button.NineGrid" Brush.SaturationFactor="-100" Command.Click="ExecuteSelection">
+																	<Children>
+																		<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+																					HorizontalAlignment="Center" VerticalAlignment="Center"
+																					Brush="Popup.Button.Text" Text="@HeroName" />
+																	</Children>
+																</ButtonWidget>
+															</ItemTemplate>
+														</ListPanel>
+													</Children>
+												</Widget>
+											</Children>
+										</ScrollablePanel>
+
+										<Widget Id="NameScrollbarContainer" WidthSizePolicy="Fixed" SuggestedWidth="15" HeightSizePolicy="StretchToParent">
+											<Children>
+												<ScrollbarWidget Id="NameScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="8"
+																 HorizontalAlignment="Right" VerticalAlignment="Top"
+																 AlignmentAxis="Vertical" Handle="NameScrollbarHandle" MaxValue="100" MinValue="0">
+													<Children>
+														<Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4"
+																HorizontalAlignment="Center" Sprite="BlankWhiteSquare_9" Color="#D4AF37FF" AlphaFactor="0.2" />
+														<ImageWidget Id="NameScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"
+																	 SuggestedHeight="10" SuggestedWidth="8" HorizontalAlignment="Center"
+																	 Brush="FaceGen.Scrollbar.Handle" />
+													</Children>
+												</ScrollbarWidget>
+											</Children>
+										</Widget>
+
+										<!--Vertical divider between columns-->
+										<Widget WidthSizePolicy="Fixed" SuggestedWidth="2" HeightSizePolicy="StretchToParent"
+												MarginLeft="10" MarginRight="10"
+												Sprite="BlankWhiteSquare_9" Color="#D4AF37FF" />
+
+										<!--RIGHT: detail panel for selected bounty-->
+										<ScrollablePanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+														 MarginRight="15"
+														 AutoHideScrollBars="true" ClipRect="DetailClipRect"
+														 InnerPanel="DetailClipRect\DetailListPanel"
+														 VerticalScrollbar="..\DetailScrollbarContainer\DetailScrollbar">
+											<Children>
+												<Widget Id="DetailClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+													<Children>
+														<ListPanel Id="DetailListPanel"
+																   WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren"
+																   StackLayout.LayoutMethod="VerticalTopToBottom">
+															<Children>
+
+																<TextWidget IsVisible="@IsDetailVisibleNegated"
+																			Text="Select a target from the list."
+																			HorizontalAlignment="Center" VerticalAlignment="Center"
+																			WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="400"
+																			MarginTop="0" />
+
+																<Widget IsVisible="@IsDetailVisible" WidthSizePolicy="Fixed" SuggestedWidth="500"
+																		HeightSizePolicy="Fixed" SuggestedHeight="650"
+																		HorizontalAlignment="Center" MarginBottom="15" ClipContents="true">
+																	<Children>
+																		<EncyclopediaCharacterTableauWidget DataSource="{HeroCharacter}"
+																											 AlphaFactor="1"
+																											 WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"
+																											 SuggestedWidth="500" SuggestedHeight="800"
+																											 HorizontalAlignment="Center" VerticalAlignment="Bottom"
+																											 BodyProperties="@BodyProperties" IsFemale="@IsFemale"
+																											 EquipmentCode="@EquipmentCode" CharStringId="@CharStringId"
+																											 StanceIndex="@StanceIndex" BannerCodeText="@BannerCodeText"
+																											 MountCreationKey="@MountCreationKey" IsEnabled="false" IsDead="@IsDead"
+																											 ArmorColor1="@ArmorColor1" ArmorColor2="@ArmorColor2"
+																											 IdleAction="@IdleAction" IdleFaceAnim="@IdleFaceAnim" Race="@Race"
+																											 IsHidden="@IsHidden" />
+																	</Children>
+																</Widget>
+
+																<Widget IsVisible="@IsDetailVisible" WidthSizePolicy="Fixed" SuggestedWidth="700" HorizontalAlignment="Center" HeightSizePolicy="Fixed" SuggestedHeight="2"
+																		Sprite="BlankWhiteSquare_9" Color="#D4AF37FF" MarginBottom="15" />
+
+																<TextWidget IsVisible="@IsDetailVisible" Text="Description"
+																			HorizontalAlignment="Left" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="25"
+																			MarginLeft="10" MarginBottom="5" />
+
+																<TextWidget IsVisible="@IsDetailVisible" Text="@DetailDescriptionText"
+																			HorizontalAlignment="Left" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren"
+																			MarginLeft="10" MarginRight="10" MarginBottom="15" />
+
+																<Widget IsVisible="@IsDetailVisible" WidthSizePolicy="Fixed" SuggestedWidth="700" HorizontalAlignment="Center" HeightSizePolicy="Fixed" SuggestedHeight="2"
+																		Sprite="BlankWhiteSquare_9" Color="#D4AF37FF" MarginBottom="15" />
+
+																<TextWidget IsVisible="@IsDetailVisible" Text="Reward"
+																			HorizontalAlignment="Center" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="25"
+																			MarginBottom="5" />
+
+																<TextWidget IsVisible="@IsDetailVisible" Text="@DetailRewardText"
+																			HorizontalAlignment="Center" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="35"
+																			MarginBottom="15" />
+
+																<Widget IsVisible="@IsDetailVisible" WidthSizePolicy="Fixed" SuggestedWidth="700" HorizontalAlignment="Center" HeightSizePolicy="Fixed" SuggestedHeight="2"
+																		Sprite="BlankWhiteSquare_9" Color="#D4AF37FF" MarginBottom="15" />
+
+																<ButtonWidget IsVisible="@IsDetailVisible"
+																			  DoNotPassEventsToChildren="true" UpdateChildrenStates="true"
+																			  WidthSizePolicy="Fixed" SuggestedWidth="220" HeightSizePolicy="Fixed" SuggestedHeight="45"
+																			  HorizontalAlignment="Center" MarginBottom="20"
+																			  Brush="Popup.Done.Button.NineGrid" Command.Click="ExecuteAcceptOrTurnIn">
+																	<Children>
+																		<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+																					HorizontalAlignment="Center" VerticalAlignment="Center"
+																					Brush="Popup.Button.Text" Text="@DetailButtonText" />
+																	</Children>
+																</ButtonWidget>
+
+															</Children>
+														</ListPanel>
+													</Children>
+												</Widget>
+											</Children>
+										</ScrollablePanel>
+
+										<Widget Id="DetailScrollbarContainer" WidthSizePolicy="Fixed" SuggestedWidth="15" HeightSizePolicy="StretchToParent">
+											<Children>
+												<ScrollbarWidget Id="DetailScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="8"
+																 HorizontalAlignment="Right" VerticalAlignment="Top"
+																 AlignmentAxis="Vertical" Handle="DetailScrollbarHandle" MaxValue="100" MinValue="0">
+													<Children>
+														<Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4"
+																HorizontalAlignment="Center" Sprite="BlankWhiteSquare_9" Color="#D4AF37FF" AlphaFactor="0.2" />
+														<ImageWidget Id="DetailScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"
+																	 SuggestedHeight="10" SuggestedWidth="8" HorizontalAlignment="Center"
+																	 Brush="FaceGen.Scrollbar.Handle" />
+													</Children>
+												</ScrollbarWidget>
+											</Children>
+										</Widget>
+
+									</Children>
+								</ListPanel>
+
+								<!--Divider above close-->
+								<Widget WidthSizePolicy="Fixed" SuggestedWidth="700" HorizontalAlignment="Center" HeightSizePolicy="Fixed" SuggestedHeight="2"
+										Sprite="BlankWhiteSquare_9" Color="#D4AF37FF" MarginBottom="10" />
+
+								<!--Close-->
+								<ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true"
+											  WidthSizePolicy="Fixed" SuggestedWidth="150" HeightSizePolicy="Fixed" SuggestedHeight="40"
+											  HorizontalAlignment="Center" MarginBottom="15"
+											  Brush="Popup.Done.Button.NineGrid" Brush.SaturationFactor="-100" Command.Click="ExecuteClose">
+									<Children>
+										<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+													HorizontalAlignment="Center" VerticalAlignment="Center"
+													Brush="Popup.Button.Text" Text="Close" />
+									</Children>
+								</ButtonWidget>
+
+							</Children>
+						</ListPanel>
+
+					</Children>
+				</BrushWidget>
+
+			</Children>
+		</Widget>
+	</Window>
+</Prefab>
