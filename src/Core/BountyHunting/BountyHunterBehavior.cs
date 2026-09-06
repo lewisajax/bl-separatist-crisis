@@ -2710,11 +2710,18 @@ namespace SeparatistCrisis.BountyHunting
             starter.AddGameMenuOption(
                 "village",
                 "bh_gang_attack",
-                "Attack bandits",
+                "{=BountyAttackGangOption}Attack the {GANG_FACTION_NAME}",
                 args =>
                 {
                     args.optionLeaveType = GameMenuOption.LeaveType.HostileAction;
-                    return TryGetActiveGangBountyForCurrentVillage(out _);
+                    if (!TryGetActiveGangBountyForCurrentVillage(out var bounty))
+                    {
+                        return false;
+                    }
+
+                    var factionName = bounty.TargetHero?.MapFaction?.Name ?? bounty.TargetHero?.Clan?.Name;
+                    MBTextManager.SetTextVariable("GANG_FACTION_NAME", factionName ?? new TextObject("{=BountyUnknownGangFaction}gang"));
+                    return true;
                 },
                 args =>
                 {
