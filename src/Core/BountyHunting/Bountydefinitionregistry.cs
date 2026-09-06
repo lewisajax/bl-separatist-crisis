@@ -167,6 +167,8 @@ namespace SeparatistCrisis.BountyHunting
                     def.TroopCount = (int?)troopEl.Attribute("count") ?? def.TroopCount;
                 }
 
+                def.ThugCount = (int?)el.Element("ThugCount") ?? def.ThugCount;
+
                 return def;
             }
             catch (Exception ex)

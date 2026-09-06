@@ -1,25 +1,28 @@
+using Helpers;
+using SandBox.Missions.MissionLogics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
+using TaleWorlds.CampaignSystem.AgentOrigins;
 using TaleWorlds.CampaignSystem.CharacterDevelopment;
 using TaleWorlds.CampaignSystem.Conversation;
 using TaleWorlds.CampaignSystem.Encounters;
 using TaleWorlds.CampaignSystem.GameMenus;
 using TaleWorlds.CampaignSystem.Map;
 using TaleWorlds.CampaignSystem.MapEvents;
-using Helpers;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Party.PartyComponents;
 using TaleWorlds.CampaignSystem.Roster;
 using TaleWorlds.CampaignSystem.Settlements;
+using TaleWorlds.CampaignSystem.Settlements.Locations;
 using TaleWorlds.Core;
+using TaleWorlds.InputSystem;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.ObjectSystem;
-using TaleWorlds.InputSystem;
 
 namespace SeparatistCrisis.BountyHunting
 {
@@ -40,6 +43,8 @@ namespace SeparatistCrisis.BountyHunting
 
         private readonly HashSet<string> _gangPartiesBeingCleanedUp = new HashSet<string>();
 
+        private readonly HashSet<string> _bountySpawnedThisMission = new HashSet<string>();
+
         private const int MaxActiveBounties = 15;
         private const float DailyBountySpawnChance = 0.15f;
         private const float HideoutResolutionChancePerSettlementEntry = 0.15f;
@@ -48,6 +53,10 @@ namespace SeparatistCrisis.BountyHunting
         private const int MinExpiryDays = 10;
         private const int MaxExpiryDays = 30;
         private const int MaxDisplayedBountySlots = 15;
+
+        private const string PatrolFoodItemId = "grain";
+        private const int PatrolFoodTopUpThreshold = 50;
+        private const int PatrolFoodTopUpAmount = 200;
 
         private const float MarkerRefreshIntervalSeconds = 10f;
 
@@ -79,6 +88,7 @@ namespace SeparatistCrisis.BountyHunting
             CampaignEvents.OnSettlementLeftEvent.AddNonSerializedListener(this, OnSettlementLeft);
             CampaignEvents.OnHideoutDeactivatedEvent.AddNonSerializedListener(this, OnHideoutDeactivated);
             CampaignEvents.HourlyTickEvent.AddNonSerializedListener(this, OnHourlyTick);
+            CampaignEvents.OnMissionStartedEvent.AddNonSerializedListener(this, OnMissionStarted);
 
             BountyLogger.Log("RegisterEvents called — behavior initialized.");
         }
@@ -291,6 +301,16 @@ namespace SeparatistCrisis.BountyHunting
                 UntrackBounty(bounty);
                 bounty.AssociatedQuest?.CompleteBountyQuest(false);
                 BountyLogger.Log($"Bounty expired: {bounty.TargetHero?.Name} ({bounty.BountyValue} gold).");
+
+                if (bounty.IsAlleyBounty)
+                {
+                    var alley = FindAlleyForBounty(bounty);
+                    if (alley != null)
+                    {
+                        alley.SetOwner(null);
+                        BountyLogger.Log($"CleanupExpiredBounties: reset alley '{bounty.AlleyTag}' back to unowned after expiry.");
+                    }
+                }
             }
 
             int beforePrune = _activeBounties.Count;
@@ -387,6 +407,15 @@ namespace SeparatistCrisis.BountyHunting
                     break;
                 case BountySpawnType.HideoutBoss:
                     ResolveHideoutBossBounty(definition);
+                    break;
+                case BountySpawnType.Alley:
+                    ResolveAlleyBounty(definition);
+                    break;
+                case BountySpawnType.InSettlement:
+                    ResolveInSettlementBounty(definition);
+                    break;
+                case BountySpawnType.Tavern:
+                    ResolveTavernBounty(definition);
                     break;
                 default:
                     BountyLogger.Log($"ResolveDefinition: ABORT — unhandled SpawnType '{definition.SpawnType}' for definition '{definition.Id}'.");
@@ -603,13 +632,24 @@ namespace SeparatistCrisis.BountyHunting
         {
             BountyLogger.Log($"RemoveUnresolvableBounty: removing bounty on {bounty.TargetHero?.Name} — {reason}");
 
-            if (bounty.IsSettlementAnchored && !bounty.IsHideoutBounty && !bounty.IsPatrolBounty)
+            if (bounty.IsSettlementAnchored && !bounty.IsHideoutBounty && !bounty.IsPatrolBounty && !bounty.IsAlleyBounty
+                && !bounty.IsInSettlementBounty && !bounty.IsTavernBounty)
             {
                 var settlement = Settlement.All.FirstOrDefault(s => s.StringId == bounty.TargetSettlementId);
                 if (settlement != null)
                 {
                     ChangeVillageStateAction.ApplyBySettingToNormal(settlement);
                     BountyLogger.Log($"RemoveUnresolvableBounty: reset '{settlement.Name}' back to normal state.");
+                }
+            }
+
+            if (bounty.IsAlleyBounty)
+            {
+                var alley = FindAlleyForBounty(bounty);
+                if (alley != null)
+                {
+                    alley.SetOwner(null);
+                    BountyLogger.Log($"RemoveUnresolvableBounty: reset alley '{bounty.AlleyTag}' at settlement '{bounty.TargetSettlementId}' back to unowned.");
                 }
             }
 
@@ -776,6 +816,523 @@ namespace SeparatistCrisis.BountyHunting
             var chosen = resolved[MBRandom.RandomInt(resolved.Count)];
             BountyLogger.Log($"{callerName}: resolved settlement '{chosen.Name}' ({chosen.StringId}) — {resolved.Count} eligible candidate(s) for FactionId='{definition.FactionId ?? "none"}'.");
             return chosen;
+        }
+
+        /// <summary>
+        /// Creates an in-settlement bounty: a hero with no spawned party, anchored
+        /// to a settlement, spawned as a LocationCharacter each time the player
+        /// enters that settlement's mission (see OnMissionStarted). Fought via
+        /// ExecuteInSettlementBountyAttack, which uses
+        /// MissionFightHandler.StartCustomFight — the same proven vanilla combat-
+        /// scripting API the alley bounty relies on — rather than manually forcing
+        /// MissionMode.Battle, which is what caused this bounty type's original,
+        /// since-removed implementation to crash repeatedly.
+        /// </summary>
+        private void ResolveInSettlementBounty(BountyDefinition definition)
+        {
+            if (definition?.Template == null)
+            {
+                BountyLogger.Log($"ResolveInSettlementBounty: ABORT — definition '{definition?.Id}' has no HeroTemplate.");
+                InformationManager.DisplayMessage(new InformationMessage("[BountyHunting] In-settlement bounty definition missing or invalid."));
+                return;
+            }
+
+            Settlement targetSettlement = ResolveDefinitionSettlement(definition, "ResolveInSettlementBounty", s => s.IsVillage || s.IsTown);
+            if (targetSettlement == null)
+            {
+                InformationManager.DisplayMessage(new InformationMessage("[BountyHunting] No valid settlement configured for this bounty."));
+                return;
+            }
+
+            Clan banditClan;
+            string targetFactionId = definition.TargetFactionId ?? definition.FactionId;
+            if (string.IsNullOrEmpty(targetFactionId) || string.Equals(targetFactionId, "Bandit", StringComparison.OrdinalIgnoreCase))
+            {
+                banditClan = Clan.BanditFactions.FirstOrDefault(c => c.Culture == targetSettlement.Culture && c.StringId != "looters")
+                                ?? Clan.BanditFactions.FirstOrDefault(c => c.StringId != "looters")
+                                ?? Clan.BanditFactions.FirstOrDefault();
+            }
+            else
+            {
+                banditClan = Clan.All.FirstOrDefault(c => c.StringId == targetFactionId)
+                                ?? Kingdom.All.FirstOrDefault(k => k.StringId == targetFactionId)?.RulingClan;
+            }
+
+            if (banditClan == null)
+            {
+                BountyLogger.Log($"ResolveInSettlementBounty: ABORT — TargetFactionId '{targetFactionId}' did not resolve to any Clan, bandit faction, or Kingdom's ruling clan.");
+                InformationManager.DisplayMessage(new InformationMessage("[BountyHunting] No bandit clan found."));
+                return;
+            }
+
+            var baseHeroTemplate = MBObjectManager.Instance.GetObject<CharacterObject>(definition.Template.CharacterTemplateId);
+            if (baseHeroTemplate == null)
+            {
+                BountyLogger.Log($"ResolveInSettlementBounty: ABORT — CharacterTemplateId '{definition.Template.CharacterTemplateId}' did not resolve.");
+                InformationManager.DisplayMessage(new InformationMessage("[BountyHunting] Could not resolve hero template."));
+                return;
+            }
+            var heroTemplate = CharacterObject.CreateFrom(baseHeroTemplate);
+
+            int age = MBRandom.RandomInt(definition.Template.MinAge, definition.Template.MaxAge);
+            Hero leaderHero = HeroCreator.CreateSpecialHero(heroTemplate, targetSettlement, banditClan, null, age);
+            if (leaderHero == null)
+            {
+                BountyLogger.Log("ResolveInSettlementBounty: ABORT — HeroCreator.CreateSpecialHero returned null.");
+                InformationManager.DisplayMessage(new InformationMessage("[BountyHunting] Failed to create bounty hero."));
+                return;
+            }
+
+            var heroName = new TextObject(definition.Template.NameText ?? "Hidden Fugitive");
+            leaderHero.SetName(heroName, heroName);
+            leaderHero.ChangeState(Hero.CharacterStates.Active);
+
+            ApplyHeroTemplateEquipment(leaderHero, definition.Template);
+            ApplyHeroTemplateBodyProperties(leaderHero, definition.Template);
+            leaderHero.IsKnownToPlayer = true;
+
+            int value = MBRandom.RandomInt(definition.MinValue, definition.MaxValue);
+            int expiryDays = MBRandom.RandomInt(definition.MinExpiryDays, definition.MaxExpiryDays);
+
+            var bounty = new BountyTarget(leaderHero, value, guardPartySize: 0, expiryDays)
+            {
+                TargetSettlementId = targetSettlement.StringId,
+                IsInSettlementBounty = true,
+                Description = definition.Description,
+                FactionId = targetSettlement.MapFaction?.StringId,
+                TargetFactionId = targetFactionId
+            };
+            _activeBounties.Add(bounty);
+
+            BountyLogger.Log($"ResolveInSettlementBounty: bounty created on {leaderHero.Name}, hiding in '{targetSettlement.Name}', value={value}, expiryDays={expiryDays}.");
+            InformationManager.DisplayMessage(new InformationMessage(
+                $"[BountyHunting] {(string.IsNullOrEmpty(definition.Description) ? "A fugitive is hiding in a settlement." : definition.Description)} ({value} gold, hiding in {targetSettlement.Name})"));
+        }
+
+        /// <summary>
+        /// Creates a tavern bounty: a target hero and its accompanying thugs, ready
+        /// to spawn in the settlement's tavern as soon as the player enters it.
+        /// Fought via ExecuteTavernBountyAttack, using
+        /// MissionFightHandler.StartCustomFight.
+        /// </summary>
+        private void ResolveTavernBounty(BountyDefinition definition)
+        {
+            if (definition?.Template == null)
+            {
+                BountyLogger.Log($"ResolveTavernBounty: ABORT — definition '{definition?.Id}' has no HeroTemplate.");
+                InformationManager.DisplayMessage(new InformationMessage("[BountyHunting] Tavern bounty definition missing or invalid."));
+                return;
+            }
+
+            Settlement targetSettlement = ResolveDefinitionSettlement(definition, "ResolveTavernBounty", s => s.IsTown);
+            if (targetSettlement == null)
+            {
+                InformationManager.DisplayMessage(new InformationMessage("[BountyHunting] No valid settlement configured for this bounty."));
+                return;
+            }
+
+            Clan banditClan;
+            string targetFactionId = definition.TargetFactionId ?? definition.FactionId;
+            if (string.IsNullOrEmpty(targetFactionId) || string.Equals(targetFactionId, "Bandit", StringComparison.OrdinalIgnoreCase))
+            {
+                banditClan = Clan.BanditFactions.FirstOrDefault(c => c.Culture == targetSettlement.Culture && c.StringId != "looters")
+                                ?? Clan.BanditFactions.FirstOrDefault(c => c.StringId != "looters")
+                                ?? Clan.BanditFactions.FirstOrDefault();
+            }
+            else
+            {
+                banditClan = Clan.All.FirstOrDefault(c => c.StringId == targetFactionId)
+                                ?? Kingdom.All.FirstOrDefault(k => k.StringId == targetFactionId)?.RulingClan;
+            }
+
+            if (banditClan == null)
+            {
+                BountyLogger.Log($"ResolveTavernBounty: ABORT — TargetFactionId '{targetFactionId}' did not resolve to any Clan, bandit faction, or Kingdom's ruling clan.");
+                InformationManager.DisplayMessage(new InformationMessage("[BountyHunting] No bandit clan found."));
+                return;
+            }
+
+            var baseHeroTemplate = MBObjectManager.Instance.GetObject<CharacterObject>(definition.Template.CharacterTemplateId);
+            if (baseHeroTemplate == null)
+            {
+                BountyLogger.Log($"ResolveTavernBounty: ABORT — CharacterTemplateId '{definition.Template.CharacterTemplateId}' did not resolve.");
+                InformationManager.DisplayMessage(new InformationMessage("[BountyHunting] Could not resolve hero template."));
+                return;
+            }
+            var heroTemplate = CharacterObject.CreateFrom(baseHeroTemplate);
+
+            int age = MBRandom.RandomInt(definition.Template.MinAge, definition.Template.MaxAge);
+            Hero targetHero = HeroCreator.CreateSpecialHero(heroTemplate, targetSettlement, banditClan, null, age);
+            if (targetHero == null)
+            {
+                BountyLogger.Log("ResolveTavernBounty: ABORT — HeroCreator.CreateSpecialHero returned null.");
+                InformationManager.DisplayMessage(new InformationMessage("[BountyHunting] Failed to create tavern bounty hero."));
+                return;
+            }
+
+            var targetName = new TextObject(definition.Template.NameText ?? "Gang Boss");
+            targetHero.SetName(targetName, targetName);
+            targetHero.ChangeState(Hero.CharacterStates.Active);
+
+            ApplyHeroTemplateEquipment(targetHero, definition.Template);
+            ApplyHeroTemplateBodyProperties(targetHero, definition.Template);
+            targetHero.IsKnownToPlayer = true;
+
+            BountyLogger.Log($"ResolveTavernBounty: created target hero '{targetHero.Name}' ({targetHero.StringId}) at '{targetSettlement.Name}'.");
+
+            var thugBaseTemplate = MBObjectManager.Instance.GetObject<CharacterObject>(definition.TroopId)
+                                 ?? MBObjectManager.Instance.GetObject<CharacterObject>("looter");
+
+            var thugIds = new MBList<string>();
+            if (thugBaseTemplate != null)
+            {
+                for (int i = 0; i < definition.ThugCount; i++)
+                {
+                    thugIds.Add(thugBaseTemplate.StringId);
+                }
+                BountyLogger.Log($"ResolveTavernBounty: queued {thugIds.Count}/{definition.ThugCount} thug slot(s) referencing '{thugBaseTemplate.StringId}' (shared template, no cloning).");
+            }
+            else
+            {
+                BountyLogger.Log($"ResolveTavernBounty: TroopId '{definition.TroopId}' (and fallback 'looter') both failed to resolve — no thugs will spawn in the tavern.");
+            }
+
+            int value = MBRandom.RandomInt(definition.MinValue, definition.MaxValue);
+            int expiryDays = MBRandom.RandomInt(definition.MinExpiryDays, definition.MaxExpiryDays);
+
+            var bounty = new BountyTarget(targetHero, value, guardPartySize: definition.TroopCount, expiryDays)
+            {
+                TargetSettlementId = targetSettlement.StringId,
+                IsTavernBounty = true,
+                ThugCharacterIds = thugIds,
+                Description = definition.Description,
+                FactionId = targetSettlement.MapFaction?.StringId,
+                TargetFactionId = targetFactionId
+            };
+            _activeBounties.Add(bounty);
+
+            BountyLogger.Log($"ResolveTavernBounty: bounty created on {targetHero.Name} at '{targetSettlement.Name}', value={value}, expiryDays={expiryDays}. Ready to spawn in the tavern immediately.");
+            InformationManager.DisplayMessage(new InformationMessage(
+                $"[BountyHunting] {(string.IsNullOrEmpty(definition.Description) ? "A gang has taken hold of a settlement." : definition.Description)} ({value} gold, near {targetSettlement.Name})"));
+        }
+
+        /// <summary>
+        /// Spawns in-settlement and tavern bounty targets (and tavern thugs) as
+        /// location characters once per mission instance, matching the player's
+        /// current settlement and location.
+        /// </summary>
+        private void OnMissionStarted(IMission mission)
+        {
+            _bountySpawnedThisMission.Clear();
+
+            try
+            {
+                if (CampaignMission.Current == null || CampaignMission.Current.Location == null)
+                    return;
+
+                Settlement currentSettlement = PlayerEncounter.LocationEncounter?.Settlement;
+                if (currentSettlement == null)
+                    return;
+
+                Location currentLocation = CampaignMission.Current.Location;
+
+                foreach (var bounty in _activeBounties.Where(b =>
+                             b.Status == BountyStatus.Active &&
+                             b.IsInSettlementBounty &&
+                             b.TargetSettlementId == currentSettlement.StringId).ToList())
+                {
+                    string spawnKey = $"{bounty.TrackerId}@{currentSettlement.StringId}:{currentLocation.StringId}";
+                    if (_bountySpawnedThisMission.Contains(spawnKey))
+                        continue;
+
+                    if (bounty.TargetHero?.CharacterObject == null)
+                    {
+                        BountyLogger.Log($"OnMissionStarted: in-settlement bounty for {bounty.TargetHero?.Name} has no resolvable CharacterObject — skipping spawn.");
+                        continue;
+                    }
+
+                    LocationCharacter npc = CreateLocationCharacter(bounty.TargetHero.CharacterObject);
+                    if (npc != null)
+                    {
+                        currentLocation.AddCharacter(npc);
+                        _bountySpawnedThisMission.Add(spawnKey);
+                        BountyLogger.Log($"OnMissionStarted: spawned in-settlement bounty target '{bounty.TargetHero.Name}' in '{currentSettlement.Name}' ({currentLocation.StringId}).");
+                    }
+                    else
+                    {
+                        BountyLogger.Log($"OnMissionStarted: CreateLocationCharacter returned null for {bounty.TargetHero.Name}.");
+                    }
+                }
+
+                foreach (var bounty in _activeBounties.Where(b =>
+                             b.Status == BountyStatus.Active &&
+                             b.IsTavernBounty &&
+                             b.TargetSettlementId == currentSettlement.StringId).ToList())
+                {
+                    if (!string.Equals(currentLocation.StringId, "tavern", StringComparison.OrdinalIgnoreCase))
+                    {
+                        BountyLogger.Log($"OnMissionStarted: tavern bounty for {bounty.TargetHero?.Name} is active, but current location is '{currentLocation.StringId}', not 'tavern' — not spawning here.");
+                        continue;
+                    }
+
+                    string spawnKey = $"{bounty.TrackerId}@{currentSettlement.StringId}:{currentLocation.StringId}";
+                    if (_bountySpawnedThisMission.Contains(spawnKey))
+                        continue;
+
+                    if (bounty.TargetHero?.CharacterObject == null)
+                    {
+                        BountyLogger.Log($"OnMissionStarted: tavern bounty for {bounty.TargetHero?.Name} has no resolvable CharacterObject — skipping spawn.");
+                        continue;
+                    }
+
+                    LocationCharacter targetNpc = CreateLocationCharacter(bounty.TargetHero.CharacterObject);
+                    if (targetNpc != null)
+                    {
+                        currentLocation.AddCharacter(targetNpc);
+                        _bountySpawnedThisMission.Add(spawnKey);
+                        BountyLogger.Log($"OnMissionStarted: spawned tavern bounty target '{bounty.TargetHero.Name}' in the tavern at '{currentSettlement.Name}'.");
+                    }
+                    else
+                    {
+                        BountyLogger.Log($"OnMissionStarted: CreateLocationCharacter returned null for tavern bounty target {bounty.TargetHero.Name}.");
+                    }
+
+                    int thugsSpawned = 0;
+                    if (bounty.ThugCharacterIds != null)
+                    {
+                        foreach (var thugId in bounty.ThugCharacterIds)
+                        {
+                            var thugCharacter = MBObjectManager.Instance.GetObject<CharacterObject>(thugId);
+                            if (thugCharacter == null)
+                            {
+                                BountyLogger.Log($"OnMissionStarted: thug CharacterObject '{thugId}' did not resolve — skipping this thug.");
+                                continue;
+                            }
+
+                            LocationCharacter thugNpc = CreateLocationCharacter(thugCharacter);
+                            if (thugNpc != null)
+                            {
+                                currentLocation.AddCharacter(thugNpc);
+                                thugsSpawned++;
+                            }
+                        }
+                    }
+
+                    BountyLogger.Log($"OnMissionStarted: spawned {thugsSpawned}/{bounty.ThugCharacterIds?.Count ?? 0} thugs alongside {bounty.TargetHero.Name} in the tavern.");
+                }
+            }
+            catch (Exception ex)
+            {
+                BountyLogger.Log($"OnMissionStarted: EXCEPTION — {ex}");
+            }
+        }
+
+        /// <summary>
+        /// Builds a LocationCharacter for the given character template, ready to add
+        /// to a mission's current location.
+        /// </summary>
+        private static LocationCharacter CreateLocationCharacter(CharacterObject character)
+        {
+            int minAge, maxAge;
+            Campaign.Current.Models.AgeModel.GetAgeLimitForLocation(character, out minAge, out maxAge, "");
+
+            Monster monster = TaleWorlds.Core.FaceGen.GetMonsterWithSuffix(character.Race, "_settlement");
+
+            AgentData agentData = new AgentData(new SimpleAgentOrigin(character, -1, null, default))
+                .Monster(monster)
+                .Age(MBRandom.RandomInt(minAge, maxAge));
+
+            return new LocationCharacter(
+                agentData,
+                new LocationCharacter.AddBehaviorsDelegate(SandBoxManager.Instance.AgentBehaviorManager.AddFixedCharacterBehaviors),
+                "sp_lordshall_hero",
+                true,
+                LocationCharacter.CharacterRelations.Neutral,
+                null,
+                true,
+                false,
+                null,
+                false,
+                false,
+                true
+            );
+        }
+
+        /// <summary>
+        /// Returns whether the given alley is free for a bounty to claim: not
+        /// player-owned (player-owned alleys have their own separate tracked state
+        /// in AlleyCampaignBehavior that SetOwner alone doesn't clean up), and not
+        /// already claimed by another active alley bounty.
+        /// </summary>
+        private bool IsAlleyClaimable(Alley alley)
+        {
+            return alley != null
+                && alley.Owner != Hero.MainHero
+                && !_activeBounties.Any(b => b.Status == BountyStatus.Active && b.IsAlleyBounty && b.TargetHero == alley.Owner);
+        }
+
+        /// <summary>
+        /// Re-resolves the live Alley object for an alley bounty from its stored
+        /// settlement id and alley tag. Alley objects aren't independently
+        /// serializable identifiers we can hold directly, so this lookup is done on
+        /// demand whenever a patch or cleanup path needs the actual Alley.
+        /// </summary>
+        private Alley FindAlleyForBounty(BountyTarget bounty)
+        {
+            if (bounty == null || !bounty.IsAlleyBounty) return null;
+
+            var settlement = Settlement.All.FirstOrDefault(s => s.StringId == bounty.TargetSettlementId);
+            return settlement?.Alleys.FirstOrDefault(a => a.Tag == bounty.AlleyTag);
+        }
+
+        /// <summary>
+        /// Returns the active alley bounty whose claimed alley matches the given
+        /// Alley, or null if the alley isn't currently claimed by any active bounty.
+        /// Called by the Harmony patches on DefaultAlleyModel and
+        /// MissionAlleyHandler to recognize a bounty-owned alley.
+        /// </summary>
+        public BountyTarget FindActiveAlleyBountyForAlley(Alley alley)
+        {
+            if (alley == null) return null;
+
+            return _activeBounties.FirstOrDefault(b =>
+                b.Status == BountyStatus.Active &&
+                b.IsAlleyBounty &&
+                b.TargetSettlementId == alley.Settlement?.StringId &&
+                b.AlleyTag == alley.Tag);
+        }
+
+        /// <summary>
+        /// Creates an alley bounty: claims a currently claimable alley (see
+        /// IsAlleyClaimable) in an eligible town for the bounty hero, via vanilla's
+        /// own Alley.SetOwner. Vanilla itself never spawns an alley's owner as a
+        /// combatant — GetTroopsOfAIOwnedAlley only ever generates anonymous thug
+        /// troops — so a Harmony patch on that method (AlleyModelPatch) injects the
+        /// hero plus this definition's guard troops into the roster whenever this
+        /// specific alley is populated; without that patch the hero would never
+        /// actually appear as an agent when the player visits.
+        /// </summary>
+        private void ResolveAlleyBounty(BountyDefinition definition)
+        {
+            if (definition?.Template == null)
+            {
+                BountyLogger.Log($"ResolveAlleyBounty: ABORT — definition '{definition?.Id}' has no HeroTemplate.");
+                return;
+            }
+
+            IEnumerable<Settlement> pool = Settlement.All.Where(s => s != null && s.IsTown && s.Alleys.Any(IsAlleyClaimable));
+
+            if (!string.IsNullOrEmpty(definition.FactionId))
+            {
+                pool = pool.Where(s => s.MapFaction != null && s.MapFaction.StringId == definition.FactionId);
+            }
+
+            if (definition.SettlementIds != null && definition.SettlementIds.Count > 0)
+            {
+                var idSet = definition.SettlementIds.ToHashSet();
+                pool = pool.Where(s => idSet.Contains(s.StringId));
+            }
+
+            var eligibleTowns = pool.ToList();
+            if (eligibleTowns.Count == 0)
+            {
+                BountyLogger.Log($"ResolveAlleyBounty: ABORT — no eligible town with a claimable alley found (FactionId='{definition.FactionId ?? "none"}').");
+                return;
+            }
+
+            var targetSettlement = eligibleTowns[MBRandom.RandomInt(eligibleTowns.Count)];
+            var claimableAlleys = targetSettlement.Alleys.Where(IsAlleyClaimable).ToList();
+            var targetAlley = claimableAlleys[MBRandom.RandomInt(claimableAlleys.Count)];
+
+            BountyLogger.Log($"ResolveAlleyBounty: resolved settlement '{targetSettlement.Name}' ({targetSettlement.StringId}), alley '{targetAlley.Tag}' — {eligibleTowns.Count} eligible town(s), {claimableAlleys.Count} claimable alley(s) there.");
+
+            Clan banditClan;
+            string targetFactionId = definition.TargetFactionId ?? definition.FactionId;
+            if (string.IsNullOrEmpty(targetFactionId) || string.Equals(targetFactionId, "Bandit", StringComparison.OrdinalIgnoreCase))
+            {
+                banditClan = Clan.BanditFactions.FirstOrDefault(c => c.Culture == targetSettlement.Culture && c.StringId != "looters")
+                                ?? Clan.BanditFactions.FirstOrDefault(c => c.StringId != "looters")
+                                ?? Clan.BanditFactions.FirstOrDefault();
+            }
+            else
+            {
+                banditClan = Clan.All.FirstOrDefault(c => c.StringId == targetFactionId)
+                                ?? Kingdom.All.FirstOrDefault(k => k.StringId == targetFactionId)?.RulingClan;
+            }
+
+            if (banditClan == null)
+            {
+                BountyLogger.Log($"ResolveAlleyBounty: ABORT — TargetFactionId '{targetFactionId}' did not resolve to any Clan, bandit faction, or Kingdom's ruling clan.");
+                return;
+            }
+
+            var baseHeroTemplate = MBObjectManager.Instance.GetObject<CharacterObject>(definition.Template.CharacterTemplateId);
+            if (baseHeroTemplate == null)
+            {
+                BountyLogger.Log($"ResolveAlleyBounty: ABORT — CharacterTemplateId '{definition.Template.CharacterTemplateId}' did not resolve.");
+                return;
+            }
+            var heroTemplate = CharacterObject.CreateFrom(baseHeroTemplate);
+
+            int age = MBRandom.RandomInt(definition.Template.MinAge, definition.Template.MaxAge);
+            Hero leaderHero = HeroCreator.CreateSpecialHero(heroTemplate, targetSettlement, banditClan, null, age);
+            if (leaderHero == null)
+            {
+                BountyLogger.Log("ResolveAlleyBounty: ABORT — HeroCreator.CreateSpecialHero returned null.");
+                return;
+            }
+
+            var leaderName = new TextObject(definition.Template.NameText ?? "Alley Boss");
+            leaderHero.SetName(leaderName, leaderName);
+            leaderHero.ChangeState(Hero.CharacterStates.Active);
+
+            ApplyHeroTemplateEquipment(leaderHero, definition.Template);
+            ApplyHeroTemplateBodyProperties(leaderHero, definition.Template);
+            leaderHero.IsKnownToPlayer = true;
+
+            targetAlley.SetOwner(leaderHero);
+
+            int value = MBRandom.RandomInt(definition.MinValue, definition.MaxValue);
+            int expiryDays = MBRandom.RandomInt(definition.MinExpiryDays, definition.MaxExpiryDays);
+
+            var bounty = new BountyTarget(leaderHero, value, guardPartySize: definition.TroopCount, expiryDays)
+            {
+                TargetSettlementId = targetSettlement.StringId,
+                IsAlleyBounty = true,
+                AlleyTag = targetAlley.Tag,
+                TroopId = definition.TroopId,
+                Description = definition.Description,
+                FactionId = targetSettlement.MapFaction?.StringId,
+                TargetFactionId = targetFactionId
+            };
+            _activeBounties.Add(bounty);
+
+            BountyLogger.Log($"ResolveAlleyBounty: bounty created on {leaderHero.Name}, claimed alley '{targetAlley.Tag}' at '{targetSettlement.Name}', value={value}, expiryDays={expiryDays}.");
+            InformationManager.DisplayMessage(new InformationMessage(
+                $"[BountyHunting] {(string.IsNullOrEmpty(definition.Description) ? "A gang has muscled into a back alley." : definition.Description)} ({leaderHero.Name}, {value} gold, near {targetSettlement.Name})"));
+        }
+
+        /// <summary>
+        /// Force-captures an alley bounty's target after the player wins the
+        /// in-mission alley fight (called from AlleyFightEndPatch), then resets the
+        /// alley to unowned. ForceCaptureHero fires OnHeroPrisonerTaken, which
+        /// already handles setting Status/untracking/quest notification/message —
+        /// this method only adds the alley-specific reset that no generic listener
+        /// covers.
+        /// </summary>
+        public void HandleAlleyBountyCaptured(BountyTarget bounty, Alley alley)
+        {
+            if (bounty?.TargetHero == null) return;
+
+            if (!bounty.TargetHero.IsPrisoner)
+            {
+                ForceCaptureHero(bounty.TargetHero);
+            }
+            bounty.Status = BountyStatus.Captured;
+
+            alley?.SetOwner(null);
+
+            BountyLogger.Log($"HandleAlleyBountyCaptured: captured {bounty.TargetHero.Name} in alley '{alley?.Tag}' at '{alley?.Settlement?.Name}', alley reset to unowned.");
         }
 
         /// <summary>
@@ -1113,6 +1670,9 @@ namespace SeparatistCrisis.BountyHunting
                          b.IsSettlementAnchored &&
                          !b.IsHideoutBounty &&
                          !b.IsPatrolBounty &&
+                         !b.IsAlleyBounty &&
+                         !b.IsInSettlementBounty &&
+                         !b.IsTavernBounty &&
                          b.TargetSettlementId == settlement.StringId).ToList())
             {
                 EnsureGangPartySpawnedNow(bounty, settlement);
@@ -1497,7 +2057,37 @@ namespace SeparatistCrisis.BountyHunting
                 party.SetMovePatrolAroundPoint(randomPatrolPoint, MobileParty.NavigationType.Default);
 
                 BountyLogger.Log($"OnHourlyTick: re-issued patrol point for '{bounty.TargetHero?.Name}' near '{patrolCenter.Name}' — offset ({offsetX:0.0}, {offsetY:0.0}) within radius {radius}.");
+
+                EnsurePatrolPartyFed(party, bounty);
             }
+        }
+
+        /// <summary>
+        /// Tops up a patrol party's food supply whenever it drops below a comfortable
+        /// buffer, so the party never starves and takes morale/desertion penalties
+        /// over its (potentially very long) lifetime — patrol parties are never
+        /// meant to return to a settlement to resupply on their own.
+        /// </summary>
+        private void EnsurePatrolPartyFed(MobileParty party, BountyTarget bounty)
+        {
+            int totalFood = party.ItemRoster
+                .Where(e => e.EquipmentElement.Item != null && e.EquipmentElement.Item.IsFood)
+                .Sum(e => e.Amount);
+
+            if (totalFood >= PatrolFoodTopUpThreshold)
+            {
+                return;
+            }
+
+            var foodItem = MBObjectManager.Instance.GetObject<ItemObject>(PatrolFoodItemId);
+            if (foodItem == null)
+            {
+                BountyLogger.Log($"EnsurePatrolPartyFed: ABORT — food item '{PatrolFoodItemId}' did not resolve. Patrol party '{party.StringId}' ({bounty.TargetHero?.Name}) will not be topped up; pick a valid food item id for this mod.");
+                return;
+            }
+
+            party.ItemRoster.AddToCounts(foodItem, PatrolFoodTopUpAmount);
+            BountyLogger.Log($"EnsurePatrolPartyFed: topped up '{party.StringId}' ({bounty.TargetHero?.Name}) with {PatrolFoodTopUpAmount}x '{PatrolFoodItemId}' (was {totalFood}, threshold {PatrolFoodTopUpThreshold}).");
         }
 
         /// <summary>
@@ -1643,6 +2233,8 @@ namespace SeparatistCrisis.BountyHunting
                 "bh_bounty_captured_response",
                 "{=BountyCapturedLine}So, you've caught me. Don't think this is over.",
                 () => Hero.OneToOneConversationHero != null && Hero.OneToOneConversationHero == _pendingBountyDialogueHero,
+                null,
+                200,
                 null);
 
             starter.AddPlayerLine(
@@ -1652,6 +2244,220 @@ namespace SeparatistCrisis.BountyHunting
                 "{=BountyPlayerResponse}You're worth a fair sum. Try to run, and it won't end well for you.",
                 null,
                 () => { _pendingBountyDialogueHero = null; });
+
+            starter.AddDialogLine(
+                "bh_insettlement_bounty_start",
+                "start",
+                "bh_insettlement_bounty_response",
+                "{=BountyInSettlementLine}Please, don't hurt me. I'm... I'm not who you think I am.",
+                () => GetActiveInSettlementBountyForConversation() != null,
+                null,
+                200,
+                null);
+
+            starter.AddPlayerLine(
+                "bh_insettlement_bounty_attack",
+                "bh_insettlement_bounty_response",
+                "close_window",
+                "{=BountyInSettlementAttack}You're exactly who I think you are. Draw your weapon.",
+                null,
+                ExecuteInSettlementBountyAttack);
+
+            starter.AddPlayerLine(
+                "bh_insettlement_bounty_leave",
+                "bh_insettlement_bounty_response",
+                "close_window",
+                "{=BountyInSettlementLeave}...Never mind. Carry on.",
+                null,
+                null);
+
+            starter.AddDialogLine(
+                "bh_tavern_bounty_start",
+                "start",
+                "bh_tavern_bounty_response",
+                "{=BountyTavernLine}You've got no business here. Turn around while you still can.",
+                () => GetActiveTavernBountyForConversation() != null,
+                null,
+                200,
+                null);
+
+            starter.AddPlayerLine(
+                "bh_tavern_bounty_attack",
+                "bh_tavern_bounty_response",
+                "close_window",
+                "{=BountyTavernAttack}Your reign here is over. Draw your weapon.",
+                null,
+                ExecuteTavernBountyAttack);
+
+            starter.AddPlayerLine(
+                "bh_tavern_bounty_leave",
+                "bh_tavern_bounty_response",
+                "close_window",
+                "{=BountyTavernLeave}...Not yet. I'll return.",
+                null,
+                null);
+        }
+
+        /// <summary>
+        /// Returns the active in-settlement bounty matching the current
+        /// conversation hero, if any.
+        /// </summary>
+        private BountyTarget GetActiveInSettlementBountyForConversation()
+        {
+            var conversationHero = Hero.OneToOneConversationHero;
+            if (conversationHero == null) return null;
+
+            return _activeBounties.FirstOrDefault(b =>
+                b.Status == BountyStatus.Active &&
+                b.IsInSettlementBounty &&
+                b.TargetHero == conversationHero);
+        }
+
+        /// <summary>
+        /// Returns the active tavern bounty matching the current conversation hero,
+        /// if any.
+        /// </summary>
+        private BountyTarget GetActiveTavernBountyForConversation()
+        {
+            var conversationHero = Hero.OneToOneConversationHero;
+            if (conversationHero == null) return null;
+
+            return _activeBounties.FirstOrDefault(b =>
+                b.Status == BountyStatus.Active &&
+                b.IsTavernBounty &&
+                b.TargetHero == conversationHero);
+        }
+
+        /// <summary>
+        /// Starts a proper, scripted fight against an in-settlement bounty target
+        /// using MissionFightHandler.StartCustomFight — the same vanilla combat-
+        /// scripting API the alley bounty relies on. This handles team assignment,
+        /// AI hostility, and mission mode internally, avoiding the manual
+        /// SetMissionMode/team-reassignment approach that caused this bounty type's
+        /// original implementation to crash repeatedly.
+        /// </summary>
+        private void ExecuteInSettlementBountyAttack()
+        {
+            var bounty = GetActiveInSettlementBountyForConversation();
+            if (bounty?.TargetHero?.CharacterObject == null)
+            {
+                BountyLogger.Log("ExecuteInSettlementBountyAttack: no matching in-settlement bounty found for current conversation.");
+                return;
+            }
+
+            try
+            {
+                if (Mission.Current == null)
+                {
+                    BountyLogger.Log("ExecuteInSettlementBountyAttack: ABORT — Mission.Current is null.");
+                    return;
+                }
+
+                Agent targetAgent = Mission.Current.Agents.FirstOrDefault(a => a.Character == bounty.TargetHero.CharacterObject);
+                if (targetAgent == null)
+                {
+                    BountyLogger.Log($"ExecuteInSettlementBountyAttack: ABORT — could not find an Agent for {bounty.TargetHero.Name} in the current mission.");
+                    return;
+                }
+
+                var playerSideAgents = new List<Agent> { Agent.Main };
+                var opponentSideAgents = new List<Agent> { targetAgent };
+
+                Mission.Current.GetMissionBehavior<MissionFightHandler>().StartCustomFight(
+                    playerSideAgents, opponentSideAgents, false, false,
+                    isPlayerSideWon => OnInSettlementOrTavernBountyFightEnd(bounty, isPlayerSideWon),
+                    float.Epsilon);
+
+                BountyLogger.Log($"ExecuteInSettlementBountyAttack: started custom fight against {bounty.TargetHero.Name}.");
+            }
+            catch (Exception ex)
+            {
+                BountyLogger.Log($"ExecuteInSettlementBountyAttack: EXCEPTION — {ex}");
+            }
+        }
+
+        /// <summary>
+        /// Starts a proper, scripted fight against a tavern bounty target and its
+        /// thugs, using MissionFightHandler.StartCustomFight.
+        /// </summary>
+        private void ExecuteTavernBountyAttack()
+        {
+            var bounty = GetActiveTavernBountyForConversation();
+            if (bounty?.TargetHero?.CharacterObject == null)
+            {
+                BountyLogger.Log("ExecuteTavernBountyAttack: no matching tavern bounty found for current conversation.");
+                return;
+            }
+
+            try
+            {
+                if (Mission.Current == null)
+                {
+                    BountyLogger.Log("ExecuteTavernBountyAttack: ABORT — Mission.Current is null.");
+                    return;
+                }
+
+                Agent targetAgent = Mission.Current.Agents.FirstOrDefault(a => a.Character == bounty.TargetHero.CharacterObject);
+                if (targetAgent == null)
+                {
+                    BountyLogger.Log($"ExecuteTavernBountyAttack: ABORT — could not find an Agent for {bounty.TargetHero.Name} in the current mission.");
+                    return;
+                }
+
+                var opponentSideAgents = new List<Agent> { targetAgent };
+
+                if (bounty.ThugCharacterIds != null)
+                {
+                    foreach (var thugId in bounty.ThugCharacterIds)
+                    {
+                        var thugCharacter = MBObjectManager.Instance.GetObject<CharacterObject>(thugId);
+                        if (thugCharacter == null) continue;
+
+                        var thugAgent = Mission.Current.Agents.FirstOrDefault(a => a.Character == thugCharacter && a != targetAgent && !opponentSideAgents.Contains(a));
+                        if (thugAgent != null)
+                        {
+                            opponentSideAgents.Add(thugAgent);
+                        }
+                    }
+                }
+
+                var playerSideAgents = new List<Agent> { Agent.Main };
+
+                Mission.Current.GetMissionBehavior<MissionFightHandler>().StartCustomFight(
+                    playerSideAgents, opponentSideAgents, false, false,
+                    isPlayerSideWon => OnInSettlementOrTavernBountyFightEnd(bounty, isPlayerSideWon),
+                    float.Epsilon);
+
+                BountyLogger.Log($"ExecuteTavernBountyAttack: started custom fight against {bounty.TargetHero.Name} plus {opponentSideAgents.Count - 1} thug(s).");
+            }
+            catch (Exception ex)
+            {
+                BountyLogger.Log($"ExecuteTavernBountyAttack: EXCEPTION — {ex}");
+            }
+        }
+
+        /// <summary>
+        /// Shared fight-end handler for in-settlement and tavern bounties: captures
+        /// the target on a win (ForceCaptureHero fires OnHeroPrisonerTaken, which
+        /// already handles Status/untracking/quest notification/message), or
+        /// removes the bounty on a loss.
+        /// </summary>
+        private void OnInSettlementOrTavernBountyFightEnd(BountyTarget bounty, bool isPlayerSideWon)
+        {
+            if (isPlayerSideWon)
+            {
+                if (bounty.TargetHero != null && !bounty.TargetHero.IsPrisoner)
+                {
+                    ForceCaptureHero(bounty.TargetHero);
+                }
+                bounty.Status = BountyStatus.Captured;
+                BountyLogger.Log($"OnInSettlementOrTavernBountyFightEnd: captured {bounty.TargetHero?.Name}.");
+            }
+            else
+            {
+                BountyLogger.Log($"OnInSettlementOrTavernBountyFightEnd: player lost against {bounty.TargetHero?.Name} — removing bounty.");
+                RemoveUnresolvableBounty(bounty, "you were defeated.");
+            }
         }
 
 

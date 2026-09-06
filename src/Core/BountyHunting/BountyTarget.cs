@@ -1,5 +1,6 @@
 using System;
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.Library;
 using TaleWorlds.SaveSystem;
 
 namespace SeparatistCrisis.BountyHunting
@@ -17,7 +18,9 @@ namespace SeparatistCrisis.BountyHunting
     /// needed by each bounty type (settlement anchor, gang party, associated
     /// quest, and owning faction). SaveableField indices 11, 15, 16, 17, 18, and
     /// 19 are retired (previously IsStealthBounty, IsTavernBounty, Phase,
-    /// Phase1PartyIds, ThugCharacterIds, and GangCount) and must never be reused.
+    /// Phase1PartyIds, ThugCharacterIds, and GangCount) and must never be reused —
+    /// IsInSettlementBounty/IsTavernBounty/ThugCharacterIds were reintroduced under
+    /// new indices (27/28/29) rather than reusing the retired ones.
     /// </summary>
     public class BountyTarget
     {
@@ -74,6 +77,21 @@ namespace SeparatistCrisis.BountyHunting
 
         [SaveableField(23)]
         public float PatrolRadius;
+
+        [SaveableField(25)]
+        public bool IsAlleyBounty;
+
+        [SaveableField(26)]
+        public string AlleyTag;
+
+        [SaveableField(27)]
+        public bool IsInSettlementBounty;
+
+        [SaveableField(28)]
+        public bool IsTavernBounty;
+
+        [SaveableField(29)]
+        public MBList<string> ThugCharacterIds = new MBList<string>();
 
         /// <summary>
         /// Creates a new active bounty targeting the given hero.

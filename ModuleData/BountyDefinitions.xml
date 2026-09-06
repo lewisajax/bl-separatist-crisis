@@ -60,4 +60,58 @@
 		</HeroTemplate>
 	</BountyDefinition>
 
+	<BountyDefinition id="alley_bounty" spawnType="Alley">
+		<Name>Alley Boss</Name>
+		<Description>A Separatist gang has muscled into a back alley of a Republic town.</Description>
+		<ValueRange min="500" max="5000" />
+		<ExpiryDaysRange min="10" max="30" />
+		<FactionId>galactic_republic</FactionId>
+		<TargetFactionId>separatist</TargetFactionId>
+		<Troop id="looter" count="4" />
+		<HeroTemplate>
+			<CharacterTemplateId>jabba</CharacterTemplateId>
+			<NameText>Alley Boss</NameText>
+			<AgeRange min="25" max="45" />
+			<BodyProperties version="4" age="22.12" weight="0.388" build="0.2513"
+							key="0005200D81A0055BB87CA7BE46828398C99688DB5A89995B4569949693B8724D00B466030B54798700000000000000000000000000000000000000005D6C1042" />
+		</HeroTemplate>
+	</BountyDefinition>
+
+	<BountyDefinition id="in_settlement_bounty" spawnType="InSettlement">
+		<Name>Hidden Fugitive</Name>
+		<Description>A Separatist agent is hiding among the villagers in Republic territory, unarmed but dangerous.</Description>
+		<ValueRange min="500" max="5000" />
+		<ExpiryDaysRange min="10" max="30" />
+		<FactionId>galactic_republic</FactionId>
+		<TargetFactionId>separatist</TargetFactionId>
+		<HeroTemplate>
+			<CharacterTemplateId>jabba</CharacterTemplateId>
+			<NameText>Hidden Fugitive</NameText>
+			<AgeRange min="25" max="45" />
+			<BodyProperties version="4" age="22.12" weight="0.388" build="0.2513"
+							key="0005200D81A0055BB87CA7BE46828398C99688DB5A89995B4569949693B8724D00B466030B54798700000000000000000000000000000000000000005D6C1042" />
+			<Equipment>
+				<Slot name="Weapon0" item="sword_1_t2" />
+			</Equipment>
+		</HeroTemplate>
+	</BountyDefinition>
+
+	<BountyDefinition id="tavern_bounty" spawnType="Tavern">
+		<Name>Gang Boss</Name>
+		<Description>A Separatist gang has taken over the local tavern, and its boss holds court there.</Description>
+		<ValueRange min="500" max="6000" />
+		<ExpiryDaysRange min="10" max="30" />
+		<FactionId>galactic_republic</FactionId>
+		<TargetFactionId>separatist</TargetFactionId>
+		<ThugCount>2</ThugCount>
+		<Troop id="looter" count="2" />
+		<HeroTemplate>
+			<CharacterTemplateId>jabba</CharacterTemplateId>
+			<NameText>Gang Boss</NameText>
+			<AgeRange min="25" max="45" />
+			<BodyProperties version="4" age="22.12" weight="0.388" build="0.2513"
+				key="0005200D81A0055BB87CA7BE46828398C99688DB5A89995B4569949693B8724D00B466030B54798700000000000000000000000000000000000000005D6C1042" />
+		</HeroTemplate>
+	</BountyDefinition>
+
 </BountyDefinitions>

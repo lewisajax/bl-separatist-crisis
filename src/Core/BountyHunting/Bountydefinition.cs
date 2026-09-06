@@ -8,13 +8,17 @@ namespace SeparatistCrisis.BountyHunting
         Wandering,
         SettlementGang,
         PatrolParty,
-        HideoutBoss
+        HideoutBoss,
+        Alley,
+        InSettlement,
+        Tavern
     }
 
     /// <summary>
     /// Fully describes how to build the hero for a SettlementGang/PatrolParty/
-    /// HideoutBoss bounty: base character template, name, age range, optional custom
-    /// face/body, and equipment slots — all data-driven from XML.
+    /// HideoutBoss/Alley/InSettlement/Tavern bounty: base character template, name,
+    /// age range, optional custom face/body, and equipment slots — all data-driven
+    /// from XML.
     /// </summary>
     public class HeroTemplate
     {
@@ -41,7 +45,9 @@ namespace SeparatistCrisis.BountyHunting
     /// which faction/clan the spawned target hero itself belongs to — only
     /// meaningful for SettlementGang, and falls back to FactionId if left unset
     /// (e.g. a Separatist gang boss hiding in Republic territory: FactionId=galactic_republic for the
-    /// settlement search, TargetFactionId=separatist for the hero's own clan).
+    /// settlement search, TargetFactionId=separatist for the hero's own clan). Also
+    /// used for Alley bounties as the claimed alley's owner clan, and for
+    /// InSettlement/Tavern bounties as the spawned target hero's own clan.
     /// BountyFactionId is a further optional override for which faction's board
     /// the bounty shows on, only meaningful for Wandering and PatrolParty, and
     /// falls back to FactionId if left unset.
@@ -74,6 +80,8 @@ namespace SeparatistCrisis.BountyHunting
         public float PatrolRadius = 15f;
         public string TroopId = "looter";
         public int TroopCount = 10;
+
+        public int ThugCount = 2;
 
         /// <summary>
         /// Returns a debug-friendly string summarizing this definition's key fields.

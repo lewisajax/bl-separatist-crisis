@@ -90,6 +90,9 @@ namespace SeparatistCrisis.PatchTools
         {
             new BountyHunting.Patches.AiPatrollingBehaviorSafetyPatch(),
             new BountyHunting.Patches.DoCaptureHeroesPatch(),
+            new BountyHunting.Patches.AlleyModelPatch(),
+            new BountyHunting.Patches.AlleyFightEndPatch(),
+            new BountyHunting.Patches.AlleyThugConversationPatch(),
         };
     }
 }
