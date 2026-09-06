@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+	<!--Customization Options
+		Default Group:
+		Infantry, Cavalry, HorseArcher, Ranged
+
+		Voice: 
+		earnest, curt, softspoken, ironic
+		
+		Traits:  
+
+		BalancedFightingSkills (1-10)
+		HorseArcherFightingSkills (1-10)
+		KnightFightingSkills (1-10)
+		CavalryFightingSkills (1-10)
+
+		Commander (1-10)
+		Politician (1-10)
+		Manager (1-10)
+
+		Oligarchic (1) (For faction leaders, favors power being held by a small number of people)
+		Egalitarian (1) (For faction leaders, favors giving power to the people)
+		Authoritarian (1) (For faction leaders, one person hold absolute power)
+
+		Generosity (-1 to 1) "Generosity represents your loyalty to your kin and those who serve you, and your gratitude to those who have done you a favor"
+		Honor (-1 to 1) "Honor represents your reputation for respecting your formal commitments, like keeping your word and obeying the law"
+		Calculating (-1 to 1) "Calculating represents your ability to control your emotions for the sake of your long-term interests"
+		Valor (-1 to 1) "Valor represents your reputation for risking your life to win glory or wealth to advance your cause"
+		Mercy (-1 to 1) "Mercy represents your general aversion to suffering and your willingness to help strangers or even enemies"
+	-->
+
+	<!--Hutt Cartel-->
+	<NPCCharacter id="jabba"
+		default_group="Cavalry"
+		age="50"
+		voice="earnest"
+		is_hero="true"
+		culture="Culture.hutt"
+		occupation="Lord"
+		skill_template="SkillSet.spc_sc_tactician_skills"		
+		name="Jabba Desilijic Tiure"
+		face_mesh_cache="true">
+		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.vlandia_sword_2_t3" />
+				<equipment slot="Item1" id="Item.fortified_kite_shield" />
+				<equipment slot="Head" id="Item.pointed_skullcap_over_cloth_headwrap" />
+				<equipment slot="Body" id="Item.imperial_lamellar_over_leather" />
+				<equipment slot="Cape" id="Item.wrapped_scarf" />
+				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
+			</EquipmentRoster>
+			<EquipmentSet id="bat_civ_template_default" equipmentType="Civilian" />
+			<equipment  slot="Horse" id="Item.noble_horse" />
+			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
+		</Equipments>
+	</NPCCharacter>
+	
+	<NPCCharacter id="hutt_placeholder_2"
+		default_group="Cavalry"
+		age="50"
+		voice="earnest"
+		is_hero="true"
+		culture="Culture.hutt"
+		occupation="Lord"
+		skill_template="SkillSet.spc_sc_tactician_skills"
+		name="PLACEHOLDER"
+		face_mesh_cache="true">
+		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.vlandia_sword_2_t3" />
+				<equipment slot="Item1" id="Item.fortified_kite_shield" />
+				<equipment slot="Head" id="Item.pointed_skullcap_over_cloth_headwrap" />
+				<equipment slot="Body" id="Item.imperial_lamellar_over_leather" />
+				<equipment slot="Cape" id="Item.wrapped_scarf" />
+				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
+			</EquipmentRoster>
+			<EquipmentSet id="bat_civ_template_default" equipmentType="Civilian" />
+			<equipment  slot="Horse" id="Item.noble_horse" />
+			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
+		</Equipments>
+	</NPCCharacter>
+
+	<NPCCharacter id="hutt_placeholder_3"
+		default_group="Cavalry"
+		age="50"
+		voice="earnest"
+		is_hero="true"
+		culture="Culture.hutt"
+		occupation="Lord"
+		skill_template="SkillSet.spc_sc_tactician_skills"
+		name="PLACEHOLDER"
+		face_mesh_cache="true">
+		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.vlandia_sword_2_t3" />
+				<equipment slot="Item1" id="Item.fortified_kite_shield" />
+				<equipment slot="Head" id="Item.pointed_skullcap_over_cloth_headwrap" />
+				<equipment slot="Body" id="Item.imperial_lamellar_over_leather" />
+				<equipment slot="Cape" id="Item.wrapped_scarf" />
+				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
+			</EquipmentRoster>
+			<EquipmentSet id="bat_civ_template_default" equipmentType="Civilian" />
+			<equipment  slot="Horse" id="Item.noble_horse" />
+			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
+		</Equipments>
+	</NPCCharacter>
+
+	<NPCCharacter id="hutt_placeholder_4"
+		default_group="Cavalry"
+		age="50"
+		voice="earnest"
+		is_hero="true"
+		culture="Culture.hutt"
+		occupation="Lord"
+		skill_template="SkillSet.spc_sc_tactician_skills"
+		name="PLACEHOLDER"
+		face_mesh_cache="true">
+		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.vlandia_sword_2_t3" />
+				<equipment slot="Item1" id="Item.fortified_kite_shield" />
+				<equipment slot="Head" id="Item.pointed_skullcap_over_cloth_headwrap" />
+				<equipment slot="Body" id="Item.imperial_lamellar_over_leather" />
+				<equipment slot="Cape" id="Item.wrapped_scarf" />
+				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
+			</EquipmentRoster>
+			<EquipmentSet id="bat_civ_template_default" equipmentType="Civilian" />
+			<equipment  slot="Horse" id="Item.noble_horse" />
+			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
+		</Equipments>
+	</NPCCharacter>
+
+	<NPCCharacter id="hutt_placeholder_5"
+		default_group="Cavalry"
+		age="50"
+		voice="earnest"
+		is_hero="true"
+		culture="Culture.hutt"
+		occupation="Lord"
+		skill_template="SkillSet.spc_sc_tactician_skills"
+		name="PLACEHOLDER"
+		face_mesh_cache="true">
+		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.vlandia_sword_2_t3" />
+				<equipment slot="Item1" id="Item.fortified_kite_shield" />
+				<equipment slot="Head" id="Item.pointed_skullcap_over_cloth_headwrap" />
+				<equipment slot="Body" id="Item.imperial_lamellar_over_leather" />
+				<equipment slot="Cape" id="Item.wrapped_scarf" />
+				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
+			</EquipmentRoster>
+			<EquipmentSet id="bat_civ_template_default" equipmentType="Civilian" />
+			<equipment  slot="Horse" id="Item.noble_horse" />
+			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
+		</Equipments>
+	</NPCCharacter>
+	
+	<!--Black Sun-->
+	<NPCCharacter id="grunseit"
+		default_group="Cavalry"
+		age="50"
+		voice="earnest"
+		is_hero="true"
+		culture="Culture.hutt"
+		occupation="Lord"
+		skill_template="SkillSet.spc_sc_tactician_skills"
+		name="Xomit Grunseit"
+		face_mesh_cache="true">
+		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.vlandia_sword_2_t3" />
+				<equipment slot="Item1" id="Item.fortified_kite_shield" />
+				<equipment slot="Head" id="Item.pointed_skullcap_over_cloth_headwrap" />
+				<equipment slot="Body" id="Item.imperial_lamellar_over_leather" />
+				<equipment slot="Cape" id="Item.wrapped_scarf" />
+				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
+			</EquipmentRoster>
+			<EquipmentSet id="bat_civ_template_default" equipmentType="Civilian" />
+			<equipment  slot="Horse" id="Item.noble_horse" />
+			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
+		</Equipments>
+	</NPCCharacter>
+
+	<!--Pyke Syndicate-->
+	<NPCCharacter id="lom"
+		default_group="Cavalry"
+		age="50"
+		voice="earnest"
+		is_hero="true"
+		culture="Culture.hutt"
+		occupation="Lord"
+		skill_template="SkillSet.spc_sc_tactician_skills"
+		name="Lom Pyke"
+		face_mesh_cache="true">
+		<face>
+			<hair_tags>
+				<hair_tag
+					name="battania" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="battania" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+			<BodyProperties version="4" key="0005C80000BC214266EA9979568444848885462866B3674479986B98949492360007465707678747000000000000000000000000000000000000000001440081" />
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait id="BalancedFightingSkills" value="7" />
+			<Trait id="Commander" value="14" />
+			<Trait id="Politician" value="18" />
+			<Trait id="Manager" value="12" />
+			<Trait id="Mercy" value="-1" />
+			<Trait id="Honor" value="-1" />
+			<Trait id="Calculating" value="1" />
+			<Trait id="Generosity" value="1" />
+			<Trait id="Authoritarian" value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.vlandia_sword_2_t3" />
+				<equipment slot="Item1" id="Item.fortified_kite_shield" />
+				<equipment slot="Head" id="Item.pointed_skullcap_over_cloth_headwrap" />
+				<equipment slot="Body" id="Item.imperial_lamellar_over_leather" />
+				<equipment slot="Cape" id="Item.wrapped_scarf" />
+				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
+			</EquipmentRoster>
+			<EquipmentSet id="bat_civ_template_default" equipmentType="Civilian" />
+			<equipment  slot="Horse" id="Item.noble_horse" />
+			<equipment slot="HorseHarness" id="Item.battania_horse_harness_scaled" />
+		</Equipments>
+	</NPCCharacter>
+</NPCCharacters>

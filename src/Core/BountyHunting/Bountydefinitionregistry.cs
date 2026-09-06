@@ -150,6 +150,9 @@ namespace SeparatistCrisis.BountyHunting
                 def.FactionId = (string)el.Element("FactionId");
                 if (string.IsNullOrWhiteSpace(def.FactionId)) def.FactionId = null;
 
+                def.TargetFactionId = (string)el.Element("TargetFactionId");
+                if (string.IsNullOrWhiteSpace(def.TargetFactionId)) def.TargetFactionId = null;
+
                 def.BountyFactionId = (string)el.Element("BountyFactionId");
                 if (string.IsNullOrWhiteSpace(def.BountyFactionId)) def.BountyFactionId = null;
 
@@ -163,8 +166,6 @@ namespace SeparatistCrisis.BountyHunting
                     if (!string.IsNullOrWhiteSpace(troopId)) def.TroopId = troopId.Trim();
                     def.TroopCount = (int?)troopEl.Attribute("count") ?? def.TroopCount;
                 }
-
-                def.ThugCount = (int?)el.Element("ThugCount") ?? def.ThugCount;
 
                 return def;
             }
@@ -300,24 +301,9 @@ namespace SeparatistCrisis.BountyHunting
                     MinExpiryDays = 10, MaxExpiryDays = 30,
                     Template = new HeroTemplate
                     {
-                        CharacterTemplateId = "looter",
+                        CharacterTemplateId = "jabba",
                         NameText = "Gang Leader",
                         MinAge = 25, MaxAge = 45
-                    }
-                },
-                new BountyDefinition
-                {
-                    Id = "stealth_fugitive_bounty",
-                    Name = "Hidden Fugitive",
-                    SpawnType = BountySpawnType.SettlementStealth,
-                    MinValue = 500, MaxValue = 5000,
-                    MinExpiryDays = 10, MaxExpiryDays = 30,
-                    Template = new HeroTemplate
-                    {
-                        CharacterTemplateId = "looter",
-                        NameText = "Hidden Fugitive",
-                        MinAge = 25, MaxAge = 45,
-                        EquipmentSlots = new Dictionary<string, string> { { "Weapon0", "sword_1_t2" } }
                     }
                 }
             };

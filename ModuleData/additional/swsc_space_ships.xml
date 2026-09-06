@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Ship Objects -->
+<!-- If we start to have very large ships with possible interiors, then we will need mesh variants for map icons and regular scenes -->
+<SpaceShips>
+	<SpaceShip id="v_wing" name="V-Wing" mesh="v_wing" scale_multiplier="0.25"/>
+</SpaceShips>

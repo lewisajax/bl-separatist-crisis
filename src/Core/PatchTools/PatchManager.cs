@@ -89,8 +89,6 @@ namespace SeparatistCrisis.PatchTools
         private static readonly PatchClass[] _campaignPatchClasses = new PatchClass[]
         {
             new BountyHunting.Patches.AiPatrollingBehaviorSafetyPatch(),
-            new BountyHunting.Patches.CheckMissionEndedSafetyPatch(),
-            new BountyHunting.Patches.OnEndMissionRequestSafetyPatch(), 
             new BountyHunting.Patches.DoCaptureHeroesPatch(),
         };
     }

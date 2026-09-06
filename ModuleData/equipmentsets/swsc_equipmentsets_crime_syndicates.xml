@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EquipmentRosters>
+	<EquipmentRoster
+		id="spc_ohnaka_gang_leader_0"
+		culture="Culture.looters">
+		<EquipmentSet>
+			<Equipment
+				slot="Item0"
+				id="Item.empire_sword_5_t4" />
+			<Equipment
+				slot="Item1"
+				id="Item.stronger_reinforced_kite_shield" />
+			<Equipment
+				slot="Item2"
+				id="Item.imperial_throwing_spear_1_t4" />
+			<Equipment
+				slot="Body"
+				id="Item.imperial_lamellar_over_leather" />
+			<Equipment
+				slot="Leg"
+				id="Item.lamellar_plate_boots" />
+			<Equipment
+				slot="Head"
+				id="Item.plumed_helmet" />
+			<Equipment
+				slot="Gloves"
+				id="Item.lamellar_plate_gauntlets" />
+			<Equipment
+				slot="Cape"
+				id="Item.pauldron_cape_a" />
+		</EquipmentSet>
+		<EquipmentSet
+			equipmentType="Civilian">
+			<Equipment
+				slot="Item0"
+				id="Item.empire_sword_5_t4" />
+			<Equipment
+				slot="Body"
+				id="Item.imperial_padded_cloth" />
+			<Equipment
+				slot="Leg"
+				id="Item.folded_town_boots" />
+			<Equipment
+				slot="Gloves"
+				id="Item.padded_mitten" />
+		</EquipmentSet>
+	</EquipmentRoster>
+</EquipmentRosters>

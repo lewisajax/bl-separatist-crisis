@@ -1,0 +1,91 @@
+X - Exported from TPAC
+P - Prebaked animations
+
+P - stand_crossbow
+XP - run_forward_crossbow
+XP - run_right_crossbow
+XP - run_left_crossbow
+P - run_backward_crossbow
+run_right_back_crossbow
+run_left_back_crossbow
+XP - run_right_to_left_crossbow
+XP - run_left_to_right_crossbow
+XP - walk_forward_crossbow
+XP - walk_right_crossbow
+XP - walk_left_crossbow
+P - walk_backward_crossbow
+walk_right_back_crossbow
+walk_left_back_crossbow
+XP - walk_right_to_left_crossbow
+XP - walk_left_to_right_crossbow
+P - crouch_stand_crossbow
+crouch_walk_forward_staff
+crouch_walk_right_staff
+crouch_walk_left_staff
+crouch_walk_backward_staff
+crouch_walk_right_back_staff
+crouch_walk_left_back_staff
+X - crouch_walk_right_to_left_staff
+X - crouch_walk_left_to_right_staff
+X - crouch_run_forward_staff
+X- crouch_run_right_staff
+X - crouch_run_left_staff
+crouch_run_backward_staff
+crouch_run_right_back_staff
+crouch_run_left_back_staff
+X - crouch_run_right_to_left_staff
+X - crouch_run_left_to_right_staff
+XP - turn_crossbow
+turn_unarmed
+turn_crouch_unarmed
+troop_stand_crossbow_1
+troop_stand_crossbow_2
+troop_stand_crossbow_3
+
+XP - female_stand_crossbow
+XP - female_run_forward_crossbow
+XP - female_run_right_crossbow
+XP - female_run_left_crossbow
+P - female_run_backward_crossbow
+female_run_right_back_crossbow
+female_run_left_back_crossbow
+XP - female_run_right_to_left_crossbow
+XP - female_run_left_to_right_crossbow
+XP - female_walk_forward_crossbow
+XP - female_walk_right_crossbow_2
+XP - female_walk_left_crossbow_2
+P - female_walk_backward_crossbow
+X - female_walk_right_back_crossbow
+X - female_walk_left_back_crossbow
+XP - female_walk_right_to_left_crossbow
+XP - female_walk_left_to_right_crossbow
+female_turn_right_unarmed
+
+P - rider_idle_crossbow_1
+P - rider_idle_crossbow_2
+P - rider_idle_crossbow_3
+P - horse_rider_stand_1_crossbow
+P - horse_rider_stand_2_crossbow
+P - horse_rider_stand_3_crossbow
+P - horse_rider_stand_4_crossbow
+X - rider_walk_crossbow
+X - rider_stand_crossbow
+X - rider_trot_crossbow
+X - rider_canter_crossbow
+X - rider_gallop_crossbow
+
+X - equip_crossbow
+X - equip_crossbow_left_stance
+unequip_crossbow
+unequip_crossbow_left_stance
+
+P - ready_crossbow
+P - release_crossbow
+P - ready_continue_crossbow
+X - reload_crossbow
+reload_crossbow_continue
+X - reload_crossbow_horseback
+reload_crossbow_continue_horseback
+
+pose_troop_crossbow
+pose_archer_crossbow

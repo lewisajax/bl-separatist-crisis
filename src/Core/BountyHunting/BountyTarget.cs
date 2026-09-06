@@ -1,6 +1,5 @@
 using System;
 using TaleWorlds.CampaignSystem;
-using TaleWorlds.Library;
 using TaleWorlds.SaveSystem;
 
 namespace SeparatistCrisis.BountyHunting
@@ -15,10 +14,10 @@ namespace SeparatistCrisis.BountyHunting
 
     /// <summary>
     /// Represents a single bounty: its target hero, value, status, and the data
-    /// needed by each bounty type (settlement anchor, gang party, stealth/tavern
-    /// flags, associated quest, and owning faction). SaveableField indices 16, 17,
-    /// and 19 are retired (previously Phase, Phase1PartyIds, and GangCount) and must
-    /// never be reused.
+    /// needed by each bounty type (settlement anchor, gang party, associated
+    /// quest, and owning faction). SaveableField indices 11, 15, 16, 17, 18, and
+    /// 19 are retired (previously IsStealthBounty, IsTavernBounty, Phase,
+    /// Phase1PartyIds, ThugCharacterIds, and GangCount) and must never be reused.
     /// </summary>
     public class BountyTarget
     {
@@ -52,9 +51,6 @@ namespace SeparatistCrisis.BountyHunting
         [SaveableField(10)]
         public string GangPartyId;
 
-        [SaveableField(11)]
-        public bool IsStealthBounty;
-
         [SaveableField(12)]
         public string Description;
 
@@ -64,17 +60,14 @@ namespace SeparatistCrisis.BountyHunting
         [SaveableField(14)]
         public string TroopId;
 
-        [SaveableField(15)]
-        public bool IsTavernBounty;
-
-        [SaveableField(18)]
-        public MBList<string> ThugCharacterIds = new MBList<string>();
-
         [SaveableField(20)]
         public BountyQuest AssociatedQuest;
 
         [SaveableField(21)]
         public string FactionId;
+
+        [SaveableField(24)]
+        public string TargetFactionId;
 
         [SaveableField(22)]
         public bool IsPatrolBounty;

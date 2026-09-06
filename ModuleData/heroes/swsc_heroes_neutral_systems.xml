@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Heroes>
+	<!--New Mandalorians-->
+	<Hero id="satine"
+		father="Hero.adonai"
+		faction="Faction.new_mandalorians"
+		text="Placeholder" />
+
+	<!--Grand Protectorate of Rodia-->
+	<Hero id="onaconda"
+		faction="Faction.rodia"
+		text="Placeholder" />
+
+	<!--Republic of Taris-->
+	<Hero id="robb"
+		faction="Faction.taris"
+		text="Placeholder" />
+</Heroes>

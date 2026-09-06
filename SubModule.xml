@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+	<Name value="SeparatistCrisis" />
+	<Id value="SeparatistCrisis" />
+	<Version value="v1.0.0" />
+	<ModuleType value="Community"/>
+	<Official value="false" />
+	<DefaultModule value="false" />
+	<SingleplayerModule value="true" />
+	<MultiplayerModule value="false" />
+	<DependedModules>
+		<DependedModule Id="Bannerlord.Harmony" DependentVersion="v2.4.2" />
+		<DependedModule Id="Bannerlord.UIExtenderEx" DependentVersion="v2.13.2" />
+		<DependedModule Id="Native" DependentVersion="v1.4.6" />
+		<DependedModule Id="SandBoxCore" DependentVersion="v1.4.6" />
+		<DependedModule Id="Sandbox" DependentVersion="v1.4.6" />
+		<DependedModule Id="StoryMode" DependentVersion="v1.4.6" />
+		<DependedModule Id="SeparatistCrisis.Items" DependentVersion="$itemsversion$" />
+		<DependedModule Id="SeparatistCrisis.Scenes" DependentVersion="$scenesversion$" />
+	</DependedModules>
+	<DependedModuleMetadatas>
+		<DependedModuleMetadata id="Bannerlord.Harmony" order="LoadBeforeThis" version="v2.4.2" />
+		<DependedModuleMetadata id="Bannerlord.UIExtenderEx" order="LoadBeforeThis" version="v2.13.2" />
+		<DependedModuleMetadata id="Native" order="LoadBeforeThis" version="v1.4.6.*" />
+		<DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" version="v1.4.6.*" />
+		<DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" version="v1.4.6.*" />
+		<DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" version="v1.4.6.*" />
+		<DependedModuleMetadata id="CustomBattle" order="LoadBeforeThis" version="v1.4.6.*" optional="true" />
+		<DependedModuleMetadata id="BirthAndDeath" order="LoadBeforeThis" version="v1.4.6.*" optional="true" />
+		<DependedModuleMetadata id="SeparatistCrisis.Items" order="LoadBeforeThis" version="$itemsversion$.*" optional="false" />
+		<DependedModuleMetadata id="SeparatistCrisis.Scenes" order="LoadBeforeThis" version="$scenesversion$.*" optional="false" />
+	</DependedModuleMetadatas>
+	<SubModules>
+		<SubModule>
+			<Name value="SeparatistCrisis" />
+			<DLLName value="SeparatistCrisis.dll" />
+			<SubModuleClassType value="SeparatistCrisis.SubModule" />
+			<Tags />
+		</SubModule>
+	</SubModules>
+	<Xmls>
+		<!-- Filters -->
+		<XmlNode>
+			<XmlName id="SPCultures" path="Filters/spcultures"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Heroes" path="Filters/heroes"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="NPCCharacters" path="Filters/lords"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="NPCCharacters" path="Filters/npccharacters"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="NPCCharacters" path="Filters/spspecialcharacters"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Factions" path="Filters/spclans"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Kingdoms" path="Filters/spkingdoms"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+
+		<!-- Not Filters -->
+		<XmlNode>
+			<XmlName id="EquipmentRosters" path="EquipmentSets/" />
+			<IncludedGameTypes>
+				<GameType value="Campaign" />
+				<GameType value="CampaignStoryMode" />
+				<GameType value="CustomGame" />
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="SkillSets" path="swsc_skill_sets" />
+			<IncludedGameTypes>
+				<GameType value="Campaign" />
+				<GameType value="CampaignStoryMode" />
+				<GameType value="CustomGame" />
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="BodyProperties" path="swsc_bodyproperties" />
+			<IncludedGameTypes>
+				<GameType value="Campaign" />
+				<GameType value="CampaignStoryMode" />
+				<GameType value="CustomGame" />
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="NPCCharacters" path="NPCCharacters/"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="partyTemplates" path="PartyTemplates/"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="NPCCharacters" path="Lords/"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Heroes" path="Heroes/"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="SPCultures" path="swsc_spcultures"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Factions" path="SPClans/"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Kingdoms" path="swsc_spkingdoms"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Blasters" path="Additional/swsc_blaster_types"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Abilities" path="Additional/swsc_ability_types"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="AbilityHeroes" path="Additional/swsc_hero_abilities"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="SettlementGroups" path="Additional/swsc_settlement_groups"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="AssignedSets" path="Additional/swsc_assigned_sets"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="SpaceShips" path="Additional/swsc_space_ships"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="AssignedSpaceShips" path="Additional/swsc_assigned_space_ships"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign"/>
+				<GameType value="CampaignStoryMode"/>
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+	</Xmls>
+</Module>

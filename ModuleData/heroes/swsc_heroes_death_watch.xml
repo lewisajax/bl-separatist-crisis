@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Heroes>
+	<!--House Vizsla-->
+	<Hero id="vizsla"
+		faction="Faction.house_vizsla"
+		text="Placeholder" />
+
+	<!--House Kryze-->
+	<Hero id="katan"
+		father="Hero.adonai"
+		faction="Faction.house_kryze"
+		text="Placeholder" />
+
+	<!--Clan Wren-->
+	<Hero id="ursa"
+		spouse="Hero.alrich"
+		faction="Faction.clan_wren"
+		text="Placeholder" />
+
+	<!--Clan Fett-->
+	<Hero id="boba"
+		father="Hero.jango"
+		faction="Faction.clan_fett"
+		text="Placeholder" />
+
+	<!--House Kast-->
+	<Hero id="rook"
+		faction="Faction.house_kast"
+		text="Placeholder" />
+
+	<!--Clan Saxon-->
+	<Hero id="gar"
+		faction="Faction.clan_saxon"
+		text="Placeholder" />
+</Heroes>

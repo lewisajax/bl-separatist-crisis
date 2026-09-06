@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Heroes>
+	<!--Galactic Senate-->
+	<Hero id="palpatine"
+		faction="Faction.galactic_senate"
+		text="Placeholder" />
+
+	<!--Jedi Order-->
+	<Hero id="yoda"
+		faction="Faction.jedi_order"
+		text="Placeholder" />
+
+	<!--212th Attack Battalion-->
+	<Hero id="kenobi"
+		faction="Faction.212_battalion"
+		text="Placeholder" />
+
+	<Hero id="cody"
+		faction="Faction.212_battalion"
+		text="Placeholder" />
+
+	<!--104th Attack Battalion-->
+	<Hero id="plo"
+		faction="Faction.104_battalion"
+		text="Placeholder" />
+
+	<Hero id="wolffe"
+		faction="Faction.104_battalion"
+		text="Placeholder" />
+
+	<!--501st Legion-->
+	<Hero id="skywalker"
+		faction="Faction.501_legion"
+		text="Placeholder" />
+
+	<Hero id="rex"
+		faction="Faction.501_legion"
+		text="Placeholder" />
+
+	<Hero id="ahsoka"
+		faction="Faction.501_legion"
+		text="Placeholder" />
+
+	<!--327th Star Corps-->
+	<Hero id="secura"
+		faction="Faction.327_star"
+		text="Placeholder" />
+
+	<Hero id="bly"
+		faction="Faction.327_star"
+		text="Placeholder" />
+
+	<!--21st Nova Corps-->
+	<Hero id="mundi"
+		father="Hero.yoda"
+		faction="Faction.21_nova"
+		text="Placeholder" />
+
+	<Hero id="bacara"
+		father="Hero.jango"
+		faction="Faction.21_nova"
+		text="Placeholder" />
+
+	<!--9th Assault Corps-->
+	<Hero id="luminara"
+		faction="Faction.9_assault"
+		text="Placeholder" />
+
+	<Hero id="barriss"
+		mother="Hero.luminara"
+		faction="Faction.9_assault"
+		text="Placeholder" />
+
+	<Hero id="gree"
+		father="Hero.jango"
+		faction="Faction.9_assault"
+		text="Placeholder" />
+
+	<!--91st Reconnaissance Corps-->
+	<Hero id="windu"
+		faction="Faction.91_recon"
+		text="Placeholder" />
+
+	<Hero id="gallia"
+		faction="Faction.91_recon"
+		text="Placeholder" />
+
+	<Hero id="neyo"
+		father="Hero.jango"
+		faction="Faction.91_recon"
+		text="Placeholder" />
+
+	<Hero id="ponds"
+		father="Hero.jango"
+		faction="Faction.91_recon"
+		text="Placeholder" />
+
+	<!--Kamino Cloning-->
+	<Hero id="lama"
+		faction="Faction.kamino"
+		text="Placeholder" />
+
+	<Hero id="nala"
+		faction="Faction.kamino"
+		text="Placeholder" />
+
+	<!-- Chandrila -->
+	<Hero id="mon_mothma"
+		faction="Faction.chandrila"
+		text="Placeholder" />
+
+	<!-- Milagro -->
+	<Hero id="milagro_placeholder_1"
+		faction="Faction.milagro"
+		text="Placeholder" />
+
+	<!-- Kitel Phard -->
+	<Hero id="kitel_phard_placeholder_1"
+		faction="Faction.tching_kp"
+		text="Placeholder" />
+
+	<!-- Aaloth -->
+	<Hero id="aaloth_placeholder_1"
+		faction="Faction.aaloth"
+		text="Placeholder" />
+
+	<!-- Kriselist -->
+	<Hero id="kriselist_placeholder_1"
+		faction="Faction.kriselist"
+		text="Placeholder" />
+
+	<!-- Aeos -->
+	<Hero id="aeos_placeholder_1"
+		faction="Faction.aeos"
+		text="Placeholder" />
+
+	<Hero id="aeos_placeholder_2"
+		faction="Faction.gravlex_med"
+		text="Placeholder" />
+
+	<!-- Sernpidal -->
+	<Hero id="sernpidal_placeholder_1"
+		faction="Faction.sernpidal"
+		text="Placeholder" />
+
+	<!-- Alamass -->
+	<Hero id="alamass_placeholder_1"
+		faction="Faction.alamass"
+		text="Placeholder" />
+
+	<!-- Alderaan -->
+	<Hero id="bail_organa"
+		faction="Faction.alderaan"
+		text="Placeholder" />
+
+	<!-- Anaxes -->
+	<Hero id="anaxes_placeholder_1"
+		faction="Faction.anaxes"
+		text="Placeholder" />
+
+	<!-- Ithor -->
+	<Hero id="ithor_placeholder_1"
+		faction="Faction.ithor"
+		text="Placeholder" />
+
+	<!-- Ando -->
+	<Hero id="ando_placeholder_1"
+		faction="Faction.ando"
+		text="Placeholder" />
+
+	<!-- Ando -->
+	<Hero id="ansion_placeholder_1"
+		faction="Faction.ansion"
+		text="Placeholder" />
+
+	<!-- Quellor -->
+	<Hero id="quellor_placeholder_1"
+		faction="Faction.quellor"
+		text="Placeholder" />
+	
+	<!--Royal House of Naboo-->
+	<Hero id="jamillia"
+		faction="Faction.naboo"
+		text="Placeholder" />
+
+	<!--Wookie Council-->
+	<Hero id="grakchawwaa"
+		faction="Faction.wookie"
+		text="Placeholder" />
+
+	<Hero id="chewbacca"
+		faction="Faction.wookie"
+		text="Placeholder" />
+
+	<!--Chiss Ascendancy-->
+	<Hero id="thrass"
+		father="Hero.thooraki"
+		faction="Faction.chiss"
+		text="Placeholder" />
+
+	<Hero id="thrawn"
+		father="Hero.thooraki"
+		faction="Faction.chiss"
+		text="Placeholder" />
+</Heroes>

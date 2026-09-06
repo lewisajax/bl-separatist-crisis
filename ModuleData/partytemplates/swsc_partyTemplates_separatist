@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<partyTemplates>
+	<!--Villagers Templates-->
+	<MBPartyTemplate id="separatist_villager_template" >
+		<stacks>
+			<PartyTemplateStack min_value="15" max_value="30" troop="NPCCharacter.separatist_villager" />
+		</stacks>
+	</MBPartyTemplate>
+	<!--Caravan Templates-->
+	<MBPartyTemplate id="separatist_caravan_template" >
+		<stacks>
+			<PartyTemplateStack  min_value="8" max_value="8" troop="NPCCharacter.separatist_armed_trader" />
+			<PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.separatist_caravan_guard" />
+			<PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.separatist_veteran_caravan_guard" />
+		</stacks>
+	</MBPartyTemplate>
+	<!--Elite Caravan Templates-->
+	<MBPartyTemplate id="separatist_elite_caravan_template" >
+		<stacks>
+			<PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.separatist_armed_trader" />
+			<PartyTemplateStack min_value="7" max_value="7" troop="NPCCharacter.separatist_caravan_guard" />
+			<PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.separatist_veteran_caravan_guard" />
+			<PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.separatist_caravan_master" />
+		</stacks>
+	</MBPartyTemplate>
+	<!--Militia Templates-->
+	<MBPartyTemplate id="separatist_militia_template" >
+		<stacks>
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.separatist_melee_militia" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.separatist_ranged_militia" />
+		</stacks>
+	</MBPartyTemplate>
+	<!--Rebel Templates-->
+	<MBPartyTemplate id="separatist_rebels_template" >
+		<stacks>
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.b1_droid_new" />
+		</stacks>
+	</MBPartyTemplate>
+    <!-- Vassal Reward Troops-->
+	<MBPartyTemplate id="separatist_vassal_reward_troops" >
+		<stacks>
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.b1_droid_new" />
+			<PartyTemplateStack min_value="5" max_value="5" troop="NPCCharacter.ig_86_droid_new" />
+		</stacks>
+	</MBPartyTemplate>
+	<!--Lord Party Templates-->
+	<MBPartyTemplate id="separatist_kingdom_hero_party_template" >
+		<stacks>
+			<PartyTemplateStack min_value="16" max_value="16" troop="NPCCharacter.b1_droid_new" />
+			<PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.ig_86_droid_new" />
+		</stacks>
+	</MBPartyTemplate>
+	<!--Minor Faction Party Template-->
+    <MBPartyTemplate id="separatist_kingdom_hero_party_mercenary_template" >
+        <stacks>
+        <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.b1_droid_new" />
+        <PartyTemplateStack min_value="16" max_value="16" troop="NPCCharacter.ig_86_droid_new" />
+        </stacks>
+    </MBPartyTemplate>
+	<!--Outlaw Minor Faction Party Templates-->
+    <MBPartyTemplate id="separatist_kingdom_hero_party_outlaw_template" >
+        <stacks>
+        <PartyTemplateStack min_value="16" max_value="16" troop="NPCCharacter.b1_droid_new" />
+        <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.ig_86_droid_new" />
+        </stacks>
+    </MBPartyTemplate>
+</partyTemplates>

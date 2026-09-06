@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Heroes>
+	<!--Hutt Cartel-->
+	<Hero id="jabba"
+		faction="Faction.hutt_kajidic"
+		text="Placeholder" />
+
+	<Hero id="hutt_placeholder_2"
+		faction="Faction.council_of_elders"
+		text="Placeholder" />
+
+	<Hero id="hutt_placeholder_3"
+		faction="Faction.gorensla_kajidic"
+		text="Placeholder" />
+
+	<Hero id="hutt_placeholder_4"
+		faction="Faction.huun_kajidic"
+		text="Placeholder" />
+
+	<Hero id="hutt_placeholder_5"
+		faction="Faction.roolas_gang"
+		text="Placeholder" />
+	
+	<!--Black Sun-->
+	<Hero id="grunseit"
+		faction="Faction.black_sun"
+		text="Placeholder" />
+
+	<!--Pyke Syndicate-->
+	<Hero id="lom"
+		faction="Faction.pyke_syndicate"
+		text="Placeholder" />
+
+</Heroes>

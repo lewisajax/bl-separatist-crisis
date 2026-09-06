@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	type="combat_parameters">
+    <definitions>
+        <def
+			name="blaster_rider_look_down_limit"
+			val="-23" />
+		<!-- not set yet -->
+		<def
+			name="blaster_rider_rot_limit_left"
+			val="115" />
+		<!-- not set yet -->
+		<def
+			name="blaster_rider_rot_limit_right"
+			val="60" />
+        <def
+			name="blaster_rider_min_rot_limit_left"
+			val="15" />
+		<!-- not set yet -->
+		<def
+			name="blaster_rider_min_rot_limit_right"
+			val="11" />
+            <!-- not set yet -->
+		<def
+			name="blaster_ladder_rot_limit_left"
+			val="86" />
+		<!-- not set yet -->
+		<def
+			name="blaster_ladder_rot_limit_right"
+			val="57" />
+    </definitions>
+    <combat_parameters>
+        <combat_parameter
+			id="blaster_ready_release"
+			vertical_rot_limit_multiplier_up="bow_vertical_rot_limit"
+			vertical_rot_limit_multiplier_down="bow_vertical_rot_limit"
+			left_rider_min_rot_limit="blaster_rider_min_rot_limit_left"
+			right_rider_min_rot_limit="blaster_rider_min_rot_limit_right"
+			rider_look_down_limit="blaster_rider_look_down_limit"
+			left_rider_rot_limit="blaster_rider_rot_limit_left"
+			right_rider_rot_limit="blaster_rider_rot_limit_right"
+			left_ladder_rot_limit="blaster_ladder_rot_limit_left"
+			right_ladder_rot_limit="blaster_ladder_rot_limit_right" />
+    </combat_parameters>
+</base>
