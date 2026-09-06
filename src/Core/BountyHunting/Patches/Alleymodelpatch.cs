@@ -10,17 +10,6 @@ using TaleWorlds.ObjectSystem;
 
 namespace SeparatistCrisis.BountyHunting.Patches
 {
-    /// <summary>
-    /// Harmony patch on DefaultAlleyModel.GetTroopsOfAIOwnedAlley — the method
-    /// AlleyCampaignBehavior calls to decide who actually spawns as agents in an
-    /// AI-owned alley. Vanilla only ever generates anonymous thug troops from this
-    /// method; the alley's owner Hero is never included as a combatant (only
-    /// player-owned alleys track their leader as a fightable agent, via a separate
-    /// mechanism this method doesn't touch). For an alley bounty, we need the
-    /// bounty hero to actually show up and be fightable, so this patch substitutes
-    /// a custom roster — the hero plus this bounty's guard troops — whenever the
-    /// alley in question is currently claimed by an active alley bounty.
-    /// </summary>
     public sealed class AlleyModelPatch : PatchClass<AlleyModelPatch, DefaultAlleyModel>
     {
         protected override IEnumerable<Patch> Prepare()

@@ -15,12 +15,6 @@ namespace SeparatistCrisis.BountyHunting.Patches
     /// handling, and skips vanilla's inquiry entirely. A loss, or a fight against
     /// any non-bounty alley, falls through to vanilla's normal behavior unchanged.
     /// </summary>
-    /// <remarks>
-    /// OnAlleyFightEnd itself receives no reference to which alley was fought —
-    /// vanilla's own alley dialogue/action code universally relies on
-    /// CampaignMission.Current.LastVisitedAlley for this same purpose (see
-    /// AlleyCampaignBehavior's alley_talk_* methods), so this patch does the same.
-    /// </remarks>
     public sealed class AlleyFightEndPatch : PatchClass<AlleyFightEndPatch, MissionAlleyHandler>
     {
         protected override IEnumerable<Patch> Prepare()

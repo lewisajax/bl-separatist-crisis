@@ -22,22 +22,6 @@ namespace SeparatistCrisis.BountyHunting.Patches
     /// active alley bounty, so the player talks to the actual named target instead
     /// of a random guard. Non-bounty alleys behave identically to vanilla.
     /// </summary>
-    /// <remarks>
-    /// This only changes who the player has the pre-fight chit-chat with — the
-    /// fight itself (StartCommonAreaBattle) already gathers every agent tagged
-    /// MemberOfAlley == alley regardless of who initiated the conversation, so the
-    /// boss was always included in the fight and capture either way. This patch is
-    /// purely a presentation fix, not a functional one.
-    ///
-    /// The two injected private fields are typed as plain `object` rather than
-    /// their real declared types (Dictionary&lt;Agent, AgentNavigator&gt; and
-    /// Dictionary&lt;Alley, bool&gt;) deliberately — AgentNavigator's actual
-    /// namespace/accessibility didn't match what the decompiled source implied, so
-    /// rather than guess again, this avoids needing a compile-time reference to
-    /// that type at all. The first dictionary's values are accessed via `dynamic`
-    /// (resolved by the runtime, not the compiler) purely to call MemberOfAlley and
-    /// CanSeeAgent on them.
-    /// </remarks>
     public sealed class AlleyThugConversationPatch : PatchClass<AlleyThugConversationPatch, MissionAlleyHandler>
     {
         protected override IEnumerable<Patch> Prepare()
