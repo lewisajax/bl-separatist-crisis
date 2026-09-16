@@ -93,6 +93,7 @@ namespace SeparatistCrisis.PatchTools
             new BountyHunting.Patches.AlleyModelPatch(),
             new BountyHunting.Patches.AlleyFightEndPatch(),
             new BountyHunting.Patches.AlleyThugConversationPatch(),
+            new BountyHunting.Patches.MapBarBountyButtonPatch(),
         };
     }
 }

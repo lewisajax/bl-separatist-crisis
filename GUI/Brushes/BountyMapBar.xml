@@ -1,0 +1,29 @@
+<Brushes>
+	<Brush Name="MapBar.Left.Button.Backgrounds">
+		<Layers>
+			<BrushLayer Name="escape_menu" Sprite="MapBar\bottom_left_button1_exit" />
+			<BrushLayer Name="character_developer" Sprite="MapBar\bottom_left_button2_character" />
+			<BrushLayer Name="inventory" Sprite="MapBar\bottom_left_button3_inventory" />
+			<BrushLayer Name="party" Sprite="MapBar\bottom_left_button4_party" />
+			<BrushLayer Name="quest" Sprite="MapBar\bottom_left_button5_quest" />
+			<BrushLayer Name="clan" Sprite="MapBar\bottom_left_button6_clan" />
+			<BrushLayer Name="manage_fleet" Sprite="MapBar\bottom_left_button4_party" />
+			<BrushLayer Name="bounty" Sprite="MapBar\bottom_left_button3_inventory" />
+			<BrushLayer Name="kingdom" Sprite="MapBar\bottom_left_button7_kingdom" />
+		</Layers>
+	</Brush>
+
+	<Brush Name="MapBar.Left.Icons">
+		<Layers>
+			<BrushLayer Name="escape_menu" Sprite="MapBar\mapbar_icon1" ExtendTop="-3" ExtendBottom="-3" ImageFit.Type="Contain" ImageFit.VerticalAlignment="Center" ImageFit.HorizontalAlignment="Center" />
+			<BrushLayer Name="character_developer" Sprite="MapBar\mapbar_icon2" ExtendTop="-2" ExtendBottom="-2" ExtendLeft="-2" ExtendRight="-2" ImageFit.Type="Contain" ImageFit.VerticalAlignment="Center" ImageFit.HorizontalAlignment="Center" />
+			<BrushLayer Name="inventory" Sprite="MapBar\mapbar_icon3" ExtendTop="-1" ExtendBottom="-1" ExtendLeft="-1" ExtendRight="-1" ImageFit.Type="Contain" ImageFit.VerticalAlignment="Center" ImageFit.HorizontalAlignment="Center" />
+			<BrushLayer Name="party" Sprite="MapBar\mapbar_icon4" YOffset="1" ExtendTop="-2" ExtendBottom="-2" ExtendLeft="-2" ExtendRight="-2" ImageFit.Type="Contain" ImageFit.VerticalAlignment="Center" ImageFit.HorizontalAlignment="Center" />
+			<BrushLayer Name="quest" Sprite="MapBar\mapbar_icon5" ExtendTop="-4" ExtendBottom="-4" ExtendLeft="-4" ExtendRight="-4" ImageFit.Type="Contain" ImageFit.VerticalAlignment="Center" ImageFit.HorizontalAlignment="Center" />
+			<BrushLayer Name="clan" Sprite="MapBar\mapbar_icon7" ImageFit.Type="Contain" ImageFit.VerticalAlignment="Center" ImageFit.HorizontalAlignment="Center" />
+			<BrushLayer Name="manage_fleet" Sprite="Map\ship" ExtendTop="-3" ExtendBottom="-3" ExtendLeft="-3" ExtendRight="-3" ImageFit.Type="Contain" ImageFit.VerticalAlignment="Center" ImageFit.HorizontalAlignment="Center" />
+			<BrushLayer Name="bounty" Sprite="MapBar\mapbar_icon3" ExtendTop="-1" ExtendBottom="-1" ExtendLeft="-1" ExtendRight="-1" ImageFit.Type="Contain" ImageFit.VerticalAlignment="Center" ImageFit.HorizontalAlignment="Center" />
+			<BrushLayer Name="kingdom" Sprite="MapBar\mapbar_icon6" XOffset="-11" ExtendTop="-5" ExtendBottom="-5" ExtendRight="-5" ExtendLeft="-5" ImageFit.Type="Contain" ImageFit.VerticalAlignment="Center" ImageFit.HorizontalAlignment="Center" />
+		</Layers>
+	</Brush>
+</Brushes>
