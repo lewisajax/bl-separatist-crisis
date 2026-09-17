@@ -1,0 +1,109 @@
+<Prefab>
+	<Window>
+		<Widget HeightSizePolicy="StretchToParent" WidthSizePolicy="StretchToParent">
+			<Children>
+
+				<BrushWidget WidthSizePolicy="Fixed" SuggestedWidth="700" HeightSizePolicy="Fixed" SuggestedHeight="700"
+							 HorizontalAlignment="Center" VerticalAlignment="Center"
+							 Brush="Recruitment.Frame">
+					<Children>
+
+						<ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+								   StackLayout.LayoutMethod="VerticalTopToBottom">
+							<Children>
+
+								<!--Title-->
+								<TextWidget Text="@TitleText" HorizontalAlignment="Center"
+											WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="50"
+											MarginTop="15" MarginBottom="10" />
+
+								<!--Divider under title-->
+								<Widget WidthSizePolicy="Fixed" SuggestedWidth="600" HorizontalAlignment="Center" HeightSizePolicy="Fixed" SuggestedHeight="2"
+										Sprite="BlankWhiteSquare_9" Color="#D4AF37FF" MarginBottom="10" />
+
+								<!--Scrollable bounty list-->
+								<ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+										   StackLayout.LayoutMethod="HorizontalLeftToRight" MarginBottom="10">
+									<Children>
+
+										<ScrollablePanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+														 MarginLeft="15"
+														 AutoHideScrollBars="true" ClipRect="ListClipRect"
+														 InnerPanel="ListClipRect\ListPanel"
+														 VerticalScrollbar="..\ListScrollbarContainer\ListScrollbar">
+											<Children>
+												<Widget Id="ListClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+													<Children>
+														<ListPanel Id="ListPanel" DataSource="{Bounties}"
+																   WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren"
+																   StackLayout.LayoutMethod="VerticalTopToBottom">
+															<ItemTemplate>
+																<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="55"
+																		MarginBottom="8">
+																	<Children>
+																		<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+																				Sprite="BlankWhiteSquare_9" Color="#00000055" />
+
+																		<TextWidget Text="@FactionNameText"
+																					HorizontalAlignment="Left" VerticalAlignment="Center"
+																					WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+																					MarginLeft="15" />
+
+																		<TextWidget Text="@RewardText"
+																					HorizontalAlignment="Right" VerticalAlignment="Center"
+																					WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent"
+																					MarginRight="15" />
+																	</Children>
+																</Widget>
+															</ItemTemplate>
+														</ListPanel>
+													</Children>
+												</Widget>
+											</Children>
+										</ScrollablePanel>
+
+										<Widget Id="ListScrollbarContainer" WidthSizePolicy="Fixed" SuggestedWidth="15" HeightSizePolicy="StretchToParent" MarginRight="15">
+											<Children>
+												<ScrollbarWidget Id="ListScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="8"
+																 HorizontalAlignment="Right" VerticalAlignment="Top"
+																 AlignmentAxis="Vertical" Handle="ListScrollbarHandle" MaxValue="100" MinValue="0">
+													<Children>
+														<Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4"
+																HorizontalAlignment="Center" Sprite="BlankWhiteSquare_9" Color="#D4AF37FF" AlphaFactor="0.2" />
+														<ImageWidget Id="ListScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"
+																	 SuggestedHeight="10" SuggestedWidth="8" HorizontalAlignment="Center"
+																	 Brush="FaceGen.Scrollbar.Handle" />
+													</Children>
+												</ScrollbarWidget>
+											</Children>
+										</Widget>
+
+									</Children>
+								</ListPanel>
+
+								<!--Divider above close-->
+								<Widget WidthSizePolicy="Fixed" SuggestedWidth="600" HorizontalAlignment="Center" HeightSizePolicy="Fixed" SuggestedHeight="2"
+										Sprite="BlankWhiteSquare_9" Color="#D4AF37FF" MarginBottom="10" />
+
+								<!--Close-->
+								<ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true"
+											  WidthSizePolicy="Fixed" SuggestedWidth="150" HeightSizePolicy="Fixed" SuggestedHeight="40"
+											  HorizontalAlignment="Center" MarginBottom="15"
+											  Brush="Popup.Done.Button.NineGrid" Brush.SaturationFactor="-100" Command.Click="ExecuteClose">
+									<Children>
+										<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+													HorizontalAlignment="Center" VerticalAlignment="Center"
+													Brush="Popup.Button.Text" Text="Close" />
+									</Children>
+								</ButtonWidget>
+
+							</Children>
+						</ListPanel>
+
+					</Children>
+				</BrushWidget>
+
+			</Children>
+		</Widget>
+	</Window>
+</Prefab>

@@ -174,8 +174,9 @@ namespace SeparatistCrisis.BountyHunting
             // BountyDefinition that hasn't already been used (by a previous F10
             // press or the normal daily roll), bypassing the daily chance roll
             // entirely but still respecting the one-time-use tracking — it will
-            // NOT re-spawn a definition that's already generated. Search
-            // "DEBUG_FORCE_SPAWN_F10" to find every piece of this later.
+            // NOT re-spawn a definition that's already generated. Also creates a
+            // one-off debug bounty ON the player (see AddDebugPlayerBounty).
+            // Search "DEBUG_FORCE_SPAWN_F10" to find every piece of this later.
             // ============================================================
             if (Input.IsKeyPressed(InputKey.F10))
             {
@@ -186,10 +187,48 @@ namespace SeparatistCrisis.BountyHunting
                 {
                     ResolveDefinitionAndMarkUsedIfProduced(definition, "DEBUG_FORCE_SPAWN_F10");
                 }
+
+                AddDebugPlayerBounty();
             }
             // ============================================================
             // END DEBUG_FORCE_SPAWN_F10
             // ============================================================
+        }
+
+        /// <summary>
+        /// DEBUG_FORCE_SPAWN_F10 helper — creates a hand-built test bounty on the
+        /// player from the Galactic Republic faction, 2000 gold. No-ops if the
+        /// player already has an active bounty from this faction, so repeated F10
+        /// presses don't stack duplicates. Remove alongside the rest of
+        /// DEBUG_FORCE_SPAWN_F10 when done testing.
+        /// </summary>
+        private void AddDebugPlayerBounty()
+        {
+            const string debugFactionId = "galactic_republic";
+            const int debugBountyValue = 2000;
+
+            bool alreadyExists = _activeBounties.Any(b =>
+                b.Status == BountyStatus.Active &&
+                b.IsPlayerBounty &&
+                b.FactionId == debugFactionId);
+
+            if (alreadyExists)
+            {
+                BountyLogger.Log($"DEBUG_FORCE_SPAWN_F10 (AddDebugPlayerBounty): a '{debugFactionId}' bounty on the player already exists — skipping.");
+                return;
+            }
+
+            var bounty = new BountyTarget(Hero.MainHero, debugBountyValue, guardPartySize: 0, daysUntilExpiry: MaxExpiryDays, isPlayerBounty: true)
+            {
+                FactionId = debugFactionId,
+                Description = "DEBUG: test bounty on the player, Galactic Republic."
+            };
+
+            _activeBounties.Add(bounty);
+
+            BountyLogger.Log($"DEBUG_FORCE_SPAWN_F10 (AddDebugPlayerBounty): created player bounty — FactionId='{debugFactionId}', value={debugBountyValue}, expiryDays={MaxExpiryDays}.");
+            InformationManager.DisplayMessage(new InformationMessage(
+                $"[DEBUG] The Galactic Republic has placed a {debugBountyValue} gold bounty on your head."));
         }
 
         /// <summary>
@@ -622,6 +661,14 @@ namespace SeparatistCrisis.BountyHunting
         public IReadOnlyList<BountyTarget> GetActiveBounties()
         {
             return _activeBounties.Where(b => b.Status == BountyStatus.Active).ToList();
+        }
+
+        /// <summary>
+        /// Returns every active bounty currently placed on the player.
+        /// </summary>
+        public IReadOnlyList<BountyTarget> GetActiveBountiesOnPlayer()
+        {
+            return _activeBounties.Where(b => b.Status == BountyStatus.Active && b.IsPlayerBounty).ToList();
         }
 
         /// <summary>
