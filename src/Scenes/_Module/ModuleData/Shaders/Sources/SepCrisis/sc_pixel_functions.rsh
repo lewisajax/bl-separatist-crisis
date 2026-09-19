@@ -42,3 +42,17 @@ void sc_pristine_grid_output(inout Pixel_shader_input_type In, in Per_pixel_stat
     float grid = sc_pristine_grid(In.tex_coord.xy * grid_scale, float2(line_width_x, line_width_y));
     Output.RGBColor.rgba = lerp(base_color, line_color, grid * line_color.a);
 }
+
+#if !defined(SHADOWMAP_PASS) && !defined(POINTLIGHT_SHADOWMAP_PASS) && !defined(GBUFFER_PASS)
+void sc_fresnel_shader_output(inout Pixel_shader_input_type In, in Per_pixel_static_variables pp_static, inout Per_pixel_modifiable_variables pp_modifiable, inout PS_OUTPUT Output)
+{
+	float3 final_color = pp_modifiable.albedo_color * g_mesh_vector_argument.y;
+
+	float fresnel_term = saturate(dot(pp_static.view_vector.xyz, pp_modifiable.world_space_normal.xyz));
+	fresnel_term = pow(fresnel_term, g_mesh_vector_argument.x);
+	final_color = lerp(g_mesh_factor2_color.rgb, final_color, fresnel_term);
+
+	Output.RGBColor.rgb = final_color.rgb;
+	Output.RGBColor.a = In.vertex_color.a;
+}
+#endif

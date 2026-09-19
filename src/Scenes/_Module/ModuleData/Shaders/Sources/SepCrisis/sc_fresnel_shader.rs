@@ -41,7 +41,6 @@
 #include "pbr_standart_functions.rsh" 
 
 #include "./SepCrisis/sc_pixel_functions.rsh"
-#include "./SepCrisis/sc_vertex_functions.rsh"
 
 #if VERTEX_SHADER
 Vertex_shader_output_type main_vs(RGL_VS_INPUT In)
@@ -52,7 +51,6 @@ Vertex_shader_output_type main_vs(RGL_VS_INPUT In)
 	calculate_object_space_values_standart(In , pv_modifiable, Out );
 	calculate_world_space_values_standart(In , pv_modifiable, Out );
 	calculate_render_related_values_standart(In , pv_modifiable, Out );
-	sc_pristine_grid_world_centered(In , pv_modifiable, Out );
 #ifdef SYSTEM_SHOW_VERTEX_COLORS
 	vs_output_vertex_color(Out, In);
 #endif
@@ -113,7 +111,7 @@ PS_OUTPUT_TO_USE main_ps(Pixel_shader_input_type In)
 	calculate_albedo_standart(In , pp_static , pp_modifiable, pp_aux);
 	calculate_specularity_standart(In , pp_static , pp_modifiable, pp_aux);
 	calculate_diffuse_ao_factor_standart_forward(In , pp_static , pp_modifiable, pp_aux);
-	sc_pristine_grid_output(In , pp_static , pp_modifiable, Output);
+	sc_fresnel_shader_output(In , pp_static , pp_modifiable, Output);
 	accumulate_light_contributions(In , pp_static , pp_modifiable, Output);
 #ifdef SYSTEM_SHOW_VERTEX_COLORS
 	#if (MATERIAL_ID_TERRAIN != my_material_id) && (MATERIAL_ID_DEFERRED != my_material_id) && (MATERIAL_ID_GRASS != my_material_id)

@@ -1,3 +1,4 @@
+#define POINTLIGHT_SHADOWMAP_PASS
 //WARNING : This is a generated file
 //WARNING : Do not change this file.
 
@@ -40,9 +41,6 @@
 
 #include "pbr_standart_functions.rsh" 
 
-#include "./SepCrisis/sc_pixel_functions.rsh"
-#include "./SepCrisis/sc_vertex_functions.rsh"
-
 #if VERTEX_SHADER
 Vertex_shader_output_type main_vs(RGL_VS_INPUT In)
 {
@@ -52,7 +50,6 @@ Vertex_shader_output_type main_vs(RGL_VS_INPUT In)
 	calculate_object_space_values_standart(In , pv_modifiable, Out );
 	calculate_world_space_values_standart(In , pv_modifiable, Out );
 	calculate_render_related_values_standart(In , pv_modifiable, Out );
-	sc_pristine_grid_world_centered(In , pv_modifiable, Out );
 #ifdef SYSTEM_SHOW_VERTEX_COLORS
 	vs_output_vertex_color(Out, In);
 #endif
@@ -93,12 +90,8 @@ Vertex_shader_output_type main_vs(RGL_VS_INPUT In)
 #endif
 
 #if PIXEL_SHADER
-#if !ALPHA_TEST && !USE_SMOOTH_FADE_OUT
-[earlydepthstencil]
-#endif
-PS_OUTPUT_TO_USE main_ps(Pixel_shader_input_type In)
+void main_ps(Pixel_shader_input_type In)
 {
-	PS_OUTPUT_TO_USE Output = (PS_OUTPUT_TO_USE)0;
 	Per_pixel_static_variables pp_static = (Per_pixel_static_variables)0;
 	Per_pixel_modifiable_variables pp_modifiable = (Per_pixel_modifiable_variables)0;
 
@@ -109,17 +102,5 @@ PS_OUTPUT_TO_USE main_ps(Pixel_shader_input_type In)
 	sample_textures_standart(In , pp_static , pp_modifiable, pp_aux);
 	calculate_alpha_standart(In , pp_static , pp_modifiable, pp_aux);
 	apply_alpha_test(In, pp_modifiable.early_alpha_value);
-	calculate_normal_standart(In , pp_static , pp_modifiable, pp_aux);
-	calculate_albedo_standart(In , pp_static , pp_modifiable, pp_aux);
-	calculate_specularity_standart(In , pp_static , pp_modifiable, pp_aux);
-	calculate_diffuse_ao_factor_standart_forward(In , pp_static , pp_modifiable, pp_aux);
-	sc_pristine_grid_output(In , pp_static , pp_modifiable, Output);
-	accumulate_light_contributions(In , pp_static , pp_modifiable, Output);
-#ifdef SYSTEM_SHOW_VERTEX_COLORS
-	#if (MATERIAL_ID_TERRAIN != my_material_id) && (MATERIAL_ID_DEFERRED != my_material_id) && (MATERIAL_ID_GRASS != my_material_id)
-		Output.RGBColor.rgba = get_masked_vertex_color(In.vertex_color.rgba);
-	#endif
-#endif
-	return Output;
 }
 #endif

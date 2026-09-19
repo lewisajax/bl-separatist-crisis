@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--You can add new or override old clan entries by adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spclans.xml.-->
+<!--You can add new or override old clan entries by
+adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spclans.xml.-->
 <Factions>
 
 	<!--Major Clans-->
 
 	<Faction
- initial_home_settlement="Settlement.town_GR1"
+		initial_home_settlement="Settlement.town_GR1"
 		id="galactic_senate"
 		name="Galactic Senate"
 		tier="6"
@@ -17,7 +18,7 @@
 
 	<!-- Change culture back to jedi order later -->
 	<Faction
- initial_home_settlement="Settlement.town_GR1"
+		initial_home_settlement="Settlement.town_GR1"
 		id="jedi_order"
 		name="Jedi Order"
 		tier="6"
@@ -27,10 +28,9 @@
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-		<!--Republic Military Clans-->
-
+	<!--Republic Military Clans-->
 	<Faction
- initial_home_settlement="Settlement.town_GR1"
+		initial_home_settlement="Settlement.town_GR1"
 		id="212_battalion"
 		name="212th Attack Battalion"
 		tier="5"
@@ -41,7 +41,7 @@
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
- initial_home_settlement="Settlement.town_GR1"
+		initial_home_settlement="Settlement.town_GR1"
 		id="104_battalion"
 		name="104th Attack Battalion"
 		tier="5"
@@ -52,7 +52,7 @@
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
- initial_home_settlement="Settlement.town_GR1"
+		initial_home_settlement="Settlement.town_GR1"
 		id="501_legion"
 		name="501st Legion"
 		tier="4"
@@ -63,7 +63,7 @@
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
- initial_home_settlement="Settlement.town_GR1"
+		initial_home_settlement="Settlement.town_GR1"
 		id="327_star"
 		name="327th Star Corps"
 		tier="4"
@@ -74,7 +74,7 @@
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
- initial_home_settlement="Settlement.town_GR1"
+		initial_home_settlement="Settlement.town_GR1"
 		id="21_nova"
 		name="21st Nova Corps"
 		tier="4"
@@ -85,7 +85,7 @@
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
- initial_home_settlement="Settlement.town_GR1"
+		initial_home_settlement="Settlement.town_GR1"
 		id="9_assault"
 		name="9th Assault Corps"
 		tier="4"
@@ -96,7 +96,7 @@
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
- initial_home_settlement="Settlement.town_GR1"
+		initial_home_settlement="Settlement.town_GR1"
 		id="91_recon"
 		name="91st Reconnaissance Corps"
 		tier="4"
@@ -106,10 +106,9 @@
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-		<!--Planetary Clans-->
-
+	<!--Planetary Clans-->
 	<Faction
- initial_home_settlement="Settlement.town_GR1"
+		initial_home_settlement="Settlement.town_GR1"
 		id="kamino"
 		name="Kamino Cloning"
 		tier="4"
@@ -120,7 +119,7 @@
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
- initial_home_settlement="Settlement.town_GR1"
+		initial_home_settlement="Settlement.town_GR_NB1"
 		id="naboo"
 		name="Royal House of Naboo"
 		tier="4"
@@ -131,7 +130,7 @@
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
- initial_home_settlement="Settlement.town_GR1"
+		initial_home_settlement="Settlement.town_GR1"
 		id="chandrila"
 		name="Chandrila"
 		tier="4"
@@ -142,7 +141,7 @@
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
- initial_home_settlement="Settlement.town_GR_MG1"
+		initial_home_settlement="Settlement.town_GR_MG1"
 		id="milagro"
 		name="Milagro"
 		tier="4"
@@ -153,7 +152,7 @@
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
- initial_home_settlement="Settlement.castle_GR_KP1"
+		initial_home_settlement="Settlement.castle_GR_KP1"
 		id="tching_kp"
 		name="Tching Dynasty"
 		tier="4"
@@ -164,140 +163,382 @@
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
-	 initial_home_settlement="Settlement.castle_GR_AA1"
-			id="aaloth"
-			name="Aaloth"
-			tier="4"
-			owner="Hero.aaloth_placeholder_1"
-			culture="Culture.republic"
-			super_faction="Kingdom.aaloth"
-			is_noble="false"
-			banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+		initial_home_settlement="Settlement.castle_GR_AA1"
+		id="aaloth"
+		name="Aaloth"
+		tier="4"
+		owner="Hero.aaloth_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.aaloth"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.castle_GR_KR1"
+		id="kriselist"
+		name="Kriselist"
+		tier="4"
+		owner="Hero.kriselist_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.kriselist"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.castle_GR_AE1"
+		id="aeos"
+		name="Aeos"
+		tier="4"
+		owner="Hero.aeos_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.aeos"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.castle_GR_AE2"
+		id="gravlex_med"
+		name="Gravlex Med"
+		tier="4"
+		owner="Hero.aeos_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.aeos"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.town_GR_SP1"
+		id="sernpidal"
+		name="Sernpidal"
+		tier="4"
+		owner="Hero.sernpidal_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.sernpidal"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.castle_GR_AL1"
+		id="alamass"
+		name="Alamass"
+		tier="4"
+		owner="Hero.alamass_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.alamass"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.town_GR_AD1"
+		id="alderaan"
+		name="Alderaan"
+		tier="4"
+		owner="Hero.bail_organa"
+		culture="Culture.republic"
+		super_faction="Kingdom.alderaan"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.castle_GR_AX1"
+		id="anaxes"
+		name="Anaxes"
+		tier="4"
+		owner="Hero.anaxes_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.anaxes"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.town_GR_IT1"
+		id="ithor"
+		name="Ithor"
+		tier="4"
+		owner="Hero.ithor_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.ithor"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.castle_GR_AN1"
+		id="ando"
+		name="Ando"
+		tier="4"
+		owner="Hero.ando_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.ando"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.castle_GR_AS1"
+		id="ansion"
+		name="Ansion"
+		tier="4"
+		owner="Hero.ansion_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.ansion"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.castle_GR_QU1"
+		id="quellor"
+		name="Quellor"
+		tier="4"
+		owner="Hero.quellor_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.quellor"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.town_GR_TR1"
+		id="tirahnn"
+		name="Merchant Princes"
+		tier="4"
+		owner="Hero.tirahnn_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.tirahnn"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.town_GR_TY1"
+		id="tayan_league"
+		name="Tayan League"
+		tier="4"
+		owner="Hero.tayan_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.tayan_league"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.town_GR_KS1"
+		id="kal_shebbol"
+		name="Kal Shebbol"
+		tier="4"
+		owner="Hero.kal_shebbol_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.kal_shebbol"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.castle_GR_CL1"
+		id="celanon"
+		name="Celanon Merchant Guilds"
+		tier="4"
+		owner="Hero.celanon_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.celanon"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.castle_GR_UX1"
+		id="uviuy_exen"
+		name="Uviuy Exen"
+		tier="4"
+		owner="Hero.uviuy_exen_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.uviuy_exen"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 	
 	<Faction
-		 initial_home_settlement="Settlement.castle_GR_KR1"
-				id="kriselist"
-				name="Kriselist"
-				tier="4"
-				owner="Hero.kriselist_placeholder_1"
-				culture="Culture.republic"
-				super_faction="Kingdom.kriselist"
-				is_noble="false"
-				banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+		initial_home_settlement="Settlement.town_GR_CR1"
+		id="corellia"
+		name="Corellia"
+		tier="4"
+		owner="Hero.corellia_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.corellia"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
-		 initial_home_settlement="Settlement.castle_GR_AE1"
-				id="aeos"
-				name="Aeos"
-				tier="4"
-				owner="Hero.aeos_placeholder_1"
-				culture="Culture.republic"
-				super_faction="Kingdom.aeos"
-				is_noble="false"
-				banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+		initial_home_settlement="Settlement.castle_GR_ML1"
+		id="malastare"
+		name="Malastare"
+		tier="4"
+		owner="Hero.malastare_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.malastare"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
-		 initial_home_settlement="Settlement.castle_GR_AE2"
-				id="gravlex_med"
-				name="Gravlex Med"
-				tier="4"
-				owner="Hero.aeos_placeholder_1"
-				culture="Culture.republic"
-				super_faction="Kingdom.aeos"
-				is_noble="false"
-				banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
-	
-	<Faction
-			 initial_home_settlement="Settlement.town_GR_SP1"
-					id="sernpidal"
-					name="Sernpidal"
-					tier="4"
-					owner="Hero.sernpidal_placeholder_1"
-					culture="Culture.republic"
-					super_faction="Kingdom.sernpidal"
-					is_noble="false"
-					banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
-	
-	<Faction
-				 initial_home_settlement="Settlement.castle_GR_AL1"
-						id="alamass"
-						name="Alamass"
-						tier="4"
-						owner="Hero.alamass_placeholder_1"
-						culture="Culture.republic"
-						super_faction="Kingdom.alamass"
-						is_noble="false"
-						banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+		initial_home_settlement="Settlement.town_GR_MN1"
+		id="manda"
+		name="Manda"
+		tier="4"
+		owner="Hero.manda_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.manda"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
-				 initial_home_settlement="Settlement.town_GR_AD1"
-						id="alderaan"
-						name="Alderaan"
-						tier="4"
-						owner="Hero.bail_organa"
-						culture="Culture.republic"
-						super_faction="Kingdom.alderaan"
-						is_noble="false"
-						banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+		initial_home_settlement="Settlement.town_GR_BS1"
+		id="bestine"
+		name="Bestine"
+		tier="4"
+		owner="Hero.bestine_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.bestine"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
-				 initial_home_settlement="Settlement.castle_GR_AX1"
-						id="anaxes"
-						name="Anaxes"
-						tier="4"
-						owner="Hero.anaxes_placeholder_1"
-						culture="Culture.republic"
-						super_faction="Kingdom.anaxes"
-						is_noble="false"
-						banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+		initial_home_settlement="Settlement.castle_GR_KY1"
+		id="kashyyyk"
+		name="Kashyyyk"
+		tier="4"
+		owner="Hero.kashyyyk_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.kashyyyk"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
-				 initial_home_settlement="Settlement.town_GR_IT1"
-						id="ithor"
-						name="Ithor"
-						tier="4"
-						owner="Hero.ithor_placeholder_1"
-						culture="Culture.republic"
-						super_faction="Kingdom.ithor"
-						is_noble="false"
-						banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+		initial_home_settlement="Settlement.castle_GR_KY2"
+		id="bimmisaari"
+		name="Bimmisaari"
+		tier="4"
+		owner="Hero.kashyyyk_placeholder_2"
+		culture="Culture.republic"
+		super_faction="Kingdom.kashyyyk"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
-				 initial_home_settlement="Settlement.castle_GR_AN1"
-						id="ando"
-						name="Ando"
-						tier="4"
-						owner="Hero.ando_placeholder_1"
-						culture="Culture.republic"
-						super_faction="Kingdom.ando"
-						is_noble="false"
-						banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+		initial_home_settlement="Settlement.castle_GR_KY3"
+		id="durkteel"
+		name="Durkteel"
+		tier="4"
+		owner="Hero.kashyyyk_placeholder_3"
+		culture="Culture.republic"
+		super_faction="Kingdom.kashyyyk"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
-				 initial_home_settlement="Settlement.castle_GR_AS1"
-						id="ansion"
-						name="Ansion"
-						tier="4"
-						owner="Hero.ansion_placeholder_1"
-						culture="Culture.republic"
-						super_faction="Kingdom.ansion"
-						is_noble="false"
-						banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+		initial_home_settlement="Settlement.town_GR_MC1"
+		id="mon_cala"
+		name="Mon Cala"
+		tier="4"
+		owner="Hero.mon_cala_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.mon_cala"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
-				 initial_home_settlement="Settlement.castle_GR_QU1"
-						id="quellor"
-						name="Quellor"
-						tier="4"
-						owner="Hero.quellor_placeholder_1"
-						culture="Culture.republic"
-						super_faction="Kingdom.quellor"
-						is_noble="false"
-						banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+		initial_home_settlement="Settlement.town_GR_DO1"
+		id="dorin"
+		name="Dorin"
+		tier="4"
+		owner="Hero.dorin_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.dorin"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.town_GR_GA1"
+		id="glee_anselm"
+		name="Glee Anselm"
+		tier="4"
+		owner="Hero.glee_anselm_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.glee_anselm"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.town_GR_ED1"
+		id="eriadu"
+		name="Eriadu"
+		tier="4"
+		owner="Hero.eriadu_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.eriadu"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.town_GR_FX1"
+		id="ferrix"
+		name="Ferrix"
+		tier="4"
+		owner="Hero.ferrix_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.ferrix"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.town_GR_LT1"
+		id="lantillies"
+		name="Spacers' Brotherhood"
+		tier="4"
+		owner="Hero.lantillies_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.lantillies"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.town_GR_PT1"
+		id="pantora"
+		name="Pantoran Assembly"
+		tier="4"
+		owner="Hero.pantora_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.pantora"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.castle_GR_QM1"
+		id="quermia"
+		name="Quermia"
+		tier="4"
+		owner="Hero.quermia_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.quermia"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.castle_GR_BL1"
+		id="belsavis"
+		name="Belsavis"
+		tier="4"
+		owner="Hero.belsavis_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.belsavis"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction
+		initial_home_settlement="Settlement.castle_GR_SH1"
+		id="shili"
+		name="Shili"
+		tier="4"
+		owner="Hero.shili_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.shili"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 
 	<Faction
- initial_home_settlement="Settlement.town_GR1"
+		initial_home_settlement="Settlement.town_GR1"
 		id="wookie"
 		name="Wookie Council"
 		tier="4"
@@ -308,7 +549,7 @@
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<Faction
- initial_home_settlement="Settlement.town_GR1"
+		initial_home_settlement="Settlement.town_GR1"
 		id="chiss"
 		name="Chiss Ascendancy"
 		tier="3"

@@ -178,6 +178,112 @@
 		faction="Faction.quellor"
 		text="Placeholder" />
 	
+	<!-- Tirahnn -->
+	<Hero id="tirahnn_placeholder_1"
+		faction="Faction.tirahnn"
+		text="Placeholder" />
+	
+	<!-- Tayan League -->
+	<Hero id="tayan_placeholder_1"
+		faction="Faction.tayan_league"
+		text="Placeholder" />
+	
+	<!-- Kal Shebbol -->
+	<Hero id="kal_shebbol_placeholder_1"
+		faction="Faction.kal_shebbol"
+		text="Placeholder" />
+	
+	<!-- Celanon -->
+	<Hero id="celanon_placeholder_1"
+		faction="Faction.celanon"
+		text="Placeholder" />
+
+	<!-- Uviuy Exen -->
+	<Hero id="uviuy_exen_placeholder_1"
+		faction="Faction.uviuy_exen"
+		text="Placeholder" />
+	
+	<!-- Corellia -->
+	<Hero id="corellia_placeholder_1"
+		faction="Faction.corellia"
+		text="Placeholder" />
+	
+	<!-- Malastare -->
+	<Hero id="malastare_placeholder_1"
+		faction="Faction.malastare"
+		text="Placeholder" />
+	
+	<!-- Manda -->
+	<Hero id="manda_placeholder_1"
+		faction="Faction.manda"
+		text="Placeholder" />
+	
+	<!-- Kashyyyk -->
+	<Hero id="kashyyyk_placeholder_1"
+		faction="Faction.kashyyyk"
+		text="Placeholder" />
+	<Hero id="kashyyyk_placeholder_2"
+		faction="Faction.bimmisaari"
+		text="Placeholder" />
+	<Hero id="kashyyyk_placeholder_3"
+		faction="Faction.durkteel"
+		text="Placeholder" />
+	
+	<!-- Bestine -->
+	<Hero id="bestine_placeholder_1"
+		faction="Faction.bestine"
+		text="Placeholder" />
+
+	<!-- Mon Cala -->
+	<Hero id="mon_cala_placeholder_1"
+		faction="Faction.mon_cala"
+		text="Placeholder" />
+	
+	<!-- Dorin -->
+	<Hero id="dorin_placeholder_1"
+		faction="Faction.dorin"
+		text="Placeholder" />
+
+	<!-- Glee Anselm -->
+	<Hero id="glee_anselm_placeholder_1"
+		faction="Faction.glee_anselm"
+		text="Placeholder" />
+
+	<!-- Eriadu -->
+	<Hero id="eriadu_placeholder_1"
+		faction="Faction.eriadu"
+		text="Placeholder" />
+
+	<!-- Ferrix -->
+	<Hero id="ferrix_placeholder_1"
+		faction="Faction.ferrix"
+		text="Placeholder" />
+
+	<!-- Lantillies -->
+	<Hero id="lantillies_placeholder_1"
+		faction="Faction.lantillies"
+		text="Placeholder" />
+
+	<!-- Pantora -->
+	<Hero id="pantora_placeholder_1"
+		faction="Faction.pantora"
+		text="Placeholder" />
+	
+	<!-- Quermia -->
+	<Hero id="quermia_placeholder_1"
+		faction="Faction.quermia"
+		text="Placeholder" />
+	
+	<!-- Belsavis -->
+	<Hero id="belsavis_placeholder_1"
+		faction="Faction.belsavis"
+		text="Placeholder" />
+
+	<!-- Shili -->
+	<Hero id="shili_placeholder_1"
+		faction="Faction.shili"
+		text="Placeholder" />
+	
 	<!--Royal House of Naboo-->
 	<Hero id="jamillia"
 		faction="Faction.naboo"

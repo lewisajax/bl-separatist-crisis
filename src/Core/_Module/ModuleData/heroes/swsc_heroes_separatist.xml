@@ -49,6 +49,14 @@
 		faction="Faction.techno_union"
 		text="Placeholder" />
 
+	<Hero id="techno_union_placeholder_2"
+		faction="Faction.blastech"
+		text="Placeholder" />
+
+	<Hero id="techno_union_placeholder_3"
+		faction="Faction.merchant_guild"
+		text="Placeholder" />
+	
 	<!--Trade Federation-->
 	<Hero id="gunray"
 		faction="Faction.trade_defence_force"
@@ -104,4 +112,33 @@
 	<Hero id="agamar_placeholder_2"
 		faction="Faction.agamar"
 		text="Placeholder" />
+
+	<!-- Ciutric Hegemony -->
+	<Hero id="ciutric_placeholder_1"
+		faction="Faction.ciutric"
+		text="Placeholder" />
+
+	<!-- Retail Caucus -->
+	<Hero id="retail_caucus_placeholder_1"
+		faction="Faction.retail_caucus"
+		text="Placeholder" />
+	
+	<!-- Karfeddion -->
+	<Hero id="karfeddion_placeholder_1"
+		faction="Faction.karfeddion"
+		text="Placeholder" />
+
+	<!-- InterGalactic Banking Clan -->
+	<Hero id="banking_clan_placeholder_1"
+		faction="Faction.banking_clan"
+		text="Placeholder" />
+	<Hero id="banking_clan_placeholder_2"
+		faction="Faction.ord_trasi"
+		text="Placeholder" />
+
+	<!-- Sluis Van -->
+	<Hero id="sluis_van_placeholder_1"
+		faction="Faction.sluis_van"
+		text="Placeholder" />
+	
 </Heroes>
