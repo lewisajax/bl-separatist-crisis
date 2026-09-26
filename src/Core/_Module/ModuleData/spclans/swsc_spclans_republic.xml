@@ -5,9 +5,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 
 	<!--Major Clans-->
 
-	<Faction
+	<Faction id="galactic_senate"
 		initial_home_settlement="Settlement.town_GR1"
-		id="galactic_senate"
 		name="Galactic Senate"
 		tier="6"
 		owner="Hero.palpatine"
@@ -17,9 +16,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<!-- Change culture back to jedi order later -->
-	<Faction
+	<Faction id="jedi_order"
 		initial_home_settlement="Settlement.town_GR1"
-		id="jedi_order"
 		name="Jedi Order"
 		tier="6"
 		owner="Hero.yoda"
@@ -29,9 +27,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<!--Republic Military Clans-->
-	<Faction
+	<Faction id="212_battalion"
 		initial_home_settlement="Settlement.town_GR1"
-		id="212_battalion"
 		name="212th Attack Battalion"
 		tier="5"
 		owner="Hero.kenobi"
@@ -40,9 +37,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="104_battalion"
 		initial_home_settlement="Settlement.town_GR1"
-		id="104_battalion"
 		name="104th Attack Battalion"
 		tier="5"
 		owner="Hero.plo"
@@ -51,9 +47,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="501_legion"
 		initial_home_settlement="Settlement.town_GR1"
-		id="501_legion"
 		name="501st Legion"
 		tier="4"
 		owner="Hero.skywalker"
@@ -62,9 +57,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="327_star"
 		initial_home_settlement="Settlement.town_GR1"
-		id="327_star"
 		name="327th Star Corps"
 		tier="4"
 		owner="Hero.secura"
@@ -73,9 +67,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="21_nova"
 		initial_home_settlement="Settlement.town_GR1"
-		id="21_nova"
 		name="21st Nova Corps"
 		tier="4"
 		owner="Hero.mundi"
@@ -84,9 +77,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="9_assault"
 		initial_home_settlement="Settlement.town_GR1"
-		id="9_assault"
 		name="9th Assault Corps"
 		tier="4"
 		owner="Hero.luminara"
@@ -95,9 +87,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="91_recon"
 		initial_home_settlement="Settlement.town_GR1"
-		id="91_recon"
 		name="91st Reconnaissance Corps"
 		tier="4"
 		owner="Hero.windu"
@@ -107,9 +98,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 	<!--Planetary Clans-->
-	<Faction
+	<Faction id="kamino"
 		initial_home_settlement="Settlement.town_GR1"
-		id="kamino"
 		name="Kamino Cloning"
 		tier="4"
 		owner="Hero.lama"
@@ -118,9 +108,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="naboo"
 		initial_home_settlement="Settlement.town_GR_NB1"
-		id="naboo"
 		name="Royal House of Naboo"
 		tier="4"
 		owner="Hero.jamillia"
@@ -129,9 +118,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="chandrila"
 		initial_home_settlement="Settlement.town_GR1"
-		id="chandrila"
 		name="Chandrila"
 		tier="4"
 		owner="Hero.jamillia"
@@ -140,9 +128,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="milagro"
 		initial_home_settlement="Settlement.town_GR_MG1"
-		id="milagro"
 		name="Milagro"
 		tier="4"
 		owner="Hero.milagro_placeholder_1"
@@ -151,9 +138,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="tching_kp"
 		initial_home_settlement="Settlement.castle_GR_KP1"
-		id="tching_kp"
 		name="Tching Dynasty"
 		tier="4"
 		owner="Hero.kitel_phard_placeholder_1"
@@ -162,9 +148,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="aaloth"
 		initial_home_settlement="Settlement.castle_GR_AA1"
-		id="aaloth"
 		name="Aaloth"
 		tier="4"
 		owner="Hero.aaloth_placeholder_1"
@@ -173,9 +158,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="kriselist"
 		initial_home_settlement="Settlement.castle_GR_KR1"
-		id="kriselist"
 		name="Kriselist"
 		tier="4"
 		owner="Hero.kriselist_placeholder_1"
@@ -184,9 +168,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="aeos"
 		initial_home_settlement="Settlement.castle_GR_AE1"
-		id="aeos"
 		name="Aeos"
 		tier="4"
 		owner="Hero.aeos_placeholder_1"
@@ -195,9 +178,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="gravlex_med"
 		initial_home_settlement="Settlement.castle_GR_AE2"
-		id="gravlex_med"
 		name="Gravlex Med"
 		tier="4"
 		owner="Hero.aeos_placeholder_1"
@@ -206,9 +188,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="sernpidal"
 		initial_home_settlement="Settlement.town_GR_SP1"
-		id="sernpidal"
 		name="Sernpidal"
 		tier="4"
 		owner="Hero.sernpidal_placeholder_1"
@@ -217,9 +198,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="alamass"
 		initial_home_settlement="Settlement.castle_GR_AL1"
-		id="alamass"
 		name="Alamass"
 		tier="4"
 		owner="Hero.alamass_placeholder_1"
@@ -228,9 +208,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="alderaan"
 		initial_home_settlement="Settlement.town_GR_AD1"
-		id="alderaan"
 		name="Alderaan"
 		tier="4"
 		owner="Hero.bail_organa"
@@ -239,9 +218,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="anaxes"
 		initial_home_settlement="Settlement.castle_GR_AX1"
-		id="anaxes"
 		name="Anaxes"
 		tier="4"
 		owner="Hero.anaxes_placeholder_1"
@@ -250,9 +228,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="ithor"
 		initial_home_settlement="Settlement.town_GR_IT1"
-		id="ithor"
 		name="Ithor"
 		tier="4"
 		owner="Hero.ithor_placeholder_1"
@@ -261,9 +238,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="ando"
 		initial_home_settlement="Settlement.castle_GR_AN1"
-		id="ando"
 		name="Ando"
 		tier="4"
 		owner="Hero.ando_placeholder_1"
@@ -272,9 +248,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="ansion"
 		initial_home_settlement="Settlement.castle_GR_AS1"
-		id="ansion"
 		name="Ansion"
 		tier="4"
 		owner="Hero.ansion_placeholder_1"
@@ -283,9 +258,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="quellor"
 		initial_home_settlement="Settlement.castle_GR_QU1"
-		id="quellor"
 		name="Quellor"
 		tier="4"
 		owner="Hero.quellor_placeholder_1"
@@ -294,9 +268,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="tirahnn"
 		initial_home_settlement="Settlement.town_GR_TR1"
-		id="tirahnn"
 		name="Merchant Princes"
 		tier="4"
 		owner="Hero.tirahnn_placeholder_1"
@@ -305,9 +278,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="tayan_league"
 		initial_home_settlement="Settlement.town_GR_TY1"
-		id="tayan_league"
 		name="Tayan League"
 		tier="4"
 		owner="Hero.tayan_placeholder_1"
@@ -316,9 +288,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="kal_shebbol"
 		initial_home_settlement="Settlement.town_GR_KS1"
-		id="kal_shebbol"
 		name="Kal Shebbol"
 		tier="4"
 		owner="Hero.kal_shebbol_placeholder_1"
@@ -327,9 +298,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="celanon"
 		initial_home_settlement="Settlement.castle_GR_CL1"
-		id="celanon"
 		name="Celanon Merchant Guilds"
 		tier="4"
 		owner="Hero.celanon_placeholder_1"
@@ -338,9 +308,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="uviuy_exen"
 		initial_home_settlement="Settlement.castle_GR_UX1"
-		id="uviuy_exen"
 		name="Uviuy Exen"
 		tier="4"
 		owner="Hero.uviuy_exen_placeholder_1"
@@ -349,9 +318,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 	
-	<Faction
+	<Faction id="corellia"
 		initial_home_settlement="Settlement.town_GR_CR1"
-		id="corellia"
 		name="Corellia"
 		tier="4"
 		owner="Hero.corellia_placeholder_1"
@@ -360,9 +328,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="malastare"
 		initial_home_settlement="Settlement.castle_GR_ML1"
-		id="malastare"
 		name="Malastare"
 		tier="4"
 		owner="Hero.malastare_placeholder_1"
@@ -371,9 +338,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="manda"
 		initial_home_settlement="Settlement.town_GR_MN1"
-		id="manda"
 		name="Manda"
 		tier="4"
 		owner="Hero.manda_placeholder_1"
@@ -382,9 +348,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="bestine"
 		initial_home_settlement="Settlement.town_GR_BS1"
-		id="bestine"
 		name="Bestine"
 		tier="4"
 		owner="Hero.bestine_placeholder_1"
@@ -393,9 +358,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="kashyyyk"
 		initial_home_settlement="Settlement.castle_GR_KY1"
-		id="kashyyyk"
 		name="Kashyyyk"
 		tier="4"
 		owner="Hero.kashyyyk_placeholder_1"
@@ -404,9 +368,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="bimmisaari"
 		initial_home_settlement="Settlement.castle_GR_KY2"
-		id="bimmisaari"
 		name="Bimmisaari"
 		tier="4"
 		owner="Hero.kashyyyk_placeholder_2"
@@ -415,9 +378,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="durkteel"
 		initial_home_settlement="Settlement.castle_GR_KY3"
-		id="durkteel"
 		name="Durkteel"
 		tier="4"
 		owner="Hero.kashyyyk_placeholder_3"
@@ -426,9 +388,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="mon_cala"
 		initial_home_settlement="Settlement.town_GR_MC1"
-		id="mon_cala"
 		name="Mon Cala"
 		tier="4"
 		owner="Hero.mon_cala_placeholder_1"
@@ -437,9 +398,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="dorin"
 		initial_home_settlement="Settlement.town_GR_DO1"
-		id="dorin"
 		name="Dorin"
 		tier="4"
 		owner="Hero.dorin_placeholder_1"
@@ -448,9 +408,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="glee_anselm"
 		initial_home_settlement="Settlement.town_GR_GA1"
-		id="glee_anselm"
 		name="Glee Anselm"
 		tier="4"
 		owner="Hero.glee_anselm_placeholder_1"
@@ -459,9 +418,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="eriadu"
 		initial_home_settlement="Settlement.town_GR_ED1"
-		id="eriadu"
 		name="Eriadu"
 		tier="4"
 		owner="Hero.eriadu_placeholder_1"
@@ -470,9 +428,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="ferrix"
 		initial_home_settlement="Settlement.town_GR_FX1"
-		id="ferrix"
 		name="Ferrix"
 		tier="4"
 		owner="Hero.ferrix_placeholder_1"
@@ -481,9 +438,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="lantillies"
 		initial_home_settlement="Settlement.town_GR_LT1"
-		id="lantillies"
 		name="Spacers' Brotherhood"
 		tier="4"
 		owner="Hero.lantillies_placeholder_1"
@@ -492,9 +448,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="pantora"
 		initial_home_settlement="Settlement.town_GR_PT1"
-		id="pantora"
 		name="Pantoran Assembly"
 		tier="4"
 		owner="Hero.pantora_placeholder_1"
@@ -503,9 +458,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="quermia"
 		initial_home_settlement="Settlement.castle_GR_QM1"
-		id="quermia"
 		name="Quermia"
 		tier="4"
 		owner="Hero.quermia_placeholder_1"
@@ -514,9 +468,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="belsavis"
 		initial_home_settlement="Settlement.castle_GR_BL1"
-		id="belsavis"
 		name="Belsavis"
 		tier="4"
 		owner="Hero.belsavis_placeholder_1"
@@ -525,9 +478,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="shili"
 		initial_home_settlement="Settlement.castle_GR_SH1"
-		id="shili"
 		name="Shili"
 		tier="4"
 		owner="Hero.shili_placeholder_1"
@@ -536,10 +488,258 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
+	<Faction id="byblos"
+		initial_home_settlement="Settlement.castle_GR_BY1"
+		name="Byblos"
+		tier="4"
+		owner="Hero.byblos_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.byblos"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="carida"
+		initial_home_settlement="Settlement.castle_GR_CA1"
+		name="Carida"
+		tier="4"
+		owner="Hero.carida_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.carida"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="chardaan"
+		initial_home_settlement="Settlement.castle_GR_CD1"
+		name="Chardaan"
+		tier="4"
+		owner="Hero.chardaan_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.chardaan"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="commenor"
+		initial_home_settlement="Settlement.castle_GR_CO1"
+		name="Commenor"
+		tier="4"
+		owner="Hero.commenor_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.commenor"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="umbara"
+		initial_home_settlement="Settlement.castle_GR_UM1"
+		name="Umbara"
+		tier="4"
+		owner="Hero.umbara_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.umbara"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction id="cyclor"
+		initial_home_settlement="Settlement.castle_GR_CY1"
+		name="Cyclor"
+		tier="4"
+		owner="Hero.cyclor_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.cyclor"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction id="ephemera"
+		initial_home_settlement="Settlement.castle_GR_EP1"
+		name="Ephemera"
+		tier="4"
+		owner="Hero.ephemera_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.ephemera"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="espirion"
+		initial_home_settlement="Settlement.castle_GR_ES1"
+		name="House Beonel"
+		tier="4"
+		owner="Hero.espirion_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.espirion"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction id="kelen_biolabs"
+		initial_home_settlement="Settlement.castle_GR_KB1"
+		name="Kelen Biolabs"
+		tier="4"
+		owner="Hero.kelen_biolabs_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.kelen_biolabs"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction id="fondor"
+		initial_home_settlement="Settlement.castle_GR_FO1"
+		name="Fondor"
+		tier="4"
+		owner="Hero.fondor_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.fondor"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction id="gwongdeen"
+		initial_home_settlement="Settlement.castle_GR_GW1"
+		name="Gwongdeen"
+		tier="4"
+		owner="Hero.gwongdeen_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.gwongdeen"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction id="hynestia"
+		initial_home_settlement="Settlement.castle_GR_HY1"
+		name="Hynestia"
+		tier="4"
+		owner="Hero.hynestia_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.hynestia"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction id="kuat"
+		initial_home_settlement="Settlement.castle_GR_KU1"
+		name="Kuat Drive Yards"
+		tier="4"
+		owner="Hero.kuat_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.kuat"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="mikkia"
+		initial_home_settlement="Settlement.castle_GR_MK1"
+		name="Mikkia"
+		tier="4"
+		owner="Hero.mikkia_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.mikkia"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="nouane"
+		initial_home_settlement="Settlement.castle_GR_NU1"
+		name="Nouane"
+		tier="4"
+		owner="Hero.nouane_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.nouane"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="palanhi"
+		initial_home_settlement="Settlement.castle_GR_PA1"
+		name="Palanhi"
+		tier="4"
+		owner="Hero.palanhi_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.palanhi"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="phatrong"
+		initial_home_settlement="Settlement.castle_GR_PH1"
+		name="Phatrong"
+		tier="4"
+		owner="Hero.phatrong_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.phatrong"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="rendili"
+		initial_home_settlement="Settlement.castle_GR_RN1"
+		name="Rendili StarDrive"
+		tier="4"
+		owner="Hero.rendili_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.rendili"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
+	<Faction id="kafrene"
+		initial_home_settlement="Settlement.castle_GR_KF1"
+		name="Ring of Kafrene"
+		tier="4"
+		owner="Hero.kafrene_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.kafrene"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="rodia"
+		initial_home_settlement="Settlement.castle_GR_RO1"
+		name="Rodia"
+		tier="4"
+		owner="Hero.rodia_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.rodia"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="stobar"
+		initial_home_settlement="Settlement.castle_GR_ST1"
+		name="Stobar"
+		tier="4"
+		owner="Hero.stobar_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.stobar"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="taris"
+		initial_home_settlement="Settlement.castle_GR_TA1"
+		name="Taris"
+		tier="4"
+		owner="Hero.taris_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.taris"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="thyferra"
+		initial_home_settlement="Settlement.castle_GR_TH1"
+		name="Bacta Cartel"
+		tier="4"
+		owner="Hero.thyferra_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.thyferra"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="arakyd_industries"
+		initial_home_settlement="Settlement.castle_GR_AI1"
+		name="Arakyd Industries"
+		tier="4"
+		owner="Hero.arakyd_industries_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.arakyd_industries"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="wayland"
+		initial_home_settlement="Settlement.castle_GR_WY1"
+		name="Wayland"
+		tier="4"
+		owner="Hero.wayland_placeholder_1"
+		culture="Culture.republic"
+		super_faction="Kingdom.wayland"
+		is_noble="false"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="wookie"
 		initial_home_settlement="Settlement.town_GR1"
-		id="wookie"
 		name="Wookie Council"
 		tier="4"
 		owner="Hero.grakchawwaa"
@@ -548,9 +748,8 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		is_noble="false"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
-	<Faction
+	<Faction id="chiss"
 		initial_home_settlement="Settlement.town_GR1"
-		id="chiss"
 		name="Chiss Ascendancy"
 		tier="3"
 		owner="Hero.thrass"

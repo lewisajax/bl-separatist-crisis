@@ -1009,6 +1009,706 @@
 		</policies>
 	</Kingdom>
 
+	<Kingdom id="byblos"
+		initial_home_settlement="Settlement.castle_GR_BY1"
+		owner="Hero.byblos_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Byblos"
+		short_name="Byblos"
+		title="Byblos"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="carida"
+		initial_home_settlement="Settlement.castle_GR_CA1"
+		owner="Hero.carida_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Carida"
+		short_name="Carida"
+		title="Carida"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="chardaan"
+		initial_home_settlement="Settlement.castle_GR_CD1"
+		owner="Hero.chardaan_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Chardaan"
+		short_name="Chardaan"
+		title="Chardaan"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="commenor"
+		initial_home_settlement="Settlement.castle_GR_CO1"
+		owner="Hero.commenor_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Commenor"
+		short_name="Commenor"
+		title="Commenor"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="umbara"
+		initial_home_settlement="Settlement.castle_GR_UM1"
+		owner="Hero.umbara_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Umbara"
+		short_name="Umbara"
+		title="Umbara"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="cyclor"
+		initial_home_settlement="Settlement.castle_GR_CY1"
+		owner="Hero.cyclor_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Cyclor"
+		short_name="Cyclor"
+		title="Cyclor"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="ephemera"
+		initial_home_settlement="Settlement.castle_GR_EP1"
+		owner="Hero.ephemera_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Ephemera"
+		short_name="Ephemera"
+		title="Ephemera"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="espirion"
+		initial_home_settlement="Settlement.castle_GR_ES1"
+		owner="Hero.espirion_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Espirion"
+		short_name="Espirion"
+		title="Espirion"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="kelen_biolabs"
+		initial_home_settlement="Settlement.castle_GR_KB1"
+		owner="Hero.kelen_biolabs_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Kelen Biolabs"
+		short_name="Kelen Biolabs"
+		title="Kelen Biolabs"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="fondor"
+		initial_home_settlement="Settlement.castle_GR_FO1"
+		owner="Hero.fondor_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Fondor"
+		short_name="Fondor"
+		title="Fondor"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="gwongdeen"
+		initial_home_settlement="Settlement.castle_GR_GW1"
+		owner="Hero.gwongdeen_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Gwongdeen"
+		short_name="Gwongdeen"
+		title="Gwongdeen"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="hynestia"
+		initial_home_settlement="Settlement.castle_GR_HY1"
+		owner="Hero.hynestia_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Hynestia"
+		short_name="Hynestia"
+		title="Hynestia"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="kuat"
+		initial_home_settlement="Settlement.castle_GR_KU1"
+		owner="Hero.kuat_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Kuat"
+		short_name="Kuat"
+		title="Kuat"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="mikkia"
+		initial_home_settlement="Settlement.castle_GR_MK1"
+		owner="Hero.mikkia_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Mikkia"
+		short_name="Mikkia"
+		title="Mikkia"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="nouane"
+		initial_home_settlement="Settlement.castle_GR_NU1"
+		owner="Hero.nouane_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Nouane"
+		short_name="Nouane"
+		title="Nouane"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="palanhi"
+		initial_home_settlement="Settlement.castle_GR_PA1"
+		owner="Hero.palanhi_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Palanhi"
+		short_name="Palanhi"
+		title="Palanhi"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="phatrong"
+		initial_home_settlement="Settlement.castle_GR_PH1"
+		owner="Hero.phatrong_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Phatrong"
+		short_name="Phatrong"
+		title="Phatrong"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="rendili"
+		initial_home_settlement="Settlement.castle_GR_RN1"
+		owner="Hero.rendili_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Rendili"
+		short_name="Rendili"
+		title="Rendili"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="kafrene"
+		initial_home_settlement="Settlement.castle_GR_KF1"
+		owner="Hero.kafrene_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Kafrene"
+		short_name="Kafrene"
+		title="Kafrene"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="rodia"
+		initial_home_settlement="Settlement.castle_GR_RO1"
+		owner="Hero.rodia_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Rodia"
+		short_name="Rodia"
+		title="Rodia"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="stobar"
+		initial_home_settlement="Settlement.castle_GR_ST1"
+		owner="Hero.stobar_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Stobar"
+		short_name="Stobar"
+		title="Stobar"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="taris"
+		initial_home_settlement="Settlement.castle_GR_TA1"
+		owner="Hero.taris_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Taris"
+		short_name="Taris"
+		title="Taris"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="thyferra"
+		initial_home_settlement="Settlement.castle_GR_TH1"
+		owner="Hero.thyferra_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Thyferra"
+		short_name="Thyferra"
+		title="Thyferra"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="arakyd_industries"
+		initial_home_settlement="Settlement.castle_GR_AI1"
+		owner="Hero.arakyd_industries_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Arakyd Industries"
+		short_name="Arakyd Industries"
+		title="Arakyd Industries"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="wayland"
+		initial_home_settlement="Settlement.castle_GR_WY1"
+		owner="Hero.wayland_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.republic"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Wayland"
+		short_name="Wayland"
+		title="Wayland"
+		ruler_title="Chancellor"
+		text="For the past 25,000 years, the Galactic Republic has stood unequivocally as the supreme authority in galactic affairs. Comprised of tens of thousands of member worlds spanning the entire breadth of the known galaxy, the sheer magnitude of resources the Republic has available is nigh unfathomable. However, nothing lasts forever, and many believe the twilight of the Republic is upon us. Rampant corruption and bloated bureaucracy have engulfed every facet of the Republic, catalyzing the Separatist Crisis, an event in which the newly formed Confederacy of Independent Systems was born. Today, millions of Clone Troopers back the Republic as they battle the Confederacy to bring them back into the fold.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.separatist"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
 	<!-- Separatist -->
 	<Kingdom id="separatist"
 		initial_home_settlement="Settlement.town_SA_GN1"
@@ -1346,6 +2046,818 @@
 		</policies>
 	</Kingdom>
 
+	<Kingdom id="botajef"
+		initial_home_settlement="Settlement.town_SA_BJ1"
+		owner="Hero.botajef_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Botajef"
+		short_name="Botajef"
+		title="Botajef"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="centares"
+		initial_home_settlement="Settlement.town_SA_CT1"
+		owner="Hero.centares_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Centares"
+		short_name="Centares"
+		title="Centares"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="nanthri"
+		initial_home_settlement="Settlement.town_SA_NT1"
+		owner="Hero.nanthri_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Nanth'ri"
+		short_name="Nanth'ri"
+		title="Nanth'ri"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="rattatak"
+		initial_home_settlement="Settlement.town_SA_RK1"
+		owner="Hero.rattatak_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Rattatak"
+		short_name="Rattatak"
+		title="Rattatak"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="yagdhul"
+		initial_home_settlement="Settlement.town_SA_YD1"
+		owner="Hero.yagdhul_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Yag'Dhul"
+		short_name="Yag'Dhul"
+		title="Yag'Dhul"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="vondarc"
+		initial_home_settlement="Settlement.town_SA_VN1"
+		owner="Hero.vondarc_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Vondarc"
+		short_name="Vondarc"
+		title="Vondarc"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="gerrenthum"
+		initial_home_settlement="Settlement.castle_SA_GT1"
+		owner="Hero.gerrenthum_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Gerrenthum"
+		short_name="Gerrenthum"
+		title="Gerrenthum"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="corporate_alliance"
+		initial_home_settlement="Settlement.castle_SA_CA1"
+		owner="Hero.corporate_alliance_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Corporate Alliance"
+		short_name="Corporate Alliance"
+		title="Corporate Alliance"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="charros"
+		initial_home_settlement="Settlement.castle_SA_CH1"
+		owner="Hero.charros_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Charros"
+		short_name="Charros"
+		title="Charros"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="christophsis"
+		initial_home_settlement="Settlement.castle_SA_CR1"
+		owner="Hero.christophsis_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Christophsis"
+		short_name="Christophsis"
+		title="Christophsis"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="dantooine"
+		initial_home_settlement="Settlement.castle_SA_DT1"
+		owner="Hero.dantooine_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Dantooine"
+		short_name="Dantooine"
+		title="Dantooine"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="vallt"
+		initial_home_settlement="Settlement.castle_SA_VT1"
+		owner="Hero.vallt_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Vallt"
+		short_name="Vallt"
+		title="Vallt"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="tynna"
+		initial_home_settlement="Settlement.castle_SA_TY1"
+		owner="Hero.tynna_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Tynna"
+		short_name="Tynna"
+		title="Tynna"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="toong_l"
+		initial_home_settlement="Settlement.castle_SA_TO1"
+		owner="Hero.toong_l_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Toong'l"
+		short_name="Toong'l"
+		title="Toong'l"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="sullust"
+		initial_home_settlement="Settlement.castle_SA_SU1"
+		owner="Hero.sullust_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Sullust"
+		short_name="Sullust"
+		title="Sullust"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="sevarcos"
+		initial_home_settlement="Settlement.castle_SA_SC1"
+		owner="Hero.sevarcos_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Sevarcos"
+		short_name="Sevarcos"
+		title="Sevarcos"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="ryloth"
+		initial_home_settlement="Settlement.castle_SA_RY1"
+		owner="Hero.ryloth_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Ryloth"
+		short_name="Ryloth"
+		title="Ryloth"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="quell"
+		initial_home_settlement="Settlement.castle_SA_QU1"
+		owner="Hero.quell_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Quell"
+		short_name="Quell"
+		title="Quell"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="kabal"
+		initial_home_settlement="Settlement.castle_SA_KB1"
+		owner="Hero.kabal_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Kabal"
+		short_name="Kabal"
+		title="Kabal"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="lothal"
+		initial_home_settlement="Settlement.castle_SA_LO1"
+		owner="Hero.lothal_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Lothal"
+		short_name="Lothal"
+		title="Lothal"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="gyndine"
+		initial_home_settlement="Settlement.castle_SA_GY1"
+		owner="Hero.gyndine_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Gyndine"
+		short_name="Gyndine"
+		title="Gyndine"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="gizer"
+		initial_home_settlement="Settlement.castle_SA_GI1"
+		owner="Hero.gizer_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Gizer"
+		short_name="Gizer"
+		title="Gizer"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="mirial"
+		initial_home_settlement="Settlement.castle_SA_MI1"
+		owner="Hero.mirial_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Mirial"
+		short_name="Mirial"
+		title="Mirial"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="karkaris"
+		initial_home_settlement="Settlement.castle_SA_KA1"
+		owner="Hero.karkaris_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Karkaris"
+		short_name="Karkaris"
+		title="Karkaris"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="riflor"
+		initial_home_settlement="Settlement.castle_SA_RI1"
+		owner="Hero.riflor_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Riflor"
+		short_name="Riflor"
+		title="Riflor"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="monastery"
+		initial_home_settlement="Settlement.castle_SA_MO1"
+		owner="Hero.monastery_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Monastery"
+		short_name="Monastery"
+		title="Monastery"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="onderon"
+		initial_home_settlement="Settlement.castle_SA_ON1"
+		owner="Hero.onderon_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Onderon"
+		short_name="Onderon"
+		title="Onderon"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="nakadia"
+		initial_home_settlement="Settlement.castle_SA_NK1"
+		owner="Hero.nakadia_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Nakadia"
+		short_name="Nakadia"
+		title="Nakadia"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="saleucami"
+		initial_home_settlement="Settlement.castle_SA_SL1"
+		owner="Hero.saleucami_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.separatist"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Saleucami"
+		short_name="Saleucami"
+		title="Saleucami"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
 	<!-- Neutral Systems -->
 	<Kingdom id="neutral_systems"
 		initial_home_settlement="Settlement.town_NS1"
@@ -1395,6 +2907,246 @@
 		</policies>
 	</Kingdom>
 
+	<Kingdom id="corporate_sector"
+		initial_home_settlement="Settlement.town_NS_CS1"
+		owner="Hero.corporate_sector_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Corporate Sector"
+		short_name="Corporate Sector"
+		title="Corporate Sector"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="bothawui"
+		initial_home_settlement="Settlement.town_NS_BO1"
+		owner="Hero.bothawui_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Bothawui"
+		short_name="Bothawui"
+		title="Bothawui"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="cerea"
+		initial_home_settlement="Settlement.town_NS_CE1"
+		owner="Hero.cerea_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Cerea"
+		short_name="Cerea"
+		title="Cerea"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="chiss_ascendancy"
+		initial_home_settlement="Settlement.town_NS_CA1"
+		owner="Hero.chiss_ascendancy_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Chiss Ascendancy"
+		short_name="Chiss Ascendancy"
+		title="Chiss Ascendancy"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="gand"
+		initial_home_settlement="Settlement.town_NS_GA1"
+		owner="Hero.gand_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Gand"
+		short_name="Gand"
+		title="Gand"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="hapes"
+		initial_home_settlement="Settlement.town_NS_HC1"
+		owner="Hero.hapes_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Hapes Consortium"
+		short_name="Hapes Consortium"
+		title="Hapes Consortium"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="czerka_corporation"
+		initial_home_settlement="Settlement.town_NS_CC1"
+		owner="Hero.czerka_corporation_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Czerka Corporation"
+		short_name="Czerka Corporation"
+		title="Czerka Corporation"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="scarif"
+		initial_home_settlement="Settlement.town_NS_SF1"
+		owner="Hero.scarif_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Scarif"
+		short_name="Scarif"
+		title="Scarif"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="garwian_unity"
+		initial_home_settlement="Settlement.town_NS_GU1"
+		owner="Hero.garwian_unity_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Garwian Unity"
+		short_name="Garwian Unity"
+		title="Garwian Unity"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="yavin"
+		initial_home_settlement="Settlement.town_NS_YV1"
+		owner="Hero.yavin_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Yavin"
+		short_name="Yavin"
+		title="Yavin"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
 	<!-- Crime Syndicates -->
 	<Kingdom id="hutt_cartel"
 		initial_home_settlement="Settlement.town_HC1"
@@ -1434,6 +3186,126 @@
 		name="Pyke Syndicate"
 		short_name="Pyke Syndicate"
 		title="Pyke Syndicate"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="black_sun"
+		initial_home_settlement="Settlement.town_CS_BS1"
+		owner="Hero.grunseit"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Black Sun"
+		short_name="Black Sun"
+		title="Black Sun"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="niimas"
+		initial_home_settlement="Settlement.town_CS_NO1"
+		owner="Hero.niimas_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Niima's Outpost"
+		short_name="Niima's Outpost"
+		title="Niima's Outpost"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="socorro"
+		initial_home_settlement="Settlement.town_CS_SO1"
+		owner="Hero.socorro_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Socorro"
+		short_name="Socorro"
+		title="Socorro"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="toydaria"
+		initial_home_settlement="Settlement.town_CS_TY1"
+		owner="Hero.toydaria_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Toydaria"
+		short_name="Toydaria"
+		title="Toydaria"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="rinnrivin"
+		initial_home_settlement="Settlement.town_CS_RD1"
+		owner="Hero.rinnrivin_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Rinnrivin Di's Cartel"
+		short_name="Rinnrivin Di's Cartel"
+		title="Rinnrivin Di's Cartel"
 		ruler_title="Excellency"
 		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
 		<relationships>

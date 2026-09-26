@@ -15,4 +15,59 @@
 	<Hero id="robb"
 		faction="Faction.taris"
 		text="Placeholder" />
+
+	<!-- Corporate Sector -->
+	<Hero id="corporate_sector_placeholder_1"
+		faction="Faction.corporate_authority"
+		text="Placeholder" />
+	
+	<!-- Bothawui -->
+	<Hero id="bothawui_placeholder_1"
+		faction="Faction.bothan_council"
+		text="Placeholder" />
+
+	<!-- Cerea -->
+	<Hero id="cerea_placeholder_1"
+		faction="Faction.cerea"
+		text="Placeholder" />
+
+	<!-- Chiss Ascendancy -->
+	<Hero id="chiss_ascendancy_placeholder_1"
+		faction="Faction.chiss_ascendancy"
+		text="Placeholder" />
+
+	<!-- Gand -->
+	<Hero id="gand_placeholder_1"
+		faction="Faction.gand"
+		text="Placeholder" />
+
+	<!-- Hapes -->
+	<Hero id="hapes_placeholder_1"
+		faction="Faction.hapes"
+		text="Placeholder" />
+
+	<!-- Lira San -->
+	<Hero id="lira_san_placeholder_1"
+		faction="Faction.lira_san"
+		text="Placeholder" />
+	
+	<!-- Czerka Corporation -->
+	<Hero id="czerka_corporation_placeholder_1"
+		faction="Faction.czerka_arms"
+		text="Placeholder" />
+
+	<!-- Scarif -->
+	<Hero id="scarif_placeholder_1"
+		faction="Faction.scarif"
+		text="Placeholder" />
+	
+	<!-- Garwian Unity -->
+	<Hero id="garwian_unity_placeholder_1"
+		faction="Faction.garwian_unity"
+		text="Placeholder" />
+
+	<!-- Yavin -->
+	<Hero id="yavin_placeholder_1"
+		faction="Faction.yavin"
+		text="Placeholder" />
 </Heroes>

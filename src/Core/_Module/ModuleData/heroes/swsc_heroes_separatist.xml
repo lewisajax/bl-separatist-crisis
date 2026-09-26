@@ -140,5 +140,168 @@
 	<Hero id="sluis_van_placeholder_1"
 		faction="Faction.sluis_van"
 		text="Placeholder" />
+
+	<!-- Botajef -->
+	<Hero id="botajef_placeholder_1"
+		faction="Faction.botajef"
+		text="Placeholder" />
+	
+	<!-- Centares -->
+	<Hero id="centares_placeholder_1"
+		faction="Faction.centares"
+		text="Placeholder" />
+	
+	<!-- Nanth'ri -->
+	<Hero id="nanthri_placeholder_1"
+		faction="Faction.nanthri"
+		text="Placeholder" />
+	<Hero id="nanthri_placeholder_2"
+		faction="Faction.daalang"
+		text="Placeholder" />
+
+	<!-- Rattatak -->
+	<Hero id="rattatak_placeholder_1"
+		faction="Faction.rattatak"
+		text="Placeholder" />
+	
+	<!-- Yag'Dhul -->
+	<Hero id="yagdhul_placeholder_1"
+		faction="Faction.yagdhul"
+		text="Placeholder" />
+
+	<!-- Vondarc -->
+	<Hero id="vondarc_placeholder_1"
+		faction="Faction.vondarc"
+		text="Placeholder" />
+	
+	<!-- Gerrenthum -->
+	<Hero id="gerrenthum_placeholder_1"
+		faction="Faction.figg_conglomerate"
+		text="Placeholder" />
+	<Hero id="gerrenthum_placeholder_2"
+		faction="Faction.incom_industries"
+		text="Placeholder" />
+
+	<!-- Corporate Alliance -->
+	<Hero id="corporate_alliance_placeholder_1"
+		faction="Faction.murkhana"
+		text="Placeholder" />
+	<Hero id="corporate_alliance_placeholder_2"
+		faction="Faction.bomis_koori"
+		text="Placeholder" />
+	<Hero id="corporate_alliance_placeholder_3"
+		faction="Faction.kooriva"
+		text="Placeholder" />
+
+	<!-- Charros -->
+	<Hero id="charros_placeholder_1"
+		faction="Faction.charros"
+		text="Placeholder" />
+	<Hero id="charros_placeholder_2"
+		faction="Faction.boz_pity"
+		text="Placeholder" />
+	<Hero id="charros_placeholder_3"
+		faction="Faction.randon"
+		text="Placeholder" />
+
+	<!-- Christophsis -->
+	<Hero id="christophsis_placeholder_1"
+		faction="Faction.christophsis"
+		text="Placeholder" />
+
+	<!-- Dantooine -->
+	<Hero id="dantooine_placeholder_1"
+		faction="Faction.dantooine"
+		text="Placeholder" />
+	
+	<!-- Vallt -->
+	<Hero id="vallt_placeholder_1"
+		faction="Faction.vallt"
+		text="Placeholder" />
+
+	<!-- Tynna -->
+	<Hero id="tynna_placeholder_1"
+		faction="Faction.tynna"
+		text="Placeholder" />
+
+	<!-- Toong'l -->
+	<Hero id="toong_l_placeholder_1"
+		faction="Faction.toong_l"
+		text="Placeholder" />
+
+	<!-- Sullust -->
+	<Hero id="sullust_placeholder_1"
+		faction="Faction.sullust"
+		text="Placeholder" />
+
+	<!-- Sevarcos -->
+	<Hero id="sevarcos_placeholder_1"
+		faction="Faction.sevarcos"
+		text="Placeholder" />
+
+	<!-- Ryloth -->
+	<Hero id="ryloth_placeholder_1"
+		faction="Faction.ryloth"
+		text="Placeholder" />
+
+	<!-- Quell -->
+	<Hero id="quell_placeholder_1"
+		faction="Faction.quell"
+		text="Placeholder" />
+	
+	<!-- Kabal -->
+	<Hero id="kabal_placeholder_1"
+		faction="Faction.kabal"
+		text="Placeholder" />
+	
+	<!-- Lothal -->
+	<Hero id="lothal_placeholder_1"
+		faction="Faction.lothal"
+		text="Placeholder" />
+
+	<!-- Gyndine -->
+	<Hero id="gyndine_placeholder_1"
+		faction="Faction.gyndine"
+		text="Placeholder" />
+
+	<!-- Gizer -->
+	<Hero id="gizer_placeholder_1"
+		faction="Faction.gizer"
+		text="Placeholder" />
+	
+	<!-- Mirial -->
+	<Hero id="mirial_placeholder_1"
+		faction="Faction.mirial"
+		text="Placeholder" />
+
+	<!-- Karkaris -->
+	<Hero id="karkaris_placeholder_1"
+		faction="Faction.karkaris"
+		text="Placeholder" />
+
+	<!-- Riflor -->
+	<Hero id="riflor_placeholder_1"
+		faction="Faction.riflor"
+		text="Placeholder" />
+
+	<!-- Monastery -->
+	<Hero id="monastery_placeholder_1"
+		faction="Faction.monastery"
+		text="Placeholder" />
+
+	<!-- Onderon -->
+	<Hero id="onderon_placeholder_1"
+		faction="Faction.house_bonteri"
+		text="Placeholder" />
+
+	<!-- Nakadia -->
+	<Hero id="nakadia_placeholder_1"
+		faction="Faction.nakadia"
+		text="Placeholder" />
+	
+	<!-- Saleucami -->
+	<Hero id="saleucami_placeholder_1"
+		faction="Faction.saleucami"
+		text="Placeholder" />
 	
 </Heroes>

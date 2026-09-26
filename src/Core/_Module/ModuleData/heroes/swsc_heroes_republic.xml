@@ -283,6 +283,131 @@
 	<Hero id="shili_placeholder_1"
 		faction="Faction.shili"
 		text="Placeholder" />
+
+	<!-- Byblos -->
+	<Hero id="byblos_placeholder_1"
+		faction="Faction.byblos"
+		text="Placeholder" />
+	
+	<!-- Carida -->
+	<Hero id="carida_placeholder_1"
+		faction="Faction.carida"
+		text="Placeholder" />
+	
+	<!-- Chardaan -->
+	<Hero id="chardaan_placeholder_1"
+		faction="Faction.chardaan"
+		text="Placeholder" />
+	
+	<!-- Commenor -->
+	<Hero id="commenor_placeholder_1"
+		faction="Faction.commenor"
+		text="Placeholder" />
+	
+	<!-- Umbara -->
+	<Hero id="umbara_placeholder_1"
+		faction="Faction.umbara"
+		text="Placeholder" />
+	
+	<!-- Cyclor -->
+	<Hero id="cyclor_placeholder_1"
+		faction="Faction.cyclor"
+		text="Placeholder" />
+	
+	<!-- Ephemera -->
+	<Hero id="ephemera_placeholder_1"
+		faction="Faction.ephemera"
+		text="Placeholder" />
+	
+	<!-- Espirion -->
+	<Hero id="espirion_placeholder_1"
+		faction="Faction.espirion"
+		text="Placeholder" />
+	
+	<!-- Kelen Biolabs -->
+	<Hero id="kelen_biolabs_placeholder_1"
+		faction="Faction.kelen_biolabs"
+		text="Placeholder" />
+
+	<!-- Fondor -->
+	<Hero id="fondor_placeholder_1"
+		faction="Faction.fondor"
+		text="Placeholder" />
+	
+	<!-- Gwongdeen -->
+	<Hero id="gwongdeen_placeholder_1"
+		faction="Faction.gwongdeen"
+		text="Placeholder" />
+	
+	<!-- Hynestia -->
+	<Hero id="hynestia_placeholder_1"
+		faction="Faction.hynestia"
+		text="Placeholder" />
+	
+	<!-- Kuat -->
+	<Hero id="kuat_placeholder_1"
+		faction="Faction.kuat"
+		text="Placeholder" />
+
+	<!-- Mikkia -->
+	<Hero id="mikkia_placeholder_1"
+		faction="Faction.mikkia"
+		text="Placeholder" />
+	
+	<!-- Nouane -->
+	<Hero id="nouane_placeholder_1"
+		faction="Faction.nouane"
+		text="Placeholder" />
+	
+	<!-- Palanhi -->
+	<Hero id="palanhi_placeholder_1"
+		faction="Faction.palanhi"
+		text="Placeholder" />
+	
+	<!-- Phatrong -->
+	<Hero id="phatrong_placeholder_1"
+		faction="Faction.phatrong"
+		text="Placeholder" />
+	
+	<!-- Rendili -->
+	<Hero id="rendili_placeholder_1"
+		faction="Faction.rendili"
+		text="Placeholder" />
+
+	<!-- Kafrene -->
+	<Hero id="kafrene_placeholder_1"
+		faction="Faction.kafrene"
+		text="Placeholder" />
+
+	<!-- Rodia -->
+	<Hero id="rodia_placeholder_1"
+		faction="Faction.rodia"
+		text="Placeholder" />
+	
+	<!-- Stobar -->
+	<Hero id="stobar_placeholder_1"
+		faction="Faction.stobar"
+		text="Placeholder" />
+	
+	<!-- Taris -->
+	<Hero id="taris_placeholder_1"
+		faction="Faction.taris"
+		text="Placeholder" />
+	
+	<!-- Thyferra -->
+	<Hero id="thyferra_placeholder_1"
+		faction="Faction.thyferra"
+		text="Placeholder" />
+	
+	<!-- Arakyd Industries -->
+	<Hero id="arakyd_industries_placeholder_1"
+		faction="Faction.arakyd_industries"
+		text="Placeholder" />
+
+	<!-- Wayland -->
+	<Hero id="wayland_placeholder_1"
+		faction="Faction.wayland"
+		text="Placeholder" />
 	
 	<!--Royal House of Naboo-->
 	<Hero id="jamillia"
@@ -303,7 +428,6 @@
 		father="Hero.thooraki"
 		faction="Faction.chiss"
 		text="Placeholder" />
-
 	<Hero id="thrawn"
 		father="Hero.thooraki"
 		faction="Faction.chiss"

@@ -31,12 +31,15 @@
 			<Node id="castle_village_GR3_2" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_GR4" name="GroupGR4" primaryNode="town_GR4" radius="50" posX="1090.32" posY="842.12" text="Denon">
+	<SettlementGroup id="group_GR4" name="GroupGR4" primaryNode="town_GR4" radius="85" posX="1094.33" posY="860.08" text="Denon">
 		<Children>
 			<Node id="town_GR4" />
 			<Node id="village_GR4_1" />
 			<Node id="village_GR4_2" />
 			<Node id="village_GR4_3" />
+			<Node id="castle_GR_ES1" />
+			<Node id="castle_village_GR_ES1_1" />
+			<Node id="castle_village_GR_ES1_2" />
 		</Children>
 	</SettlementGroup>
 	<SettlementGroup id="group_GR5" name="GroupGR5" primaryNode="castle_GR5" radius="40" posX="989.67" posY="804.21" text="Devaron">
@@ -54,18 +57,23 @@
 			<Node id="castle_village_GR6_2" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_GR7" name="GroupGR7" primaryNode="castle_GR7" radius="60" posX="1018.67" posY="1049.13" text="Gatalenta">
+	<SettlementGroup id="group_GR7" name="GroupGR7" primaryNode="castle_GR7" radius="80" posX="1021.59" posY="1060.00" text="Gatalenta">
 		<Children>
 			<Node id="castle_GR7" />
 			<Node id="castle_village_GR7_1" />
 			<Node id="castle_village_GR7_2" />
+			<Node id="castle_GR_KU1" />
+			<Node id="castle_village_GR_KU1_1" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_GR8" name="GroupGR8" primaryNode="castle_GR8" radius="100" posX="606.89" posY="639.18" text="Genetia">
+	<SettlementGroup id="group_GR8" name="GroupGR8" primaryNode="castle_GR8" radius="170" posX="661.00" posY="671.00" text="Genetia">
 		<Children>
 			<Node id="castle_GR8" />
 			<Node id="castle_village_GR8_1" />
 			<Node id="castle_village_GR8_2" />
+			<Node id="castle_GR_EP1" />
+			<Node id="castle_village_GR_EP1_1" />
+			<Node id="castle_village_GR_EP1_2" />
 		</Children>
 	</SettlementGroup>
 	<SettlementGroup id="group_GR9" name="GroupGR9" primaryNode="castle_GR9" radius="35" posX="1086.00" posY="1168.67" text="Harkrova">
@@ -128,21 +136,28 @@
 	</SettlementGroup>
 	
 	<!-- Republic Kingdoms -->
-	<SettlementGroup id="group_GR_CH1" name="GroupGR_CH1" primaryNode="town_GR_CH1" radius="30" posX="929.95" posY="1196.08" text="Chandrila">
+	<SettlementGroup id="group_GR_CH1" name="GroupGR_CH1" primaryNode="town_GR_CH1" radius="100" posX="941.67" posY="1161.17" text="Chandrila">
 		<Children>
 			<Node id="town_GR_CH1" />
 			<Node id="village_GR_CH1_1" />
 			<Node id="village_GR_CH1_2" />
 			<Node id="castle_GR_CH2" />
 			<Node id="castle_village_GR_CH2_1" />
+			<Node id="castle_SA_TU1" />
+			<Node id="castle_village_SA_TU1_1" />
+			<Node id="castle_village_SA_TU1_2" />
+			<Node id="castle_GR_AI1" />
+			<Node id="castle_village_GR_AI1_1" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_GR_MG1" name="GroupGR_MG1" primaryNode="town_GR_MG1" radius="50" posX="1209.09" posY="707.89" text="Milagro">
+	<SettlementGroup id="group_GR_MG1" name="GroupGR_MG1" primaryNode="town_GR_MG1" radius="80" posX="1201.71" posY="708.90" text="Milagro">
 		<Children>
 			<Node id="town_GR_MG1" />
 			<Node id="village_GR_MG1_1" />
 			<Node id="village_GR_MG1_2" />
 			<Node id="village_GR_MG1_3" />
+			<Node id="castle_SA_TY1" />
+			<Node id="castle_village_SA_TY1_1" />
 		</Children>
 	</SettlementGroup>
 	<SettlementGroup id="group_GR_KP1" name="GroupGR_KP1" primaryNode="castle_GR_KP1" radius="55" posX="755.49" posY="854.18" text="Kitel Phard">
@@ -154,16 +169,21 @@
 			<Node id="castle_village_GR_KP2_1" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_GR_AA1" name="GroupGR_AA1" primaryNode="castle_GR_AA1" radius="45" posX="1559.59" posY="397.61" text="Aaloth">
+	<SettlementGroup id="group_GR_AA1" name="GroupGR_AA1" primaryNode="castle_GR_AA1" radius="110" posX="1533.28" posY="383.45" text="Aaloth">
 		<Children>
 			<Node id="castle_GR_AA1" />
 			<Node id="castle_village_GR_AA1_1" />
+			<Node id="castle_SA_RY1" />
+			<Node id="castle_village_SA_RY1_1" />
+			<Node id="castle_village_SA_RY1_2" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_GR_KR1" name="GroupGR_KR1" primaryNode="castle_GR_KR1" radius="35" posX="806.06" posY="429.70" text="Kriselist">
+	<SettlementGroup id="group_GR_KR1" name="GroupGR_KR1" primaryNode="castle_GR_KR1" radius="55" posX="813.27" posY="436.50" text="Kriselist">
 		<Children>
 			<Node id="castle_GR_KR1" />
 			<Node id="castle_village_GR_KR1_1" />
+			<Node id="castle_SA_CA2" />
+			<Node id="castle_village_SA_CA2_1" />
 		</Children>
 	</SettlementGroup>
 	<SettlementGroup id="group_GR_AE1" name="GroupGR_AE1" primaryNode="castle_GR_AE1" radius="100" posX="999.67" posY="1720.33" text="Aeos">
@@ -196,12 +216,6 @@
 			<Node id="village_GR_AD1_1" />
 			<Node id="village_GR_AD1_2" />
 			<Node id="village_GR_AD1_3" />
-		</Children>
-	</SettlementGroup>
-	<SettlementGroup id="group_GR_AX1" name="GroupGR_AX1" primaryNode="castle_GR_AX1" radius="30" posX="1496.00" posY="1394.67" text="Anaxes">
-		<Children>
-			<Node id="castle_GR_AX1" />
-			<Node id="castle_village_GR_AX1_1" />
 		</Children>
 	</SettlementGroup>
 	<SettlementGroup id="group_GR_IT1" name="GroupGR_IT1" primaryNode="town_GR_IT1" radius="110" posX="979.33" posY="1440.67" text="Ithor">
@@ -270,12 +284,14 @@
 			<Node id="castle_village_GR_CL1_3" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_GR_CR1" name="GroupGR_CR1" primaryNode="town_GR_CR1" radius="60" posX="1025.00" posY="973.00" text="Corellia">
+	<SettlementGroup id="group_GR_CR1" name="GroupGR_CR1" primaryNode="town_GR_CR1" radius="80" posX="1025.00" posY="973.00" text="Corellia">
 		<Children>
 			<Node id="town_GR_CR1" />
 			<Node id="village_GR_CR1_1" />
 			<Node id="village_GR_CR1_2" />
 			<Node id="village_GR_CR1_3" />
+			<Node id="castle_GR_RN1" />
+			<Node id="castle_village_GR_RN1_1" />
 		</Children>
 	</SettlementGroup>
 	<SettlementGroup id="group_GR_CL2" name="GroupGR_CL2" primaryNode="castle_GR_CL2" radius="80" posX="1006.33" posY="891.00" text="Hosnian Prime">
@@ -315,7 +331,7 @@
 			<Node id="castle_village_GR_MN3_1" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_GR_BS1" name="GroupGR_BS1" primaryNode="town_GR_BS1" radius="100" posX="973.33" posY="728.00" text="Bestine">
+	<SettlementGroup id="group_GR_BS1" name="GroupGR_BS1" primaryNode="town_GR_BS1" radius="110" posX="949.01" posY="710.86" text="Bestine">
 		<Children>
 			<Node id="town_GR_BS1" />
 			<Node id="village_GR_BS1_1" />
@@ -323,20 +339,29 @@
 			<Node id="village_GR_BS1_3" />
 			<Node id="village_GR_BS1_4" />
 			<Node id="village_GR_BS1_5" />
+			<Node id="castle_GR_TH1" />
+			<Node id="castle_village_GR_TH1_1" />
+			<Node id="castle_village_GR_TH1_2" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_GR_KY1" name="GroupGR_KY1" primaryNode="castle_GR_KY1" radius="100" posX="1333.67" posY="1140.00" text="Kashyyyk">
+	<SettlementGroup id="group_GR_KY1" name="GroupGR_KY1" primaryNode="castle_GR_KY1" radius="110" posX="1333.67" posY="1140.00" text="Kashyyyk">
 		<Children>
 			<Node id="castle_GR_KY1" />
 			<Node id="castle_village_GR_KY1_1" />
 			<Node id="castle_village_GR_KY1_2" />
 			<Node id="castle_village_GR_KY1_3" />
+			<Node id="castle_SA_CH3" />
+			<Node id="castle_village_SA_CH3_1" />
+			<Node id="castle_GR_UM1" />
+			<Node id="castle_village_GR_UM1_1" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_GR_KY2" name="GroupGR_KY2" primaryNode="castle_GR_KY2" radius="50" posX="1531.33" posY="1210.33" text="Bimmisaari">
+	<SettlementGroup id="group_GR_KY2" name="GroupGR_KY2" primaryNode="castle_GR_KY2" radius="70" posX="1543.59" posY="1189.75" text="Bimmisaari">
 		<Children>
 			<Node id="castle_GR_KY2" />
 			<Node id="castle_village_GR_KY2_1" />
+			<Node id="castle_SA_CH2" />
+			<Node id="castle_village_SA_CH2_1" />
 		</Children>
 	</SettlementGroup>
 	<SettlementGroup id="group_GR_KY3" name="GroupGR_KY3" primaryNode="castle_GR_KY3" radius="70" posX="1459.92" posY="1098.21" text="Durkteel">
@@ -379,15 +404,21 @@
 			<Node id="village_GR_ED1_2" />
 			<Node id="village_GR_ED1_3" />
 			<Node id="village_GR_ED1_4" />
+			<Node id="castle_SA_SU1" />
+			<Node id="castle_village_SA_SU1_1" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_GR_FX1" name="GroupGR_FX1" primaryNode="town_GR_FX1" radius="80" posX="1431.90" posY="1717.93" text="Ferrix">
+	<SettlementGroup id="group_GR_FX1" name="GroupGR_FX1" primaryNode="town_GR_FX1" radius="100" posX="1430.38" posY="1698.72" text="Ferrix">
 		<Children>
 			<Node id="town_GR_FX1" />
 			<Node id="village_GR_FX1_1" />
 			<Node id="village_GR_FX1_2" />
 			<Node id="village_GR_FX1_3" />
 			<Node id="village_GR_FX1_4" />
+			<Node id="town_SA_MI1" />
+			<Node id="village_SA_MI1_1" />
+			<Node id="village_SA_MI1_2" />
+			<Node id="village_SA_MI1_3" />
 		</Children>
 	</SettlementGroup>
 	<SettlementGroup id="group_GR_LT1" name="GroupGR_LT1" primaryNode="town_GR_LT1" radius="100" posX="1279.79" posY="1281.29" text="Lantillies">
@@ -398,6 +429,8 @@
 			<Node id="village_GR_LT1_3" />
 			<Node id="castle_GR_LT2" />
 			<Node id="castle_village_GR_LT2_1" />
+			<Node id="castle_SA_GI1" />
+			<Node id="castle_village_SA_GI1_1" />
 		</Children>
 	</SettlementGroup>
 	<SettlementGroup id="group_GR_NB1" name="GroupGR_NB1" primaryNode="town_GR_NB1" radius="80" posX="1213.22" posY="459.42" text="Naboo">
@@ -418,10 +451,14 @@
 			<Node id="village_GR_PT1_4" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_GR_QM1" name="GroupGR_QM1" primaryNode="castle_GR_QM1" radius="60" posX="1608.67" posY="1578.67" text="Quermia">
+	<SettlementGroup id="group_GR_QM1" name="GroupGR_QM1" primaryNode="castle_GR_QM1" radius="100" posX="1649.64" posY="1573.77" text="Quermia">
 		<Children>
 			<Node id="castle_GR_QM1" />
 			<Node id="castle_village_GR_QM1_1" />
+			<Node id="castle_SA_KA1" />
+			<Node id="castle_village_SA_KA1_1" />
+			<Node id="castle_village_SA_KA1_2" />
+			<Node id="castle_village_SA_KA1_3" />
 		</Children>
 	</SettlementGroup>
 	<SettlementGroup id="group_GR_SH1" name="GroupGR_SH1" primaryNode="castle_GR_SH1" radius="70" posX="966.97" posY="1296.84" text="Shili">
@@ -432,15 +469,199 @@
 			<Node id="castle_village_GR_SH1_3" />
 		</Children>
 	</SettlementGroup>
+	<SettlementGroup id="group_GR_BY1" name="GroupGR_BY1" primaryNode="castle_GR_BY1" radius="40" posX="1058.33" posY="899.00" text="Byblos">
+		<Children>
+			<Node id="castle_GR_BY1" />
+			<Node id="castle_village_GR_BY1_1" />
+			<Node id="castle_village_GR_BY1_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR_CD1" name="GroupGR_CD1" primaryNode="castle_GR_CD1" radius="50" posX="1098.67" posY="732.00" text="Chardaan">
+		<Children>
+			<Node id="castle_GR_CD1" />
+			<Node id="castle_village_GR_CD1_1" />
+			<Node id="castle_village_GR_CD1_2" />
+			<Node id="castle_village_GR_CD1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR_CY1" name="GroupGR_CY1" primaryNode="castle_GR_CY1" radius="55" posX="1138.67" posY="415.33" text="Cyclor">
+		<Children>
+			<Node id="castle_GR_CY1" />
+			<Node id="castle_village_GR_CY1_1" />
+			<Node id="castle_village_GR_CY1_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR_KB1" name="GroupGR_KB1" primaryNode="castle_GR_KB1" radius="40" posX="963.33" posY="942.33" text="Fex">
+		<Children>
+			<Node id="castle_GR_KB1" />
+			<Node id="castle_village_GR_KB1_1" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR_FO1" name="GroupGR_FO1" primaryNode="castle_GR_FO1" radius="50" posX="898.33" posY="796.00" text="Fondor">
+		<Children>
+			<Node id="castle_GR_FO1" />
+			<Node id="castle_village_GR_FO1_1" />
+			<Node id="castle_village_GR_FO1_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR_GW1" name="GroupGR_GW1" primaryNode="castle_GR_GW1" radius="80" posX="693.67" posY="1205.67" text="Gwongdeen">
+		<Children>
+			<Node id="castle_GR_GW1" />
+			<Node id="castle_village_GR_GW1_1" />
+			<Node id="castle_village_GR_GW1_2" />
+			<Node id="castle_village_GR16_1" />
+			<Node id="castle_village_GR16_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR_HY1" name="GroupGR_HY1" primaryNode="castle_GR_HY1" radius="60" posX="792.90" posY="783.33" text="Hynestia">
+		<Children>
+			<Node id="castle_GR_HY1" />
+			<Node id="castle_village_GR_HY1_1" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR_MK1" name="GroupGR_MK1" primaryNode="castle_GR_MK1" radius="60" posX="1069.27" posY="1352.67" text="Mikkia">
+		<Children>
+			<Node id="castle_GR_MK1" />
+			<Node id="castle_village_GR_MK1_1" />
+			<Node id="castle_village_GR_MK1_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR_NU1" name="GroupGR_NU1" primaryNode="castle_GR_NU1" radius="70" posX="1112.87" posY="1306.01" text="Nouane">
+		<Children>
+			<Node id="castle_GR_NU1" />
+			<Node id="castle_village_GR_NU1_1" />
+			<Node id="castle_village_GR_NU1_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR_PA1" name="GroupGR_PA1" primaryNode="castle_GR_PA1" radius="50" posX="810.33" posY="1252.00" text="Palanhi">
+		<Children>
+			<Node id="castle_GR_PA1" />
+			<Node id="castle_village_GR_PA1_1" />
+			<Node id="castle_village_GR_PA1_2" />
+			<Node id="castle_village_GR_DO1_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR_PH1" name="GroupGR_PH1" primaryNode="castle_GR_PH1" radius="60" posX="1312.00" posY="1436.33" text="Phatrong">
+		<Children>
+			<Node id="castle_GR_PH1" />
+			<Node id="castle_village_GR_PH1_1" />
+			<Node id="castle_village_GR_PH1_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_GR_TA1" name="GroupGR_TA1" primaryNode="castle_GR_TA1" radius="70" posX="1114.24" posY="1417.48" text="Taris">
+		<Children>
+			<Node id="castle_GR_TA1" />
+			<Node id="castle_village_GR_TA1_1" />
+			<Node id="castle_village_GR_TA1_2" />
+			<Node id="castle_village_GR_TA1_3" />
+		</Children>
+	</SettlementGroup>
 	
 	<!-- Neutral Systems -->
-	<SettlementGroup id="group_NS1" name="GroupNS1" primaryNode="town_NS1" radius="75" posX="1225.33" posY="1392" text="Mandalore">
+	<SettlementGroup id="group_NS1" name="GroupNS1" primaryNode="town_NS1" radius="90" posX="1200.93" posY="1370.92" text="Mandalore">
 		<Children>
 			<Node id="town_NS1" />
 			<Node id="village_NS1_1" />
 			<Node id="village_NS1_2" />
 			<Node id="castle_DW1" />
 			<Node id="castle_village_DW1_1" />
+			<Node id="castle_GR_WY1" />
+			<Node id="castle_village_GR_WY1_1" />
+			<Node id="castle_village_GR_WY1_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_NS_CS1" name="GroupNS_CS1" primaryNode="town_NS_CS1" radius="100" posX="1594.67" posY="1714.67" text="Bonadan">
+		<Children>
+			<Node id="town_NS_CS1" />
+			<Node id="village_NS_CS1_1" />
+			<Node id="village_NS_CS1_2" />
+			<Node id="village_NS_CS1_3" />
+			<Node id="castle_NS_CS2" />
+			<Node id="castle_village_NS_CS2_1" />
+			<Node id="castle_village_NS_CS2_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_NS_BO1" name="GroupNS_BO1" primaryNode="town_NS_BO1" radius="100" posX="1477.00" posY="706.33" text="Bothawui">
+		<Children>
+			<Node id="town_NS_BO1" />
+			<Node id="village_NS_BO1_1" />
+			<Node id="village_NS_BO1_2" />
+			<Node id="village_NS_BO1_3" />
+			<Node id="village_NS_BO1_4" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_NS_CE1" name="GroupNS_CE1" primaryNode="town_NS_CE1" radius="80" posX="639.67" posY="483.00" text="Cerea">
+		<Children>
+			<Node id="town_NS_CE1" />
+			<Node id="village_NS_CE1_1" />
+			<Node id="village_NS_CE1_2" />
+			<Node id="village_NS_CE1_3" />
+			<Node id="village_NS_CE1_4" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_NS_CA1" name="GroupNS_CA1" primaryNode="town_NS_CA1" radius="140" posX="319.86" posY="1236.89" text="Csilla">
+		<Children>
+			<Node id="town_NS_CA1" />
+			<Node id="village_NS_CA1_1" />
+			<Node id="village_NS_CA1_2" />
+			<Node id="village_NS_CA1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_NS_GA1" name="GroupNS_GA1" primaryNode="town_NS_GA1" radius="60" posX="1716.00" posY="1298.67" text="Gand">
+		<Children>
+			<Node id="town_NS_GA1" />
+			<Node id="village_NS_GA1_1" />
+			<Node id="village_NS_GA1_2" />
+			<Node id="village_NS_GA1_3" />
+			<Node id="village_NS_GA1_4" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_NS_HC1" name="GroupNS_HC1" primaryNode="town_NS_HC1" radius="70" posX="1236.58" posY="1170.78" text="Hapes">
+		<Children>
+			<Node id="town_NS_HC1" />
+			<Node id="village_NS_HC1_1" />
+			<Node id="village_NS_HC1_2" />
+			<Node id="castle_SA_ON1" />
+			<Node id="castle_village_SA_ON1_1" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_NS_LS1" name="GroupNS_LS1" primaryNode="town_NS_LS1" radius="110" posX="1260.69" posY="126.56" text="Lira San">
+		<Children>
+			<Node id="town_NS_LS1" />
+			<Node id="village_NS_LS1_1" />
+			<Node id="village_NS_LS1_2" />
+			<Node id="village_NS_LS1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_NS_CC1" name="GroupNS_CC1" primaryNode="town_NS_CC1" radius="85" posX="882.67" posY="1284.67" text="Pijal">
+		<Children>
+			<Node id="town_NS_CC1" />
+			<Node id="village_NS_CC1_1" />
+			<Node id="village_NS_CC1_2" />
+			<Node id="village_NS_CC1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_NS_SF1" name="GroupNS_SF1" primaryNode="town_NS_SF1" radius="70" posX="1569.53" posY="579.95" text="Scarif">
+		<Children>
+			<Node id="town_NS_SF1" />
+			<Node id="village_NS_SF1_1" />
+			<Node id="village_NS_SF1_2" />
+			<Node id="village_NS_SF1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_NS_GU1" name="GroupNS_GU1" primaryNode="town_NS_GU1" radius="75" posX="153.97" posY="1295.64" text="Solitair">
+		<Children>
+			<Node id="town_NS_GU1" />
+			<Node id="village_NS_GU1_1" />
+			<Node id="village_NS_GU1_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_NS_YV1" name="GroupNS_YV1" primaryNode="town_NS_YV1" radius="85" posX="1318.00" posY="1516.67" text="Yavin">
+		<Children>
+			<Node id="town_NS_YV1" />
+			<Node id="village_NS_YV1_1" />
+			<Node id="village_NS_YV1_2" />
+			<Node id="village_NS_YV1_3" />
 		</Children>
 	</SettlementGroup>
 	
@@ -521,6 +742,49 @@
 			<Node id="castle_village_CS_PK3_2" />
 		</Children>
 	</SettlementGroup>
+	<SettlementGroup id="group_CS_NO1" name="GroupCS_NO1" primaryNode="town_CS_NO1" radius="120" posX="632.75" posY="768.24" text="Jakku">
+		<Children>
+			<Node id="town_CS_NO1" />
+			<Node id="village_CS_NO1_1" />
+			<Node id="village_CS_NO1_2" />
+			<Node id="village_CS_NO1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_CS_SO1" name="GroupCS_SO1" primaryNode="town_CS_SO1" radius="60" posX="1374.00" posY="385.33" text="Socorro">
+		<Children>
+			<Node id="town_CS_SO1" />
+			<Node id="village_CS_SO1_1" />
+			<Node id="village_CS_SO1_2" />
+			<Node id="village_CS_SO1_3" />
+			<Node id="village_CS_SO1_4" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_CS_BS1" name="GroupCS_BS1" primaryNode="town_CS_BS1" radius="80" posX="876.00" posY="1377.33" text="Ord Mantell">
+		<Children>
+			<Node id="town_CS_BS1" />
+			<Node id="village_CS_BS1_1" />
+			<Node id="village_CS_BS1_2" />
+			<Node id="village_CS_BS1_3" />
+			<Node id="village_CS_BS1_4" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_CS_TY1" name="GroupCS_TY1" primaryNode="town_CS_TY1" radius="100" posX="1490.84" posY="1001.81" text="Toydaria">
+		<Children>
+			<Node id="town_CS_TY1" />
+			<Node id="village_CS_TY1_1" />
+			<Node id="village_CS_TY1_2" />
+			<Node id="village_CS_TY1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_CS_RD1" name="GroupCS_RD1" primaryNode="town_CS_RD1" radius="110" posX="1217.33" posY="1062.67" text="Zeltros">
+		<Children>
+			<Node id="town_CS_RD1" />
+			<Node id="village_CS_RD1_1" />
+			<Node id="village_CS_RD1_2" />
+			<Node id="village_CS_RD1_3" />
+			<Node id="village_CS_RD1_4" />
+		</Children>
+	</SettlementGroup>
 	
 	<!-- Separatists -->
 	<SettlementGroup id="group_SA1" name="GroupSA1" primaryNode="town_SA1" radius="65" posX="1620.33" posY="1527.00" text="Raxus">
@@ -563,13 +827,14 @@
 			<Node id="castle_village_SA5_3" />
 		</Children>
 	</SettlementGroup>
-
-	<SettlementGroup id="group_SA_TF1" name="GroupSA_TF1" primaryNode="town_SA_TF1" radius="70" posX="1079.06" posY="1050.08" text="Cato Neimodia">
+	<SettlementGroup id="group_SA_TF1" name="GroupSA_TF1" primaryNode="town_SA_TF1" radius="90" posX="1082.00" posY="1061.52" text="Cato Neimodia">
 		<Children>
 			<Node id="town_SA_TF1" />
 			<Node id="village_SA_TF1_1" />
 			<Node id="village_SA_TF1_2" />
 			<Node id="village_SA_TF1_3" />
+			<Node id="castle_GR_CO1" />
+			<Node id="castle_village_GR_CO1_1" />
 		</Children>
 	</SettlementGroup>
 	<SettlementGroup id="group_SA_TF2" name="GroupSA_TF2" primaryNode="castle_SA_TF2" radius="75" posX="1148.55" posY="1235.03" text="Colla">
@@ -649,7 +914,7 @@
 			<Node id="village_SA_CG3_4" />
 		</Children>
 	</SettlementGroup>
-	<SettlementGroup id="group_SA_CG4" name="GroupSA_CG4" primaryNode="castle_SA_CG4" radius="40" posX="1028.55" posY="1232.35" text="Castell">
+	<SettlementGroup id="group_SA_CG4" name="GroupSA_CG4" primaryNode="castle_SA_CG4" radius="60" posX="1025.99" posY="1220.32" text="Castell">
 		<Children>
 			<Node id="castle_SA_CG4" />
 			<Node id="castle_village_SA_CG4_1" />
@@ -673,13 +938,6 @@
 		<Children>
 			<Node id="castle_SA_CG8" />
 			<Node id="castle_village_SA_CG8_1" />
-		</Children>
-	</SettlementGroup>
-	<SettlementGroup id="group_SA_TU1" name="GroupSA_TU1" primaryNode="castle_SA_TU1" radius="60" posX="943.00" posY="1169.33" text="Skako Minor">
-		<Children>
-			<Node id="castle_SA_TU1" />
-			<Node id="castle_village_SA_TU1_1" />
-			<Node id="castle_village_SA_TU1_2" />
 		</Children>
 	</SettlementGroup>
 	<SettlementGroup id="group_SA_TU2" name="GroupSA_TU2" primaryNode="town_SA_TU2" radius="100" posX="1299.33" posY="610.67" text="Druckenwell">
@@ -802,6 +1060,197 @@
 			<Node id="castle_SA_ZY2" />
 			<Node id="castle_village_SA_ZY2_1" />
 			<Node id="castle_village_SA_ZY2_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_BJ1" name="GroupSA_BJ1" primaryNode="town_SA_BJ1" radius="90" posX="1237.54" posY="1470.67" text="Botajef">
+		<Children>
+			<Node id="town_SA_BJ1" />
+			<Node id="village_SA_BJ1_1" />
+			<Node id="village_SA_BJ1_2" />
+			<Node id="village_SA_BJ1_3" />
+			<Node id="village_SA_BJ1_4" />
+			<Node id="village_SA_BJ1_5" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_CT1" name="GroupSA_CT1" primaryNode="town_SA_CT1" radius="80" posX="1491.00" posY="1385.00" text="Centares">
+		<Children>
+			<Node id="town_SA_CT1" />
+			<Node id="village_SA_CT1_1" />
+			<Node id="village_SA_CT1_2" />
+			<Node id="village_SA_CT1_3" />
+			<Node id="village_SA_CT1_4" />
+			<Node id="castle_GR_AX1" />
+			<Node id="castle_village_GR_AX1_1" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_NT1" name="GroupSA_NT1" primaryNode="town_SA_NT1" radius="110" posX="1364.31" posY="894.84" text="Nanth'ri">
+		<Children>
+			<Node id="town_SA_NT1" />
+			<Node id="village_SA_NT1_1" />
+			<Node id="village_SA_NT1_2" />
+			<Node id="village_SA_NT1_3" />
+			<Node id="castle_SA_NT2" />
+			<Node id="castle_village_SA_NT2_1" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_RK1" name="GroupSA_RK1" primaryNode="town_SA_RK1" radius="60" posX="512.00" posY="534.00" text="Rattatak">
+		<Children>
+			<Node id="town_SA_RK1" />
+			<Node id="village_SA_RK1_1" />
+			<Node id="village_SA_RK1_2" />
+			<Node id="village_SA_RK1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_YD1" name="GroupSA_YD1" primaryNode="town_SA_YD1" radius="80" posX="934.96" posY="628.10" text="Yag'Dhul">
+		<Children>
+			<Node id="town_SA_YD1" />
+			<Node id="village_SA_YD1_1" />
+			<Node id="village_SA_YD1_2" />
+			<Node id="village_SA_YD1_3" />
+			<Node id="village_SA_YD1_4" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_YD2" name="GroupSA_YD2" primaryNode="castle_SA_YD2" radius="90" posX="781.21" posY="632.16" text="Kudo">
+		<Children>
+			<Node id="castle_SA_YD2" />
+			<Node id="castle_village_SA_YD2_1" />
+			<Node id="castle_GR_KF1" />
+			<Node id="castle_village_GR_KF1_1" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_VN1" name="GroupSA_VN1" primaryNode="town_SA_VN1" radius="100" posX="961.15" posY="456.33" text="Vondarc">
+		<Children>
+			<Node id="town_SA_VN1" />
+			<Node id="village_SA_VN1_1" />
+			<Node id="village_SA_VN1_2" />
+			<Node id="village_SA_VN1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_GT1" name="GroupSA_GT1" primaryNode="castle_SA_GT1" radius="60" posX="781.00" posY="315.67" text="Gerrenthum">
+		<Children>
+			<Node id="castle_SA_GT1" />
+			<Node id="castle_village_SA_GT1_1" />
+			<Node id="castle_village_SA_GT1_2" />
+			<Node id="castle_SA_GT2" />
+			<Node id="castle_village_SA_GT2_1" />
+			<Node id="castle_village_SA_GT2_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_CA1" name="GroupSA_CA1" primaryNode="castle_SA_CA1" radius="70" posX="1583.33" posY="1448.67" text="Murkhana">
+		<Children>
+			<Node id="castle_SA_CA1" />
+			<Node id="castle_village_SA_CA1_1" />
+			<Node id="castle_village_SA_CA1_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_CA3" name="GroupSA_CA3" primaryNode="castle_SA_CA3" radius="40" posX="1039.90" posY="707.20" text="Kooriva">
+		<Children>
+			<Node id="castle_SA_CA3" />
+			<Node id="castle_village_SA_CA3_1" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_CH1" name="GroupSA_CH1" primaryNode="castle_SA_CH1" radius="50" posX="1478.05" posY="1179.36" text="Charros">
+		<Children>
+			<Node id="castle_SA_CH1" />
+			<Node id="castle_village_SA_CH1_1" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_CR1" name="GroupSA_CR1" primaryNode="castle_SA_CR1" radius="60" posX="1430.21" posY="459.93" text="Christophsis">
+		<Children>
+			<Node id="castle_SA_CR1" />
+			<Node id="castle_village_SA_CR1_1" />
+			<Node id="castle_village_SA_CR1_2" />
+			<Node id="castle_village_SA_CR1_3" />
+			<Node id="castle_GR_RO1" />
+			<Node id="castle_village_GR_RO1_1" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_DT1" name="GroupSA_DT1" primaryNode="castle_SA_DT1" radius="65" posX="859.91" posY="1699.94" text="Dantooine">
+		<Children>
+			<Node id="castle_SA_DT1" />
+			<Node id="castle_village_SA_DT1_1" />
+			<Node id="castle_village_SA_DT1_2" />
+			<Node id="castle_village_SA_DT1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_VT1" name="GroupSA_VT1" primaryNode="castle_SA_VT1" radius="65" posX="1268.33" posY="388.67" text="Vallt">
+		<Children>
+			<Node id="castle_SA_VT1" />
+			<Node id="castle_village_SA_VT1_1" />
+			<Node id="castle_village_SA_VT1_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_TO1" name="GroupSA_TO1" primaryNode="castle_SA_TO1" radius="110" posX="1730.67" posY="1348.00" text="Toong'l">
+		<Children>
+			<Node id="castle_SA_TO1" />
+			<Node id="castle_village_SA_TO1_1" />
+			<Node id="castle_village_SA_TO1_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_SC1" name="GroupSA_SC1" primaryNode="castle_SA_SC1" radius="65" posX="1111.97" posY="222.63" text="Sevarcos">
+		<Children>
+			<Node id="castle_SA_SC1" />
+			<Node id="castle_village_SA_SC1_1" />
+			<Node id="castle_village_SA_SC1_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_QU1" name="GroupSA_QU1" primaryNode="castle_SA_QU1" radius="80" posX="1440.00" posY="1453.33" text="Quell">
+		<Children>
+			<Node id="castle_SA_QU1" />
+			<Node id="castle_village_SA_QU1_1" />
+			<Node id="castle_village_SA_QU1_2" />
+			<Node id="castle_village_SA_QU1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_KB1" name="GroupSA_KB1" primaryNode="castle_SA_KB1" radius="70" posX="1120.74" posY="312.59" text="Kabal">
+		<Children>
+			<Node id="castle_SA_KB1" />
+			<Node id="castle_village_SA_KB1_1" />
+			<Node id="castle_village_SA_KB1_2" />
+			<Node id="castle_village_SA_KB1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_LO1" name="GroupSA_LO1" primaryNode="castle_SA_LO1" radius="80" posX="1740.00" posY="1400.00" text="Lothal">
+		<Children>
+			<Node id="castle_SA_LO1" />
+			<Node id="castle_village_SA_LO1_1" />
+			<Node id="castle_village_SA_LO1_2" />
+			<Node id="castle_village_SA_LO1_3" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_GY1" name="GroupSA_GY1" primaryNode="castle_SA_GY1" radius="60" posX="1177.00" posY="912.33" text="Gyndine">
+		<Children>
+			<Node id="castle_SA_GY1" />
+			<Node id="castle_village_SA_GY1_1" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_RI1" name="GroupSA_RI1" primaryNode="castle_SA_RI1" radius="40" posX="696.67" posY="436.33" text="Riflor">
+		<Children>
+			<Node id="castle_SA_RI1" />
+			<Node id="castle_village_SA_RI1_1" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_MO1" name="GroupSA_MO1" primaryNode="castle_SA_MO1" radius="60" posX="1385.09" posY="662.90" text="Monastery">
+		<Children>
+			<Node id="castle_SA_MO1" />
+			<Node id="castle_village_SA_MO1_1" />
+			<Node id="castle_village_SA_MO1_2" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_NK1" name="GroupSA_NK1" primaryNode="castle_SA_NK1" radius="95" posX="1014.84" posY="598.83" text="Nakadia">
+		<Children>
+			<Node id="castle_SA_NK1" />
+			<Node id="castle_village_SA_NK1_1" />
+			<Node id="castle_GR_ST1" />
+			<Node id="castle_village_GR_ST1_1" />
+		</Children>
+	</SettlementGroup>
+	<SettlementGroup id="group_SA_SL1" name="GroupSA_SL1" primaryNode="castle_SA_SL1" radius="45" posX="1585.33" posY="1291.33" text="Saleucami">
+		<Children>
+			<Node id="castle_SA_SL1" />
+			<Node id="castle_village_SA_SL1_1" />
+			<Node id="castle_village_SA_SL1_2" />
+			<Node id="village_HC4_5" />
 		</Children>
 	</SettlementGroup>
 </SettlementGroups>

@@ -30,5 +30,26 @@
 	<Hero id="lom"
 		faction="Faction.pyke_syndicate"
 		text="Placeholder" />
+	
+	<!-- Niima's Outpost -->
+	<Hero id="niimas_placeholder_1"
+		faction="Faction.niimas"
+		text="Placeholder" />
+
+	<!-- Socorro -->
+	<Hero id="socorro_placeholder_1"
+		faction="Faction.socorro"
+		text="Placeholder" />
+
+	<!-- Toydaria -->
+	<Hero id="toydaria_placeholder_1"
+		faction="Faction.toydaria"
+		text="Placeholder" />
+
+	<!-- Rinnrivin Di's Cartel -->
+	<Hero id="rinnrivin_placeholder_1"
+		faction="Faction.rinnrivin"
+		text="Placeholder" />
+
 
 </Heroes>

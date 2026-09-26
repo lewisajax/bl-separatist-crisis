@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--You can add new or override old clan entries by adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spclans.xml.-->
 <Factions>
-	<Faction
+	<Faction id="ohnaka"
 		initial_home_settlement="Settlement.town_GR1"
-		id="ohnaka"
 		name="Ohnaka Gang"
 		tier="3"
 		culture="Culture.looters"
@@ -23,9 +22,8 @@
 		</minor_faction_character_templates>
 	</Faction>
 
-	<Faction
-initial_home_settlement="Settlement.town_GR1"
-		id="tusken"
+	<Faction id="tusken"
+		initial_home_settlement="Settlement.town_GR1"
 		name="Tusken Raiders"
 		short_name="Tuskens"
 		tier="3"
@@ -46,9 +44,8 @@ initial_home_settlement="Settlement.town_GR1"
 		</minor_faction_character_templates>
 	</Faction>
 
-	<Faction
-initial_home_settlement="Settlement.town_GR1"
-		id="sith_cult"
+	<Faction id="sith_cult"
+		initial_home_settlement="Settlement.town_GR1"
 		name="Sith Cultists"
 		tier="3"
 		culture="Culture.looters"
@@ -68,9 +65,8 @@ initial_home_settlement="Settlement.town_GR1"
 		</minor_faction_character_templates>
 	</Faction>
 
-	<Faction
-initial_home_settlement="Settlement.town_GR1"
-		id="underworld_criminal"
+	<Faction id="underworld_criminal"
+		initial_home_settlement="Settlement.town_GR1"
 		name="Underworld Criminals"
 		tier="3"
 		culture="Culture.looters"
@@ -90,9 +86,8 @@ initial_home_settlement="Settlement.town_GR1"
 		</minor_faction_character_templates>
 	</Faction>
 
-	<Faction
-initial_home_settlement="Settlement.town_GR1"
-		id="pirates"
+	<Faction id="pirates"
+		initial_home_settlement="Settlement.town_GR1"
 		name="Pirates"
 		tier="3"
 		culture="Culture.looters"
