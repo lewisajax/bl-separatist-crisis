@@ -132,6 +132,277 @@
 		is_noble="true"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 	
+	<Faction id="barab"
+ 		initial_home_settlement="Settlement.castle_NS_BR1"
+		name="Barab"
+		tier="4"
+		owner="Hero.barab_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.barab"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="bahktov_council"
+ 		initial_home_settlement="Settlement.castle_NS_DO1"
+		name="Bahk-tov Council"
+		tier="4"
+		owner="Hero.dagoyan_order_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.dagoyan_order"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="bogano"
+ 		initial_home_settlement="Settlement.castle_NS_BG1"
+		name="Bogano"
+		tier="4"
+		owner="Hero.bogano_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.bogano"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="dqar"
+ 		initial_home_settlement="Settlement.castle_NS_DQ1"
+		name="D'Qar"
+		tier="4"
+		owner="Hero.dqar_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.dqar"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="dannamore"
+ 		initial_home_settlement="Settlement.castle_NS_DM1"
+		name="Orgo Harvesters"
+		tier="4"
+		owner="Hero.dannamore_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.dannamore"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="nightsisters"
+ 		initial_home_settlement="Settlement.castle_NS_NS1"
+		name="Mother Talzin's Clan"
+		tier="4"
+		owner="Hero.nightsisters_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.nightsisters"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="eiram"
+ 		initial_home_settlement="Settlement.castle_NS_EI1"
+		name="Eiram"
+		tier="4"
+		owner="Hero.eiram_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.eiram"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="gree"
+ 		initial_home_settlement="Settlement.castle_NS_GE1"
+		name="Gree Remnants"
+		tier="4"
+		owner="Hero.gree_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.gree"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="kesh"
+ 		initial_home_settlement="Settlement.castle_NS_KE1"
+		name="Circle of Lords"
+		tier="4"
+		owner="Hero.kesh_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.kesh"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- <Faction id="ktathatn"
+ 		initial_home_settlement="Settlement.castle_NS_KT1"
+		name="Ktath'atn"
+		tier="4"
+		owner="Hero.ktathatn_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.ktathatn"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	 -->
+		
+	<Faction id="lannik"
+ 		initial_home_settlement="Settlement.castle_NS_LK1"
+		name="Lannik"
+		tier="4"
+		owner="Hero.lannik_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.lannik"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="santhe_corporation"
+ 		initial_home_settlement="Settlement.castle_NS_SC1"
+		name="Santhe Family"
+		tier="4"
+		owner="Hero.santhe_corporation_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.santhe_corporation"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="lioaoin"
+ 		initial_home_settlement="Settlement.castle_NS_LR1"
+		name="Lioaoin Regime"
+		tier="4"
+		owner="Hero.lioaoin_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.lioaoin"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="marleyvane"
+ 		initial_home_settlement="Settlement.castle_NS_ML1"
+		name="Marleyvane"
+		tier="4"
+		owner="Hero.marleyvane_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.marleyvane"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="nacronis"
+ 		initial_home_settlement="Settlement.castle_NS_NC1"
+		name="Nacronis"
+		tier="4"
+		owner="Hero.nacronis_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.nacronis"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="spaar"
+ 		initial_home_settlement="Settlement.castle_NS_YP1"
+		name="Spaar Clan"
+		tier="4"
+		owner="Hero.yevethan_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.yevethan"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="pabu"
+ 		initial_home_settlement="Settlement.castle_NS_PB1"
+		name="Pabu"
+		tier="4"
+		owner="Hero.pabu_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.pabu"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="pipada"
+ 		initial_home_settlement="Settlement.castle_NS_PP1"
+		name="Pipada"
+		tier="4"
+		owner="Hero.pipada_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.pipada"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="polis_massa"
+ 		initial_home_settlement="Settlement.castle_NS_PM1"
+		name="Polis Massa"
+		tier="4"
+		owner="Hero.polis_massa_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.polis_massa"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="vak_combine"
+ 		initial_home_settlement="Settlement.castle_NS_VC1"
+		name="Vak Combine"
+		tier="4"
+		owner="Hero.vak_combine_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.vak_combine"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="sesid"
+ 		initial_home_settlement="Settlement.castle_NS_SS1"
+		name="Sesid"
+		tier="4"
+		owner="Hero.sesid_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.sesid"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="stennaros"
+ 		initial_home_settlement="Settlement.castle_NS_ST1"
+		name="Stennaros"
+		tier="4"
+		owner="Hero.stennaros_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.stennaros"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="tund"
+ 		initial_home_settlement="Settlement.castle_NS_TU1"
+		name="Sorcerers of Tund"
+		tier="4"
+		owner="Hero.tund_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.tund"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="utapau"
+ 		initial_home_settlement="Settlement.castle_NS_UT1"
+		name="Utapauan Committee"
+		tier="4"
+		owner="Hero.utapau_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.utapau"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="virgillia"
+ 		initial_home_settlement="Settlement.castle_NS_VG1"
+		name="Virgillia"
+		tier="4"
+		owner="Hero.virgillia_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.virgillia"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="warlentta"
+ 		initial_home_settlement="Settlement.castle_NS_WR1"
+		name="Warlentta"
+		tier="4"
+		owner="Hero.warlentta_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.warlentta"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="orinda"
+ 		initial_home_settlement="Settlement.castle_NS_OR1"
+		name="Orinda"
+		tier="4"
+		owner="Hero.orinda_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.orinda"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
 	<!-- NO KINGDOM -->
 	<Faction id="lira_san"
  		initial_home_settlement="Settlement.town_NS_LS1"

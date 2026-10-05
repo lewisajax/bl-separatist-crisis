@@ -70,4 +70,139 @@
 	<Hero id="yavin_placeholder_1"
 		faction="Faction.yavin"
 		text="Placeholder" />
+	
+	<!-- Barab -->
+	<Hero id="barab_placeholder_1"
+		faction="Faction.barab"
+		text="Placeholder" />
+	
+	<!-- Dagoyan Order -->
+	<Hero id="dagoyan_order_placeholder_1"
+		faction="Faction.bahktov_council"
+		text="Placeholder" />
+	
+	<!-- Bogano -->
+	<Hero id="bogano_placeholder_1"
+		faction="Faction.bogano"
+		text="Placeholder" />
+	
+	<!-- D'Qar -->
+	<Hero id="dqar_placeholder_1"
+		faction="Faction.dqar"
+		text="Placeholder" />
+	
+	<!-- Dannamore -->
+	<Hero id="dannamore_placeholder_1"
+		faction="Faction.dqar"
+		text="Placeholder" />
+	
+	<!-- Nightsisters -->
+	<Hero id="nightsisters_placeholder_1"
+		faction="Faction.nightsisters"
+		text="Placeholder" />
+	
+	<!-- Eiram -->
+	<Hero id="eiram_placeholder_1"
+		faction="Faction.eiram"
+		text="Placeholder" />
+	
+	<!-- Gree Enclave -->
+	<Hero id="gree_placeholder_1"
+		faction="Faction.gree"
+		text="Placeholder" />
+	
+	<!-- Kesh -->
+	<Hero id="kesh_placeholder_1"
+		faction="Faction.kesh"
+		text="Placeholder" />
+	
+	<!-- Ktath'atn -->
+	<!-- <Hero id="ktathatn_placeholder_1"
+		faction="Faction.ktathatn"
+		text="Placeholder" /> -->
+
+	<!-- Lannik -->
+	<Hero id="lannik_placeholder_1"
+		faction="Faction.lannik"
+		text="Placeholder" />
+	
+	<!-- Santhe Corporation -->
+	<Hero id="santhe_corporation_placeholder_1"
+		faction="Faction.santhe_corporation"
+		text="Placeholder" />
+	
+	<!-- Lioaoin Regime -->
+	<Hero id="lioaoin_placeholder_1"
+		faction="Faction.lioaoin"
+		text="Placeholder" />
+	
+	<!-- Marleyvane -->
+	<Hero id="marleyvane_placeholder_1"
+		faction="Faction.marleyvane"
+		text="Placeholder" />
+	
+	<!-- Nacronis -->
+	<Hero id="nacronis_placeholder_1"
+		faction="Faction.nacronis"
+		text="Placeholder" />
+	
+	<!-- Yevethan Protectorate -->
+	<Hero id="yevethan_placeholder_1"
+		faction="Faction.spaar"
+		text="Placeholder" />
+
+	<!-- Pabu -->
+	<Hero id="pabu_placeholder_1"
+		faction="Faction.pabu"
+		text="Placeholder" />
+	
+	<!-- Pipada -->
+	<Hero id="pipada_placeholder_1"
+		faction="Faction.pipada"
+		text="Placeholder" />
+	
+	<!-- Polis Massa -->
+	<Hero id="polis_massa_placeholder_1"
+		faction="Faction.polis_massa"
+		text="Placeholder" />
+	
+	<!-- Vak Combine -->
+	<Hero id="vak_combine_placeholder_1"
+		faction="Faction.vak_combine"
+		text="Placeholder" />
+	
+	<!-- Sesid -->
+	<Hero id="sesid_placeholder_1"
+		faction="Faction.sesid"
+		text="Placeholder" />
+	
+	<!-- Stennaros -->
+	<Hero id="stennaros_placeholder_1"
+		faction="Faction.stennaros"
+		text="Placeholder" />
+	
+	<!-- Tund -->
+	<Hero id="tund_placeholder_1"
+		faction="Faction.tund"
+		text="Placeholder" />
+	
+	<!-- Utapau -->
+	<Hero id="utapau_placeholder_1"
+		faction="Faction.utapau"
+		text="Placeholder" />
+	
+	<!-- Virgillia -->
+	<Hero id="virgillia_placeholder_1"
+		faction="Faction.virgillia"
+		text="Placeholder" />
+	
+	<!-- Warlentta -->
+	<Hero id="warlentta_placeholder_1"
+		faction="Faction.warlentta"
+		text="Placeholder" />
+	
+	<!-- Orinda -->
+	<Hero id="orinda_placeholder_1"
+		faction="Faction.orinda"
+		text="Placeholder" />
 </Heroes>

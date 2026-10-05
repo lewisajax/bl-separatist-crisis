@@ -51,5 +51,120 @@
 		faction="Faction.rinnrivin"
 		text="Placeholder" />
 
+	<!-- Andelm -->
+	<Hero id="andelm_placeholder_1"
+		faction="Faction.andelm"
+		text="Placeholder" />
+
+	<!-- Nar Kanji -->
+	<Hero id="narkanji_placeholder_1"
+		faction="Faction.narkanji"
+		text="Placeholder" />
+	
+	<!-- Hidden Hand -->
+	<Hero id="hidden_hand_placeholder_1"
+		faction="Faction.hidden_hand"
+		text="Placeholder" />
+	
+	<!-- Offworld Mining Corporation -->
+	<Hero id="offworld_mining_corp_placeholder_1"
+		faction="Faction.offworld_mining_corp"
+		text="Placeholder" />
+
+	<!-- Batuu -->
+	<Hero id="batuu_placeholder_1"
+		faction="Faction.batuu"
+		text="Placeholder" />
+	
+	<!-- Cyban Front -->
+	<Hero id="cyban_front_placeholder_1"
+		faction="Faction.cyban_front"
+		text="Placeholder" />
+	
+	<!-- Daiyu -->
+	<Hero id="daiyu_placeholder_1"
+		faction="Faction.daiyu"
+		text="Placeholder" />
+	
+	<!-- The Hammers Syndicate -->
+	<Hero id="hammers_syndicate_placeholder_1"
+		faction="Faction.hammers_syndicate"
+		text="Placeholder" />
+	
+	<!-- Entropian Hive -->
+	<Hero id="entropian_hive_placeholder_1"
+		faction="Faction.entropian_hive"
+		text="Placeholder" />
+	
+	<!-- Ohnaka Gang -->
+	<Hero id="ohnaka_gang_placeholder_1"
+		faction="Faction.ohnaka_gang"
+		text="Placeholder" />
+	
+	<!-- Gamorr -->
+	<Hero id="gamorr_placeholder_1"
+		faction="Faction.gamorr"
+		text="Placeholder" />
+	
+	<!-- Serolonis -->
+	<Hero id="serolonis_placeholder_1"
+		faction="Faction.serolonis"
+		text="Placeholder" />
+	
+	<!-- Son-tuul Pride -->
+	<Hero id="son_tuul_placeholder_1"
+		faction="Faction.son_tuul"
+		text="Placeholder" />
+	
+	<!-- Hyloban Enforcers -->
+	<Hero id="hyloban_enforcers_placeholder_1"
+		faction="Faction.hyloban_enforcers"
+		text="Placeholder" />
+	
+	<!-- Ashiga Clan -->
+	<Hero id="ashiga_placeholder_1"
+		faction="Faction.ashiga"
+		text="Placeholder" />
+	
+	<!-- Bedlam Raiders -->
+	<Hero id="bedlam_raiders_placeholder_1"
+		faction="Faction.bedlam_raiders"
+		text="Placeholder" />
+	
+	<!-- Carpo Syndicate -->
+	<Hero id="carpo_syndicate_placeholder_1"
+		faction="Faction.carpo_syndicate"
+		text="Placeholder" />
+	
+	<!-- Quarzite -->
+	<Hero id="quarzite_placeholder_1"
+		faction="Faction.quarzite"
+		text="Placeholder" />
+	
+	<!-- Borgo Prime -->
+	<Hero id="borgo_prime_placeholder_1"
+		faction="Faction.borgo_prime"
+		text="Placeholder" />
+	
+	<!-- Spice Mining Guild -->
+	<Hero id="spice_guild_placeholder_1"
+		faction="Faction.spice_guild"
+		text="Placeholder" />
+	
+	<!-- Vorlag -->
+	<Hero id="vorlag_placeholder_1"
+		faction="Faction.vorlag"
+		text="Placeholder" />
+	
+	<!-- Vranki's Gang -->
+	<Hero id="vrankis_gang_placeholder_1"
+		faction="Faction.vrankis_gang"
+		text="Placeholder" />
+	
+	<!-- Takodana -->
+	<Hero id="takodana_placeholder_1"
+		faction="Faction.takodana"
+		text="Placeholder" />
+
 
 </Heroes>

@@ -3147,6 +3147,654 @@
 		</policies>
 	</Kingdom>
 
+	<Kingdom id="barab"
+		initial_home_settlement="Settlement.castle_NS_BR1"
+		owner="Hero.barab_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Barab"
+		short_name="Barab"
+		title="Barab"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="dagoyan_order"
+		initial_home_settlement="Settlement.castle_NS_DO1"
+		owner="Hero.dagoyan_order_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Dagoyan Order"
+		short_name="Dagoyan Order"
+		title="Dagoyan Order"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="bogano"
+		initial_home_settlement="Settlement.castle_NS_BG1"
+		owner="Hero.bogano_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Bogano"
+		short_name="Bogano"
+		title="Bogano"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="dqar"
+		initial_home_settlement="Settlement.castle_NS_DQ1"
+		owner="Hero.dqar_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="D'Qar"
+		short_name="D'Qar"
+		title="D'Qar"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="dannamore"
+		initial_home_settlement="Settlement.castle_NS_DM1"
+		owner="Hero.dannamore_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Dannamore"
+		short_name="Dannamore"
+		title="Dannamore"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="nightsisters"
+		initial_home_settlement="Settlement.castle_NS_NS1"
+		owner="Hero.nightsisters_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Nightsisters"
+		short_name="Nightsisters"
+		title="Nightsisters"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="eiram"
+		initial_home_settlement="Settlement.castle_NS_EI1"
+		owner="Hero.eiram_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Eiram"
+		short_name="Eiram"
+		title="Eiram"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="gree"
+		initial_home_settlement="Settlement.castle_NS_GE1"
+		owner="Hero.gree_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Gree Enclave"
+		short_name="Gree Enclave"
+		title="Gree Enclave"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="kesh"
+		initial_home_settlement="Settlement.castle_NS_KE1"
+		owner="Hero.kesh_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Kesh"
+		short_name="Kesh"
+		title="Kesh"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<!-- <Kingdom id="ktathatn"
+		initial_home_settlement="Settlement.castle_NS_KT1"
+		owner="Hero.ktathatn_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Ktath'atn"
+		short_name="Ktath'atn"
+		title="Ktath'atn"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom> -->
+
+	<Kingdom id="lannik"
+		initial_home_settlement="Settlement.castle_NS_LK1"
+		owner="Hero.lannik_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Lannik"
+		short_name="Lannik"
+		title="Lannik"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="santhe_corporation"
+		initial_home_settlement="Settlement.castle_NS_SC1"
+		owner="Hero.santhe_corporation_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Santhe Corporation"
+		short_name="Santhe Corporation"
+		title="Santhe Corporation"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="lioaoin"
+		initial_home_settlement="Settlement.castle_NS_LR1"
+		owner="Hero.lioaoin_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Lioaoin Regime"
+		short_name="Lioaoin Regime"
+		title="Lioaoin Regime"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="marleyvane"
+		initial_home_settlement="Settlement.castle_NS_ML1"
+		owner="Hero.marleyvane_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Marleyvane"
+		short_name="Marleyvane"
+		title="Marleyvane"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="nacronis"
+		initial_home_settlement="Settlement.castle_NS_NC1"
+		owner="Hero.nacronis_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Nacronis"
+		short_name="Nacronis"
+		title="Nacronis"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="yevethan"
+		initial_home_settlement="Settlement.castle_NS_YP1"
+		owner="Hero.yevethan_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Yevethan Protectorate"
+		short_name="Yevethan Protectorate"
+		title="Yevethan Protectorate"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="pabu"
+		initial_home_settlement="Settlement.castle_NS_PB1"
+		owner="Hero.pabu_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Pabu"
+		short_name="Pabu"
+		title="Pabu"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="pipada"
+		initial_home_settlement="Settlement.castle_NS_PP1"
+		owner="Hero.pipada_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Pipada"
+		short_name="Pipada"
+		title="Pipada"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="polis_massa"
+		initial_home_settlement="Settlement.castle_NS_PM1"
+		owner="Hero.polis_massa_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Polis Massa"
+		short_name="Polis Massa"
+		title="Polis Massa"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="vak_combine"
+		initial_home_settlement="Settlement.castle_NS_VC1"
+		owner="Hero.vak_combine_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Vak Combine"
+		short_name="Vak Combine"
+		title="Vak Combine"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="sesid"
+		initial_home_settlement="Settlement.castle_NS_SS1"
+		owner="Hero.sesid_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Sesid"
+		short_name="Sesid"
+		title="Sesid"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="stennaros"
+		initial_home_settlement="Settlement.castle_NS_ST1"
+		owner="Hero.stennaros_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Stennaros"
+		short_name="Stennaros"
+		title="Stennaros"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="tund"
+		initial_home_settlement="Settlement.castle_NS_TU1"
+		owner="Hero.tund_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Tund"
+		short_name="Tund"
+		title="Tund"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="utapau"
+		initial_home_settlement="Settlement.castle_NS_UT1"
+		owner="Hero.utapau_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Utapau"
+		short_name="Utapau"
+		title="Utapau"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="virgillia"
+		initial_home_settlement="Settlement.castle_NS_VG1"
+		owner="Hero.virgillia_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Virgillia"
+		short_name="Virgillia"
+		title="Virgillia"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="warlentta"
+		initial_home_settlement="Settlement.castle_NS_WR1"
+		owner="Hero.warlentta_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Warlentta"
+		short_name="Warlentta"
+		title="Warlentta"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="orinda"
+		initial_home_settlement="Settlement.castle_NS_OR1"
+		owner="Hero.orinda_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Orinda"
+		short_name="Orinda"
+		title="Orinda"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
 	<!-- Crime Syndicates -->
 	<Kingdom id="hutt_cartel"
 		initial_home_settlement="Settlement.town_HC1"
@@ -3306,6 +3954,558 @@
 		name="Rinnrivin Di's Cartel"
 		short_name="Rinnrivin Di's Cartel"
 		title="Rinnrivin Di's Cartel"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+
+	<Kingdom id="andelm"
+		initial_home_settlement="Settlement.castle_CS_AD1"
+		owner="Hero.andelm_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Andelm"
+		short_name="Andelm"
+		title="Andelm"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="narkanji"
+		initial_home_settlement="Settlement.castle_CS_NK1"
+		owner="Hero.narkanji_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Nar Kanji"
+		short_name="Nar Kanji"
+		title="Nar Kanji"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="hidden_hand"
+		initial_home_settlement="Settlement.castle_CS_HH1"
+		owner="Hero.hidden_hand_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Hidden Hand"
+		short_name="Hidden Hand"
+		title="Hidden Hand"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="offworld_mining_corp"
+		initial_home_settlement="Settlement.castle_CS_MC1"
+		owner="Hero.offworld_mining_corp_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Offworld Mining Corporation"
+		short_name="Offworld Mining Corporation"
+		title="Offworld Mining Corporation"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="batuu"
+		initial_home_settlement="Settlement.castle_CS_BT1"
+		owner="Hero.batuu_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Batuu"
+		short_name="Batuu"
+		title="Batuu"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="cyban_front"
+		initial_home_settlement="Settlement.castle_CS_CF1"
+		owner="Hero.cyban_front_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Cyban Front"
+		short_name="Cyban Front"
+		title="Cyban Front"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="daiyu"
+		initial_home_settlement="Settlement.castle_CS_DY1"
+		owner="Hero.daiyu_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Daiyu"
+		short_name="Daiyu"
+		title="Daiyu"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="hammers_syndicate"
+		initial_home_settlement="Settlement.castle_CS_HS1"
+		owner="Hero.hammers_syndicate_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="The Hammers Syndicate"
+		short_name="The Hammers Syndicate"
+		title="The Hammers Syndicate"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="entropian_hive"
+		initial_home_settlement="Settlement.castle_CS_EH1"
+		owner="Hero.entropian_hive_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Entropian Hive"
+		short_name="Entropian Hive"
+		title="Entropian Hive"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="ohnaka_gang"
+		initial_home_settlement="Settlement.castle_CS_OG1"
+		owner="Hero.ohnaka_gang_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Ohnaka Gang"
+		short_name="Ohnaka Gang"
+		title="Ohnaka Gang"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="gamorr"
+		initial_home_settlement="Settlement.castle_CS_GA1"
+		owner="Hero.gamorr_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Gamorr"
+		short_name="Gamorr"
+		title="Gamorr"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="serolonis"
+		initial_home_settlement="Settlement.castle_CS_SR1"
+		owner="Hero.serolonis_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Serolonis"
+		short_name="Serolonis"
+		title="Serolonis"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="son_tuul"
+		initial_home_settlement="Settlement.castle_CS_SP1"
+		owner="Hero.son_tuul_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Son-tuul Pride"
+		short_name="Son-tuul Pride"
+		title="Son-tuul Pride"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="hyloban_enforcers"
+		initial_home_settlement="Settlement.castle_CS_HE1"
+		owner="Hero.hyloban_enforcers_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Hyloban Enforcers"
+		short_name="Hyloban Enforcers"
+		title="Hyloban Enforcers"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="ashiga"
+		initial_home_settlement="Settlement.castle_CS_AS1"
+		owner="Hero.ashiga_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Ashiga Clan"
+		short_name="Ashiga Clan"
+		title="Ashiga Clan"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="bedlam_raiders"
+		initial_home_settlement="Settlement.castle_CS_BR1"
+		owner="Hero.bedlam_raiders_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Bedlam Raiders"
+		short_name="Bedlam Raiders"
+		title="Bedlam Raiders"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="carpo_syndicate"
+		initial_home_settlement="Settlement.castle_CS_CS1"
+		owner="Hero.carpo_syndicate_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Carpo Syndicate"
+		short_name="Carpo Syndicate"
+		title="Carpo Syndicate"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="quarzite"
+		initial_home_settlement="Settlement.castle_CS_QU1"
+		owner="Hero.quarzite_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Quarzite"
+		short_name="Quarzite"
+		title="Quarzite"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="borgo_prime"
+		initial_home_settlement="Settlement.castle_CS_BP1"
+		owner="Hero.borgo_prime_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Borgo Prime"
+		short_name="Borgo Prime"
+		title="Borgo Prime"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="spice_guild"
+		initial_home_settlement="Settlement.castle_CS_SG1"
+		owner="Hero.spice_guild_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Spice Mining Guild"
+		short_name="Spice Mining Guild"
+		title="Spice Mining Guild"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="vorlag"
+		initial_home_settlement="Settlement.castle_CS_VO1"
+		owner="Hero.vorlag_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Vorlag"
+		short_name="Vorlag"
+		title="Vorlag"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="vrankis_gang"
+		initial_home_settlement="Settlement.castle_CS_VG1"
+		owner="Hero.vrankis_gang_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Vranki's Gang"
+		short_name="Vranki's Gang"
+		title="Vranki's Gang"
+		ruler_title="Excellency"
+		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="takodana"
+		initial_home_settlement="Settlement.castle_CS_TK1"
+		owner="Hero.takodana_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.hutt"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Takodana"
+		short_name="Takodana"
+		title="Takodana"
 		ruler_title="Excellency"
 		text="Comprised of the Hutt Cartel, Black Sun, and the Pyke Syndicate, the Crime Syndicates have a hand in almost everything illicit throughout the galaxy. From spice to slaves, the syndicates involve themselves in any venture that generates credits, regardless of the morality. They control a large swathe of territory in the Outer Rim, mostly keeping out of galactic affairs. Instead, they use the calamity surrounding the Clone Wars to spread their tendrils and increase their vast wealth.">
 		<relationships>

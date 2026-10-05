@@ -113,5 +113,235 @@ adding nodes to this xml. For examples please refer to: SandBox/ModuleData/spcla
 		super_faction="Kingdom.rinnrivin"
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
+	<!-- Andelm -->
+	<Faction id="andelm"
+		initial_home_settlement="Settlement.castle_CS_AD1"
+		name="Jaum's Crime Syndicate"
+		tier="5"
+		owner="Hero.andelm_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.andelm"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Nar Kanji -->
+	<Faction id="narkanji"
+		initial_home_settlement="Settlement.castle_CS_NK1"
+		name="Kanjiklub"
+		tier="5"
+		owner="Hero.narkanji_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.narkanji"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Hidden Hand -->
+	<Faction id="hidden_hand"
+		initial_home_settlement="Settlement.castle_CS_HH1"
+		name="Hidden Hand"
+		tier="5"
+		owner="Hero.hidden_hand_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.hidden_hand"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Offworld Mining Corporation -->
+	<Faction id="offworld_mining_corp"
+		initial_home_settlement="Settlement.castle_CS_MC1"
+		name="Offworld Mining Corporation"
+		tier="5"
+		owner="Hero.offworld_mining_corp_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.offworld_mining_corp"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Batuu -->
+	<Faction id="batuu"
+		initial_home_settlement="Settlement.castle_CS_BT1"
+		name="Black Spire"
+		tier="5"
+		owner="Hero.batuu_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.batuu"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Cyban Front -->
+	<Faction id="cyban_front"
+		initial_home_settlement="Settlement.castle_CS_CF1"
+		name="Droid Gotra"
+		tier="5"
+		owner="Hero.cyban_front_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.cyban_front"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Daiyu -->
+	<Faction id="daiyu"
+		initial_home_settlement="Settlement.castle_CS_DY1"
+		name="Daiyu"
+		tier="5"
+		owner="Hero.daiyu_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.daiyu"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- The Hammers Syndicate -->
+	<Faction id="hammers_syndicate"
+		initial_home_settlement="Settlement.castle_CS_HS1"
+		name="The Hammers"
+		tier="5"
+		owner="Hero.hammers_syndicate_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.hammers_syndicate"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Entropian Hive -->
+	<Faction id="entropian_hive"
+		initial_home_settlement="Settlement.castle_CS_EH1"
+		name="Entropian Hive"
+		tier="5"
+		owner="Hero.entropian_hive_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.entropian_hive"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Ohnaka Gang -->
+	<Faction id="ohnaka_gang"
+		initial_home_settlement="Settlement.castle_CS_OG1"
+		name="Ohnaka Gang"
+		tier="5"
+		owner="Hero.ohnaka_gang_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.ohnaka_gang"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Gamorr -->
+	<Faction id="gamorr"
+		initial_home_settlement="Settlement.castle_CS_GA1"
+		name="Gamorr"
+		tier="5"
+		owner="Hero.gamorr_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.gamorr"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Serolonis -->
+	<Faction id="serolonis"
+		initial_home_settlement="Settlement.castle_CS_SR1"
+		name="Millegi's Gang"
+		tier="5"
+		owner="Hero.serolonis_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.serolonis"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Son-tuul Pride -->
+	<Faction id="son_tuul"
+		initial_home_settlement="Settlement.castle_CS_SP1"
+		name="Son-tuul Pride"
+		tier="5"
+		owner="Hero.son_tuul_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.son_tuul"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Hyloban Enforcers -->
+	<Faction id="hyloban_enforcers"
+		initial_home_settlement="Settlement.castle_CS_HE1"
+		name="Hyloban Enforcers"
+		tier="5"
+		owner="Hero.hyloban_enforcers_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.hyloban_enforcers"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Ashiga Clan -->
+	<Faction id="ashiga"
+		initial_home_settlement="Settlement.castle_CS_AS1"
+		name="Ashiga Clan"
+		tier="5"
+		owner="Hero.ashiga_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.ashiga"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Bedlam Raiders -->
+	<Faction id="bedlam_raiders"
+		initial_home_settlement="Settlement.castle_CS_BR1"
+		name="Bedlam Raiders"
+		tier="5"
+		owner="Hero.bedlam_raiders_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.bedlam_raiders"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Carpo Syndicate -->
+	<Faction id="carpo_syndicate"
+		initial_home_settlement="Settlement.castle_CS_CS1"
+		name="Carpo Organization"
+		tier="5"
+		owner="Hero.carpo_syndicate_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.carpo_syndicate"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Quarzite -->
+	<Faction id="quarzite"
+		initial_home_settlement="Settlement.castle_CS_QU1"
+		name="Belugan Dictatorship"
+		tier="5"
+		owner="Hero.quarzite_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.quarzite"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Borgo Prime -->
+	<Faction id="borgo_prime"
+		initial_home_settlement="Settlement.castle_CS_BP1"
+		name="Dark Wing"
+		tier="5"
+		owner="Hero.borgo_prime_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.borgo_prime"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Spice Mining Guild -->
+	<Faction id="spice_guild"
+		initial_home_settlement="Settlement.castle_CS_SG1"
+		name="Spice Mining Guild"
+		tier="5"
+		owner="Hero.spice_guild_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.spice_guild"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Vorlag -->
+	<Faction id="vorlag"
+		initial_home_settlement="Settlement.castle_CS_VO1"
+		name="Canker the Red's Gang"
+		tier="5"
+		owner="Hero.vorlag_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.vorlag"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Vranki's Gang -->
+	<Faction id="vrankis_gang"
+		initial_home_settlement="Settlement.castle_CS_VG1"
+		name="Vranki's Gang"
+		tier="5"
+		owner="Hero.vrankis_gang_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.vrankis_gang"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<!-- Takodana -->
+	<Faction id="takodana"
+		initial_home_settlement="Settlement.castle_CS_TK1"
+		name="Takodana"
+		tier="5"
+		owner="Hero.takodana_placeholder_1"
+		culture="Culture.hutt"
+		super_faction="Kingdom.takodana"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+
 
 </Factions>

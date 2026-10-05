@@ -5694,6 +5694,1241 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
+	<Settlement id="castle_NS_BR1" name="{=Settlements.Settlement.name.castle_NS_BR1}Barab" owner="Faction.barab" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_BR1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_BR1_1" name="{=Settlements.Settlement.name.castle_village_NS_BR1_1}Omereth" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_BR1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_BR1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_BR1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_BR1_2" name="{=Settlements.Settlement.name.castle_village_NS_BR1_2}Palliduva" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_BR1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_BR1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_BR1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_DO1" name="{=Settlements.Settlement.name.castle_NS_DO1}Bardotta" owner="Faction.bahktov_council" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_DO1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_DO1_1" name="{=Settlements.Settlement.name.castle_village_NS_DO1_1}Phu" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_DO1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_DO1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_DO1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_DO1_2" name="{=Settlements.Settlement.name.castle_village_NS_DO1_2}Zardossa Stix" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_DO1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_DO1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_DO1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_BG1" name="{=Settlements.Settlement.name.castle_NS_BG1}Bogano" owner="Faction.bogano" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_BG1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_BG1_1" name="{=Settlements.Settlement.name.castle_village_NS_BG1_1}I'vorcia" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_BG1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_BG1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_BG1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_BG1_2" name="{=Settlements.Settlement.name.castle_village_NS_BG1_2}Kellgar" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_BG1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_BG1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_BG1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_DQ1" name="{=Settlements.Settlement.name.castle_NS_DQ1}D'Qar" owner="Faction.dqar" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_DQ1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_DQ1_1" name="{=Settlements.Settlement.name.castle_village_NS_DQ1_1}Celsor" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_DQ1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_DQ1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_DQ1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_DQ1_2" name="{=Settlements.Settlement.name.castle_village_NS_DQ1_2}Idaflor" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_DQ1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_DQ1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_DQ1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_DQ1_3" name="{=Settlements.Settlement.name.castle_village_NS_DQ1_3}Rugosa" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_DQ1_3}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_DQ1_3" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_DQ1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_DM1" name="{=Settlements.Settlement.name.castle_NS_DM1}Dannamore" owner="Faction.dannamore" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_DM1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_DM1_1" name="{=Settlements.Settlement.name.castle_village_NS_DM1_1}Chandars Folly" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_DM1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_DM1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_DM1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_NS1" name="{=Settlements.Settlement.name.castle_NS_NS1}Dathomir" owner="Faction.nightsisters" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_NS1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_NS1_1" name="{=Settlements.Settlement.name.castle_village_NS_NS1_1}Jeosyn" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_NS1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_NS1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_NS1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_EI1" name="{=Settlements.Settlement.name.castle_NS_EI1}Eiram" owner="Faction.eiram" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_EI1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_EI1_1" name="{=Settlements.Settlement.name.castle_village_NS_EI1_1}Dalna" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_EI1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_EI1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_EI1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_EI1_2" name="{=Settlements.Settlement.name.castle_village_NS_EI1_2}Lafete" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_EI1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_EI1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_EI1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_EI1_3" name="{=Settlements.Settlement.name.castle_village_NS_EI1_3}Sump" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_EI1_3}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_EI1_3" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_EI1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_GE1" name="{=Settlements.Settlement.name.castle_NS_GE1}Gree" owner="Faction.gree" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_GE1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_GE1_1" name="{=Settlements.Settlement.name.castle_village_NS_GE1_1}Birukay" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_GE1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_GE1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_GE1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_KE1" name="{=Settlements.Settlement.name.castle_NS_KE1}Kesh" owner="Faction.kesh" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_KE1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_KE1_1" name="{=Settlements.Settlement.name.castle_village_NS_KE1_1}Gotar" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_KE1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_KE1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_KE1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_KE1_2" name="{=Settlements.Settlement.name.castle_village_NS_KE1_2}Lowick" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_KE1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_KE1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_KE1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_LK1" name="{=Settlements.Settlement.name.castle_NS_LK1}Lannik" owner="Faction.lannik" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_LK1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_LK1_1" name="{=Settlements.Settlement.name.castle_village_NS_LK1_1}Crul" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_LK1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_LK1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_LK1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_LK1_2" name="{=Settlements.Settlement.name.castle_village_NS_LK1_2}Demiloch" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_LK1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_LK1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_LK1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_SC1" name="{=Settlements.Settlement.name.castle_NS_SC1}Lianna" owner="Faction.santhe_corporation" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_SC1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_SC1_1" name="{=Settlements.Settlement.name.castle_village_NS_SC1_1}Five Points" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_SC1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_SC1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_SC1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_LR1" name="{=Settlements.Settlement.name.castle_NS_LR1}Lioaoi" owner="Faction.lioaoin" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_LR1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_LR1_1" name="{=Settlements.Settlement.name.castle_village_NS_LR1_1}Rapacc" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_LR1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_LR1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_LR1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_ML1" name="{=Settlements.Settlement.name.castle_NS_ML1}Marleyvane" owner="Faction.marleyvane" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_ML1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_ML1_1" name="{=Settlements.Settlement.name.castle_village_NS_ML1_1}Yarma" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_ML1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_ML1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_ML1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_ML1_2" name="{=Settlements.Settlement.name.castle_village_NS_ML1_2}Qhulosk" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_ML1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_ML1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_ML1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_NC1" name="{=Settlements.Settlement.name.castle_NS_NC1}Nacronis" owner="Faction.nacronis" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_NC1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_NC1_1" name="{=Settlements.Settlement.name.castle_village_NS_NC1_1}Mapuzo" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_NC1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_NC1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_NC1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_YP1" name="{=Settlements.Settlement.name.castle_NS_YP1}Nzoth" owner="Faction.spaar" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_YP1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_YP1_1" name="{=Settlements.Settlement.name.castle_village_NS_YP1_1}Cal-Seti" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_YP1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_YP1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_YP1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_PB1" name="{=Settlements.Settlement.name.castle_NS_PB1}Pabu" owner="Faction.pabu" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_PB1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_PB1_1" name="{=Settlements.Settlement.name.castle_village_NS_PB1_1}Lokud" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_PB1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_PB1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_PB1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_PP1" name="{=Settlements.Settlement.name.castle_NS_PP1}Pipada" owner="Faction.pipada" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_PP1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_PP1_1" name="{=Settlements.Settlement.name.castle_village_NS_PP1_1}H'nemthe" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_PP1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_PP1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_PP1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_PP1_2" name="{=Settlements.Settlement.name.castle_village_NS_PP1_2}Wretch of Tayron" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_PP1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_PP1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_PP1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_PM1" name="{=Settlements.Settlement.name.castle_NS_PM1}Polis Massa" owner="Faction.polis_massa" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_PM1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_PM1_1" name="{=Settlements.Settlement.name.castle_village_NS_PM1_1}Subterrel" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_PM1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_PM1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_PM1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_PM1_2" name="{=Settlements.Settlement.name.castle_village_NS_PM1_2}Trymant" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_PM1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_PM1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_PM1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_PM1_3" name="{=Settlements.Settlement.name.castle_village_NS_PM1_3}Winsit" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_PM1_3}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_PM1_3" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_PM1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_VC1" name="{=Settlements.Settlement.name.castle_NS_VC1}Primea" owner="Faction.vak_combine" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_VC1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_VC1_1" name="{=Settlements.Settlement.name.castle_village_NS_VC1_1}Sunrise" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_VC1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_VC1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_VC1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_SS1" name="{=Settlements.Settlement.name.castle_NS_SS1}Sesid" owner="Faction.sesid" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_SS1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_SS1_1" name="{=Settlements.Settlement.name.castle_village_NS_SS1_1}Basteel" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_SS1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_SS1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_SS1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_SS1_2" name="{=Settlements.Settlement.name.castle_village_NS_SS1_2}Galaan" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_SS1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_SS1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_SS1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_SS1_3" name="{=Settlements.Settlement.name.castle_village_NS_SS1_3}Jaresh" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_SS1_3}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_SS1_3" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_SS1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_ST1" name="{=Settlements.Settlement.name.castle_NS_ST1}Stennaros" owner="Faction.stennaros" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_ST1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_ST1_1" name="{=Settlements.Settlement.name.castle_village_NS_ST1_1}Chyron" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_ST1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_ST1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_ST1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_ST1_2" name="{=Settlements.Settlement.name.castle_village_NS_ST1_2}Serelia" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_ST1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_ST1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_ST1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_TU1" name="{=Settlements.Settlement.name.castle_NS_TU1}Tund" owner="Faction.tund" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_TU1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_TU1_1" name="{=Settlements.Settlement.name.castle_village_NS_TU1_1}Berzite" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_TU1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_TU1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_TU1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_TU1_2" name="{=Settlements.Settlement.name.castle_village_NS_TU1_2}Uaua" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_TU1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_TU1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_TU1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_UT1" name="{=Settlements.Settlement.name.castle_NS_UT1}Utapau" owner="Faction.utapau" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_UT1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_UT1_1" name="{=Settlements.Settlement.name.castle_village_NS_UT1_1}Dagobah" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_UT1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_UT1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_UT1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_VG1" name="{=Settlements.Settlement.name.castle_NS_VG1}Virgillia" owner="Faction.virgillia" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_VG1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_VG1_1" name="{=Settlements.Settlement.name.castle_village_NS_VG1_1}Lipsec" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_VG1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_VG1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_VG1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_VG1_2" name="{=Settlements.Settlement.name.castle_village_NS_VG1_2}Shuraden" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_VG1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_VG1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_VG1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_WR1" name="{=Settlements.Settlement.name.castle_NS_WR1}Warlentta" owner="Faction.warlentta" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_WR1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_WR1_1" name="{=Settlements.Settlement.name.castle_village_NS_WR1_1}Caphexdis" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_WR1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_WR1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_WR1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_WR1_2" name="{=Settlements.Settlement.name.castle_village_NS_WR1_2}Silla" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_WR1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_WR1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_WR1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_NS_OR1" name="{=Settlements.Settlement.name.castle_NS_OR1}Orinda" owner="Faction.orinda" posX="1314.33" posY="724.67" culture="Culture.neutral_systems" gate_posX="1313.352" gate_posY="724.672">
+		<Components>
+			<Town id="castle_comp_NS_OR1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_NS_OR1_1" name="{=Settlements.Settlement.name.castle_village_NS_OR1_1}Great Zilk" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_OR1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_OR1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_OR1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_OR1_2" name="{=Settlements.Settlement.name.castle_village_NS_OR1_2}Iridonia" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_OR1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_OR1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_OR1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_NS_OR1_3" name="{=Settlements.Settlement.name.castle_village_NS_OR1_3}Uba" posX="1317.67" posY="740" culture="Culture.neutral_systems" text="{=Settlements.Settlement.text.castle_village_NS_OR1_3}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_NS_OR1_3" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_NS_OR1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
 
 	<!-- Separatists -->
 	<Settlement id="town_SA1" name="{=Settlements.Settlement.name.town_SA1}Raxus" owner="Faction.separatist_council" posX="1620.33" posY="1527" culture="Culture.separatist" gate_posX="1619.352" gate_posY="1527.002" text="{=jXBnf2hQ}Razih is said to be the base from which Kannic explorers set forth to colonize the shores of the Perassic Sea in the centuries before the coming of the empire, the prows of their ships decorated with the intertwined vine leaves of the Kannic goddess of wealth, wine, love and war. Today, the Kannic tongue has been replaced by Nahasawi dialects and their religion is all but forgotten, but the symbol lives on, said to protect those who risk all for the sake of gain or glory.">
@@ -11110,6 +12345,280 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
+	<Settlement id="castle_CS_AD1" name="{=Settlements.Settlement.name.castle_CS_AD1}Andelm" owner="Faction.andelm" posX="1800.67" posY="905.33" culture="Culture.hutt" gate_posX="1799.692" gate_posY="905.332">
+		<Components>
+			<Town id="castle_comp_CS_AD1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_CS_AD1_1" name="{=Settlements.Settlement.name.castle_village_CS_AD1_1}Chagar" posX="1776.67" posY="924" culture="Culture.hutt" text="{=Settlements.Settlement.text.castle_village_CS_AD1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_CS_AD1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_CS_AD1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_CS_AD1_2" name="{=Settlements.Settlement.name.castle_village_CS_AD1_2}Svivren" posX="1761.33" posY="922.67" culture="Culture.hutt" text="{=Settlements.Settlement.text.castle_village_CS_AD1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_CS_AD1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_CS_AD1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_CS_NK1" name="{=Settlements.Settlement.name.castle_CS_NK1}Nar Kanji" owner="Faction.narkanji" posX="1800.67" posY="905.33" culture="Culture.hutt" gate_posX="1799.692" gate_posY="905.332">
+		<Components>
+			<Town id="castle_comp_CS_NK1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_CS_NK1_1" name="{=Settlements.Settlement.name.castle_village_CS_NK1_1}Ankhural" posX="1776.67" posY="924" culture="Culture.hutt" text="{=Settlements.Settlement.text.castle_village_CS_NK1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_CS_NK1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_CS_NK1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_CS_NK1_2" name="{=Settlements.Settlement.name.castle_village_CS_NK1_2}Dandoran" posX="1761.33" posY="922.67" culture="Culture.hutt" text="{=Settlements.Settlement.text.castle_village_CS_NK1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_CS_NK1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_CS_NK1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_CS_HH1" name="{=Settlements.Settlement.name.castle_CS_HH1}Heva" owner="Faction.hidden_hand" posX="1800.67" posY="905.33" culture="Culture.hutt" gate_posX="1799.692" gate_posY="905.332">
+		<Components>
+			<Town id="castle_comp_CS_HH1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_CS_HH1_1" name="{=Settlements.Settlement.name.castle_village_CS_HH1_1}Vint" posX="1776.67" posY="924" culture="Culture.hutt" text="{=Settlements.Settlement.text.castle_village_CS_HH1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_CS_HH1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_CS_HH1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_CS_HH1_2" name="{=Settlements.Settlement.name.castle_village_CS_HH1_2}Wick" posX="1761.33" posY="922.67" culture="Culture.hutt" text="{=Settlements.Settlement.text.castle_village_CS_HH1_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_CS_HH1_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_CS_HH1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_CS_HH2" name="{=Settlements.Settlement.name.castle_CS_HH2}Arvina" owner="Faction.hidden_hand" posX="1800.67" posY="905.33" culture="Culture.hutt" gate_posX="1799.692" gate_posY="905.332">
+		<Components>
+			<Town id="castle_comp_CS_HH2" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_CS_HH2_1" name="{=Settlements.Settlement.name.castle_village_CS_HH2_1}Hubin" posX="1776.67" posY="924" culture="Culture.hutt" text="{=Settlements.Settlement.text.castle_village_CS_HH2_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_CS_HH2_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_CS_HH2" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_village_CS_HH2_2" name="{=Settlements.Settlement.name.castle_village_CS_HH2_2}Kaddak" posX="1761.33" posY="922.67" culture="Culture.hutt" text="{=Settlements.Settlement.text.castle_village_CS_HH2_2}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_CS_HH2_2" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_CS_HH2" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_CS_MC1" name="{=Settlements.Settlement.name.castle_CS_MC1}Bandomeer" owner="Faction.offworld_mining_corp" posX="1800.67" posY="905.33" culture="Culture.hutt" gate_posX="1799.692" gate_posY="905.332">
+		<Components>
+			<Town id="castle_comp_CS_MC1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_CS_MC1_1" name="{=Settlements.Settlement.name.castle_village_CS_MC1_1}Spellhaus" posX="1776.67" posY="924" culture="Culture.hutt" text="{=Settlements.Settlement.text.castle_village_CS_MC1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_CS_MC1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_CS_MC1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
+	<Settlement id="castle_CS_BT1" name="{=Settlements.Settlement.name.castle_CS_BT1}Batuu" owner="Faction.batuu" posX="1800.67" posY="905.33" culture="Culture.hutt" gate_posX="1799.692" gate_posY="905.332">
+		<Components>
+			<Town id="castle_comp_CS_BT1" is_castle="true" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" prosperity="420">
+				<Buildings>
+					<Building id="building_castle_fortifications" level="2" />
+					<Building id="building_castle_barracks" level="1" />
+					<Building id="building_castle_training_fields" level="1" />
+					<Building id="building_castle_guard_house" level="0" />
+					<Building id="building_castle_siege_workshop" level="1" />
+					<Building id="building_castle_castallans_office" level="1" />
+					<Building id="building_castle_granary" level="1" />
+					<Building id="building_castle_craftmans_quarters" level="1" />
+					<Building id="building_castle_farmlands" level="2" />
+					<Building id="building_castle_mason" level="1" />
+					<Building id="building_castle_roads_and_paths" level="3" />
+				</Buildings>
+			</Town>
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.castle_complex">
+			<Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
+			<Location id="lordshall" scene_name_1="empire_castle_keep_a_l1_interior" scene_name_2="empire_castle_keep_a_l2_interior" scene_name_3="empire_castle_keep_a_l3_interior" />
+			<Location id="prison" scene_name="empire_dungeon_stealth" />
+		</Locations>
+	</Settlement>
+	<Settlement id="castle_village_CS_BT1_1" name="{=Settlements.Settlement.name.castle_village_CS_BT1_1}Ovanis" posX="1776.67" posY="924" culture="Culture.hutt" text="{=Settlements.Settlement.text.castle_village_CS_BT1_1}Varagos sits on the Aris river, a small highland stream that flows into the deep pool known as the Ophthys. The land here is not especially rich, but is sufficient for the raising of sheep.">
+		<Components>
+			<Village id="castle_village_comp_CS_BT1_1" village_type="VillageType.silk_plant" hearth="322" gate_rotation="0.008" bound="Settlement.castle_CS_BT1" background_crop_position="0.0" background_mesh="gui_bg_village_empire" wait_mesh="wait_empire_village" castle_background_mesh="gui_bg_castle_empire" />
+		</Components>
+		<Locations complex_template="LocationComplexTemplate.village_complex">
+			<Location id="village_center" scene_name="empire_village_003" max_prosperity="70" />
+		</Locations>
+		<CommonAreas>
+			<Area type="Pasture" name="{=fOUsLdZR}Pasture" />
+			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
+			<Area type="Bog" name="{=iXA5SttU}Bog" />
+		</CommonAreas>
+	</Settlement>
 
 	<!-- Pyke Syndicate -->
 	<Settlement id="town_CS_PK1" name="{=Settlements.Settlement.name.town_CS_PK1}Oba Diah" owner="Faction.pyke_syndicate" posX="1724" posY="1118.67" culture="Culture.hutt" gate_posX="1723.022" gate_posY="1118.672" text="{=79R6gi4l}Galend overlooks the wave-beaten Biscan coast. It takes in the catch from the Biscan's intrepid fishermen who venture out far into the western ocean, as well as the wool of sheep from the green fog-covered hills. The current line of Vlandian kings comes from the clans who settled in this region during Osric Iron-Arm's invasion.">
@@ -11685,6 +13194,71 @@
 			<SettlementGroupComponent id="group_NS_YV1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
 		</Components>
 	</Settlement>
+	<Settlement id="group_NS_BR1" name="Barab" posX="1751.33" posY="840.67" culture="Culture.empire" text="Group">
+		<Components>
+			<SettlementGroupComponent id="group_NS_BR1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+		</Components>
+	</Settlement>
+	<Settlement id="group_NS_BG1" name="Bogano" posX="1103.00" posY="1723.33" culture="Culture.empire" text="Group">
+		<Components>
+			<SettlementGroupComponent id="group_NS_BG1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+		</Components>
+	</Settlement>
+	<Settlement id="group_NS_DQ1" name="D'Qar" posX="1190.67" posY="368.00" culture="Culture.empire" text="Group">
+		<Components>
+			<SettlementGroupComponent id="group_NS_DQ1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+		</Components>
+	</Settlement>
+	<Settlement id="group_NS_EI1" name="Eiram" posX="644.67" posY="243.33" culture="Culture.empire" text="Group">
+		<Components>
+			<SettlementGroupComponent id="group_NS_EI1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+		</Components>
+	</Settlement>
+	<Settlement id="group_NS_LK1" name="Lannik" posX="1465.33" posY="807.33" culture="Culture.empire" text="Group">
+		<Components>
+			<SettlementGroupComponent id="group_NS_LK1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+		</Components>
+	</Settlement>
+	<Settlement id="group_NS_LR1" name="Lioaoi" posX="204.67" posY="1384.00" culture="Culture.empire" text="Group">
+		<Components>
+			<SettlementGroupComponent id="group_NS_LR1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+		</Components>
+	</Settlement>
+	<Settlement id="group_NS_ML1" name="Marleyvane" posX="1651.67" posY="1256.00" culture="Culture.empire" text="Group">
+		<Components>
+			<SettlementGroupComponent id="group_NS_ML1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+		</Components>
+	</Settlement>
+	<Settlement id="group_NS_YP1" name="Nzoth" posX="781.00" posY="1099.00" culture="Culture.empire" text="Group">
+		<Components>
+			<SettlementGroupComponent id="group_NS_YP1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+		</Components>
+	</Settlement>
+	<Settlement id="group_NS_VC1" name="Primea" posX="337.74" posY="1369.09" culture="Culture.empire" text="Group">
+		<Components>
+			<SettlementGroupComponent id="group_NS_VC1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+		</Components>
+	</Settlement>
+	<Settlement id="group_NS_SS1" name="Sesid" posX="1315.67" posY="1695.33" culture="Culture.empire" text="Group">
+		<Components>
+			<SettlementGroupComponent id="group_NS_SS1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+		</Components>
+	</Settlement>
+	<Settlement id="group_NS_ST1" name="Stennaros" posX="766.03" posY="517.76" culture="Culture.empire" text="Group">
+		<Components>
+			<SettlementGroupComponent id="group_NS_ST1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+		</Components>
+	</Settlement>
+	<Settlement id="group_NS_TU1" name="Tund" posX="1789.88" posY="1283.40" culture="Culture.empire" text="Group">
+		<Components>
+			<SettlementGroupComponent id="group_NS_TU1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+		</Components>
+	</Settlement>
+	<Settlement id="group_NS_OR1" name="Orinda" posX="808.93" posY="1445.86" culture="Culture.empire" text="Group">
+		<Components>
+			<SettlementGroupComponent id="group_NS_OR1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+		</Components>
+	</Settlement>
 
 	<!-- Crime Syndicates -->
 	<Settlement id="group_HC1" name="Nal Hutta" posX="1557.33" posY="927.33" culture="Culture.empire" text="Group">
@@ -11750,6 +13324,11 @@
 	<Settlement id="group_CS_TY1" name="Toydaria" posX="1524.00" posY="960.67" culture="Culture.empire" text="Group">
 		<Components>
 			<SettlementGroupComponent id="group_CS_TY1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
+		</Components>
+	</Settlement>
+	<Settlement id="group_CS_AD1" name="Andelm" posX="1182.00" posY="192.00" culture="Culture.empire" text="Group">
+		<Components>
+			<SettlementGroupComponent id="group_CS_AD1_comp" map_icon="empty_object" background_crop_position="0.0" background_mesh="gui_bg_village_battania" wait_mesh="retirement_wait" />
 		</Components>
 	</Settlement>
 
