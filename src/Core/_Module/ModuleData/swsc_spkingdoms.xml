@@ -2857,6 +2857,34 @@
 				id="policy_feudal_inheritance" />
 		</policies>
 	</Kingdom>
+	
+	<Kingdom id="jabiim"
+		initial_home_settlement="Settlement.castle_SA_JB1"
+		owner="Hero.jabiim_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.nimbus"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Jabiim"
+		short_name="Jabiim"
+		title="Jabiim"
+		ruler_title="Head of State"
+		text="Wracked with political corruption and decaying influence, the total collapse of the Republic seemed inevitable. Thousands of discontented Republic worlds needed a savior, and one would emerge to save them. Count Dooku of Serreno gave the Raxus Address, admonishing the Republic and the Jedi Order for allowing corruption to spread with impunity. Shortly following this address, Dooku founded the Confederacy of Independent Systems, promising free trade, drastically reduced taxation, and freedom from corruption. Tens of thousands of worlds answered his call, forming a government capable of contesting the might of the Republic. With a newly created army of millions of Battle Droids, they seek to defend their sovereignty against the Galactic Republic.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.galactic_republic"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
 
 	<!-- Neutral Systems -->
 	<Kingdom id="neutral_systems"

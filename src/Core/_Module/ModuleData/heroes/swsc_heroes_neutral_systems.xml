@@ -45,11 +45,6 @@
 	<Hero id="hapes_placeholder_1"
 		faction="Faction.hapes"
 		text="Placeholder" />
-
-	<!-- Lira San -->
-	<Hero id="lira_san_placeholder_1"
-		faction="Faction.lira_san"
-		text="Placeholder" />
 	
 	<!-- Czerka Corporation -->
 	<Hero id="czerka_corporation_placeholder_1"
@@ -205,4 +200,10 @@
 	<Hero id="orinda_placeholder_1"
 		faction="Faction.orinda"
 		text="Placeholder" />
+
+	<!-- NO KINGDOMS -->
+	<!-- Lira San -->
+	<!-- <Hero id="lira_san_placeholder_1"
+		faction="Faction.lira_san"
+		text="Placeholder" /> -->
 </Heroes>

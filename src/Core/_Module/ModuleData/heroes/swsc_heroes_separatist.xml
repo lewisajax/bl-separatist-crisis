@@ -304,4 +304,9 @@
 		faction="Faction.saleucami"
 		text="Placeholder" />
 	
+	<!-- Jabiim -->
+	<Hero id="jabiim_placeholder_1"
+		faction="Faction.jabiim"
+		text="Placeholder" />
+	
 </Heroes>
