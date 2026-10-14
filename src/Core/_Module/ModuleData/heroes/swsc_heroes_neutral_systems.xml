@@ -203,7 +203,62 @@
 
 	<!-- NO KINGDOMS -->
 	<!-- Lira San -->
-	<!-- <Hero id="lira_san_placeholder_1"
+	<Hero id="lira_san_placeholder_1"
 		faction="Faction.lira_san"
-		text="Placeholder" /> -->
+		text="Placeholder" />
+	
+	<!-- Adumar -->
+	<Hero id="adumar_placeholder_1"
+		faction="Faction.adumar"
+		text="Placeholder" />
+	
+	<!-- Klytus -->
+	<Hero id="klytus_placeholder_1"
+		faction="Faction.klytus"
+		text="Placeholder" />
+	
+	<!-- Ahch-To -->
+	<Hero id="ahch_to_placeholder_1"
+		faction="Faction.ahch_to"
+		text="Placeholder" />
+	
+	<!-- Aynaboni -->
+	<Hero id="aynaboni_placeholder_1"
+		faction="Faction.aynaboni"
+		text="Placeholder" />
+	
+	<!-- Bakura -->
+	<Hero id="bakura_placeholder_1"
+		faction="Faction.bakura"
+		text="Placeholder" />
+	
+	<!-- Endor -->
+	<Hero id="endor_placeholder_1"
+		faction="Faction.endor"
+		text="Placeholder" />
+	
+	<!-- Kakra -->
+	<Hero id="kakra_placeholder_1"
+		faction="Faction.kakra"
+		text="Placeholder" />
+	
+	<!-- Koke Frost -->
+	<Hero id="koke_frost_placeholder_1"
+		faction="Faction.koke_frost"
+		text="Placeholder" />
+	
+	<!-- Griq -->
+	<Hero id="griq_placeholder_1"
+		faction="Faction.griq"
+		text="Placeholder" />
+	
+	<!-- Parnassos -->
+	<Hero id="parnassos_placeholder_1"
+		faction="Faction.parnassos"
+		text="Placeholder" />
+	
+	<!-- Skye -->
+	<Hero id="skye_placeholder_1"
+		faction="Faction.skye"
+		text="Placeholder" />
 </Heroes>

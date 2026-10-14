@@ -404,13 +404,124 @@
 		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 	
 	<!-- NO KINGDOM -->
-	<!-- <Faction id="lira_san"
+	<Faction id="lira_san"
  		initial_home_settlement="Settlement.town_NS_LS1"
 		name="Lira San"
 		tier="5"
 		owner="Hero.lira_san_placeholder_1"
 		culture="Culture.neutral_systems"
+		super_faction="Kingdom.lira_san"
 		is_noble="true"
-		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" /> -->
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="adumar"
+ 		initial_home_settlement="Settlement.castle_NS_AD1"
+		name="Adumar"
+		tier="5"
+		owner="Hero.adumar_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.adumar"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="klytus"
+ 		initial_home_settlement="Settlement.castle_NS_KL1"
+		name="Klytus"
+		tier="5"
+		owner="Hero.klytus_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.klytus"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="ahch_to"
+ 		initial_home_settlement="Settlement.castle_NS_AT1"
+		name="Ahch-To"
+		tier="5"
+		owner="Hero.ahch_to_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.ahch_to"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="aynaboni"
+ 		initial_home_settlement="Settlement.castle_NS_AY1"
+		name="Aynaboni"
+		tier="5"
+		owner="Hero.aynaboni_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.aynaboni"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="bakura"
+ 		initial_home_settlement="Settlement.castle_NS_BK1"
+		name="Bakura"
+		tier="5"
+		owner="Hero.bakura_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.bakura"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="endor"
+ 		initial_home_settlement="Settlement.castle_NS_EN1"
+		name="Endor"
+		tier="5"
+		owner="Hero.endor_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.endor"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="kakra"
+ 		initial_home_settlement="Settlement.castle_NS_KA1"
+		name="Kakra"
+		tier="5"
+		owner="Hero.kakra_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.kakra"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="koke_frost"
+ 		initial_home_settlement="Settlement.castle_NS_KF1"
+		name="Koke Frost"
+		tier="5"
+		owner="Hero.koke_frost_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.koke_frost"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="griq"
+ 		initial_home_settlement="Settlement.castle_NS_GQ1"
+		name="Pits of Griq"
+		tier="5"
+		owner="Hero.griq_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.griq"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="parnassos"
+ 		initial_home_settlement="Settlement.castle_NS_PR1"
+		name="Scyre"
+		tier="5"
+		owner="Hero.parnassos_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.parnassos"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
+	
+	<Faction id="skye"
+ 		initial_home_settlement="Settlement.castle_NS_SK1"
+		name="Skye"
+		tier="5"
+		owner="Hero.skye_placeholder_1"
+		culture="Culture.neutral_systems"
+		super_faction="Kingdom.skye"
+		is_noble="true"
+		banner_key="11.24.4.4922.4922.764.764.1.0.0.529.5.0.152.152.872.873.0.0.0.419.5.0.510.510.764.764.0.0.0.526.5.0.152.152.656.873.0.0.0.527.5.0.152.152.651.654.0.0.0.528.5.0.152.152.877.654.0.0.0" />
 
 </Factions>

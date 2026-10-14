@@ -4508,6 +4508,1166 @@
 		</basic_mercenary_troops>
 	</Culture>
 
+	<!-- Bandits -->
+	<Culture id="looters"
+		name="{=1sbJQR4H}Scavengers"
+		elite_basic_troop="NPCCharacter.looter"
+		basic_troop="NPCCharacter.looter"
+		is_bandit="true"
+		can_have_settlement="false"
+		encounter_background_mesh="encounter_looter">
+		<banner_bearer_replacement_weapons>
+			<item
+				id="Item.iron_spatha_sword_t2" />
+			<item
+				id="Item.empire_sword_1_t2" />
+			<item
+				id="Item.empire_sword_2_t3" />
+			<item
+				id="Item.empire_sword_6_t5" />
+		</banner_bearer_replacement_weapons>
+		<male_names>
+			<name
+				name="{=v9B50R0Q}Acarion" />
+			<name
+				name="{=aeLgc0cU}Acthon" />
+			<name
+				name="{=tWDyWroN}Amnon" />
+			<name
+				name="{=uTFjknE2}Andros" />
+			<name
+				name="{=fXgftgNv}Aphanys" />
+			<name
+				name="{=QjJAbaoT}Apys" />
+			<name
+				name="{=zInIqBD0}Arenicos" />
+			<name
+				name="{=W1uwgvAQ}Arion" />
+			<name
+				name="{=5VzWRMTn}Artimendros" />
+			<name
+				name="{=rGuYLmez}Ascyron" />
+			<name
+				name="{=J1nh9YiN}Atilon" />
+			<name
+				name="{=NBAGX54b}Avigos" />
+			<name
+				name="{=9cDw6vPF}Cadomenos" />
+			<name
+				name="{=R11i2uVl}Calytos" />
+			<name
+				name="{=lD1sl2XC}Camnon" />
+			<name
+				name="{=LP7yYoGQ}Caribos" />
+			<name
+				name="{=VhbasI9J}Castor" />
+			<name
+				name="{=VG9ng2n2}Chandion" />
+			<name
+				name="{=aezwJGvY}Chenon" />
+			<name
+				name="{=acp2IcMs}Crotor" />
+			<name
+				name="{=XKxeaF0I}Dalidos" />
+			<name
+				name="{=pCBkH35Q}Danos" />
+			<name
+				name="{=2OJEyP0d}Dasys" />
+			<name
+				name="{=SoTUisL3}Deltisos" />
+			<name
+				name="{=2uKoNaSG}Denos" />
+			<name
+				name="{=HfuAdGQX}Destor" />
+			<name
+				name="{=lEHtUGed}Diocosos" />
+			<name
+				name="{=5EiKEdi5}Dorion" />
+			<name
+				name="{=yAZC6F7P}Ecsorios" />
+			<name
+				name="{=hyOgAehG}Emarys" />
+			<name
+				name="{=rUvnbDi2}Encurion" />
+			<name
+				name="{=KjzJjj5n}Eronys" />
+			<name
+				name="{=gYit4RTe}Euchor" />
+			<name
+				name="{=oQCZp9qv}Eumenys" />
+			<name
+				name="{=uW38UtSH}Eupitor" />
+			<name
+				name="{=WfAuSpJq}Eutos" />
+			<name
+				name="{=RyorjCXF}Galon" />
+			<name
+				name="{=ZFlIT1tH}Ganimynos" />
+			<name
+				name="{=f3hTGKIP}Garitops" />
+			<name
+				name="{=nqxxr9We}Gavalon" />
+			<name
+				name="{=iDxygnVF}Gerotheon" />
+			<name
+				name="{=rFbAjSWM}Gorigos" />
+			<name
+				name="{=NxDJcR2c}Haratheos" />
+			<name
+				name="{=tgVJZ1Uc}Hecaron" />
+			<name
+				name="{=wQJGxBJI}Hophtalamos" />
+			<name
+				name="{=4lEEqyCg}Jacorios" />
+			<name
+				name="{=DwzrsJxS}Jamanys" />
+			<name
+				name="{=IU63oxWD}Jemynon" />
+			<name
+				name="{=t1OpnZph}Jeremos" />
+			<name
+				name="{=katzUyMI}Joron" />
+			<name
+				name="{=GWaJ7Ksq}Joculos" />
+			<name
+				name="{=iJvIH6NP}Jutheros" />
+			<name
+				name="{=BCy1KpvR}Lacalion" />
+			<name
+				name="{=6LMiTKZz}Lamenon" />
+			<name
+				name="{=F13aYbuk}Lavalios" />
+			<name
+				name="{=NFIQZOPQ}Leosios" />
+			<name
+				name="{=lbTMVAcI}Lerosion" />
+			<name
+				name="{=bHbR5Mgy}Losys" />
+			<name
+				name="{=CbxLZdVg}Lycos" />
+			<name
+				name="{=HCXHcBzT}Mattis" />
+			<name
+				name="{=X21PahQn}Menaclys" />
+			<name
+				name="{=am2UnbAK}Menor" />
+			<name
+				name="{=tTuaiLS6}Meritor" />
+			<name
+				name="{=qqW5n5Ox}Milos" />
+			<name
+				name="{=5yFy4U4i}Morynon" />
+			<name
+				name="{=ud6rhXbn}Mostiros" />
+			<name
+				name="{=04zSjaRe}Nartiros" />
+			<name
+				name="{=FF3dQKc1}Nethor" />
+			<name
+				name="{=u1lTJoPO}Nemos" />
+			<name
+				name="{=sDFb1PRI}Nortos" />
+			<name
+				name="{=QGIAbglw}Obron" />
+			<name
+				name="{=AEaRpupL}Ocheros" />
+			<name
+				name="{=ZmQx4gT3}Olichor" />
+			<name
+				name="{=pq0w8kry}Orachos" />
+			<name
+				name="{=JFVseSa3}Oros" />
+			<name
+				name="{=7UkzXWTQ}Osarios" />
+			<name
+				name="{=cZIhxH9e}Pacarios" />
+			<name
+				name="{=9sokmYMZ}Padmos" />
+			<name
+				name="{=NXOOJs2X}Patrys" />
+			<name
+				name="{=plx8kkxa}Pelicos" />
+			<name
+				name="{=1cKxsHSh}Penton" />
+			<name
+				name="{=vgBRa2BE}Poraclys" />
+			<name
+				name="{=q186AQHt}Phadon" />
+			<name
+				name="{=yhfJVEe0}Phelenos" />
+			<name
+				name="{=LMWiJi6V}Phirentos" />
+			<name
+				name="{=XZxIpCQH}Phorys" />
+			<name
+				name="{=VJbAdJe4}Purios" />
+			<name
+				name="{=M9CWBbMe}Rhanos" />
+			<name
+				name="{=P1zsoSPN}Rhovarion" />
+			<name
+				name="{=Ho6zsGTI}Sachanion" />
+			<name
+				name="{=5eTb2xr7}Sanion" />
+			<name
+				name="{=Zm4a2xsf}Salusios" />
+			<name
+				name="{=egCbjHDT}Semnon" />
+			<name
+				name="{=GeJobcre}Sinor" />
+			<name
+				name="{=E4WhEvu7}Sotherys" />
+			<name
+				name="{=FClEZIkT}Sovos" />
+			<name
+				name="{=rVUhYuvE}Suterios" />
+			<name
+				name="{=PDK4FHAx}Suvys" />
+			<name
+				name="{=Axe5FkET}Talison" />
+			<name
+				name="{=PR4IqkTW}Temeon" />
+			<name
+				name="{=9xyXdX4I}Tharos" />
+			<name
+				name="{=zfUhnG7y}Themestios" />
+			<name
+				name="{=9mQuSI3c}Thucasys" />
+			<name
+				name="{=P7iNhhPl}Turiados" />
+			<name
+				name="{=kfNW01y5}Tynops" />
+			<name
+				name="{=amlzciqP}Ucasios" />
+			<name
+				name="{=wbJzSg3X}Ulbesos" />
+			<name
+				name="{=SRncaw79}Urios" />
+			<name
+				name="{=pRbKbPK3}Vadrios" />
+			<name
+				name="{=TiJOjUi5}Valaos" />
+			<name
+				name="{=5nEh20ju}Vasylops" />
+			<name
+				name="{=VN1D1Qps}Velanor" />
+			<name
+				name="{=QNtdUfis}Vemioros" />
+			<name
+				name="{=bWb245zO}Voleos" />
+			<name
+				name="{=aH2ncPbK}Zalasos" />
+			<name
+				name="{=WTePYMNF}Zaraclys" />
+			<name
+				name="{=p0hcyZdp}Zenon" />
+			<name
+				name="{=3RBVn5yi}Zoros" />
+			<name
+				name="{=uCyAnus4}Zostios" />
+			<name
+				name="{=7hYr7jQ7}Leutros" />
+			<name
+				name="{=e7dayl1i}Mavinon" />
+			<name
+				name="{=3EZMoUlp}Narmys" />
+			<name
+				name="{=PvoTcJHa}Naselos" />
+			<name
+				name="{=QumqvLnP}Ochivos" />
+			<name
+				name="{=gxHrt6bC}Phamynor" />
+			<name
+				name="{=6IDmRZ5k}Phestos" />
+			<name
+				name="{=ek1Q2TJz}Polon" />
+		</male_names>
+		<female_names>
+			<name
+				name="{=h8DsXm7X}Achena" />
+			<name
+				name="{=BNnLbOkN}Adinea" />
+			<name
+				name="{=EGatdCLg}Alena" />
+			<name
+				name="{=UPaP0B2L}Alchyla" />
+			<name
+				name="{=QyXwJXIV}Andrasa" />
+			<name
+				name="{=NM5f1Q6I}Ariada" />
+			<name
+				name="{=3RbayfTG}Ascytala" />
+			<name
+				name="{=bmHAYBwX}Catila" />
+			<name
+				name="{=AdK4Ilzw}Chalia" />
+			<name
+				name="{=xVSOKf0p}Chara" />
+			<name
+				name="{=915frsPd}Corena" />
+			<name
+				name="{=KPQqENbd}Carinila" />
+			<name
+				name="{=BNuZ6nvd}Daniria" />
+			<name
+				name="{=sEgUB3jW}Deasora" />
+			<name
+				name="{=YBGCXSEx}Debana" />
+			<name
+				name="{=93hivVp6}Donysa" />
+			<name
+				name="{=0dHy2430}Echalera" />
+			<name
+				name="{=Oy5dH7gZ}Elea" />
+			<name
+				name="{=2YbgWjTK}Emyna" />
+			<name
+				name="{=rA3KybBX}Ethirea" />
+			<name
+				name="{=qiTtJyHE}Gala" />
+			<name
+				name="{=fGmpS0Dr}Gandarina" />
+			<name
+				name="{=ecJRFHyY}Gisetha" />
+			<name
+				name="{=a6qaFH7L}Herena" />
+			<name
+				name="{=LE9mRhSs}Hespedia" />
+			<name
+				name="{=tGhrpQ0D}Hyradia" />
+			<name
+				name="{=0MJi7mre}Hyscasia" />
+			<name
+				name="{=JQdqGaaB}Isibala" />
+			<name
+				name="{=RHXdqjQY}Ilina" />
+			<name
+				name="{=HSlPLC4m}Ira" />
+			<name
+				name="{=PNR2CvvX}Ithicala" />
+			<name
+				name="{=eOHeCKxn}Jespara" />
+			<name
+				name="{=6vtmYjTW}Jolanna" />
+			<name
+				name="{=Ew69yN84}Juthys" />
+			<name
+				name="{=028iCb8B}Jythea" />
+			<name
+				name="{=Jif1C3X3}Laria" />
+			<name
+				name="{=LX1YS9DW}Lasilea" />
+			<name
+				name="{=2oy7atk6}Lundana" />
+			<name
+				name="{=dwFZFQ6V}Lysica" />
+			<name
+				name="{=2fYYfHUI}Martira" />
+			<name
+				name="{=cqSaKXzl}Matha" />
+			<name
+				name="{=Vxt0xTvV}Mavea" />
+			<name
+				name="{=lgvtLEDA}Melchea" />
+			<name
+				name="{=QvfUqzpF}Mina" />
+			<name
+				name="{=11KckWau}Mitara" />
+			<name
+				name="{=IJlw8V5D}Mystesa" />
+			<name
+				name="{=uLjRHv9p}Nadea" />
+			<name
+				name="{=hreO0wwb}Nerhea" />
+			<name
+				name="{=04dAbdjM}Nyvia" />
+			<name
+				name="{=dLOlnl8m}Palysira" />
+			<name
+				name="{=pXBvPxHI}Penestea" />
+			<name
+				name="{=FUT6eXfw}Phaea" />
+			<name
+				name="{=WrAMfIG1}Phenoria" />
+			<name
+				name="{=uYbmhjI6}Rhamira" />
+			<name
+				name="{=BIAEZaVx}Rhandana" />
+			<name
+				name="{=H7oJaxqM}Rhelasa" />
+			<name
+				name="{=XMTD2clw}Rhoe" />
+			<name
+				name="{=0XEaaoah}Rosazia" />
+			<name
+				name="{=L9weGfoX}Salea" />
+			<name
+				name="{=nSoJkeBI}Sittacea" />
+			<name
+				name="{=V1QLbhRl}Sora" />
+			<name
+				name="{=qMJ7UZvk}Surena" />
+			<name
+				name="{=gmD9mgR1}Synira" />
+			<name
+				name="{=Cxazvjr3}Tamarea" />
+			<name
+				name="{=b2aRoXsb}Tessa" />
+			<name
+				name="{=bQKbW8Tx}Thasyna" />
+			<name
+				name="{=YVVCaQE5}Thera" />
+			<name
+				name="{=CvVJyKYA}Thelea" />
+			<name
+				name="{=jJV5Tn09}Tethyclesa" />
+			<name
+				name="{=e4jAHUX0}Tymata" />
+			<name
+				name="{=z2KE7glc}Thylea" />
+			<name
+				name="{=3bIc2X2l}Vaminesa" />
+			<name
+				name="{=VzhbUL60}Vendelia" />
+			<name
+				name="{=a2ajWcI3}Viria" />
+			<name
+				name="{=5VZ0GF6Y}Zalisa" />
+			<name
+				name="{=wbLqHvjE}Zerosica" />
+			<name
+				name="{=zxZH2WbD}Zimena" />
+			<name
+				name="{=AccBcEIt}Zoana" />
+		</female_names>
+	</Culture>
 
+	<Culture id="weequay_pirates"
+		name="Weequay Pirates"
+		bandit_chief="NPCCharacter.weequay_pirates_chief"
+		bandit_raider="NPCCharacter.weequay_pirates_raider"
+		bandit_bandit="NPCCharacter.weequay_pirates_bandit"
+		bandit_boss="NPCCharacter.weequay_pirates_boss"
+		elite_basic_troop="NPCCharacter.weequay_pirates_raider"
+		basic_troop="NPCCharacter.weequay_pirates_bandit"
+		is_bandit="true"
+		can_have_settlement="true"
+		encounter_background_mesh="encounter_mountain_bandit"
+		bandit_boss_party_template="PartyTemplate.weequay_pirates_boss_party_template">
+		<banner_bearer_replacement_weapons>
+			<item id="Item.vlandia_sword_1_t2" />
+			<item id="Item.vlandia_sword_2_t3" />
+			<item id="Item.vlandia_sword_3_t4" />
+			<item id="Item.vlandia_sword_5_t5" />
+		</banner_bearer_replacement_weapons>
+		<male_names>
+			<name name="{=VP9hqkxO}Aedid" />
+			<name name="{=5oRDaemv}Aeric" />
+			<name name="{=LpLL0m3O}Arlech" />
+			<name name="{=Z7GxyIaC}Borun" />
+			<name name="{=MpZCQ0z1}Breadan" />
+			<name name="{=RfxXnZ8Z}Cadugan" />
+			<name name="{=StJ9aR91}Cadfin" />
+			<name name="{=IkTCwsB8}Col" />
+			<name name="{=0CQgia2a}Culharn" />
+			<name name="{=T9bXZA0W}Cynac" />
+			<name name="{=vDGYMAmm}Dermot" />
+			<name name="{=9vBp5E0Q}Derngil" />
+			<name name="{=FNHFzVCU}Edwain" />
+			<name name="{=TLZKQSb1}Egan" />
+			<name name="{=cL1lO5iP}Ergeon" />
+			<name name="{=fydMDGtL}Fercread" />
+			<name name="{=6bBj5HgU}Garain" />
+			<name name="{=68JEMvYl}Griff" />
+			<name name="{=lMrP68Ba}Grynad" />
+			<name name="{=rTGmgm4b}Ioren" />
+			<name name="{=074bIPbm}Llum" />
+			<name name="{=bDMmX9YI}Luichan" />
+			<name name="{=K4UdL65N}Lyd" />
+			<name name="{=MNFMqV3n}Lyfris" />
+			<name name="{=d8D98oFG}Melidir" />
+			<name name="{=SFybYZNK}Mengus" />
+			<name name="{=tCTzsaIu}Muinser" />
+			<name name="{=6AwXDgIK}Mych" />
+			<name name="{=qhanbPZ9}Nal" />
+			<name name="{=bbJLOMhl}Pelisor" />
+			<name name="{=tHtt3HCn}Pryndor" />
+			<name name="{=rgskh3ve}Rhagyd" />
+			<name name="{=iTRV8m4Y}Rhylan" />
+			<name name="{=fG19XSVm}Rugan" />
+			<name name="{=Xnngcfg9}Sein" />
+			<name name="{=e52LPp57}Udris" />
+			<name name="{=TxKnmzwT}Urien" />
+			<name name="{=uAS832LM}Ydwin" />
+		</male_names>
+		<female_names>
+			<name name="{=6pAsFGvw}Abeil" />
+			<name name="{=WuMGWUJ7}Addien" />
+			<name name="{=4Vd1TXpN}Anwyn" />
+			<name name="{=86L9ayRV}Athlian" />
+			<name name="{=ZgGnqkki}Beniseth" />
+			<name name="{=Wuiog2eu}Brigis" />
+			<name name="{=9WMeUGTy}Caelis" />
+			<name name="{=AYdwWae6}Ceatra" />
+			<name name="{=xqC8yfah}Cidre" />
+			<name name="{=gqJUdECJ}Daellian" />
+			<name name="{=Gwfb6O5O}Eira" />
+			<name name="{=jwcpnm8K}Eidenor" />
+			<name name="{=7uj8QoPA}Fetheir" />
+			<name name="{=w1a9E7a9}Fiasyn" />
+			<name name="{=2s7Tb4NC}Fionara" />
+			<name name="{=TWykLiFB}Gweth" />
+			<name name="{=VWSA8EVV}Gwennein" />
+			<name name="{=p4BMhcsQ}Iara" />
+			<name name="{=tTmqewol}Ifrain" />
+			<name name="{=6LRFHHqT}Imulir" />
+			<name name="{=Ma855h44}Iona" />
+			<name name="{=pVGKlS3W}Istiona" />
+			<name name="{=ODSf45wh}Leadh" />
+			<name name="{=RZ5bYYmX}Lisaradh" />
+			<name name="{=WNu6dKHe}Lliari" />
+			<name name="{=jMPWSzAi}Loen" />
+			<name name="{=rtljufhM}Mariwyn" />
+			<name name="{=eCCuztOS}Moera" />
+			<name name="{=iNFahwv3}Nia" />
+			<name name="{=gU5cMdTT}Norena" />
+			<name name="{=YEqDIbir}Oana" />
+			<name name="{=jCrbe08Y}Olawyn" />
+			<name name="{=h6dabKXz}Reissen" />
+			<name name="{=aYr6ovxb}Rhagin" />
+			<name name="{=ncEWiljT}Rhia" />
+			<name name="{=SVruYnYb}Selag" />
+			<name name="{=Y49TwXg4}Sionna" />
+			<name name="{=Fe90zVYF}Soeras" />
+			<name name="{=W4VYqLYc}Veraghid" />
+			<name name="{=UtfVuNN0}Vivein" />
+			<name name="{=vb2rv3OK}Una" />
+			<name name="{=PlGiSfwr}Ylen" />
+		</female_names>
+	</Culture>
+
+	<Culture id="zygerrian_slavers"
+		name="Zygerrian Slavers"
+		bandit_chief="NPCCharacter.zygerrian_slavers_chief"
+		bandit_raider="NPCCharacter.zygerrian_slavers_raider"
+		bandit_bandit="NPCCharacter.zygerrian_slavers_bandit"
+		bandit_boss="NPCCharacter.zygerrian_slavers_boss"
+		elite_basic_troop="NPCCharacter.zygerrian_slavers_raider"
+		basic_troop="NPCCharacter.zygerrian_slavers_bandit"
+		is_bandit="true"
+		can_have_settlement="true"
+		encounter_background_mesh="encounter_mountain_bandit"
+		bandit_boss_party_template="PartyTemplate.zygerrian_slavers_boss_party_template">
+		<banner_bearer_replacement_weapons>
+			<item id="Item.vlandia_sword_1_t2" />
+			<item id="Item.vlandia_sword_2_t3" />
+			<item id="Item.vlandia_sword_3_t4" />
+			<item id="Item.vlandia_sword_5_t5" />
+		</banner_bearer_replacement_weapons>
+		<male_names>
+			<name name="{=VP9hqkxO}Aedid" />
+			<name name="{=5oRDaemv}Aeric" />
+			<name name="{=LpLL0m3O}Arlech" />
+			<name name="{=Z7GxyIaC}Borun" />
+			<name name="{=MpZCQ0z1}Breadan" />
+			<name name="{=RfxXnZ8Z}Cadugan" />
+			<name name="{=StJ9aR91}Cadfin" />
+			<name name="{=IkTCwsB8}Col" />
+			<name name="{=0CQgia2a}Culharn" />
+			<name name="{=T9bXZA0W}Cynac" />
+			<name name="{=vDGYMAmm}Dermot" />
+			<name name="{=9vBp5E0Q}Derngil" />
+			<name name="{=FNHFzVCU}Edwain" />
+			<name name="{=TLZKQSb1}Egan" />
+			<name name="{=cL1lO5iP}Ergeon" />
+			<name name="{=fydMDGtL}Fercread" />
+			<name name="{=6bBj5HgU}Garain" />
+			<name name="{=68JEMvYl}Griff" />
+			<name name="{=lMrP68Ba}Grynad" />
+			<name name="{=rTGmgm4b}Ioren" />
+			<name name="{=074bIPbm}Llum" />
+			<name name="{=bDMmX9YI}Luichan" />
+			<name name="{=K4UdL65N}Lyd" />
+			<name name="{=MNFMqV3n}Lyfris" />
+			<name name="{=d8D98oFG}Melidir" />
+			<name name="{=SFybYZNK}Mengus" />
+			<name name="{=tCTzsaIu}Muinser" />
+			<name name="{=6AwXDgIK}Mych" />
+			<name name="{=qhanbPZ9}Nal" />
+			<name name="{=bbJLOMhl}Pelisor" />
+			<name name="{=tHtt3HCn}Pryndor" />
+			<name name="{=rgskh3ve}Rhagyd" />
+			<name name="{=iTRV8m4Y}Rhylan" />
+			<name name="{=fG19XSVm}Rugan" />
+			<name name="{=Xnngcfg9}Sein" />
+			<name name="{=e52LPp57}Udris" />
+			<name name="{=TxKnmzwT}Urien" />
+			<name name="{=uAS832LM}Ydwin" />
+		</male_names>
+		<female_names>
+			<name name="{=6pAsFGvw}Abeil" />
+			<name name="{=WuMGWUJ7}Addien" />
+			<name name="{=4Vd1TXpN}Anwyn" />
+			<name name="{=86L9ayRV}Athlian" />
+			<name name="{=ZgGnqkki}Beniseth" />
+			<name name="{=Wuiog2eu}Brigis" />
+			<name name="{=9WMeUGTy}Caelis" />
+			<name name="{=AYdwWae6}Ceatra" />
+			<name name="{=xqC8yfah}Cidre" />
+			<name name="{=gqJUdECJ}Daellian" />
+			<name name="{=Gwfb6O5O}Eira" />
+			<name name="{=jwcpnm8K}Eidenor" />
+			<name name="{=7uj8QoPA}Fetheir" />
+			<name name="{=w1a9E7a9}Fiasyn" />
+			<name name="{=2s7Tb4NC}Fionara" />
+			<name name="{=TWykLiFB}Gweth" />
+			<name name="{=VWSA8EVV}Gwennein" />
+			<name name="{=p4BMhcsQ}Iara" />
+			<name name="{=tTmqewol}Ifrain" />
+			<name name="{=6LRFHHqT}Imulir" />
+			<name name="{=Ma855h44}Iona" />
+			<name name="{=pVGKlS3W}Istiona" />
+			<name name="{=ODSf45wh}Leadh" />
+			<name name="{=RZ5bYYmX}Lisaradh" />
+			<name name="{=WNu6dKHe}Lliari" />
+			<name name="{=jMPWSzAi}Loen" />
+			<name name="{=rtljufhM}Mariwyn" />
+			<name name="{=eCCuztOS}Moera" />
+			<name name="{=iNFahwv3}Nia" />
+			<name name="{=gU5cMdTT}Norena" />
+			<name name="{=YEqDIbir}Oana" />
+			<name name="{=jCrbe08Y}Olawyn" />
+			<name name="{=h6dabKXz}Reissen" />
+			<name name="{=aYr6ovxb}Rhagin" />
+			<name name="{=ncEWiljT}Rhia" />
+			<name name="{=SVruYnYb}Selag" />
+			<name name="{=Y49TwXg4}Sionna" />
+			<name name="{=Fe90zVYF}Soeras" />
+			<name name="{=W4VYqLYc}Veraghid" />
+			<name name="{=UtfVuNN0}Vivein" />
+			<name name="{=vb2rv3OK}Una" />
+			<name name="{=PlGiSfwr}Ylen" />
+		</female_names>
+	</Culture>
+
+	<Culture id="trandoshan_slavers"
+		name="Trandoshan Slavers"
+		bandit_chief="NPCCharacter.trandoshan_slavers_chief"
+		bandit_raider="NPCCharacter.trandoshan_slavers_raider"
+		bandit_bandit="NPCCharacter.trandoshan_slavers_bandit"
+		bandit_boss="NPCCharacter.trandoshan_slavers_boss"
+		elite_basic_troop="NPCCharacter.trandoshan_slavers_raider"
+		basic_troop="NPCCharacter.trandoshan_slavers_bandit"
+		is_bandit="true"
+		can_have_settlement="true"
+		encounter_background_mesh="encounter_mountain_bandit"
+		bandit_boss_party_template="PartyTemplate.trandoshan_slavers_boss_party_template">
+		<banner_bearer_replacement_weapons>
+			<item id="Item.vlandia_sword_1_t2" />
+			<item id="Item.vlandia_sword_2_t3" />
+			<item id="Item.vlandia_sword_3_t4" />
+			<item id="Item.vlandia_sword_5_t5" />
+		</banner_bearer_replacement_weapons>
+		<male_names>
+			<name name="{=VP9hqkxO}Aedid" />
+			<name name="{=5oRDaemv}Aeric" />
+			<name name="{=LpLL0m3O}Arlech" />
+			<name name="{=Z7GxyIaC}Borun" />
+			<name name="{=MpZCQ0z1}Breadan" />
+			<name name="{=RfxXnZ8Z}Cadugan" />
+			<name name="{=StJ9aR91}Cadfin" />
+			<name name="{=IkTCwsB8}Col" />
+			<name name="{=0CQgia2a}Culharn" />
+			<name name="{=T9bXZA0W}Cynac" />
+			<name name="{=vDGYMAmm}Dermot" />
+			<name name="{=9vBp5E0Q}Derngil" />
+			<name name="{=FNHFzVCU}Edwain" />
+			<name name="{=TLZKQSb1}Egan" />
+			<name name="{=cL1lO5iP}Ergeon" />
+			<name name="{=fydMDGtL}Fercread" />
+			<name name="{=6bBj5HgU}Garain" />
+			<name name="{=68JEMvYl}Griff" />
+			<name name="{=lMrP68Ba}Grynad" />
+			<name name="{=rTGmgm4b}Ioren" />
+			<name name="{=074bIPbm}Llum" />
+			<name name="{=bDMmX9YI}Luichan" />
+			<name name="{=K4UdL65N}Lyd" />
+			<name name="{=MNFMqV3n}Lyfris" />
+			<name name="{=d8D98oFG}Melidir" />
+			<name name="{=SFybYZNK}Mengus" />
+			<name name="{=tCTzsaIu}Muinser" />
+			<name name="{=6AwXDgIK}Mych" />
+			<name name="{=qhanbPZ9}Nal" />
+			<name name="{=bbJLOMhl}Pelisor" />
+			<name name="{=tHtt3HCn}Pryndor" />
+			<name name="{=rgskh3ve}Rhagyd" />
+			<name name="{=iTRV8m4Y}Rhylan" />
+			<name name="{=fG19XSVm}Rugan" />
+			<name name="{=Xnngcfg9}Sein" />
+			<name name="{=e52LPp57}Udris" />
+			<name name="{=TxKnmzwT}Urien" />
+			<name name="{=uAS832LM}Ydwin" />
+		</male_names>
+		<female_names>
+			<name name="{=6pAsFGvw}Abeil" />
+			<name name="{=WuMGWUJ7}Addien" />
+			<name name="{=4Vd1TXpN}Anwyn" />
+			<name name="{=86L9ayRV}Athlian" />
+			<name name="{=ZgGnqkki}Beniseth" />
+			<name name="{=Wuiog2eu}Brigis" />
+			<name name="{=9WMeUGTy}Caelis" />
+			<name name="{=AYdwWae6}Ceatra" />
+			<name name="{=xqC8yfah}Cidre" />
+			<name name="{=gqJUdECJ}Daellian" />
+			<name name="{=Gwfb6O5O}Eira" />
+			<name name="{=jwcpnm8K}Eidenor" />
+			<name name="{=7uj8QoPA}Fetheir" />
+			<name name="{=w1a9E7a9}Fiasyn" />
+			<name name="{=2s7Tb4NC}Fionara" />
+			<name name="{=TWykLiFB}Gweth" />
+			<name name="{=VWSA8EVV}Gwennein" />
+			<name name="{=p4BMhcsQ}Iara" />
+			<name name="{=tTmqewol}Ifrain" />
+			<name name="{=6LRFHHqT}Imulir" />
+			<name name="{=Ma855h44}Iona" />
+			<name name="{=pVGKlS3W}Istiona" />
+			<name name="{=ODSf45wh}Leadh" />
+			<name name="{=RZ5bYYmX}Lisaradh" />
+			<name name="{=WNu6dKHe}Lliari" />
+			<name name="{=jMPWSzAi}Loen" />
+			<name name="{=rtljufhM}Mariwyn" />
+			<name name="{=eCCuztOS}Moera" />
+			<name name="{=iNFahwv3}Nia" />
+			<name name="{=gU5cMdTT}Norena" />
+			<name name="{=YEqDIbir}Oana" />
+			<name name="{=jCrbe08Y}Olawyn" />
+			<name name="{=h6dabKXz}Reissen" />
+			<name name="{=aYr6ovxb}Rhagin" />
+			<name name="{=ncEWiljT}Rhia" />
+			<name name="{=SVruYnYb}Selag" />
+			<name name="{=Y49TwXg4}Sionna" />
+			<name name="{=Fe90zVYF}Soeras" />
+			<name name="{=W4VYqLYc}Veraghid" />
+			<name name="{=UtfVuNN0}Vivein" />
+			<name name="{=vb2rv3OK}Una" />
+			<name name="{=PlGiSfwr}Ylen" />
+		</female_names>
+	</Culture>
+
+	<Culture id="commerce_raiders"
+		name="Commerce Raiders"
+		bandit_chief="NPCCharacter.commerce_raiders_chief"
+		bandit_raider="NPCCharacter.commerce_raiders_raider"
+		bandit_bandit="NPCCharacter.commerce_raiders_bandit"
+		bandit_boss="NPCCharacter.commerce_raiders_boss"
+		elite_basic_troop="NPCCharacter.commerce_raiders_raider"
+		basic_troop="NPCCharacter.commerce_raiders_bandit"
+		is_bandit="true"
+		can_have_settlement="true"
+		encounter_background_mesh="encounter_mountain_bandit"
+		bandit_boss_party_template="PartyTemplate.commerce_raiders_boss_party_template">
+		<banner_bearer_replacement_weapons>
+			<item id="Item.vlandia_sword_1_t2" />
+			<item id="Item.vlandia_sword_2_t3" />
+			<item id="Item.vlandia_sword_3_t4" />
+			<item id="Item.vlandia_sword_5_t5" />
+		</banner_bearer_replacement_weapons>
+		<male_names>
+			<name name="{=VP9hqkxO}Aedid" />
+			<name name="{=5oRDaemv}Aeric" />
+			<name name="{=LpLL0m3O}Arlech" />
+			<name name="{=Z7GxyIaC}Borun" />
+			<name name="{=MpZCQ0z1}Breadan" />
+			<name name="{=RfxXnZ8Z}Cadugan" />
+			<name name="{=StJ9aR91}Cadfin" />
+			<name name="{=IkTCwsB8}Col" />
+			<name name="{=0CQgia2a}Culharn" />
+			<name name="{=T9bXZA0W}Cynac" />
+			<name name="{=vDGYMAmm}Dermot" />
+			<name name="{=9vBp5E0Q}Derngil" />
+			<name name="{=FNHFzVCU}Edwain" />
+			<name name="{=TLZKQSb1}Egan" />
+			<name name="{=cL1lO5iP}Ergeon" />
+			<name name="{=fydMDGtL}Fercread" />
+			<name name="{=6bBj5HgU}Garain" />
+			<name name="{=68JEMvYl}Griff" />
+			<name name="{=lMrP68Ba}Grynad" />
+			<name name="{=rTGmgm4b}Ioren" />
+			<name name="{=074bIPbm}Llum" />
+			<name name="{=bDMmX9YI}Luichan" />
+			<name name="{=K4UdL65N}Lyd" />
+			<name name="{=MNFMqV3n}Lyfris" />
+			<name name="{=d8D98oFG}Melidir" />
+			<name name="{=SFybYZNK}Mengus" />
+			<name name="{=tCTzsaIu}Muinser" />
+			<name name="{=6AwXDgIK}Mych" />
+			<name name="{=qhanbPZ9}Nal" />
+			<name name="{=bbJLOMhl}Pelisor" />
+			<name name="{=tHtt3HCn}Pryndor" />
+			<name name="{=rgskh3ve}Rhagyd" />
+			<name name="{=iTRV8m4Y}Rhylan" />
+			<name name="{=fG19XSVm}Rugan" />
+			<name name="{=Xnngcfg9}Sein" />
+			<name name="{=e52LPp57}Udris" />
+			<name name="{=TxKnmzwT}Urien" />
+			<name name="{=uAS832LM}Ydwin" />
+		</male_names>
+		<female_names>
+			<name name="{=6pAsFGvw}Abeil" />
+			<name name="{=WuMGWUJ7}Addien" />
+			<name name="{=4Vd1TXpN}Anwyn" />
+			<name name="{=86L9ayRV}Athlian" />
+			<name name="{=ZgGnqkki}Beniseth" />
+			<name name="{=Wuiog2eu}Brigis" />
+			<name name="{=9WMeUGTy}Caelis" />
+			<name name="{=AYdwWae6}Ceatra" />
+			<name name="{=xqC8yfah}Cidre" />
+			<name name="{=gqJUdECJ}Daellian" />
+			<name name="{=Gwfb6O5O}Eira" />
+			<name name="{=jwcpnm8K}Eidenor" />
+			<name name="{=7uj8QoPA}Fetheir" />
+			<name name="{=w1a9E7a9}Fiasyn" />
+			<name name="{=2s7Tb4NC}Fionara" />
+			<name name="{=TWykLiFB}Gweth" />
+			<name name="{=VWSA8EVV}Gwennein" />
+			<name name="{=p4BMhcsQ}Iara" />
+			<name name="{=tTmqewol}Ifrain" />
+			<name name="{=6LRFHHqT}Imulir" />
+			<name name="{=Ma855h44}Iona" />
+			<name name="{=pVGKlS3W}Istiona" />
+			<name name="{=ODSf45wh}Leadh" />
+			<name name="{=RZ5bYYmX}Lisaradh" />
+			<name name="{=WNu6dKHe}Lliari" />
+			<name name="{=jMPWSzAi}Loen" />
+			<name name="{=rtljufhM}Mariwyn" />
+			<name name="{=eCCuztOS}Moera" />
+			<name name="{=iNFahwv3}Nia" />
+			<name name="{=gU5cMdTT}Norena" />
+			<name name="{=YEqDIbir}Oana" />
+			<name name="{=jCrbe08Y}Olawyn" />
+			<name name="{=h6dabKXz}Reissen" />
+			<name name="{=aYr6ovxb}Rhagin" />
+			<name name="{=ncEWiljT}Rhia" />
+			<name name="{=SVruYnYb}Selag" />
+			<name name="{=Y49TwXg4}Sionna" />
+			<name name="{=Fe90zVYF}Soeras" />
+			<name name="{=W4VYqLYc}Veraghid" />
+			<name name="{=UtfVuNN0}Vivein" />
+			<name name="{=vb2rv3OK}Una" />
+			<name name="{=PlGiSfwr}Ylen" />
+		</female_names>
+	</Culture>
+
+	<Culture id="quarren_raiders"
+		name="Quarren Raiders"
+		bandit_chief="NPCCharacter.quarren_raiders_chief"
+		bandit_raider="NPCCharacter.quarren_raiders_raider"
+		bandit_bandit="NPCCharacter.quarren_raiders_bandit"
+		bandit_boss="NPCCharacter.quarren_raiders_boss"
+		elite_basic_troop="NPCCharacter.quarren_raiders_raider"
+		basic_troop="NPCCharacter.quarren_raiders_bandit"
+		is_bandit="true"
+		can_have_settlement="true"
+		encounter_background_mesh="encounter_mountain_bandit"
+		bandit_boss_party_template="PartyTemplate.quarren_raiders_boss_party_template">
+		<banner_bearer_replacement_weapons>
+			<item id="Item.vlandia_sword_1_t2" />
+			<item id="Item.vlandia_sword_2_t3" />
+			<item id="Item.vlandia_sword_3_t4" />
+			<item id="Item.vlandia_sword_5_t5" />
+		</banner_bearer_replacement_weapons>
+		<male_names>
+			<name name="{=VP9hqkxO}Aedid" />
+			<name name="{=5oRDaemv}Aeric" />
+			<name name="{=LpLL0m3O}Arlech" />
+			<name name="{=Z7GxyIaC}Borun" />
+			<name name="{=MpZCQ0z1}Breadan" />
+			<name name="{=RfxXnZ8Z}Cadugan" />
+			<name name="{=StJ9aR91}Cadfin" />
+			<name name="{=IkTCwsB8}Col" />
+			<name name="{=0CQgia2a}Culharn" />
+			<name name="{=T9bXZA0W}Cynac" />
+			<name name="{=vDGYMAmm}Dermot" />
+			<name name="{=9vBp5E0Q}Derngil" />
+			<name name="{=FNHFzVCU}Edwain" />
+			<name name="{=TLZKQSb1}Egan" />
+			<name name="{=cL1lO5iP}Ergeon" />
+			<name name="{=fydMDGtL}Fercread" />
+			<name name="{=6bBj5HgU}Garain" />
+			<name name="{=68JEMvYl}Griff" />
+			<name name="{=lMrP68Ba}Grynad" />
+			<name name="{=rTGmgm4b}Ioren" />
+			<name name="{=074bIPbm}Llum" />
+			<name name="{=bDMmX9YI}Luichan" />
+			<name name="{=K4UdL65N}Lyd" />
+			<name name="{=MNFMqV3n}Lyfris" />
+			<name name="{=d8D98oFG}Melidir" />
+			<name name="{=SFybYZNK}Mengus" />
+			<name name="{=tCTzsaIu}Muinser" />
+			<name name="{=6AwXDgIK}Mych" />
+			<name name="{=qhanbPZ9}Nal" />
+			<name name="{=bbJLOMhl}Pelisor" />
+			<name name="{=tHtt3HCn}Pryndor" />
+			<name name="{=rgskh3ve}Rhagyd" />
+			<name name="{=iTRV8m4Y}Rhylan" />
+			<name name="{=fG19XSVm}Rugan" />
+			<name name="{=Xnngcfg9}Sein" />
+			<name name="{=e52LPp57}Udris" />
+			<name name="{=TxKnmzwT}Urien" />
+			<name name="{=uAS832LM}Ydwin" />
+		</male_names>
+		<female_names>
+			<name name="{=6pAsFGvw}Abeil" />
+			<name name="{=WuMGWUJ7}Addien" />
+			<name name="{=4Vd1TXpN}Anwyn" />
+			<name name="{=86L9ayRV}Athlian" />
+			<name name="{=ZgGnqkki}Beniseth" />
+			<name name="{=Wuiog2eu}Brigis" />
+			<name name="{=9WMeUGTy}Caelis" />
+			<name name="{=AYdwWae6}Ceatra" />
+			<name name="{=xqC8yfah}Cidre" />
+			<name name="{=gqJUdECJ}Daellian" />
+			<name name="{=Gwfb6O5O}Eira" />
+			<name name="{=jwcpnm8K}Eidenor" />
+			<name name="{=7uj8QoPA}Fetheir" />
+			<name name="{=w1a9E7a9}Fiasyn" />
+			<name name="{=2s7Tb4NC}Fionara" />
+			<name name="{=TWykLiFB}Gweth" />
+			<name name="{=VWSA8EVV}Gwennein" />
+			<name name="{=p4BMhcsQ}Iara" />
+			<name name="{=tTmqewol}Ifrain" />
+			<name name="{=6LRFHHqT}Imulir" />
+			<name name="{=Ma855h44}Iona" />
+			<name name="{=pVGKlS3W}Istiona" />
+			<name name="{=ODSf45wh}Leadh" />
+			<name name="{=RZ5bYYmX}Lisaradh" />
+			<name name="{=WNu6dKHe}Lliari" />
+			<name name="{=jMPWSzAi}Loen" />
+			<name name="{=rtljufhM}Mariwyn" />
+			<name name="{=eCCuztOS}Moera" />
+			<name name="{=iNFahwv3}Nia" />
+			<name name="{=gU5cMdTT}Norena" />
+			<name name="{=YEqDIbir}Oana" />
+			<name name="{=jCrbe08Y}Olawyn" />
+			<name name="{=h6dabKXz}Reissen" />
+			<name name="{=aYr6ovxb}Rhagin" />
+			<name name="{=ncEWiljT}Rhia" />
+			<name name="{=SVruYnYb}Selag" />
+			<name name="{=Y49TwXg4}Sionna" />
+			<name name="{=Fe90zVYF}Soeras" />
+			<name name="{=W4VYqLYc}Veraghid" />
+			<name name="{=UtfVuNN0}Vivein" />
+			<name name="{=vb2rv3OK}Una" />
+			<name name="{=PlGiSfwr}Ylen" />
+		</female_names>
+	</Culture>
+
+	<Culture id="rogue_navy"
+		name="Rogue Navy"
+		bandit_chief="NPCCharacter.rogue_navy_chief"
+		bandit_raider="NPCCharacter.rogue_navy_raider"
+		bandit_bandit="NPCCharacter.rogue_navy_bandit"
+		bandit_boss="NPCCharacter.rogue_navy_boss"
+		elite_basic_troop="NPCCharacter.rogue_navy_raider"
+		basic_troop="NPCCharacter.rogue_navy_bandit"
+		is_bandit="true"
+		can_have_settlement="true"
+		encounter_background_mesh="encounter_mountain_bandit"
+		bandit_boss_party_template="PartyTemplate.rogue_navy_boss_party_template">
+		<banner_bearer_replacement_weapons>
+			<item id="Item.vlandia_sword_1_t2" />
+			<item id="Item.vlandia_sword_2_t3" />
+			<item id="Item.vlandia_sword_3_t4" />
+			<item id="Item.vlandia_sword_5_t5" />
+		</banner_bearer_replacement_weapons>
+		<male_names>
+			<name name="{=VP9hqkxO}Aedid" />
+			<name name="{=5oRDaemv}Aeric" />
+			<name name="{=LpLL0m3O}Arlech" />
+			<name name="{=Z7GxyIaC}Borun" />
+			<name name="{=MpZCQ0z1}Breadan" />
+			<name name="{=RfxXnZ8Z}Cadugan" />
+			<name name="{=StJ9aR91}Cadfin" />
+			<name name="{=IkTCwsB8}Col" />
+			<name name="{=0CQgia2a}Culharn" />
+			<name name="{=T9bXZA0W}Cynac" />
+			<name name="{=vDGYMAmm}Dermot" />
+			<name name="{=9vBp5E0Q}Derngil" />
+			<name name="{=FNHFzVCU}Edwain" />
+			<name name="{=TLZKQSb1}Egan" />
+			<name name="{=cL1lO5iP}Ergeon" />
+			<name name="{=fydMDGtL}Fercread" />
+			<name name="{=6bBj5HgU}Garain" />
+			<name name="{=68JEMvYl}Griff" />
+			<name name="{=lMrP68Ba}Grynad" />
+			<name name="{=rTGmgm4b}Ioren" />
+			<name name="{=074bIPbm}Llum" />
+			<name name="{=bDMmX9YI}Luichan" />
+			<name name="{=K4UdL65N}Lyd" />
+			<name name="{=MNFMqV3n}Lyfris" />
+			<name name="{=d8D98oFG}Melidir" />
+			<name name="{=SFybYZNK}Mengus" />
+			<name name="{=tCTzsaIu}Muinser" />
+			<name name="{=6AwXDgIK}Mych" />
+			<name name="{=qhanbPZ9}Nal" />
+			<name name="{=bbJLOMhl}Pelisor" />
+			<name name="{=tHtt3HCn}Pryndor" />
+			<name name="{=rgskh3ve}Rhagyd" />
+			<name name="{=iTRV8m4Y}Rhylan" />
+			<name name="{=fG19XSVm}Rugan" />
+			<name name="{=Xnngcfg9}Sein" />
+			<name name="{=e52LPp57}Udris" />
+			<name name="{=TxKnmzwT}Urien" />
+			<name name="{=uAS832LM}Ydwin" />
+		</male_names>
+		<female_names>
+			<name name="{=6pAsFGvw}Abeil" />
+			<name name="{=WuMGWUJ7}Addien" />
+			<name name="{=4Vd1TXpN}Anwyn" />
+			<name name="{=86L9ayRV}Athlian" />
+			<name name="{=ZgGnqkki}Beniseth" />
+			<name name="{=Wuiog2eu}Brigis" />
+			<name name="{=9WMeUGTy}Caelis" />
+			<name name="{=AYdwWae6}Ceatra" />
+			<name name="{=xqC8yfah}Cidre" />
+			<name name="{=gqJUdECJ}Daellian" />
+			<name name="{=Gwfb6O5O}Eira" />
+			<name name="{=jwcpnm8K}Eidenor" />
+			<name name="{=7uj8QoPA}Fetheir" />
+			<name name="{=w1a9E7a9}Fiasyn" />
+			<name name="{=2s7Tb4NC}Fionara" />
+			<name name="{=TWykLiFB}Gweth" />
+			<name name="{=VWSA8EVV}Gwennein" />
+			<name name="{=p4BMhcsQ}Iara" />
+			<name name="{=tTmqewol}Ifrain" />
+			<name name="{=6LRFHHqT}Imulir" />
+			<name name="{=Ma855h44}Iona" />
+			<name name="{=pVGKlS3W}Istiona" />
+			<name name="{=ODSf45wh}Leadh" />
+			<name name="{=RZ5bYYmX}Lisaradh" />
+			<name name="{=WNu6dKHe}Lliari" />
+			<name name="{=jMPWSzAi}Loen" />
+			<name name="{=rtljufhM}Mariwyn" />
+			<name name="{=eCCuztOS}Moera" />
+			<name name="{=iNFahwv3}Nia" />
+			<name name="{=gU5cMdTT}Norena" />
+			<name name="{=YEqDIbir}Oana" />
+			<name name="{=jCrbe08Y}Olawyn" />
+			<name name="{=h6dabKXz}Reissen" />
+			<name name="{=aYr6ovxb}Rhagin" />
+			<name name="{=ncEWiljT}Rhia" />
+			<name name="{=SVruYnYb}Selag" />
+			<name name="{=Y49TwXg4}Sionna" />
+			<name name="{=Fe90zVYF}Soeras" />
+			<name name="{=W4VYqLYc}Veraghid" />
+			<name name="{=UtfVuNN0}Vivein" />
+			<name name="{=vb2rv3OK}Una" />
+			<name name="{=PlGiSfwr}Ylen" />
+		</female_names>
+	</Culture>
+	
+	<Culture id="revenants"
+		name="Revenants"
+		bandit_chief="NPCCharacter.revenants_chief"
+		bandit_raider="NPCCharacter.revenants_raider"
+		bandit_bandit="NPCCharacter.revenants_bandit"
+		bandit_boss="NPCCharacter.revenants_boss"
+		elite_basic_troop="NPCCharacter.revenants_raider"
+		basic_troop="NPCCharacter.revenants_bandit"
+		is_bandit="true"
+		can_have_settlement="true"
+		encounter_background_mesh="encounter_mountain_bandit"
+		bandit_boss_party_template="PartyTemplate.revenants_boss_party_template">
+		<banner_bearer_replacement_weapons>
+			<item id="Item.vlandia_sword_1_t2" />
+			<item id="Item.vlandia_sword_2_t3" />
+			<item id="Item.vlandia_sword_3_t4" />
+			<item id="Item.vlandia_sword_5_t5" />
+		</banner_bearer_replacement_weapons>
+		<male_names>
+			<name name="{=VP9hqkxO}Aedid" />
+			<name name="{=5oRDaemv}Aeric" />
+			<name name="{=LpLL0m3O}Arlech" />
+			<name name="{=Z7GxyIaC}Borun" />
+			<name name="{=MpZCQ0z1}Breadan" />
+			<name name="{=RfxXnZ8Z}Cadugan" />
+			<name name="{=StJ9aR91}Cadfin" />
+			<name name="{=IkTCwsB8}Col" />
+			<name name="{=0CQgia2a}Culharn" />
+			<name name="{=T9bXZA0W}Cynac" />
+			<name name="{=vDGYMAmm}Dermot" />
+			<name name="{=9vBp5E0Q}Derngil" />
+			<name name="{=FNHFzVCU}Edwain" />
+			<name name="{=TLZKQSb1}Egan" />
+			<name name="{=cL1lO5iP}Ergeon" />
+			<name name="{=fydMDGtL}Fercread" />
+			<name name="{=6bBj5HgU}Garain" />
+			<name name="{=68JEMvYl}Griff" />
+			<name name="{=lMrP68Ba}Grynad" />
+			<name name="{=rTGmgm4b}Ioren" />
+			<name name="{=074bIPbm}Llum" />
+			<name name="{=bDMmX9YI}Luichan" />
+			<name name="{=K4UdL65N}Lyd" />
+			<name name="{=MNFMqV3n}Lyfris" />
+			<name name="{=d8D98oFG}Melidir" />
+			<name name="{=SFybYZNK}Mengus" />
+			<name name="{=tCTzsaIu}Muinser" />
+			<name name="{=6AwXDgIK}Mych" />
+			<name name="{=qhanbPZ9}Nal" />
+			<name name="{=bbJLOMhl}Pelisor" />
+			<name name="{=tHtt3HCn}Pryndor" />
+			<name name="{=rgskh3ve}Rhagyd" />
+			<name name="{=iTRV8m4Y}Rhylan" />
+			<name name="{=fG19XSVm}Rugan" />
+			<name name="{=Xnngcfg9}Sein" />
+			<name name="{=e52LPp57}Udris" />
+			<name name="{=TxKnmzwT}Urien" />
+			<name name="{=uAS832LM}Ydwin" />
+		</male_names>
+		<female_names>
+			<name name="{=6pAsFGvw}Abeil" />
+			<name name="{=WuMGWUJ7}Addien" />
+			<name name="{=4Vd1TXpN}Anwyn" />
+			<name name="{=86L9ayRV}Athlian" />
+			<name name="{=ZgGnqkki}Beniseth" />
+			<name name="{=Wuiog2eu}Brigis" />
+			<name name="{=9WMeUGTy}Caelis" />
+			<name name="{=AYdwWae6}Ceatra" />
+			<name name="{=xqC8yfah}Cidre" />
+			<name name="{=gqJUdECJ}Daellian" />
+			<name name="{=Gwfb6O5O}Eira" />
+			<name name="{=jwcpnm8K}Eidenor" />
+			<name name="{=7uj8QoPA}Fetheir" />
+			<name name="{=w1a9E7a9}Fiasyn" />
+			<name name="{=2s7Tb4NC}Fionara" />
+			<name name="{=TWykLiFB}Gweth" />
+			<name name="{=VWSA8EVV}Gwennein" />
+			<name name="{=p4BMhcsQ}Iara" />
+			<name name="{=tTmqewol}Ifrain" />
+			<name name="{=6LRFHHqT}Imulir" />
+			<name name="{=Ma855h44}Iona" />
+			<name name="{=pVGKlS3W}Istiona" />
+			<name name="{=ODSf45wh}Leadh" />
+			<name name="{=RZ5bYYmX}Lisaradh" />
+			<name name="{=WNu6dKHe}Lliari" />
+			<name name="{=jMPWSzAi}Loen" />
+			<name name="{=rtljufhM}Mariwyn" />
+			<name name="{=eCCuztOS}Moera" />
+			<name name="{=iNFahwv3}Nia" />
+			<name name="{=gU5cMdTT}Norena" />
+			<name name="{=YEqDIbir}Oana" />
+			<name name="{=jCrbe08Y}Olawyn" />
+			<name name="{=h6dabKXz}Reissen" />
+			<name name="{=aYr6ovxb}Rhagin" />
+			<name name="{=ncEWiljT}Rhia" />
+			<name name="{=SVruYnYb}Selag" />
+			<name name="{=Y49TwXg4}Sionna" />
+			<name name="{=Fe90zVYF}Soeras" />
+			<name name="{=W4VYqLYc}Veraghid" />
+			<name name="{=UtfVuNN0}Vivein" />
+			<name name="{=vb2rv3OK}Una" />
+			<name name="{=PlGiSfwr}Ylen" />
+		</female_names>
+	</Culture>
 
 </SPCultures>

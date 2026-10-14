@@ -3822,6 +3822,294 @@
 				id="policy_feudal_inheritance" />
 		</policies>
 	</Kingdom>
+	
+	<Kingdom id="lira_san"
+		initial_home_settlement="Settlement.town_NS_LS1"
+		owner="Hero.lira_san_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Lira San"
+		short_name="Lira San"
+		title="Lira San"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="adumar"
+		initial_home_settlement="Settlement.castle_NS_AD1"
+		owner="Hero.adumar_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Adumar"
+		short_name="Adumar"
+		title="Adumar"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="klytus"
+		initial_home_settlement="Settlement.castle_NS_KL1"
+		owner="Hero.klytus_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Klytus"
+		short_name="Klytus"
+		title="Klytus"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="ahch_to"
+		initial_home_settlement="Settlement.castle_NS_AT1"
+		owner="Hero.ahch_to_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Ahch-To"
+		short_name="Ahch-To"
+		title="Ahch-To"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="aynaboni"
+		initial_home_settlement="Settlement.castle_NS_AY1"
+		owner="Hero.aynaboni_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Aynaboni"
+		short_name="Aynaboni"
+		title="Aynaboni"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="bakura"
+		initial_home_settlement="Settlement.castle_NS_BK1"
+		owner="Hero.bakura_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Bakura"
+		short_name="Bakura"
+		title="Bakura"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="endor"
+		initial_home_settlement="Settlement.castle_NS_EN1"
+		owner="Hero.endor_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Endor"
+		short_name="Endor"
+		title="Endor"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="kakra"
+		initial_home_settlement="Settlement.castle_NS_KA1"
+		owner="Hero.kakra_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Kakra"
+		short_name="Kakra"
+		title="Kakra"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="koke_frost"
+		initial_home_settlement="Settlement.castle_NS_KF1"
+		owner="Hero.koke_frost_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Koke Frost"
+		short_name="Koke Frost"
+		title="Koke Frost"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="griq"
+		initial_home_settlement="Settlement.castle_NS_GQ1"
+		owner="Hero.griq_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Griq"
+		short_name="Griq"
+		title="Griq"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="parnassos"
+		initial_home_settlement="Settlement.castle_NS_PR1"
+		owner="Hero.parnassos_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Parnassos"
+		short_name="Parnassos"
+		title="Parnassos"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	
+	<Kingdom id="skye"
+		initial_home_settlement="Settlement.castle_NS_SK1"
+		owner="Hero.skye_placeholder_1"
+		banner_key="11.4.4.4345.4345.764.764.1.0.0.163.5.5.512.512.764.764.1.0.0"
+		primary_banner_color="0xff793191"
+		secondary_banner_color="0xffFCDE90"
+		color="FF39223F"
+		color2="FFDE9953"
+		culture="Culture.neutral_systems"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="Skye"
+		short_name="Skye"
+		title="Skye"
+		ruler_title="Chancellor"
+		text="In a galaxy embroiled in a full-scale conflict, many worlds did not wish to align themselves with either side of the Clone Wars. Instead, they chose peace, seeking diplomacy and free trade with both sides of the war. These systems formed the Council of Neutral Systems, a coalition of worlds guided by Duchess Satine Kryze of Mandalore. Together, they use their voice to bring about an end to the Clone Wars and restore lasting peace to the galaxy. But, no one can remain neutral for long. The Death Watch and other factions threaten the tranquility of the Neutral Systems, and may soon lead to Republic or Separatist intervention if they cannot quell these outside threats.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
 
 	<!-- Crime Syndicates -->
 	<Kingdom id="hutt_cartel"
